@@ -13,6 +13,7 @@ import {
 import Image from 'next/image'
 import LoadVideoPlayer from '@/components/LoadVideoPlayer'
 import { PrimaryFeatures } from '@/components/PrimaryFeatures'
+import { OpenAIHero } from '@/components/OpenAIHero'
 
 const navigation = [
   { name: 'Product', href: '#' },
@@ -656,6 +657,8 @@ export default function Example() {
             </svg>
           </div>
         </div> */}
+        {/* OpenAI Blog Feature */}
+        <OpenAIHero />
 
         {/* Testimonials section */}
         <div className="relative isolate sm:pt-36">
