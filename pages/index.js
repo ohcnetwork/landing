@@ -14,6 +14,7 @@ import Image from 'next/image'
 import LoadVideoPlayer from '@/components/LoadVideoPlayer'
 import { PrimaryFeatures } from '@/components/PrimaryFeatures'
 import { OpenAIHero } from '@/components/OpenAIHero'
+import Head from "next/head";
 
 const navigation = [
   { name: "Product", href: "#" },
@@ -212,7 +213,7 @@ const aiTools = [
   },
 ];
 
-export default function Example() {
+export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [banner, setBanner] = useState({
     message: "ohc.network @ GitHub Constellation ",
@@ -221,6 +222,9 @@ export default function Example() {
 
   return (
     <div className="bg-white">
+      <Head>
+        <title>Open Healthcare Network: Transforming Healthcare with AI</title>
+      </Head>
       {/* Header */}
       <header className="absolute inset-x-0 top-0 z-50">
         <nav
