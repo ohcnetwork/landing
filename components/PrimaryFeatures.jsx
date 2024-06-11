@@ -57,7 +57,7 @@ export function PrimaryFeatures() {
 
   return (
     <section
-      id="features"
+      id="product"
       aria-label="Features for running your books"
       className="relative overflow-hidden bg-primary-600 pb-28 pt-20 sm:py-32 mt-32 sm:mt-56 "
     >

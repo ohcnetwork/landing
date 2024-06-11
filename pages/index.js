@@ -17,10 +17,10 @@ import { OpenAIHero } from "@/components/OpenAIHero";
 import Head from "next/head";
 
 const navigation = [
-  { name: "Product", href: "#" },
-  { name: "AI Features", href: "#" },
-  { name: "Deployments", href: "#" },
-  { name: "Contact", href: "#" },
+  { name: "Product", href: "#product" },
+  { name: "AI Features", href: "#ai_features" },
+  { name: "Deployments", href: "#deployments" },
+  { name: "Contact", href: "#contact" },
 ];
 
 const footerNavigation = [
@@ -517,7 +517,10 @@ export default function Home() {
         {/* OpenAI Blog Feature */}
         <OpenAIHero />
         {/* AI Tools Section */}
-        <section className="mt-24 sm:mt-36 max-w-7xl mx-auto px-5">
+        <section
+          id="ai_features"
+          className="mt-24 sm:mt-36 max-w-7xl mx-auto px-5"
+        >
           <div className="grid md:grid-cols-2 border border-white/10 border-dashed">
             <div className="p-5 flex md:items-center md:justify-center border-b border-e-0 md:border-e border-white/10 border-dashed">
               <div>
@@ -816,7 +819,7 @@ export default function Home() {
           </div>
         </div>
         <section
-          id="newsletter"
+          id="contact"
           aria-label="Join Our Open Healthcare Network Slack Community"
         >
           <div class="mx-auto mt-32 md:mt-56 max-w-7xl px-4 sm:px-6 lg:px-8">
