@@ -12,6 +12,7 @@ import {
 } from '@heroicons/react/20/solid'
 import Image from 'next/image'
 import LoadVideoPlayer from '@/components/LoadVideoPlayer'
+import { PrimaryFeatures } from '@/components/PrimaryFeatures'
 
 const navigation = [
   { name: 'Product', href: '#' },
@@ -339,12 +340,11 @@ export default function Example() {
                 </div>)}
             </div>
             <div className="text-center">
-              <h1 className="text-4xl font-bold tracking-tight text-white sm:text-8xl">
-                Reimagining Healthcare Delivery
+              <h1 className="text-4xl font-bold tracking-tight text-white sm:text-7xl">
+                Reimagining Public Healthcare with AI
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-300">
-                We are reimagining the way healthcare resources are managed, to improve clinical outcomes.
-
+                Engineering free and open-source tools to maximize human efficiency in compassionate healthcare delivery
               </p>
               {/* CTA Buttons */}
               {/* 
@@ -484,8 +484,8 @@ export default function Example() {
             Watch Satya Nadella's keynote at Microsoft AI Tour
           </h2>
           <p className="text-md text-center mx-auto md:text-lg max-w-2xl pt-4 text-gray-800">
-            Mentioning the Open Healthcare Network, an open-source work done by
-            our students along with industry experts.
+            Highlighting the open-source work done by
+            our community.
           </p>
           <div className="border-8 border-white/10 rounded-xl mt-8">
             <LoadVideoPlayer
@@ -497,16 +497,15 @@ export default function Example() {
           </div>
         </section>
         {/* AI Tools Section */}
-        <section className="mt-16 max-w-7xl mx-auto px-5">
+        <section className="mt-32 sm:mt-56 max-w-7xl mx-auto px-5">
           <div className="grid md:grid-cols-2 border border-white/10 border-dashed">
             <div className="p-5 flex md:items-center md:justify-center border-b border-e-0 md:border-e border-white/10 border-dashed">
               <div>
-                <h2 className="font-normal text-2xl lg:text-6xl leading-snug bg-clip-text text-transparent bg-gradient-to-br from-yellow-400 via-amber-400 to-orange-600">
-                  GenAI @ GDC
+                <h2 className=" text-2xl lg:text-6xl leading-snug bg-clip-text text-transparent bg-gradient-to-br from-green-500 via-green-600 to-green-700 font-semibold">
+                  GenAI@ <br /> ohc.network
                 </h2>
                 <p className="text-gray-400 md:pt-4 text-lg max-w-sm">
-                  GDC Fellows are currently building the following tools to
-                  transform healthcare delivery across 9 states in India.
+                  Revolutionizing Healthcare with Generative AI
                 </p>
               </div>
             </div>
@@ -571,7 +570,7 @@ export default function Example() {
             </div>
           </div>
         </div> */}
-
+        <PrimaryFeatures />
         {/* Feature section */}
         {/* <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-56 lg:px-8">
           <div className="mx-auto max-w-2xl lg:text-center">
@@ -659,7 +658,7 @@ export default function Example() {
         </div> */}
 
         {/* Testimonials section */}
-        <div className="relative isolate mt-32 sm:mt-56 sm:pt-32">
+        <div className="relative isolate sm:pt-36">
           <svg
             className="absolute inset-0 -z-10 hidden h-full w-full stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)] sm:block"
             aria-hidden="true"
@@ -796,7 +795,7 @@ export default function Example() {
           </div>
         </div>
       </footer>
-    </div>
+    </div >
   )
 }
 
