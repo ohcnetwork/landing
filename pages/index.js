@@ -507,8 +507,11 @@ export default function Example() {
             />
           </div>
         </section>
+
+        {/* OpenAI Blog Feature */}
+        <OpenAIHero />
         {/* AI Tools Section */}
-        <section className="mt-32 sm:mt-56 max-w-7xl mx-auto px-5">
+        <section className="mt-24 sm:mt-36 max-w-7xl mx-auto px-5">
           <div className="grid md:grid-cols-2 border border-white/10 border-dashed">
             <div className="p-5 flex md:items-center md:justify-center border-b border-e-0 md:border-e border-white/10 border-dashed">
               <div>
@@ -581,6 +584,7 @@ export default function Example() {
             </div>
           </div>
         </div> */}
+
         <PrimaryFeatures />
         {/* Feature section */}
         {/* <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-56 lg:px-8">
@@ -667,8 +671,6 @@ export default function Example() {
             </svg>
           </div>
         </div> */}
-        {/* OpenAI Blog Feature */}
-        <OpenAIHero />
 
         {/* Testimonials section */}
         <div className="relative isolate sm:pt-36">
@@ -807,11 +809,29 @@ export default function Example() {
             </div>
           </div>
         </div>
+        <section id="newsletter" aria-label="Join Our Open Healthcare Network Slack Community">
+          <div class="mx-auto mt-32 md:mt-56 max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="relative -mx-4 overflow-hidden bg-green-50 px-4 py-20 sm:-mx-6 sm:px-6 md:mx-0 md:rounded-3xl md:px-16 xl:px-24 xl:py-36">
+              <div class="relative mx-auto grid max-w-2xl grid-cols-1 gap-x-32 gap-y-14 xl:max-w-none xl:grid-cols-2">
+                <div>
+                  <p class="font-display text-4xl font-medium tracking-tighter text-green-900 sm:text-5xl">Join our Community</p>
+                  <p class="mt-4 text-lg tracking-tight text-green-900">Connect, collaborate, and create change with like-minded innovators in our Slack community, dedicated to advancing healthcare through technology.</p>
+                </div>
+                <div>
+                  <h3 class="text-lg text-center font-semibold tracking-tight text-green-900">Become a Member of Our Community <span aria-hidden="true">↓</span></h3>
+                  <a href="https://slack.ohc.network/" target="_blank" class="mt-5 inline-block w-full text-center rounded-3xl bg-green-600 py-2.5 text-base font-semibold text-white hover:bg-green-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-900">
+                    Start Collaborating 🎉
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       {/* Footer */}
       <footer className="bg-white">
-        <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
+        <div className="mx-auto mt-32 md:mt-56 max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
           <div className="flex justify-center space-x-6 md:order-2">
             {footerNavigation.map((item) => (
               <a

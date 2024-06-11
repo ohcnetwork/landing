@@ -96,12 +96,13 @@ export function OpenAIHero() {
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
             <h1 className="text-4xl font-medium tracking-tight text-gray-900">
-              Invest at the perfect time.
+              10BedICU uses OpenAI’s API to improve India’s critical care
+              infrastructure.
             </h1>
             <p className="mt-6 text-lg text-gray-600">
-              By leveraging insights from our network of industry insiders,
-              you’ll know exactly when to buy to maximize profit, and exactly
-              when to sell to avoid painful losses.
+              Learn how Open Healthcare Network&apos;s AI tools are transforming
+              critical care at 10BedICU across India. Dive into our blog for the
+              full story
             </p>
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
               <Button
