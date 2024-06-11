@@ -229,12 +229,18 @@ export default function Example() {
         >
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <img
+              <span className="sr-only">Open Healthcare Network</span>
+              <Image
+                src="/ohc_logo_white.png"
+                alt=""
+                width={200}
+                height={40}
+              />
+              {/* <img
                 className="h-8 w-auto"
                 src="https://tailwindui.com/img/logos/mark.svg?color=primary&shade=500"
                 alt=""
-              />
+              /> */}
             </a>
           </div>
           <div className="flex lg:hidden">
@@ -259,9 +265,9 @@ export default function Example() {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="text-sm font-semibold leading-6 text-white">
+            {/* <a href="#" className="text-sm font-semibold leading-6 text-white">
               Log in <span aria-hidden="true">&rarr;</span>
-            </a>
+            </a> */}
           </div>
         </nav>
         <Dialog
@@ -273,11 +279,12 @@ export default function Example() {
           <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
-                <img
-                  className="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=primary&shade=500"
+                <span className="sr-only">Open Healthcare Network</span>
+                <Image
+                  src="/ohc_logo_white.png"
                   alt=""
+                  width={200}
+                  height={40}
                 />
               </a>
               <button
