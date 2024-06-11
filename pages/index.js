@@ -9,11 +9,11 @@ import {
   CloudArrowUpIcon,
   LockClosedIcon,
   ServerIcon,
-} from '@heroicons/react/20/solid'
-import Image from 'next/image'
-import LoadVideoPlayer from '@/components/LoadVideoPlayer'
-import { PrimaryFeatures } from '@/components/PrimaryFeatures'
-import { OpenAIHero } from '@/components/OpenAIHero'
+} from "@heroicons/react/20/solid";
+import Image from "next/image";
+import LoadVideoPlayer from "@/components/LoadVideoPlayer";
+import { PrimaryFeatures } from "@/components/PrimaryFeatures";
+import { OpenAIHero } from "@/components/OpenAIHero";
 import Head from "next/head";
 
 const navigation = [
@@ -234,12 +234,7 @@ export default function Home() {
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Open Healthcare Network</span>
-              <Image
-                src="/ohc_logo_white.png"
-                alt=""
-                width={200}
-                height={40}
-              />
+              <Image src="/ohc_logo_white.png" alt="" width={200} height={40} />
               {/* <img
                 className="h-8 w-auto"
                 src="https://tailwindui.com/img/logos/mark.svg?color=primary&shade=500"
@@ -366,7 +361,8 @@ export default function Home() {
                 Reimagining Public Healthcare with AI
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-300">
-                Engineering free and open-source tools to maximize human efficiency in compassionate healthcare delivery
+                Engineering free and open-source tools to maximize human
+                efficiency in compassionate healthcare delivery
               </p>
               {/* CTA Buttons */}
               {/*
@@ -506,8 +502,7 @@ export default function Home() {
             Watch Satya Nadella&apos;s keynote at Microsoft AI Tour
           </h2>
           <p className="text-md text-center mx-auto md:text-lg max-w-2xl pt-4 text-gray-800">
-            Highlighting the open-source work done by
-            our community.
+            Highlighting the open-source work done by our community.
           </p>
           <div className="border-8 border-white/10 rounded-xl mt-8">
             <LoadVideoPlayer
@@ -820,17 +815,33 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <section id="newsletter" aria-label="Join Our Open Healthcare Network Slack Community">
+        <section
+          id="newsletter"
+          aria-label="Join Our Open Healthcare Network Slack Community"
+        >
           <div class="mx-auto mt-32 md:mt-56 max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="relative -mx-4 overflow-hidden bg-green-50 px-4 py-20 sm:-mx-6 sm:px-6 md:mx-0 md:rounded-3xl md:px-16 xl:px-24 xl:py-36">
               <div class="relative mx-auto grid max-w-2xl grid-cols-1 gap-x-32 gap-y-14 xl:max-w-none xl:grid-cols-2">
                 <div>
-                  <p class="font-display text-4xl font-medium tracking-tighter text-green-900 sm:text-5xl">Join our Community</p>
-                  <p class="mt-4 text-lg tracking-tight text-green-900">Connect, collaborate, and create change with like-minded innovators in our Slack community, dedicated to advancing healthcare through technology.</p>
+                  <p class="font-display text-4xl font-medium tracking-tighter text-green-900 sm:text-5xl">
+                    Join our Community
+                  </p>
+                  <p class="mt-4 text-lg tracking-tight text-green-900">
+                    Connect, collaborate, and create change with like-minded
+                    innovators in our Slack community, dedicated to advancing
+                    healthcare through technology.
+                  </p>
                 </div>
                 <div>
-                  <h3 class="text-lg text-center font-semibold tracking-tight text-green-900">Become a Member of Our Community <span aria-hidden="true">↓</span></h3>
-                  <a href="https://slack.ohc.network/" target="_blank" class="mt-5 inline-block w-full text-center rounded-3xl bg-green-600 py-2.5 text-base font-semibold text-white hover:bg-green-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-900">
+                  <h3 class="text-lg text-center font-semibold tracking-tight text-green-900">
+                    Become a Member of Our Community{" "}
+                    <span aria-hidden="true">↓</span>
+                  </h3>
+                  <a
+                    href="https://slack.ohc.network/"
+                    target="_blank"
+                    class="mt-5 inline-block w-full text-center rounded-3xl bg-green-600 py-2.5 text-base font-semibold text-white hover:bg-green-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-900"
+                  >
                     Start Collaborating 🎉
                   </a>
                 </div>
@@ -862,8 +873,8 @@ export default function Home() {
           </div>
         </div>
       </footer>
-    </div >
-  )
+    </div>
+  );
 }
 
 function AiTool({ title, description }) {
