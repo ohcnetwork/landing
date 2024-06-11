@@ -1,24 +1,24 @@
 /* eslint-disable @next/next/no-img-element */
 
-import { useState } from 'react'
-import { Dialog, DialogPanel } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { useState } from "react";
+import { Dialog, DialogPanel } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import {
   ArrowPathIcon,
   ChevronRightIcon,
   CloudArrowUpIcon,
   LockClosedIcon,
   ServerIcon,
-} from '@heroicons/react/20/solid'
-import Image from 'next/image'
-import LoadVideoPlayer from '@/components/LoadVideoPlayer'
+} from "@heroicons/react/20/solid";
+import Image from "next/image";
+import LoadVideoPlayer from "@/components/LoadVideoPlayer";
 
 const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'AI Features', href: '#' },
-  { name: 'Deployments', href: '#' },
-  { name: 'Contact', href: '#' },
-]
+  { name: "Product", href: "#" },
+  { name: "AI Features", href: "#" },
+  { name: "Deployments", href: "#" },
+  { name: "Contact", href: "#" },
+];
 
 const footerNavigation = [
   // {
@@ -57,8 +57,8 @@ const footerNavigation = [
   //   ),
   // },
   {
-    name: 'GitHub',
-    href: 'https://github.com/coronasafe',
+    name: "GitHub",
+    href: "https://github.com/coronasafe",
     icon: (props) => (
       <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
         <path
@@ -70,8 +70,8 @@ const footerNavigation = [
     ),
   },
   {
-    name: 'YouTube',
-    href: 'https://www.youtube.com/@ohc.network',
+    name: "YouTube",
+    href: "https://www.youtube.com/@ohc.network",
     icon: (props) => (
       <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
         <path
@@ -82,80 +82,80 @@ const footerNavigation = [
       </svg>
     ),
   },
-]
+];
 
 const primaryFeatures = [
   {
-    name: 'Push to deploy.',
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna.',
+    name: "Push to deploy.",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna.",
     icon: CloudArrowUpIcon,
   },
   {
-    name: 'SSL certificates.',
-    description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
+    name: "SSL certificates.",
+    description:
+      "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.",
     icon: LockClosedIcon,
   },
   {
-    name: 'Database backups.',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus.',
+    name: "Database backups.",
+    description:
+      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus.",
     icon: ServerIcon,
   },
-]
+];
 const secondaryFeatures = [
   {
-    name: 'Push to deploy',
+    name: "Push to deploy",
     description:
-      'Commodo nec sagittis tortor mauris sed. Turpis tortor quis scelerisque diam id accumsan nullam tempus. Pulvinar etiam lacus volutpat eu. Phasellus praesent ligula sit faucibus.',
-    href: '#',
+      "Commodo nec sagittis tortor mauris sed. Turpis tortor quis scelerisque diam id accumsan nullam tempus. Pulvinar etiam lacus volutpat eu. Phasellus praesent ligula sit faucibus.",
+    href: "#",
     icon: CloudArrowUpIcon,
   },
   {
-    name: 'SSL certificates',
+    name: "SSL certificates",
     description:
-      'Pellentesque enim a commodo malesuada turpis eleifend risus. Facilisis donec placerat sapien consequat tempor fermentum nibh.',
-    href: '#',
+      "Pellentesque enim a commodo malesuada turpis eleifend risus. Facilisis donec placerat sapien consequat tempor fermentum nibh.",
+    href: "#",
     icon: LockClosedIcon,
   },
   {
-    name: 'Simple queues',
+    name: "Simple queues",
     description:
-      'Pellentesque sit elit congue ante nec amet. Dolor aenean curabitur viverra suspendisse iaculis eget. Nec mollis placerat ultricies euismod ut condimentum.',
-    href: '#',
+      "Pellentesque sit elit congue ante nec amet. Dolor aenean curabitur viverra suspendisse iaculis eget. Nec mollis placerat ultricies euismod ut condimentum.",
+    href: "#",
     icon: ArrowPathIcon,
   },
-]
+];
 const featuredTestimonial = {
-  body: 'Open Healthcare Network in India is a profoundly inspiring story of how we can accelerate human progress by enabling the world\'s soon-to-be largest developer community with the possibilities of AI. India\'s developers, building with their copilot companion, will help save lives -- one commit at a time. 🇮🇳',
+  body: "Open Healthcare Network in India is a profoundly inspiring story of how we can accelerate human progress by enabling the world's soon-to-be largest developer community with the possibilities of AI. India's developers, building with their copilot companion, will help save lives -- one commit at a time. 🇮🇳",
   author: {
-    name: 'Thomas Dohmke',
-    handle: 'GitHub CEO',
-    imageUrl:
-      'thomas_dohmke',
-    logoUrl: '',
+    name: "Thomas Dohmke",
+    handle: "GitHub CEO",
+    imageUrl: "thomas_dohmke",
+    logoUrl: "",
   },
-}
+};
 const testimonials = [
   [
     [
       {
         body: 'Great work by@10BedICU in putting 200+ tele-ICUs in remote districts in India, all operational and connected to 11 regional expertise centers or "hubs" for people who had no access to an ICU during COVID. Now they can permanently have nearby ICU access. Goal is to get to all 700 districts of India.',
         author: {
-          name: 'Vinod Khosla',
-          handle: 'Founder, Khosla Ventures',
-          imageUrl:
-            'vinod_khosla',
+          name: "Vinod Khosla",
+          handle: "Founder, Khosla Ventures",
+          imageUrl: "vinod_khosla",
         },
       },
       // More testimonials...
     ],
     [
       {
-        body: 'It gives me immense pleasure to attend the inauguration of the first of its kind 10 Bedded ICU Ward and Tele ICU Hub in JNIMS today. Equipped with some the best equipments, this facility will immensely help in serving the patients in JNIMS as well as the remote areas of Manipur.',
+        body: "It gives me immense pleasure to attend the inauguration of the first of its kind 10 Bedded ICU Ward and Tele ICU Hub in JNIMS today. Equipped with some the best equipments, this facility will immensely help in serving the patients in JNIMS as well as the remote areas of Manipur.",
         author: {
-          name: 'Biren Singh',
-          handle: 'Chief Minister of Manipur',
-          imageUrl:
-            'biren_singh',
+          name: "Biren Singh",
+          handle: "Chief Minister of Manipur",
+          imageUrl: "biren_singh",
         },
       },
       // More testimonials...
@@ -164,12 +164,11 @@ const testimonials = [
   [
     [
       {
-        body: 'What a journey it has been for CARE from a COVID dashboard fully run by volunteers for a district in Kerala to this... phew!!! In a symbolic view, for me this feels almost like an unicorn valuation equivalent for social sector #india #dpg #innovation #healthcare #ai #tech4good',
+        body: "What a journey it has been for CARE from a COVID dashboard fully run by volunteers for a district in Kerala to this... phew!!! In a symbolic view, for me this feels almost like an unicorn valuation equivalent for social sector #india #dpg #innovation #healthcare #ai #tech4good",
         author: {
-          name: 'Sreevas Sahasranam',
-          handle: 'University of Glasgow',
-          imageUrl:
-            'sreevas_sahasranam',
+          name: "Sreevas Sahasranam",
+          handle: "University of Glasgow",
+          imageUrl: "sreevas_sahasranam",
         },
       },
       // More testimonials...
@@ -179,19 +178,18 @@ const testimonials = [
         body: `One of the coolest non-profits operating in the healthcare space just turned 4 🐣 - they bring advanced ICU care to places in rural India.
 Meeting and working with the team has been a major highlight of the past couple months :)`,
         author: {
-          name: 'Kai Chen',
-          handle: 'OpenAI',
-          imageUrl:
-            'kai_chen',
+          name: "Kai Chen",
+          handle: "OpenAI",
+          imageUrl: "kai_chen",
         },
       },
       // More testimonials...
     ],
   ],
-]
+];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
 const aiTools = [
@@ -213,17 +211,20 @@ const aiTools = [
 ];
 
 export default function Example() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [banner, setBanner] = useState({
-    message: 'ohc.network @ GitHub Constellation ',
-    href: '#',
-  })
+    message: "ohc.network @ GitHub Constellation ",
+    href: "#",
+  });
 
   return (
     <div className="bg-white">
       {/* Header */}
       <header className="absolute inset-x-0 top-0 z-50">
-        <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+        <nav
+          className="flex items-center justify-between p-6 lg:px-8"
+          aria-label="Global"
+        >
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
@@ -246,7 +247,11 @@ export default function Example() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-white">
+              <a
+                key={item.name}
+                href={item.href}
+                className="text-sm font-semibold leading-6 text-white"
+              >
                 {item.name}
               </a>
             ))}
@@ -257,7 +262,11 @@ export default function Example() {
             </a>
           </div>
         </nav>
-        <Dialog className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
+        <Dialog
+          className="lg:hidden"
+          open={mobileMenuOpen}
+          onClose={setMobileMenuOpen}
+        >
           <div className="fixed inset-0 z-50" />
           <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
             <div className="flex items-center justify-between">
@@ -323,7 +332,7 @@ export default function Example() {
               className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
               style={{
                 clipPath:
-                  'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+                  "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
               }}
             />
           </div>
@@ -336,18 +345,19 @@ export default function Example() {
                     <span className="absolute inset-0" aria-hidden="true" />
                     Read more <span aria-hidden="true">&rarr;</span>
                   </a>
-                </div>)}
+                </div>
+              )}
             </div>
             <div className="text-center">
               <h1 className="text-4xl font-bold tracking-tight text-white sm:text-8xl">
                 Reimagining Healthcare Delivery
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-300">
-                We are reimagining the way healthcare resources are managed, to improve clinical outcomes.
-
+                We are reimagining the way healthcare resources are managed, to
+                improve clinical outcomes.
               </p>
               {/* CTA Buttons */}
-              {/* 
+              {/*
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <a
                   href="#"
@@ -369,7 +379,7 @@ export default function Example() {
               className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
               style={{
                 clipPath:
-                  'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+                  "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
               }}
             />
           </div>
@@ -481,7 +491,7 @@ export default function Example() {
         {/* Video Section */}
         <section className="pt-4 max-w-7xl mt-20 mx-auto px-4 md:px-10">
           <h2 className="max-w-4xl mx-auto text-center text-xl lg:text-4xl text-primary-600">
-            Watch Satya Nadella's keynote at Microsoft AI Tour
+            Watch Satya Nadella&apos;s keynote at Microsoft AI Tour
           </h2>
           <p className="text-md text-center mx-auto md:text-lg max-w-2xl pt-4 text-gray-800">
             Mentioning the Open Healthcare Network, an open-source work done by
@@ -682,7 +692,12 @@ export default function Example() {
                 strokeWidth={0}
               />
             </svg>
-            <rect width="100%" height="100%" strokeWidth={0} fill="url(#55d3d46d-692e-45f2-becd-d8bdc9344f45)" />
+            <rect
+              width="100%"
+              height="100%"
+              strokeWidth={0}
+              fill="url(#55d3d46d-692e-45f2-becd-d8bdc9344f45)"
+            />
           </svg>
           <div className="relative">
             <div
@@ -693,7 +708,7 @@ export default function Example() {
                 className="ml-[max(50%,38rem)] aspect-[1313/771] w-[82.0625rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc]"
                 style={{
                   clipPath:
-                    'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+                    "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
                 }}
               />
             </div>
@@ -705,13 +720,15 @@ export default function Example() {
                 className="ml-[-22rem] aspect-[1313/771] w-[82.0625rem] flex-none origin-top-right rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] xl:ml-0 xl:mr-[calc(50%-12rem)]"
                 style={{
                   clipPath:
-                    'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+                    "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
                 }}
               />
             </div>
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto max-w-xl sm:text-center">
-                <h2 className="text-lg font-semibold leading-8 tracking-tight text-primary-600">What the Community says about us</h2>
+                <h2 className="text-lg font-semibold leading-8 tracking-tight text-primary-600">
+                  What the Community says about us
+                </h2>
                 <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                   We have worked with some amazing people
                 </p>
@@ -728,23 +745,33 @@ export default function Example() {
                       alt=""
                     />
                     <div className="flex-auto">
-                      <div className="font-semibold">{featuredTestimonial.author.name}</div>
+                      <div className="font-semibold">
+                        {featuredTestimonial.author.name}
+                      </div>
                       <div className="text-gray-600">{`${featuredTestimonial.author.handle}`}</div>
                     </div>
-                    <img className="h-10 w-auto flex-none" src={featuredTestimonial.author.logoUrl} alt="" />
+                    <img
+                      className="h-10 w-auto flex-none"
+                      src={featuredTestimonial.author.logoUrl}
+                      alt=""
+                    />
                   </figcaption>
                 </figure>
                 {testimonials.map((columnGroup, columnGroupIdx) => (
-                  <div key={columnGroupIdx} className="space-y-8 xl:contents xl:space-y-0">
+                  <div
+                    key={columnGroupIdx}
+                    className="space-y-8 xl:contents xl:space-y-0"
+                  >
                     {columnGroup.map((column, columnIdx) => (
                       <div
                         key={columnIdx}
                         className={classNames(
                           (columnGroupIdx === 0 && columnIdx === 0) ||
-                            (columnGroupIdx === testimonials.length - 1 && columnIdx === columnGroup.length - 1)
-                            ? 'xl:row-span-2'
-                            : 'xl:row-start-1',
-                          'space-y-8'
+                            (columnGroupIdx === testimonials.length - 1 &&
+                              columnIdx === columnGroup.length - 1)
+                            ? "xl:row-span-2"
+                            : "xl:row-start-1",
+                          "space-y-8"
                         )}
                       >
                         {column.map((testimonial) => (
@@ -762,7 +789,9 @@ export default function Example() {
                                 alt=""
                               />
                               <div>
-                                <div className="font-semibold">{testimonial.author.name}</div>
+                                <div className="font-semibold">
+                                  {testimonial.author.name}
+                                </div>
                                 <div className="text-gray-600">{`${testimonial.author.handle}`}</div>
                               </div>
                             </figcaption>
@@ -783,7 +812,11 @@ export default function Example() {
         <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
           <div className="flex justify-center space-x-6 md:order-2">
             {footerNavigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
+              <a
+                key={item.name}
+                href={item.href}
+                className="text-gray-400 hover:text-gray-500"
+              >
                 <span className="sr-only">{item.name}</span>
                 <item.icon className="h-6 w-6" aria-hidden="true" />
               </a>
@@ -797,7 +830,7 @@ export default function Example() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
 
 function AiTool({ title, description }) {

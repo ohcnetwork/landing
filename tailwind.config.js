@@ -25,10 +25,8 @@ module.exports = {
           800: "#03543F",
           900: "#014737",
         },
-      }
+      },
     },
   },
-  plugins: [
-    require('@tailwindcss/forms'),
-  ],
+  plugins: [require("@tailwindcss/forms")],
 };
