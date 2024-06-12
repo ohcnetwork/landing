@@ -217,7 +217,7 @@ export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [banner, setBanner] = useState({
     message: "ohc.network @ GitHub Constellation ",
-    href: "#",
+    href: "https://githubconstellation.com/schedule/supercharging-development-open-healthcare-network-leverages-ai-breakthrough-efficiency",
   });
 
   return (
@@ -349,7 +349,7 @@ export default function Home() {
               {banner && (
                 <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
                   {banner.message}
-                  <a href="#" className="font-semibold text-white">
+                  <a href={banner.href} className="font-semibold text-white">
                     <span className="absolute inset-0" aria-hidden="true" />
                     Read more <span aria-hidden="true">&rarr;</span>
                   </a>
@@ -360,7 +360,7 @@ export default function Home() {
               <h1 className="text-4xl font-bold tracking-tight text-white sm:text-7xl">
                 Reimagining Public Healthcare with AI
               </h1>
-              <p className="mt-6 text-lg leading-8 text-gray-300">
+              <p className="mt-6 text-lg leading-8 text-gray-300 mx-2">
                 Engineering free and open-source tools to maximize human
                 efficiency in compassionate healthcare delivery
               </p>
