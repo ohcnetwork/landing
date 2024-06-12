@@ -131,18 +131,13 @@ export function OpenAIHero() {
             <p className="text-center text-sm font-semibold text-gray-900 lg:text-left">
               As featured in
             </p>
-            <ul role="list" className="mx-auto mt-8 flex items-start">
-              {[["Open AI", logoOpenAi]].map(([name, logo, className]) => (
-                <li key={name} className={clsx("flex", className)}>
-                  <Image
-                    src={logo}
-                    alt={name}
-                    className="h-8 object-contain"
-                    unoptimized
-                  />
-                </li>
-              ))}
-            </ul>
+            <div className="flex justify-center lg:justify-start">
+              <Image
+                src={logoOpenAi}
+                alt="Open AI"
+                className="flex w-64 mt-4"
+              />
+            </div>
           </div>
         </div>
       </Container>
