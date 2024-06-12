@@ -308,14 +308,14 @@ export default function Home() {
                     </a>
                   ))}
                 </div>
-                <div className="py-6">
+                {/* <div className="py-6">
                   <a
                     href="#"
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-800"
                   >
                     Log in
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </DialogPanel>
@@ -392,6 +392,24 @@ export default function Home() {
             />
           </div>
         </div>
+
+        {/* Video Section (Github's ) */}
+        <section className="pt-4 max-w-7xl mt-20 mx-auto px-4 md:px-10">
+          <h2 className="max-w-4xl mx-auto text-center text-xl lg:text-4xl text-primary-600">
+            Watch Satya Nadella&apos;s keynote at Microsoft AI Tour
+          </h2>
+          <p className="text-md text-center mx-auto md:text-lg max-w-2xl pt-4 text-gray-800">
+            Highlighting the open-source work done by our community.
+          </p>
+          <div className="border-8 border-white/10 rounded-xl mt-8">
+            <LoadVideoPlayer
+              thumbnailUrl="/video-thumbnails/Satyas-keynote-video-thumbnail.jpeg"
+              videoType="vimeo"
+              videoUrl="https://player.vimeo.com/video/924932122?h=1090910241&amp;badge=0&amp;autoplay=1&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+              altText="Shout Out from Satya Nadella CEO and Chairman of Microsoft for Open Healthcare Network"
+            />
+          </div>
+        </section>
 
         {/* Logo cloud */}
         <div className="mt-10 max-w-7xl mx-auto px-5">
@@ -496,6 +514,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+
         {/* Video Section */}
         <section className="pt-4 max-w-7xl mt-20 mx-auto px-4 md:px-10">
           <h2 className="max-w-4xl mx-auto text-center text-xl lg:text-4xl text-primary-600">
@@ -738,11 +757,11 @@ export default function Home() {
               />
             </div>
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
-              <div className="mx-auto max-w-xl sm:text-center">
+              <div className="mt-10 md:mt-0 mx-auto max-w-xl sm:text-center">
                 <h2 className="text-lg font-semibold leading-8 tracking-tight text-primary-600">
                   What the Community says about us
                 </h2>
-                <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                <p className="md:mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                   We have worked with some amazing people
                 </p>
               </div>
