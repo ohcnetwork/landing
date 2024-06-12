@@ -353,8 +353,15 @@ export default function Home() {
                 Engineering free and open-source tools to maximize human
                 efficiency in compassionate healthcare delivery
               </p>
-              <Link href={"https://github.com/coronasafe"} className="bg-primary-500 hover:bg-primary-600 text-white rounded-full transition-all font-bold py-3 px-4 pr-4 inline-flex mt-6 items-center gap-2" >
-                <svg fill="currentColor" viewBox="0 0 24 24" className="text-white h-6">
+              <Link
+                href={"https://github.com/coronasafe"}
+                className="bg-primary-500 hover:bg-primary-600 text-white rounded-full transition-all font-bold py-3 px-4 pr-4 inline-flex mt-6 items-center gap-2"
+              >
+                <svg
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  className="text-white h-6"
+                >
                   <path
                     fillRule="evenodd"
                     d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
@@ -496,7 +503,7 @@ export default function Home() {
         </div>
         {/* Video Section */}
         <section className="pt-4 max-w-7xl mt-20 mx-auto px-4 md:px-10">
-          <h2 className="max-w-4xl mx-auto text-center text-xl lg:text-4xl text-primary-600">
+          <h2 className="font-display text-3xl tracking-tight text-center sm:text-4xl md:text-5xl text-primary-600">
             Watch Satya Nadella&apos;s keynote at Microsoft AI Tour
           </h2>
           <p className="text-md text-center mx-auto md:text-lg max-w-2xl pt-4 text-gray-800">
@@ -593,6 +600,28 @@ export default function Home() {
         </div> */}
 
         <PrimaryFeatures />
+        {/* Github Video Section */}
+        <section className="pt-4 max-w-7xl mt-20 mx-auto px-4 md:px-10">
+          <h2 className="font-display text-3xl tracking-tight text-center sm:text-4xl md:text-5xl text-primary-600">
+            A story on Open Healthcare Network work in India
+          </h2>
+          <p className="text-md text-center mx-auto md:text-lg max-w-2xl pt-4 text-gray-800">
+            How Open Healthcare Network has helped revolutionize access to
+            healthcare across India. Their doctors and engineers show how open
+            source collaboration on GitHub has been key to the success of their
+            platform, CARE, and is impacting millions of lives throughout the
+            country.
+          </p>
+          <div className="border-8 border-white/10 rounded-xl mt-8">
+            <LoadVideoPlayer
+              thumbnailUrl="/video-thumbnails/ohc-story-github.jpeg"
+              videoType="youtube"
+              showVideoProp={true}
+              videoUrl="https://www.youtube.com/embed/-wxIzaqvkQA?si=WEvFIphUCPf7Fs64"
+              altText="Shout Out from Satya Nadella CEO and Chairman of Microsoft for Open Healthcare Network"
+            />
+          </div>
+        </section>
         {/* Feature section */}
         {/* <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-56 lg:px-8">
           <div className="mx-auto max-w-2xl lg:text-center">
@@ -678,6 +707,87 @@ export default function Home() {
             </svg>
           </div>
         </div> */}
+
+        {/* Our Deployments */}
+
+        <div id="deployments" className="overflow-hidden bg-white py-24">
+          <div className="bg-white px-6 pb-10 sm:pb-16 lg:px-8">
+            <div className="mx-auto max-w-2xl text-center">
+              <h2 className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                Our Deployments
+              </h2>
+              <p className="mt-6 text-lg leading-8 text-gray-600">
+                Care is deployed in various healthcare projects across India
+                both in the public and private sector. Here are some of our
+                showcase deployments.
+              </p>
+            </div>
+          </div>
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start">
+              <div className="lg:pr-4 lg:pt-4">
+                <div className="lg:max-w-lg">
+                  <h2 className="text-base font-semibold leading-7 text-green-600">
+                    Major Deployment
+                  </h2>
+                  <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                    10BedICU
+                  </p>
+                  <p className="mt-6 text-lg leading-8 text-gray-600">
+                    Launched in March 2021, the 10BedICU project aimed to
+                    establish critical care infrastructure in rural and smaller
+                    government hospitals. This initiative has set up over 200+
+                    10BedICUs across nine states, transforming the landscape of
+                    healthcare accessibility.
+                  </p>
+                  <p className="mt-6 text-lg leading-8 text-gray-600">
+                    The 10BedICU provisions ICU medical equipment, the CARE
+                    software system, the TeleICU technology infrastructure, and
+                    essential training for clinical and system operations, as
+                    well as foster community participation.<br></br>
+                  </p>
+
+                  <figure className="mt-16 text-gray-600">
+                    <blockquote className="text-base leading-7">
+                      <p>
+                        “One of the most active open source communities in
+                        India. The OHC powers the CARE EMR a key pillar of the
+                        10BedICU project.”
+                      </p>
+                    </blockquote>
+                    <figcaption className="mt-4 flex gap-x-4 text-sm leading-6 items-center">
+                      <img
+                        src="people/srikanth.jpeg"
+                        alt=""
+                        className="h-16 w-16 flex-none rounded-full"
+                      />
+                      <div>
+                        <div className="font-semibold text-gray-900">
+                          Srikanth Nadhamuni
+                        </div>
+                        <div>– Chairman, 10BedICU</div>
+                      </div>
+                    </figcaption>
+                  </figure>
+                  <div className="mt-8">
+                    <a
+                      href="https://10bedicu.org/"
+                      target="_blank"
+                      className="inline-flex rounded-md bg-green-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600"
+                    >
+                      Read More about 10BedICU
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <img
+                src="deployments/10bedicu.png"
+                alt="Product screenshot"
+                className="w-[48rem] max-w-none rounded-xl sm:w-[57rem] md:-ml-4 lg:ml-0"
+              />
+            </div>
+          </div>
+        </div>
 
         {/* Testimonials section */}
         <div className="relative isolate sm:pt-36">
