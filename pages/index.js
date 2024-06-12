@@ -397,7 +397,7 @@ export default function Home() {
         <div className="text-black flex items-center justify-center py-20 bg-gray-50">
           <div className="p-4 md:p-0 md:w-3/4 text-center">
           <h1 className="text-4xl font-bold tracking-tight text-center">
-              Staying true to the "Open"
+              Staying true to the &quot;Open&quot;
           </h1>
           <p className="text-gray-500 text-center mt-6 text-sm">
             From the very beginning, Open Healthcare Network has embraced open-source principles, believing in the power of community and collaboration. Our mission is to foster a community of developers dedicated to leveraging technology to address healthcare challenges. By remaining open source, we ensure that innovation is driven by collective effort and shared knowledge. Join us in our journey to revolutionize healthcare through the power of open-source technology and community-driven solutions.          
