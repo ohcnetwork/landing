@@ -502,7 +502,7 @@ export default function Home() {
         </div>
         {/* Video Section */}
         <section className="pt-4 max-w-7xl mt-20 mx-auto px-4 md:px-10">
-          <h2 className="max-w-4xl mx-auto text-center text-xl lg:text-4xl text-primary-600">
+          <h2 className="font-display text-3xl tracking-tight text-center sm:text-4xl md:text-5xl text-primary-600">
             Watch Satya Nadella&apos;s keynote at Microsoft AI Tour
           </h2>
           <p className="text-md text-center mx-auto md:text-lg max-w-2xl pt-4 text-gray-800">
@@ -599,6 +599,28 @@ export default function Home() {
         </div> */}
 
         <PrimaryFeatures />
+        {/* Github Video Section */}
+        <section className="pt-4 max-w-7xl mt-20 mx-auto px-4 md:px-10">
+          <h2 className="font-display text-3xl tracking-tight text-center sm:text-4xl md:text-5xl text-primary-600">
+            A story on Open Healthcare Network work in India
+          </h2>
+          <p className="text-md text-center mx-auto md:text-lg max-w-2xl pt-4 text-gray-800">
+            How Open Healthcare Network has helped revolutionize access to
+            healthcare across India. Their doctors and engineers show how open
+            source collaboration on GitHub has been key to the success of their
+            platform, CARE, and is impacting millions of lives throughout the
+            country.
+          </p>
+          <div className="border-8 border-white/10 rounded-xl mt-8">
+            <LoadVideoPlayer
+              thumbnailUrl="/video-thumbnails/ohc-story-github.jpeg"
+              videoType="youtube"
+              showVideoProp={true}
+              videoUrl="https://www.youtube.com/embed/-wxIzaqvkQA?si=WEvFIphUCPf7Fs64"
+              altText="Shout Out from Satya Nadella CEO and Chairman of Microsoft for Open Healthcare Network"
+            />
+          </div>
+        </section>
         {/* Feature section */}
         {/* <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-56 lg:px-8">
           <div className="mx-auto max-w-2xl lg:text-center">
