@@ -350,7 +350,7 @@ export default function Home() {
               {banner && (
                 <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
                   {banner.message}
-                  <a href="#" className="font-semibold text-white">
+                  <a href={banner.href} className="font-semibold text-white">
                     <span className="absolute inset-0" aria-hidden="true" />
                     Read more <span aria-hidden="true">&rarr;</span>
                   </a>
