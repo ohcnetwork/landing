@@ -217,7 +217,7 @@ export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [banner, setBanner] = useState({
     message: "ohc.network @ GitHub Constellation ",
-    href: "#",
+    href: "https://githubconstellation.com/schedule/supercharging-development-open-healthcare-network-leverages-ai-breakthrough-efficiency",
   });
 
   return (
