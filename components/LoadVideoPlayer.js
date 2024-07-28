@@ -23,7 +23,6 @@ const LoadVideoPlayer = ({
             alt={altText}
             width={1920}
             height={1080}
-            layout="responsive"
             className="object-contain rounded-lg"
           />
         </div>

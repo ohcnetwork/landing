@@ -1,8 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 
 import { useState } from "react";
-import { Dialog, DialogPanel } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+
 import {
   ArrowPathIcon,
   ChevronRightIcon,
@@ -17,13 +16,9 @@ import { OpenAIHero } from "@/components/OpenAIHero";
 import Head from "next/head";
 import Link from "next/link";
 import CommitLayout from "@/components/Commit/CommitLayout";
+import Header from "@/components/Header";
 
-const navigation = [
-  { name: "Product", href: "#product" },
-  { name: "AI Features", href: "#ai_features" },
-  { name: "Deployments", href: "#deployments" },
-  { name: "Contact", href: "#contact" },
-];
+
 
 const footerNavigation = [
   // {
@@ -216,7 +211,6 @@ const aiTools = [
 ];
 
 export default function Home() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [banner, setBanner] = useState({
     message: "ohc.network @ GitHub Constellation ",
     href: "https://githubconstellation.com/schedule/supercharging-development-open-healthcare-network-leverages-ai-breakthrough-efficiency",
@@ -228,88 +222,7 @@ export default function Home() {
         <title>Open Healthcare Network: Transforming Healthcare with AI</title>
       </Head>
       {/* Header */}
-      <header className="absolute inset-x-0 top-0 z-50">
-        <nav
-          className="flex items-center justify-between p-6 lg:px-8"
-          aria-label="Global"
-        >
-          <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Open Healthcare Network</span>
-              <Image src="/ohc_logo_white.png" alt="" width={200} height={40} />
-              {/* <img
-                className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=primary&shade=500"
-                alt=""
-              /> */}
-            </a>
-          </div>
-          <div className="flex lg:hidden">
-            <button
-              type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400"
-              onClick={() => setMobileMenuOpen(true)}
-            >
-              <span className="sr-only">Open main menu</span>
-              <Bars3Icon className="h-6 w-6" aria-hidden="true" />
-            </button>
-          </div>
-          <div className="hidden lg:flex lg:gap-x-12">
-            {navigation.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="text-sm font-semibold leading-6 text-white"
-              >
-                {item.name}
-              </a>
-            ))}
-          </div>
-        </nav>
-        <Dialog
-          className="lg:hidden"
-          open={mobileMenuOpen}
-          onClose={setMobileMenuOpen}
-        >
-          <div className="fixed inset-0 z-50" />
-          <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
-            <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Open Healthcare Network</span>
-                <Image
-                  src="/ohc_logo_white.png"
-                  alt=""
-                  width={200}
-                  height={40}
-                />
-              </a>
-              <button
-                type="button"
-                className="-m-2.5 rounded-md p-2.5 text-gray-400"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                <span className="sr-only">Close menu</span>
-                <XMarkIcon className="h-6 w-6" aria-hidden="true" />
-              </button>
-            </div>
-            <div className="mt-6 flow-root">
-              <div className="-my-6 divide-y divide-gray-500/25">
-                <div className="space-y-2 py-6">
-                  {navigation.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800"
-                    >
-                      {item.name}
-                    </a>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </DialogPanel>
-        </Dialog>
-      </header>
+      <Header/>
       {/* Hero */}
       <main>
         {/* Hero section */}
@@ -931,28 +844,28 @@ export default function Home() {
           id="contact"
           aria-label="Join Our Open Healthcare Network Slack Community"
         >
-          <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div class="relative -mx-4 overflow-hidden bg-green-50 px-4 py-20 sm:-mx-6 sm:px-6 md:mx-0 md:rounded-3xl md:px-16 xl:px-24 xl:py-36">
-              <div class="relative mx-auto grid max-w-2xl grid-cols-1 gap-x-32 gap-y-14 xl:max-w-none xl:grid-cols-2">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="relative -mx-4 overflow-hidden bg-green-50 px-4 py-20 sm:-mx-6 sm:px-6 md:mx-0 md:rounded-3xl md:px-16 xl:px-24 xl:py-36">
+              <div className="relative mx-auto grid max-w-2xl grid-cols-1 gap-x-32 gap-y-14 xl:max-w-none xl:grid-cols-2">
                 <div>
-                  <p class="font-display text-4xl font-medium tracking-tighter text-green-900 sm:text-5xl">
+                  <p className="font-display text-4xl font-medium tracking-tighter text-green-900 sm:text-5xl">
                     Join our Community
                   </p>
-                  <p class="mt-4 text-lg tracking-tight text-green-900">
+                  <p className="mt-4 text-lg tracking-tight text-green-900">
                     Connect, collaborate, and create change with like-minded
                     innovators in our Slack community, dedicated to advancing
                     healthcare through technology.
                   </p>
                 </div>
                 <div>
-                  <h3 class="text-lg text-center font-semibold tracking-tight text-green-900">
+                  <h3 className="text-lg text-center font-semibold tracking-tight text-green-900">
                     Become a Member of Our Community{" "}
                     <span aria-hidden="true">↓</span>
                   </h3>
                   <a
                     href="https://slack.ohc.network/"
                     target="_blank"
-                    class="mt-5 inline-block w-full text-center rounded-3xl bg-green-600 py-2.5 text-base font-semibold text-white hover:bg-green-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-900"
+                    className="mt-5 inline-block w-full text-center rounded-3xl bg-green-600 py-2.5 text-base font-semibold text-white hover:bg-green-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-900"
                   >
                     Start Collaborating 🎉
                   </a>

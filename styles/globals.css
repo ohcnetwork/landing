@@ -31,3 +31,38 @@ body {
     text-wrap: balance;
   }
 }
+
+.dropdown-animate-in {
+  animation: dropdown-in 0.3s ease-out;
+}
+
+.dropdown-animate-out {
+  animation: dropdown-out 0.3s ease-out;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(-2rem);
+}
+
+@keyframes dropdown-in {
+  from {
+    opacity: 0;
+    transform: translateX(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes dropdown-out {
+  from {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-2rem);
+  }
+}
