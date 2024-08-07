@@ -16,7 +16,7 @@ import { OpenAIHero } from "@/components/OpenAIHero";
 import Head from "next/head";
 import Link from "next/link";
 import CommitLayout from "@/components/Commit/CommitLayout";
-import Header from "@/components/Header";
+import Header from "@/components/header";
 
 
 
