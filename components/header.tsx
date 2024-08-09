@@ -56,7 +56,7 @@ export default function Header(props: {
             name: "Slack",
             description: "Join our Slack community to connect with other contributors.",
             image: "/dropdownicons/slack.jpg",
-            href: "https://slack.coronasafe.network"
+            href: "https://slack.ohc.network/"
         }
     ]
 
@@ -158,10 +158,10 @@ export default function Header(props: {
                         ref={itemRef}
                         className={"nav-button " + className}
                         onMouseOver={() => {
-                            onHover?.(true, (itemRef.current?.offsetLeft || 0) + ((itemRef.current?.clientWidth || 0) / 2));
+                            onHover?.(true, (itemRef.current?.getBoundingClientRect().left || 0) + ((itemRef.current?.clientWidth || 0) / 2));
                         }}
                         onMouseOut={() => {
-                            onHover?.(false, (itemRef.current?.offsetLeft || 0) + ((itemRef.current?.clientWidth || 0) / 2));
+                            onHover?.(false, (itemRef.current?.getBoundingClientRect().left || 0) + ((itemRef.current?.clientWidth || 0) / 2));
                         }}
                     >
                         {item.content}
