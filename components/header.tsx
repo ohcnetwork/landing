@@ -82,7 +82,7 @@ export default function Header(props: {
         { type: "dropdown", content: "Community", items: communityItems },
         { type: "link", content: "Supporters", href: "/supporters" },
         { type: "section", content: "Contact", id: "contact", page: "/" },
-        { type: "link", content: <Image alt="Github" src={`/logos/github-mark${!mobileMenuOpen ? "-white" : ""}.svg`} width={50} height={50} className="md:w-[25px]" />, href: "https://github.com/coronasafe" }
+        { type: "link", content: <Image alt="Github" src={`/logos/github-mark-white.svg`} width={50} height={50} className="md:w-[25px]" />, href: "https://github.com/coronasafe" }
     ];
 
     useEffect(() => {
@@ -219,7 +219,7 @@ export default function Header(props: {
                         <Bars3Icon color="white" className="h-6 w-6" aria-hidden="true" />
                     </button>
                 </div>
-                <div className={`flex md:items-center p-6 md:p-0 fixed ${mobileMenuOpen ? "right-0" : "right-[-100vw]"} md:right-auto transition-all md:static bg-white/30 md:bg-transparent backdrop-blur-lg md:backdrop-blur-none text-black md:text-inherit h-screen md:h-auto top-0 md:top-auto w-screen md:w-auto flex-col md:flex-row text-5xl md:text-base`}>
+                <div className={`flex md:items-center p-6 md:p-0 fixed ${mobileMenuOpen ? "right-0" : "right-[-100vw]"} md:right-auto transition-all md:static bg-black/50 pb-[300px] md:pb-0 md:bg-transparent backdrop-blur-lg md:backdrop-blur-none h-screen md:h-auto top-0 md:top-auto w-screen md:w-auto flex-col md:flex-row text-5xl md:text-base`}>
                     <button
                         className="md:hidden block absolute top-6 right-8"
                         onClick={() => setMobileMenuOpen(false)}
@@ -239,9 +239,9 @@ export default function Header(props: {
                         />
                     )}
                 </div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="black" className={`absolute bottom-[-1px] ${!!showDropdown ? "opacity-20" : "opacity-0"} transition-all`} ref={triangleRef}><path d="M24 22h-24l12-20z" /></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="black" className={`hidden md:block absolute bottom-[-1px] ${!!showDropdown ? "opacity-20" : "opacity-0"} transition-all`} ref={triangleRef}><path d="M24 22h-24l12-20z" /></svg>
             </nav>
-            <div className={`nav-dropdown bg-black/20 ${scrolled ? "" : "backdrop-blur rounded-xl mx-10"} transition-all overflow-hidden relative ${!!showDropdown ? "max-h-[400px]" : "max-h-0"}`} style={{ height: dropDownHeight }}>
+            <div className={`nav-dropdown bg-black/20 ${scrolled ? "" : "backdrop-blur md:rounded-xl md:mx-10"} transition-all overflow-hidden fixed bottom-0 md:bottom-auto inset-x-0 md:inset-x-auto md:relative ${!!showDropdown ? "max-h-[400px]" : "max-h-0"}`} style={{ height: dropDownHeight }}>
                 <DropDownRender items={dropDownData || []} className="dropdown-animate-in" />
                 <DropDownRender items={outDropdownData || []} className="dropdown-animate-out" />
             </div>
