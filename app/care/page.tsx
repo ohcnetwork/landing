@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
+import { notFound } from "next/navigation";
 
 export const metadata = {
     title: "CARE - Open Healthcare Network",
@@ -41,6 +42,7 @@ function FeatureTile(props: { to_left?: boolean, image: string, title: React.Rea
 }
 
 export default function Page() {
+    return notFound()
     return (
         <div className="">
             <div className="relative">

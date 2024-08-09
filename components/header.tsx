@@ -78,11 +78,11 @@ export default function Header(props: {
         )
 
     const navigation: NavigationItem[] = [
-        { type: "dropdown", content: "Products", items: productsItems },
+        //{ type: "dropdown", content: "Products", items: productsItems },
         { type: "dropdown", content: "Community", items: communityItems },
         { type: "link", content: "Supporters", href: "/supporters" },
         { type: "section", content: "Contact", id: "contact", page: "/" },
-        { type: "link", content: <Image alt="Github" src="/logos/github-mark-white.svg" width={25} height={25} />, href: "https://github.com/coronasafe" }
+        { type: "link", content: <Image alt="Github" src={`/logos/github-mark${!mobileMenuOpen ? "-white" : ""}.svg`} width={50} height={50} className="md:w-[25px]" />, href: "https://github.com/coronasafe" }
     ];
 
     useEffect(() => {
@@ -115,7 +115,7 @@ export default function Header(props: {
 
         const { item, onHover } = props;
 
-        const className = "font-semibold hover:text-white/100 transition-all px-3 flex items-center justify-center h-full"
+        const className = "font-black md:font-semibold md:hover:text-white/100 transition-all px-3 flex items-center md:justify-center h-full"
 
         const itemRef = useRef<HTMLButtonElement>(null);
 
@@ -200,26 +200,32 @@ export default function Header(props: {
         <header className={`fixed inset-x-0 top-0 z-50 transition-all text-white/80`} id="header">
             <div className={`absolute inset-x-0 h-full bg-black/40 backdrop-blur -z-10 transition-all ${scrolled ? "top-0" : "-top-full"}`} />
             <nav
-                className={`flex relative items-stretch justify-between transition-all px-6 lg:px-8`}
+                className={`flex relative items-stretch justify-between transition-all px-4 md:px-6 lg:px-8`}
                 aria-label="Global"
             >
                 <div className={`flex lg:flex-1 transition-all ${scrolled ? "py-3" : "py-6"}`}>
-                    <Link href="/#" className="-m-1.5 p-1.5">
+                    <Link href="/" className="">
                         <span className="sr-only">Open Healthcare Network</span>
-                        <Image src="/ohc_logo_white.png" alt="" width={125} height={40} />
+                        <Image src="/ohc_logo_white.png" alt="" width={125} height={40} className="" />
                     </Link>
                 </div>
-                <div className="flex lg:hidden">
+                <div className="flex md:hidden mr-4">
                     <button
                         type="button"
-                        className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400"
+                        className=" inline-flex items-center justify-center rounded-md p-2.5 text-gray-400"
                         onClick={() => setMobileMenuOpen(true)}
                     >
                         <span className="sr-only">Open main menu</span>
-                        <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+                        <Bars3Icon color="white" className="h-6 w-6" aria-hidden="true" />
                     </button>
                 </div>
-                <div className="flex items-center">
+                <div className={`flex md:items-center p-6 md:p-0 fixed ${mobileMenuOpen ? "right-0" : "right-[-100vw]"} md:right-auto transition-all md:static bg-white/30 md:bg-transparent backdrop-blur-lg md:backdrop-blur-none text-black md:text-inherit h-screen md:h-auto top-0 md:top-auto w-screen md:w-auto flex-col md:flex-row text-5xl md:text-base`}>
+                    <button
+                        className="md:hidden block absolute top-6 right-8"
+                        onClick={() => setMobileMenuOpen(false)}
+                    >
+                        <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+                    </button>
                     {navigation.map((item, i) =>
                         <NavigationItemRender
                             item={item}
