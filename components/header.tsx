@@ -1,8 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { ReactNode, RefObject, useEffect, useRef, useState } from "react";
-import { Dialog, DialogPanel } from "@headlessui/react";
+import { ReactNode, useEffect, useRef, useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
