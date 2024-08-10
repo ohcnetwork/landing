@@ -1,6 +1,10 @@
 import fs from "fs";
 import Image from "next/image";
 
+export const metadata = {
+    title: "Supporters - Open Healthcare Network"
+}
+
 export default function Page() {
 
     const getImages = (directory: string) => {
