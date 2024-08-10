@@ -58,11 +58,10 @@ export default function Page() {
                         </p>
                         <div className="flex items-center justify-center gap-x-10 gap-y-6 flex-wrap mt-10">
                             {technologyLogos.map((logo, i) => (
-                                <div key={i} className="w-[125px] h-[45px] md:w-[200px] md:h-[75px] grayscale hover:grayscale-0 transition-all cursor-pointer">
+                                <div key={i} className="w-[125px] h-[45px] md:w-[200px] md:h-[75px] transition-all">
                                     <Image
                                         src={"/logos/technology/" + logo}
                                         alt="Logo"
-
                                         width={200}
                                         height={200}
                                         className="h-full w-full object-contain"
