@@ -1,4 +1,3 @@
-import fs from "fs";
 import Image from "next/image";
 
 export const metadata = {
@@ -7,27 +6,30 @@ export const metadata = {
 
 export default function Page() {
 
-    const getImages = (directory: string) => {
-        const files = fs.readdirSync(directory).filter(f => f.endsWith("svg") || f.endsWith("png"));
-        files.sort((a, b) => {
-            const aIsNumber = !isNaN(Number(a[0]));
-            const bIsNumber = !isNaN(Number(b[0]));
-
-            if (aIsNumber && bIsNumber) {
-                return a.localeCompare(b, undefined, { numeric: true });
-            } else if (aIsNumber) {
-                return -1;
-            } else if (bIsNumber) {
-                return 1;
-            } else {
-                return a.localeCompare(b);
-            }
-        });
-
-        return files;
-    }
-
-    const technologyLogos = getImages("public/logos/technology")
+    const technologyLogos: { name: string, image: string }[] = [
+        { name: "Github", image: "github.png" },
+        { name: "Cloudflare", image: "cloudflare.svg" },
+        { name: "OpenAI", image: "openai.svg" },
+        { name: "Vercel", image: "vercel.svg" },
+        { name: "Slack", image: "slack.svg" },
+        { name: "Amazon Web Services", image: "aws.svg" },
+        { name: "Digital Ocean", image: "digitalocean.svg" },
+        { name: "One Password", image: "onepassword.svg" },
+        { name: "Sentry", image: "sentry.svg" },
+        { name: "GitBook", image: "gitbook.png" },
+        { name: "Atlassian", image: "atlassian.svg" },
+        { name: "CircleCI", image: "circleci.svg" },
+        { name: "Exotel", image: "exotel.svg" },
+        { name: "GitKraken", image: "gitkraken.png" },
+        { name: "Heroku", image: "heroku.svg" },
+        { name: "Jet Brains", image: "jetbrains.svg" },
+        { name: "EUNOIANS", image: "eunoians.png" },
+        { name: "MapBox", image: "mapbox.svg" },
+        { name: "Netlify", image: "netlify.svg" },
+        { name: "New Relic", image: "newrelic.svg" },
+        { name: "Riafy", image: "riafy.png" },
+        { name: "Wowmakers", image: "wowmakers.jpeg" }
+    ]
 
     const sections = [
         {
@@ -64,7 +66,7 @@ export default function Page() {
                             {technologyLogos.map((logo, i) => (
                                 <div key={i} className="w-[125px] h-[45px] md:w-[200px] md:h-[75px] transition-all">
                                     <Image
-                                        src={"/logos/technology/" + logo}
+                                        src={"/logos/technology/" + logo.image}
                                         alt="Logo"
                                         width={200}
                                         height={200}
