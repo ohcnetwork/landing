@@ -56,7 +56,7 @@ export default function Header(props: {
             name: "Slack",
             description: "Join our Slack community to connect with other contributors.",
             image: "/dropdownicons/slack.jpg",
-            href: "https://slack.ohc.network/"
+            href: "https://join.slack.com/t/rebuildearth/shared_invite/zt-2ogi45jvm-8_cY~zppxzNxG7fuiTivjw"
         }
     ]
 
@@ -100,7 +100,8 @@ export default function Header(props: {
     useEffect(() => {
         const onMouseMove = (e: MouseEvent) => {
             const target = e.target as Element;
-            if (!target.closest(".nav-button") && !target.closest(".nav-dropdown") && target !== triangleRef.current) setShowDropdown(null);
+            if (!target.closest(".nav-button") && !target.closest(".nav-dropdown") && !target.closest("#dropdown-triangle"))
+                setShowDropdown(null);
         }
         window.addEventListener("mousemove", onMouseMove);
         return () => window.removeEventListener("mousemove", onMouseMove);
@@ -205,7 +206,7 @@ export default function Header(props: {
                 <div className={`flex lg:flex-1 transition-all ${scrolled ? "py-3" : "py-6"}`}>
                     <Link href="/" className="">
                         <span className="sr-only">Open Healthcare Network</span>
-                        <Image src="/ohc_logo_white.png" alt="" width={125} height={40} className="" />
+                        <Image src="/ohc_logo_white.png" alt="" width={125} height={40} className="h-[46px]" />
                     </Link>
                 </div>
                 <div className="flex md:hidden mr-4">
@@ -238,7 +239,7 @@ export default function Header(props: {
                         />
                     )}
                 </div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="black" className={`hidden md:block absolute bottom-[-1px] ${!!showDropdown ? "opacity-20" : "opacity-0"} transition-all`} ref={triangleRef}><path d="M24 22h-24l12-20z" /></svg>
+                <svg id="dropdown-triangle" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="black" className={`hidden md:block absolute bottom-[-1px] ${!!showDropdown ? "opacity-20" : "opacity-0"} transition-all`} ref={triangleRef}><path d="M24 22h-24l12-20z" /></svg>
             </nav>
             <div className={`nav-dropdown bg-black/20 ${scrolled ? "" : "backdrop-blur md:rounded-xl md:mx-10"} transition-all overflow-hidden fixed bottom-0 md:bottom-auto inset-x-0 md:inset-x-auto md:relative ${!!showDropdown ? "max-h-[400px]" : "max-h-0"}`} style={{ height: dropDownHeight }}>
                 <DropDownRender items={dropDownData || []} className="dropdown-animate-in" />

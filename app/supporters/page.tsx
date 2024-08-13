@@ -16,6 +16,8 @@ export default function Page() {
         { name: "Digital Ocean", image: "digitalocean.svg" },
         { name: "One Password", image: "onepassword.svg" },
         { name: "Sentry", image: "sentry.svg" },
+        { name: "Cypress", image: "cypress.svg" },
+        { name: "BrowserStack", image: "browserstack.png" },
         { name: "GitBook", image: "gitbook.png" },
         { name: "Atlassian", image: "atlassian.svg" },
         { name: "CircleCI", image: "circleci.svg" },
@@ -28,7 +30,7 @@ export default function Page() {
         { name: "Netlify", image: "netlify.svg" },
         { name: "New Relic", image: "newrelic.svg" },
         { name: "Riafy", image: "riafy.png" },
-        { name: "Wowmakers", image: "wowmakers.jpeg" }
+        { name: "Wowmakers", image: "wowmakers.jpeg" },
     ]
 
     const sections = [
