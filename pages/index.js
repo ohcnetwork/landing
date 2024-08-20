@@ -798,7 +798,7 @@ export default function Home() {
                     <span aria-hidden="true">↓</span>
                   </h3>
                   <a
-                    href="https://join.slack.com/t/rebuildearth/shared_invite/zt-2ogi45jvm-8_cY~zppxzNxG7fuiTivjw"
+                    href="https://slack.ohc.network"
                     target="_blank"
                     className="mt-5 inline-block w-full text-center rounded-3xl bg-green-600 py-2.5 text-base font-semibold text-white hover:bg-green-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-900"
                   >

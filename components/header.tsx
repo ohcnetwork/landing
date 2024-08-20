@@ -56,7 +56,7 @@ export default function Header(props: {
             name: "Slack",
             description: "Join our Slack community to connect with other contributors.",
             image: "/dropdownicons/slack.jpg",
-            href: "https://join.slack.com/t/rebuildearth/shared_invite/zt-2ogi45jvm-8_cY~zppxzNxG7fuiTivjw"
+            href: "https://slack.ohc.network"
         }
     ]
 
