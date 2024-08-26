@@ -64,7 +64,7 @@ export default function Page() {
                             War ready EMR software, empowering thousands of ICU beds across India.<br /> All built on open source.
                         </div>
                         <div className="flex items-center gap-4 mt-6">
-                            <Link href="https://github.com/coronasafe/care_fe" className=" opacity-80 bg-white text-black px-4 py-2 rounded-full font-semibold hover:opacity-100 transition-all flex items-center" target="_blank">
+                            <Link href="https://github.com/ohcnetwork/care_fe" className=" opacity-80 bg-white text-black px-4 py-2 rounded-full font-semibold hover:opacity-100 transition-all flex items-center" target="_blank">
                                 <Image src={"/logos/github-mark.svg"} alt="GitHub" width={20} height={20} className="mr-2" />
                                 Star on GitHub
                             </Link>

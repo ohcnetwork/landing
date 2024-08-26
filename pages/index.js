@@ -157,7 +157,7 @@ export default function Home() {
         <title>Open Healthcare Network: Transforming Healthcare with AI</title>
       </Head>
       {/* Header */}
-      <Header/>
+      <Header />
       {/* Hero */}
       <main>
         {/* Hero section */}
@@ -202,7 +202,7 @@ export default function Home() {
                 efficiency in compassionate healthcare delivery
               </p>
               <Link
-                href={"https://github.com/coronasafe"}
+                href={"https://github.com/ohcnetwork"}
                 className="bg-primary-500 hover:bg-primary-600 text-white rounded-full transition-all font-bold py-3 px-4 pr-4 inline-flex mt-6 items-center gap-2"
               >
                 <svg

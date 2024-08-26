@@ -72,7 +72,7 @@ export function Intro() {
       </p>
       <div className="mt-8 flex flex-wrap justify-center gap-x-1 gap-y-3 sm:gap-x-2 ">
         <IconLink
-          href="https://github.com/coronasafe/care_fe/"
+          href="https://github.com/ohcnetwork/care_fe/"
           icon={GitHubIcon}
           className="flex-none px-4"
         >
