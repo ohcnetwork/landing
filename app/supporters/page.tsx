@@ -1,46 +1,88 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata = {
   title: "Supporters - Open Healthcare Network",
 };
 
 export default function Page() {
-  const technologyLogos: { name: string; image: string }[] = [
-    { name: "Github", image: "github.png" },
-    { name: "Cloudflare", image: "cloudflare.svg" },
-    { name: "OpenAI", image: "openai.svg" },
-    { name: "Vercel", image: "vercel.svg" },
-    { name: "Slack", image: "slack.svg" },
-    { name: "Amazon Web Services", image: "aws.svg" },
-    { name: "Digital Ocean", image: "digitalocean.svg" },
-    { name: "One Password", image: "onepassword.svg" },
-    { name: "Sentry", image: "sentry.svg" },
-    { name: "GitBook", image: "gitbook.png" },
-    { name: "Atlassian", image: "atlassian.svg" },
-    { name: "CircleCI", image: "circleci.svg" },
-    { name: "Exotel", image: "exotel.svg" },
-    { name: "GitKraken", image: "gitkraken.png" },
-    { name: "Heroku", image: "heroku.svg" },
-    { name: "Jet Brains", image: "jetbrains.svg" },
-    { name: "EUNOIANS", image: "eunoians.png" },
-    { name: "MapBox", image: "mapbox.svg" },
-    { name: "Netlify", image: "netlify.svg" },
-    { name: "New Relic", image: "newrelic.svg" },
-    { name: "Riafy", image: "riafy.png" },
-    { name: "Wowmakers", image: "wowmakers.jpeg" },
+  const currentSupporters: { name: string; image: string; url: string }[] = [
+    { name: "Github", image: "github.png", url: "https://github.com" },
+    {
+      name: "Cloudflare",
+      image: "cloudflare.svg",
+      url: "https://www.cloudflare.com",
+    },
+    { name: "OpenAI", image: "openai.svg", url: "https://www.openai.com" },
+    { name: "Vercel", image: "vercel.svg", url: "https://vercel.com" },
+    { name: "Slack", image: "slack.svg", url: "https://slack.com" },
+    {
+      name: "Digital Ocean",
+      image: "digitalocean.svg",
+      url: "https://www.digitalocean.com?utm_medium=opensource&utm_source=open-healthcare-network",
+    },
+    {
+      name: "One Password",
+      image: "onepassword.svg",
+      url: "https://1password.com",
+    },
+    { name: "Sentry", image: "sentry.svg", url: "https://sentry.io" },
+    { name: "GitBook", image: "gitbook.png", url: "https://www.gitbook.com" },
+    {
+      name: "Atlassian",
+      image: "atlassian.svg",
+      url: "https://www.atlassian.com",
+    },
+    {
+      name: "Jet Brains",
+      image: "jetbrains.svg",
+      url: "https://www.jetbrains.com",
+    },
+    { name: "Netlify", image: "netlify.svg", url: "https://www.netlify.com" },
+  ];
+
+  const pastSupporters: { name: string; image: string; url: string }[] = [
+    {
+      name: "Amazon Web Services",
+      image: "aws.svg",
+      url: "https://aws.amazon.com",
+    },
+    { name: "CircleCI", image: "circleci.svg", url: "https://circleci.com" },
+    { name: "Exotel", image: "exotel.svg", url: "https://exotel.com" },
+    {
+      name: "GitKraken",
+      image: "gitkraken.png",
+      url: "https://www.gitkraken.com",
+    },
+    { name: "Heroku", image: "heroku.svg", url: "https://www.heroku.com" },
+    { name: "EUNOIANS", image: "eunoians.png", url: "https://eunoians.com" },
+    { name: "MapBox", image: "mapbox.svg", url: "https://www.mapbox.com" },
+    { name: "New Relic", image: "newrelic.svg", url: "https://newrelic.com" },
+    { name: "Riafy", image: "riafy.png", url: "https://riafy.me" },
+    {
+      name: "Wowmakers",
+      image: "wowmakers.jpeg",
+      url: "https://www.wowmakers.com",
+    },
   ];
 
   const sections = [
     {
-      name: "Technology",
+      name: "Current Supporters",
       description:
-        "A diverse group of technology partners have contributed software technologies and tools that volunteers utilize to build, upgrade, and maintain Open Healthcare Network Products.",
-      logos: technologyLogos,
+        "These technology partners are currently contributing software technologies and tools that volunteers utilize to build, upgrade, and maintain Open Healthcare Network Products.",
+      logos: currentSupporters,
+    },
+    {
+      name: "Past Supporters",
+      description:
+        "We're grateful for the support these partners have provided in the past, contributing to the growth and success of Open Healthcare Network.",
+      logos: pastSupporters,
     },
   ];
 
   return (
-    <div>
+    <div className="">
       <div
         className="flex items-center justify-center px-10 py-20 md:px-20 md:py-40"
         style={{
@@ -54,7 +96,7 @@ export default function Page() {
           Supporters
         </div>
       </div>
-      <div className="px-4 md:px-20">
+      <div className="max-w-5xl mx-auto px-4">
         {sections.map((section, i) => (
           <div
             key={i}
@@ -64,20 +106,25 @@ export default function Page() {
             <p className="text-gray-700 max-w-[700px] mt-5">
               {section.description}
             </p>
-            <div className="flex items-center justify-center gap-x-10 gap-y-6 flex-wrap mt-10">
-              {technologyLogos.map((logo, i) => (
-                <div
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 mt-10">
+              {section.logos.map((logo, i) => (
+                <Link
                   key={i}
-                  className="w-[125px] h-[45px] md:w-[200px] md:h-[75px] transition-all"
+                  href={logo.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center"
                 >
-                  <Image
-                    src={"/logos/technology/" + logo.image}
-                    alt="Logo"
-                    width={200}
-                    height={200}
-                    className="h-full w-full object-contain"
-                  />
-                </div>
+                  <div className="w-full h-[45px] md:h-[75px] transition-all hover:scale-105">
+                    <Image
+                      src={"/logos/technology/" + logo.image}
+                      alt={logo.name}
+                      width={200}
+                      height={200}
+                      className="h-full w-full object-contain"
+                    />
+                  </div>
+                </Link>
               ))}
             </div>
           </div>
