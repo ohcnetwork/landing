@@ -255,7 +255,7 @@ export default function Header(props: { fixed?: boolean }) {
           <Link href="/" className="">
             <span className="sr-only">Open Healthcare Network</span>
             <Image
-              src="/ohc_logo_white.png"
+              src="/ohc_logo_white.svg"
               alt=""
               width={125}
               height={40}

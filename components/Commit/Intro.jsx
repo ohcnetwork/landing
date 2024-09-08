@@ -45,7 +45,7 @@ export function Intro() {
       <div>
         <Link href="/">
           <Image
-            src="/ohc_logo_white.png"
+            src="/ohc_logo_white.svg"
             alt="Open Healthcare Network"
             width={160}
             height={40}
