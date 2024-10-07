@@ -112,14 +112,17 @@ export default function Header(props: { fixed?: boolean }) {
   }, [showDropdown]);
 
   useEffect(() => {
-    const handleClickOutside = (e: MouseEvent) => {
+    const onMouseMove = (e: MouseEvent) => {
       const target = e.target as Element;
-      if (!target.closest(".nav-button") && !target.closest(".nav-dropdown")) {
+      if (
+        !target.closest(".nav-button") &&
+        !target.closest(".nav-dropdown") &&
+        target !== triangleRef.current
+      )
         setShowDropdown(null);
-      }
     };
-    window.addEventListener("click", handleClickOutside);
-    return () => window.removeEventListener("click", handleClickOutside);
+    window.addEventListener("mousemove", onMouseMove);
+    return () => window.removeEventListener("mousemove", onMouseMove);
   }, []);
 
   useEffect(() => {
@@ -130,12 +133,12 @@ export default function Header(props: { fixed?: boolean }) {
 
   const NavigationItemRender = (props: {
     item: NavigationItem;
-    onMouseClick?: (clickState: boolean, leftOffset: number) => void;
+    onHover?: (hoverstate: boolean, leftOffset: number) => void;
   }) => {
-    const { item, onMouseClick } = props;
+    const { item, onHover } = props;
 
     const className =
-      "font-black md:font-semibold md:hover:text-white/100 transition-all px-3 flex items-center md:justify-center py-8";
+      "font-black md:font-semibold md:hover:text-white/100 transition-all px-3 flex items-center md:justify-center h-full";
 
     const itemRef = useRef<HTMLButtonElement>(null);
 
@@ -177,20 +180,19 @@ export default function Header(props: { fixed?: boolean }) {
           <button
             ref={itemRef}
             className={"nav-button " + className}
-            onClick={(e) => {
-              e.stopPropagation();
-              const newShowDropdown =
-                showDropdown === navigation.indexOf(item) + 1
-                  ? null
-                  : navigation.indexOf(item) + 1;
-              setShowDropdown(newShowDropdown);
-              if (newShowDropdown !== null) {
-                onMouseClick?.(
-                  true,
-                  (itemRef.current?.getBoundingClientRect().left || 0) +
-                    (itemRef.current?.clientWidth || 0) / 2
-                );
-              }
+            onMouseOver={() => {
+              onHover?.(
+                true,
+                (itemRef.current?.getBoundingClientRect().left || 0) +
+                  (itemRef.current?.clientWidth || 0) / 2
+              );
+            }}
+            onMouseOut={() => {
+              onHover?.(
+                false,
+                (itemRef.current?.getBoundingClientRect().left || 0) +
+                  (itemRef.current?.clientWidth || 0) / 2
+              );
             }}
           >
             {item.content}
@@ -274,7 +276,7 @@ export default function Header(props: { fixed?: boolean }) {
         <div
           className={`flex md:items-center p-6 md:p-0 fixed ${
             mobileMenuOpen ? "right-0" : "right-[-100vw]"
-          } md:right-auto transition-all md:static bg-black/50 pb-[300px] md:pb-0 md:bg-transparent backdrop-blur-lg md:backdrop-blur-none h-screen md:h-auto top-0 md:top-auto w-screen md:w-auto flex-col md:flex-row text-4xl md:text-base`}
+          } md:right-auto transition-all md:static bg-black/50 pb-[300px] md:pb-0 md:bg-transparent backdrop-blur-lg md:backdrop-blur-none h-screen md:h-auto top-0 md:top-auto w-screen md:w-auto flex-col md:flex-row text-5xl md:text-base`}
         >
           <button
             className="md:hidden block absolute top-6 right-8"
@@ -286,8 +288,9 @@ export default function Header(props: { fixed?: boolean }) {
             <NavigationItemRender
               item={item}
               key={i}
-              onMouseClick={(clickState, leftOffset) => {
-                if (clickState) {
+              onHover={(hoverstate, leftOffset) => {
+                if (hoverstate) {
+                  setShowDropdown(i + 1);
                   triangleRef.current?.style.setProperty(
                     "left",
                     `${leftOffset - triangleRef.current.clientWidth / 2}px`
