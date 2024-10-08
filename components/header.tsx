@@ -20,6 +20,7 @@ export default function Header(props: { fixed?: boolean }) {
   );
   const [dropDownHeight, setDropDownHeight] = useState(0);
 
+  const headerContainerRef = useRef<HTMLDivElement>(null);
   const triangleRef = useRef<SVGSVGElement>(null); // SVGSVG? :D
 
   const productsItems = [
@@ -117,6 +118,7 @@ export default function Header(props: { fixed?: boolean }) {
       if (
         !target.closest(".nav-button") &&
         !target.closest(".nav-dropdown") &&
+        !headerContainerRef.current?.contains(target) &&
         target !== triangleRef.current
       )
         setShowDropdown(null);
@@ -248,6 +250,8 @@ export default function Header(props: { fixed?: boolean }) {
         aria-label="Global"
       >
         <div
+          id="header-container"
+          ref={headerContainerRef}
           className={`flex lg:flex-1 transition-all ${
             scrolled ? "py-3" : "py-6"
           }`}
