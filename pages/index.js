@@ -63,7 +63,7 @@ const secondaryFeatures = [
   },
 ];
 const featuredTestimonial = {
-  body: "Open Healthcare Network in India is a profoundly inspiring story of how we can accelerate human progress by enabling the world's soon-to-be largest developer community with the possibilities of AI. India's developers, building with their copilot companion, will help save lives -- one commit at a time. 🇮🇳",
+  body: "Open Healthcare Network in India is a profoundly inspiring story of how we can accelerate human progress by enabling the world&apos;s soon-to-be largest developer community with the possibilities of AI. India&apos;s developers, building with their copilot companion, will help save lives -- one commit at a time. 🇮🇳",
   author: {
     name: "Thomas Dohmke",
     handle: "GitHub CEO",
@@ -425,7 +425,7 @@ export default function Home() {
                       <dt className="ml-9 inline-block font-semibold text-white">
                         <feature.icon className="absolute left-1 top-1 h-5 w-5 text-primary-500" aria-hidden="true" />
                         {feature.name}
-                      </dt>{' '}
+                      </dt>{&apos; &apos;}
                       <dd className="inline">{feature.description}</dd>
                     </div>
                   ))}
@@ -440,7 +440,7 @@ export default function Home() {
                 className="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-25"
                 style={{
                   clipPath:
-                    'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+                    &apos;polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)&apos;,
                 }}
               />
             </div>
@@ -797,10 +797,10 @@ export default function Home() {
                   Recognized as the 50th Digital Public Good
                 </h2>
                 <p className="text-lg text-center max-w-xl mx-auto text-gray-600 mb-8">
-                  Open Healthcare Network's <b>Care</b> has been honored by the
-                  United Nations as a Digital Public Good, marking a significant
-                  milestone in our mission to transform global healthcare
-                  through open-source solutions.
+                  Open Healthcare Network&apos;s <b>Care</b> has been honored by
+                  the United Nations as a Digital Public Good, marking a
+                  significant milestone in our mission to transform global
+                  healthcare through open-source solutions.
                 </p>
                 <div className="flex justify-center">
                   <a
