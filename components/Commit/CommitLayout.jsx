@@ -76,7 +76,7 @@ function FixedSidebar({ main, footer }) {
 
 export default function CommitLayout({ children }) {
   return (
-    <div className="py-20">
+    <div className="pb-20">
       <div className="flex min-h-full flex-col bg-white dark:bg-gray-950">
         <FixedSidebar main={<Intro />} footer={<IntroFooter />} />
       </div>

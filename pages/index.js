@@ -774,6 +774,59 @@ export default function Home() {
             </div>
           </div>
         </div>
+        {/* New DPG Recognition Section */}
+        <section className="relative bg-gradient-to-br from-white via-green-50 to-white px-6 py-24 sm:py-48 lg:px-8 mt-8 overflow-hidden">
+          <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+          <div className="relative mx-auto max-w-7xl">
+            <div className="lg:grid items-center">
+              <div className="col-span-7 mb-12 lg:mb-0">
+                <div className="flex items-center justify-center mb-8">
+                  <img
+                    className="h-12 md:h-28 mr-4"
+                    src="https://www.digitalpublicgoods.net/wp-content/themes/dpga/images/logo.svg"
+                    alt="Digital Public Goods Alliance"
+                  />
+                  <div className="h-12 w-px bg-gray-300 mx-4"></div>
+                  <img
+                    className="h-12 md:h-28"
+                    src="/logos/care-logo.svg"
+                    alt="Care Logo"
+                  />
+                </div>
+                <h2 className="text-3xl text-center font-bold text-gray-900 sm:text-4xl mb-6">
+                  Recognized as the 50th Digital Public Good
+                </h2>
+                <p className="text-lg text-center max-w-xl mx-auto text-gray-600 mb-8">
+                  Open Healthcare Network's <b>Care</b> has been honored by the
+                  United Nations as a Digital Public Good, marking a significant
+                  milestone in our mission to transform global healthcare
+                  through open-source solutions.
+                </p>
+                <div className="flex justify-center">
+                  <a
+                    href="https://www.digitalpublicgoods.net/registry"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center mx-auto px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 transition duration-150 ease-in-out shadow-md hover:shadow-lg"
+                  >
+                    Explore the DPG Registry
+                    <svg
+                      className="ml-2 -mr-1 w-5 h-5"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <CommitLayout />
         <section
           id="contact"
