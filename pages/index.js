@@ -280,13 +280,13 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex justify-center">
-                  <div className="w-28 flex justify-center items-center">
+                  <div className="w-16 flex justify-center items-center">
                     <Image
                       width={160}
                       height={40}
                       className="object-contain"
-                      src="/logos/beckn-logo.png"
-                      alt="beckn protocol Logo"
+                      src="/logos/ACT-Logo.png"
+                      alt="ACT Logo"
                     />
                   </div>
                 </div>
@@ -302,13 +302,13 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex justify-center">
-                  <div className="w-16 flex items-center">
+                  <div className="w-24 flex items-center">
                     <Image
                       width={160}
                       height={40}
                       className="object-contain"
-                      src="/logos/ACT-Logo.png"
-                      alt="ACT Logo"
+                      src="/logos/ima-kochi.png"
+                      alt="IMA Logo"
                     />
                   </div>
                 </div>
