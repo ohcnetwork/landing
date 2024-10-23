@@ -63,7 +63,7 @@ const secondaryFeatures = [
   },
 ];
 const featuredTestimonial = {
-  body: "Open Healthcare Network in India is a profoundly inspiring story of how we can accelerate human progress by enabling the world's soon-to-be largest developer community with the possibilities of AI. India's developers, building with their copilot companion, will help save lives -- one commit at a time. 🇮🇳",
+  body: "Open Healthcare Network in India is a profoundly inspiring story of how we can accelerate human progress by enabling the world&apos;s soon-to-be largest developer community with the possibilities of AI. India&apos;s developers, building with their copilot companion, will help save lives -- one commit at a time. 🇮🇳",
   author: {
     name: "Thomas Dohmke",
     handle: "GitHub CEO",
@@ -157,7 +157,7 @@ export default function Home() {
         <title>Open Healthcare Network: Transforming Healthcare with AI</title>
       </Head>
       {/* Header */}
-      <Header/>
+      <Header />
       {/* Hero */}
       <main>
         {/* Hero section */}
@@ -202,7 +202,7 @@ export default function Home() {
                 efficiency in compassionate healthcare delivery
               </p>
               <Link
-                href={"https://github.com/coronasafe"}
+                href={"https://github.com/ohcnetwork"}
                 className="bg-primary-500 hover:bg-primary-600 text-white rounded-full transition-all font-bold py-3 px-4 pr-4 inline-flex mt-6 items-center gap-2"
               >
                 <svg
@@ -280,13 +280,13 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex justify-center">
-                  <div className="w-28 flex justify-center items-center">
+                  <div className="w-16 flex justify-center items-center">
                     <Image
                       width={160}
                       height={40}
                       className="object-contain"
-                      src="/logos/beckn-logo.png"
-                      alt="beckn protocol Logo"
+                      src="/logos/ACT-Logo.png"
+                      alt="ACT Logo"
                     />
                   </div>
                 </div>
@@ -302,13 +302,13 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex justify-center">
-                  <div className="w-16 flex items-center">
+                  <div className="w-24 flex items-center">
                     <Image
                       width={160}
                       height={40}
                       className="object-contain"
-                      src="/logos/ACT-Logo.png"
-                      alt="ACT Logo"
+                      src="/logos/ima-kochi.png"
+                      alt="IMA Logo"
                     />
                   </div>
                 </div>
@@ -425,7 +425,7 @@ export default function Home() {
                       <dt className="ml-9 inline-block font-semibold text-white">
                         <feature.icon className="absolute left-1 top-1 h-5 w-5 text-primary-500" aria-hidden="true" />
                         {feature.name}
-                      </dt>{' '}
+                      </dt>{&apos; &apos;}
                       <dd className="inline">{feature.description}</dd>
                     </div>
                   ))}
@@ -440,7 +440,7 @@ export default function Home() {
                 className="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-25"
                 style={{
                   clipPath:
-                    'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+                    &apos;polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)&apos;,
                 }}
               />
             </div>
@@ -774,6 +774,59 @@ export default function Home() {
             </div>
           </div>
         </div>
+        {/* New DPG Recognition Section */}
+        <section className="relative bg-gradient-to-br from-white via-green-50 to-white px-6 py-24 sm:py-48 lg:px-8 mt-8 overflow-hidden">
+          <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+          <div className="relative mx-auto max-w-7xl">
+            <div className="lg:grid items-center">
+              <div className="col-span-7 mb-12 lg:mb-0">
+                <div className="flex items-center justify-center mb-8">
+                  <img
+                    className="h-12 md:h-28 mr-4"
+                    src="https://www.digitalpublicgoods.net/wp-content/themes/dpga/images/logo.svg"
+                    alt="Digital Public Goods Alliance"
+                  />
+                  <div className="h-12 w-px bg-gray-300 mx-4"></div>
+                  <img
+                    className="h-12 md:h-28"
+                    src="/logos/care-logo.svg"
+                    alt="Care Logo"
+                  />
+                </div>
+                <h2 className="text-3xl text-center font-bold text-gray-900 sm:text-4xl mb-6">
+                  Recognized as the 50th Digital Public Good
+                </h2>
+                <p className="text-lg text-center max-w-xl mx-auto text-gray-600 mb-8">
+                  Open Healthcare Network&apos;s <b>Care</b> has been honored by
+                  the United Nations as a Digital Public Good, marking a
+                  significant milestone in our mission to transform global
+                  healthcare through open-source solutions.
+                </p>
+                <div className="flex justify-center">
+                  <a
+                    href="https://www.digitalpublicgoods.net/registry"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center mx-auto px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 transition duration-150 ease-in-out shadow-md hover:shadow-lg"
+                  >
+                    Explore the DPG Registry
+                    <svg
+                      className="ml-2 -mr-1 w-5 h-5"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <CommitLayout />
         <section
           id="contact"
