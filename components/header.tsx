@@ -116,13 +116,12 @@ export default function Header(props: { fixed?: boolean }) {
     const onMouseMove = (e: MouseEvent) => {
       const target = e.target as Element;
       if (
-        !target.closest(".nav-button") &&
-        !target.closest(".nav-dropdown") &&
-        !headerContainerRef.current?.contains(target) &&
-        target !== triangleRef.current
-      )
+        !target.closest(".nav-button") && 
+        !target.closest(".nav-dropdown") && 
+        !target.closest("#dropdown-triangle")
+        )
         setShowDropdown(null);
-    };
+    }
     window.addEventListener("mousemove", onMouseMove);
     return () => window.removeEventListener("mousemove", onMouseMove);
   }, []);
@@ -263,7 +262,7 @@ export default function Header(props: { fixed?: boolean }) {
               alt=""
               width={125}
               height={40}
-              className=""
+              className="h-[46px]"
             />
           </Link>
         </div>
@@ -305,6 +304,7 @@ export default function Header(props: { fixed?: boolean }) {
           ))}
         </div>
         <svg
+          id="dropdown-triangle"
           xmlns="http://www.w3.org/2000/svg"
           width="14"
           height="14"

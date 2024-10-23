@@ -27,6 +27,8 @@ export default function Page() {
       url: "https://1password.com",
     },
     { name: "Sentry", image: "sentry.svg", url: "https://sentry.io" },
+    { name: "Cypress", image: "cypress.svg", url: "https://cypress.io" },
+    { name: "BrowserStack", image: "browserstack.png", url: "https://browserstack.com" },
     { name: "GitBook", image: "gitbook.png", url: "https://www.gitbook.com" },
     {
       name: "Atlassian",
@@ -106,7 +108,7 @@ export default function Page() {
             <p className="text-gray-700 max-w-[700px] mt-5">
               {section.description}
             </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 mt-10">
+            <div className="flex flex-wrap gap-10 items-center justify-center mt-10">
               {section.logos.map((logo, i) => (
                 <Link
                   key={i}
@@ -115,7 +117,7 @@ export default function Page() {
                   rel="noopener noreferrer"
                   className="flex items-center justify-center"
                 >
-                  <div className="w-full h-[45px] md:h-[75px] transition-all hover:scale-105">
+                  <div className="h-[100px] w-[200px] transition-all hover:scale-105">
                     <Image
                       src={"/logos/technology/" + logo.image}
                       alt={logo.name}
