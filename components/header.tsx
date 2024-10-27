@@ -27,11 +27,11 @@ export default function Header(props: { fixed?: boolean }) {
     {
       name: "CARE",
       description:
-        "War ready EMR software, empowering thousands of ICU beds across India. All built on open source.",
+        "War ready HMIS software, empowering thousands of ICU beds across India. All built on open source.",
       image: "/features/care-desktop.png",
       href: "/care",
     },
-    {
+    /*{
       name: "Ayushma",
       description:
         "AI powered chatbot to assist doctors and nurses in managing patient care.",
@@ -44,7 +44,7 @@ export default function Header(props: { fixed?: boolean }) {
         "Tracking the progress of open source contributors and rewarding them for their contributions.",
       image: "/features/care-desktop.png",
       href: "/leaderboard",
-    },
+    },*/
   ];
 
   const communityItems = [
@@ -80,7 +80,7 @@ export default function Header(props: { fixed?: boolean }) {
   );
 
   const navigation: NavigationItem[] = [
-    //{ type: "dropdown", content: "Products", items: productsItems },
+    { type: "dropdown", content: "Products", items: productsItems },
     { type: "dropdown", content: "Community", items: communityItems },
     { type: "link", content: "Supporters", href: "/supporters" },
     { type: "section", content: "Contact", id: "contact", page: "/" },
@@ -116,12 +116,12 @@ export default function Header(props: { fixed?: boolean }) {
     const onMouseMove = (e: MouseEvent) => {
       const target = e.target as Element;
       if (
-        !target.closest(".nav-button") && 
-        !target.closest(".nav-dropdown") && 
+        !target.closest(".nav-button") &&
+        !target.closest(".nav-dropdown") &&
         !target.closest("#dropdown-triangle")
-        )
+      )
         setShowDropdown(null);
-    }
+    };
     window.addEventListener("mousemove", onMouseMove);
     return () => window.removeEventListener("mousemove", onMouseMove);
   }, []);
