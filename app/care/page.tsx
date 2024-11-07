@@ -205,7 +205,7 @@ export default function Page() {
               alt=""
               width={5000}
               height={5000}
-              className="w-[80vw] mt-14 block"
+              className="w-full md:w-[80vw] mt-14 block"
             />
           </div>
         </div>
@@ -310,6 +310,25 @@ export default function Page() {
               <Text className="mt-2">{app.desc}</Text>
             </Link>
           ))}
+        </div>
+        <Heading size={3} className="mt-40 mb-6 text-center">
+          Built with ❤️ for Open Source
+        </Heading>
+        <div className="flex items-center justify-center flex-col md:flex-row gap-4 mt-6">
+          <Link
+            href="https://github.com/ohcnetwork/care_fe"
+            className=" opacity-80 bg-black text-white px-6 py-4 rounded-full font-semibold hover:opacity-100 transition-all flex items-center"
+            target="_blank"
+          >
+            <i className="fab fa-github mr-2 text-2xl" />
+            Star CARE on GitHub
+          </Link>
+          <Link
+            href={"https://care.ohc.network"}
+            className="text-black font-semibold flex opacity-80 hover:opacity-100 transition-all"
+          >
+            View Demo
+          </Link>
         </div>
       </div>
     </div>
