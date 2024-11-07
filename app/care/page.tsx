@@ -236,9 +236,9 @@ export default function Page() {
           Eliminating the distance between doctors and health centers
         </Heading>
         <Text className="text-center md:w-[600px]">
-          With it's TeleICU features, CARE can be used to bridge the distance
-          between spoke and hub hospitals, supporting real time monitoring
-          accross facilities from one part of the world to another.
+          With it&apos;s TeleICU features, CARE can be used to bridge the
+          distance between spoke and hub hospitals, supporting real time
+          monitoring accross facilities from one part of the world to another.
         </Text>
         <div className="flex items-center gap-4 flex-wrap justify-center mt-10">
           {teleICUFeatures.map((feature, i) => (
