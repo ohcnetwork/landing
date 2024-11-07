@@ -1,20 +1,10 @@
+import { Heading, Text } from "@/components/Text";
 import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
   title: "CARE - Open Healthcare Network",
 };
-
-const facilityFeatures = [
-  { name: "Assets" },
-  { name: "Locations" },
-  { name: "Beds" },
-  { name: "Resources" },
-  { name: "Resource Requests" },
-  { name: "Capacity Monitoring" },
-  { name: "Notice Board" },
-  { name: "Notifications" },
-];
 
 const patientFeatures: { title: string; desc: string; icon: string }[] = [
   {
@@ -64,17 +54,69 @@ const patientFeatures: { title: string; desc: string; icon: string }[] = [
   },
 ];
 
+const teleICUFeatures = [
+  {
+    name: "Central Nursing Station",
+    desc: "Monitor patient vitals from a central hub",
+    image: "/features/cns.png",
+  },
+  {
+    name: "Live Camera Monitoring",
+    desc: "See live feed from ICU cameras",
+    image: "/features/monitoring.png",
+  },
+  {
+    name: "Doctor Connect",
+    desc: "Connect with patients and nursing staff through online video and text communications",
+    image: "/features/doctor-connect.png",
+  },
+];
+
 const careApps = [
   {
-    name: "Care Scribe",
-    desc: "Scribe desc",
-    display: <></>,
+    name: "CARE Scribe",
+    desc: "AI-powered autofilling of EMR records to reduce manual data entry.",
+    display: (
+      <>
+        <i className="fas fa-microphone text-7xl" />
+      </>
+    ),
+    className: "from-red-500 to-orange-500",
+    link: "https://github.com/ohcnetwork/care_scribe_fe",
   },
   {
-    name: "HCX",
+    name: "HCX - Health Care Exchange",
+    desc: "Integration with Health Claims Exchange",
+    className: "from-blue-500 to-blue-400",
+    display: (
+      <>
+        <Image
+          src="/logos/hcx.png"
+          alt="Health Care Exchange"
+          width={200}
+          height={200}
+          className="contrast-100 brightness-0 invert -translate-x-8"
+        />
+      </>
+    ),
+    link: "https://github.com/ohcnetwork/care_hcx_fe",
   },
   {
-    name: "ABDM",
+    name: "ABDM - Ayushman Bharat Digital Mission",
+    desc: "Integration with the Ayushman Bharat Digital Mission",
+    className: "from-purple-500 to-violet-600",
+    display: (
+      <>
+        <Image
+          src="/logos/national_health_authority.png"
+          alt="National Health Authority Logo"
+          width={200}
+          height={200}
+          className="invert"
+        />
+      </>
+    ),
+    link: "https://github.com/ohcnetwork/care_abdm_fe",
   },
 ];
 
@@ -89,19 +131,19 @@ function FeatureTile(props: {
   return (
     <div
       className={`flex ${
-        toLeft ? "flex-row-reverse" : "flex-row"
-      } items-center gap-10`}
+        toLeft ? "lg:flex-row-reverse" : "lg:flex-row"
+      } items-center gap-10 flex-col`}
     >
       <Image
         alt="Facility Management"
         src={image}
-        className="shadow-xl rounded-2xl"
+        className="shadow-xl rounded-2xl w-full lg:w-auto"
         width={600}
         height={415}
       />
-      <div className="w-[400px]">
-        <h3 className="text-3xl font-black">{title}</h3>
-        <p className="text-slate-700 mt-4">{content}</p>
+      <div className="w-full lg:w-[400px]">
+        <Heading size={1}>{title}</Heading>
+        <Text className="mt-4">{content}</Text>
       </div>
     </div>
   );
@@ -128,14 +170,14 @@ export default function Page() {
                 alt="Care Logo"
                 height={500}
                 width={500}
-                className="w-[400px] object-cover"
+                className=" w-[300px] md:w-[400px] object-cover"
               />
             </div>
-            <div className="text-white/80 text-2xl w-3/4 mt-4">
+            <Text className="text-white/80 text-2xl w-3/4 mt-4">
               War ready HMIS software, empowering thousands of ICU beds across
               India.
               <br /> All built on open source.
-            </div>
+            </Text>
             <div className="flex items-center gap-4 mt-6">
               <Link
                 href="https://github.com/ohcnetwork/care_fe"
@@ -168,10 +210,10 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <div className="bg-white text-black flex flex-col items-center justify-center p-20">
-        <h1 className="font-black text-4xl">
-          Everything a Healthcare Facility needs, in one place.
-        </h1>
+      <div className="bg-white text-black flex flex-col items-center justify-center p-6 md:p-20">
+        <Heading size={3} className="text-center">
+          <span>Everything</span> a Healthcare Facility needs, in one place.
+        </Heading>
         <div className="flex flex-col gap-20 mt-20">
           <FeatureTile
             image="/features/care-facility-overview.png"
@@ -190,40 +232,83 @@ export default function Page() {
             content="Manage beds, middleware uptime, and monitor camera feeds"
           />
         </div>
-        <h1 className="font-black text-4xl mt-40 mb-10">
+        <Heading size={3} className="text-center mt-40 mb-10">
+          Eliminating the distance between doctors and health centers
+        </Heading>
+        <Text className="text-center md:w-[600px]">
+          With it's TeleICU features, CARE can be used to bridge the distance
+          between spoke and hub hospitals, supporting real time monitoring
+          accross facilities from one part of the world to another.
+        </Text>
+        <div className="flex items-center gap-4 flex-wrap justify-center mt-10">
+          {teleICUFeatures.map((feature, i) => (
+            <div key={i} className="w-full md:w-[500px] rounded-lg p-4">
+              <Image
+                src={feature.image}
+                alt={feature.name}
+                width={1000}
+                height={600}
+                className="w-full aspect-video bg-gray-100 rounded-lg object-cover"
+              />
+              <div className="text-center">
+                <Heading size={1} className="mt-4 text-xl">
+                  {feature.name}
+                </Heading>
+                <Text variant="small-subheading">{feature.desc}</Text>
+              </div>
+            </div>
+          ))}
+        </div>
+        <Heading size={3} className="text-center mt-40 mb-10">
           Power packed for patient management
-        </h1>
+        </Heading>
         <div className="">
-          <div className="grid grid-cols-3 gap-10 mt-10">
+          <div className="flex flex-row flex-wrap justify-center gap-2 md:gap-6 mt-10">
             {patientFeatures.map((feature, i) => (
               <div
-                className="bg-white flex items-center justify-center flex-col text-center border border-slate-300 rounded-xl w-[300px] p-6 aspect-square gap-2 hover:border-slate-400 transition-all hover:scale-105"
+                className="md:bg-gray-50 flex items-center md:justify-center flex-col text-center md:border border-gray-300 rounded-xl w-[170px] md:w-[250px] p-4 md:aspect-square gap-2 hover:border-slate-400 transition-all hover:scale-105"
                 key={i}
               >
                 <i className={`fal fa-${feature.icon} text-6xl`} />
-                <h2 className="text-2xl font-bold mt-4">{feature.title}</h2>
-                <p className="text-gray-700">{feature.desc}</p>
+                <Heading size={1} className="text-2xl">
+                  {feature.title}
+                </Heading>
+                <Text className="md:block" variant="small-subheading">
+                  {feature.desc}
+                </Text>
               </div>
             ))}
           </div>
         </div>
       </div>
-      <div className="bg-green-500 flex items-center justify-center flex-col">
-        <h1 className="font-black text-4xl mt-20 mb-2">
-          Built to be plugged onto
-        </h1>
-        <p className="mb-10">
-          Care is built to support first and third party integrations
-        </p>
-        <div className="flex justify-center w-full">
+      <div className="flex justify-center flex-col relative p-6 md:p-20">
+        <div className="flex items-center justify-between">
+          <div className="md:w-[700px]">
+            <Heading size={3} className="mt-20 mb-6 ">
+              Built to be plugged into
+            </Heading>
+            <Text className="mb-20 text-xl" variant="subheading">
+              Care is built to support first and third party integrations
+            </Text>
+          </div>
+          <div className="hidden md:block">
+            <i className="fas fa-plug text-8xl -rotate-45" />
+          </div>
+        </div>
+        <div className="flex justify-center w-full gap-6 text-white flex-col md:flex-row">
           {careApps.map((app, i) => (
-            <div
+            <Link
+              href={app.link}
+              target="_blank"
               key={i}
-              className="w-full flex flex-col items-center justify-end"
+              className={`w-full flex flex-col p-10 rounded-lg bg-gradient-to-tr ${app.className} hover:scale-105 transition-all`}
             >
-              <h2 className="text-4xl font-black">{app.name}</h2>
-              <p className="">{app.desc}</p>
-            </div>
+              {app.display}
+              <Heading size={1} className="font-black mt-5">
+                {app.name}
+              </Heading>
+              <Text className="mt-2">{app.desc}</Text>
+            </Link>
           ))}
         </div>
       </div>
