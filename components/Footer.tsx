@@ -1,14 +1,39 @@
+"use client";
+
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname, useRouter } from 'next/navigation';
 
 export default function Footer() {
+
+  const router = useRouter();
+  const path = usePathname();
+
   const navigation = [
     { name: 'Home', href: '/' },
     // { name: 'Projects', href: '/projects' },
     { name: 'Supporters', href: '/supporters' },
-    // { name: 'Contact', href: '/contact' },
+    { name: 'Contact', href: '/#contact' },
   ];
 
+  const handleNavigation = async (href: string) => {
+    if (href.includes('#')) {
+      const [page, section] = href.split('#');
+
+      if (path === page) {
+        // If the user is already on the target page, scroll smoothly
+        document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        // Navigate to the target page and then scroll to the section
+        router.push(page);
+        setTimeout(() => {
+          document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
+        }, 100); // Adding a small delay to ensure the page has navigated
+      }
+    } else {
+      router.push(href);
+    }
+  };
   const socialLinks = [
     {
       name: 'YouTube',
@@ -34,7 +59,7 @@ export default function Footer() {
           <div className="max-w-sm">
             <div className="flex items-center">
               <Image
-                src="/logos/ohc-logo.png"
+                src="/logos/ohc/ohc-green.png"
                 alt="OHC Network Logo"
                 width={60}
                 height={60}
@@ -52,19 +77,19 @@ export default function Footer() {
           <div className="grid grid-cols-2 md:flex md:gap-16 font-medium">
             <nav className="flex flex-col space-y-3">
               {navigation.map((item) => (
-                <Link
+                <button
                   key={item.name}
-                  href={item.href}
-                  className="text-primary-900 hover:text-primary-600 transition-colors text-sm"
+                  onClick={() => handleNavigation(item.href)}
+                  className="text-primary-900 hover:text-primary-600 transition-colors text-sm text-left"
                 >
                   {item.name}
-                </Link>
+                </button>
               ))}
             </nav>
 
             <div className="flex flex-col space-y-3">
               {socialLinks.map((item) => (
-                <a
+                <Link
                   key={item.name}
                   href={item.href}
                   className="flex items-center text-primary-900 hover:text-primary-600 transition-colors text-sm"
@@ -79,7 +104,7 @@ export default function Footer() {
                     className="h-6 w-6"
                   />
                   <span className="ml-2">{item.name}</span>
-                </a>
+                </Link>
               ))}
             </div>
           </div>
