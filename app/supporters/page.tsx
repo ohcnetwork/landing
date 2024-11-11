@@ -1,3 +1,4 @@
+import { Heading, Text } from "@/components/Text";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -28,7 +29,11 @@ export default function Page() {
     },
     { name: "Sentry", image: "sentry.svg", url: "https://sentry.io" },
     { name: "Cypress", image: "cypress.svg", url: "https://cypress.io" },
-    { name: "BrowserStack", image: "browserstack.png", url: "https://browserstack.com" },
+    {
+      name: "BrowserStack",
+      image: "browserstack.png",
+      url: "https://browserstack.com",
+    },
     { name: "GitBook", image: "gitbook.png", url: "https://www.gitbook.com" },
     {
       name: "Atlassian",
@@ -94,9 +99,9 @@ export default function Page() {
           backgroundSize: "cover",
         }}
       >
-        <div className="text-4xl md:text-8xl font-black text-white/90">
+        <Heading size={3} className="text-white/90">
           Supporters
-        </div>
+        </Heading>
       </div>
       <div className="max-w-5xl mx-auto px-4">
         {sections.map((section, i) => (
@@ -104,10 +109,10 @@ export default function Page() {
             key={i}
             className="text-center my-10 md:my-20 flex flex-col items-center"
           >
-            <h3 className="text-2xl md:text-4xl font-black">{section.name}</h3>
-            <p className="text-gray-700 max-w-[700px] mt-5">
-              {section.description}
-            </p>
+            <Heading size={2} className="font-black">
+              {section.name}
+            </Heading>
+            <Text className="max-w-[700px] mt-5">{section.description}</Text>
             <div className="flex flex-wrap gap-10 items-center justify-center mt-10">
               {section.logos.map((logo, i) => (
                 <Link

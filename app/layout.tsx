@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/header";
 import "@/styles/globals.css";
+import Script from "next/script";
 
 export const metadata = {
   title: "Open Healthcare Network: Transforming Healthcare with AI",
@@ -39,7 +40,7 @@ export const metadata = {
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
@@ -49,5 +50,5 @@ export default function RootLayout({
         <Footer />
       </body>
     </html>
-  )
+  );
 }
