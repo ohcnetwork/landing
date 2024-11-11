@@ -153,6 +153,7 @@ export default function Page() {
   return (
     <div className="">
       <div className="relative">
+        {/*
         <video
           src="/backgrounds/bg.mp4"
           autoPlay
@@ -161,22 +162,33 @@ export default function Page() {
           playsInline
           className="absolute -z-20 inset-0 h-screen w-screen object-cover"
         />
-        <div className="absolute inset-x-0 top-0 h-screen -z-10 bg-black/20" />
+        */}
+        <div
+          className="absolute -z-20 inset-0 h-screen w-screen object-cover"
+          style={{
+            background: "url('/backgrounds/green-square-vector.png')",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+          }}
+        />
+        {/*<div className="absolute inset-x-0 top-0 h-screen -z-10 bg-black/20" />*/}
         <div className="pt-[20vh]">
           <div className="text-center flex flex-col items-center">
             <div className="text-8xl font-black text-white/90">
               <Image
                 src="https://raw.githubusercontent.com/ohcnetwork/branding/refs/heads/main/Care/SVG/Logo/Care-Logo_gradient_mark_with_white_wordmark.svg"
                 alt="Care Logo"
-                height={500}
-                width={500}
-                className=" w-[300px] md:w-[400px] object-cover"
+                height={300}
+                width={300}
+                className=" w-[200px] md:w-[300px] object-cover"
               />
             </div>
+            <Heading size={3} className="md:text-7xl p-4 text-[#DDFFD8]">
+              Empowering <br />
+              thousands of ICU beds <br /> across India.
+            </Heading>
             <Text className="text-white/80 text-2xl w-3/4 mt-4">
-              War ready HMIS software, empowering thousands of ICU beds across
-              India.
-              <br /> All built on open source.
+              War ready HMIS software, all built on open source.
             </Text>
             <div className="flex items-center gap-4 mt-6">
               <Link
