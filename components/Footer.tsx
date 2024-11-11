@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 
 export default function Footer() {
-
   const router = useRouter();
   const path = usePathname();
 
@@ -16,15 +15,13 @@ export default function Footer() {
     { name: 'Contact', href: '/#contact' },
   ];
 
-  const handleNavigation = async (href: string) => {
+  const handleNavigation = (href: string) => {
     if (href.includes('#')) {
       const [page, section] = href.split('#');
 
       if (path === page) {
-        // If the user is already on the target page, scroll smoothly
         document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
       } else {
-        // Navigate to the target page and then scroll to the section
         router.push(page);
         setTimeout(() => {
           document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
@@ -34,6 +31,7 @@ export default function Footer() {
       router.push(href);
     }
   };
+
   const socialLinks = [
     {
       name: 'YouTube',
@@ -77,13 +75,19 @@ export default function Footer() {
           <div className="grid grid-cols-2 md:flex md:gap-16 font-medium">
             <nav className="flex flex-col space-y-3">
               {navigation.map((item) => (
-                <button
+                <Link
                   key={item.name}
-                  onClick={() => handleNavigation(item.href)}
-                  className="text-primary-900 hover:text-primary-600 transition-colors text-sm text-left"
+                  href={item.href}
+                  className="text-primary-900 hover:text-primary-600 transition-colors text-sm"
+                  onClick={(e) => {
+                    if (item.href.includes('#')) {
+                      e.preventDefault();
+                      handleNavigation(item.href);
+                    }
+                  }}
                 >
                   {item.name}
-                </button>
+                </Link>
               ))}
             </nav>
 
