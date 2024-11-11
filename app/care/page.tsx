@@ -10,17 +10,17 @@ const patientFeatures: { title: string; desc: string; icon: string }[] = [
   {
     title: "Consultations",
     desc: "Managing and documenting patient consultations.",
-    icon: "hospital-user",
+    icon: "patient-list",
   },
   {
     title: "Rounds",
     desc: "Features to support medical rounds and their documentation.",
-    icon: "user-nurse-hair-long",
+    icon: "stethoscope",
   },
   {
     title: "Investigations",
     desc: "Management of patient investigations and tests.",
-    icon: "stethoscope",
+    icon: "ecg",
   },
   {
     title: "ABG",
@@ -30,27 +30,27 @@ const patientFeatures: { title: string; desc: string; icon: string }[] = [
   {
     title: "Files and Documents",
     desc: "Document management, including patient records and files.",
-    icon: "folder-medical",
+    icon: "files",
   },
   {
     title: "Discharge Summary",
     desc: "Generation and management of discharge summaries.",
-    icon: "clipboard-medical",
+    icon: "clinical-notes",
   },
   {
     title: "Patient Shifting",
     desc: "Management of patient transfers between departments or facilities.",
-    icon: "truck-medical",
+    icon: "ambulance",
   },
   {
     title: "Sample Tests",
     desc: "Handling and documentation of various sample tests.",
-    icon: "vial-virus",
+    icon: "virus",
   },
   {
     title: "ICD11 Diagnosis",
     desc: "Support for ICD11 diagnosis coding and documentation.",
-    icon: "user-doctor-message",
+    icon: "ecg-heart",
   },
 ];
 
@@ -78,7 +78,13 @@ const careApps = [
     desc: "AI-powered autofilling of EMR records to reduce manual data entry.",
     display: (
       <>
-        <i className="fas fa-microphone text-7xl" />
+        <Image
+          src="/icons/speech_to_text.svg"
+          height={100}
+          width={100}
+          alt="Scribe"
+          className="brightness-0 invert"
+        />
       </>
     ),
     className: "from-red-500 to-orange-500",
@@ -281,7 +287,13 @@ export default function Page() {
                 className="md:bg-gray-50 flex items-center md:justify-center flex-col text-center md:border border-gray-300 rounded-xl w-[170px] md:w-[250px] p-4 md:aspect-square gap-2 hover:border-slate-400 transition-all hover:scale-105"
                 key={i}
               >
-                <i className={`fal fa-${feature.icon} text-6xl`} />
+                <Image
+                  alt={feature.icon}
+                  width={70}
+                  height={70}
+                  src={"/icons/" + feature.icon + ".svg"}
+                  className={`brightness-0`}
+                />
                 <Heading size={1} className="text-2xl">
                   {feature.title}
                 </Heading>
@@ -304,7 +316,13 @@ export default function Page() {
             </Text>
           </div>
           <div className="hidden md:block">
-            <i className="fas fa-plug text-8xl -rotate-45" />
+            <Image
+              src="/icons/plug.svg"
+              height={150}
+              width={150}
+              alt="plug"
+              className="-rotate-45 brightness-0"
+            />
           </div>
         </div>
         <div className="flex justify-center w-full gap-6 text-white flex-col md:flex-row">
@@ -332,7 +350,13 @@ export default function Page() {
             className=" opacity-80 bg-black text-white px-6 py-4 rounded-full font-semibold hover:opacity-100 transition-all flex items-center"
             target="_blank"
           >
-            <i className="fab fa-github mr-2 text-2xl" />
+            <Image
+              alt="Github"
+              src={`/logos/github-mark-white.svg`}
+              width={50}
+              height={50}
+              className={`md:w-[25px] transition-all mr-2`}
+            />
             Star CARE on GitHub
           </Link>
           <Link

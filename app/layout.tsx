@@ -45,7 +45,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Script src="https://www.writeroo.net/fawesome.js" />
         <Header />
         {children}
         <Footer />
