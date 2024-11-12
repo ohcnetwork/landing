@@ -216,7 +216,7 @@ export default function Home() {
                     clipRule="evenodd"
                   />
                 </svg>
-                Star us on Github
+                Star us on GitHub
               </Link>
               {/* CTA Buttons */}
               {/*
