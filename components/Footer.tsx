@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
+import { useEffect } from 'react';
 
 export default function Footer() {
   const router = useRouter();
@@ -15,17 +16,26 @@ export default function Footer() {
     { name: 'Contact', href: '/#contact' },
   ];
 
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      const id = hash.replace('#', '');
+      // Wait for the DOM to be ready
+      setTimeout(() => {
+        document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    }
+  }, [path]);
+
   const handleNavigation = (href: string) => {
     if (href.includes('#')) {
       const [page, section] = href.split('#');
+      const targetPage = page || '/';
 
-      if (path === page) {
+      if (path === targetPage) {
         document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
       } else {
-        router.push(page);
-        setTimeout(() => {
-          document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
-        }, 100); // Adding a small delay to ensure the page has navigated
+        router.push(targetPage + '#' + section);
       }
     } else {
       router.push(href);
