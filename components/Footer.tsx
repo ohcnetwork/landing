@@ -17,15 +17,33 @@ export default function Footer() {
   ];
 
   useEffect(() => {
-    const hash = window.location.hash;
-    if (hash) {
-      const id = hash.replace('#', '');
-      // Wait for the DOM to be ready
-      setTimeout(() => {
-        document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
-      }, 100);
-    }
+    const handleScrollToHash = () => {
+      const hash = window.location.hash;
+      if (hash) {
+        const id = hash.replace('#', '');
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+          history.replaceState(null, '', window.location.pathname);
+        }
+      }
+    };
+  
+    // Immediately invoke the function once after navigation
+    handleScrollToHash();
+  
+    // Cleanup logic: Only observe for initial change and then disconnect
+    const observer = new MutationObserver(() => {
+      handleScrollToHash();
+      observer.disconnect(); // Disconnect after one scroll to prevent repeated triggers
+    });
+  
+    observer.observe(document.body, { attributes: true, subtree: true });
+  
+    return () => observer.disconnect();
   }, [path]);
+  
+  
 
   const handleNavigation = (href: string) => {
     if (href.includes('#')) {
