@@ -146,10 +146,7 @@ const aiTools = [
 ];
 
 export default function Home() {
-  const [banner, setBanner] = useState({
-    message: "ohc.network @ GitHub Constellation ",
-    href: "https://githubconstellation.com/schedule/supercharging-development-open-healthcare-network-leverages-ai-breakthrough-efficiency",
-  });
+  const [banner, setBanner] = useState(null);
 
   return (
     <div className="bg-white">
