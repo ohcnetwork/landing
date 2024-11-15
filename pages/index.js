@@ -146,10 +146,7 @@ const aiTools = [
 ];
 
 export default function Home() {
-  const [banner, setBanner] = useState({
-    message: "ohc.network @ GitHub Constellation ",
-    href: "https://githubconstellation.com/schedule/supercharging-development-open-healthcare-network-leverages-ai-breakthrough-efficiency",
-  });
+  const [banner, setBanner] = useState({});
 
   return (
     <div className="bg-white">
@@ -182,17 +179,6 @@ export default function Home() {
             />
           </div>
           <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-            <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-              {banner && (
-                <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
-                  {banner.message}
-                  <a href={banner.href} className="font-semibold text-white">
-                    <span className="absolute inset-0" aria-hidden="true" />
-                    Read more <span aria-hidden="true">&rarr;</span>
-                  </a>
-                </div>
-              )}
-            </div>
             <div className="text-center">
               <h1 className="text-4xl font-bold tracking-tight text-white sm:text-7xl">
                 Reimagining Public Healthcare with AI
