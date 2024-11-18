@@ -16,45 +16,13 @@ export default function Footer() {
     { name: 'Contact', href: '/#contact' },
   ];
 
-  useEffect(() => {
-    const handleScrollToHash = () => {
-      const hash = window.location.hash;
-      if (hash) {
-        const id = hash.replace('#', '');
-        const element = document.getElementById(id);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-          history.replaceState(null, '', window.location.pathname);
-        }
-      }
-    };
-  
-    // Immediately invoke the function once after navigation
-    handleScrollToHash();
-  
-    // Cleanup logic: Only observe for initial change and then disconnect
-    const observer = new MutationObserver(() => {
-      handleScrollToHash();
-      observer.disconnect(); // Disconnect after one scroll to prevent repeated triggers
-    });
-  
-    observer.observe(document.body, { attributes: true, subtree: true });
-  
-    return () => observer.disconnect();
-  }, [path]);
-  
-  
-
   const handleNavigation = (href: string) => {
     if (href.includes('#')) {
-      const [page, section] = href.split('#');
-      const targetPage = page || '/';
-
-      if (path === targetPage) {
-        document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
-      } else {
-        router.push(targetPage + '#' + section);
-      }
+      const [pathname, hash] = href.split('#');
+      const targetPath = pathname || '/';
+      
+      // Just navigate to the full URL directly
+      router.push(href);
     } else {
       router.push(href);
     }
