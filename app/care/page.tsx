@@ -141,9 +141,9 @@ function FeatureTile(props: {
       } items-center gap-10 flex-col`}
     >
       <Image
-        alt="Facility Management"
+        alt="Image"
         src={image}
-        className="shadow-xl rounded-2xl w-full lg:w-auto"
+        className="shadow-xl rounded-2xl w-full lg:max-w-[600px]"
         width={600}
         height={415}
       />

@@ -1,7 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-
 import { useState } from "react";
-
 import {
   ArrowPathIcon,
   ChevronRightIcon,
@@ -144,12 +142,13 @@ const aiTools = [
       "Ayushma AI is multilingual Medical Protocol Assistant for assisting nurses.",
   },
 ];
-
+type Banner = {
+  message: string;
+  href: string;
+};
 export default function Home() {
-  const [banner, setBanner] = useState({
-    message: "ohc.network @ GitHub Constellation ",
-    href: "https://githubconstellation.com/schedule/supercharging-development-open-healthcare-network-leverages-ai-breakthrough-efficiency",
-  });
+
+  const [banner, setBanner] = useState<Banner | null>(null);
 
   return (
     <div className="bg-white">
@@ -827,7 +826,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <CommitLayout />
+        <CommitLayout>{null}</CommitLayout>
         <section
           id="contact"
           aria-label="Join Our Open Healthcare Network Slack Community"
