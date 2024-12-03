@@ -61,7 +61,7 @@ const secondaryFeatures = [
   },
 ];
 const featuredTestimonial = {
-  body: "Open Healthcare Network in India is a profoundly inspiring story of how we can accelerate human progress by enabling the world&apos;s soon-to-be largest developer community with the possibilities of AI. India&apos;s developers, building with their copilot companion, will help save lives -- one commit at a time. 🇮🇳",
+  body: "Open Healthcare Network in India is a profoundly inspiring story of how we can accelerate human progress by enabling the world's soon-to-be largest developer community with the possibilities of AI. India's developers, building with their copilot companion, will help save lives -- one commit at a time. 🇮🇳",
   author: {
     name: "Thomas Dohmke",
     handle: "GitHub CEO",
