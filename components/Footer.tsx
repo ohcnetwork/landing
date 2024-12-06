@@ -1,13 +1,7 @@
-"use client";
-
 import Image from 'next/image';
 import Link from 'next/link';
-import { usePathname, useRouter } from 'next/navigation';
-import { useEffect } from 'react';
 
 export default function Footer() {
-  const router = useRouter();
-  const path = usePathname();
 
   const navigation = [
     { name: 'Home', href: '/' },
@@ -15,18 +9,6 @@ export default function Footer() {
     { name: 'Supporters', href: '/supporters' },
     { name: 'Contact', href: '/#contact' },
   ];
-
-  const handleNavigation = (href: string) => {
-    if (href.includes('#')) {
-      const [pathname, hash] = href.split('#');
-      const targetPath = pathname || '/';
-      
-      // Just navigate to the full URL directly
-      router.push(href);
-    } else {
-      router.push(href);
-    }
-  };
 
   const socialLinks = [
     {
@@ -75,12 +57,6 @@ export default function Footer() {
                   key={item.name}
                   href={item.href}
                   className="text-primary-900 hover:text-primary-600 transition-colors text-sm"
-                  onClick={(e) => {
-                    if (item.href.includes('#')) {
-                      e.preventDefault();
-                      handleNavigation(item.href);
-                    }
-                  }}
                 >
                   {item.name}
                 </Link>
