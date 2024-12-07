@@ -252,13 +252,13 @@ export default function Header(props: { fixed?: boolean }) {
       }`}
       id="header"
     >
-      <div
-        className={`absolute inset-x-0 h-full bg-white/70 backdrop-blur-xl -z-10 transition-all ${
+      <div 
+      className={`absolute inset-x-0 h-full bg-white/70 backdrop-blur-xl -z-10 transition-all ${
           scrolled ? "top-0" : "-top-full"
         }`}
       />
       <nav
-        className={`flex relative items-stretch justify-between transition-all px-4 md:px-6 lg:px-8`}
+        className={`flex relative items-stretch justify-between transition-all px-4 md:px-6 lg:px-8 text-[5px]`}
         aria-label="Global"
       >
         <div
@@ -296,11 +296,11 @@ export default function Header(props: { fixed?: boolean }) {
           </button>
         </div>
         <div
-          className={`flex md:items-center p-6 md:p-0 fixed ${
-            mobileMenuOpen ? "right-0" : "right-[-100vw]"
+          className={`flex md:items-center p-6 md:p-0 fixed text-[30px] ${
+            mobileMenuOpen ? "right-0" : "right-[-100vw] text-[30px]"
           } md:right-auto transition-all md:static ${
             scrolled ? "bg-white/50" : "bg-black/50"
-          } pb-[300px] md:pb-0 md:bg-transparent backdrop-blur-lg md:backdrop-blur-none h-screen md:h-auto top-0 md:top-auto w-screen md:w-auto flex-col md:flex-row text-5xl md:text-base`}
+          } pb-[300px] md:pb-0 md:bg-transparent backdrop-blur-lg md:backdrop-blur-none h-screen md:h-auto top-0 md:top-auto w-screen md:w-auto flex-col md:flex-row md:text-base`}
         >
           <button
             className="md:hidden block absolute top-6 right-8"
@@ -347,7 +347,7 @@ export default function Header(props: { fixed?: boolean }) {
         className={`nav-dropdown ${scrolled ? "bg-black/5" : "bg-black/20"} ${
           scrolled ? "" : "backdrop-blur md:rounded-xl md:mx-10"
         } transition-all overflow-hidden fixed bottom-0 md:bottom-auto inset-x-0 md:inset-x-auto md:relative ${
-          !!showDropdown ? "max-h-[400px]" : "max-h-0"
+          !!showDropdown ? " max-h-[300px]" : "max-h-0"
         }`}
         style={{ height: dropDownHeight }}
       >
