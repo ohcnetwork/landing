@@ -161,13 +161,9 @@ export default function Header(props: { fixed?: boolean }) {
             onClick={(e) => {
               e.preventDefault();
               e.stopPropagation();
-              if (path === item.page) {
                 document
                   .getElementById(item.id)
                   ?.scrollIntoView({ behavior: "smooth" });
-              } else {
-                router.push(item.page + "#" + item.id);
-              }
             }}
           >
             {item.content}

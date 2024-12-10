@@ -828,7 +828,6 @@ export default function Home() {
         </section>
         <CommitLayout>{null}</CommitLayout>
         <section
-          id="contact"
           aria-label="Join Our Open Healthcare Network Slack Community"
         >
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
