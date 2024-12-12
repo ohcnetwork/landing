@@ -158,13 +158,6 @@ export default function Header(props: { fixed?: boolean }) {
           <Link
             href={item.page + "#" + item.id}
             className={className}
-            onClick={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
-                document
-                  .getElementById(item.id)
-                  ?.scrollIntoView({ behavior: "smooth" });
-            }}
           >
             {item.content}
           </Link>
