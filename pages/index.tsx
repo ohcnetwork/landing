@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   ArrowPathIcon,
   ChevronRightIcon,
@@ -16,6 +16,7 @@ import Link from "next/link";
 import CommitLayout from "@/components/Commit/CommitLayout";
 import Header from "@/components/header";
 import Footer from "@/components/Footer";
+import { useRouter } from "next/router";
 
 const primaryFeatures = [
   {
@@ -149,6 +150,17 @@ type Banner = {
 export default function Home() {
 
   const [banner, setBanner] = useState<Banner | null>(null);
+  const router = useRouter();
+
+  useEffect(() => {
+    if (router.asPath.includes('#')) {
+      const elementId = router.asPath.split('#')[1];
+      const element = document.getElementById(elementId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [router.asPath]);
 
   return (
     <div className="bg-white">
