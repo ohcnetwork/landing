@@ -156,19 +156,8 @@ export default function Header(props: { fixed?: boolean }) {
       case "section":
         return (
           <Link
-            href="#"
+            href={item.page + "#" + item.id}
             className={className}
-            onClick={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
-              if (path === item.page) {
-                document
-                  .getElementById(item.id)
-                  ?.scrollIntoView({ behavior: "smooth" });
-              } else {
-                router.push(item.page + "#" + item.id);
-              }
-            }}
           >
             {item.content}
           </Link>
