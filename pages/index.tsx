@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   ArrowPathIcon,
   ChevronRightIcon,
@@ -16,6 +16,7 @@ import Link from "next/link";
 import CommitLayout from "@/components/Commit/CommitLayout";
 import Header from "@/components/header";
 import Footer from "@/components/Footer";
+import { useRouter } from "next/router";
 
 const primaryFeatures = [
   {
@@ -147,6 +148,19 @@ type Banner = {
   href: string;
 };
 export default function Home() {
+  const router = useRouter();
+
+  useEffect(() => {
+    if (router.asPath.includes("#")) {
+      const hash = router.asPath.split("#")[1];
+      setTimeout(() => {
+        const targetElement = document.getElementById(hash);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 500);
+    }
+  }, [router.asPath]);
 
   const [banner, setBanner] = useState<Banner | null>(null);
 
