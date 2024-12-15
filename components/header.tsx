@@ -158,6 +158,7 @@ export default function Header(props: { fixed?: boolean }) {
           <Link
             href={item.page + "#" + item.id}
             className={className}
+            onClick={()=>console.log(item.page + "#" + item.id)}
           >
             {item.content}
           </Link>

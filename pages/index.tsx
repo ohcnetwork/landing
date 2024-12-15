@@ -149,7 +149,7 @@ type Banner = {
 };
 export default function Home() {
   const router = useRouter();
-
+  console.log(router.pathname)
   useEffect(() => {
     if (window.location.hash) {
       setTimeout(() => {
