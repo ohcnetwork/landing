@@ -146,6 +146,7 @@ export default function Page() {
             <div className="flex flex-col items-center gap-20 mt-20">
               {items.map((item, index) => (
                 <FeatureTile
+                key={item.id}
                 toLeft={index % 2 != 0}
                 features={item.features}
                 title={item.title}
