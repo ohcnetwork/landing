@@ -149,13 +149,12 @@ type Banner = {
 };
 export default function Home() {
   const router = useRouter();
-  console.log(router.asPath)
+
   useEffect(() => {
-    if (window.location.hash) {
+    if (router.asPath.includes("#")) {
+      const hash = router.asPath.split("#")[1];
       setTimeout(() => {
-        const targetElement = document.getElementById(
-          window.location.hash.substring(1)
-        );
+        const targetElement = document.getElementById(hash);
         if (targetElement) {
           targetElement.scrollIntoView({ behavior: "smooth" });
         }

@@ -158,7 +158,16 @@ export default function Header(props: { fixed?: boolean }) {
           <Link
             href={item.page + "#" + item.id}
             className={className}
-            onClick={()=>console.log(item.page + "#" + item.id)}
+            onClick={(e) => {
+              e.preventDefault();
+              if (path === item.page) {
+                document
+                  .getElementById(item.id)
+                  ?.scrollIntoView({ behavior: "smooth" });
+              } else {
+                router.push(item.page + "#" + item.id);
+              }
+            }}
           >
             {item.content}
           </Link>
