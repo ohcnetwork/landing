@@ -93,7 +93,9 @@ export default function Header(props: { fixed?: boolean }) {
           width={50}
           height={50}
           className={`md:w-[25px] ${
-            scrolled ? "brightness-0" : ""
+            scrolled ? "brightness-0" : "" 
+          } ${
+            mobileMenuOpen?"pt-6":""
           } transition-all`}
         />
       ),
@@ -308,6 +310,7 @@ export default function Header(props: { fixed?: boolean }) {
           >
             <XMarkIcon className="h-6 w-6" aria-hidden="true" />
           </button>
+          <div className={`${mobileMenuOpen ? "h-12" : "flex flex-row" }`}>
           {navigation.map((item, i) => (
             <NavigationItemRender
               item={item}
@@ -323,6 +326,7 @@ export default function Header(props: { fixed?: boolean }) {
               }}
             />
           ))}
+          </div>
         </div>
         <svg
           id="dropdown-triangle"
