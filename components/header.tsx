@@ -167,6 +167,7 @@ export default function Header(props: { fixed?: boolean }) {
                 document
                   .getElementById(item.id)
                   ?.scrollIntoView({ behavior: "smooth" });
+                  setMobileMenuOpen(false)
               } else {
                 router.push(item.page + "#" + item.id);
               }
