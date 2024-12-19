@@ -1,3 +1,4 @@
+import { usePathname } from "next/navigation";
 import { Heading, Text } from "@/components/Text";
 import Image from "next/image";
 export const metadata = {
@@ -104,19 +105,19 @@ export default function Page() {
       
             <div
               className={`flex ${
-                toLeft ? "lg:flex-row-reverse" : "lg:flex-row"
+                toLeft ? "xl:flex-row-reverse" : "xl:flex-row"
               } items-center gap-10 flex-col`}
             >
               {/* Description Section */}
-              <div className="w-full lg:w-[400px]">
-                <Heading className="font-semibold text-[#0d9f6e]"size={3}>{year}</Heading>
+              <div className="text-wrap md:text-base w-full xl:w-[400px]">
+                <Heading className="font-semibold md:text-5xl text-[#0d9f6e]"size={3} >{year}</Heading>
                 <Heading size={1}>{description}</Heading>
                 
                 <Text className="mt-4">{content}</Text>
               </div>
       
               {/* Highlights Section */}
-              <div className="w-full lg:w-[400px]">
+              <div className="w-full xl:w-[400px]">
                 <Heading className="font-thin" size={1}>
                   Highlights
                 </Heading>
@@ -161,15 +162,19 @@ export default function Page() {
           </div>
       
               {/* Main Content */}
-              <div className="flex flex-row justify-center mt-20 ">
+              <div 
+              className="
+              flex  md:mt-20 text-sm flex-col-reverse ml-5 mr-5 md:flex-col-reverse md:text-base
+              xl:flex-row justify-center
+              ">
                       {/* Timeline Navigation */}
-                      <div className="h-screen sticky top-0 flex flex-col items-center justify-center mr-auto ml-auto">
+                      {/* <div className="h-screen sticky top-0 flex flex-col items-center justify-center mr-auto ml-auto">
                         <div className="absolute h-full w-1 bg-[#0d9f6e]" />
                           {items.map((item, index) => (
                           <a
                             key={item.id}
                             href={`#year${index}`}
-                            className="block text-center text-sm sm:text-base md:text-lg lg:text-xl mb-20 text-[#0d9f6e] hover:underline relative bg-white"
+                            className="block text-center text-sm text-base md:text-xl xl:text-xl mb-20 text-[#0d9f6e] hover:underline relative bg-white"
                             style={{
                               zIndex: 1,
                               transform: "translateX(0%)", 
@@ -179,10 +184,10 @@ export default function Page() {
                           </a>
                         ))}
                        
-                      </div>
-                
+                      </div> */}
+
                       {/* Feature Tiles */}
-                      <div className="flex mr-auto flex-col items-center gap-20 mt-20">
+                      <div className="flex flex-col items-center gap-20  ">
                         {items.map((item, index) => (
                           <FeatureTile
                             key={item.id}
@@ -194,6 +199,25 @@ export default function Page() {
                           />
                         ))}
                       </div>
+                        <div className="xl:h-screen xl:sticky xl:ml-5 top-20 mt-5 mb-10 flex flex-col">
+                          <Heading size={1} className="mb-3 text-2xl">Contents</Heading>
+                          <ul className="flex flex-col font-semibold xl:text-sm">
+                            <li className="flex flex-col gap-3 w-3/4 hover:bg-gray-100 rounded-md px-3 py-2">
+                              <a href="#year0">2020 | Initial Development</a>
+                            </li>
+                            <li className="flex flex-col gap-3 w-3/4 hover:bg-gray-100 rounded-md px-3 py-2">
+                              <a href="#year1">2021 | Enhanced Capabilities for Oxygen Tracking</a>
+                            </li>
+                            <li className="flex flex-col gap-3 w-3/4 hover:bg-gray-100 rounded-md px-3 py-2">
+                              <a href="#year4">2022-2023 | Continuous Improvements and Advanced Features</a>
+                            </li>
+                            <li className="flex flex-col gap-3 w-3/4 hover:bg-gray-100 rounded-md px-3 py-2">
+                              <a href="#year5">2024 | Transition to HMIS and tooling for Palliative Care Grid
+                              </a>
+                            </li>
+                          </ul>
+                          
+                       </div>
               </div>
         </div>
       );
