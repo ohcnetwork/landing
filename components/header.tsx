@@ -82,7 +82,7 @@ export default function Header(props: { fixed?: boolean }) {
   const navigation: NavigationItem[] = [
     { type: "dropdown", content: "Products", items: productsItems },
     { type: "dropdown", content: "Community", items: communityItems },
-    { type: "link", content: "Supporters", href: "/supporters" },
+    { type: "section", content: "Supporters", id: "supporters", page: "/supporters" },
     { type: "section", content: "Contact", id: "contact", page: "/" },
     {
       type: "link",
@@ -151,7 +151,7 @@ export default function Header(props: { fixed?: boolean }) {
     switch (item.type) {
       case "link":
         return (
-          <Link href={item.href} className={className}>
+          <Link href={item.href} className={className} >
             {item.content}
           </Link>
         );
@@ -161,13 +161,13 @@ export default function Header(props: { fixed?: boolean }) {
             href={item.page + "#" + item.id}
             className={className}
             onClick={(e) => {
+              setMobileMenuOpen(false)
               e.preventDefault();
               e.stopPropagation();
               if (path === item.page) {
                 document
                   .getElementById(item.id)
                   ?.scrollIntoView({ behavior: "smooth" });
-                  setMobileMenuOpen(false)
               } else {
                 router.push(item.page + "#" + item.id);
               }
