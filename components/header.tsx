@@ -139,19 +139,21 @@ export default function Header(props: { fixed?: boolean }) {
   const NavigationItemRender = (props: {
     item: NavigationItem;
     onHover?: (hoverstate: boolean, leftOffset: number) => void;
+    setMobileMenuOpen: (state: boolean) => void;
+    setShowDropdown: (state: number | null) => void;
   }) => {
-    const { item, onHover } = props;
-
+    const { item, onHover, setMobileMenuOpen, setShowDropdown } = props;
+  
     const className = `font-black md:font-semibold ${
       scrolled ? "md:hover:text-black/100" : "md:hover:text-white/100"
     } transition-all px-3 flex items-center md:justify-center h-full`;
-
+  
     const itemRef = useRef<HTMLButtonElement>(null);
-
+  
     switch (item.type) {
       case "link":
         return (
-          <Link href={item.href} className={className} >
+          <Link href={item.href} className={className}>
             {item.content}
           </Link>
         );
@@ -161,7 +163,7 @@ export default function Header(props: { fixed?: boolean }) {
             href={item.page + "#" + item.id}
             className={className}
             onClick={(e) => {
-              setMobileMenuOpen(false)
+              setMobileMenuOpen(false);
               e.preventDefault();
               e.stopPropagation();
               if (path === item.page) {
@@ -201,6 +203,9 @@ export default function Header(props: { fixed?: boolean }) {
                   (itemRef.current?.clientWidth || 0) / 2
               );
             }}
+            onClick={() => {
+              setShowDropdown(item.items ? item.items.length : null);
+            }}
           >
             {item.content}
           </button>
@@ -226,6 +231,10 @@ export default function Header(props: { fixed?: boolean }) {
             className={`p-4 w-[200px] text-left rounded-lg ${
               scrolled ? "hover:bg-black/5" : "hover:bg-black/10"
             } transition-all flex flex-col gap-2`}
+            onClick={() => {
+              setMobileMenuOpen(false);
+              setShowDropdown(null);
+            }}
           >
             <Image
               src={item.image}
@@ -312,21 +321,23 @@ export default function Header(props: { fixed?: boolean }) {
             <XMarkIcon className="h-6 w-6" aria-hidden="true" />
           </button>
           <div className={`${mobileMenuOpen ? "h-12" : "flex flex-row" }`}>
-          {navigation.map((item, i) => (
-            <NavigationItemRender
-              item={item}
-              key={i}
-              onHover={(hoverstate, leftOffset) => {
-                if (hoverstate) {
-                  setShowDropdown(i + 1);
-                  triangleRef.current?.style.setProperty(
-                    "left",
-                    `${leftOffset - triangleRef.current.clientWidth / 2}px`
-                  );
-                }
-              }}
-            />
-          ))}
+            {navigation.map((item, i) => (
+              <NavigationItemRender
+                item={item}
+                key={i}
+                setMobileMenuOpen={setMobileMenuOpen}
+                setShowDropdown={setShowDropdown}
+                onHover={(hoverstate, leftOffset) => {
+                  if (hoverstate) {
+                    setShowDropdown(i + 1);
+                    triangleRef.current?.style.setProperty(
+                      "left",
+                      `${leftOffset - triangleRef.current.clientWidth / 2}px`
+                    );
+                  }
+                }}
+              />
+            ))}
           </div>
         </div>
         <svg
