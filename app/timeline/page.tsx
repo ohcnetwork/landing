@@ -79,82 +79,123 @@ export default function Page() {
 
       ]
     
-    function FeatureTile(props: {
-      toLeft?: boolean;
-      features: string[];
-      title: React.ReactNode;
-      content: React.ReactNode;
-    }) {
-      const { toLeft = false, features, title, content } = props;
+      function FeatureTile(props: {
+        toLeft?: boolean;
+        features: string[];
+        title: React.ReactNode;
+        content: React.ReactNode;
+        id: string; // Add an `id` for anchor navigation
+      }) {
+        const { toLeft = false, features, title, content, id } = props;
+      
+        // Ensure title is a string
+        const titleStr = typeof title === "string" ? title : String(title);
+      
+        // Split title into year and description
+        const [year, ...descriptionParts] = titleStr.split(" | ");
+        const description = descriptionParts.join(" | ");
+      
+        return (
+          <div id={id} className="scroll-mt-20">
+            {/* Year Heading */}
+            {/* <Heading className=" mb-10" size={3}>
+              {year}
+            </Heading> */}
+      
+            <div
+              className={`flex ${
+                toLeft ? "lg:flex-row-reverse" : "lg:flex-row"
+              } items-center gap-10 flex-col`}
+            >
+              {/* Description Section */}
+              <div className="w-full lg:w-[400px]">
+                <Heading className="font-semibold text-[#0d9f6e]"size={3}>{year}</Heading>
+                <Heading size={1}>{description}</Heading>
+                
+                <Text className="mt-4">{content}</Text>
+              </div>
+      
+              {/* Highlights Section */}
+              <div className="w-full lg:w-[400px]">
+                <Heading className="font-thin" size={1}>
+                  Highlights
+                </Heading>
+                <ul>
+                  {features.map((feature, index) => (
+                    <li key={index} className="flex items-center mt-4">
+                      <Image
+                        alt="checkmark.svg"
+                        width={30}
+                        height={30}
+                        src={`/icons/checkmark.svg`}
+                        className="brightness-1"
+                      />
+                      <Text className="px-2">{feature}</Text>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        );
+      }
+      
+        
     
       return (
-        <div
-          className={`flex ${
-            toLeft ? "lg:flex-row-reverse" : "lg:flex-row"
-          } items-center gap-10 flex-col`}
-        >
-         
-          <div className="w-full lg:w-[400px]">
-            <Heading size={1}>{title}</Heading>
-            <Text className="mt-4">{content}</Text>
+        <div className="relative">
+          {/* Background Section */}
+          <div
+            className="flex items-center justify-center px-10 py-20 md:px-20 md:py-40"
+            style={{
+              background: "url('/backgrounds/green-square-vector.png')",
+              backgroundPosition: "center",
+              backgroundSize: "cover",
+            }}
+          >
+            <Heading size={2} className="md:text-7xl text-white/90">
+              Timeline 
+              of
+              Development
+            </Heading>
           </div>
-          <div className="w-full lg:w-[400px]">
-          <Heading className="font-thin" size={1}>Highlights</Heading>
-                <ul>
-              {features.map((feature, index) => (
-                <li key={index} className="flex items-center mt-4">
-                <Image
-                alt="checkmark.svg"
-                width={30}
-                height={30}
-                src={"/icons/" + "checkmark" + ".svg"}
-                className={`brightness-1`}
-              />
-                <Text className="px-2">{feature}</Text>
-            </li>
-              ))}
-            </ul>
-            
-          </div>
+      
+              {/* Main Content */}
+              <div className="flex flex-row justify-center mt-20 ">
+                      {/* Timeline Navigation */}
+                      <div className="h-screen sticky top-0 flex flex-col items-center justify-center mr-auto ml-auto">
+                        <div className="absolute h-full w-1 bg-[#0d9f6e]" />
+                          {items.map((item, index) => (
+                          <a
+                            key={item.id}
+                            href={`#year${index}`}
+                            className="block text-center text-sm sm:text-base md:text-lg lg:text-xl mb-20 text-[#0d9f6e] hover:underline relative bg-white"
+                            style={{
+                              zIndex: 1,
+                              transform: "translateX(0%)", 
+                            }}
+                          >
+                            {item.title.split(" | ")[0]}
+                          </a>
+                        ))}
+                       
+                      </div>
+                
+                      {/* Feature Tiles */}
+                      <div className="flex mr-auto flex-col items-center gap-20 mt-20">
+                        {items.map((item, index) => (
+                          <FeatureTile
+                            key={item.id}
+                            id={`year${index}`}
+                            toLeft={index % 2 !== 0}
+                            features={item.features}
+                            title={item.title}
+                            content={item.Purpose}
+                          />
+                        ))}
+                      </div>
+              </div>
         </div>
       );
-    }
-    
-    const truncateText = (text, length) => {
-      if (text.length > length) {
-        return text.substring(0, length) + "...";
-      }
-      return text;
-    };
-    return (
-        <div className="relative">
-            <div
-                className="flex items-center justify-center px-10 py-20 md:px-20 md:py-40"
-                style={{
-                  background: "url('/backgrounds/green-square-vector.png')",
-                  backgroundPosition: "center",
-                  backgroundSize: "cover",
-                }}
-              >
-              {/* <TimelineIndex items={items} /> */}
-              <Heading size={2} className="md:text-7xl text-white/90">
-                Timeline 
-                of
-                 Development
-              </Heading>
-            </div>
-            <div className="flex flex-col items-center gap-20 mt-20">
-              {items.map((item, index) => (
-                <FeatureTile
-                key={item.id}
-                toLeft={index % 2 != 0}
-                features={item.features}
-                title={item.title}
-                content={item.Purpose}
-              />
-              ))}
-            </div>
-          </div>
-            
-      );
+      
     }
