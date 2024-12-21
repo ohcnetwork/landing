@@ -95,7 +95,7 @@ export default function Header(props: { fixed?: boolean }) {
           className={`md:w-[25px] ${
             scrolled ? "brightness-0" : "" 
           } ${
-            mobileMenuOpen?"pt-6":""
+            mobileMenuOpen?"pb-44 pt-4 m-0":""
           } transition-all`}
         />
       ),
@@ -161,7 +161,7 @@ export default function Header(props: { fixed?: boolean }) {
         return (
           <Link
             href={item.page + "#" + item.id}
-            className={className}
+            className={`${className} ${mobileMenuOpen?"h-3 p-6":"h-full"}`}
             onClick={(e) => {
               setMobileMenuOpen(false);
               e.preventDefault();
@@ -188,7 +188,7 @@ export default function Header(props: { fixed?: boolean }) {
         return (
           <button
             ref={itemRef}
-            className={"nav-button " + className}
+            className={`nav-button ${className} ${mobileMenuOpen?"h-3 p-6":"h-full"}`}
             onMouseOver={() => {
               onHover?.(
                 true,
@@ -320,7 +320,6 @@ export default function Header(props: { fixed?: boolean }) {
           >
             <XMarkIcon className="h-6 w-6" aria-hidden="true" />
           </button>
-          <div className={`${mobileMenuOpen ? "h-12" : "flex flex-row" }`}>
             {navigation.map((item, i) => (
               <NavigationItemRender
                 item={item}
@@ -338,7 +337,6 @@ export default function Header(props: { fixed?: boolean }) {
                 }}
               />
             ))}
-          </div>
         </div>
         <svg
           id="dropdown-triangle"
