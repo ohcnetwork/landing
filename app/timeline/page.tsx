@@ -1,4 +1,3 @@
-import { usePathname } from "next/navigation";
 import { Heading, Text } from "@/components/Text";
 import Image from "next/image";
 export const metadata = {
@@ -85,39 +84,42 @@ export default function Page() {
         features: string[];
         title: React.ReactNode;
         content: React.ReactNode;
-        id: string; // Add an `id` for anchor navigation
+        id: string;
       }) {
+
         const { toLeft = false, features, title, content, id } = props;
-      
-        // Ensure title is a string
         const titleStr = typeof title === "string" ? title : String(title);
-      
-        // Split title into year and description
         const [year, ...descriptionParts] = titleStr.split(" | ");
         const description = descriptionParts.join(" | ");
       
         return (
-          <div id={id} className="scroll-mt-20">
-            {/* Year Heading */}
-            {/* <Heading className=" mb-10" size={3}>
-              {year}
-            </Heading> */}
+          <div id={id} className="scroll-mt-20 relative">
+            {/* Pitstop Circle */}
+            <div
+              className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-[#0d9f6e] z-10 hidden sm:block"
+              style={{ top: "10%" }}
+            />
       
             <div
-              className={`flex ${
-                toLeft ? "xl:flex-row-reverse" : "xl:flex-row"
-              } items-center gap-10 flex-col`}
+              className={`flex sm:gap-20 ${
+                toLeft ? "sm:flex-row-reverse" : "sm:flex-row"
+              } items-center  sm:text-wrap  flex-col gap-20`}
             >
               {/* Description Section */}
-              <div className="text-wrap md:text-base w-full xl:w-[400px]">
-                <Heading className="font-semibold md:text-5xl text-[#0d9f6e]"size={3} >{year}</Heading>
-                <Heading size={1}>{description}</Heading>
-                
+              <div className="
+              text-wrap  
+              md:w-[300px]
+              lg:text-lg lg:w-[400px] 
+              sm:text-xs sm:w-[200px]">
+                <Heading className="font-semibold text-[#0d9f6e]" size={2}>
+                  {year}
+                </Heading>
+                <Heading size={1} className="sm:text-xs lg:text-3xl">{description}</Heading>
                 <Text className="mt-4">{content}</Text>
               </div>
       
               {/* Highlights Section */}
-              <div className="w-full xl:w-[400px]">
+              <div className="sm:w-[200px] lg:w-[400px] md:w-[300px]">
                 <Heading className="font-thin" size={1}>
                   Highlights
                 </Heading>
@@ -141,52 +143,37 @@ export default function Page() {
         );
       }
       
+      
         
     
       return (
         <div className="relative">
           {/* Background Section */}
           <div
-            className="flex items-center justify-center px-10 py-20 md:px-20 md:py-40"
+            className="flex items-center justify-center px-10 py-20 sm:px-20 sm:py-40"
             style={{
               background: "url('/backgrounds/green-square-vector.png')",
               backgroundPosition: "center",
               backgroundSize: "cover",
             }}
           >
-            <Heading size={2} className="md:text-7xl text-white/90">
+            <Heading size={2} className="sm: text-white/90">
               Timeline 
               of
               Development
             </Heading>
           </div>
-      
               {/* Main Content */}
               <div 
-              className="
-              flex  md:mt-20 text-sm flex-col-reverse ml-5 mr-5 md:flex-col-reverse md:text-base
-              xl:flex-row justify-center
+              className=" relative
+              flex flex-col-reverse justify-center 
+              ml-5 mr-5 mt-20 
+              sm:text-wrap sm:text-xs 
+              lg:text-lg  
               ">
-                      {/* Timeline Navigation */}
-                      {/* <div className="h-screen sticky top-0 flex flex-col items-center justify-center mr-auto ml-auto">
-                        <div className="absolute h-full w-1 bg-[#0d9f6e]" />
-                          {items.map((item, index) => (
-                          <a
-                            key={item.id}
-                            href={`#year${index}`}
-                            className="block text-center text-sm text-base md:text-xl xl:text-xl mb-20 text-[#0d9f6e] hover:underline relative bg-white"
-                            style={{
-                              zIndex: 1,
-                              transform: "translateX(0%)", 
-                            }}
-                          >
-                            {item.title.split(" | ")[0]}
-                          </a>
-                        ))}
-                       
-                      </div> */}
-
-                      {/* Feature Tiles */}
+                <div
+    className="absolute h-full w-0.5 bg-[#0d9f6e] left-1/2 transform -translate-x-1/2 z-0 hidden sm:block"
+  />
                       <div className="flex flex-col items-center gap-20  ">
                         {items.map((item, index) => (
                           <FeatureTile
@@ -197,29 +184,13 @@ export default function Page() {
                             title={item.title}
                             content={item.Purpose}
                           />
-                        ))}
-                      </div>
-                        <div className="xl:h-screen xl:sticky xl:ml-5 top-20 mt-5 mb-10 flex flex-col">
-                          <Heading size={1} className="mb-3 text-2xl">Contents</Heading>
-                          <ul className="flex flex-col font-semibold xl:text-sm">
-                            <li className="flex flex-col gap-3 w-3/4 hover:bg-gray-100 rounded-md px-3 py-2">
-                              <a href="#year0">2020 | Initial Development</a>
-                            </li>
-                            <li className="flex flex-col gap-3 w-3/4 hover:bg-gray-100 rounded-md px-3 py-2">
-                              <a href="#year1">2021 | Enhanced Capabilities for Oxygen Tracking</a>
-                            </li>
-                            <li className="flex flex-col gap-3 w-3/4 hover:bg-gray-100 rounded-md px-3 py-2">
-                              <a href="#year4">2022-2023 | Continuous Improvements and Advanced Features</a>
-                            </li>
-                            <li className="flex flex-col gap-3 w-3/4 hover:bg-gray-100 rounded-md px-3 py-2">
-                              <a href="#year5">2024 | Transition to HMIS and tooling for Palliative Care Grid
-                              </a>
-                            </li>
-                          </ul>
                           
-                       </div>
+                        ))}
+                        
+                      </div>
               </div>
         </div>
       );
       
     }
+
