@@ -82,7 +82,7 @@ export default function Header(props: { fixed?: boolean }) {
   const navigation: NavigationItem[] = [
     { type: "dropdown", content: "Products", items: productsItems },
     { type: "dropdown", content: "Community", items: communityItems },
-    { type: "section", content: "Supporters", id: "supporters", page: "/supporters" },
+    { type: "link", content: "Supporters", href: "/supporters" },
     { type: "section", content: "Contact", id: "contact", page: "/" },
     {
       type: "link",
@@ -94,8 +94,6 @@ export default function Header(props: { fixed?: boolean }) {
           height={50}
           className={`md:w-[25px] ${
             scrolled ? "brightness-0" : "" 
-          } ${
-            mobileMenuOpen?"pb-44 pt-4 m-0":""
           } transition-all`}
         />
       ),
@@ -153,7 +151,7 @@ export default function Header(props: { fixed?: boolean }) {
     switch (item.type) {
       case "link":
         return (
-          <Link href={item.href} className={className}>
+          <Link href={item.href} className={`${className} ${mobileMenuOpen?"h-2 p-6":"h-full"}`}>
             {item.content}
           </Link>
         );
@@ -161,7 +159,7 @@ export default function Header(props: { fixed?: boolean }) {
         return (
           <Link
             href={item.page + "#" + item.id}
-            className={`${className} ${mobileMenuOpen?"h-3 p-6":"h-full"}`}
+            className={`${className} ${mobileMenuOpen?"h-1 p-6 ":"h-full"}`}
             onClick={(e) => {
               setMobileMenuOpen(false);
               e.preventDefault();
@@ -184,33 +182,35 @@ export default function Header(props: { fixed?: boolean }) {
             {item.content}
           </button>
         );
-      case "dropdown":
-        return (
-          <button
-            ref={itemRef}
-            className={`nav-button ${className} ${mobileMenuOpen?"h-3 p-6":"h-full"}`}
-            onMouseOver={() => {
-              onHover?.(
-                true,
-                (itemRef.current?.getBoundingClientRect().left || 0) +
-                  (itemRef.current?.clientWidth || 0) / 2
-              );
-            }}
-            onMouseOut={() => {
-              onHover?.(
-                false,
-                (itemRef.current?.getBoundingClientRect().left || 0) +
-                  (itemRef.current?.clientWidth || 0) / 2
-              );
-            }}
-            onClick={() => {
-              setShowDropdown(item.items ? item.items.length : null);
-            }}
-          >
-            {item.content}
-          </button>
-        );
-    }
+        case "dropdown":
+          return (
+            <button
+              ref={itemRef}
+              className={`nav-button md:font-semibold ${scrolled ? "md:hover:text-black/100" : "md:hover:text-white/100"} 
+                ${mobileMenuOpen ? "p-1 font-bold" : "h-full"} 
+                transition-all px-3 flex items-center md:justify-center`}
+              onMouseOver={() => {
+                onHover?.(
+                  true,
+                  (itemRef.current?.getBoundingClientRect().left || 0) +
+                    (itemRef.current?.clientWidth || 0) / 2
+                );
+              }}
+              onMouseOut={() => {
+                onHover?.(
+                  false,
+                  (itemRef.current?.getBoundingClientRect().left || 0) +
+                    (itemRef.current?.clientWidth || 0) / 2
+                );
+              }}
+              onClick={() => {
+                setShowDropdown(item.items ? item.items.length : null);
+              }}
+            >
+              {item.content}
+            </button>
+          );
+        }
   };
 
   const DropDownRender = (props: {
@@ -230,7 +230,7 @@ export default function Header(props: { fixed?: boolean }) {
             key={i}
             className={`p-4 w-[200px] text-left rounded-lg ${
               scrolled ? "hover:bg-black/5" : "hover:bg-black/10"
-            } transition-all flex flex-col gap-2`}
+            } transition-all flex flex-col gap-2 `}
             onClick={() => {
               setMobileMenuOpen(false);
               setShowDropdown(null);
