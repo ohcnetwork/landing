@@ -158,6 +158,7 @@ export default function Header(props: { fixed?: boolean }) {
           <Link
             href={item.page + "#" + item.id}
             className={className}
+            scroll={false}
           >
             {item.content}
           </Link>
