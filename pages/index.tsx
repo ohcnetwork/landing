@@ -150,17 +150,15 @@ type Banner = {
 export default function Home() {
   const router = useRouter();
 
-  useEffect(() => {
-    if (router.asPath.includes("#")) {
-      const hash = router.asPath.split("#")[1];
-      setTimeout(() => {
-        const targetElement = document.getElementById(hash);
-        if (targetElement) {
-          targetElement.scrollIntoView({ behavior: "smooth" });
-        }
-      }, 500);
-    }
-  }, [router.asPath]);
+  if (router.asPath.includes("#")) {
+    const hash = router.asPath.split("#")[1];
+    setTimeout(() => {
+      const targetElement = document.getElementById(hash);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 500);
+  }
 
   const [banner, setBanner] = useState<Banner | null>(null);
 
