@@ -2,17 +2,28 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { usePathname, useRouter } from 'next/navigation';
+import { useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 
 export default function Footer() {
-  const pathname = usePathname();
-  const router = useRouter();
+  const path = usePathname();
+
+  useEffect(() => {
+    if (path === '/' && window.location.hash) {
+      const element = document.querySelector(window.location.hash);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      }
+    }
+  }, [path]);
 
   const navigation = [
     { name: 'Home', href: '/' },
     // { name: 'Projects', href: '/projects' },
     { name: 'Supporters', href: '/supporters' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Contact', href: '/#contact' },
   ];
 
   const socialLinks = [
@@ -32,24 +43,6 @@ export default function Footer() {
       icon: 'logos/slack-logo.svg',
     },
   ];
-
-  const handleContactClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    if (pathname !== '/') {
-      router.push('/#contact');
-      setTimeout(() => {
-        const contactSection = document.getElementById('contact');
-        if (contactSection) {
-          contactSection.scrollIntoView({ behavior: 'smooth' });
-        }
-      }, 500);
-    } else {
-      const contactSection = document.getElementById('contact');
-      if (contactSection) {
-        contactSection.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-  };
 
   return (
     <footer className="bg-primary-100 mt-20">
@@ -80,7 +73,6 @@ export default function Footer() {
                   key={item.name}
                   href={item.href}
                   className="text-primary-900 hover:text-primary-600 transition-colors text-sm"
-                  onClick={item.name === 'Contact' ? handleContactClick : undefined}
                 >
                   {item.name}
                 </Link>
