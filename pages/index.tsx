@@ -162,6 +162,17 @@ export default function Home() {
     }
   }, [router.asPath]);
 
+  useEffect(() => {
+    const searchParams = new URLSearchParams(window.location.search);
+    const section = searchParams.get('section');
+    if (section === 'contact') {
+      const element = document.querySelector('#contact');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, []);
+
   return (
     <div className="bg-white">
       <Head>

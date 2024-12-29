@@ -9,21 +9,28 @@ export default function Footer() {
   const path = usePathname();
 
   useEffect(() => {
-    if (path === '/' && window.location.hash) {
-      const element = document.querySelector(window.location.hash);
-      if (element) {
-        setTimeout(() => {
+    if (typeof window !== 'undefined' && path === '/' && window.location.hash) {
+      const handleHashChange = () => {
+        const element = document.querySelector(window.location.hash);
+        if (element) {
           element.scrollIntoView({ behavior: 'smooth' });
-        }, 100);
-      }
+        }
+      };
+
+      handleHashChange(); // Handle the current hash on load
+
+      window.addEventListener('hashchange', handleHashChange); // Listen for future hash changes
+      return () => window.removeEventListener('hashchange', handleHashChange);
     }
   }, [path]);
 
   const navigation = [
     { name: 'Home', href: '/' },
-    // { name: 'Projects', href: '/projects' },
     { name: 'Supporters', href: '/supporters' },
-    { name: 'Contact', href: '/#contact' },
+    { 
+      name: 'Contact', 
+      href: path === '/' ? '/#contact' : '/?section=contact'
+    },
   ];
 
   const socialLinks = [
@@ -70,6 +77,7 @@ export default function Footer() {
             <nav className="flex flex-col space-y-3">
               {navigation.map((item) => (
                 <Link
+                  prefetch={false} // Disable prefetching to avoid potential conflicts
                   key={item.name}
                   href={item.href}
                   className="text-primary-900 hover:text-primary-600 transition-colors text-sm"
