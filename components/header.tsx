@@ -94,7 +94,7 @@ export default function Header(props: { fixed?: boolean }) {
           width={50}
           height={50}
           className={`md:w-[25px] ${
-            scrolled ? "brightness-0" : ""
+            scrolled ? "brightness-0" : "" 
           } transition-all`}
         />
       ),
@@ -138,19 +138,22 @@ export default function Header(props: { fixed?: boolean }) {
   const NavigationItemRender = (props: {
     item: NavigationItem;
     onHover?: (hoverstate: boolean, leftOffset: number) => void;
+    setMobileMenuOpen: (state: boolean) => void;
+    setShowDropdown: (state: number | null) => void;
   }) => {
-    const { item, onHover } = props;
-
+    const { item, onHover, setMobileMenuOpen, setShowDropdown } = props;
+  
     const className = `font-black md:font-semibold ${
       scrolled ? "md:hover:text-black/100" : "md:hover:text-white/100"
     } transition-all px-3 flex items-center md:justify-center h-full`;
-
+  
     const itemRef = useRef<HTMLButtonElement>(null);
-
+  
     switch (item.type) {
       case "link":
         return (
-          <Link href={item.href} className={className}>
+          <Link href={item.href} className={`${className} ${mobileMenuOpen?"!h-auto !py-2":"h-full"}`} 
+          onClick={() => setMobileMenuOpen(false) } >
             {item.content}
           </Link>
         );
@@ -158,8 +161,9 @@ export default function Header(props: { fixed?: boolean }) {
         return (
           <Link
             href={item.page + "#" + item.id}
-            className={className}
+            className={`${className} ${mobileMenuOpen?"!h-auto !py-2":"h-full"}`}
             onClick={(e) => {
+              setMobileMenuOpen(false);
               e.preventDefault();
               e.stopPropagation();
               if (path === item.page) {
@@ -180,30 +184,35 @@ export default function Header(props: { fixed?: boolean }) {
             {item.content}
           </button>
         );
-      case "dropdown":
-        return (
-          <button
-            ref={itemRef}
-            className={"nav-button " + className}
-            onMouseOver={() => {
-              onHover?.(
-                true,
-                (itemRef.current?.getBoundingClientRect().left || 0) +
-                  (itemRef.current?.clientWidth || 0) / 2
-              );
-            }}
-            onMouseOut={() => {
-              onHover?.(
-                false,
-                (itemRef.current?.getBoundingClientRect().left || 0) +
-                  (itemRef.current?.clientWidth || 0) / 2
-              );
-            }}
-          >
-            {item.content}
-          </button>
-        );
-    }
+        case "dropdown":
+          return (
+            <button
+              ref={itemRef}
+              className={`nav-button md:font-semibold ${scrolled ? "md:hover:text-black/100" : "md:hover:text-white/100"} 
+                ${mobileMenuOpen ? "p-1 font-bold" : "h-full"} 
+                transition-all px-3 flex items-center md:justify-center`}
+              onMouseOver={() => {
+                onHover?.(
+                  true,
+                  (itemRef.current?.getBoundingClientRect().left || 0) +
+                    (itemRef.current?.clientWidth || 0) / 2
+                );
+              }}
+              onMouseOut={() => {
+                onHover?.(
+                  false,
+                  (itemRef.current?.getBoundingClientRect().left || 0) +
+                    (itemRef.current?.clientWidth || 0) / 2
+                );
+              }}
+              onClick={() => {
+                setShowDropdown(item.items ? item.items.length : null);
+              }}
+            >
+              {item.content}
+            </button>
+          );
+        }
   };
 
   const DropDownRender = (props: {
@@ -223,7 +232,11 @@ export default function Header(props: { fixed?: boolean }) {
             key={i}
             className={`p-4 w-[200px] text-left rounded-lg ${
               scrolled ? "hover:bg-black/5" : "hover:bg-black/10"
-            } transition-all flex flex-col gap-2`}
+            } transition-all flex flex-col gap-2 `}
+            onClick={() => {
+              setMobileMenuOpen(false);
+              setShowDropdown(null);
+            }}
           >
             <Image
               src={item.image}
@@ -253,13 +266,13 @@ export default function Header(props: { fixed?: boolean }) {
       }`}
       id="header"
     >
-      <div
-        className={`absolute inset-x-0 h-full bg-white/70 backdrop-blur-xl -z-10 transition-all ${
+      <div 
+      className={`absolute inset-x-0 h-full bg-white/70 backdrop-blur-xl -z-10 transition-all ${
           scrolled ? "top-0" : "-top-full"
         }`}
       />
       <nav
-        className={`flex relative items-stretch justify-between transition-all px-4 md:px-6 lg:px-8`}
+        className={`flex relative items-stretch justify-between transition-all px-4 md:px-6 lg:px-8 text-xs`}
         aria-label="Global"
       >
         <div
@@ -297,11 +310,11 @@ export default function Header(props: { fixed?: boolean }) {
           </button>
         </div>
         <div
-          className={`flex md:items-center p-6 md:p-0 fixed ${
-            mobileMenuOpen ? "right-0" : "right-[-100vw]"
+          className={`flex md:items-center p-6 md:p-0 fixed text-2xl ${
+            mobileMenuOpen ? "right-0" : "right-[-100vw] text-2xl"
           } md:right-auto transition-all md:static ${
             scrolled ? "bg-white/50" : "bg-black/50"
-          } pb-[300px] md:pb-0 md:bg-transparent backdrop-blur-lg md:backdrop-blur-none h-screen md:h-auto top-0 md:top-auto w-screen md:w-auto flex-col md:flex-row text-5xl md:text-base`}
+          } pb-[300px] md:pb-0 md:bg-transparent backdrop-blur-lg md:backdrop-blur-none h-screen md:h-auto top-0 md:top-auto w-screen md:w-auto flex-col md:flex-row md:text-base`}
         >
           <button
             className="md:hidden block absolute top-6 right-8"
@@ -309,21 +322,23 @@ export default function Header(props: { fixed?: boolean }) {
           >
             <XMarkIcon className="h-6 w-6" aria-hidden="true" />
           </button>
-          {navigation.map((item, i) => (
-            <NavigationItemRender
-              item={item}
-              key={i}
-              onHover={(hoverstate, leftOffset) => {
-                if (hoverstate) {
-                  setShowDropdown(i + 1);
-                  triangleRef.current?.style.setProperty(
-                    "left",
-                    `${leftOffset - triangleRef.current.clientWidth / 2}px`
-                  );
-                }
-              }}
-            />
-          ))}
+            {navigation.map((item, i) => (
+              <NavigationItemRender
+                item={item}
+                key={i}
+                setMobileMenuOpen={setMobileMenuOpen}
+                setShowDropdown={setShowDropdown}
+                onHover={(hoverstate, leftOffset) => {
+                  if (hoverstate) {
+                    setShowDropdown(i + 1);
+                    triangleRef.current?.style.setProperty(
+                      "left",
+                      `${leftOffset - triangleRef.current.clientWidth / 2}px`
+                    );
+                  }
+                }}
+              />
+            ))}
         </div>
         <svg
           id="dropdown-triangle"
@@ -348,7 +363,7 @@ export default function Header(props: { fixed?: boolean }) {
         className={`nav-dropdown ${scrolled ? "bg-black/5" : "bg-black/20"} ${
           scrolled ? "" : "backdrop-blur md:rounded-xl md:mx-10"
         } transition-all overflow-hidden fixed bottom-0 md:bottom-auto inset-x-0 md:inset-x-auto md:relative ${
-          !!showDropdown ? "max-h-[400px]" : "max-h-0"
+          !!showDropdown ? " max-h-xs" : "max-h-0"
         }`}
         style={{ height: dropDownHeight }}
       >
