@@ -59,7 +59,7 @@ export function PrimaryFeatures() {
     <section
       id="product"
       aria-label="Features for running your books"
-      className="relative overflow-hidden bg-primary-600 pb-28 pt-20 sm:py-32 mt-32 sm:mt-56 "
+      className="relative overflow-hidden bg-primary-600 pb-20 pt-20 sm:py-32 mt-32 sm:mt-56 "
     >
       {/* <Image
         className="absolute left-1/2 top-1/2 max-w-none translate-x-[-44%] translate-y-[-42%]"
@@ -93,7 +93,7 @@ export function PrimaryFeatures() {
                     <div
                       key={feature.title}
                       className={clsx(
-                        "group relative rounded-full px-4 py-1 lg:rounded-l-xl lg:rounded-r-none lg:p-6",
+                        "group relative rounded-full px-4 py-1 lg:rounded-xl lg:p-6",
                         selectedIndex === featureIndex
                           ? "bg-white lg:bg-white/10 lg:ring-1 lg:ring-inset lg:ring-white/10"
                           : "hover:bg-white/10 lg:hover:bg-white/5"
@@ -108,7 +108,7 @@ export function PrimaryFeatures() {
                               : "text-primary-100 hover:text-white lg:text-white"
                           )}
                         >
-                          <span className="absolute inset-0 rounded-full lg:rounded-l-xl lg:rounded-r-none" />
+                          <span className="absolute inset-0 rounded-full lg:rounded-xl " />
                           {feature.title}
                         </Tab>
                       </h3>
@@ -135,7 +135,7 @@ export function PrimaryFeatures() {
                         {feature.description}
                       </p>
                     </div>
-                    <div className="mt-10 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-primary-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
+                    <div className="mt-20 lg:ml-3 w-full overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-primary-900/20 sm:w-auto lg:mt-0">
                       <Image
                         className="w-full"
                         src={feature.image}
