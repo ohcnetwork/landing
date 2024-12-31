@@ -151,7 +151,8 @@ export default function Header(props: { fixed?: boolean }) {
     switch (item.type) {
       case "link":
         return (
-          <Link href={item.href} className={`${className} ${mobileMenuOpen?"h-2 p-6":"h-full"}`}>
+          <Link href={item.href} className={`${className} ${mobileMenuOpen?"!h-auto !py-2":"h-full"}`} 
+          onClick={() => setMobileMenuOpen(false) } >
             {item.content}
           </Link>
         );
@@ -159,7 +160,7 @@ export default function Header(props: { fixed?: boolean }) {
         return (
           <Link
             href={item.page + "#" + item.id}
-            className={`${className} ${mobileMenuOpen?"h-1 p-6 ":"h-full"}`}
+            className={`${className} ${mobileMenuOpen?"!h-auto !py-2":"h-full"}`}
             onClick={(e) => {
               setMobileMenuOpen(false);
               e.preventDefault();
