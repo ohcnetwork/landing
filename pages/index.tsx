@@ -149,14 +149,19 @@ type Banner = {
 export default function Home() {
 
   const [banner, setBanner] = useState<Banner | null>(null);
+  const [theme, setTheme] = useState('bg-white'); 
+
+  const toggleTheme = () => {
+    setTheme((prevTheme) => (prevTheme === 'bg-white' ? 'bg-black' : 'bg-white'));
+  };
 
   return (
-    <div className="bg-white">
+    <div className={theme}>
       <Head>
         <title>Open Healthcare Network: Transforming Healthcare with AI</title>
       </Head>
       {/* Header */}
-      <Header />
+      <Header toggleTheme={toggleTheme} />
       {/* Hero */}
       <main>
         {/* Hero section */}

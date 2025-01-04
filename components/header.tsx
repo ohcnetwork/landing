@@ -6,8 +6,13 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 
-export default function Header(props: { fixed?: boolean }) {
-  const { fixed } = props;
+export default function Header(props: { fixed?: boolean, toggleTheme: () => void }) {
+  const { fixed, toggleTheme } = props;
+  const [theme, setTheme] = useState('light-mode');
+
+  const toggleThemeText = () => {
+    setTheme(prevTheme => (prevTheme === 'light-mode' ? 'dark-mode' : 'light-mode'));
+  };
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -85,6 +90,7 @@ export default function Header(props: { fixed?: boolean }) {
     { type: "link", content: "Supporters", href: "/supporters" },
     { type: "link", content: "Timeline", href: "/timeline" },
     { type: "section", content: "Contact", id: "contact", page: "/" },
+    
     {
       type: "link",
       content: (
@@ -99,6 +105,14 @@ export default function Header(props: { fixed?: boolean }) {
         />
       ),
       href: "https://github.com/ohcnetwork",
+    },
+    {
+      type: "button",
+      content: theme === 'light-mode' ? 'Dark Mode' : 'Light Mode', 
+      onClick: () => {
+        toggleTheme(); 
+        toggleThemeText(); 
+      },
     },
   ];
 
@@ -297,7 +311,7 @@ export default function Header(props: { fixed?: boolean }) {
           </button>
         </div>
         <div
-          className={`flex md:items-center p-6 md:p-0 fixed ${
+          className={` mx-5 flex md:items-center p-6 md:p-0 fixed ${
             mobileMenuOpen ? "right-0" : "right-[-100vw]"
           } md:right-auto transition-all md:static ${
             scrolled ? "bg-white/50" : "bg-black/50"
