@@ -59,7 +59,7 @@ export function PrimaryFeatures() {
     <section
       id="product"
       aria-label="Features for running your books"
-      className="relative overflow-hidden bg-primary-600 pb-20 pt-20 sm:py-32 mt-32 sm:mt-56 "
+      className="relative overflow-hidden bg-primary-600 pb-28 md:pb-16 pt-20 sm:py-32 mt-32 sm:mt-56 "
     >
       {/* <Image
         className="absolute left-1/2 top-1/2 max-w-none translate-x-[-44%] translate-y-[-42%]"
@@ -74,7 +74,7 @@ export function PrimaryFeatures() {
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
             Empowering Healthcare with Advanced Technology
           </h2>
-          <p className="mt-6 text-lg tracking-tight text-primary-100">
+          <p className="mt-6 lg:mx-8 text-lg tracking-tight text-primary-100">
             Explore the advanced capabilities of Care designed to enhance
             healthcare delivery and patient management. From real-time
             monitoring to comprehensive EMR support, our features are tailored
@@ -135,7 +135,7 @@ export function PrimaryFeatures() {
                         {feature.description}
                       </p>
                     </div>
-                    <div className="mt-20 lg:ml-3 w-full overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-primary-900/20 sm:w-auto lg:mt-0">
+                    <div className="mt-20 lg:ml-5 w-full overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-primary-900/20 sm:w-auto lg:mt-0">
                       <Image
                         className="w-full"
                         src={feature.image}
@@ -156,10 +156,5 @@ export function PrimaryFeatures() {
 }
 
 function Container({ className, ...props }) {
-  return (
-    <div
-      className={clsx("mx-auto max-w-7xl px-4 sm:px-6 lg:px-8", className)}
-      {...props}
-    />
-  );
+  return <div className={clsx("px-4 lg:px-6", className)} {...props} />;
 }
