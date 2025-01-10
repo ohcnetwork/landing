@@ -84,7 +84,7 @@ export default function Header(props: { fixed?: boolean }) {
     { type: "dropdown", content: "Community", items: communityItems },
     { type: "link", content: "Supporters", href: "/supporters" },
     { type: "link", content: "Timeline", href: "/timeline" },
-    { type: "section", content: "Contact", id: "contact", page: "/" },
+    { type: "link", content: "Contact", href: path === '/' ? '/#contact' : '/?section=contact' },
     {
       type: "link",
       content: (
@@ -101,6 +101,21 @@ export default function Header(props: { fixed?: boolean }) {
       href: "https://github.com/ohcnetwork",
     },
   ];
+  useEffect(() => {
+    if (typeof window !== 'undefined' && path === '/' && window.location.hash) {
+      const handleHashChange = () => {
+        const element = document.querySelector(window.location.hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
+
+      handleHashChange(); // Handle the current hash on load
+
+      window.addEventListener('hashchange', handleHashChange); // Listen for future hash changes
+      return () => window.removeEventListener('hashchange', handleHashChange);
+    }
+  }, [path]);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 200);

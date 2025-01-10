@@ -1,36 +1,37 @@
-"use client";
+'use client';
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { usePathname, useRouter } from 'next/navigation';
+import { useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 
 export default function Footer() {
-  const router = useRouter();
   const path = usePathname();
+
+  useEffect(() => {
+    if (typeof window !== 'undefined' && path === '/' && window.location.hash) {
+      const handleHashChange = () => {
+        const element = document.querySelector(window.location.hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
+
+      handleHashChange(); // Handle the current hash on load
+
+      window.addEventListener('hashchange', handleHashChange); // Listen for future hash changes
+      return () => window.removeEventListener('hashchange', handleHashChange);
+    }
+  }, [path]);
 
   const navigation = [
     { name: 'Home', href: '/' },
-    // { name: 'Projects', href: '/projects' },
     { name: 'Supporters', href: '/supporters' },
-    { name: 'Contact', href: '/#contact' },
+    { 
+      name: 'Contact', 
+      href: path === '/' ? '/#contact' : '/?section=contact'
+    },
   ];
-
-  const handleNavigation = (href: string) => {
-    if (href.includes('#')) {
-      const [page, section] = href.split('#');
-
-      if (path === page) {
-        document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
-      } else {
-        router.push(page);
-        setTimeout(() => {
-          document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
-        }, 100); // Adding a small delay to ensure the page has navigated
-      }
-    } else {
-      router.push(href);
-    }
-  };
 
   const socialLinks = [
     {
@@ -76,15 +77,10 @@ export default function Footer() {
             <nav className="flex flex-col space-y-3">
               {navigation.map((item) => (
                 <Link
+                  prefetch={false} // Disable prefetching to avoid potential conflicts
                   key={item.name}
                   href={item.href}
                   className="text-primary-900 hover:text-primary-600 transition-colors text-sm"
-                  onClick={(e) => {
-                    if (item.href.includes('#')) {
-                      e.preventDefault();
-                      handleNavigation(item.href);
-                    }
-                  }}
                 >
                   {item.name}
                 </Link>
