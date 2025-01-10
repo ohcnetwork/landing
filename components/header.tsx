@@ -229,7 +229,7 @@ export default function Header(props: { fixed?: boolean }) {
               src={item.image}
               alt={item.name}
               width={200}
-              height={200}
+              height={150}
               className="rounded-lg"
             />
             <div className="font-black text-sm">{item.name}</div>
