@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import Image from "next/image";
+import { useEffect, useState, ReactNode } from "react";
+import Image, { StaticImageData } from "next/image";
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 import clsx from "clsx";
 
@@ -10,7 +10,13 @@ import screenshotDeviceIntegrations from "@/public/features/device.png";
 import screenshotEMRCriticalCare from "@/public/features/emr.png";
 import screenshotRealTimeMonitoring from "@/public/features/monitoring.png";
 
-const features = [
+type Feature = {
+  title: string;
+  description: string;
+  image: StaticImageData;
+};
+
+const features: Feature[] = [
   {
     title: "EMR Support For Critical Care",
     description:
@@ -38,16 +44,22 @@ const features = [
 ];
 
 export function PrimaryFeatures() {
-  let [tabOrientation, setTabOrientation] = useState("horizontal");
+  const [tabOrientation, setTabOrientation] = useState<
+    "horizontal" | "vertical"
+  >("horizontal");
 
   useEffect(() => {
-    let lgMediaQuery = window.matchMedia("(min-width: 1024px)");
+    const lgMediaQuery = window.matchMedia("(min-width: 1024px)");
 
-    function onMediaQueryChange({ matches }) {
+    const onMediaQueryChange = (event: MediaQueryListEvent) => {
+      const { matches } = event;
       setTabOrientation(matches ? "vertical" : "horizontal");
-    }
+    };
 
-    onMediaQueryChange(lgMediaQuery);
+    lgMediaQuery.addEventListener(
+      "change",
+      onMediaQueryChange as EventListener
+    );
     lgMediaQuery.addEventListener("change", onMediaQueryChange);
 
     return () => {
@@ -59,16 +71,8 @@ export function PrimaryFeatures() {
     <section
       id="product"
       aria-label="Features for running your books"
-      className="relative overflow-hidden bg-primary-600 pb-28 md:pb-16 pt-20 sm:py-32 mt-32 sm:mt-56 "
+      className="relative overflow-hidden bg-primary-600 pb-28 md:pb-16 pt-20 sm:py-32 mt-32 sm:mt-56"
     >
-      {/* <Image
-        className="absolute left-1/2 top-1/2 max-w-none translate-x-[-44%] translate-y-[-42%]"
-        src={backgroundImage}
-        alt=""
-        width={2245}
-        height={1636}
-        unoptimized
-      /> */}
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
@@ -82,12 +86,12 @@ export function PrimaryFeatures() {
           </p>
         </div>
         <TabGroup
-          className="mt-16 grid grid-cols-1 items-center gap-y-2 pt-10 sm:gap-y-6 md:mt-20 lg:grid-cols-12 lg:pt-0"
+          className=" grid grid-cols-1 items-center gap-y-2  sm:gap-y-6 md:mt-20 lg:grid-cols-12 lg:pt-0"
           vertical={tabOrientation === "vertical"}
         >
-          {({ selectedIndex }) => (
+          {({ selectedIndex }: { selectedIndex: number }) => (
             <>
-              <div className="-mx-4 flex overflow-x-auto pb-4 sm:mx-0 sm:overflow-visible sm:pb-0 lg:col-span-5">
+              <div className="-mx-4 md:block hidden overflow-x-auto pb-4 sm:mx-0 sm:overflow-visible sm:pb-0 lg:col-span-5">
                 <TabList className="relative z-10 flex gap-x-4 whitespace-nowrap px-4 sm:mx-auto sm:px-0 lg:mx-0 lg:block lg:gap-x-0 lg:gap-y-1 lg:whitespace-normal">
                   {features.map((feature, featureIndex) => (
                     <div
@@ -108,7 +112,7 @@ export function PrimaryFeatures() {
                               : "text-primary-100 hover:text-white lg:text-white"
                           )}
                         >
-                          <span className="absolute inset-0 rounded-full lg:rounded-xl " />
+                          <span className="absolute inset-0 rounded-full lg:rounded-xl" />
                           {feature.title}
                         </Tab>
                       </h3>
@@ -126,7 +130,27 @@ export function PrimaryFeatures() {
                   ))}
                 </TabList>
               </div>
-              <TabPanels className="lg:col-span-7">
+              {/*Sliding card in Mobile view */}
+              <div className="sm:hidden mt-6 flex overflow-x-auto snap-x snap-mandatory">
+                {features.map((feature, index) => (
+                  <div
+                    key={feature.title}
+                    className="snap-center  flex-shrink-0 w-full mr-3"
+                  >
+                    <p className="my-4 font-display text-xl tracking-tight text-white">
+                      {feature.title}
+                    </p>
+                    <Image
+                      src={feature.image}
+                      alt={feature.title}
+                      className="rounded-lg shadow-lg"
+                      priority
+                    />
+                    <p className="mt-4 text-white">{feature.description}</p>
+                  </div>
+                ))}
+              </div>
+              <TabPanels className="lg:col-span-7 md:block hidden ">
                 {features.map((feature) => (
                   <TabPanel key={feature.title} unmount={false}>
                     <div className="relative sm:px-6 lg:hidden">
@@ -155,6 +179,11 @@ export function PrimaryFeatures() {
   );
 }
 
-function Container({ className, ...props }) {
+type ContainerProps = {
+  className?: string;
+  children: ReactNode;
+};
+
+function Container({ className, ...props }: ContainerProps) {
   return <div className={clsx("px-4 lg:px-6", className)} {...props} />;
 }
