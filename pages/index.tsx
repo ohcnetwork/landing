@@ -9,13 +9,13 @@ import {
 } from "@heroicons/react/20/solid";
 import Image from "next/image";
 import LoadVideoPlayer from "@/components/LoadVideoPlayer";
-import { PrimaryFeatures } from "@/components/PrimaryFeatures";
 import { OpenAIHero } from "@/components/OpenAIHero";
 import Head from "next/head";
 import Link from "next/link";
 import CommitLayout from "@/components/Commit/CommitLayout";
 import Header from "@/components/header";
 import Footer from "@/components/Footer";
+import { PrimaryFeatures } from "@/components/PrimaryFeatures";
 
 const primaryFeatures = [
   {
@@ -147,7 +147,6 @@ type Banner = {
   href: string;
 };
 export default function Home() {
-
   const [banner, setBanner] = useState<Banner | null>(null);
 
   return (
