@@ -140,17 +140,40 @@ export default function Header(props: { fixed?: boolean }) {
     onHover?: (hoverstate: boolean, leftOffset: number) => void;
   }) => {
     const { item, onHover } = props;
-
+  
     const className = `font-black md:font-semibold ${
       scrolled ? "md:hover:text-black/100" : "md:hover:text-white/100"
     } transition-all px-3 flex items-center md:justify-center h-full`;
+  
+    const activeClassName = `relative ${
+      scrolled ? "text-white-600" : "text-white-400"
+    } ${
+      item.type === "section" && item.id === "contact"
+        ? "after:content-[''] after:absolute after:left-1/2 after:bottom-[2px] after:transform after:-translate-x-1/2 after:w-[5px] after:h-[5px] after:bg-white after:opacity-80 after:rounded-full md:after:w-[6px] md:after:h-[6px] md:after:bottom-[19px]" 
+        : "after:content-[''] after:absolute after:left-1/2 after:bottom-[2px] after:transform after:-translate-x-1/2 after:w-[5px] after:h-[5px] after:bg-white after:opacity-80 after:rounded-full md:after:w-[6px] md:after:h-[6px] md:after:bottom-[27px]" 
+    }`;
+    
+    
 
+    const isActive = (href?: string, id?: string) => {
+      if (item.type === "link" && path === href) return true;
+      if (item.type === "section") {
+        if (typeof window !== "undefined") {
+          const hash = window.location.hash;
+          return path === `${item.page}` && hash === `#${id}`;
+        }
+      }
+      return false;
+    };
     const itemRef = useRef<HTMLButtonElement>(null);
-
+  
     switch (item.type) {
       case "link":
         return (
-          <Link href={item.href} className={className}>
+          <Link
+            href={item.href}
+            className={`${className} ${isActive(item.href) ? activeClassName : ""}`}
+          >
             {item.content}
           </Link>
         );
@@ -158,7 +181,9 @@ export default function Header(props: { fixed?: boolean }) {
         return (
           <Link
             href={item.page + "#" + item.id}
-            className={className}
+            className={`${className} ${
+              isActive(item.page, item.id) ? activeClassName : ""
+            }`}
             onClick={(e) => {
               e.preventDefault();
               e.stopPropagation();
@@ -205,6 +230,7 @@ export default function Header(props: { fixed?: boolean }) {
         );
     }
   };
+  
 
   const DropDownRender = (props: {
     items: DropDownItem[];
