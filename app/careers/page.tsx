@@ -76,7 +76,7 @@ const internships = [
       "https://ohcnetwork.notion.site/Product-Documentation-Intern-JD-e3824efd379048adad7ebdf375677472",
   },
   {
-    title: "Junior Full Stack Development Intern",
+    title: "Junior Full Stack Developer Intern",
     description:
       "Develop healthcare solutions using modern web technologies while learning from experienced developers.",
     requirements: [
