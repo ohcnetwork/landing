@@ -1,30 +1,35 @@
 "use client";
 
-import Image from 'next/image';
-import Link from 'next/link';
-import { usePathname, useRouter } from 'next/navigation';
+import Image from "next/image";
+import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 
 export default function Footer() {
   const router = useRouter();
   const path = usePathname();
 
   const navigation = [
-    { name: 'Home', href: '/' },
+    { name: "Home", href: "/" },
     // { name: 'Projects', href: '/projects' },
-    { name: 'Supporters', href: '/supporters' },
-    { name: 'Contact', href: '/#contact' },
+    { name: "Supporters", href: "/supporters" },
+    { name: "Contact", href: "/#contact" },
+    { name: "Careers", href: "/careers" },
   ];
 
   const handleNavigation = (href: string) => {
-    if (href.includes('#')) {
-      const [page, section] = href.split('#');
+    if (href.includes("#")) {
+      const [page, section] = href.split("#");
 
       if (path === page) {
-        document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
+        document
+          .getElementById(section)
+          ?.scrollIntoView({ behavior: "smooth" });
       } else {
         router.push(page);
         setTimeout(() => {
-          document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
+          document
+            .getElementById(section)
+            ?.scrollIntoView({ behavior: "smooth" });
         }, 100); // Adding a small delay to ensure the page has navigated
       }
     } else {
@@ -34,19 +39,19 @@ export default function Footer() {
 
   const socialLinks = [
     {
-      name: 'YouTube',
-      href: 'https://www.youtube.com/@ohc.network',
-      icon: 'logos/yt-logo.svg',
+      name: "YouTube",
+      href: "https://www.youtube.com/@ohc.network",
+      icon: "logos/yt-logo.svg",
     },
     {
-      name: 'GitHub',
-      href: 'https://github.com/ohcnetwork',
-      icon: 'logos/github-logo.svg',
+      name: "GitHub",
+      href: "https://github.com/ohcnetwork",
+      icon: "logos/github-logo.svg",
     },
     {
-      name: 'Slack',
-      href: 'https://slack.ohc.network/',
-      icon: 'logos/slack-logo.svg',
+      name: "Slack",
+      href: "https://slack.ohc.network/",
+      icon: "logos/slack-logo.svg",
     },
   ];
 
@@ -68,7 +73,8 @@ export default function Footer() {
               </span>
             </div>
             <p className="mt-4 text-primary-900 text-sm">
-              OHC Network is an open-source platform using AI to revolutionize healthcare.
+              OHC Network is an open-source platform using AI to revolutionize
+              healthcare.
             </p>
           </div>
 
@@ -80,7 +86,7 @@ export default function Footer() {
                   href={item.href}
                   className="text-primary-900 hover:text-primary-600 transition-colors text-sm"
                   onClick={(e) => {
-                    if (item.href.includes('#')) {
+                    if (item.href.includes("#")) {
                       e.preventDefault();
                       handleNavigation(item.href);
                     }
@@ -116,7 +122,8 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-primary-200">
           <p className="text-center text-xs text-primary-900">
-            © {new Date().getFullYear()} Open Healthcare Network. All rights reserved.
+            © {new Date().getFullYear()} Open Healthcare Network. All rights
+            reserved.
           </p>
         </div>
       </div>
