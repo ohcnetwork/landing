@@ -7,17 +7,16 @@ const internships = [
   {
     title: "QA Intern",
     description:
-      "Help ensure quality and reliability of our healthcare applications through comprehensive testing and collaboration.",
+      "We are looking for proactive and resourceful individuals with a passion for healthcare and technology to join our QA team.",
     requirements: [
-      "Design, execute, and maintain manual test cases with comprehensive documentation",
-      "Familiarize yourself with the existing Cypress framework built with React and TypeScript",
-      "Identify, document, and track bugs, ensuring prompt resolution and maintaining high-quality standards",
-      "Collaborate with cross-functional teams to support and streamline testing efforts",
-      "Demonstrate the ability to commit to weekly testing tasks, take ownership, and meet deadlines consistently",
-      "Knowledge of Python and Django is a plus but not mandatory",
-      "Possess a basic understanding of GitHub workflows (e.g., creating pull requests)",
-      "Experience using IDEs like VS Code to navigate coding environments",
-      "Prior experience in QA or testing is an advantage but not required",
+      "Proactive and resourceful individuals with a passion for healthcare and technology",
+      "A passion for software quality and testing",
+      "Strong attention to detail and analytical skills",
+      "The ability to learn and adapt to new tools, technologies, and workflows",
+      "Excellent communication and teamwork skills",
+      "A proactive mindset with the ability to take ownership of tasks and meet deadlines",
+      "Enthusiasm for working in a collaborative and dynamic environment",
+      "Prior experience in quality assurance or software testing is a plus but not mandatory",
     ],
     applyUrl:
       "https://ohcnetwork.notion.site/Quality-Assurance-Intern-Job-Description-f675d2d800c840599be27c3712229b22",
