@@ -17,25 +17,20 @@ export default function Footer() {
   ];
 
   const handleNavigation = (href: string) => {
-    if (href.includes("#")) {
-      const [page, section] = href.split("#");
-
-      if (path === page) {
-        document
-          .getElementById(section)
-          ?.scrollIntoView({ behavior: "smooth" });
-      } else {
-        router.push(page);
-        setTimeout(() => {
-          document
-            .getElementById(section)
-            ?.scrollIntoView({ behavior: "smooth" });
-        }, 100); // Adding a small delay to ensure the page has navigated
-      }
+  if (href.includes("#")) {
+    let [page, section] = href.split("#");
+    if (!page) page = "/"; // Ensure page is "/" if empty
+    if (path === page) {
+      // On-page navigation: scroll directly
+      document.getElementById(section)?.scrollIntoView({ behavior: "smooth" });
     } else {
-      router.push(href);
+      // Off-page: push URL with query parameter for the global scroll handler
+      router.push(page + "?scrollTo=" + section);
     }
-  };
+  } else {
+    router.push(href);
+  }
+};
 
   const socialLinks = [
     {
