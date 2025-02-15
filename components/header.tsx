@@ -50,6 +50,20 @@ export default function Header(props: { fixed?: boolean }) {
       image: "/dropdownicons/slack.jpg",
       href: "https://slack.ohc.network/",
     },
+    /*{
+      name: "Ayushma",
+      description:
+        "AI powered chatbot to assist doctors and nurses in managing patient care.",
+      image: "/features/care-desktop.png",
+      href: "/ayushma",
+    },
+    {
+      name: "Leaderboard",
+      description:
+        "Tracking the progress of open source contributors and rewarding them for their contributions.",
+      image: "/features/care-desktop.png",
+      href: "/leaderboard",
+    },*/
   ];
 
   type DropDownItem = {
@@ -125,26 +139,16 @@ export default function Header(props: { fixed?: boolean }) {
     );
   }, [dropDownData]);
 
-  // We'll define an isActive function so we show a persistent dot for certain pages.
-  // We want a persistent dot if:
-  //   - path === "/care" => "Products" is active.
-  //   - path === "/supporters" => that link is active.
-  //   - path === "/timeline" => that link is active.
-  //   - no dot for contact or homepage.
-  //   - community has no active path.
-
   function isActive(item: NavigationItem): boolean {
     if (path === "/") {
-      return false; // homepage => no dot.
+      return false;
     }
     if (item.type === "dropdown" && item.content === "Products") {
-      // path===/care => active
       if (path === "/care") {
         return true;
       }
       return false;
     } else if (item.type === "dropdown" && item.content === "Community") {
-      // no active path for community.
       return false;
     } else if (item.type === "link") {
       if (item.href === "/supporters" && path === "/supporters") {
@@ -157,13 +161,10 @@ export default function Header(props: { fixed?: boolean }) {
         return false;
       }
     } else if (item.type === "section") {
-      // contact => no active.
       return false;
     }
     return false;
   }
-
-  // We'll assign a unique ID so we can track hovered link vs. active link.
   function getLinkId(item: NavigationItem): string | null {
     if (item.type === "link") {
       // omit github link.
@@ -178,16 +179,12 @@ export default function Header(props: { fixed?: boolean }) {
         return "dropdown:community";
       }
     } else if (item.type === "section") {
-      // contact => we want a hover dot, no active.
       if (item.id === "contact") {
         return `section:${item.id}`;
       }
     }
     return null;
   }
-
-  // We'll create a separate Dot for mobile and desktop, since the user wants a 20px dot on the left in mobile,
-  // and the existing 2px dot under the link in desktop.
   function Dot({ show }: { show: boolean }) {
     return (
       <>
@@ -243,16 +240,11 @@ export default function Header(props: { fixed?: boolean }) {
     const active = isActive(item);
     const linkId = getLinkId(item);
 
-    // show dot if:
-    //   hoveredLink === linkId, or
-    //   hoveredLink === null and active.
     const showDot =
       linkId !== null && (hoveredLink === linkId || (hoveredLink === null && active));
 
     switch (item.type) {
       case "dropdown": {
-        // We *do* want hover dots for products & community.
-        // Also an active dot for products if path===/care.
         return (
           <button
             ref={itemRef}
@@ -282,7 +274,6 @@ export default function Header(props: { fixed?: boolean }) {
         );
       }
       case "section": {
-        // contact => hover dot only, no active.
         if (item.id === "contact") {
           return (
             <Link
@@ -309,7 +300,6 @@ export default function Header(props: { fixed?: boolean }) {
             </Link>
           );
         } else {
-          // no dot.
           return (
             <Link
               href={item.page + "#" + item.id}
@@ -333,8 +323,6 @@ export default function Header(props: { fixed?: boolean }) {
       }
       case "link": {
         const isGithub = item.href === "https://github.com/ohcnetwork";
-        // supporters/timeline => can be active or hover.
-        // if it's GitHub => no dot.
         return (
           <Link
             href={item.href}
