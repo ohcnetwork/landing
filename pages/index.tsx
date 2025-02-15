@@ -15,6 +15,7 @@ import Link from "next/link";
 import CommitLayout from "@/components/Commit/CommitLayout";
 import Header from "@/components/header";
 import Footer from "@/components/Footer";
+import ScrollToQuery from "@/components/ScrollToQuery";
 import { PrimaryFeatures } from "@/components/PrimaryFeatures";
 
 const primaryFeatures = [
@@ -156,6 +157,7 @@ export default function Home() {
       </Head>
       {/* Header */}
       <Header />
+      <ScrollToQuery />
       {/* Hero */}
       <main>
         {/* Hero section */}
