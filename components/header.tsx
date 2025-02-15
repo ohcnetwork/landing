@@ -20,8 +20,11 @@ export default function Header(props: { fixed?: boolean }) {
   );
   const [dropDownHeight, setDropDownHeight] = useState(0);
 
+  // We'll track which link is currently hovered so we can override the active link's dot.
+  const [hoveredLink, setHoveredLink] = useState<string | null>(null);
+
   const headerContainerRef = useRef<HTMLDivElement>(null);
-  const triangleRef = useRef<SVGSVGElement>(null); // SVGSVG? :D
+  const triangleRef = useRef<SVGSVGElement>(null);
 
   const productsItems = [
     {
@@ -31,20 +34,6 @@ export default function Header(props: { fixed?: boolean }) {
       image: "/features/care-desktop.png",
       href: "/care",
     },
-    /*{
-      name: "Ayushma",
-      description:
-        "AI powered chatbot to assist doctors and nurses in managing patient care.",
-      image: "/features/care-desktop.png",
-      href: "/ayushma",
-    },
-    {
-      name: "Leaderboard",
-      description:
-        "Tracking the progress of open source contributors and rewarding them for their contributions.",
-      image: "/features/care-desktop.png",
-      href: "/leaderboard",
-    },*/
   ];
 
   const communityItems = [
@@ -122,8 +111,9 @@ export default function Header(props: { fixed?: boolean }) {
         !target.closest(".nav-button") &&
         !target.closest(".nav-dropdown") &&
         !target.closest("#dropdown-triangle")
-      )
+      ) {
         setShowDropdown(null);
+      }
     };
     window.addEventListener("mousemove", onMouseMove);
     return () => window.removeEventListener("mousemove", onMouseMove);
@@ -135,52 +125,134 @@ export default function Header(props: { fixed?: boolean }) {
     );
   }, [dropDownData]);
 
+  // We'll define an isActive function so we show a persistent dot for certain pages.
+  // We want a persistent dot if:
+  //   - path === "/care" => "Products" is active.
+  //   - path === "/supporters" => that link is active.
+  //   - path === "/timeline" => that link is active.
+  //   - no dot for contact or homepage.
+  //   - community has no active path.
+
+  function isActive(item: NavigationItem): boolean {
+    if (path === "/") {
+      return false; // homepage => no dot.
+    }
+    if (item.type === "dropdown" && item.content === "Products") {
+      // path===/care => active
+      if (path === "/care") {
+        return true;
+      }
+      return false;
+    } else if (item.type === "dropdown" && item.content === "Community") {
+      // no active path for community.
+      return false;
+    } else if (item.type === "link") {
+      if (item.href === "/supporters" && path === "/supporters") {
+        return true;
+      }
+      if (item.href === "/timeline" && path === "/timeline") {
+        return true;
+      }
+      if (item.href === "https://github.com/ohcnetwork") {
+        return false;
+      }
+    } else if (item.type === "section") {
+      // contact => no active.
+      return false;
+    }
+    return false;
+  }
+
+  // We'll assign a unique ID so we can track hovered link vs. active link.
+  function getLinkId(item: NavigationItem): string | null {
+    if (item.type === "link") {
+      // omit github link.
+      if (item.href === "https://github.com/ohcnetwork") {
+        return null;
+      }
+      return `link:${item.href}`;
+    } else if (item.type === "dropdown") {
+      if (item.content === "Products") {
+        return "dropdown:products";
+      } else if (item.content === "Community") {
+        return "dropdown:community";
+      }
+    } else if (item.type === "section") {
+      // contact => we want a hover dot, no active.
+      if (item.id === "contact") {
+        return `section:${item.id}`;
+      }
+    }
+    return null;
+  }
+
+  // We'll create a separate Dot for mobile and desktop, since the user wants a 20px dot on the left in mobile,
+  // and the existing 2px dot under the link in desktop.
+  function Dot({ show }: { show: boolean }) {
+    return (
+      <>
+        {/* Mobile Dot */}
+        <span
+          className={`
+            absolute
+            block
+            md:hidden
+            left-[-30px]
+            top-1/2
+            -translate-y-1/2
+            w-5
+            h-5
+            rounded-full
+            transition
+            ${show ? "opacity-100" : "opacity-0 group-hover:opacity-100"}
+          `}
+          style={{ backgroundColor: "currentColor" }}
+        />
+        {/* Desktop Dot */}
+        <span
+          className={`
+            absolute
+            hidden
+            md:block
+            left-1/2
+            -translate-x-1/2
+            -bottom-[12px]
+            w-2
+            h-2
+            rounded-full
+            transition
+            ${show ? "opacity-100" : "opacity-0 group-hover:opacity-100"}
+          `}
+          style={{ backgroundColor: "currentColor" }}
+        />
+      </>
+    );
+  }
+
   const NavigationItemRender = (props: {
     item: NavigationItem;
     onHover?: (hoverstate: boolean, leftOffset: number) => void;
   }) => {
     const { item, onHover } = props;
 
-    const className = `font-black md:font-semibold ${
+    const className = `relative font-black md:font-semibold ${
       scrolled ? "md:hover:text-black/100" : "md:hover:text-white/100"
-    } transition-all px-3 flex items-center md:justify-center h-full`;
+    } transition-all px-3 flex items-center md:justify-center h-full group`;
 
     const itemRef = useRef<HTMLButtonElement>(null);
+    const active = isActive(item);
+    const linkId = getLinkId(item);
+
+    // show dot if:
+    //   hoveredLink === linkId, or
+    //   hoveredLink === null and active.
+    const showDot =
+      linkId !== null && (hoveredLink === linkId || (hoveredLink === null && active));
 
     switch (item.type) {
-      case "link":
-        return (
-          <Link href={item.href} className={className}>
-            {item.content}
-          </Link>
-        );
-      case "section":
-        return (
-          <Link
-            href={item.page + "#" + item.id}
-            className={className}
-            onClick={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
-              if (path === item.page) {
-                document
-                  .getElementById(item.id)
-                  ?.scrollIntoView({ behavior: "smooth" });
-              } else {
-                router.push(item.page + "?scrollTo=" + item.id);
-              }
-            }}
-          >
-            {item.content}
-          </Link>
-        );
-      case "button":
-        return (
-          <button className={className} onClick={item.onClick}>
-            {item.content}
-          </button>
-        );
-      case "dropdown":
+      case "dropdown": {
+        // We *do* want hover dots for products & community.
+        // Also an active dot for products if path===/care.
         return (
           <button
             ref={itemRef}
@@ -191,6 +263,7 @@ export default function Header(props: { fixed?: boolean }) {
                 (itemRef.current?.getBoundingClientRect().left || 0) +
                   (itemRef.current?.clientWidth || 0) / 2
               );
+              linkId && setHoveredLink(linkId);
             }}
             onMouseOut={() => {
               onHover?.(
@@ -198,11 +271,96 @@ export default function Header(props: { fixed?: boolean }) {
                 (itemRef.current?.getBoundingClientRect().left || 0) +
                   (itemRef.current?.clientWidth || 0) / 2
               );
+              setHoveredLink(null);
             }}
+          >
+            <span className="relative">
+              {item.content}
+              {linkId && <Dot show={showDot} />}
+            </span>
+          </button>
+        );
+      }
+      case "section": {
+        // contact => hover dot only, no active.
+        if (item.id === "contact") {
+          return (
+            <Link
+              href={item.page + "#" + item.id}
+              className={className}
+              onMouseEnter={() => linkId && setHoveredLink(linkId)}
+              onMouseLeave={() => setHoveredLink(null)}
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                if (path === item.page) {
+                  document
+                    .getElementById(item.id)
+                    ?.scrollIntoView({ behavior: "smooth" });
+                } else {
+                  router.push(item.page + "?scrollTo=" + item.id);
+                }
+              }}
+            >
+              <span className="relative">
+                {item.content}
+                {linkId && <Dot show={showDot} />}
+              </span>
+            </Link>
+          );
+        } else {
+          // no dot.
+          return (
+            <Link
+              href={item.page + "#" + item.id}
+              className={className}
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                if (path === item.page) {
+                  document
+                    .getElementById(item.id)
+                    ?.scrollIntoView({ behavior: "smooth" });
+                } else {
+                  router.push(item.page + "?scrollTo=" + item.id);
+                }
+              }}
+            >
+              {item.content}
+            </Link>
+          );
+        }
+      }
+      case "link": {
+        const isGithub = item.href === "https://github.com/ohcnetwork";
+        // supporters/timeline => can be active or hover.
+        // if it's GitHub => no dot.
+        return (
+          <Link
+            href={item.href}
+            className={className}
+            onMouseEnter={() => linkId && setHoveredLink(linkId)}
+            onMouseLeave={() => setHoveredLink(null)}
+          >
+            <span className="relative">
+              {item.content}
+              {!isGithub && linkId && <Dot show={showDot} />}
+            </span>
+          </Link>
+        );
+      }
+      case "button": {
+        return (
+          <button
+            className={className}
+            onMouseEnter={() => setHoveredLink(null)}
+            onMouseLeave={() => setHoveredLink(null)}
+            onClick={item.onClick}
           >
             {item.content}
           </button>
         );
+      }
     }
   };
 
