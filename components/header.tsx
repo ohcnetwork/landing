@@ -20,7 +20,6 @@ export default function Header(props: { fixed?: boolean }) {
   );
   const [dropDownHeight, setDropDownHeight] = useState(0);
 
-  // We'll track which link is currently hovered so we can override the active link's dot.
   const [hoveredLink, setHoveredLink] = useState<string | null>(null);
 
   const headerContainerRef = useRef<HTMLDivElement>(null);
@@ -188,7 +187,6 @@ export default function Header(props: { fixed?: boolean }) {
   function Dot({ show }: { show: boolean }) {
     return (
       <>
-        {/* Mobile Dot */}
         <span
           className={`
             absolute
@@ -205,7 +203,6 @@ export default function Header(props: { fixed?: boolean }) {
           `}
           style={{ backgroundColor: "currentColor" }}
         />
-        {/* Desktop Dot */}
         <span
           className={`
             absolute
@@ -450,7 +447,7 @@ export default function Header(props: { fixed?: boolean }) {
           } pb-[300px] md:pb-0 md:bg-transparent backdrop-blur-lg md:backdrop-blur-none h-screen md:h-auto top-0 md:top-auto w-screen md:w-auto flex-col md:flex-row text-5xl md:text-base`}
         >
           <button
-            className="md:hidden block absolute top-6 right-8"
+            className="md:hidden block absolute top-6 right-8 z-50"
             onClick={() => setMobileMenuOpen(false)}
           >
             <XMarkIcon className="h-6 w-6" aria-hidden="true" />
