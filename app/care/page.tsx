@@ -126,13 +126,15 @@ const careApps = [
   },
 ];
 
-function FeatureTile(props: {
-  toLeft?: boolean;
-  image: string;
-  title: React.ReactNode;
-  content: React.ReactNode;
-}) {
-  const { toLeft = false, image, title, content } = props;
+function FeatureTile(
+  props: {
+    toLeft?: boolean;
+
+    title: React.ReactNode;
+    content: React.ReactNode;
+  } & ({ image: string } | { video: string })
+) {
+  const { toLeft = false, title, content } = props;
 
   return (
     <div
@@ -140,13 +142,26 @@ function FeatureTile(props: {
         toLeft ? "lg:flex-row-reverse" : "lg:flex-row"
       } items-center gap-10 flex-col`}
     >
-      <Image
-        alt="Image"
-        src={image}
-        className="shadow-xl rounded-2xl w-full lg:max-w-[600px]"
-        width={600}
-        height={415}
-      />
+      {"video" in props ? (
+        <video
+          src={props.video}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="shadow-xl rounded-2xl w-full lg:max-w-[600px]"
+          width={600}
+          height={415}
+        />
+      ) : (
+        <Image
+          alt="Image"
+          src={props.image}
+          className="shadow-xl rounded-2xl w-full lg:max-w-[600px]"
+          width={600}
+          height={415}
+        />
+      )}
       <div className="w-full lg:w-[400px]">
         <Heading size={1}>{title}</Heading>
         <Text className="mt-4">{content}</Text>
@@ -230,26 +245,67 @@ export default function Page() {
       </div>
       <div className="bg-white text-black flex flex-col items-center justify-center p-6 md:p-20">
         <Heading size={3} className="text-center">
-          <span>Everything</span> a Healthcare Facility needs, in one place.
+          Comprehensive Care Support
         </Heading>
+        <Text className="text-center md:w-[800px] mt-10">
+          Care's consultation module supports outpatient, inpatient, and home
+          care scenarios. Clinicians can manage patient encounters in hospitals,
+          clinics, or even virtual/home settings within one system. This
+          comprehensive support means all types of care—routine check-ups,
+          hospital admissions, or home visits—are documented and handled in a
+          unified interface, improving efficiency across the continuum of care.
+        </Text>
+        <div className="flex items-center justify-center gap-4 mt-10">
+          {[
+            { name: "Inpatient Care", image: "inpatient" },
+            { name: "Outpatient Care", image: "outpatient" },
+            { name: "Home Care", image: "homecare" },
+          ].map((type, i) => (
+            <div className="flex flex-col items-center gap-4" key={i}>
+              <img
+                src={`/illustrations/${type.image}.png`}
+                className="w-72 aspect-square rounded-xl"
+              />
+              <Heading size={1} className="font-normal">
+                {type.name}
+              </Heading>
+            </div>
+          ))}
+        </div>
         <div className="flex flex-col gap-20 mt-20">
           <FeatureTile
-            image="/features/care-facility-overview.png"
-            title="Real-time facility wide summarization, statistics, capacity monitoring and reporting to prevent any choke points"
-            content="Glance over important statistics like bed availability, asset locations, active patients, staff capacity with the facility dashboard."
+            video="/illustrations/scheduling.webm"
+            title="Advanced Scheduling & Public Facility Pages"
+            content="An advanced scheduling system streamlines appointment management for both patients and healthcare providers. Users can easily book, view, and manage appointments with intuitive calendar features. In addition, public facility pages showcase healthcare facility information and availability to the public. Hospitals and clinics can display their services, operating hours, and resource availability, improving transparency and helping patients find and schedule the care they need more conveniently."
           />
           <FeatureTile
+            video="/illustrations/forms.webm"
+            title="Customizable EMR Forms"
             toLeft
-            image="/features/care-asset-management.png"
-            title="Manage assets and track their availability"
-            content="CARE can store and maintain records of assets such as 5-para monitors, beds, and other medical equipment at any given time. No need to maintain paper trails for assets anymore."
-          />
-          <FeatureTile
-            image="/features/care-location-management.png"
-            title="See live information on ICUs, Wards, and other in-facility locations"
-            content="Manage beds, middleware uptime, and monitor camera feeds"
+            content="Care's Electronic Medical Record (EMR) system now includes extensively customizable forms for data capture. Healthcare providers can tailor forms to capture all necessary patient information and clinical observations. As data is entered, Care automatically generates structured observations (FHIR resources), ensuring that information is stored in a standardized format. This flexibility allows for detailed clinical documentation that fits diverse specialty needs while maintaining consistency and data integrity."
           />
         </div>
+
+        <Heading size={2} className="text-center mt-20">
+          Interoperable at core
+        </Heading>
+        <Text className="text-center md:w-[600px] mt-10">
+          Care now offers full HL7 FHIR R5 compliance, integrating standard
+          healthcare terminologies like SNOMED CT, LOINC, and UCUM. This ensures
+          seamless data exchange and interoperability with other health systems,
+          adhering to global healthcare data standards. By using the latest FHIR
+          protocols, Care makes it easier to share and consume health
+          information across platforms, reducing errors and improving continuity
+          of care.
+        </Text>
+        <div className="flex items-center gap-10 justify-center mt-10 flex-wrap">
+          {["hl7fhir.webp", "snomedct.png", "loinc.png", "ucum.png"].map(
+            (logo, i) => (
+              <img key={i} src={"/logos/" + logo} alt="" className="h-14" />
+            )
+          )}
+        </div>
+
         <Heading size={3} className="text-center mt-40 mb-10">
           Eliminating the distance between doctors and health centers
         </Heading>
