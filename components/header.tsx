@@ -18,53 +18,12 @@ export default function Header(props: { fixed?: boolean }) {
   const [outDropdownData, setOutDropdownData] = useState<DropDownItem[] | null>(
     null
   );
-  const [dropDownHeight, setDropDownHeight] = useState(0);
-
-  const [hoveredLink, setHoveredLink] = useState<string | null>(null);
-
   const headerContainerRef = useRef<HTMLDivElement>(null);
   const triangleRef = useRef<SVGSVGElement>(null);
 
-  const productsItems = [
-    {
-      name: "CARE",
-      description:
-        "War ready HMIS software, empowering thousands of ICU beds across India. All built on open source.",
-      image: "/features/care-desktop.png",
-      href: "/care",
-    },
-  ];
+  const [dropDownHeight, setDropDownHeight] = useState(0);
 
-  const communityItems = [
-    {
-      name: "Github",
-      description: "Contribute to our open source projects on Github.",
-      image: "/dropdownicons/github.webp",
-      href: "https://github.com/ohcnetwork",
-    },
-    {
-      name: "Slack",
-      description:
-        "Join our Slack community to connect with other contributors.",
-      image: "/dropdownicons/slack.jpg",
-      href: "https://slack.ohc.network/",
-    },
-    /*{
-      name: "Ayushma",
-      description:
-        "AI powered chatbot to assist doctors and nurses in managing patient care.",
-      image: "/features/care-desktop.png",
-      href: "/ayushma",
-    },
-    {
-      name: "Leaderboard",
-      description:
-        "Tracking the progress of open source contributors and rewarding them for their contributions.",
-      image: "/features/care-desktop.png",
-      href: "/leaderboard",
-    },*/
-  ];
-
+  // This type describes the dropdown items and nav items.
   type DropDownItem = {
     name: string;
     description: string;
@@ -80,6 +39,46 @@ export default function Header(props: { fixed?: boolean }) {
     | { type: "button"; onClick: () => void }
     | { type: "dropdown"; items: DropDownItem[] }
   );
+
+  // Hard-coded navigation config.
+  const productsItems: DropDownItem[] = [
+    {
+      name: "CARE",
+      description:
+        "War ready HMIS software, empowering thousands of ICU beds across India. All built on open source.",
+      image: "/features/care-desktop.png",
+      href: "/care",
+    },
+    /*{
+        name: "Ayushma",
+        description:
+          "AI powered chatbot to assist doctors and nurses in managing patient care.",
+        image: "/features/care-desktop.png",
+        href: "/ayushma",
+      },
+      {
+        name: "Leaderboard",
+        description:
+          "Tracking the progress of open source contributors and rewarding them for their contributions.",
+        image: "/features/care-desktop.png",
+        href: "/leaderboard",
+      },*/
+  ];
+
+  const communityItems: DropDownItem[] = [
+    {
+      name: "Github",
+      description: "Contribute to our open source projects on Github.",
+      image: "/dropdownicons/github.webp",
+      href: "https://github.com/ohcnetwork",
+    },
+    {
+      name: "Slack",
+      description: "Join our Slack community to connect with other contributors.",
+      image: "/dropdownicons/slack.jpg",
+      href: "https://slack.ohc.network/",
+    },
+  ];
 
   const navigation: NavigationItem[] = [
     { type: "dropdown", content: "Products", items: productsItems },
@@ -138,55 +137,30 @@ export default function Header(props: { fixed?: boolean }) {
     );
   }, [dropDownData]);
 
+
   function isActive(item: NavigationItem): boolean {
-    if (path === "/") {
-      return false;
+    // If it's a link, we check if path === item.href.
+    if (item.type === "link") {
+      return path === item.href;
     }
-    if (item.type === "dropdown" && item.content === "Products") {
-      if (path === "/care") {
-        return true;
-      }
-      return false;
-    } else if (item.type === "dropdown" && item.content === "Community") {
-      return false;
-    } else if (item.type === "link") {
-      if (item.href === "/supporters" && path === "/supporters") {
-        return true;
-      }
-      if (item.href === "/timeline" && path === "/timeline") {
-        return true;
-      }
-      if (item.href === "https://github.com/ohcnetwork") {
-        return false;
-      }
-    } else if (item.type === "section") {
-      return false;
+
+    // If it's a section, we check if path === item.page.
+    if (item.type === "section") {
+      return false; // ignoring sections, or do path === item.page if needed.
     }
+
+    // If it's a dropdown, we check if any of the sub-items have an href === path.
+    if (item.type === "dropdown") {
+      return item.items.some((subItem) => path === subItem.href);
+    }
+
     return false;
   }
-  function getLinkId(item: NavigationItem): string | null {
-    if (item.type === "link") {
-      // omit github link.
-      if (item.href === "https://github.com/ohcnetwork") {
-        return null;
-      }
-      return `link:${item.href}`;
-    } else if (item.type === "dropdown") {
-      if (item.content === "Products") {
-        return "dropdown:products";
-      } else if (item.content === "Community") {
-        return "dropdown:community";
-      }
-    } else if (item.type === "section") {
-      if (item.id === "contact") {
-        return `section:${item.id}`;
-      }
-    }
-    return null;
-  }
-  function Dot({ show }: { show: boolean }) {
+
+  function Dot({ active }: { active: boolean }) {
     return (
       <>
+      {/* Mobile Dot: 20px below */}
         <span
           className={`
             absolute
@@ -199,10 +173,11 @@ export default function Header(props: { fixed?: boolean }) {
             h-5
             rounded-full
             transition
-            ${show ? "opacity-100" : "opacity-0 group-hover:opacity-100"}
+            ${active ? "opacity-100" : "opacity-0"}
           `}
           style={{ backgroundColor: "currentColor" }}
         />
+        {/* Desktop Dot: 12px below */}
         <span
           className={`
             absolute
@@ -215,7 +190,7 @@ export default function Header(props: { fixed?: boolean }) {
             h-2
             rounded-full
             transition
-            ${show ? "opacity-100" : "opacity-0 group-hover:opacity-100"}
+            ${active ? "opacity-100" : "opacity-0"}
           `}
           style={{ backgroundColor: "currentColor" }}
         />
@@ -228,120 +203,66 @@ export default function Header(props: { fixed?: boolean }) {
     onHover?: (hoverstate: boolean, leftOffset: number) => void;
   }) => {
     const { item, onHover } = props;
+    const active = isActive(item);
 
     const className = `relative font-black md:font-semibold ${
       scrolled ? "md:hover:text-black/100" : "md:hover:text-white/100"
-    } transition-all px-3 flex items-center md:justify-center h-full group`;
-
-    const itemRef = useRef<HTMLButtonElement>(null);
-    const active = isActive(item);
-    const linkId = getLinkId(item);
-
-    const showDot =
-      linkId !== null && (hoveredLink === linkId || (hoveredLink === null && active));
+    } transition-all px-3 flex items-center md:justify-center h-full`;
 
     switch (item.type) {
       case "dropdown": {
         return (
           <button
-            ref={itemRef}
             className={"nav-button " + className}
             onMouseOver={() => {
-              onHover?.(
-                true,
-                (itemRef.current?.getBoundingClientRect().left || 0) +
-                  (itemRef.current?.clientWidth || 0) / 2
-              );
-              linkId && setHoveredLink(linkId);
+              onHover?.(true, 0);
             }}
             onMouseOut={() => {
-              onHover?.(
-                false,
-                (itemRef.current?.getBoundingClientRect().left || 0) +
-                  (itemRef.current?.clientWidth || 0) / 2
-              );
-              setHoveredLink(null);
+              onHover?.(false, 0);
             }}
           >
             <span className="relative">
               {item.content}
-              {linkId && <Dot show={showDot} />}
+              {active && <Dot active={true} />}
             </span>
           </button>
         );
       }
-      case "section": {
-        if (item.id === "contact") {
-          return (
-            <Link
-              href={item.page + "#" + item.id}
-              className={className}
-              onMouseEnter={() => linkId && setHoveredLink(linkId)}
-              onMouseLeave={() => setHoveredLink(null)}
-              onClick={(e) => {
-                e.preventDefault();
-                e.stopPropagation();
-                if (path === item.page) {
-                  document
-                    .getElementById(item.id)
-                    ?.scrollIntoView({ behavior: "smooth" });
-                } else {
-                  router.push(item.page + "?scrollTo=" + item.id);
-                }
-              }}
-            >
-              <span className="relative">
-                {item.content}
-                {linkId && <Dot show={showDot} />}
-              </span>
-            </Link>
-          );
-        } else {
-          return (
-            <Link
-              href={item.page + "#" + item.id}
-              className={className}
-              onClick={(e) => {
-                e.preventDefault();
-                e.stopPropagation();
-                if (path === item.page) {
-                  document
-                    .getElementById(item.id)
-                    ?.scrollIntoView({ behavior: "smooth" });
-                } else {
-                  router.push(item.page + "?scrollTo=" + item.id);
-                }
-              }}
-            >
-              {item.content}
-            </Link>
-          );
-        }
-      }
       case "link": {
-        const isGithub = item.href === "https://github.com/ohcnetwork";
+        // If it's a link, we can just render a Next Link. Show dot if active.
         return (
-          <Link
-            href={item.href}
-            className={className}
-            onMouseEnter={() => linkId && setHoveredLink(linkId)}
-            onMouseLeave={() => setHoveredLink(null)}
-          >
+          <Link href={item.href} className={className}>
             <span className="relative">
               {item.content}
-              {!isGithub && linkId && <Dot show={showDot} />}
+              {active && <Dot active={true} />}
             </span>
+          </Link>
+        );
+      }
+      case "section": {
+        return (
+          <Link
+            href={item.page + "#" + item.id}
+            className={className}
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              if (path === item.page) {
+                document
+                  .getElementById(item.id)
+                  ?.scrollIntoView({ behavior: "smooth" });
+              } else {
+                router.push(item.page + "?scrollTo=" + item.id);
+              }
+            }}
+          >
+            {item.content}
           </Link>
         );
       }
       case "button": {
         return (
-          <button
-            className={className}
-            onMouseEnter={() => setHoveredLink(null)}
-            onMouseLeave={() => setHoveredLink(null)}
-            onClick={item.onClick}
-          >
+          <button className={className} onClick={item.onClick}>
             {item.content}
           </button>
         );
@@ -356,9 +277,9 @@ export default function Header(props: { fixed?: boolean }) {
     const { items, className } = props;
     return (
       <div
-        className={
-          `flex items-stretch p-4 absolute top-0 inset-x-0 ` + className
-        }
+        className={`flex items-stretch p-4 absolute top-0 inset-x-0 ${
+          className || ""
+        }`}
       >
         {items?.map((item, i) => (
           <Link
@@ -396,15 +317,19 @@ export default function Header(props: { fixed?: boolean }) {
       }`}
       id="header"
     >
+      {/* Background when scrolled. */}
       <div
         className={`absolute inset-x-0 h-full bg-white/70 backdrop-blur-xl -z-10 transition-all ${
           scrolled ? "top-0" : "-top-full"
         }`}
       />
+
+      {/* Main nav */}
       <nav
         className={`flex relative items-stretch justify-between transition-all px-4 md:px-6 lg:px-8`}
         aria-label="Global"
       >
+        {/* Left side: logo */}
         <div
           id="header-container"
           ref={headerContainerRef}
@@ -425,10 +350,12 @@ export default function Header(props: { fixed?: boolean }) {
             />
           </Link>
         </div>
+
+        {/* Mobile menu button */}
         <div className="flex md:hidden mr-4">
           <button
             type="button"
-            className=" inline-flex items-center justify-center rounded-md p-2.5 text-gray-400"
+            className="inline-flex items-center justify-center rounded-md p-2.5 text-gray-400"
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
@@ -439,6 +366,8 @@ export default function Header(props: { fixed?: boolean }) {
             />
           </button>
         </div>
+
+        {/* The menu (mobile or desktop) */}
         <div
           className={`flex md:items-center p-6 md:p-0 fixed ${
             mobileMenuOpen ? "right-0" : "right-[-100vw]"
@@ -446,12 +375,14 @@ export default function Header(props: { fixed?: boolean }) {
             scrolled ? "bg-white/50" : "bg-black/50"
           } pb-[300px] md:pb-0 md:bg-transparent backdrop-blur-lg md:backdrop-blur-none h-screen md:h-auto top-0 md:top-auto w-screen md:w-auto flex-col md:flex-row text-5xl md:text-base`}
         >
+          {/* Mobile menu close button */}
           <button
             className="md:hidden block absolute top-6 right-8 z-50"
             onClick={() => setMobileMenuOpen(false)}
           >
             <XMarkIcon className="h-6 w-6" aria-hidden="true" />
           </button>
+          {/* Render each navigation item */}
           {navigation.map((item, i) => (
             <NavigationItemRender
               item={item}
@@ -459,15 +390,19 @@ export default function Header(props: { fixed?: boolean }) {
               onHover={(hoverstate, leftOffset) => {
                 if (hoverstate) {
                   setShowDropdown(i + 1);
-                  triangleRef.current?.style.setProperty(
-                    "left",
-                    `${leftOffset - triangleRef.current.clientWidth / 2}px`
-                  );
+                  if (triangleRef.current) {
+                    triangleRef.current.style.setProperty(
+                      "left",
+                      `${leftOffset - (triangleRef.current.clientWidth / 2)}px`
+                    );
+                  }
                 }
               }}
             />
           ))}
         </div>
+
+        {/* The little triangle shown below dropdown if needed */}
         <svg
           id="dropdown-triangle"
           xmlns="http://www.w3.org/2000/svg"
@@ -487,6 +422,8 @@ export default function Header(props: { fixed?: boolean }) {
           <path d="M24 22h-24l12-20z" />
         </svg>
       </nav>
+
+      {/* The dropdown container for subitems (Products, Community, etc.) */}
       <div
         className={`nav-dropdown ${scrolled ? "bg-black/5" : "bg-black/20"} ${
           scrolled ? "" : "backdrop-blur md:rounded-xl md:mx-10"
