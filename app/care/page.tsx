@@ -47,11 +47,6 @@ const patientFeatures: { title: string; desc: string; icon: string }[] = [
     desc: "Handling and documentation of various sample tests.",
     icon: "virus",
   },
-  // {
-  //   title: "ICD11 Diagnosis",
-  //   desc: "Support for ICD11 diagnosis coding and documentation.",
-  //   icon: "ecg-heart",
-  // },
 ];
 
 const teleICUFeatures = [
