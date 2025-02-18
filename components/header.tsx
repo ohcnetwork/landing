@@ -28,21 +28,21 @@ export default function Header(props: { fixed?: boolean }) {
       name: "CARE",
       description:
         "War ready HMIS software, empowering thousands of ICU beds across India. All built on open source.",
-      image: "/illustrations/care-desktop.png",
+      image: "/illustrations/encounter-page.png",
       href: "/care",
     },
     /*{
       name: "Ayushma",
       description:
         "AI powered chatbot to assist doctors and nurses in managing patient care.",
-      image: "/features/care-desktop.png",
+      image: "/features/encounter-page.png",
       href: "/ayushma",
     },
     {
       name: "Leaderboard",
       description:
         "Tracking the progress of open source contributors and rewarding them for their contributions.",
-      image: "/features/care-desktop.png",
+      image: "/features/encounter-page.png",
       href: "/leaderboard",
     },*/
   ];

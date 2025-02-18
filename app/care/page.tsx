@@ -234,7 +234,7 @@ export default function Page() {
               </Link>
             </div>
             <Image
-              src={"/illustrations/care-desktop.png"}
+              src={"/illustrations/encounter-page.png"}
               alt=""
               width={5000}
               height={5000}
