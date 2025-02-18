@@ -233,7 +233,7 @@ export default function Page() {
               alt=""
               width={5000}
               height={5000}
-              className="w-full md:w-[80vw] mt-14 block rounded-2xl border-gray-200 border-4 shadow-xl"
+              className="w-[calc(100vw-2rem)] md:w-[80vw] mt-14 block rounded-2xl border-gray-200 border-4 shadow-xl"
             />
           </div>
         </div>
@@ -250,7 +250,7 @@ export default function Page() {
           hospital admissions, or home visits—are documented and handled in a
           unified interface, improving efficiency across the continuum of care.
         </Text>
-        <div className="flex items-center justify-center gap-4 mt-10">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-10">
           {[
             { name: "Inpatient Care", image: "inpatient" },
             { name: "Outpatient Care", image: "outpatient" },
