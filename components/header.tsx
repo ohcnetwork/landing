@@ -28,7 +28,7 @@ export default function Header(props: { fixed?: boolean }) {
       name: "CARE",
       description:
         "War ready HMIS software, empowering thousands of ICU beds across India. All built on open source.",
-      image: "/features/care-desktop.png",
+      image: "/illustrations/care-desktop.png",
       href: "/care",
     },
     /*{
