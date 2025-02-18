@@ -248,10 +248,10 @@ export default function Page() {
           Comprehensive Care Support
         </Heading>
         <Text className="text-center md:w-[800px] mt-10">
-          Care's consultation module supports outpatient, inpatient, and home
-          care scenarios. Clinicians can manage patient encounters in hospitals,
-          clinics, or even virtual/home settings within one system. This
-          comprehensive support means all types of care—routine check-ups,
+          Care&apos;s consultation module supports outpatient, inpatient, and
+          home care scenarios. Clinicians can manage patient encounters in
+          hospitals, clinics, or even virtual/home settings within one system.
+          This comprehensive support means all types of care—routine check-ups,
           hospital admissions, or home visits—are documented and handled in a
           unified interface, improving efficiency across the continuum of care.
         </Text>
