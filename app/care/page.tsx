@@ -23,8 +23,8 @@ const patientFeatures: { title: string; desc: string; icon: string }[] = [
     icon: "ecg",
   },
   {
-    title: "ABG",
-    desc: "Arterial Blood Gas (ABG) test management.",
+    title: "Labs",
+    desc: "Labs and test management.",
     icon: "syringe",
   },
   {
@@ -47,11 +47,11 @@ const patientFeatures: { title: string; desc: string; icon: string }[] = [
     desc: "Handling and documentation of various sample tests.",
     icon: "virus",
   },
-  {
-    title: "ICD11 Diagnosis",
-    desc: "Support for ICD11 diagnosis coding and documentation.",
-    icon: "ecg-heart",
-  },
+  // {
+  //   title: "ICD11 Diagnosis",
+  //   desc: "Support for ICD11 diagnosis coding and documentation.",
+  //   icon: "ecg-heart",
+  // },
 ];
 
 const teleICUFeatures = [
@@ -234,11 +234,11 @@ export default function Page() {
               </Link>
             </div>
             <Image
-              src={"/features/care-desktop.png"}
+              src={"/illustrations/care-desktop.png"}
               alt=""
               width={5000}
               height={5000}
-              className="w-full md:w-[80vw] mt-14 block"
+              className="w-full md:w-[80vw] mt-14 block rounded-2xl border-gray-200 border-4 shadow-xl"
             />
           </div>
         </div>
@@ -284,26 +284,65 @@ export default function Page() {
             toLeft
             content="Care's Electronic Medical Record (EMR) system now includes extensively customizable forms for data capture. Healthcare providers can tailor forms to capture all necessary patient information and clinical observations. As data is entered, Care automatically generates structured observations (FHIR resources), ensuring that information is stored in a standardized format. This flexibility allows for detailed clinical documentation that fits diverse specialty needs while maintaining consistency and data integrity."
           />
+          <FeatureTile
+            video="/illustrations/scribe.webm"
+            title="Care Scribe – AI‑Powered Transcription"
+            content="Introducing Care Scribe, a voice-enabled EMR tool that leverages AI
+            for speech-to-text transcription. Clinicians can dictate their notes
+            and orders during or after a consultation, and Care Scribe will
+            transcribe the speech directly into the corresponding EMR fields.
+            This AI-powered transcription speeds up documentation, reduces
+            typing burden, and allows healthcare providers to focus more on the
+            patient rather than paperwork. Care Scribe supports medical
+            terminology and integrates with the Care platform seamlessly as a
+            plugin, showcasing the power of the new Care Apps architecture."
+          />
         </div>
 
-        <Heading size={2} className="text-center mt-20">
-          Interoperable at core
-        </Heading>
-        <Text className="text-center md:w-[600px] mt-10">
-          Care now offers full HL7 FHIR R5 compliance, integrating standard
-          healthcare terminologies like SNOMED CT, LOINC, and UCUM. This ensures
-          seamless data exchange and interoperability with other health systems,
-          adhering to global healthcare data standards. By using the latest FHIR
-          protocols, Care makes it easier to share and consume health
-          information across platforms, reducing errors and improving continuity
-          of care.
-        </Text>
-        <div className="flex items-center gap-10 justify-center mt-10 flex-wrap">
-          {["hl7fhir.webp", "snomedct.png", "loinc.png", "ucum.png"].map(
-            (logo, i) => (
-              <img key={i} src={"/logos/" + logo} alt="" className="h-14" />
-            )
-          )}
+        <div className="flex flex-col xl:flex-row gap-10 justify-center">
+          <div className="flex-1 flex flex-col xl:items-center">
+            <Heading size={2} className="xl:text-center mt-20">
+              Interoperable at core
+            </Heading>
+            <Text className="text-left xl:text-left md:w-[600px] mt-10">
+              Care now offers full HL7 FHIR R5 compliance, integrating standard
+              healthcare terminologies like SNOMED CT, LOINC, and UCUM. This
+              ensures seamless data exchange and interoperability with other
+              health systems, adhering to global healthcare data standards. By
+              using the latest FHIR protocols, Care makes it easier to share and
+              consume health information across platforms, reducing errors and
+              improving continuity of care.
+            </Text>
+            <div className="flex items-center gap-10 justify-center mt-10 flex-wrap">
+              {["hl7fhir.webp", "snomedct.png", "loinc.png", "ucum.png"].map(
+                (logo, i) => (
+                  <img key={i} src={"/logos/" + logo} alt="" className="h-14" />
+                )
+              )}
+            </div>
+          </div>
+          <div className="flex-1  flex flex-col">
+            <Heading size={2} className="xl:text-center mt-20">
+              Fully Flexible RBAC
+            </Heading>
+            <Text className="xl:text-center md:w-[600px] mt-10">
+              Maintain security and precise control over data access with fully
+              flexible Role-Based Access Control (RBAC). Care administrators can
+              define granular roles and permissions for every user type – from
+              doctors and nurses to administrative staff and patients. This
+              fine-grained RBAC ensures each user sees and does only what they
+              are authorized to, supporting compliance with privacy regulations
+              and internal policies. Managing user access is straightforward,
+              allowing quick role adjustments as staff responsibilities change.
+            </Text>
+            <Image
+              src="/illustrations/rbac.jpg"
+              alt=""
+              width={1000}
+              height={600}
+              className="h-64 aspect-video rounded-lg object-contain"
+            />
+          </div>
         </div>
 
         <Heading size={3} className="text-center mt-40 mb-10">
