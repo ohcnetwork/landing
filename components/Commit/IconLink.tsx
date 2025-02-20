@@ -1,13 +1,15 @@
-import Link from 'next/link'
-import clsx from 'clsx'
+import Link, { LinkProps } from 'next/link';
+import clsx from 'clsx';
+import { ComponentType, ReactNode } from 'react';
 
-export function IconLink({
-  children,
-  className,
-  compact = false,
-  icon: Icon,
-  ...props
-}) {
+interface IconLinkProps extends LinkProps {
+  children: ReactNode;
+  className?: string;
+  compact?: boolean;
+  icon?: ComponentType<{ className?: string }>;
+}
+
+export function IconLink({ children, className, compact = false, icon: Icon, ...props }: IconLinkProps) {
   return (
     <Link
       {...props}
@@ -21,5 +23,5 @@ export function IconLink({
       {Icon && <Icon className="h-4 w-4 flex-none" />}
       <span className="self-baseline text-white">{children}</span>
     </Link>
-  )
+  );
 }

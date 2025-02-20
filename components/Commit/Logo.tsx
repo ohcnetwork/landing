@@ -1,6 +1,6 @@
 import { useId } from 'react'
 
-export function Logo(props) {
+export function Logo(props: String) {
   let id = useId()
 
   return (

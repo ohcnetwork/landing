@@ -7,7 +7,10 @@
     ],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": false,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
     "noEmit": true,
     "incremental": true,
     "module": "esnext",
@@ -22,13 +25,19 @@
       }
     ],
     "strictNullChecks": true,
-    "paths": { "@/*": ["./*"], }
+    "paths": {
+      "@/*": [
+        "./*"
+      ],
+    }
   },
   "include": [
     "next-env.d.ts",
     ".next/types/**/*.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    "components/Commit/CommitLayout.tsx",
+    "pages/_app.js"
   ],
   "exclude": [
     "node_modules"

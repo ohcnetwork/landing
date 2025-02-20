@@ -7,7 +7,10 @@ import { Container } from "@/components/Container";
 import { PhoneFrame } from "@/components/PhoneFrame";
 import logoOpenAi from "@/public/logos/openai.png";
 
-function BackgroundIllustration(props) {
+
+type BackgroundIllustrationProps = React.HTMLAttributes<HTMLDivElement>;
+
+function BackgroundIllustration(props: BackgroundIllustrationProps) {
   let id = useId();
 
   return (
@@ -76,7 +79,9 @@ function BackgroundIllustration(props) {
   );
 }
 
-function PlayIcon(props) {
+type PlayIconProps = React.SVGProps<SVGSVGElement>;
+
+function PlayIcon(props: PlayIconProps) {
   return (
     <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" {...props}>
       <circle cx="12" cy="12" r="11.5" stroke="#D4D4D4" />

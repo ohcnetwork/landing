@@ -6,24 +6,24 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         {/* Main meta tags */}
-        <meta charSet="UTF-8" />
+        < meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
 
         {/* Title and Description */}
-        <meta
+        < meta
           name="description"
           content="Open Healthcare Network leverages artificial intelligence to enhance healthcare services, improving access and quality of care for underserved communities in India."
         />
 
         {/* Keywords */}
-        <meta
+        < meta
           name="keywords"
           content="Open Healthcare Network, AI Healthcare, 10BedICU, Healthcare technology, AI in medicine, India healthcare innovation"
         />
 
         {/* Social Media: Open Graph/Facebook */}
-        <meta
+        < meta
           property="og:title"
           content="Open Healthcare Network: Transforming Healthcare with AI"
         />
@@ -39,7 +39,7 @@ export default function App({ Component, pageProps }) {
         <meta property="og:type" content="website" />
 
         {/* Social Media: Twitter */}
-        <meta
+        < meta
           name="twitter:title"
           content="Open Healthcare Network: Transforming Healthcare with AI"
         />
@@ -57,13 +57,13 @@ export default function App({ Component, pageProps }) {
         />
 
         {/* Additional Tags for Verification and Authorship, if applicable */}
-        <meta name="author" content="Open Healthcare Network" />
+        < meta name="author" content="Open Healthcare Network" />
         <meta
           name="google-site-verification"
           content="Google_Site_Verification_Code"
         />
       </Head>
-      <Component {...pageProps} />
+      < Component {...pageProps} />
     </>
   );
 }

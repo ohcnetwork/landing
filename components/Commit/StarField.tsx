@@ -4,7 +4,21 @@ import { useEffect, useId, useRef } from 'react'
 import clsx from 'clsx'
 import { animate, timeline } from 'motion'
 
-const stars = [
+type StarProps = {
+  blurId: string
+  point: [number, number, boolean?, boolean?]
+}
+
+type ConstellationProps = {
+  points: [number, number][]
+  blurId: string
+}
+
+type StarFieldProps = {
+  className?: string
+}
+
+const stars: [number, number, boolean?, boolean?][] = [
   [4, 4, true, true],
   [4, 44, true],
   [36, 22],
@@ -41,7 +55,7 @@ const stars = [
   [852, 89],
 ]
 
-const constellations = [
+const constellations: [number, number][][] = [
   [
     [247, 103],
     [261, 86],
@@ -65,18 +79,18 @@ const constellations = [
   ],
 ]
 
-function Star({ blurId, point: [cx, cy, dim, blur] }) {
-  let groupRef = useRef(null)
-  let ref = useRef(null)
+function Star({ blurId, point: [cx, cy, dim, blur] }: StarProps) {
+  const groupRef = useRef<SVGGElement>(null)
+  const ref = useRef<SVGCircleElement>(null)
 
   useEffect(() => {
     if (!groupRef.current || !ref.current) {
       return
     }
 
-    let delay = Math.random() * 2
+    const delay = Math.random() * 2
 
-    let animations = [
+    const animations = [
       animate(groupRef.current, { opacity: 1 }, { duration: 4, delay }),
       animate(
         ref.current,
@@ -94,9 +108,7 @@ function Star({ blurId, point: [cx, cy, dim, blur] }) {
     ]
 
     return () => {
-      for (let animation of animations) {
-        animation.cancel()
-      }
+      animations.forEach(animation => animation.cancel())
     }
   }, [dim])
 
@@ -118,20 +130,20 @@ function Star({ blurId, point: [cx, cy, dim, blur] }) {
   )
 }
 
-function Constellation({ points, blurId }) {
-  let ref = useRef(null)
-  let uniquePoints = points.filter(
-    (point, pointIndex) =>
-      points.findIndex((p) => String(p) === String(point)) === pointIndex,
+function Constellation({ points, blurId }: ConstellationProps) {
+  const ref = useRef<SVGPathElement>(null)
+  const uniquePoints = points.filter(
+    (point, index) =>
+      points.findIndex(p => p.toString() === point.toString()) === index,
   )
-  let isFilled = uniquePoints.length !== points.length
+  const isFilled = uniquePoints.length !== points.length
 
   useEffect(() => {
     if (!ref.current) {
       return
     }
 
-    let sequence = [
+    const sequence: Parameters<typeof timeline>[0] = [
       [
         ref.current,
         { strokeDashoffset: 0, visibility: 'visible' },
@@ -147,7 +159,7 @@ function Constellation({ points, blurId }) {
       ])
     }
 
-    let animation = timeline(sequence)
+    const animation = timeline(sequence)
 
     return () => {
       animation.cancel()
@@ -164,18 +176,18 @@ function Constellation({ points, blurId }) {
         strokeDashoffset={1}
         pathLength={1}
         fill="transparent"
-        d={`M ${points.join('L')}`}
+        d={`M ${points.map(p => p.join(' ')).join(' L ')}`}
         className="invisible"
       />
-      {uniquePoints.map((point, pointIndex) => (
-        <Star key={pointIndex} point={point} blurId={blurId} />
+      {uniquePoints.map((point, index) => (
+        <Star key={index} point={point} blurId={blurId} />
       ))}
     </>
   )
 }
 
-export function StarField({ className }) {
-  let blurId = useId()
+export function StarField({ className }: StarFieldProps) {
+  const blurId = useId()
 
   return (
     <svg
@@ -192,15 +204,11 @@ export function StarField({ className }) {
           <feGaussianBlur in="SourceGraphic" stdDeviation=".5" />
         </filter>
       </defs>
-      {constellations.map((points, constellationIndex) => (
-        <Constellation
-          key={constellationIndex}
-          points={points}
-          blurId={blurId}
-        />
+      {constellations.map((points, index) => (
+        <Constellation key={index} points={points} blurId={blurId} />
       ))}
-      {stars.map((point, pointIndex) => (
-        <Star key={pointIndex} point={point} blurId={blurId} />
+      {stars.map((point, index) => (
+        <Star key={index} point={point} blurId={blurId} />
       ))}
     </svg>
   )

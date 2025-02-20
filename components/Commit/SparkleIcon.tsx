@@ -1,4 +1,4 @@
-export function SparkleIcon(props) {
+export function SparkleIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox="0 0 16 16" aria-hidden="true" {...props}>
       <path
@@ -10,5 +10,5 @@ export function SparkleIcon(props) {
         d="M12.717 2.432c.1.42.43.75.85.852C15.026 3.633 16 4.27 16 5s-.975 1.367-2.432 1.716c-.42.101-.75.432-.851.852C12.367 9.025 11.729 10 11 10c-.729 0-1.367-.975-1.716-2.432-.101-.42-.431-.75-.851-.852C6.975 6.367 6 5.73 6 5c0-.73.975-1.367 2.433-1.717.42-.1.75-.43.85-.85C9.634.974 10.272 0 11 0c.73 0 1.367.975 1.717 2.432Z"
       />
     </svg>
-  )
+  );
 }

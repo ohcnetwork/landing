@@ -3,7 +3,9 @@
 import { useEffect, useState } from 'react'
 import { useTheme } from 'next-themes'
 
-function ThemeIcon(props) {
+interface ThemeIconProps extends React.SVGProps<SVGSVGElement> { }
+
+function ThemeIcon(props: ThemeIconProps) {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
       <path
@@ -16,9 +18,10 @@ function ThemeIcon(props) {
 }
 
 export function ThemeToggle() {
-  let [mounted, setMounted] = useState(false)
-  let { resolvedTheme, setTheme } = useTheme()
-  let otherTheme = resolvedTheme === 'dark' ? 'light' : 'dark'
+  const [mounted, setMounted] = useState(false)
+  const { resolvedTheme, setTheme } = useTheme()
+
+  const otherTheme: 'light' | 'dark' = resolvedTheme === 'dark' ? 'light' : 'dark'
 
   useEffect(() => {
     setMounted(true)
@@ -35,7 +38,7 @@ export function ThemeToggle() {
       onClick={() => setTheme(otherTheme)}
     >
       <span className="sr-only">Switch to {otherTheme} theme</span>
-      <ThemeIcon className=":fill-white h-6 w-6 fill-white opacity-50 transition-opacity  group-hover:opacity-100" />
+      <ThemeIcon className="h-6 w-6 fill-white opacity-50 transition-opacity group-hover:opacity-100" />
     </button>
   )
 }

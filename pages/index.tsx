@@ -122,7 +122,7 @@ Meeting and working with the team has been a major highlight of the past couple 
   ],
 ];
 
-function classNames(...classes) {
+function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
@@ -868,7 +868,12 @@ export default function Home() {
   );
 }
 
-function AiTool({ title, description }) {
+type aiToolProps = {
+  title: string,
+  description: string,
+}
+
+function AiTool({ title, description }: aiToolProps) {
   return (
     <div className="rounded-xl bg-gray-700 bg-gradient-to-br from-gray-900 to-gray-950 shadow-xl">
       <div className="w-full">
