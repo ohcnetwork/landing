@@ -56,7 +56,12 @@ function Glow() {
   );
 }
 
-function FixedSidebar({ main, footer }) {
+interface FixedSidebarProps {
+  main: React.ReactNode;
+  footer?: React.ReactNode;
+}
+
+function FixedSidebar({ main, footer }: FixedSidebarProps) {
   return (
     <div className="relative flex-none overflow-hidden px-6      ">
       <Glow />
