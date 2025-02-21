@@ -1,6 +1,5 @@
 import { useId } from "react";
 import Image from "next/image";
-import clsx from "clsx";
 
 import { Button } from "@/components/Button";
 import { Container } from "@/components/Container";
@@ -108,6 +107,7 @@ export function OpenAIHero() {
               <Button
                 href="https://openai.com/index/10bedicu/"
                 variant="outline"
+                className=""
               >
                 <span className="">Read the Blog</span>
               </Button>

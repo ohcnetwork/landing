@@ -29,7 +29,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "components/PhoneFrame.jsx"  ],
   "exclude": [
     "node_modules"
   ]
