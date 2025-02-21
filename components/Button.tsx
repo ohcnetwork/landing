@@ -1,7 +1,11 @@
 import Link from "next/link";
 import clsx from "clsx";
 
-const baseStyles = {
+type baseStylesType = {
+  solid: String;
+  outline: String;
+}
+const baseStyles: baseStylesType = {
   solid:
     "inline-flex justify-center rounded-lg py-2 px-3 text-sm font-semibold outline-2 outline-offset-2 transition-colors",
   outline:
@@ -20,23 +24,26 @@ const variantStyles = {
   },
 };
 
-export function Button({ className, ...props }) {
-  props.variant ??= "solid";
-  props.color ??= "gray";
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  variant?: "solid" | "outline";
+  color?: "cyan" | "white" | "gray";
+  href?: string;
+}
 
+export function Button({ className, variant = "solid", color = "gray", href, ...props }: ButtonProps) {
   className = clsx(
-    baseStyles[props.variant],
-    props.variant === "outline"
-      ? variantStyles.outline[props.color]
-      : props.variant === "solid"
-      ? variantStyles.solid[props.color]
-      : undefined,
+    baseStyles[variant],
+    variant === "outline"
+      ? variantStyles.outline[color as 'gray']
+      : variant === "solid"
+        ? variantStyles.solid[color as 'white']
+        : undefined,
     className
   );
 
-  return typeof props.href === "undefined" ? (
-    <button className={className} {...props} />
+  return href ? (
+    <Link className={className} href={href} {...(props as React.AnchorHTMLAttributes<HTMLAnchorElement>)} />
   ) : (
-    <Link href={props.href} className={className} {...props} />
+    <button className={className} {...props} />
   );
 }
