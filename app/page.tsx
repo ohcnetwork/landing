@@ -1,8 +1,8 @@
-/* eslint-disable @next/next/no-img-element */
-import { useState } from "react";
+"use client";
+
+import { Suspense, useState } from "react";
 import {
   ArrowPathIcon,
-  ChevronRightIcon,
   CloudArrowUpIcon,
   LockClosedIcon,
   ServerIcon,
@@ -147,17 +147,14 @@ type Banner = {
   message: string;
   href: string;
 };
-export default function Home() {
+export default function Page() {
   const [banner, setBanner] = useState<Banner | null>(null);
 
   return (
     <div className="bg-white">
-      <Head>
-        <title>Open Healthcare Network: Transforming Healthcare with AI</title>
-      </Head>
-      {/* Header */}
-      <Header />
-      <ScrollToQuery />
+      <Suspense fallback={null}>
+        <ScrollToQuery />
+      </Suspense>
       {/* Hero */}
       <main>
         {/* Hero section */}
@@ -827,7 +824,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <CommitLayout/>
+        <CommitLayout />
         <section
           id="contact"
           aria-label="Join Our Open Healthcare Network Slack Community"
@@ -863,7 +860,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <Footer />
     </div>
   );
 }
