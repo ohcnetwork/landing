@@ -167,7 +167,7 @@ export default function Header(props: { fixed?: boolean }) {
                   .getElementById(item.id)
                   ?.scrollIntoView({ behavior: "smooth" });
               } else {
-                router.push(item.page + "?scrollTo=" + item.id);
+                router.push(item.page + "#" + item.id);
               }
             }}
           >

@@ -1,6 +1,6 @@
 "use client";
 
-import { Suspense, useState } from "react";
+import {useState } from "react";
 import {
   ArrowPathIcon,
   CloudArrowUpIcon,
@@ -152,9 +152,6 @@ export default function Page() {
 
   return (
     <div className="bg-white">
-      <Suspense fallback={null}>
-        <ScrollToQuery />
-      </Suspense>
       {/* Hero */}
       <main>
         {/* Hero section */}
