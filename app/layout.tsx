@@ -22,6 +22,8 @@ export const metadata = {
         alt: "Open Healthcare Network Cover Image",
       },
     ],
+    siteName: "Open Healthcare Network",
+    logo: "https://ohc.network/meta_cover.png",
   },
   twitter: {
     card: "summary_large_image",
