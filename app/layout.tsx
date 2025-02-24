@@ -23,7 +23,7 @@ export const metadata = {
       },
     ],
     siteName: "Open Healthcare Network",
-    logo: "https://ohc.network/meta_cover.png",
+    logo: "https://ohc.network/logos/ohc/ohc-green.png",
   },
   twitter: {
     card: "summary_large_image",
