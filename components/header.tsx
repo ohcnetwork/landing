@@ -18,51 +18,12 @@ export default function Header(props: { fixed?: boolean }) {
   const [outDropdownData, setOutDropdownData] = useState<DropDownItem[] | null>(
     null
   );
+  const headerContainerRef = useRef<HTMLDivElement>(null);
+  const triangleRef = useRef<SVGSVGElement>(null);
+
   const [dropDownHeight, setDropDownHeight] = useState(0);
 
-  const headerContainerRef = useRef<HTMLDivElement>(null);
-  const triangleRef = useRef<SVGSVGElement>(null); // SVGSVG? :D
-
-  const productsItems = [
-    {
-      name: "CARE",
-      description:
-        "War ready HMIS software, empowering thousands of ICU beds across India. All built on open source.",
-      image: "/features/care-desktop.png",
-      href: "/care",
-    },
-    /*{
-      name: "Ayushma",
-      description:
-        "AI powered chatbot to assist doctors and nurses in managing patient care.",
-      image: "/features/care-desktop.png",
-      href: "/ayushma",
-    },
-    {
-      name: "Leaderboard",
-      description:
-        "Tracking the progress of open source contributors and rewarding them for their contributions.",
-      image: "/features/care-desktop.png",
-      href: "/leaderboard",
-    },*/
-  ];
-
-  const communityItems = [
-    {
-      name: "Github",
-      description: "Contribute to our open source projects on Github.",
-      image: "/dropdownicons/github.webp",
-      href: "https://github.com/ohcnetwork",
-    },
-    {
-      name: "Slack",
-      description:
-        "Join our Slack community to connect with other contributors.",
-      image: "/dropdownicons/slack.jpg",
-      href: "https://slack.ohc.network/",
-    },
-  ];
-
+  // This type describes the dropdown items and nav items.
   type DropDownItem = {
     name: string;
     description: string;
@@ -78,6 +39,46 @@ export default function Header(props: { fixed?: boolean }) {
     | { type: "button"; onClick: () => void }
     | { type: "dropdown"; items: DropDownItem[] }
   );
+
+  // Hard-coded navigation config.
+  const productsItems: DropDownItem[] = [
+    {
+      name: "CARE",
+      description:
+        "War ready HMIS software, empowering thousands of ICU beds across India. All built on open source.",
+      image: "/features/care-desktop.png",
+      href: "/care",
+    },
+    /*{
+        name: "Ayushma",
+        description:
+          "AI powered chatbot to assist doctors and nurses in managing patient care.",
+        image: "/features/care-desktop.png",
+        href: "/ayushma",
+      },
+      {
+        name: "Leaderboard",
+        description:
+          "Tracking the progress of open source contributors and rewarding them for their contributions.",
+        image: "/features/care-desktop.png",
+        href: "/leaderboard",
+      },*/
+  ];
+
+  const communityItems: DropDownItem[] = [
+    {
+      name: "Github",
+      description: "Contribute to our open source projects on Github.",
+      image: "/dropdownicons/github.webp",
+      href: "https://github.com/ohcnetwork",
+    },
+    {
+      name: "Slack",
+      description: "Join our Slack community to connect with other contributors.",
+      image: "/dropdownicons/slack.jpg",
+      href: "https://slack.ohc.network/",
+    },
+  ];
 
   const navigation: NavigationItem[] = [
     { type: "dropdown", content: "Products", items: productsItems },
@@ -122,8 +123,9 @@ export default function Header(props: { fixed?: boolean }) {
         !target.closest(".nav-button") &&
         !target.closest(".nav-dropdown") &&
         !target.closest("#dropdown-triangle")
-      )
+      ) {
         setShowDropdown(null);
+      }
     };
     window.addEventListener("mousemove", onMouseMove);
     return () => window.removeEventListener("mousemove", onMouseMove);
@@ -135,26 +137,109 @@ export default function Header(props: { fixed?: boolean }) {
     );
   }, [dropDownData]);
 
+
+  function isActive(item: NavigationItem): boolean {
+    // If it's a link, we check if path === item.href.
+    if (item.type === "link") {
+      return path === item.href;
+    }
+
+    // If it's a section, we check if path === item.page.
+    if (item.type === "section") {
+      return false; // ignoring sections, or do path === item.page if needed.
+    }
+
+    // If it's a dropdown, we check if any of the sub-items have an href === path.
+    if (item.type === "dropdown") {
+      return item.items.some((subItem) => path === subItem.href);
+    }
+
+    return false;
+  }
+
+  function Dot({ active }: { active: boolean }) {
+    return (
+      <>
+      {/* Mobile Dot: 20px below */}
+        <span
+          className={`
+            absolute
+            block
+            md:hidden
+            left-[-30px]
+            top-1/2
+            -translate-y-1/2
+            w-5
+            h-5
+            rounded-full
+            transition
+            ${active ? "opacity-100" : "opacity-0"}
+          `}
+          style={{ backgroundColor: "currentColor" }}
+        />
+        {/* Desktop Dot: 12px below */}
+        <span
+          className={`
+            absolute
+            hidden
+            md:block
+            left-1/2
+            -translate-x-1/2
+            -bottom-[12px]
+            w-2
+            h-2
+            rounded-full
+            transition
+            ${active ? "opacity-100" : "opacity-0"}
+          `}
+          style={{ backgroundColor: "currentColor" }}
+        />
+      </>
+    );
+  }
+
   const NavigationItemRender = (props: {
     item: NavigationItem;
     onHover?: (hoverstate: boolean, leftOffset: number) => void;
   }) => {
     const { item, onHover } = props;
+    const active = isActive(item);
 
-    const className = `font-black md:font-semibold ${
+    const className = `relative font-black md:font-semibold ${
       scrolled ? "md:hover:text-black/100" : "md:hover:text-white/100"
     } transition-all px-3 flex items-center md:justify-center h-full`;
 
-    const itemRef = useRef<HTMLButtonElement>(null);
-
     switch (item.type) {
-      case "link":
+      case "dropdown": {
+        return (
+          <button
+            className={"nav-button " + className}
+            onMouseOver={() => {
+              onHover?.(true, 0);
+            }}
+            onMouseOut={() => {
+              onHover?.(false, 0);
+            }}
+          >
+            <span className="relative">
+              {item.content}
+              {active && <Dot active={true} />}
+            </span>
+          </button>
+        );
+      }
+      case "link": {
+        // If it's a link, we can just render a Next Link. Show dot if active.
         return (
           <Link href={item.href} className={className}>
-            {item.content}
+            <span className="relative">
+              {item.content}
+              {active && <Dot active={true} />}
+            </span>
           </Link>
         );
-      case "section":
+      }
+      case "section": {
         return (
           <Link
             href={item.page + "#" + item.id}
@@ -174,35 +259,14 @@ export default function Header(props: { fixed?: boolean }) {
             {item.content}
           </Link>
         );
-      case "button":
+      }
+      case "button": {
         return (
           <button className={className} onClick={item.onClick}>
             {item.content}
           </button>
         );
-      case "dropdown":
-        return (
-          <button
-            ref={itemRef}
-            className={"nav-button " + className}
-            onMouseOver={() => {
-              onHover?.(
-                true,
-                (itemRef.current?.getBoundingClientRect().left || 0) +
-                  (itemRef.current?.clientWidth || 0) / 2
-              );
-            }}
-            onMouseOut={() => {
-              onHover?.(
-                false,
-                (itemRef.current?.getBoundingClientRect().left || 0) +
-                  (itemRef.current?.clientWidth || 0) / 2
-              );
-            }}
-          >
-            {item.content}
-          </button>
-        );
+      }
     }
   };
 
@@ -213,9 +277,9 @@ export default function Header(props: { fixed?: boolean }) {
     const { items, className } = props;
     return (
       <div
-        className={
-          `flex items-stretch p-4 absolute top-0 inset-x-0 ` + className
-        }
+        className={`flex items-stretch p-4 absolute top-0 inset-x-0 ${
+          className || ""
+        }`}
       >
         {items?.map((item, i) => (
           <Link
@@ -253,15 +317,19 @@ export default function Header(props: { fixed?: boolean }) {
       }`}
       id="header"
     >
+      {/* Background when scrolled. */}
       <div
         className={`absolute inset-x-0 h-full bg-white/70 backdrop-blur-xl -z-10 transition-all ${
           scrolled ? "top-0" : "-top-full"
         }`}
       />
+
+      {/* Main nav */}
       <nav
         className={`flex relative items-stretch justify-between transition-all px-4 md:px-6 lg:px-8`}
         aria-label="Global"
       >
+        {/* Left side: logo */}
         <div
           id="header-container"
           ref={headerContainerRef}
@@ -282,10 +350,12 @@ export default function Header(props: { fixed?: boolean }) {
             />
           </Link>
         </div>
+
+        {/* Mobile menu button */}
         <div className="flex md:hidden mr-4">
           <button
             type="button"
-            className=" inline-flex items-center justify-center rounded-md p-2.5 text-gray-400"
+            className="inline-flex items-center justify-center rounded-md p-2.5 text-gray-400"
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
@@ -296,6 +366,8 @@ export default function Header(props: { fixed?: boolean }) {
             />
           </button>
         </div>
+
+        {/* The menu (mobile or desktop) */}
         <div
           className={`flex md:items-center p-6 md:p-0 fixed ${
             mobileMenuOpen ? "right-0" : "right-[-100vw]"
@@ -303,12 +375,14 @@ export default function Header(props: { fixed?: boolean }) {
             scrolled ? "bg-white/50" : "bg-black/50"
           } pb-[300px] md:pb-0 md:bg-transparent backdrop-blur-lg md:backdrop-blur-none h-screen md:h-auto top-0 md:top-auto w-screen md:w-auto flex-col md:flex-row text-5xl md:text-base`}
         >
+          {/* Mobile menu close button */}
           <button
-            className="md:hidden block absolute top-6 right-8"
+            className="md:hidden block absolute top-6 right-8 z-50"
             onClick={() => setMobileMenuOpen(false)}
           >
             <XMarkIcon className="h-6 w-6" aria-hidden="true" />
           </button>
+          {/* Render each navigation item */}
           {navigation.map((item, i) => (
             <NavigationItemRender
               item={item}
@@ -316,15 +390,19 @@ export default function Header(props: { fixed?: boolean }) {
               onHover={(hoverstate, leftOffset) => {
                 if (hoverstate) {
                   setShowDropdown(i + 1);
-                  triangleRef.current?.style.setProperty(
-                    "left",
-                    `${leftOffset - triangleRef.current.clientWidth / 2}px`
-                  );
+                  if (triangleRef.current) {
+                    triangleRef.current.style.setProperty(
+                      "left",
+                      `${leftOffset - (triangleRef.current.clientWidth / 2)}px`
+                    );
+                  }
                 }
               }}
             />
           ))}
         </div>
+
+        {/* The little triangle shown below dropdown if needed */}
         <svg
           id="dropdown-triangle"
           xmlns="http://www.w3.org/2000/svg"
@@ -344,6 +422,8 @@ export default function Header(props: { fixed?: boolean }) {
           <path d="M24 22h-24l12-20z" />
         </svg>
       </nav>
+
+      {/* The dropdown container for subitems (Products, Community, etc.) */}
       <div
         className={`nav-dropdown ${scrolled ? "bg-black/5" : "bg-black/20"} ${
           scrolled ? "" : "backdrop-blur md:rounded-xl md:mx-10"
