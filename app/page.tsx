@@ -1,8 +1,8 @@
-/* eslint-disable @next/next/no-img-element */
-import { useState } from "react";
+"use client";
+
+import {useState } from "react";
 import {
   ArrowPathIcon,
-  ChevronRightIcon,
   CloudArrowUpIcon,
   LockClosedIcon,
   ServerIcon,
@@ -13,9 +13,6 @@ import { OpenAIHero } from "@/components/OpenAIHero";
 import Head from "next/head";
 import Link from "next/link";
 import CommitLayout from "@/components/Commit/CommitLayout";
-import Header from "@/components/header";
-import Footer from "@/components/Footer";
-import ScrollToQuery from "@/components/ScrollToQuery";
 import { PrimaryFeatures } from "@/components/PrimaryFeatures";
 
 const primaryFeatures = [
@@ -147,17 +144,11 @@ type Banner = {
   message: string;
   href: string;
 };
-export default function Home() {
+export default function Page() {
   const [banner, setBanner] = useState<Banner | null>(null);
 
   return (
     <div className="bg-white">
-      <Head>
-        <title>Open Healthcare Network: Transforming Healthcare with AI</title>
-      </Head>
-      {/* Header */}
-      <Header />
-      <ScrollToQuery />
       {/* Hero */}
       <main>
         {/* Hero section */}
@@ -827,7 +818,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <CommitLayout>{null}</CommitLayout>
+        <CommitLayout />
         <section
           id="contact"
           aria-label="Join Our Open Healthcare Network Slack Community"
@@ -863,7 +854,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <Footer />
     </div>
   );
 }
