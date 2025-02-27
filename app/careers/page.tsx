@@ -22,47 +22,6 @@ const internships = [
       "https://ohcnetwork.notion.site/Quality-Assurance-Intern-Job-Description-f675d2d800c840599be27c3712229b22",
   },
   {
-    title: "DevOps Intern",
-    description:
-      "Support our infrastructure and deployment processes using modern DevOps practices and cloud technologies.",
-    requirements: [
-      "Linux systems proficiency and basic shell scripting",
-      "Familiarity with Git and version control systems",
-      "Understanding of networking basics (DNS, HTTP, load balancing)",
-      "Hands-on experience with cloud platforms (AWS, DigitalOcean, GCP)",
-      "Familiarity with containerization (Docker) and orchestration tools (Kubernetes/ECS)",
-      "Exposure to Infrastructure as Code (IaC) tools (Terraform, Ansible, CloudFormation)",
-      "Experience with CI/CD tools (GitHub Actions, Jenkins, GitLab CI)",
-      "Proactive and solution-oriented mindset",
-      "Strong communication and documentation skills",
-      "Passion for collaborative development and open-source initiatives",
-      "Strong attention to details",
-      "Quick learners with the ability to adapt to new tools and workflows",
-      "Team players with excellent communication and collaboration skills",
-      "Proactive and independent contributors who take ownership of tasks",
-    ],
-    applyUrl:
-      "https://ohcnetwork.notion.site/DevOps-Intern-Job-Description-3269c44838a74dc0a22433d2e1e60981",
-  },
-  {
-    title: "Product Management Intern",
-    description:
-      "Shape product requirements and drive decisions while working closely with development teams and stakeholders.",
-    requirements: [
-      "Proactive and resourceful with a passion for healthcare and technology",
-      "Strong communication skills, especially in written and verbal English",
-      "Ability to conduct research and analyze data effectively",
-      "Familiarity with project management tools like Trello, JIRA, or Notion (preferred)",
-      "Interest in open-source projects and community-driven solutions",
-      "Quick learner eager to take ownership of tasks",
-      "Familiarity with Github will be an added advantage",
-      "Strong attention to detail and organizational skills",
-      "Ability to work collaboratively in a remote team environment",
-    ],
-    applyUrl:
-      "https://ohcnetwork.notion.site/Product-Management-Intern-JD-99dfc807b2854f11b4ee5b69567da796",
-  },
-  {
     title: "Product Documentation Intern",
     description:
       "Create clear and comprehensive documentation for our healthcare products and APIs.",

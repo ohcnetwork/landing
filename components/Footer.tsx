@@ -25,7 +25,7 @@ export default function Footer() {
       document.getElementById(section)?.scrollIntoView({ behavior: "smooth" });
     } else {
       // Off-page: push URL with query parameter for the global scroll handler
-      router.push(page + "?scrollTo=" + section);
+      router.push(page + "#" +  section);
     }
   } else {
     router.push(href);

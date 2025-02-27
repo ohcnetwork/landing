@@ -56,7 +56,12 @@ function Glow() {
   );
 }
 
-function FixedSidebar({ main, footer }) {
+interface FixedSidebarProps {
+  main: React.ReactNode;
+  footer?: React.ReactNode;
+}
+
+function FixedSidebar({ main, footer }: FixedSidebarProps) {
   return (
     <div className="relative flex-none overflow-hidden px-6      ">
       <Glow />
@@ -74,7 +79,7 @@ function FixedSidebar({ main, footer }) {
   );
 }
 
-export default function CommitLayout({ children }) {
+export default function CommitLayout() {
   return (
     <div className="pb-20">
       <div className="flex min-h-full flex-col bg-gray-950">
