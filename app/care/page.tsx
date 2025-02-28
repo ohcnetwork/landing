@@ -1,3 +1,4 @@
+import { FeatureTile } from "@/components/FeatureTile";
 import { Heading, Text } from "@/components/Text";
 import Image from "next/image";
 import Link from "next/link";
@@ -23,8 +24,8 @@ const patientFeatures: { title: string; desc: string; icon: string }[] = [
     icon: "ecg",
   },
   {
-    title: "ABG",
-    desc: "Arterial Blood Gas (ABG) test management.",
+    title: "Labs",
+    desc: "Labs and test management.",
     icon: "syringe",
   },
   {
@@ -46,11 +47,6 @@ const patientFeatures: { title: string; desc: string; icon: string }[] = [
     title: "Sample Tests",
     desc: "Handling and documentation of various sample tests.",
     icon: "virus",
-  },
-  {
-    title: "ICD11 Diagnosis",
-    desc: "Support for ICD11 diagnosis coding and documentation.",
-    icon: "ecg-heart",
   },
 ];
 
@@ -88,7 +84,7 @@ const careApps = [
       </>
     ),
     className: "from-red-500 to-orange-500",
-    link: "https://github.com/ohcnetwork/care_scribe_fe",
+    link: "/care-scribe",
   },
   {
     name: "HCX - Health Care Exchange",
@@ -125,35 +121,6 @@ const careApps = [
     link: "https://github.com/ohcnetwork/care_abdm_fe",
   },
 ];
-
-function FeatureTile(props: {
-  toLeft?: boolean;
-  image: string;
-  title: React.ReactNode;
-  content: React.ReactNode;
-}) {
-  const { toLeft = false, image, title, content } = props;
-
-  return (
-    <div
-      className={`flex ${
-        toLeft ? "lg:flex-row-reverse" : "lg:flex-row"
-      } items-center gap-10 flex-col`}
-    >
-      <Image
-        alt="Image"
-        src={image}
-        className="shadow-xl rounded-2xl w-full lg:max-w-[600px]"
-        width={600}
-        height={415}
-      />
-      <div className="w-full lg:w-[400px]">
-        <Heading size={1}>{title}</Heading>
-        <Text className="mt-4">{content}</Text>
-      </div>
-    </div>
-  );
-}
 
 export default function Page() {
   return (
@@ -219,37 +186,117 @@ export default function Page() {
               </Link>
             </div>
             <Image
-              src={"/features/care-desktop.png"}
+              src={"/illustrations/encounter-page.png"}
               alt=""
               width={5000}
               height={5000}
-              className="w-full md:w-[80vw] mt-14 block"
+              className="w-[calc(100vw-2rem)] md:w-[80vw] mt-14 block rounded-2xl border-gray-200 border-4 shadow-xl"
             />
           </div>
         </div>
       </div>
       <div className="bg-white text-black flex flex-col items-center justify-center p-6 md:p-20">
         <Heading size={3} className="text-center">
-          <span>Everything</span> a Healthcare Facility needs, in one place.
+          Comprehensive Care Support
         </Heading>
+        <Text className="text-center md:w-[800px] mt-10">
+          Care&apos;s consultation module supports outpatient, inpatient, and
+          home care scenarios. Clinicians can manage patient encounters in
+          hospitals, clinics, or even virtual/home settings within one system.
+          This comprehensive support means all types of care—routine check-ups,
+          hospital admissions, or home visits—are documented and handled in a
+          unified interface, improving efficiency across the continuum of care.
+        </Text>
+        <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-10">
+          {[
+            { name: "Inpatient Care", image: "inpatient" },
+            { name: "Outpatient Care", image: "outpatient" },
+            { name: "Home Care", image: "homecare" },
+          ].map((type, i) => (
+            <div className="flex flex-col items-center gap-4" key={i}>
+              <img
+                src={`/illustrations/${type.image}.png`}
+                className="w-72 aspect-square rounded-xl"
+              />
+              <Heading size={1} className="font-normal">
+                {type.name}
+              </Heading>
+            </div>
+          ))}
+        </div>
         <div className="flex flex-col gap-20 mt-20">
           <FeatureTile
-            image="/features/care-facility-overview.png"
-            title="Real-time facility wide summarization, statistics, capacity monitoring and reporting to prevent any choke points"
-            content="Glance over important statistics like bed availability, asset locations, active patients, staff capacity with the facility dashboard."
+            video="/illustrations/scheduling.webm"
+            title="Advanced Scheduling & Public Facility Pages"
+            content="An advanced scheduling system streamlines appointment management for both patients and healthcare providers. Users can easily book, view, and manage appointments with intuitive calendar features. In addition, public facility pages showcase healthcare facility information and availability to the public. Hospitals and clinics can display their services, operating hours, and resource availability, improving transparency and helping patients find and schedule the care they need more conveniently."
           />
           <FeatureTile
+            video="/illustrations/forms.webm"
+            title="Customizable EMR Forms"
             toLeft
-            image="/features/care-asset-management.png"
-            title="Manage assets and track their availability"
-            content="CARE can store and maintain records of assets such as 5-para monitors, beds, and other medical equipment at any given time. No need to maintain paper trails for assets anymore."
+            content="Care's Electronic Medical Record (EMR) system now includes extensively customizable forms for data capture. Healthcare providers can tailor forms to capture all necessary patient information and clinical observations. As data is entered, Care automatically generates structured observations (FHIR resources), ensuring that information is stored in a standardized format. This flexibility allows for detailed clinical documentation that fits diverse specialty needs while maintaining consistency and data integrity."
           />
           <FeatureTile
-            image="/features/care-location-management.png"
-            title="See live information on ICUs, Wards, and other in-facility locations"
-            content="Manage beds, middleware uptime, and monitor camera feeds"
+            video="/illustrations/scribe.webm"
+            title="Care Scribe – AI‑Powered Transcription"
+            content="Introducing Care Scribe, a voice-enabled EMR tool that leverages AI
+            for speech-to-text transcription. Clinicians can dictate their notes
+            and orders during or after a consultation, and Care Scribe will
+            transcribe the speech directly into the corresponding EMR fields.
+            This AI-powered transcription speeds up documentation, reduces
+            typing burden, and allows healthcare providers to focus more on the
+            patient rather than paperwork. Care Scribe supports medical
+            terminology and integrates with the Care platform seamlessly as a
+            plugin, showcasing the power of the new Care Apps architecture."
           />
         </div>
+
+        <div className="flex flex-col xl:flex-row gap-10 justify-center">
+          <div className="flex-1 flex flex-col xl:items-center">
+            <Heading size={2} className="xl:text-center mt-20">
+              Interoperable at core
+            </Heading>
+            <Text className="text-left xl:text-left md:w-[600px] mt-10">
+              Care now offers full HL7 FHIR R5 compliance, integrating standard
+              healthcare terminologies like SNOMED CT, LOINC, and UCUM. This
+              ensures seamless data exchange and interoperability with other
+              health systems, adhering to global healthcare data standards. By
+              using the latest FHIR protocols, Care makes it easier to share and
+              consume health information across platforms, reducing errors and
+              improving continuity of care.
+            </Text>
+            <div className="flex items-center gap-10 justify-center mt-10 flex-wrap">
+              {["hl7fhir.webp", "snomedct.png", "loinc.png", "ucum.png"].map(
+                (logo, i) => (
+                  <img key={i} src={"/logos/" + logo} alt="" className="h-14" />
+                )
+              )}
+            </div>
+          </div>
+          <div className="flex-1  flex flex-col">
+            <Heading size={2} className="xl:text-center mt-20">
+              Fully Flexible RBAC
+            </Heading>
+            <Text className="xl:text-center md:w-[600px] mt-10">
+              Maintain security and precise control over data access with fully
+              flexible Role-Based Access Control (RBAC). Care administrators can
+              define granular roles and permissions for every user type – from
+              doctors and nurses to administrative staff and patients. This
+              fine-grained RBAC ensures each user sees and does only what they
+              are authorized to, supporting compliance with privacy regulations
+              and internal policies. Managing user access is straightforward,
+              allowing quick role adjustments as staff responsibilities change.
+            </Text>
+            <Image
+              src="/illustrations/rbac.jpg"
+              alt=""
+              width={1000}
+              height={600}
+              className="h-64 aspect-video rounded-lg object-contain"
+            />
+          </div>
+        </div>
+
         <Heading size={3} className="text-center mt-40 mb-10">
           Eliminating the distance between doctors and health centers
         </Heading>
