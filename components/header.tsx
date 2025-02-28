@@ -43,26 +43,27 @@ export default function Header(props: { fixed?: boolean }) {
   // Hard-coded navigation config.
   const productsItems: DropDownItem[] = [
     {
-      name: "CARE",
+      name: "Care",
       description:
         "War ready HMIS software, empowering thousands of ICU beds across India. All built on open source.",
       image: "/illustrations/encounter-page.png",
       href: "/care",
     },
-    /*{
-        name: "Ayushma",
-        description:
-          "AI powered chatbot to assist doctors and nurses in managing patient care.",
-        image: "/features/care-desktop.png",
-        href: "/ayushma",
-      },
+    {
+      name: "Care Scribe",
+      description:
+        "AI powered medical transcription plugin for Care, reducing time taken to document patient encounters.",
+      image: "/illustrations/encounter-page.png",
+      href: "/care-scribe",
+    },
+    /*
       {
         name: "Leaderboard",
         description:
           "Tracking the progress of open source contributors and rewarding them for their contributions.",
         image: "/features/care-desktop.png",
         href: "/leaderboard",
-      },*/
+      }*/
   ];
 
   const communityItems: DropDownItem[] = [

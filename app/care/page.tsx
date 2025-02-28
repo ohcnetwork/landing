@@ -1,3 +1,4 @@
+import { FeatureTile } from "@/components/FeatureTile";
 import { Heading, Text } from "@/components/Text";
 import Image from "next/image";
 import Link from "next/link";
@@ -83,7 +84,7 @@ const careApps = [
       </>
     ),
     className: "from-red-500 to-orange-500",
-    link: "https://github.com/ohcnetwork/care_scribe_fe",
+    link: "/care-scribe",
   },
   {
     name: "HCX - Health Care Exchange",
@@ -120,50 +121,6 @@ const careApps = [
     link: "https://github.com/ohcnetwork/care_abdm_fe",
   },
 ];
-
-function FeatureTile(
-  props: {
-    toLeft?: boolean;
-
-    title: React.ReactNode;
-    content: React.ReactNode;
-  } & ({ image: string } | { video: string })
-) {
-  const { toLeft = false, title, content } = props;
-
-  return (
-    <div
-      className={`flex ${
-        toLeft ? "lg:flex-row-reverse" : "lg:flex-row"
-      } items-center gap-10 flex-col`}
-    >
-      {"video" in props ? (
-        <video
-          src={props.video}
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="shadow-xl rounded-2xl w-full lg:max-w-[600px]"
-          width={600}
-          height={415}
-        />
-      ) : (
-        <Image
-          alt="Image"
-          src={props.image}
-          className="shadow-xl rounded-2xl w-full lg:max-w-[600px]"
-          width={600}
-          height={415}
-        />
-      )}
-      <div className="w-full lg:w-[400px]">
-        <Heading size={1}>{title}</Heading>
-        <Text className="mt-4">{content}</Text>
-      </div>
-    </div>
-  );
-}
 
 export default function Page() {
   return (
