@@ -33,7 +33,7 @@ export default function Page() {
           />
 
           <div className="w-full lg:w-[400px] text-black md:text-inherit">
-            Care Scribe is an AI powered plugin integrated with Care's EMR
+            Care Scribe is an AI powered plugin integrated with Care&apos;s EMR
             software, designed to streamline documentation. By converting
             dictated information and image-based inputs into automatic form
             fills, it helps medical professionals save time and reduce errors.
