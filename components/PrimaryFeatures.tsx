@@ -131,7 +131,7 @@ export function PrimaryFeatures() {
                 </TabList>
               </div>
               {/*Sliding card in Mobile view */}
-              <div className="sm:hidden mt-6 flex overflow-x-auto snap-x snap-mandatory">
+              <div className="md:hidden mt-6 flex overflow-x-auto snap-x snap-mandatory">
                 {features.map((feature, index) => (
                   <div
                     key={feature.title}
