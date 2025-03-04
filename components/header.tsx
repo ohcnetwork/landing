@@ -43,26 +43,27 @@ export default function Header(props: { fixed?: boolean }) {
   // Hard-coded navigation config.
   const productsItems: DropDownItem[] = [
     {
-      name: "CARE",
+      name: "Care",
       description:
         "War ready HMIS software, empowering thousands of ICU beds across India. All built on open source.",
-      image: "/features/care-desktop.png",
+      image: "/logos/care.png",
       href: "/care",
     },
-    /*{
-        name: "Ayushma",
-        description:
-          "AI powered chatbot to assist doctors and nurses in managing patient care.",
-        image: "/features/care-desktop.png",
-        href: "/ayushma",
-      },
+    {
+      name: "Care Scribe",
+      description:
+        "AI powered medical transcription plugin for Care, reducing time taken to document patient encounters.",
+      image: "/logos/scribe.png",
+      href: "/care-scribe",
+    },
+    /*
       {
         name: "Leaderboard",
         description:
           "Tracking the progress of open source contributors and rewarding them for their contributions.",
         image: "/features/care-desktop.png",
         href: "/leaderboard",
-      },*/
+      }*/
   ];
 
   const communityItems: DropDownItem[] = [
@@ -74,7 +75,8 @@ export default function Header(props: { fixed?: boolean }) {
     },
     {
       name: "Slack",
-      description: "Join our Slack community to connect with other contributors.",
+      description:
+        "Join our Slack community to connect with other contributors.",
       image: "/dropdownicons/slack.jpg",
       href: "https://slack.ohc.network/",
     },
@@ -137,7 +139,6 @@ export default function Header(props: { fixed?: boolean }) {
     );
   }, [dropDownData]);
 
-
   function isActive(item: NavigationItem): boolean {
     // If it's a link, we check if path === item.href.
     if (item.type === "link") {
@@ -160,7 +161,7 @@ export default function Header(props: { fixed?: boolean }) {
   function Dot({ active }: { active: boolean }) {
     return (
       <>
-      {/* Mobile Dot: 20px below */}
+        {/* Mobile Dot: 20px below */}
         <span
           className={`
             absolute
@@ -393,7 +394,7 @@ export default function Header(props: { fixed?: boolean }) {
                   if (triangleRef.current) {
                     triangleRef.current.style.setProperty(
                       "left",
-                      `${leftOffset - (triangleRef.current.clientWidth / 2)}px`
+                      `${leftOffset - triangleRef.current.clientWidth / 2}px`
                     );
                   }
                 }
