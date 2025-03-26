@@ -87,14 +87,14 @@ const careApps = [
     link: "/care-scribe",
   },
   {
-    name: "HCX - Health Care Exchange",
-    desc: "Integration with Health Claims Exchange",
+    name: "HCX - Health Claims Exchange",
+    desc: "Integration with Health Claims Exchange Protocols",
     className: "from-blue-500 to-blue-400",
     display: (
       <>
         <Image
           src="/logos/hcx.png"
-          alt="Health Care Exchange"
+          alt="Health Claims Exchange"
           width={200}
           height={200}
           className="contrast-100 brightness-0 invert -translate-x-8"
