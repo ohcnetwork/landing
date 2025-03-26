@@ -87,8 +87,8 @@ const careApps = [
     link: "/care-scribe",
   },
   {
-    name: "HCX - Health Claims Exchange",
-    desc: "Integration with Health Claims Exchange Protocols",
+    name: "HCX - Health Claims Data Exchange",
+    desc: "Integration with Health Claims Exchange Protocol",
     className: "from-blue-500 to-blue-400",
     display: (
       <>
