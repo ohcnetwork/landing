@@ -123,23 +123,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-const aiTools = [
-  {
-    title: "Voice",
-    description:
-      "Medispeak transforms voice to text and automatically fill Electronic Medical Records.",
-  },
-  {
-    title: "Vision",
-    description:
-      "Automate medical readings from ICU equipment into Electronic Medical Records.",
-  },
-  {
-    title: "Agent",
-    description:
-      "Ayushma AI is multilingual Medical Protocol Assistant for assisting nurses.",
-  },
-];
+
 type Banner = {
   message: string;
   href: string;
@@ -896,21 +880,4 @@ export default function Page() {
   );
 }
 
-function AiTool({ title, description }) {
-  return (
-    <div className="rounded-xl bg-gray-700 bg-gradient-to-br from-gray-900 to-gray-950 shadow-xl">
-      <div className="w-full">
-        <Image
-          src={`/illustrations/${title}-icon.svg`}
-          alt={`Illustration of ${title}`}
-          width={700}
-          height={500}
-        />
-      </div>
-      <div className="p-6">
-        <h3 className="text-gray-100 text-lg md:text-3xl">{title}</h3>
-        <p className="text-gray-400 pt-1">{description}</p>
-      </div>
-    </div>
-  );
-}
+
