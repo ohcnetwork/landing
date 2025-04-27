@@ -123,23 +123,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-const aiTools = [
-  {
-    title: "Voice",
-    description:
-      "Medispeak transforms voice to text and automatically fill Electronic Medical Records.",
-  },
-  {
-    title: "Vision",
-    description:
-      "Automate medical readings from ICU equipment into Electronic Medical Records.",
-  },
-  {
-    title: "Agent",
-    description:
-      "Ayushma AI is multilingual Medical Protocol Assistant for assisting nurses.",
-  },
-];
+
 type Banner = {
   message: string;
   href: string;
@@ -360,33 +344,71 @@ export default function Page() {
 
         {/* OpenAI Blog Feature */}
         <OpenAIHero />
+
         {/* AI Tools Section */}
-        <section
-          id="ai_features"
-          className="mt-24 sm:mt-36 max-w-7xl mx-auto px-5"
-        >
-          <div className="grid md:grid-cols-2 border border-white/10 border-dashed">
-            <div className="p-5 flex md:items-center md:justify-center border-b border-e-0 md:border-e border-white/10 border-dashed">
-              <div>
-                <h2 className=" text-2xl lg:text-6xl leading-snug bg-clip-text text-transparent bg-gradient-to-br from-green-500 via-green-600 to-green-700 font-semibold">
-                  GenAI@ <br /> ohc.network
-                </h2>
-                <p className="text-gray-400 md:pt-4 text-lg max-w-sm">
-                  Revolutionizing Healthcare with Generative AI
-                </p>
-              </div>
-            </div>
-            <div className="p-5 border-b border-white/10 border-dashed">
-              <AiTool {...aiTools[0]} />
-            </div>
-            <div className="p-5 border-b  border-e-0 md:border-e border-white/10 border-dashed">
-              <AiTool {...aiTools[1]} />
-            </div>
-            <div className="p-5 border-b border-white/10 border-dashed">
-              <AiTool {...aiTools[2]} />
-            </div>
-          </div>
-        </section>
+       
+ 
+    <section
+  id="ai_features"
+  className="mt-24 sm:mt-36 max-w-7xl mx-auto px-5"
+>
+  <div className="grid md:grid-cols-2 border border-white/10 border-dashed">
+
+    {/* Heading Section */}
+    <div className="p-5 flex md:items-center md:justify-center border-b border-e-0 md:border-e border-white/10 border-dashed">
+      <div>
+        <h2 className="text-2xl lg:text-6xl leading-snug bg-clip-text text-transparent bg-gradient-to-br from-green-500 via-green-600 to-green-700 font-semibold">
+          GenAI@ <br /> ohc.network
+        </h2>
+        <p className="text-gray-400 md:pt-4 text-lg max-w-sm">
+          Revolutionizing Healthcare with Generative AI
+        </p>
+      </div>
+    </div>
+
+    {/* Card 1 - Voice */}
+    <div className="p-5 border-b border-white/10 border-dashed">
+      <div className="flex flex-col justify-between min-h-64 h-full rounded-xl bg-gray-700 bg-gradient-to-br from-gray-900 to-gray-950 p-5 shadow-md">
+        <div><img src="/illustrations/Voice-icon.svg" alt="" /></div>
+        <div>
+          <h3 className="text-2xl font-semibold text-white">Voice</h3>
+          <p className="text-gray-400 mt-2">
+            Medispeak transforms voice to text and automatically fill Electronic Medical Records.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    {/* Card 2 - Vision */}
+    <div className="p-5 border-b border-e-0 md:border-e border-white/10 border-dashed">
+      <div className="flex flex-col justify-between min-h-64 h-full  rounded-xl p-5 bg-gray-700 bg-gradient-to-br from-gray-900 to-gray-950 shadow-md">
+        <div><img src="/illustrations/Vision-icon.svg" alt="" /></div>
+        <div>
+          <h3 className="text-2xl font-semibold text-white">Vision</h3>
+          <p className="text-gray-400 mt-2">
+            Automate medical readings from ICU equipment into Electronic Medical Records.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    {/* Card 3 - Agent */}
+    <div className="p-5 border-b border-white/10 border-dashed">
+      <div className="flex flex-col justify-between min-h-64 h-full  rounded-xl p-5 bg-gray-700 bg-gradient-to-br from-gray-900 to-gray-950 shadow-md">
+        <div><img src="/illustrations/Agent-icon.svg" alt="" /></div>
+        <div>
+          <h3 className="text-2xl font-semibold text-white">Agent</h3>
+          <p className="text-gray-400 mt-2">
+            Ayushma AI is multilingual Medical Protocol Assistant for assisting nurses.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+     </section>
+
+
         {/* Product Section */}
         {/* <div className="mx-auto mt-32 max-w-7xl sm:mt-56 sm:px-6 lg:px-8">
           <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-20 sm:rounded-3xl sm:px-10 sm:py-24 lg:py-24 xl:px-24">
@@ -858,21 +880,4 @@ export default function Page() {
   );
 }
 
-function AiTool({ title, description }) {
-  return (
-    <div className="rounded-xl bg-gray-700 bg-gradient-to-br from-gray-900 to-gray-950 shadow-xl">
-      <div className="w-full">
-        <Image
-          src={`/illustrations/${title}-icon.svg`}
-          alt={`Illustration of ${title}`}
-          width={700}
-          height={500}
-        />
-      </div>
-      <div className="p-6">
-        <h3 className="text-gray-100 text-lg md:text-3xl">{title}</h3>
-        <p className="text-gray-400 pt-1">{description}</p>
-      </div>
-    </div>
-  );
-}
+
