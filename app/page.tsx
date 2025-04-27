@@ -385,7 +385,7 @@ export default function Page() {
     {/* Card 1 - Voice */}
     <div className="p-5 border-b border-white/10 border-dashed">
       <div className="flex flex-col justify-between min-h-64 h-full rounded-xl bg-gray-700 bg-gradient-to-br from-gray-900 to-gray-950 p-5 shadow-md">
-        <div><img src="http://localhost:3000/illustrations/Voice-icon.svg" alt="" /></div>
+        <div><img src="/illustrations/Voice-icon.svg" alt="" /></div>
         <div>
           <h3 className="text-2xl font-semibold text-white">Voice</h3>
           <p className="text-gray-400 mt-2">
@@ -398,7 +398,7 @@ export default function Page() {
     {/* Card 2 - Vision */}
     <div className="p-5 border-b border-e-0 md:border-e border-white/10 border-dashed">
       <div className="flex flex-col justify-between min-h-64 h-full  rounded-xl p-5 bg-gray-700 bg-gradient-to-br from-gray-900 to-gray-950 shadow-md">
-        <div><img src="http://localhost:3000/illustrations/Vision-icon.svg" alt="" /></div>
+        <div><img src="/illustrations/Vision-icon.svg" alt="" /></div>
         <div>
           <h3 className="text-2xl font-semibold text-white">Vision</h3>
           <p className="text-gray-400 mt-2">
@@ -411,7 +411,7 @@ export default function Page() {
     {/* Card 3 - Agent */}
     <div className="p-5 border-b border-white/10 border-dashed">
       <div className="flex flex-col justify-between min-h-64 h-full  rounded-xl p-5 bg-gray-700 bg-gradient-to-br from-gray-900 to-gray-950 shadow-md">
-        <div><img src="http://localhost:3000/illustrations/Agent-icon.svg" alt="" /></div>
+        <div><img src="/illustrations/Agent-icon.svg" alt="" /></div>
         <div>
           <h3 className="text-2xl font-semibold text-white">Agent</h3>
           <p className="text-gray-400 mt-2">
@@ -896,21 +896,21 @@ export default function Page() {
   );
 }
 
-// function AiTool({ title, description }) {
-//   return (
-//     <div className="rounded-xl bg-gray-700 bg-gradient-to-br from-gray-900 to-gray-950 shadow-xl">
-//       <div className="w-full">
-//         <Image
-//           src={`/illustrations/${title}-icon.svg`}
-//           alt={`Illustration of ${title}`}
-//           width={700}
-//           height={500}
-//         />
-//       </div>
-//       <div className="p-6">
-//         <h3 className="text-gray-100 text-lg md:text-3xl">{title}</h3>
-//         <p className="text-gray-400 pt-1">{description}</p>
-//       </div>
-//     </div>
-//   );
-// }
+function AiTool({ title, description }) {
+  return (
+    <div className="rounded-xl bg-gray-700 bg-gradient-to-br from-gray-900 to-gray-950 shadow-xl">
+      <div className="w-full">
+        <Image
+          src={`/illustrations/${title}-icon.svg`}
+          alt={`Illustration of ${title}`}
+          width={700}
+          height={500}
+        />
+      </div>
+      <div className="p-6">
+        <h3 className="text-gray-100 text-lg md:text-3xl">{title}</h3>
+        <p className="text-gray-400 pt-1">{description}</p>
+      </div>
+    </div>
+  );
+}
