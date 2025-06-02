@@ -66,7 +66,7 @@ const internships = [
   {
     title: "Content Creator Intern",
     description:
-      "Create engaging content that helps healthcare professionals understand and use our technology effectively. You'll write blog posts, create social media content, and develop educational materials.",
+      "Create engaging content for healthcare professionals, including blog posts, social media content, and educational materials.",
     requirements: [
       "Strong writing skills with the ability to explain complex ideas clearly and creatively",
       "Experience with visual design tools like Canva, Figma, or Illustrator",
@@ -82,7 +82,7 @@ const internships = [
   {
     title: "Medical Intern",
     description:
-      "Join our team to bridge the gap between healthcare and technology. You'll help translate clinical workflows into digital solutions and contribute to improving patient care through innovative technology.",
+      "Bridge healthcare and technology by translating clinical workflows into digital solutions to improve patient care.",
     requirements: [
       "Medical/Healthcare background with experience or coursework in medicine, biomedical engineering, or health informatics",
       "Strong attention to detail with ability to translate clinical workflows into structured digital processes",
@@ -97,7 +97,7 @@ const internships = [
   {
     title: "Social Media Intern",
     description:
-      "Join our team to create engaging social media content that connects healthcare professionals with innovative technology solutions. You'll help build our brand presence and create meaningful conversations in the healthcare technology space.",
+      "Create engaging social media content to connect healthcare professionals with innovative technology solutions.",
     requirements: [
       "Strong written communication skills with the ability to connect with diverse audiences",
       "Experience with visual design tools like Canva, Figma, or Photoshop",
@@ -113,7 +113,7 @@ const internships = [
   {
     title: "DevOps Intern",
     description:
-      "Join our DevOps team to help build and maintain our cloud infrastructure, automate deployment processes, and ensure our healthcare applications run smoothly and securely. You'll work with cutting-edge technologies and learn best practices in cloud computing and infrastructure management.",
+      "Help build and maintain cloud infrastructure, automate deployments, and ensure smooth operation of healthcare applications.",
     requirements: [
       "Basic understanding of cloud platforms (AWS, Azure, or GCP)",
       "Familiarity with containerization technologies (Docker, Kubernetes)",
