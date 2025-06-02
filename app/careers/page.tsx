@@ -47,6 +47,87 @@ const internships = [
     applyUrl:
       "https://ohcnetwork.notion.site/Junior-Full-Stack-Developer-Intern-Job-Description-d3db6919fe4e45ac955b26bf0d92d8b4",
   },
+  {
+    title: "Data Analytics Intern",
+    description:
+      "Join our data team to analyze healthcare data, create insightful dashboards, and help drive data-driven decisions in healthcare technology.",
+    requirements: [
+      "Comfortable working with large datasets and translating them into actionable insights",
+      "Familiarity with dashboard tools such as Metabase and SQL",
+      "Working knowledge of spreadsheets, formulas, and basic SQL queries",
+      "Strong analytical mindset with the ability to ask the right questions",
+      "Excellent communication skills to explain findings to both technical and non-technical audiences",
+      "Self-motivated with the ability to take ownership of projects",
+      "A passion for healthcare and technology",
+    ],
+    applyUrl:
+      "https://ohcnetwork.notion.site/Data-Analytics-Intern-Job-Description-206e6e667ece80f6b104f1c176eaf195",
+  },
+  {
+    title: "Content Creator Intern",
+    description:
+      "Create engaging content that helps healthcare professionals understand and use our technology effectively. You'll write blog posts, create social media content, and develop educational materials.",
+    requirements: [
+      "Strong writing skills with the ability to explain complex ideas clearly and creatively",
+      "Experience with visual design tools like Canva, Figma, or Illustrator",
+      "Familiarity with video scripting, basic editing, or animation tools is a plus",
+      "Curious mindset with strong observational skills and attention to detail",
+      "Self-motivated with the ability to work independently in a remote environment",
+      "Passion for healthcare and technology",
+      "Excellent communication and collaboration skills",
+    ],
+    applyUrl:
+      "https://ohcnetwork.notion.site/Content-Creator-Intern-Job-Description-206e6e667ece80f088aceec619f935cf",
+  },
+  {
+    title: "Medical Intern",
+    description:
+      "Join our team to bridge the gap between healthcare and technology. You'll help translate clinical workflows into digital solutions and contribute to improving patient care through innovative technology.",
+    requirements: [
+      "Medical/Healthcare background with experience or coursework in medicine, biomedical engineering, or health informatics",
+      "Strong attention to detail with ability to translate clinical workflows into structured digital processes",
+      "Problem-solving mindset with passion for optimizing hospital management and patient care through technology",
+      "Analytical thinking skills to interpret medical data and create meaningful insights for digital healthcare applications",
+      "Eagerness to explore the intersection of healthcare and technology",
+      "Excellent communication and collaboration skills",
+    ],
+    applyUrl:
+      "https://ohcnetwork.notion.site/Medical-Interns-Job-Description-1b4e6e667ece80209a88dddb39a1096f",
+  },
+  {
+    title: "Social Media Intern",
+    description:
+      "Join our team to create engaging social media content that connects healthcare professionals with innovative technology solutions. You'll help build our brand presence and create meaningful conversations in the healthcare technology space.",
+    requirements: [
+      "Strong written communication skills with the ability to connect with diverse audiences",
+      "Experience with visual design tools like Canva, Figma, or Photoshop",
+      "Familiarity with social media platforms (LinkedIn, Twitter, Instagram) and analytics tools",
+      "Curious mindset with eagerness to explore new content formats and trends",
+      "Self-motivated with ability to work independently in a remote environment",
+      "Passion for healthcare and technology",
+      "Excellent collaboration and time management skills",
+    ],
+    applyUrl:
+      "https://ohcnetwork.notion.site/Social-Media-Intern-Job-Description-206e6e667ece80769693dc7a9455d5ae",
+  },
+  {
+    title: "DevOps Intern",
+    description:
+      "Join our DevOps team to help build and maintain our cloud infrastructure, automate deployment processes, and ensure our healthcare applications run smoothly and securely. You'll work with cutting-edge technologies and learn best practices in cloud computing and infrastructure management.",
+    requirements: [
+      "Basic understanding of cloud platforms (AWS, Azure, or GCP)",
+      "Familiarity with containerization technologies (Docker, Kubernetes)",
+      "Knowledge of CI/CD pipelines and automation tools",
+      "Understanding of Linux/Unix systems and command line",
+      "Basic scripting skills (Python, Bash, or similar)",
+      "Strong problem-solving abilities and attention to detail",
+      "Eagerness to learn new technologies and best practices",
+      "Excellent communication and collaboration skills",
+      "Passion for healthcare and technology",
+    ],
+    applyUrl:
+      "https://ohcnetwork.notion.site/DevOps-Intern-Job-Description-3269c44838a74dc0a22433d2e1e60981",
+  },
 ];
 
 export default function Page() {
