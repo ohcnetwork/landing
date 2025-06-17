@@ -232,7 +232,7 @@ export default function Header(props: { fixed?: boolean }) {
       case "link": {
         // If it's a link, we can just render a Next Link. Show dot if active.
         return (
-          <Link href={item.href} className={className}>
+          <Link href={item.href} className={className} onClick={() => setMobileMenuOpen(false)}>
             <span className="relative">
               {item.content}
               {active && <Dot active={true} />}
@@ -248,6 +248,7 @@ export default function Header(props: { fixed?: boolean }) {
             onClick={(e) => {
               e.preventDefault();
               e.stopPropagation();
+              setMobileMenuOpen(false);
               if (path === item.page) {
                 document
                   .getElementById(item.id)
