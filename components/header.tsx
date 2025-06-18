@@ -221,7 +221,6 @@ export default function Header(props: { fixed?: boolean }) {
             onMouseOut={() => {
               onHover?.(false, 0);
             }}
-            onClick={() => setMobileMenuOpen(false)}
           >
             <span className="relative">
               {item.content}
