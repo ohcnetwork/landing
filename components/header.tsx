@@ -210,10 +210,6 @@ export default function Header(props: { fixed?: boolean }) {
       scrolled ? "md:hover:text-black/100" : "md:hover:text-white/100"
     } transition-all px-3 flex items-center md:justify-center h-full`;
 
-    const handleClick = () => {
-      setMobileMenuOpen(false);
-    };
-
     switch (item.type) {
       case "dropdown": {
         return (
@@ -225,7 +221,7 @@ export default function Header(props: { fixed?: boolean }) {
             onMouseOut={() => {
               onHover?.(false, 0);
             }}
-            onClick={handleClick}
+            onClick={() => setMobileMenuOpen(false)}
           >
             <span className="relative">
               {item.content}
@@ -237,7 +233,11 @@ export default function Header(props: { fixed?: boolean }) {
       case "link": {
         // If it's a link, we can just render a Next Link. Show dot if active.
         return (
-          <Link href={item.href} className={className} onClick={handleClick}>
+          <Link
+            href={item.href}
+            className={className}
+            onClick={() => setMobileMenuOpen(false)}
+          >
             <span className="relative">
               {item.content}
               {active && <Dot active={true} />}
@@ -253,7 +253,7 @@ export default function Header(props: { fixed?: boolean }) {
             onClick={(e) => {
               e.preventDefault();
               e.stopPropagation();
-              handleClick();
+              setMobileMenuOpen(false);
               if (path === item.page) {
                 document
                   .getElementById(item.id)
@@ -273,7 +273,7 @@ export default function Header(props: { fixed?: boolean }) {
             className={className}
             onClick={() => {
               item.onClick();
-              handleClick();
+              setMobileMenuOpen(false);
             }}
           >
             {item.content}
