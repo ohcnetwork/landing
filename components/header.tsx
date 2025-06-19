@@ -88,6 +88,7 @@ export default function Header(props: { fixed?: boolean }) {
     { type: "link", content: "Supporters", href: "/supporters" },
     { type: "link", content: "Timeline", href: "/timeline" },
     { type: "section", content: "Contact", id: "contact", page: "/" },
+    { type: "link", content: "Careers", href: "/careers" },
     {
       type: "link",
       content: (
