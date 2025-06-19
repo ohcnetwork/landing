@@ -1,6 +1,6 @@
 "use client";
 
-import {useState } from "react";
+import { useState } from "react";
 import {
   ArrowPathIcon,
   CloudArrowUpIcon,
@@ -622,7 +622,7 @@ export default function Page() {
               <img
                 src="deployments/10bedicu.png"
                 alt="Product screenshot"
-                className="w-[48rem] max-w-none rounded-xl sm:w-[57rem] md:-ml-4 lg:ml-0"
+                className="pt-20 w-screen rounded-xl sm:w-[50vw] md:w-[85vw]"
               />
             </div>
           </div>
