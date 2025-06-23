@@ -87,6 +87,7 @@ export default function Header(props: { fixed?: boolean }) {
     { type: "dropdown", content: "Community", items: communityItems },
     { type: "link", content: "Supporters", href: "/supporters" },
     { type: "link", content: "Timeline", href: "/timeline" },
+    { type: "link", content: "Careers", href: "/careers" },
     { type: "section", content: "Contact", id: "contact", page: "/" },
     {
       type: "link",
