@@ -22,19 +22,6 @@ const internships = [
       "https://ohcnetwork.notion.site/Quality-Assurance-Intern-Job-Description-f675d2d800c840599be27c3712229b22",
   },
   {
-    title: "Product Documentation Intern",
-    description:
-      "Create clear and comprehensive documentation for our healthcare products and APIs.",
-    requirements: [
-      "Exceptional written communication skills with a focus on clarity and simplicity",
-      "Strong attention to detail, organizational skills, and a proactive attitude toward problem-solving",
-      "Ability to work collaboratively in a remote team environment and adapt to feedback",
-      "Comfortable using documentation tools like Markdown, Google Docs, Notion etc.",
-    ],
-    applyUrl:
-      "https://ohcnetwork.notion.site/Product-Documentation-Intern-JD-e3824efd379048adad7ebdf375677472",
-  },
-  {
     title: "Junior Full Stack Developer Intern",
     description:
       "Develop healthcare solutions using modern web technologies while learning from experienced developers.",
@@ -46,53 +33,6 @@ const internships = [
     ],
     applyUrl:
       "https://ohcnetwork.notion.site/Junior-Full-Stack-Developer-Intern-Job-Description-d3db6919fe4e45ac955b26bf0d92d8b4",
-  },
-  {
-    title: "Data Analytics Intern",
-    description:
-      "Join our data team to analyze healthcare data, create insightful dashboards, and help drive data-driven decisions in healthcare technology.",
-    requirements: [
-      "Comfortable working with large datasets and translating them into actionable insights",
-      "Familiarity with dashboard tools such as Metabase and SQL",
-      "Working knowledge of spreadsheets, formulas, and basic SQL queries",
-      "Strong analytical mindset with the ability to ask the right questions",
-      "Excellent communication skills to explain findings to both technical and non-technical audiences",
-      "Self-motivated with the ability to take ownership of projects",
-      "A passion for healthcare and technology",
-    ],
-    applyUrl:
-      "https://ohcnetwork.notion.site/Data-Analytics-Intern-Job-Description-206e6e667ece80f6b104f1c176eaf195",
-  },
-  {
-    title: "Content Creator Intern",
-    description:
-      "Create engaging content for healthcare professionals, including blog posts, social media content, and educational materials.",
-    requirements: [
-      "Strong writing skills with the ability to explain complex ideas clearly and creatively",
-      "Experience with visual design tools like Canva, Figma, or Illustrator",
-      "Familiarity with video scripting, basic editing, or animation tools is a plus",
-      "Curious mindset with strong observational skills and attention to detail",
-      "Self-motivated with the ability to work independently in a remote environment",
-      "Passion for healthcare and technology",
-      "Excellent communication and collaboration skills",
-    ],
-    applyUrl:
-      "https://ohcnetwork.notion.site/Content-Creator-Intern-Job-Description-206e6e667ece80f088aceec619f935cf",
-  },
-  {
-    title: "Medical Intern",
-    description:
-      "Bridge healthcare and technology by translating clinical workflows into digital solutions to improve patient care.",
-    requirements: [
-      "Medical/Healthcare background with experience or coursework in medicine, biomedical engineering, or health informatics",
-      "Strong attention to detail with ability to translate clinical workflows into structured digital processes",
-      "Problem-solving mindset with passion for optimizing hospital management and patient care through technology",
-      "Analytical thinking skills to interpret medical data and create meaningful insights for digital healthcare applications",
-      "Eagerness to explore the intersection of healthcare and technology",
-      "Excellent communication and collaboration skills",
-    ],
-    applyUrl:
-      "https://ohcnetwork.notion.site/Medical-Interns-Job-Description-1b4e6e667ece80209a88dddb39a1096f",
   },
   {
     title: "Social Media Intern",
