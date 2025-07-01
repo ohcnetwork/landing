@@ -193,7 +193,7 @@ export default function Page() {
                 efficiency in compassionate healthcare delivery
               </p>
               <Link
-                href={"https://github.com/ohcnetwork"}
+                href={"https://github.com/ohcnetwork/care_fe/"}
                 className="bg-primary-500 hover:bg-primary-600 text-white rounded-full transition-all font-bold py-3 px-4 pr-4 inline-flex mt-6 items-center gap-2"
               >
                 <svg
