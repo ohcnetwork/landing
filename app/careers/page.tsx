@@ -33,41 +33,7 @@ const internships = [
     ],
     applyUrl:
       "https://ohcnetwork.notion.site/Junior-Full-Stack-Developer-Intern-Job-Description-d3db6919fe4e45ac955b26bf0d92d8b4",
-  },
-  {
-    title: "Social Media Intern",
-    description:
-      "Create engaging social media content to connect healthcare professionals with innovative technology solutions.",
-    requirements: [
-      "Strong written communication skills with the ability to connect with diverse audiences",
-      "Experience with visual design tools like Canva, Figma, or Photoshop",
-      "Familiarity with social media platforms (LinkedIn, Twitter, Instagram) and analytics tools",
-      "Curious mindset with eagerness to explore new content formats and trends",
-      "Self-motivated with ability to work independently in a remote environment",
-      "Passion for healthcare and technology",
-      "Excellent collaboration and time management skills",
-    ],
-    applyUrl:
-      "https://ohcnetwork.notion.site/Social-Media-Intern-Job-Description-206e6e667ece80769693dc7a9455d5ae",
-  },
-  {
-    title: "DevOps Intern",
-    description:
-      "Help build and maintain cloud infrastructure, automate deployments, and ensure smooth operation of healthcare applications.",
-    requirements: [
-      "Basic understanding of cloud platforms (AWS, Azure, or GCP)",
-      "Familiarity with containerization technologies (Docker, Kubernetes)",
-      "Knowledge of CI/CD pipelines and automation tools",
-      "Understanding of Linux/Unix systems and command line",
-      "Basic scripting skills (Python, Bash, or similar)",
-      "Strong problem-solving abilities and attention to detail",
-      "Eagerness to learn new technologies and best practices",
-      "Excellent communication and collaboration skills",
-      "Passion for healthcare and technology",
-    ],
-    applyUrl:
-      "https://ohcnetwork.notion.site/DevOps-Intern-Job-Description-3269c44838a74dc0a22433d2e1e60981",
-  },
+  }
 ];
 
 export default function Page() {
@@ -141,3 +107,4 @@ export default function Page() {
     </div>
   );
 }
+
