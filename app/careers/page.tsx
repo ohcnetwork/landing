@@ -33,7 +33,22 @@ const internships = [
     ],
     applyUrl:
       "https://ohcnetwork.notion.site/Junior-Full-Stack-Developer-Intern-Job-Description-d3db6919fe4e45ac955b26bf0d92d8b4",
-  }
+  },
+  {
+    title: "Software Engineer – DevOps (Care HMIS Implementation)",
+    description:
+      "Join our DevOps team to implement and maintain infrastructure for healthcare management systems, ensuring reliable and scalable deployment of our Care platform.",
+    requirements: [
+      "Bachelor's degree in Computer Science, Engineering, or a related field",
+      "2+ years of experience in DevOps, infrastructure, or systems engineering",
+      "Experience with cloud platforms (AWS, GCP, or similar)",
+      "Familiarity with Docker, Linux administration, and CI/CD workflows",
+      "Working knowledge of Git, scripting (Bash, Python), and PostgreSQL basics",
+      "Understanding of basic security and networking concepts",
+    ],
+    applyUrl:
+      "https://ohcnetwork.notion.site/Software-Engineer-DevOps-Care-HMIS-Implementation-25ae6e667ece80e7ba94e4b1ff03c5ca",
+  },
 ];
 
 export default function Page() {
