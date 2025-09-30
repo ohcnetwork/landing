@@ -49,6 +49,20 @@ const internships = [
     applyUrl:
       "https://ohcnetwork.notion.site/Software-Engineer-DevOps-Care-HMIS-Implementation-25ae6e667ece80e7ba94e4b1ff03c5ca",
   },
+  {
+    title: "Product Manager (Care HMIS Implementation)",
+    description:
+      "Lead the implementation and product development of Care HMIS, working closely with healthcare institutions and open-source contributors to deliver impactful healthcare solutions.",
+    requirements: [
+      "Bachelor's degree in Health Informatics, Engineering, Public Health, or a related field",
+      "3–5 years of experience in product or implementation roles",
+      "Hands-on experience with GitHub for project management and open-source collaboration",
+      "Familiarity with FHIR and clinical data standards",
+      "Excellent coordination, writing, and communication skills",
+    ],
+    applyUrl:
+      "https://ohcnetwork.notion.site/Product-Manager-Care-HMIS-Implementation-27de6e667ece8005a16bcbde7e3bacd9",
+  },
 ];
 
 export default function Page() {
@@ -122,4 +136,3 @@ export default function Page() {
     </div>
   );
 }
-
