@@ -48,6 +48,11 @@ export default function Footer() {
       href: "https://slack.ohc.network/",
       icon: "logos/slack-logo.svg",
     },
+    {
+      name: "Linkedin",
+      href: "https://www.linkedin.com/company/ohcnetwork/",
+      icon: "logos/linkedin-logo.svg",
+    },
   ];
 
   return (
