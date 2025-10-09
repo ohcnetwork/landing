@@ -836,8 +836,8 @@ export default function Page() {
                     healthcare through technology.
                   </p>
                 </div>
-                <div>
-                  <h3 className="text-lg text-center font-semibold tracking-tight text-green-900">
+                <div className="text-center">
+                  <h3 className="text-lg font-semibold tracking-tight text-green-900">
                     Become a Member of Our Community{" "}
                     <span aria-hidden="true">↓</span>
                   </h3>
@@ -847,6 +847,29 @@ export default function Page() {
                     className="mt-5 inline-block w-full text-center rounded-3xl bg-green-600 py-2.5 text-base font-semibold text-white hover:bg-green-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-900"
                   >
                     Start Collaborating 🎉
+                  </a>
+
+                  <a
+                    href="mailto:support@ohc.network"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-3 inline-flex items-center justify-center gap-2 text-gray-500 hover:text-green-600 transition-colors duration-200"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={2}
+                      stroke="currentColor"
+                      className="size-4"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M21.75 5.25v13.5a2.25 2.25 0 01-2.25 2.25H4.5a2.25 2.25 0 01-2.25-2.25V5.25m19.5 0L12 12.75 2.25 5.25m19.5 0H2.25"
+                      />
+                    </svg>
+                    support@ohc.network
                   </a>
                 </div>
               </div>
