@@ -2,8 +2,10 @@ import { getAllPosts } from '@/lib/blog'
 import { Feed } from 'feed'
 import assert from 'node:assert'
 
-export async function GET(req: Request) {
-  let siteUrl = new URL(req.url).origin
+export const dynamic = 'force-static'
+
+export async function GET() {
+  let siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ohc.network'
 
   let feed = new Feed({
     title: 'The Radiant Blog',

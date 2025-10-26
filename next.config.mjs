@@ -1,14 +1,27 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  webpack: (config, { isServer }) => {
-    if (!isServer) {
-      config.resolve.fallback = {
-        ...config.resolve.fallback,
-        process: 'process/browser',
-      }
-    }
-    return config
+  reactStrictMode: true,
+  output: "export",
+  images: {
+    unoptimized: true,
   },
-}
+  async headers() {
+    return [
+      {
+        source: "/(.*)", // * - applies to all routes
+        headers: [
+          {
+            key: "X-Frame-Options",
+            value: "DENY",
+          },
+          {
+            key: "Content-Security-Policy",
+            value: "frame-ancestors 'self'",
+          },
+        ],
+      },
+    ];
+  },
+};
 
-export default nextConfig
+export default nextConfig;
