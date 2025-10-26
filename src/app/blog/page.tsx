@@ -7,7 +7,6 @@ import { Navbar } from '@/components/navbar'
 import { Heading, Lead, Subheading } from '@/components/text'
 import {
   getAllCategories,
-  getAllPosts,
   getFeaturedPosts,
   getPostsCount,
   getPostsPaginated,

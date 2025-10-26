@@ -196,7 +196,7 @@ function TimelineSection() {
           From pandemic response to comprehensive healthcare platform
         </Heading>
         <p className="mt-6 max-w-4xl text-lg text-gray-600">
-          CARE's evolution from a crisis response tool to a comprehensive healthcare management system.
+          CARE&apos;s evolution from a crisis response tool to a comprehensive healthcare management system.
         </p>
         
         <div className="mt-16 relative">
@@ -204,7 +204,7 @@ function TimelineSection() {
           <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 via-green-500 to-purple-500"></div>
           
           <div className="space-y-16">
-            {timelineItems.map((item, index) => (
+            {timelineItems.map((item) => (
               <div key={item.id} className="relative flex items-start">
                 {/* Timeline dot */}
                 <div className="relative z-10 flex h-16 w-16 items-center justify-center rounded-full bg-white border-4 border-blue-500 shadow-lg">
