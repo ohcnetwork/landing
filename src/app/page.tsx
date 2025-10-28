@@ -109,8 +109,8 @@ function WhatWeBuildSection() {
         />
         <BentoCard
           eyebrow="Deployment"
-          title="10 States Deployed"
-          description="CARE powers solutions across 10 Indian states with rapid rollouts and frontline adoption."
+          title="11 States Deployed"
+          description="CARE powers solutions across 11 Indian states with rapid rollouts and frontline adoption."
           graphic={<Map />}
           className="lg:col-span-2"
         />
@@ -163,19 +163,19 @@ function OutcomesSection() {
       <Container>
         <Subheading dark>Outcomes at a glance</Subheading>
         <Heading as="h3" dark className="mt-2 max-w-4xl">
-          Real impact across 10 Indian states with rapid rollouts and frontline adoption.
+          Real impact across 11 Indian states with rapid rollouts and frontline adoption.
         </Heading>
 
         <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
           <BentoCard
             dark
             eyebrow="Scale"
-            title="10 States Deployed"
-            description="CARE powers solutions across 10 Indian states with proven deployment patterns and frontline adoption."
+            title="11 States Deployed"
+            description="CARE powers solutions across 11 Indian states with proven deployment patterns and frontline adoption."
             graphic={
               <div className="h-80 bg-gradient-to-br from-blue-900 to-blue-800 flex items-center justify-center">
                 <div className="text-center">
-                  <div className="text-6xl font-bold text-white">10</div>
+                  <div className="text-6xl font-bold text-white">11</div>
                   <div className="text-sm text-blue-200 mt-2">States</div>
                 </div>
               </div>

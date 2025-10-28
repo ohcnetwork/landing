@@ -29,7 +29,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Developers — Contribute to CARE Open Source EMR',
-  description: 'Join the CARE developer community. Contribute to an open-source EMR system built with Django DRF and React TypeScript, powering healthcare across 10 States.',
+  description: 'Join the CARE developer community. Contribute to an open-source EMR system built with Django DRF and React TypeScript, powering healthcare across 11 States.',
   keywords: 'CARE EMR, open source healthcare, Django DRF, React TypeScript, FHIR compliance, healthcare developers, medical software, EMR development, healthcare API, medical records system',
 }
 
@@ -44,7 +44,7 @@ function Hero() {
             Build open source healthcare. Save lives.
           </h1>
           <p className="mt-8 max-w-4xl text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
-            Contribute to CARE, an open-source EMR system built with Django DRF and React TypeScript, powering cost-effective healthcare solutions across 10 States.
+            Contribute to CARE, an open-source EMR system built with Django DRF and React TypeScript, powering cost-effective healthcare solutions across 11 States.
           </p>
           <div className="mt-12 flex flex-col gap-x-4 gap-y-4 sm:flex-row">
             <Button href="https://github.com/ohcnetwork" target="_blank" className="flex items-center gap-2">
@@ -65,10 +65,6 @@ function Hero() {
             <div className="flex items-center gap-2">
               <Code className="w-4 h-4" />
               <span>MIT License</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Globe className="w-4 h-4" />
-              <span>10 States</span>
             </div>
           </div>
         </div>

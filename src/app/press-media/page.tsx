@@ -60,7 +60,7 @@ function KeyFactsSection() {
         <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2">
           <BentoCard
             eyebrow="Deployment"
-            title="10 States Deployed"
+            title="11 States Deployed"
             description="CARE powers solutions across 11 Indian states with proven deployment patterns and frontline adoption."
             graphic={
               <div className="h-80 bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center">
@@ -115,7 +115,7 @@ function AssetsSection() {
         </div>
         <div className="bg-white p-8 rounded-lg border border-gray-200">
           <h3 className="text-lg font-semibold text-gray-900 mb-4">Deployment Maps</h3>
-          <p className="text-gray-600 mb-4">Maps showing CARE deployments across 10 States</p>
+          <p className="text-gray-600 mb-4">Maps showing CARE deployments across 11 States</p>
           <Button variant="secondary" href="/contact">Download assets</Button>
         </div>
       </div>

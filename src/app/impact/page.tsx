@@ -9,7 +9,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Impact — States, Hospitals, and Frontline Adoption',
-  description: 'See OHC&apos;s impact: 10 States, 1,200+ hospitals, 200k encounters, and 10k+ workers using CARE.',
+  description: 'See OHC&apos;s impact: 11 States, 1,200+ hospitals, 200k encounters, and 10k+ workers using CARE.',
   keywords: 'digital health impact, HMIS scale, open source healthcare outcomes',
 }
 
@@ -24,7 +24,7 @@ function Hero() {
             Public code → public impact.
           </h1>
           <p className="mt-8 max-w-4xl text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
-            Real-world deployment across 10 States with measurable outcomes in healthcare delivery and frontline adoption.
+            Real-world deployment across 11 States with measurable outcomes in healthcare delivery and frontline adoption.
           </p>
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
             <Button href="/contact">Request a briefing</Button>
