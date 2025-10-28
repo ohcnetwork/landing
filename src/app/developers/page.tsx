@@ -312,22 +312,32 @@ function GetStartedSection() {
           <h3 className="text-xl font-semibold text-gray-900 mb-4">Quick Setup Steps</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-              <h4 className="font-semibold text-gray-900 mb-2">1. Clone Repositories</h4>
-              <div className="bg-gray-100 p-4 rounded-lg font-mono text-sm">
-              <div># Backend (Django)</div>
-                <div>git clone https://github.com/ohcnetwork/care.git</div>
-                <div># Frontend (React)</div>
-                <div>git clone https://github.com/ohcnetwork/care_fe.git</div>
-              </div>
+              <h4 className="font-semibold text-gray-900 mb-2">Backend Setup</h4>
+              <p className="text-gray-600 mb-3">Follow the installation guide for the Django backend.</p>
+              <a 
+                href="https://github.com/ohcnetwork/care?tab=readme-ov-file#getting-started" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 hover:underline"
+              >
+                <BookOpen className="w-4 h-4" />
+                <span>Backend README</span>
+                <ExternalLink className="w-3 h-3" />
+              </a>
             </div>
             <div>
-              <h4 className="font-semibold text-gray-900 mb-2">2. Install Dependencies</h4>
-              <div className="bg-gray-100 p-4 rounded-lg font-mono text-sm">
-                <div># Backend (Django)</div>
-                <div>pip install -r requirements.txt</div>
-                <div># Frontend (React)</div>
-                <div>npm install</div>
-              </div>
+              <h4 className="font-semibold text-gray-900 mb-2">Frontend Setup</h4>
+              <p className="text-gray-600 mb-3">Follow the installation guide for the React frontend.</p>
+              <a 
+                href="https://github.com/ohcnetwork/care_fe?tab=readme-ov-file#getting-started" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 hover:underline"
+              >
+                <BookOpen className="w-4 h-4" />
+                <span>Frontend README</span>
+                <ExternalLink className="w-3 h-3" />
+              </a>
             </div>
           </div>
         </div>
