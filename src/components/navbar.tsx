@@ -39,13 +39,7 @@ const links = [
     submenu: [
       { href: '/network', label: 'The Network' },
       { href: '/about/team', label: 'Team' },
-      { href: '/about/security-compliance', label: 'Security & Compliance' }
-    ]
-  },
-  { 
-    href: '/resources', 
-    label: 'Resources',
-    submenu: [
+      { href: '/about/security-compliance', label: 'Security & Compliance' },
       { href: '/faq', label: 'FAQ' },
       { href: '/press-media', label: 'Press & Media' }
     ]

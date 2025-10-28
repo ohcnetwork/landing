@@ -64,7 +64,7 @@ function FeaturedSection() {
         <BentoCard
           eyebrow="Telemetry"
           title="TeleICU"
-          description="ONVIF camera integration for near real-time monitoring with hub-and-spoke deployment across 9 states."
+          description="ONVIF camera and vitals monitor integration for near real-time monitoring with hub-and-spoke deployment across 9 states."
           graphic={
             <div className="h-80 bg-gradient-to-br from-green-50 to-green-100 flex items-center justify-center">
               <div className="text-center">
