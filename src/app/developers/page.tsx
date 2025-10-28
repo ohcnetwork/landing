@@ -315,9 +315,9 @@ function GetStartedSection() {
               <h4 className="font-semibold text-gray-900 mb-2">1. Clone Repositories</h4>
               <div className="bg-gray-100 p-4 rounded-lg font-mono text-sm">
               <div># Backend (Django)</div>
-                <div>git clone https://github.com/coronasafe/care.git</div>
+                <div>git clone https://github.com/ohcnetwork/care.git</div>
                 <div># Frontend (React)</div>
-                <div>git clone https://github.com/coronasafe/care_fe.git</div>
+                <div>git clone https://github.com/ohcnetwork/care_fe.git</div>
               </div>
             </div>
             <div>
@@ -356,7 +356,7 @@ function ContributionPathsSection() {
           <ul className="space-y-2 text-sm text-gray-600">
             <li className="flex items-center gap-2">
               <ExternalLink className="w-4 h-4" />
-              Visit <a href="https://github.com/coronasafe/care_fe/issues" target="_blank" className="hover:underline">github.com/coronasafe/care_fe</a>
+              Visit <a href="https://github.com/ohcnetwork/care_fe/issues" target="_blank" className="hover:underline">github.com/ohcnetwork/care_fe</a>
             </li>
             <li className="flex items-center gap-2">
               <Star className="w-4 h-4" />
