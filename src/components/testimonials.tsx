@@ -152,12 +152,12 @@ function CallToAction() {
   return (
     <div>
       <p className="max-w-sm text-sm/6 text-gray-600">
-        Join healthcare leaders and innovators who are transforming ICU care
+        Join healthcare leaders and innovators who are transforming care
         across India and beyond.
       </p>
       <div className="mt-2">
         <Link
-          href="#"
+          href="/network"
           className="inline-flex items-center gap-2 text-sm/6 font-medium text-pink-600"
         >
           Learn more

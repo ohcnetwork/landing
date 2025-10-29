@@ -30,7 +30,7 @@ function Hero() {
 
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
             <Button href="/contact">See a field demo</Button>
-            <Button variant="secondary" href="/contact">Fund a district</Button>
+            {/* <Button variant="secondary" href="/contact">Fund a district</Button> */}
             <Button variant="secondary" href="/contact">Talk to implementers</Button>
           </div>
         </div>

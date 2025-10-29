@@ -2,7 +2,6 @@ import { BentoCard } from '@/components/bento-card'
 import { Button } from '@/components/button'
 import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
-import { LinkedAvatars } from '@/components/linked-avatars'
 import { LogoCloud } from '@/components/logo-cloud'
 import { LogoTimeline } from '@/components/logo-timeline'
 import { Map } from '@/components/map'
@@ -16,9 +15,26 @@ import { Github } from 'lucide-react'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Open Healthcare Network — Digital Public Goods for Health',
-  description: 'OHC builds FHIR-native, AI-ready Digital Public Goods for public health. Deploy CARE HMIS, TeleICU, Palliative Care, and more at national scale.',
-  keywords: 'digital public goods, FHIR HMIS, healthcare interoperability, ABDM integration, TeleICU, AI medical scribe, open health infrastructure',
+  title: 'Open Healthcare Network — Digital Public Goods for Healthcare',
+  description: 'Open Healthcare Network (OHC) builds FHIR-native, AI-ready Digital Public Goods for healthcare. Deploy CARE HMIS, TeleICU, and Palliative Care solutions across hospitals and states at national scale.',
+  keywords: 'Digital Public Goods, Open Healthcare Network, CARE HMIS, FHIR R5, Healthcare Interoperability, ABDM, TeleICU, AI Scribe, Open Source Health Infrastructure, MIT License',
+  openGraph: {
+    title: 'Open Healthcare Network — Digital Public Goods for Healthcare',
+    description: 'Building FHIR-native, AI-ready Digital Public Goods that power national health systems. Open, interoperable, and MIT-licensed — CARE HMIS, TeleICU, and Palliative Care Grid.',
+    images: [
+      {
+        url: '/og/ohc-landing-cover.png',
+        width: 1920,
+        height: 1080,
+        alt: 'Open Healthcare Network — Digital Public Goods for Healthcare',
+      },
+    ],
+  },
+  twitter: {
+    title: 'Open Healthcare Network — Digital Public Goods for Healthcare',
+    description: 'OHC builds open, FHIR-powered infrastructure for governments, hospitals, and innovators. CARE HMIS, TeleICU, and Palliative Care Grid — all open, interoperable, and AI-ready.',
+    images: ['/og/ohc-landing-cover.png'],
+  },
 }
 
 function Hero() {
@@ -187,31 +203,31 @@ function SolutionsSection() {
   const solutions = [
     {
       title: 'Hospital Management System',
-      description: 'FHIR-based modular EMR for hospitals and clinics.',
+      description: 'Open Source Infrastructure for Intelligent Hospitals.',
       logo: '/logos/care-hmis.svg',
       href: '/solutions/hospital-management',
     },
     {
-      title: 'TeleICU',
-      description: 'FHIR-based modular EMR for hospitals and clinics.',
+      title: 'TeleICU Powering 10BedICU',
+      description: 'Critical Care reached every bed.',
       logo: '/logos/care-teleicu.svg',
       href: '/solutions/teleicu',
     },
     {
       title: 'Palliative Care',
-      description: 'FHIR-based modular EMR for hospitals and clinics.',
+      description: 'Continuity of Care at Home, Reimagined',
       logo: '/logos/care-palliative.svg',
       href: '/solutions/palliative-care',
     },
     {
       title: 'Care Janwar',
-      description: 'FHIR-based modular EMR for hospitals and clinics.',
+      description: 'One Platform for Animal Health.',
       logo: '/logos/care-janwar.svg',
       href: '/solutions/care-janwar',
     },
     {
       title: 'Care Clinics',
-      description: 'FHIR-based modular EMR for hospitals and clinics.',
+      description: 'Built for Clinics That Want to Scale, Not Just Digitize.',
       logo: '/logos/care-clinics.svg',
       href: '/solutions/care-clinics',
     },
@@ -290,7 +306,11 @@ export default function Home() {
       <Testimonials />
       <main>
         <Container className="mt-10">
-          <LogoCloud />
+          <Subheading>Supported by</Subheading>
+          <Heading as="h3" className="mt-2 max-w-4xl font-display tracking-tight">
+            Empowered by Institutions that Believe in Open Health
+          </Heading>
+          <LogoCloud className="mt-10" />
         </Container>
         <div className="bg-linear-to-b from-white from-50% to-gray-100 py-32">
           <WhatWeBuildSection />
