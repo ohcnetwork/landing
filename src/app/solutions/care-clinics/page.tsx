@@ -88,8 +88,8 @@ function FeaturesSection() {
           </div>
           <div className="space-y-6">
             <div className="bg-white p-6 rounded-lg border border-gray-200">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">E-Prescriptions</h3>
-              <p className="text-gray-600">Digital prescriptions with drug interaction checking and formulary management</p>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">E-Prescription</h3>
+              <p className="text-gray-600">Digital prescriptions made safer with automatic drug and dosage checks.</p>
             </div>
             <div className="bg-white p-6 rounded-lg border border-gray-200">
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Billing & Accounting</h3>
@@ -106,43 +106,6 @@ function FeaturesSection() {
   )
 }
 
-function ImplementationSection() {
-  return (
-    <Container className="py-24">
-      <Subheading>Implementation</Subheading>
-      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
-        Pilot one clinic → replicate across locations
-      </Heading>
-      <p className="mt-6 max-w-4xl text-lg text-gray-600">
-        Cloud‑agnostic hosting with role‑based access and hierarchical org model. Start small and scale efficiently.
-      </p>
-
-      <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-4">
-        <div className="bg-blue-50 p-6 rounded-lg border border-blue-200 text-center">
-          <div className="text-4xl font-bold text-blue-900 mb-2">1</div>
-          <h3 className="text-lg font-semibold text-blue-900 mb-2">Pilot Clinic</h3>
-          <p className="text-blue-700">Start with one clinic to validate workflows and train staff</p>
-        </div>
-        <div className="bg-green-50 p-6 rounded-lg border border-green-200 text-center">
-          <div className="text-4xl font-bold text-green-900 mb-2">2</div>
-          <h3 className="text-lg font-semibold text-green-900 mb-2">Replicate</h3>
-          <p className="text-green-700">Replicate across multiple locations with standardized processes</p>
-        </div>
-        <div className="bg-purple-50 p-6 rounded-lg border border-purple-200 text-center">
-          <div className="text-4xl font-bold text-purple-900 mb-2">3</div>
-          <h3 className="text-lg font-semibold text-purple-900 mb-2">Cloud Hosting</h3>
-          <p className="text-purple-700">Deploy in your preferred cloud with role-based access</p>
-        </div>
-        <div className="bg-orange-50 p-6 rounded-lg border border-orange-200 text-center">
-          <div className="text-4xl font-bold text-orange-900 mb-2">4</div>
-          <h3 className="text-lg font-semibold text-orange-900 mb-2">Scale</h3>
-          <p className="text-orange-700">Scale across your entire clinic network with centralized management</p>
-        </div>
-      </div>
-    </Container>
-  )
-}
-
 export default function CareClinics() {
   return (
     <div className="overflow-hidden">
@@ -150,7 +113,6 @@ export default function CareClinics() {
       <main>
         <OutcomesSection />
         <FeaturesSection />
-        <ImplementationSection />
       </main>
       <Footer />
     </div>

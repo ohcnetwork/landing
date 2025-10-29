@@ -123,7 +123,7 @@ function TestimonialCard({
         aria-hidden="true"
         className="absolute inset-0 rounded-3xl bg-linear-to-t from-black from-[calc(7/16*100%)] ring-1 ring-gray-950/10 ring-inset sm:from-25%"
       />
-      <figure className="flex flex-col-reverse sm:flex-col relative p-10">
+      <figure className="flex flex-col-reverse sm:flex-col relative p-6 sm:p-10">
         <blockquote>
           <p className="relative text-base sm:text-xl/7 text-white">
             <span aria-hidden="true" className="absolute -translate-x-full">
