@@ -33,25 +33,24 @@ const testimonials = [
       'Great work by@10BedICU in putting 200+ tele-ICUs in remote districts in India.',
   },
   {
-    img: '/testimonials/thomas_dohmke.jpeg',
-    name: 'Thomas Dohmke',
-    title: 'CEO, GitHub',
+    img: '/testimonials/kyle_daigle.jpg',
+    name: 'Kyle Daigle',
+    title: 'COO, GitHub',
     quote:
-      'Open Healthcare Network in India is a profoundly inspiring story of how we can accelerate human progress',
+      'The Open Healthcare Network in India is a powerful example of people coming together to advance human progress – solving the problems that matter.',
   },
   {
     img: '/testimonials/sreevas_sahasranam.jpeg',
     name: 'Sreevas Sahasranam',
     title: 'University of Glasgow',
     quote:
-      "What a journey it has been for CARE from a COVID dashboard fully run by volunteers for a district in Kerala to this... phew!!! In a symbolic view, for me this feels almost like an unicorn valuation equivalent for social sector",
+      'What a journey it has been for CARE from a COVID dashboard fully run by volunteers for a district in Kerala to this... phew!!! In a symbolic view, for me this feels almost like an unicorn valuation equivalent for social sector',
   },
   {
     img: '/testimonials/kai_chen.jpeg',
     name: 'Kai Chen',
     title: 'OpenAI',
-    quote:
-      `One of the coolest non-profits operating in the healthcare space just turned 4 🐣 - they bring advanced ICU care to places in rural India.
+    quote: `One of the coolest non-profits operating in the healthcare space just turned 4 🐣 - they bring advanced ICU care to places in rural India.
 
 Meeting and working with the team has been a major highlight of the past couple months :)`,
   },
@@ -123,9 +122,9 @@ function TestimonialCard({
         aria-hidden="true"
         className="absolute inset-0 rounded-3xl bg-linear-to-t from-black from-[calc(7/16*100%)] ring-1 ring-gray-950/10 ring-inset sm:from-25%"
       />
-      <figure className="flex flex-col-reverse sm:flex-col relative p-6 sm:p-10">
+      <figure className="relative flex flex-col-reverse p-6 sm:flex-col sm:p-10">
         <blockquote>
-          <p className="relative text-base sm:text-xl/7 text-white">
+          <p className="relative text-base text-white sm:text-xl/7">
             <span aria-hidden="true" className="absolute -translate-x-full">
               “
             </span>
@@ -135,7 +134,7 @@ function TestimonialCard({
             </span>
           </p>
         </blockquote>
-        <div className='my-4 sm:my-6 border-t border-white/20'/>
+        <div className="my-4 border-t border-white/20 sm:my-6" />
         <figcaption>
           <p className="text-sm/6 font-medium text-white">{name}</p>
           <p className="text-sm/6 font-medium">
