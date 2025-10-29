@@ -36,6 +36,27 @@ function Hero() {
     </div>
   )
 }
+function ImplementationPartnersSection() {
+  return (
+    <Container className="pb-24">
+      <Subheading>Implementation Partners</Subheading>
+      <div className="mt-6 flex flex-col items-center gap-8 lg:flex-row lg:items-center lg:gap-12">
+        <div className="flex-shrink-0">
+          <img
+            src="/logos/10bedicu.png"
+            alt="10 BED ICU"
+            className="h-32 object-contain lg:h-40"
+          />
+        </div>
+        <div className="flex-1 text-center lg:text-left">
+          <p className="text-lg leading-7 text-gray-600 max-w-3xl mx-auto lg:mx-0">
+            <strong className="font-semibold text-gray-900">10BedICU</strong> Project sets up 10-bed ICUs in government hospitals using the CARE technology platform, standard clinical ICU protocols, and trained staff. We partner with state governments to deliver high-quality critical care in underserved areas across India.
+          </p>
+        </div>
+      </div>
+    </Container>
+  )
+}
 function OutcomesSection() {
   return (
     <Container className="py-24">
@@ -194,6 +215,7 @@ export default function TeleICU() {
     <div className="overflow-hidden">
       <Hero />
       <main>
+        <ImplementationPartnersSection />
         <OutcomesSection />
          <ImpactSection />
         <FeaturesSection />
