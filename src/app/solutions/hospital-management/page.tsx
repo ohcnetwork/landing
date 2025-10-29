@@ -40,7 +40,7 @@ function OutcomesSection() {
   return (
     <Container className="py-24">
       <Subheading>Outcomes</Subheading>
-      <Heading as="h2" className="mt-2 max-w-4xl">
+      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
         Proven results across 11 States with rapid deployment and frontline adoption.
       </Heading>
 
@@ -82,7 +82,7 @@ function CoreModulesSection() {
     <div className="bg-gray-50 py-24">
       <Container>
         <Subheading>Core modules</Subheading>
-        <Heading as="h2" className="mt-2 max-w-4xl">
+        <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
           Everything you need for comprehensive hospital management.
         </Heading>
         <p className="mt-6 max-w-4xl text-lg text-gray-600">
@@ -105,7 +105,7 @@ function ImplementationSection() {
   return (
     <Container className="py-24">
       <Subheading>Implementation</Subheading>
-      <Heading as="h2" className="mt-2 max-w-4xl">
+      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
         Start with a multi‑facility pilot → district → state
       </Heading>
       <p className="mt-6 max-w-4xl text-lg text-gray-600">
@@ -150,7 +150,7 @@ function FAQSection() {
     <div className="bg-gray-50 py-24">
       <Container>
         <Subheading>FAQs</Subheading>
-        <Heading as="h2" className="mt-2 max-w-4xl">
+        <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
           Common questions about CARE HMIS deployment
         </Heading>
 

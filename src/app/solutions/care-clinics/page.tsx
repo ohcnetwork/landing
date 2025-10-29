@@ -40,7 +40,7 @@ function OutcomesSection() {
   return (
     <Container className="py-24">
       <Subheading>Outcomes</Subheading>
-      <Heading as="h2" className="mt-2 max-w-4xl">
+      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
         Faster intake, fewer clicks with templates and voice‑to‑text
       </Heading>
 
@@ -67,7 +67,7 @@ function FeaturesSection() {
     <div className="bg-gray-50 py-24">
       <Container>
         <Subheading>Core Features</Subheading>
-        <Heading as="h2" className="mt-2 max-w-4xl">
+        <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
           Everything you need for comprehensive clinic management
         </Heading>
 
@@ -110,7 +110,7 @@ function ImplementationSection() {
   return (
     <Container className="py-24">
       <Subheading>Implementation</Subheading>
-      <Heading as="h2" className="mt-2 max-w-4xl">
+      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
         Pilot one clinic → replicate across locations
       </Heading>
       <p className="mt-6 max-w-4xl text-lg text-gray-600">

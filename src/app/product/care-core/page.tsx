@@ -95,7 +95,7 @@ function ArchitectureSection() {
       <Container>
         <div className="text-center mb-20">
           <Subheading>Architecture</Subheading>
-          <Heading as="h2">
+          <Heading as="h2" className='font-display tracking-tight'>
             Modular, plugin‑ready core with modern frontend/backend stacks
           </Heading>
           <p className="mt-6 max-w-4xl mx-auto text-xl text-gray-600 leading-relaxed">
@@ -200,7 +200,7 @@ function CoreModulesSection() {
       <Container>
         <div className="text-center mb-20">
           <Subheading>Core Modules</Subheading>
-          <Heading as="h2">
+          <Heading as="h2" className='font-display tracking-tight'>
             Everything you need for comprehensive healthcare management
           </Heading>
           <p className="mt-6 max-w-3xl mx-auto text-xl text-gray-600 leading-relaxed">
@@ -221,7 +221,7 @@ function CoreModulesSection() {
                       <module.icon className="w-8 h-8 text-gray-700" />
                     </div>
                     <div>
-                      <h3 className="text-4xl font-bold text-gray-900 mb-3">{module.title}</h3>
+                      <h3 className="font-display text-4xl font-bold text-gray-900 mb-3">{module.title}</h3>
                       <div className="w-20 h-1 bg-gray-300 rounded-full"></div>
                     </div>
                   </div>
@@ -285,7 +285,7 @@ function BenefitsSection() {
       <Container>
         <div className="text-center mb-20">
           <Subheading>What you get</Subheading>
-          <Heading as="h2">
+          <Heading as="h2" className='font-display tracking-tight'>
             Interoperability by default; clean analytics/exchange.
           </Heading>
           <p className="mt-6 max-w-3xl mx-auto text-xl text-gray-600 leading-relaxed">

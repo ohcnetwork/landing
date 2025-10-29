@@ -46,7 +46,7 @@ function OutcomesSection() {
   return (
     <Container className="py-24">
       <Subheading>Outcomes</Subheading>
-      <Heading as="h2" className="mt-2 max-w-4xl">
+      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
         Extend specialist capacity across districts with standardized care.
       </Heading>
 
@@ -73,7 +73,7 @@ function FeaturesSection() {
     <div className="bg-gray-50 py-24">
       <Container>
         <Subheading>Features</Subheading>
-        <Heading as="h2" className="mt-2 max-w-4xl">
+        <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
           ONVIF‑compatible video with integrated documentation
         </Heading>
 
@@ -133,7 +133,7 @@ function ImplementationSection() {
   return (
     <Container className="py-24">
       <Subheading>Implementation</Subheading>
-      <Heading as="h2" className="mt-2 max-w-4xl">
+      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
         Enable cameras in wards; pair with CARE; train teams
       </Heading>
       <p className="mt-6 max-w-4xl text-lg text-gray-600">

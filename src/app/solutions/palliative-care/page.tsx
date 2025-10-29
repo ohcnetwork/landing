@@ -46,7 +46,7 @@ function ImpactSection() {
   return (
     <Container className="py-24">
       <Subheading>By the numbers</Subheading>
-      <Heading as="h2" className="mt-2 max-w-4xl">
+      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
         Kerala&apos;s Palliative Care Grid demonstrates real-world impact at scale.
       </Heading>
 
@@ -77,7 +77,7 @@ function WhyItWorksSection() {
     <div className="bg-gray-50 py-24">
       <Container>
         <Subheading>Why it works</Subheading>
-        <Heading as="h2" className="mt-2 max-w-4xl">
+        <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
           Frontline app for visits, notes, and follow‑ups with structured records
         </Heading>
 
@@ -137,7 +137,7 @@ function ImplementationSection() {
   return (
     <Container className="py-24">
       <Subheading>Implementation</Subheading>
-      <Heading as="h2" className="mt-2 max-w-4xl">
+      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
         Pilot a district → train ASHA/nurses → scale statewide
       </Heading>
       <p className="mt-6 max-w-4xl text-lg text-gray-600">

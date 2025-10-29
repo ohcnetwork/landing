@@ -41,7 +41,7 @@ function UseCasesSection() {
   return (
     <Container className="py-24">
       <Subheading>Use cases</Subheading>
-      <Heading as="h2" className="mt-2 max-w-4xl">
+      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
         Comprehensive veterinary practice management from small clinics to district hospitals
       </Heading>
 
@@ -72,7 +72,7 @@ function WhyCareJanwarSection() {
     <div className="bg-gray-50 py-24">
       <Container>
         <Subheading>Why Care Janwar</Subheading>
-        <Heading as="h2" className="mt-2 max-w-4xl">
+        <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
           Standards‑aligned data model with configurable terminologies
         </Heading>
 
@@ -132,7 +132,7 @@ function FAQSection() {
   return (
     <Container className="py-24">
       <Subheading>FAQ</Subheading>
-      <Heading as="h2" className="mt-2 max-w-4xl">
+      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
         Common questions about Care Janwar deployment
       </Heading>
 

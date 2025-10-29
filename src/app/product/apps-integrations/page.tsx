@@ -41,7 +41,7 @@ function FeaturedSection() {
   return (
     <Container className="py-24">
       <Subheading>Featured</Subheading>
-      <Heading as="h2" className="mt-2 max-w-4xl">
+      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
         Most popular integrations deployed across multiple states.
       </Heading>
 
@@ -113,7 +113,7 @@ function CategoriesSection() {
     <div className="bg-gray-50 py-24">
       <Container>
         <Subheading>Categories</Subheading>
-        <Heading as="h2" className="mt-2 max-w-4xl">
+        <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
           Browse integrations by category
         </Heading>
         <p className="mt-6 max-w-4xl text-lg text-gray-600">
