@@ -44,7 +44,7 @@ function Hero() {
             Build open source healthcare. Save lives.
           </h1>
           <p className="mt-8 max-w-4xl text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
-            Contribute to CARE, an open-source EMR system built with Django DRF and React TypeScript, powering cost-effective healthcare solutions across 11 States.
+            Contribute to CARE, an open-source EMR system built with Django DRF and React TypeScript, powering cost-effective healthcare solutions across 10 States.
           </p>
           <div className="mt-12 flex flex-col gap-x-4 gap-y-4 sm:flex-row">
             <Button href="https://github.com/ohcnetwork" target="_blank" className="flex items-center gap-2">
