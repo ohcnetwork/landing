@@ -27,7 +27,7 @@ function Hero() {
             OHC is stewarded by <strong>14+ core maintainers</strong> and a global community of <strong>1,040+ contributors</strong>. Meet the leadership, advisory board, and core maintainers.
           </p>
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-            <Button href="https://github.com/ohcnetwork" target="_blank">Meet the maintainers</Button>
+            <Button href="https://github.com/orgs/ohcnetwork/people" target="_blank">Meet the maintainers</Button>
             <Button variant="secondary" href="/developers">Join the community</Button>
           </div>
         </div>
