@@ -34,35 +34,6 @@ function Hero() {
   )
 }
 
-// function OutcomesSection() {
-//   return (
-//     <Container className="py-24">
-//       <Subheading>Outcomes</Subheading>
-//       <Heading as="h2" className="mt-2 max-w-4xl">
-//         Proven results across 11 States with rapid deployment and frontline adoption.
-//       </Heading>
-      
-//       <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-4">
-//         <div className="bg-blue-50 p-6 rounded-lg border border-blue-200 text-center">
-//           <div className="text-4xl font-bold text-blue-900 mb-2">FHIR R5</div>
-//           <p className="text-blue-700 font-medium">Interoperable by default</p>
-//         </div>
-//         <div className="bg-green-50 p-6 rounded-lg border border-green-200 text-center">
-//           <div className="text-4xl font-bold text-green-900 mb-2">1,200+</div>
-//           <p className="text-green-700 font-medium">Hospitals in &lt; 6 weeks</p>
-//         </div>
-//         <div className="bg-purple-50 p-6 rounded-lg border border-purple-200 text-center">
-//           <div className="text-4xl font-bold text-purple-900 mb-2">200k+</div>
-//           <p className="text-purple-700 font-medium">Encounters captured</p>
-//         </div>
-//         <div className="bg-orange-50 p-6 rounded-lg border border-orange-200 text-center">
-//           <div className="text-4xl font-bold text-orange-900 mb-2">10k+</div>
-//           <p className="text-orange-700 font-medium">Healthcare workers</p>
-//         </div>
-//       </div>
-//     </Container>
-//   )
-// }
 
 function CoreModulesSection() {
   const modules = [
@@ -100,7 +71,7 @@ function CoreModulesSection() {
   )
 }
 
-function ImplementationSection() {
+function PluginSection() {
   return (
     <Container className="py-24">
       <Subheading>Build to be plugged into</Subheading>
@@ -166,7 +137,7 @@ export default function HospitalManagement() {
       <Hero />
       <main>
         <CoreModulesSection />
-        <ImplementationSection />
+        <PluginSection />
         {/* <FAQSection /> */}
       </main>
       <Footer />

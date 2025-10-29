@@ -22,10 +22,10 @@ function Hero() {
         <Navbar />
         <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-48">
           <h1 className="font-display text-6xl/[0.9] font-medium tracking-tight text-balance text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
-            Specialist care reaches every bed.
+            Critical Care reached every bed.
           </h1>
           <p className="mt-8 max-w-4xl text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
-            Hub‑and‑spoke monitoring with ONVIF cameras and integrated rounds—<strong>near real‑time</strong>, centrally managed, <strong>documented inside CARE</strong>.
+           <strong>CARE Tele-ICU</strong> extends intensive-care expertise beyond hospital walls through a<strong> hub-and-spoke model</strong>.
           </p>
           <ExploreButtons />
         </div>
@@ -33,7 +33,27 @@ function Hero() {
     </div>
   )
 }
-
+function ImplementationPartnersSection() {
+  return (
+    <Container className="pb-24">
+      <Subheading>Implementation Partners</Subheading>
+      <div className="mt-6 flex flex-col items-center gap-8 lg:flex-row lg:items-center lg:gap-12">
+        <div className="flex-shrink-0">
+          <img
+            src="/logos/10bedicu.png"
+            alt="10 BED ICU"
+            className="h-32 object-contain lg:h-40"
+          />
+        </div>
+        <div className="flex-1 text-center lg:text-left">
+          <p className="text-lg leading-7 text-gray-600 max-w-3xl mx-auto lg:mx-0">
+            <strong className="font-semibold text-gray-900">10BedICU</strong> Project sets up 10-bed ICUs in government hospitals using the CARE technology platform, standard clinical ICU protocols, and trained staff. We partner with state governments to deliver high-quality critical care in underserved areas across India.
+          </p>
+        </div>
+      </div>
+    </Container>
+  )
+}
 function OutcomesSection() {
   return (
     <Container className="py-24">
@@ -192,6 +212,7 @@ export default function TeleICU() {
     <div className="overflow-hidden">
       <Hero />
       <main>
+        <ImplementationPartnersSection />
         <OutcomesSection />
         <ImpactSection />
         <FeaturesSection />
