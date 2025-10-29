@@ -19,7 +19,7 @@ function Hero() {
       <TopGradient />
       <Container className="relative">
         <Navbar />
-        <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-48">
+        <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-38">
           <h1 className="font-display text-6xl/[0.9] font-medium tracking-tight text-balance text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
             The community‑driven model.
           </h1>
@@ -38,7 +38,7 @@ function Hero() {
 
 function CoreMaintainersSection() {
   return (
-    <Container className="py-24">
+    <Container className="py-16 bg-gray-100">
       <Subheading>Core Maintainers</Subheading>
       <Heading as="h2" className="mt-2 max-w-4xl">
         14+ experienced maintainers guide technical direction
@@ -47,7 +47,7 @@ function CoreMaintainersSection() {
         Our core maintainers are experienced developers and healthcare professionals who guide the technical direction and architecture decisions for CARE.
       </p>
 
-      <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-3">
+      {/* <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-3">
         <div className="bg-white p-8 rounded-lg border border-gray-200">
           <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
             <div className="text-2xl font-bold text-blue-900">A</div>
@@ -72,7 +72,7 @@ function CoreMaintainersSection() {
           <p className="text-gray-600 mb-4">Plugins, APIs, and third-party integrations</p>
           <a href="https://github.com/ohcnetwork" className="text-blue-600 hover:text-blue-800">GitHub</a>
         </div>
-      </div>
+      </div> */}
     </Container>
   )
 }

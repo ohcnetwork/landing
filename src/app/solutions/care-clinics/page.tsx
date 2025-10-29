@@ -18,7 +18,7 @@ function Hero() {
       <TopGradient />
       <Container className="relative">
         <Navbar />
-        <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-48">
+        <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-38">
           <h1 className="font-display text-6xl/[0.9] font-medium tracking-tight text-balance text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
             Built for Clinics That Want to Scale, Not Just Digitize
           </h1>

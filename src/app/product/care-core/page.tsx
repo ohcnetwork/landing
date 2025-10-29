@@ -36,7 +36,7 @@ function Hero() {
       <TopGradient />
       <Container className="relative">
         <Navbar />
-        <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-48">
+        <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-38">
           <div className="mx-auto max-w-5xl text-center">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-sm font-medium mb-8">
               <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>

@@ -27,7 +27,7 @@ function Hero() {
       <TopGradient />
       <Container className="relative">
         <Navbar />
-        <div className="flex flex-col gap-14 pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-48">
+        <div className="flex flex-col gap-14 pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-42">
           <div className="flex flex-col items-center justify-center gap-4 text-center">
             <h1 className="text-center font-display tracking-tight text-6xl/[0.9] font-bold sm:text-6xl md:text-8xl">
               Building digital healthcare <br />{' '}
