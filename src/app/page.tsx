@@ -2,7 +2,6 @@ import { BentoCard } from '@/components/bento-card'
 import { Button } from '@/components/button'
 import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
-import { Gradient } from '@/components/gradient'
 import { LinkedAvatars } from '@/components/linked-avatars'
 import { LogoCloud } from '@/components/logo-cloud'
 import { LogoTimeline } from '@/components/logo-timeline'
@@ -10,8 +9,9 @@ import { Map } from '@/components/map'
 import { Navbar } from '@/components/navbar'
 import { Testimonials } from '@/components/testimonials'
 import { Heading, Subheading } from '@/components/text'
+import { TopGradient } from '@/components/TopGradient'
 import { YouTubeVideo } from '@/components/youtube-video'
-import { Github, MessageCircle } from 'lucide-react'
+import { Github } from 'lucide-react'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -23,26 +23,35 @@ export const metadata: Metadata = {
 function Hero() {
   return (
     <div className="relative">
-      <Gradient className="absolute inset-2 bottom-0 rounded-4xl ring-1 ring-black/5 ring-inset" />
+      <TopGradient />
       <Container className="relative">
-        <Navbar/>
-        <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-48">
-          <h1 className="font-display text-6xl/[0.9] font-medium tracking-tight text-balance text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
-            Open healthcare infrastructure for national scale.
-          </h1>
-          <p className="mt-8 max-w-4xl text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
-            We build <strong>Digital Public Goods</strong> so governments, hospitals, and innovators can deploy <strong>open, interoperable, AI‑ready</strong> systems that serve everyone.
-          </p>
-          
-          <div className="mt-12 flex flex-col gap-x-4 gap-y-4 sm:flex-row">
-          <Button href="https://github.com/ohcnetwork" target="_blank" className="flex items-center gap-2">
-              <Github className="w-4 h-4" />
+        <Navbar />
+        <div className="flex flex-col gap-14 pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-48">
+          <div className="flex flex-col items-center justify-center gap-4 text-center">
+            <h1 className="text-center text-6xl/[0.9] font-medium sm:text-6xl md:text-8xl">
+              Building digital healthcare <br />{' '}
+              <span className="text-[#047857]">for everyone.</span>
+            </h1>
+            <p className="mt-8 max-w-4xl text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
+              <span className="font-semibold">Open Healthcare Network(OHC)</span> is an open-source
+              platform that helps governments, hospitals, and innovators build
+              connected healthcare systems faster, safer, and at national scale.
+            </p>
+          </div>
+
+          <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <Button href="https://github.com/ohcnetwork" target="_blank" className="flex items-center gap-2 w-full sm:w-auto" variant='primary'>
+              <Github className="size-4" />
               <span>Star us on Github</span>
             </Button>
-            <Button variant="secondary" href="https://slack.ohc.network" target="_blank" className="flex items-center gap-2">
-              <MessageCircle className="w-4 h-4" />
-              <span>Join Slack</span>
-            </Button> 
+            <Button
+              variant="secondary"
+              href="https://slack.ohc.network"
+              target="_blank"
+              className='w-full sm:w-auto'
+            >
+              <span>Join the Community</span>
+            </Button>
           </div>
         </div>
       </Container>
@@ -69,16 +78,16 @@ function WhatWeBuildSection() {
           graphic={
             <div className="h-80 bg-gradient-to-br from-green-50 to-blue-100 flex items-center justify-center">
               <div className="text-center">
-                  <img
+                <img
                   alt="Care EMR"
                   src="/logos/care-logo.svg"
                   className="w-120 rounded-full bg-white/15 ring-4 ring-white/10"
                 />
-                
+
               </div>
             </div>
           }
-          
+
           fade={['bottom']}
           className="max-lg:rounded-t-4xl lg:col-span-3 lg:rounded-tl-4xl"
         />
@@ -121,7 +130,7 @@ function WhatWeBuildSection() {
           graphic={
             <div className="h-80 bg-gradient-to-br from-green-50 to-white-100 flex items-center justify-center">
               <div className="text-center">
-              <div className="text-7xl font-bold text-green-900">50th</div>
+                <div className="text-7xl font-bold text-green-900">50th</div>
                 <div className="text-sm text-green-700 mt-2">Digital Public Good</div>
               </div>
             </div>
@@ -145,9 +154,9 @@ function GitHubVideoSection() {
           Our doctors and engineers show how open source collaboration on GitHub has been key to the success of our platform, CARE, and is impacting millions of lives throughout the country.
         </p>
       </div>
-      
+
       <div className="max-w-4xl mx-auto">
-        <YouTubeVideo 
+        <YouTubeVideo
           videoId="-wxIzaqvkQA"
           title="Open Healthcare Network - GitHub Story"
           className="rounded-2xl shadow-2xl"

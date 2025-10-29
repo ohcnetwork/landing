@@ -2,7 +2,7 @@ import { BentoCard } from '@/components/bento-card'
 import { Button } from '@/components/button'
 import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
-import { Gradient } from '@/components/gradient'
+import { TopGradient } from '@/components/TopGradient'
 import { Navbar } from '@/components/navbar'
 import { Heading, Subheading } from '@/components/text'
 import type { Metadata } from 'next'
@@ -94,7 +94,7 @@ const timelineItems = [
 function Hero() {
   return (
     <div className="relative">
-      <Gradient className="absolute inset-2 bottom-0 rounded-4xl ring-1 ring-black/5 ring-inset" />
+      <TopGradient />
       <Container className="relative">
         <Navbar />
         <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-48">
@@ -122,7 +122,7 @@ function CommunitySection() {
       <Heading as="h2" className="mt-2 max-w-4xl">
         Global community of contributors and maintainers building Digital Public Goods
       </Heading>
-      
+
       <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-3">
         <div className="bg-blue-50 p-6 rounded-lg border border-blue-200 text-center">
           <div className="text-4xl font-bold text-blue-900 mb-2">1,040+</div>
@@ -149,7 +149,7 @@ function DeploymentSection() {
         <Heading as="h2" className="mt-2 max-w-4xl">
           10 States have deployed CARE to power different solutions
         </Heading>
-        
+
         <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2">
           <BentoCard
             eyebrow="States Deployed"
@@ -198,11 +198,11 @@ function TimelineSection() {
         <p className="mt-6 max-w-4xl text-lg text-gray-600">
           CARE&apos;s evolution from a crisis response tool to a comprehensive healthcare management system.
         </p>
-        
+
         <div className="mt-16 relative">
           {/* Timeline line */}
           <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 via-green-500 to-purple-500"></div>
-          
+
           <div className="space-y-16">
             {timelineItems.map((item) => (
               <div key={item.id} className="relative flex items-start">
@@ -210,7 +210,7 @@ function TimelineSection() {
                 <div className="relative z-10 flex h-16 w-16 items-center justify-center rounded-full bg-white border-4 border-blue-500 shadow-lg">
                   <div className="h-3 w-3 rounded-full bg-blue-500"></div>
                 </div>
-                
+
                 {/* Content */}
                 <div className="ml-8 flex-1">
                   <div className="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden">
@@ -223,9 +223,9 @@ function TimelineSection() {
                           </span>
                         </div>
                       </div>
-                      
+
                       <p className="text-gray-700 leading-relaxed mb-6">{item.purpose}</p>
-                      
+
                       <div className="space-y-3">
                         <h4 className="text-sm font-semibold text-gray-900 uppercase tracking-wide">Key Features & Achievements</h4>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
@@ -259,7 +259,7 @@ function EcosystemSection() {
       <p className="mt-6 max-w-4xl text-lg text-gray-600">
         The OHC Network brings together diverse stakeholders to build open, interoperable health infrastructure that serves everyone.
       </p>
-      
+
       <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-4">
         <div className="bg-blue-50 p-6 rounded-lg border border-blue-200">
           <h3 className="text-lg font-semibold text-blue-900 mb-2">Governments</h3>

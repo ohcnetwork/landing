@@ -2,7 +2,7 @@ import { BentoCard } from '@/components/bento-card'
 import { Button } from '@/components/button'
 import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
-import { Gradient } from '@/components/gradient'
+import { TopGradient } from '@/components/TopGradient'
 import { Navbar } from '@/components/navbar'
 import { Heading, Subheading } from '@/components/text'
 import type { Metadata } from 'next'
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 function Hero() {
   return (
     <div className="relative">
-      <Gradient className="absolute inset-2 bottom-0 rounded-4xl ring-1 ring-black/5 ring-inset" />
+      <TopGradient />
       <Container className="relative">
         <Navbar />
         <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-48">
@@ -46,7 +46,7 @@ function CoreMaintainersSection() {
       <p className="mt-6 max-w-4xl text-lg text-gray-600">
         Our core maintainers are experienced developers and healthcare professionals who guide the technical direction and architecture decisions for CARE.
       </p>
-      
+
       <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-3">
         <div className="bg-white p-8 rounded-lg border border-gray-200">
           <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
@@ -85,7 +85,7 @@ function CommunitySection() {
         <Heading as="h2" className="mt-2 max-w-4xl">
           Global community of contributors and supporters
         </Heading>
-        
+
         <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2">
           <BentoCard
             eyebrow="Contributors"
@@ -133,7 +133,7 @@ function AdvisoryBoardSection() {
       <p className="mt-6 max-w-4xl text-lg text-gray-600">
         Our advisory board includes healthcare professionals, technology experts, and policy makers who provide strategic guidance and domain expertise.
       </p>
-      
+
       <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-3">
         <div className="bg-white p-8 rounded-lg border border-gray-200">
           <h3 className="text-lg font-semibold text-gray-900 mb-2">Healthcare Policy</h3>
