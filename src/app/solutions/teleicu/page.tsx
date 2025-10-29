@@ -6,6 +6,7 @@ import { TopGradient } from '@/components/TopGradient'
 import { Navbar } from '@/components/navbar'
 import { Heading, Subheading } from '@/components/text'
 import type { Metadata } from 'next'
+import { ExploreButtons } from '@/components/explore-buttons'
 
 export const metadata: Metadata = {
   title: 'TeleICU — Remote ICU Monitoring on CARE',
@@ -26,11 +27,7 @@ function Hero() {
           <p className="mt-8 max-w-4xl text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
            <strong>CARE Tele-ICU</strong> extends intensive-care expertise beyond hospital walls through a<strong> hub-and-spoke model</strong>.
           </p>
-          <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-            <Button href="/contact">Set up a pilot TeleICU</Button>
-            <Button variant="secondary" href="/contact">Sponsor devices for a district</Button>
-            <Button variant="secondary" href="/contact">Request a technical brief</Button>
-          </div>
+          <ExploreButtons />
         </div>
       </Container>
     </div>
@@ -68,7 +65,7 @@ function OutcomesSection() {
       <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-4">
         <div className="bg-blue-50 p-6 rounded-lg border border-blue-200 text-center">
           <div className="text-4xl font-bold text-blue-900 mb-2">216</div>
-          <p className="text-blue-700 font-medium">10 BEDICU Units</p>
+          <p className="text-blue-700 font-medium">10 BedICU Units</p>
         </div>
         <div className="bg-green-50 p-6 rounded-lg border border-green-200 text-center">
           <div className="text-4xl font-bold text-green-900 mb-2">1,00,000+</div>
@@ -217,9 +214,10 @@ export default function TeleICU() {
       <main>
         <ImplementationPartnersSection />
         <OutcomesSection />
-         <ImpactSection />
+        <ImpactSection />
         <FeaturesSection />
         <ImplementationSection />
+
       </main>
       <Footer />
     </div>

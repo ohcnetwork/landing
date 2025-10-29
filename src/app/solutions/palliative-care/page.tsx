@@ -6,6 +6,7 @@ import { TopGradient } from '@/components/TopGradient'
 import { Navbar } from '@/components/navbar'
 import { Heading, Subheading } from '@/components/text'
 import type { Metadata } from 'next'
+import { ExploreButtons } from '@/components/explore-buttons'
 
 export const metadata: Metadata = {
   title: 'Palliative Care Grid — Home‑Based Care at Scale',
@@ -31,11 +32,7 @@ function Hero() {
               <strong>By the numbers:</strong> <strong>1,300+</strong> primary care centers · <strong>221k</strong> patients registered · <strong>669k</strong> people impacted · <strong>1,320 DAU</strong> logging home consultations
             </p>
           </div>
-          <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-            <Button href="/contact">See a field demo</Button>
-            <Button variant="secondary" href="/contact">Fund a district</Button>
-            <Button variant="secondary" href="/contact">Talk to implementers</Button>
-          </div>
+          <ExploreButtons />
         </div>
       </Container>
     </div>
