@@ -190,7 +190,7 @@ export function Testimonials() {
       <Container>
         <div ref={setReferenceWindowRef}>
           <Subheading>What the Community says about us</Subheading>
-          <Heading as="h3" className="mt-2">
+          <Heading as="h3" className="mt-2 font-display tracking-tight">
             We have worked with some amazing people
           </Heading>
         </div>

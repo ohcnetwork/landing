@@ -29,7 +29,7 @@ function Hero() {
         <Navbar />
         <div className="flex flex-col gap-14 pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-48">
           <div className="flex flex-col items-center justify-center gap-4 text-center">
-            <h1 className="text-center text-6xl/[0.9] font-medium sm:text-6xl md:text-8xl">
+            <h1 className="text-center font-display text-6xl/[0.9] tracking-tight font-bold sm:text-6xl md:text-8xl">
               Building digital healthcare <br />{' '}
               <span className="text-[#047857]">for everyone.</span>
             </h1>
@@ -65,8 +65,8 @@ function WhatWeBuildSection() {
     <Container>
       <Subheading>What we build</Subheading>
       <Heading as="h3" className="mt-2 max-w-7xl">
-        <strong className='font-semibold text-5xl'>FHIR-powered modular EMR</strong><br />
-        <span className='font-medium text-5xl'>with SNOMED, LOINC, UCUM, and ICD-10 integration.</span>
+        <strong className='font-display font-bold text-5xl'>FHIR-powered modular EMR</strong><br />
+        <span className='font-display font-medium text-5xl text-gray-600'>with SNOMED, LOINC, UCUM, and ICD-10 integration.</span>
       </Heading>
       <p className="mt-8 text-2xl text-gray-600">
         FHIR R5   •   SNOMED   •   LOINC   •   UCUM  •   ICD-10   •   Open APIs   •   ABDM Compliant
@@ -221,8 +221,10 @@ function SolutionsSection() {
     <div className="bg-gray-100 py-32">
       <Container>
         <Subheading>What we build</Subheading>
-        <Heading as="h3" className="mt-2 max-w-4xl">
-          Solutions that Power every layer of Care
+        <Heading as="h3" className="mt-2 max-w-4xl font-display tracking-tight">
+          <span className='font-bold text-5xl'>Solutions that Power</span>
+          <br />
+          <span className='font-medium text-5xl text-gray-600'>every layer of Care</span>
         </Heading>
 
         <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
@@ -262,7 +264,7 @@ function GitHubVideoSection() {
     <Container className="py-24">
       <div className="text-center mb-12">
         <Subheading>Featured Story</Subheading>
-        <Heading as="h3" className="mt-2 max-w-4xl mx-auto">
+        <Heading as="h3" className="mt-2 max-w-4xl mx-auto font-display tracking-tight">
           How Open Healthcare Network has helped revolutionize access to healthcare across India
         </Heading>
         <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">

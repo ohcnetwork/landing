@@ -1,6 +1,14 @@
 import '@/styles/tailwind.css'
 import type { Metadata } from 'next'
 
+import { Bricolage_Grotesque } from 'next/font/google'
+
+const bricolage = Bricolage_Grotesque({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-bricolage',
+})
+
 export const metadata: Metadata = {
   title: {
     template: '%s - Open Healthcare Network',
@@ -14,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${bricolage.variable} antialiased`}>
       <head>
         <link
           rel="stylesheet"
