@@ -54,11 +54,12 @@ function WhatWeBuildSection() {
   return (
     <Container>
       <Subheading>What we build</Subheading>
-      <Heading as="h3" className="mt-2 max-w-4xl">
-        FHIR powered, MIT‑licensed, modular EMR with SNOMED, LOINC, UCUM, ICD‑10 Coding.
+      <Heading as="h3" className="mt-2 max-w-7xl">
+        <strong className='font-semibold text-5xl'>FHIR-powered modular EMR</strong><br />
+        <span className='font-medium text-5xl'>with SNOMED, LOINC, UCUM, and ICD-10 integration.</span>
       </Heading>
-      <p className="mt-4 text-lg text-gray-600">
-        Core + Apps Architecture.
+      <p className="mt-8 text-2xl text-gray-600">
+      FHIR R5   •   SNOMED   •   LOINC   •   UCUM  •   ICD-10   •   Open APIs   •   ABDM Compliant  
       </p>
 
       <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
@@ -78,7 +79,7 @@ function WhatWeBuildSection() {
               </div>
             </div>
           }
-          
+          link={{ href: '/product/care-core', label: 'Inside the Core' }}
           fade={['bottom']}
           className="max-lg:rounded-t-4xl lg:col-span-3 lg:rounded-tl-4xl"
         />
@@ -87,6 +88,7 @@ function WhatWeBuildSection() {
           title="Care Apps"
           description="Extensible apps: ABDM M1–M3, TeleICU (ONVIF), Care Scribe (multilingual AI voice fill)."
           graphic={<LogoTimeline />}
+          link={{ href: '/product/apps-integrations', label: 'Explore Care Apps' }}
           fade={['bottom']}
           className="lg:col-span-3 lg:rounded-tr-4xl"
         />
@@ -95,13 +97,41 @@ function WhatWeBuildSection() {
           title="FHIR R5 Native"
           description="Built on global standards: FHIR R5, SNOMED, LOINC, UCUM, ICD‑10; terminology server; BYOT."
           graphic={
-            <div className="flex size-full pt-10 pl-10">
-              <div className="grid grid-cols-3 gap-2">
-                <div className="bg-blue-100 p-2 rounded text-xs font-medium text-blue-900">FHIR R5</div>
-                <div className="bg-green-100 p-2 rounded text-xs font-medium text-green-900">SNOMED</div>
-                <div className="bg-purple-100 p-2 rounded text-xs font-medium text-purple-900">LOINC</div>
-                <div className="bg-orange-100 p-2 rounded text-xs font-medium text-orange-900">UCUM</div>
-                <div className="bg-red-100 p-2 rounded text-xs font-medium text-red-900">ICD-10</div>
+            <div className="flex size-full items-start justify-center pt-10 px-10 pb-8">
+              <div className="grid grid-cols-2 gap-x-6 gap-y-8 w-full max-w-sm">
+                <div className="flex items-center justify-center">
+                  <img
+                    src="/logos/fhir.png"
+                    alt="FHIR"
+                    className="h-12 object-contain"
+                  />
+                </div>
+                <div className="flex items-center justify-center">
+                  <img
+                    src="/logos/snomed.png"
+                    alt="SNOMED CT"
+                    className="h-12 object-contain"
+                  />
+                </div>
+                <div className="flex items-center justify-center">
+                  <img
+                    src="/logos/loinc.png"
+                    alt="LOINC"
+                    className="h-12 object-contain"
+                  />
+                </div>
+                <div className="flex items-center justify-center">
+                  <img
+                    src="/logos/ucum.png"
+                    alt="UCUM"
+                    className="h-16 w-16 object-contain"
+                  />
+                </div>
+                <div className="col-span-2 flex justify-center mt-2">
+                  <div className="bg-sky-400 rounded-lg px-6 py-2.5">
+                    <span className="text-white text-sm font-bold">ICD-10</span>
+                  </div>
+                </div>
               </div>
             </div>
           }
@@ -117,12 +147,22 @@ function WhatWeBuildSection() {
         <BentoCard
           eyebrow="Digital Public Good"
           title="Open Source Healthcare"
-          description="CARE is recognized as a Digital Public Good, making healthcare technology accessible to all through open-source innovation."
+          description="Recognised as 50th Digital Public Good."
           graphic={
-            <div className="h-80 bg-gradient-to-br from-green-50 to-white-100 flex items-center justify-center">
-              <div className="text-center">
-              <div className="text-7xl font-bold text-green-900">50th</div>
-                <div className="text-sm text-green-700 mt-2">Digital Public Good</div>
+            <div className="h-80 flex flex-col items-center justify-center gap-8 px-10">
+              <div className="flex items-center justify-center">
+                <img
+                  src="/logos/dpg.png"
+                  alt="Digital Public Goods Alliance"
+                  className="h-16 object-contain"
+                />
+              </div>
+              <div className="flex items-center justify-center">
+                <img
+                  src="/logos/dpg-verified.png"
+                  alt="DPG Verified"
+                  className="h-12 object-contain"
+                />
               </div>
             </div>
           }
@@ -157,70 +197,6 @@ function GitHubVideoSection() {
   )
 }
 
-function OutcomesSection() {
-  return (
-    <div className="mx-2 mt-2 rounded-4xl bg-gray-900 py-32">
-      <Container>
-        <Subheading dark>Outcomes at a glance</Subheading>
-        <Heading as="h3" dark className="mt-2 max-w-4xl">
-          Real impact across 11 Indian states with rapid rollouts and frontline adoption.
-        </Heading>
-
-        <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
-          <BentoCard
-            dark
-            eyebrow="Scale"
-            title="11 States Deployed"
-            description="CARE powers solutions across 11 Indian states with proven deployment patterns and frontline adoption."
-            graphic={
-              <div className="h-80 bg-gradient-to-br from-blue-900 to-blue-800 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-6xl font-bold text-white">11</div>
-                  <div className="text-sm text-blue-200 mt-2">States</div>
-                </div>
-              </div>
-            }
-            fade={['top']}
-            className="max-lg:rounded-t-4xl lg:col-span-4 lg:rounded-tl-4xl"
-          />
-          <BentoCard
-            dark
-            eyebrow="Speed"
-            title="Rapid Rollouts"
-            description="1,200+ hospitals deployed in &lt; 6 weeks with our proven implementation playbook."
-            graphic={<LogoTimeline />}
-            className="z-10 overflow-visible! lg:col-span-2 lg:rounded-tr-4xl"
-          />
-          <BentoCard
-            dark
-            eyebrow="Adoption"
-            title="10k+ Healthcare Workers"
-            description="Frontline teams adopted CARE quickly with templates, autocomplete, and voice-to-text features."
-            graphic={<LinkedAvatars />}
-            className="lg:col-span-2 lg:rounded-bl-4xl"
-          />
-          <BentoCard
-            dark
-            eyebrow="Impact"
-            title="200k+ Encounters Captured"
-            description="KeralaCare Grid demonstrates real-world impact with structured data capture and quality improvement."
-            graphic={
-              <div className="h-80 bg-gradient-to-br from-green-900 to-green-800 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-white">200k+</div>
-                  <div className="text-sm text-green-200 mt-2">Encounters</div>
-                </div>
-              </div>
-            }
-            fade={['top']}
-            className="max-lg:rounded-b-4xl lg:col-span-4 lg:rounded-br-4xl"
-          />
-        </div>
-      </Container>
-    </div>
-  )
-}
-
 export default function Home() {
   return (
     <div className="overflow-hidden">
@@ -234,7 +210,6 @@ export default function Home() {
           <WhatWeBuildSection />
         </div>
         <GitHubVideoSection />
-        <OutcomesSection />
       </main>
       <Footer />
     </div>
