@@ -5,6 +5,7 @@ import { TopGradient } from '@/components/TopGradient'
 import { Navbar } from '@/components/navbar'
 import { Heading, Subheading } from '@/components/text'
 import type { Metadata } from 'next'
+import { ExploreButtons } from '@/components/explore-buttons'
 
 export const metadata: Metadata = {
   title: 'Care Clinics — Primary & Multi‑Specialty Clinic Platform',
@@ -25,11 +26,7 @@ function Hero() {
           <p className="mt-8 max-w-4xl text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
             CARE gives clinics the digital foundation to scale efficiently and operate intelligently.
           </p>
-          <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-            <Button href="/contact">Digitize your clinics</Button>
-            <Button variant="secondary" href="/contact">See a live demo</Button>
-            <Button variant="secondary" href="/contact">Get the implementation guide</Button>
-          </div>
+          <ExploreButtons />
         </div>
       </Container>
     </div>

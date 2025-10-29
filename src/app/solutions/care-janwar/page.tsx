@@ -6,6 +6,7 @@ import { TopGradient } from '@/components/TopGradient'
 import { Navbar } from '@/components/navbar'
 import { Heading, Subheading } from '@/components/text'
 import type { Metadata } from 'next'
+import { ExploreButtons } from '@/components/explore-buttons'
 
 export const metadata: Metadata = {
   title: 'Care Janwar — Veterinary EMR on Care Core',
@@ -26,11 +27,7 @@ function Hero() {
           <p className="mt-8 max-w-4xl text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
             Built on FHIR-native,CARE Janvar brings structured data, clinical precision, and digital compassion to veterinary care.
           </p>
-          <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-            <Button href="/contact">Start a veterinary pilot</Button>
-            <Button variant="secondary" href="/contact">Customize forms & codes</Button>
-            <Button variant="secondary" href="/contact">Request a demo</Button>
-          </div>
+          <ExploreButtons />
         </div>
       </Container>
     </div>

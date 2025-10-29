@@ -1,5 +1,4 @@
 import { BentoCard } from '@/components/bento-card'
-import { Button } from '@/components/button'
 import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
 import { TopGradient } from '@/components/TopGradient'
@@ -7,6 +6,7 @@ import { Navbar } from '@/components/navbar'
 import { Heading, Subheading } from '@/components/text'
 import type { Metadata } from 'next'
 import { LogoTimeline } from '@/components/logo-timeline'
+import { ExploreButtons } from '@/components/explore-buttons'
 
 export const metadata: Metadata = {
   title: 'CARE HMIS — FHIR‑Powered Hospital Platform',
@@ -27,46 +27,13 @@ function Hero() {
           <p className="mt-8 max-w-4xl text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
             An AI-ready, FHIR-native hospital system that powers everything from outpatient to intensive care.
           </p>
-          <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-            <Button href="/contact">Request a demo</Button>
-            <Button variant="secondary" href="/developers">Deploy CARE </Button>
-            <Button variant="secondary" href="/https://github.com/ohcnetwork">Explore the code</Button>
-          </div>
+          <ExploreButtons />
         </div>
       </Container>
     </div>
   )
 }
 
-// function OutcomesSection() {
-//   return (
-//     <Container className="py-24">
-//       <Subheading>Outcomes</Subheading>
-//       <Heading as="h2" className="mt-2 max-w-4xl">
-//         Proven results across 11 States with rapid deployment and frontline adoption.
-//       </Heading>
-
-//       <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-4">
-//         <div className="bg-blue-50 p-6 rounded-lg border border-blue-200 text-center">
-//           <div className="text-4xl font-bold text-blue-900 mb-2">FHIR R5</div>
-//           <p className="text-blue-700 font-medium">Interoperable by default</p>
-//         </div>
-//         <div className="bg-green-50 p-6 rounded-lg border border-green-200 text-center">
-//           <div className="text-4xl font-bold text-green-900 mb-2">1,200+</div>
-//           <p className="text-green-700 font-medium">Hospitals in &lt; 6 weeks</p>
-//         </div>
-//         <div className="bg-purple-50 p-6 rounded-lg border border-purple-200 text-center">
-//           <div className="text-4xl font-bold text-purple-900 mb-2">200k+</div>
-//           <p className="text-purple-700 font-medium">Encounters captured</p>
-//         </div>
-//         <div className="bg-orange-50 p-6 rounded-lg border border-orange-200 text-center">
-//           <div className="text-4xl font-bold text-orange-900 mb-2">10k+</div>
-//           <p className="text-orange-700 font-medium">Healthcare workers</p>
-//         </div>
-//       </div>
-//     </Container>
-//   )
-// }
 
 function CoreModulesSection() {
   const modules = [
@@ -104,7 +71,7 @@ function CoreModulesSection() {
   )
 }
 
-function ImplementationSection() {
+function PluginSection() {
   return (
     <Container className="py-24">
       <Subheading>Build to be plugged into</Subheading>
@@ -169,9 +136,8 @@ export default function HospitalManagement() {
     <div className="overflow-hidden">
       <Hero />
       <main>
-        {/* <OutcomesSection /> */}
         <CoreModulesSection />
-        <ImplementationSection />
+        <PluginSection />
         {/* <FAQSection /> */}
       </main>
       <Footer />

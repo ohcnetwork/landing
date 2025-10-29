@@ -55,9 +55,13 @@ function Hero() {
               <MessageCircle className="w-4 h-4" />
               <span>Join Slack</span>
             </Button>
+            <Button variant="secondary" href="https://docs.ohc.network" target="_blank" className="flex items-center gap-2">
+              <BookOpen className="w-4 h-4" />
+              <span>Docs</span>
+            </Button>
           </div>
 
-          <div className="mt-8 flex flex-wrap gap-6 text-sm text-gray-100/70">
+          <div className="mt-8 flex flex-wrap gap-6 text-sm text-gray-950">
             <div className="flex items-center gap-2">
               <Users className="w-4 h-4" />
               <span>1000+ Contributors</span>

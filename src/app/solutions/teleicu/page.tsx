@@ -6,6 +6,7 @@ import { TopGradient } from '@/components/TopGradient'
 import { Navbar } from '@/components/navbar'
 import { Heading, Subheading } from '@/components/text'
 import type { Metadata } from 'next'
+import { ExploreButtons } from '@/components/explore-buttons'
 
 export const metadata: Metadata = {
   title: 'TeleICU — Remote ICU Monitoring on CARE',
@@ -21,31 +22,71 @@ function Hero() {
         <Navbar />
         <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-38">
           <h1 className="font-display text-6xl/[0.9] font-medium tracking-tight text-balance text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
-            Specialist care reaches every bed.
+            Critical Care reached every bed.
           </h1>
           <p className="mt-8 max-w-4xl text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
-            Hub‑and‑spoke monitoring with ONVIF cameras and integrated rounds—<strong>near real‑time</strong>, centrally managed, <strong>documented inside CARE</strong>.
+           <strong>CARE Tele-ICU</strong> extends intensive-care expertise beyond hospital walls through a<strong> hub-and-spoke model</strong>.
           </p>
-          <div className="mt-8 p-4 bg-blue-50 rounded-lg border border-blue-200 max-w-lg">
-            <p className="text-sm font-medium text-blue-900">
-              <strong>Deployment:</strong> <strong>206 10‑bed ICUs</strong> & <strong>14 hubs</strong> across <strong>9 states</strong>
-            </p>
-          </div>
-          <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-            <Button href="/contact">Set up a pilot TeleICU</Button>
-            <Button variant="secondary" href="/contact">Sponsor devices for a district</Button>
-            <Button variant="secondary" href="/contact">Request a technical brief</Button>
-          </div>
+          <ExploreButtons />
         </div>
       </Container>
     </div>
   )
 }
-
+function ImplementationPartnersSection() {
+  return (
+    <Container className="pb-24">
+      <Subheading>Implementation Partners</Subheading>
+      <div className="mt-6 flex flex-col items-center gap-8 lg:flex-row lg:items-center lg:gap-12">
+        <div className="flex-shrink-0">
+          <img
+            src="/logos/10bedicu.png"
+            alt="10 BED ICU"
+            className="h-32 object-contain lg:h-40"
+          />
+        </div>
+        <div className="flex-1 text-center lg:text-left">
+          <p className="text-lg leading-7 text-gray-600 max-w-3xl mx-auto lg:mx-0">
+            <strong className="font-semibold text-gray-900">10BedICU</strong> Project sets up 10-bed ICUs in government hospitals using the CARE technology platform, standard clinical ICU protocols, and trained staff. We partner with state governments to deliver high-quality critical care in underserved areas across India.
+          </p>
+        </div>
+      </div>
+    </Container>
+  )
+}
 function OutcomesSection() {
   return (
     <Container className="py-24">
       <Subheading>Outcomes</Subheading>
+      <Heading as="h2" className="mt-2 max-w-4xl">
+        Proven results across 11 States with rapid deployment and frontline adoption.
+      </Heading>
+      
+      <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-4">
+        <div className="bg-blue-50 p-6 rounded-lg border border-blue-200 text-center">
+          <div className="text-4xl font-bold text-blue-900 mb-2">216</div>
+          <p className="text-blue-700 font-medium">10 BedICU Units</p>
+        </div>
+        <div className="bg-green-50 p-6 rounded-lg border border-green-200 text-center">
+          <div className="text-4xl font-bold text-green-900 mb-2">1,00,000+</div>
+          <p className="text-green-700 font-medium">Lives Saved</p>
+        </div>
+        <div className="bg-purple-50 p-6 rounded-lg border border-purple-200 text-center">
+          <div className="text-4xl font-bold text-purple-900 mb-2">15</div>
+          <p className="text-purple-700 font-medium">TeleICU Hubs</p>
+        </div>
+        <div className="bg-orange-50 p-6 rounded-lg border border-orange-200 text-center">
+          <div className="text-4xl font-bold text-orange-900 mb-2">28%</div>
+          <p className="text-orange-700 font-medium">Of India Covered</p>
+        </div>
+      </div>
+    </Container>
+  )
+}
+function ImpactSection() {
+  return (
+    <Container className="py-24">
+      <Subheading>Impacts</Subheading>
       <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
         Extend specialist capacity across districts with standardized care.
       </Heading>
@@ -171,9 +212,12 @@ export default function TeleICU() {
     <div className="overflow-hidden">
       <Hero />
       <main>
+        <ImplementationPartnersSection />
         <OutcomesSection />
+        <ImpactSection />
         <FeaturesSection />
         <ImplementationSection />
+
       </main>
       <Footer />
     </div>
