@@ -153,12 +153,12 @@ function DeploymentSection() {
         <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2">
           <BentoCard
             eyebrow="States Deployed"
-            title="11 Indian States"
-            description="CARE powers solutions across 11 Indian states with proven deployment patterns and frontline adoption."
+            title="10 Indian States"
+            description="CARE powers solutions across 10 Indian states with proven deployment patterns and frontline adoption."
             graphic={
               <div className="h-80 bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center">
                 <div className="text-center">
-                  <div className="text-6xl font-bold text-blue-900">11</div>
+                  <div className="text-6xl font-bold text-blue-900">10</div>
                   <div className="text-sm text-blue-700 mt-2">States</div>
                 </div>
               </div>

@@ -26,7 +26,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Care Core — FHIR‑Native Healthcare Platform | Open Health',
-  description: 'MIT‑licensed, modular healthcare platform with FHIR R5 compliance. API‑first, mobile‑first architecture for hospitals, clinics, and health systems. Deploy in 11 States.',
+  description: 'MIT‑licensed, modular healthcare platform with FHIR R5 compliance. API‑first, mobile‑first architecture for hospitals, clinics, and health systems. Deploy in 10 States.',
   keywords: 'FHIR healthcare platform, hospital management system, EMR software, healthcare interoperability, open source healthcare, MIT licensed healthcare, healthcare API, mobile healthcare, cloud healthcare, healthcare data model, SNOMED CT, LOINC, healthcare standards, digital health platform',
 }
 

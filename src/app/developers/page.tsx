@@ -29,7 +29,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Developers — Contribute to CARE Open Source EMR',
-  description: 'Join the CARE developer community. Contribute to an open-source EMR system built with Django DRF and React TypeScript, powering healthcare across 11 States.',
+  description: 'Join the CARE developer community. Contribute to an open-source EMR system built with Django DRF and React TypeScript, powering healthcare across 10 States.',
   keywords: 'CARE EMR, open source healthcare, Django DRF, React TypeScript, FHIR compliance, healthcare developers, medical software, EMR development, healthcare API, medical records system',
 }
 

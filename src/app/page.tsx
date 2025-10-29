@@ -149,8 +149,8 @@ function WhatWeBuildSection() {
         />
         <BentoCard
           eyebrow="Deployment"
-          title="11 States Deployed"
-          description="CARE powers solutions across 11 Indian states with rapid rollouts and frontline adoption."
+          title="10 States Deployed"
+          description="CARE powers solutions across 10 Indian states with rapid rollouts and frontline adoption."
           graphic={<Map />}
           className="lg:col-span-2"
         />

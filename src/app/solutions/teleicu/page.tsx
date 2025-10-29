@@ -59,7 +59,7 @@ function OutcomesSection() {
     <Container className="py-24">
       <Subheading>Outcomes</Subheading>
       <Heading as="h2" className="mt-2 max-w-4xl">
-        Proven results across 11 States with rapid deployment and frontline adoption.
+        Proven results across 10 States with rapid deployment and frontline adoption.
       </Heading>
       
       <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-4">

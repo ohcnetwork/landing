@@ -9,7 +9,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Impact — States, Hospitals, and Frontline Adoption',
-  description: 'See OHC&apos;s impact: 11 States, 1,200+ hospitals, 200k encounters, and 10k+ workers using CARE.',
+  description: 'See OHC&apos;s impact: 10 States, 1,200+ hospitals, 200k encounters, and 10k+ workers using CARE.',
   keywords: 'digital health impact, HMIS scale, open source healthcare outcomes',
 }
 
@@ -24,7 +24,7 @@ function Hero() {
             Public code → public impact.
           </h1>
           <p className="mt-8 max-w-4xl text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
-            Real-world deployment across 11 States with measurable outcomes in healthcare delivery and frontline adoption.
+            Real-world deployment across 10 States with measurable outcomes in healthcare delivery and frontline adoption.
           </p>
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
             <Button href="/contact">Request a briefing</Button>
@@ -41,12 +41,12 @@ function AtAGlanceSection() {
     <Container className="py-24">
       <Subheading>At a glance</Subheading>
       <Heading as="h2" className="mt-2 max-w-4xl">
-        Scale and impact across 11 Indian states
+        Scale and impact across 10 Indian states
       </Heading>
 
       <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-4">
         <div className="bg-blue-50 p-6 rounded-lg border border-blue-200 text-center">
-          <div className="text-4xl font-bold text-blue-900 mb-2">11</div>
+          <div className="text-4xl font-bold text-blue-900 mb-2">10</div>
           <p className="text-blue-700 font-medium">States deployed</p>
         </div>
         <div className="bg-green-50 p-6 rounded-lg border border-green-200 text-center">
