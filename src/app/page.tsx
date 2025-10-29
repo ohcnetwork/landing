@@ -11,6 +11,7 @@ import { Navbar } from '@/components/navbar'
 import { Testimonials } from '@/components/testimonials'
 import { Heading, Subheading } from '@/components/text'
 import { YouTubeVideo } from '@/components/youtube-video'
+import { clsx } from 'clsx'
 import { Github, MessageCircle } from 'lucide-react'
 import type { Metadata } from 'next'
 
@@ -173,6 +174,80 @@ function WhatWeBuildSection() {
   )
 }
 
+function SolutionsSection() {
+  const solutions = [
+    {
+      title: 'Hospital Management System',
+      description: 'FHIR-based modular EMR for hospitals and clinics.',
+      logo: '/logos/care-hmis.svg',
+      href: '/solutions/hospital-management',
+    },
+    {
+      title: 'TeleICU',
+      description: 'FHIR-based modular EMR for hospitals and clinics.',
+      logo: '/logos/care-teleicu.svg',
+      href: '/solutions/teleicu',
+    },
+    {
+      title: 'Palliative Care',
+      description: 'FHIR-based modular EMR for hospitals and clinics.',
+      logo: '/logos/care-palliative.svg',
+      href: '/solutions/palliative-care',
+    },
+    {
+      title: 'Care Janwar',
+      description: 'FHIR-based modular EMR for hospitals and clinics.',
+      logo: '/logos/care-janwar.svg',
+      href: '/solutions/care-janwar',
+    },
+    {
+      title: 'Care Clinics',
+      description: 'FHIR-based modular EMR for hospitals and clinics.',
+      logo: '/logos/care-clinics.svg',
+      href: '/solutions/care-clinics',
+    },
+  ]
+
+  return (
+    <div className="bg-gray-100 py-32">
+      <Container>
+        <Subheading>What we build</Subheading>
+        <Heading as="h3" className="mt-2 max-w-4xl">
+          Solutions that Power every layer of Care
+        </Heading>
+
+        <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
+          {solutions.map((solution, index) => (
+            <BentoCard
+              key={index}
+              eyebrow=""
+              title={solution.title}
+              description={solution.description}
+              graphic={
+                <div className="h-80 flex items-center justify-center p-10 bg-white">
+                  <img
+                    src={solution.logo}
+                    alt={solution.title}
+                    className="max-h-full max-w-full object-contain"
+                  />
+                </div>
+              }
+              link={{ href: solution.href, label: 'Inside the Core' }}
+              className={clsx(
+                'lg:col-span-2',
+                index === 0 && 'max-lg:rounded-t-4xl lg:rounded-tl-4xl lg:col-span-4',
+                index === 1 && 'lg:rounded-tr-4xl',
+                index === 2 && 'lg:rounded-bl-4xl',
+                index === 4 && 'max-lg:rounded-b-4xl lg:rounded-br-4xl'
+              )}
+            />
+          ))}
+        </div>
+      </Container>
+    </div>
+  )
+}
+
 function GitHubVideoSection() {
   return (
     <Container className="py-24">
@@ -210,6 +285,7 @@ export default function Home() {
           <WhatWeBuildSection />
         </div>
         <GitHubVideoSection />
+        <SolutionsSection />
       </main>
       <Footer />
     </div>
