@@ -1,7 +1,7 @@
 import { Button } from '@/components/button'
 import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
-import { Gradient } from '@/components/gradient'
+import { TopGradient } from '@/components/TopGradient'
 import { Navbar } from '@/components/navbar'
 import { Heading, Subheading } from '@/components/text'
 import type { Metadata } from 'next'
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 function Hero() {
   return (
     <div className="relative">
-      <Gradient className="absolute inset-2 bottom-0 rounded-4xl ring-1 ring-black/5 ring-inset" />
+      <TopGradient />
       <Container className="relative">
         <Navbar />
         <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-48">
@@ -43,7 +43,7 @@ function OutcomesSection() {
       <Heading as="h2" className="mt-2 max-w-4xl">
         Faster intake, fewer clicks with templates and voice‑to‑text
       </Heading>
-      
+
       <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-3">
         <div className="bg-blue-50 p-6 rounded-lg border border-blue-200">
           <h3 className="text-lg font-semibold text-blue-900 mb-2">Faster Intake</h3>
@@ -70,7 +70,7 @@ function FeaturesSection() {
         <Heading as="h2" className="mt-2 max-w-4xl">
           Everything you need for comprehensive clinic management
         </Heading>
-        
+
         <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2">
           <div className="space-y-6">
             <div className="bg-white p-6 rounded-lg border border-gray-200">
@@ -116,7 +116,7 @@ function ImplementationSection() {
       <p className="mt-6 max-w-4xl text-lg text-gray-600">
         Cloud‑agnostic hosting with role‑based access and hierarchical org model. Start small and scale efficiently.
       </p>
-      
+
       <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-4">
         <div className="bg-blue-50 p-6 rounded-lg border border-blue-200 text-center">
           <div className="text-4xl font-bold text-blue-900 mb-2">1</div>

@@ -2,17 +2,17 @@ import { BentoCard } from '@/components/bento-card'
 import { Button } from '@/components/button'
 import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
-import { Gradient } from '@/components/gradient'
+import { TopGradient } from '@/components/TopGradient'
 import { Navbar } from '@/components/navbar'
 import { Heading, Subheading } from '@/components/text'
-import { 
-  Github, 
-  Star, 
-  GitFork, 
-  Users, 
-  Code, 
-  BookOpen, 
-  MessageCircle, 
+import {
+  Github,
+  Star,
+  GitFork,
+  Users,
+  Code,
+  BookOpen,
+  MessageCircle,
   ExternalLink,
   Download,
   Play,
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 function Hero() {
   return (
     <div className="relative">
-      <Gradient className="absolute inset-2 bottom-0 rounded-4xl ring-1 ring-black/5 ring-inset" />
+      <TopGradient />
       <Container className="relative">
         <Navbar />
         <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-48">
@@ -56,7 +56,7 @@ function Hero() {
               <span>Join Slack</span>
             </Button>
           </div>
-          
+
           <div className="mt-8 flex flex-wrap gap-6 text-sm text-gray-100/70">
             <div className="flex items-center gap-2">
               <Users className="w-4 h-4" />
@@ -80,7 +80,7 @@ function TechStackSection() {
       <Heading as="h2" className="mt-2 max-w-4xl">
         Built with modern technologies for scalable healthcare solutions
       </Heading>
-      
+
       <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2">
         <div className="p-8 rounded-lg border border-gray-200">
           <div className="flex items-center gap-3 mb-4">
@@ -113,7 +113,7 @@ function PrerequisitesSection() {
         <Heading as="h2" className="mt-2 max-w-4xl">
           What you need to know before contributing
         </Heading>
-        
+
         <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div className="p-8 rounded-lg border border-gray-200">
             <div className="flex items-center gap-3 mb-4">
@@ -209,7 +209,7 @@ function WhatYouCanBuildSection() {
       <Heading as="h2" className="mt-2 max-w-4xl">
         Plugins, modules, and integrations that extend CARE without changing the core
       </Heading>
-      
+
       <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2">
         <div className="space-y-6">
           <div className="p-6 rounded-lg border border-gray-200">
@@ -244,7 +244,7 @@ function GetStartedSection() {
         <Heading as="h2" className="mt-2 max-w-4xl">
           Everything you need to start contributing to CARE
         </Heading>
-        
+
         <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-3">
           <BentoCard
             eyebrow="Setup"
@@ -303,16 +303,16 @@ function GetStartedSection() {
             />
           </a>
         </div>
-        
+
         <div className="mt-16 p-8 rounded-lg border border-gray-200">
           <h3 className="text-xl font-semibold text-gray-900 mb-4">Quick Setup Steps</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <h4 className="font-semibold text-gray-900 mb-2">Backend Setup</h4>
               <p className="text-gray-600 mb-3">Follow the installation guide for the Django backend.</p>
-              <a 
-                href="https://github.com/ohcnetwork/care?tab=readme-ov-file#getting-started" 
-                target="_blank" 
+              <a
+                href="https://github.com/ohcnetwork/care?tab=readme-ov-file#getting-started"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 hover:underline"
               >
@@ -324,9 +324,9 @@ function GetStartedSection() {
             <div>
               <h4 className="font-semibold text-gray-900 mb-2">Frontend Setup</h4>
               <p className="text-gray-600 mb-3">Follow the installation guide for the React frontend.</p>
-              <a 
-                href="https://github.com/ohcnetwork/care_fe?tab=readme-ov-file#getting-started" 
-                target="_blank" 
+              <a
+                href="https://github.com/ohcnetwork/care_fe?tab=readme-ov-file#getting-started"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 hover:underline"
               >
@@ -349,7 +349,7 @@ function ContributionPathsSection() {
       <Heading as="h2" className="mt-2 max-w-4xl">
         Step-by-step process to start contributing to CARE
       </Heading>
-      
+
       <div className="mt-16 space-y-8">
         <div className="p-8 rounded-lg border border-gray-200">
           <div className="flex items-center gap-3 mb-4">
@@ -370,7 +370,7 @@ function ContributionPathsSection() {
             </li>
           </ul>
         </div>
-        
+
         <div className="p-8 rounded-lg border border-gray-200">
           <div className="flex items-center gap-3 mb-4">
             <div className="p-2 bg-green-500 rounded-lg">
@@ -390,7 +390,7 @@ function ContributionPathsSection() {
             </li>
           </ul>
         </div>
-        
+
         <div className="p-8 rounded-lg border border-gray-200">
           <div className="flex items-center gap-3 mb-4">
             <div className="p-2 bg-purple-500 rounded-lg">
@@ -400,7 +400,7 @@ function ContributionPathsSection() {
           </div>
           <p className="text-gray-600 mb-4">Fork the repository, create a branch, and start coding with proper testing.</p>
         </div>
-        
+
         <div className="p-8 rounded-lg border border-gray-200">
           <div className="flex items-center gap-3 mb-4">
             <div className="p-2 bg-orange-500 rounded-lg">
@@ -423,7 +423,7 @@ function LearningResourcesSection() {
         <Heading as="h2" className="mt-2 max-w-4xl">
           Comprehensive resources to master our tech stack
         </Heading>
-        
+
         <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2">
           <div className="p-8 rounded-lg border border-gray-200">
             <div className="flex items-center gap-3 mb-4">

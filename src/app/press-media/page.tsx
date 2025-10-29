@@ -2,7 +2,7 @@ import { BentoCard } from '@/components/bento-card'
 import { Button } from '@/components/button'
 import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
-import { Gradient } from '@/components/gradient'
+import { TopGradient } from '@/components/TopGradient'
 import { Navbar } from '@/components/navbar'
 import { Heading, Subheading } from '@/components/text'
 import type { Metadata } from 'next'
@@ -16,8 +16,8 @@ export const metadata: Metadata = {
 function Hero() {
   return (
     <div className="relative">
-      <Gradient className="absolute inset-2 bottom-0 rounded-4xl ring-1 ring-black/5 ring-inset" />
       <Container className="relative">
+        <TopGradient />
         <Navbar />
         <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-48">
           <h1 className="font-display text-6xl/[0.9] font-medium tracking-tight text-balance text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
@@ -56,7 +56,7 @@ function KeyFactsSection() {
         <Heading as="h2" className="mt-2 max-w-4xl">
           Impact and deployment statistics
         </Heading>
-        
+
         <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2">
           <BentoCard
             eyebrow="Deployment"
@@ -101,7 +101,7 @@ function AssetsSection() {
       <Heading as="h2" className="mt-2 max-w-4xl">
         Logos, product screenshots, deployment maps, and fact sheets
       </Heading>
-      
+
       <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-3">
         <div className="bg-white p-8 rounded-lg border border-gray-200">
           <h3 className="text-lg font-semibold text-gray-900 mb-4">Logos & Branding</h3>

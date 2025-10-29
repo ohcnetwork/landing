@@ -1,21 +1,21 @@
 import { Button } from '@/components/button'
 import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
-import { Gradient } from '@/components/gradient'
+import { TopGradient } from '@/components/TopGradient'
 import { Navbar } from '@/components/navbar'
 import { Heading, Subheading } from '@/components/text'
 import { VideoPlayer } from '@/components/video-player'
-import { 
-  FileText, 
-  Calendar, 
-  Building2, 
-  Edit3, 
-  TestTube, 
-  Pill, 
-  CreditCard, 
-  Shield, 
-  BarChart3, 
-  Palette, 
+import {
+  FileText,
+  Calendar,
+  Building2,
+  Edit3,
+  TestTube,
+  Pill,
+  CreditCard,
+  Shield,
+  BarChart3,
+  Palette,
   TrendingUp,
   Link,
   Rocket,
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 function Hero() {
   return (
     <div className="relative overflow-hidden">
-      <Gradient className="absolute inset-2 bottom-0 rounded-4xl ring-1 ring-black/5 ring-inset" />
+      <TopGradient />
       <Container className="relative">
         <Navbar />
         <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-48">
@@ -42,20 +42,20 @@ function Hero() {
               <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
               <span>Digital Public Good • MIT License • FHIR R5</span>
             </div>
-            
+
             <h1 className="font-display text-6xl/[0.9] font-medium tracking-tight text-balance text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
               Core: An open foundation for every workflow.
             </h1>
-            
+
             <p className="mt-8 max-w-4xl mx-auto text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
               <strong>MIT‑licensed</strong>, <strong>API‑first</strong>, <strong>modular</strong>, <strong>cloud‑agnostic</strong>, <strong>mobile‑first</strong>, <strong>MCP‑ready</strong>.
             </p>
-            
+
             <div className="mt-12 p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl border border-blue-200/50 backdrop-blur-sm">
               <p className="text-lg font-medium text-gray-800">
                 <strong>Built on global standards:</strong> <strong>FHIR R5</strong>, <strong>SNOMED</strong>, <strong>LOINC</strong>, <strong>UCUM</strong>, <strong>ICD‑10</strong>; terminology server; <strong>BYOT</strong>.
               </p>
-            </div>            
+            </div>
             <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row sm:justify-center">
               <Button href="/contact" className="bg-blue-600 hover:bg-blue-700 text-white shadow-lg hover:shadow-xl transition-all duration-300">
                 Read the architecture brief
@@ -102,17 +102,17 @@ function ArchitectureSection() {
             <strong>FHIR‑inspired data model</strong> covers encounters, orders, meds, labs, imaging, billing, org hierarchies, and more.
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-3">
           {features.map((feature, index) => (
-            <div 
+            <div
               key={index}
               className="text-center group"
             >
               <div className="w-20 h-20 rounded-3xl bg-gray-100 flex items-center justify-center mx-auto mb-8 group-hover:bg-gray-200 transition-colors duration-300">
                 <feature.icon className="w-10 h-10 text-gray-700" />
               </div>
-              
+
               <h3 className="text-2xl font-bold text-gray-900 mb-4">{feature.title}</h3>
               <p className="text-lg text-gray-600 leading-relaxed">
                 {feature.description}
@@ -207,11 +207,11 @@ function CoreModulesSection() {
             Each module is designed with healthcare workflows in mind, built on FHIR standards, and optimized for frontline healthcare workers.
           </p>
         </div>
-        
+
         <div className="space-y-32">
           {modules.map((module, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="group relative"
             >
               <div className={`grid grid-cols-1 lg:grid-cols-2 gap-16 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
@@ -225,32 +225,32 @@ function CoreModulesSection() {
                       <div className="w-20 h-1 bg-gray-300 rounded-full"></div>
                     </div>
                   </div>
-                  
+
                   <p className="text-xl text-gray-600 leading-relaxed">
                     {module.description}
                   </p>
-                  
+
                   <div className="flex items-center gap-3 text-sm font-medium text-gray-500">
                     <div className="w-2 h-2 bg-gray-400 rounded-full animate-pulse"></div>
                     <span>Live Demo Available</span>
                   </div>
                 </div>
-                
+
                 <div className={`relative ${index % 2 === 1 ? 'lg:order-1' : ''}`}>
-                  
-                    <VideoPlayer
-                      src={module.video}
-                      title={module.title}
-                      poster={`/core/${module.title.toLowerCase().replace(/\s+/g, '_')}_poster.jpg`}
-                      autoplay={true}
-                      loop={true}
-                      muted={true}
-                      playsinline={true}
-                      width={1200}
-                      height={830}
-                      className="w-full rounded-3xl shadow-2xl"
-                    />
-                  
+
+                  <VideoPlayer
+                    src={module.video}
+                    title={module.title}
+                    poster={`/core/${module.title.toLowerCase().replace(/\s+/g, '_')}_poster.jpg`}
+                    autoplay={true}
+                    loop={true}
+                    muted={true}
+                    playsinline={true}
+                    width={1200}
+                    height={830}
+                    className="w-full rounded-3xl shadow-2xl"
+                  />
+
                 </div>
               </div>
             </div>
@@ -292,17 +292,17 @@ function BenefitsSection() {
             Built for the future of healthcare with standards-first architecture and sovereign data control.
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-3">
           {benefits.map((benefit, index) => (
-            <div 
+            <div
               key={index}
               className="text-center group"
             >
               <div className="w-20 h-20 rounded-3xl bg-gray-100 flex items-center justify-center mx-auto mb-8 group-hover:bg-gray-200 transition-colors duration-300">
                 <benefit.icon className="w-10 h-10 text-gray-700" />
               </div>
-              
+
               <h3 className="text-2xl font-bold text-gray-900 mb-4">{benefit.title}</h3>
               <p className="text-lg text-gray-600 leading-relaxed">
                 {benefit.description}

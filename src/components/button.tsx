@@ -5,16 +5,15 @@ import { Link } from './link'
 const variants = {
   primary: clsx(
     'inline-flex items-center justify-center px-4 py-[calc(--spacing(2)-1px)]',
-    'rounded-full border border-transparent bg-gray-950 shadow-md',
+    'rounded-lg border border-[#022C22] bg-[linear-gradient(95.14deg,#10B981_-1.09%,#047857_46.1%,#065F46_98.45%)] shadow-md',
     'text-base font-medium whitespace-nowrap text-white',
-    'data-disabled:bg-gray-950 data-disabled:opacity-40 data-hover:bg-gray-800',
+    'data-disabled:opacity-40',
   ),
   secondary: clsx(
-    'relative inline-flex items-center justify-center px-4 py-[calc(--spacing(2)-1px)]',
-    'rounded-full border border-transparent bg-white/15 shadow-md ring-1 ring-[#D15052]/15',
-    'after:absolute after:inset-0 after:rounded-full after:shadow-[inset_0_0_2px_1px_#ffffff4d]',
-    'text-base font-medium whitespace-nowrap text-gray-950',
-    'data-disabled:bg-white/15 data-disabled:opacity-40 data-hover:bg-white/20',
+    'inline-flex items-center justify-center px-4 py-[calc(--spacing(2)-1px)]',
+    'rounded-lg border-2 border-[#D1D5DB] bg-white shadow-[0px_10px_15px_rgba(0,0,0,0.1),0px_4px_6px_rgba(0,0,0,0.05)]',
+    'text-base font-medium whitespace-nowrap text-[#214E44]',
+    'data-disabled:opacity-40 data-hover:bg-gray-50',
   ),
   outline: clsx(
     'inline-flex items-center justify-center px-2 py-[calc(--spacing(1.5)-1px)]',
@@ -27,9 +26,9 @@ const variants = {
 type ButtonProps = {
   variant?: keyof typeof variants
 } & (
-  | React.ComponentPropsWithoutRef<typeof Link>
-  | (Headless.ButtonProps & { href?: undefined })
-)
+    | React.ComponentPropsWithoutRef<typeof Link>
+    | (Headless.ButtonProps & { href?: undefined })
+  )
 
 export function Button({
   variant = 'primary',

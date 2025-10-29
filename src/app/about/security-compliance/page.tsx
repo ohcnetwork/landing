@@ -1,9 +1,9 @@
 import { BentoCard } from '@/components/bento-card'
 import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
-import { Gradient } from '@/components/gradient'
 import { Navbar } from '@/components/navbar'
 import { Heading, Subheading } from '@/components/text'
+import { TopGradient } from '@/components/TopGradient'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 function Hero() {
   return (
     <div className="relative">
-      <Gradient className="absolute inset-2 bottom-0 rounded-4xl ring-1 ring-black/5 ring-inset" />
+      <TopGradient />
       <Container className="relative">
         <Navbar />
         <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-48">
@@ -41,7 +41,7 @@ function StandardsSection() {
       <p className="mt-6 max-w-4xl text-lg text-gray-600">
         <strong>FHIR R5</strong>, <strong>SNOMED</strong>, <strong>LOINC</strong>, <strong>UCUM</strong>, <strong>ICD‑10</strong>; terminology server; <strong>BYOT</strong>.
       </p>
-      
+
       <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-4">
         <div className="bg-blue-50 p-6 rounded-lg border border-blue-200 text-center">
           <div className="text-2xl font-bold text-blue-900 mb-2">FHIR R5</div>
@@ -72,7 +72,7 @@ function AccessControlSection() {
         <Heading as="h2" className="mt-2 max-w-4xl">
           Hierarchical org model with RBAC and comprehensive logging
         </Heading>
-        
+
         <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-3">
           <BentoCard
             eyebrow="Organization Model"
@@ -135,7 +135,7 @@ function SovereigntySection() {
       <p className="mt-6 max-w-4xl text-lg text-gray-600">
         <strong>Zero license fees</strong>; you own code and data. Deploy in your infrastructure with complete sovereignty and control.
       </p>
-      
+
       <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-3">
         <div className="bg-blue-50 p-6 rounded-lg border border-blue-200">
           <h3 className="text-lg font-semibold text-blue-900 mb-2">Your Infrastructure</h3>
@@ -165,7 +165,7 @@ function AIReadySection() {
         <p className="mt-6 max-w-4xl text-lg text-gray-600">
           Voice-fill, AI scribe, and other AI tools work as plugins without modifying the core platform, ensuring security and maintainability.
         </p>
-        
+
         <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2">
           <div className="bg-white p-8 rounded-lg border border-gray-200">
             <h3 className="text-lg font-semibold text-gray-900 mb-2">AI Plugins</h3>
