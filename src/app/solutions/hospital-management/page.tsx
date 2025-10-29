@@ -1,5 +1,4 @@
 import { BentoCard } from '@/components/bento-card'
-import { Button } from '@/components/button'
 import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
 import { TopGradient } from '@/components/TopGradient'
@@ -7,6 +6,7 @@ import { Navbar } from '@/components/navbar'
 import { Heading, Subheading } from '@/components/text'
 import type { Metadata } from 'next'
 import { LogoTimeline } from '@/components/logo-timeline'
+import { ExploreButtons } from '@/components/explore-buttons'
 
 export const metadata: Metadata = {
   title: 'CARE HMIS — FHIR‑Powered Hospital Platform',
@@ -27,11 +27,7 @@ function Hero() {
           <p className="mt-8 max-w-4xl text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
             An AI-ready, FHIR-native hospital system that powers everything from outpatient to intensive care.
           </p>
-          <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-            <Button href="/contact">Request a demo</Button>
-            <Button variant="secondary" href="/developers">Deploy CARE </Button>
-            <Button variant="secondary" href="/https://github.com/ohcnetwork">Explore the code</Button>
-          </div>
+         <ExploreButtons />
         </div>
       </Container>
     </div>
@@ -169,7 +165,6 @@ export default function HospitalManagement() {
     <div className="overflow-hidden">
       <Hero />
       <main>
-        {/* <OutcomesSection /> */}
         <CoreModulesSection />
         <ImplementationSection />
         {/* <FAQSection /> */}
