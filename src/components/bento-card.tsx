@@ -1,7 +1,9 @@
 'use client'
 
+import { ArrowLongRightIcon } from '@heroicons/react/20/solid'
 import { clsx } from 'clsx'
 import { motion } from 'framer-motion'
+import { Link } from './link'
 import { Subheading } from './text'
 
 export function BentoCard({
@@ -12,6 +14,7 @@ export function BentoCard({
   description,
   graphic,
   fade = [],
+  link,
 }: {
   dark?: boolean
   className?: string
@@ -20,6 +23,7 @@ export function BentoCard({
   description: React.ReactNode
   graphic: React.ReactNode
   fade?: ('top' | 'bottom')[]
+  link?: { href: string; label: string }
 }) {
   return (
     <motion.div
@@ -53,6 +57,15 @@ export function BentoCard({
         <p className="mt-2 max-w-[600px] text-sm/6 text-gray-600 group-data-dark:text-gray-400">
           {description}
         </p>
+        {link && (
+          <Link
+            href={link.href}
+            className="mt-4 inline-flex items-center gap-2 text-sm/6 font-medium text-green-600 underline hover:text-green-700 group-data-dark:text-green-400 group-data-dark:hover:text-green-300"
+          >
+            {link.label}
+            <ArrowLongRightIcon className="size-5" />
+          </Link>
+        )}
       </div>
     </motion.div>
   )
