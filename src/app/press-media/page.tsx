@@ -106,17 +106,17 @@ function AssetsSection() {
         <div className="bg-white p-8 rounded-lg border border-gray-200">
           <h3 className="text-lg font-semibold text-gray-900 mb-4">Logos & Branding</h3>
           <p className="text-gray-600 mb-4">OHC and CARE logos in various formats and sizes</p>
-          <Button variant="secondary" href="/contact">Download assets</Button>
+          <Button variant="secondary" href="https://github.com/ohcnetwork/branding">Download assets</Button>
         </div>
         <div className="bg-white p-8 rounded-lg border border-gray-200">
           <h3 className="text-lg font-semibold text-gray-900 mb-4">Product Screenshots</h3>
           <p className="text-gray-600 mb-4">High-resolution screenshots of CARE modules and dashboards</p>
-          <Button variant="secondary" href="/contact">Download assets</Button>
+          <Button variant="secondary" href="https://deck.ohc.network">Download assets</Button>
         </div>
         <div className="bg-white p-8 rounded-lg border border-gray-200">
           <h3 className="text-lg font-semibold text-gray-900 mb-4">Deployment Maps</h3>
           <p className="text-gray-600 mb-4">Maps showing CARE deployments across 11 States</p>
-          <Button variant="secondary" href="/contact">Download assets</Button>
+          <Button variant="secondary" href="/care_deployment_map.png">Download assets</Button>
         </div>
       </div>
     </Container>
