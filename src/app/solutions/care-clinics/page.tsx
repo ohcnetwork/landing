@@ -20,10 +20,10 @@ function Hero() {
         <Navbar />
         <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-48">
           <h1 className="font-display text-6xl/[0.9] font-medium tracking-tight text-balance text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
-            Digitize clinics fast—with structure for scale.
+            Built for Clinics That Want to Scale, Not Just Digitize
           </h1>
           <p className="mt-8 max-w-4xl text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
-            For primary care and multi‑specialty networks: visit capture, scheduling, inventory, e‑prescriptions, billing, and telehealth—<strong>all mapped to FHIR</strong>.
+            CARE gives clinics the digital foundation to scale efficiently and operate intelligently.
           </p>
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
             <Button href="/contact">Digitize your clinics</Button>

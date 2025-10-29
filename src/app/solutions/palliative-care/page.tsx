@@ -21,16 +21,12 @@ function Hero() {
         <Navbar />
         <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-48">
           <h1 className="font-display text-6xl/[0.9] font-medium tracking-tight text-balance text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
-            Dignity and continuity of care—at home, at scale.
+            Continuity of Care at Home, Reimagined
           </h1>
           <p className="mt-8 max-w-4xl text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
-            Kerala&apos;s grid coordinates home visits statewide with real‑time updates across teams, built entirely on <strong>CARE</strong>.
+            CARE extends the hospital’s care ecosystem into patients’ homes,  enabling caregivers to deliver continuous, coordinated, and compassionate care.
           </p>
-          <div className="mt-8 p-4 bg-green-50 rounded-lg border border-green-200">
-            <p className="text-sm font-medium text-green-900">
-              <strong>By the numbers:</strong> <strong>1,300+</strong> primary care centers · <strong>221k</strong> patients registered · <strong>669k</strong> people impacted · <strong>1,320 DAU</strong> logging home consultations
-            </p>
-          </div>
+
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
             <Button href="/contact">See a field demo</Button>
             <Button variant="secondary" href="/contact">Fund a district</Button>
@@ -52,20 +48,21 @@ function ImpactSection() {
 
       <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-4">
         <div className="bg-green-50 p-6 rounded-lg border border-green-200 text-center">
-          <div className="text-4xl font-bold text-green-900 mb-2">1,300+</div>
-          <p className="text-green-700 font-medium">Primary care centers</p>
+          <div className="text-4xl font-bold text-green-900 mb-2">2600+</div>
+          <p className="text-green-700 font-medium">Care Facilities</p>
         </div>
         <div className="bg-blue-50 p-6 rounded-lg border border-blue-200 text-center">
-          <div className="text-4xl font-bold text-blue-900 mb-2">221k</div>
+          <div className="text-4xl font-bold text-blue-900 mb-2">221k+</div>
           <p className="text-blue-700 font-medium">Patients registered</p>
         </div>
         <div className="bg-purple-50 p-6 rounded-lg border border-purple-200 text-center">
-          <div className="text-4xl font-bold text-purple-900 mb-2">669k</div>
-          <p className="text-purple-700 font-medium">People impacted</p>
+          <div className="text-4xl font-bold text-purple-900 mb-2">750k+</div>
+          <p className="text-purple-700 font-medium">Home Visits</p>
         </div>
         <div className="bg-orange-50 p-6 rounded-lg border border-orange-200 text-center">
-          <div className="text-4xl font-bold text-orange-900 mb-2">1,320</div>
-          <p className="text-orange-700 font-medium">Daily active users</p>
+          <div className="text-4xl font-bold text-orange-900 mb-2">1,300+</div>
+          <p className="text-orange-700 font-medium">active users
+          </p>
         </div>
       </div>
     </Container>
@@ -138,7 +135,7 @@ function ImplementationSection() {
     <Container className="py-24">
       <Subheading>Implementation</Subheading>
       <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
-        Pilot a district → train ASHA/nurses → scale statewide
+        Pilot a district → scale statewide
       </Heading>
       <p className="mt-6 max-w-4xl text-lg text-gray-600">
         Start with a single district to validate workflows, train frontline workers, then scale across the state with proven processes.
@@ -147,15 +144,17 @@ function ImplementationSection() {
       <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-3">
         <div className="bg-green-50 p-6 rounded-lg border border-green-200">
           <h3 className="text-lg font-semibold text-green-900 mb-2">District Pilot</h3>
-          <p className="text-green-700">Start with one district to validate workflows and train ASHA workers</p>
+          <p className="text-green-700">Start with one district to validate workflows
+          </p>
         </div>
         <div className="bg-blue-50 p-6 rounded-lg border border-blue-200">
           <h3 className="text-lg font-semibold text-blue-900 mb-2">Training & Adoption</h3>
-          <p className="text-blue-700">Train ASHA workers and nurses on mobile apps and care protocols</p>
+          <p className="text-blue-700">Training of frontline workers</p>
         </div>
         <div className="bg-purple-50 p-6 rounded-lg border border-purple-200">
           <h3 className="text-lg font-semibold text-purple-900 mb-2">State Scale</h3>
-          <p className="text-purple-700">Scale across all districts with standardized processes and dashboards</p>
+          <p className="text-purple-700">Scale across all districts with standardized processes and dashboards
+          </p>
         </div>
       </div>
     </Container>
