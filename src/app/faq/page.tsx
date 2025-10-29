@@ -70,7 +70,7 @@ function FAQSection() {
   return (
     <Container className="py-24">
       <Subheading>FAQ</Subheading>
-      <Heading as="h2" className="mt-2 max-w-4xl">
+      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
         Common questions about CARE and OHC
       </Heading>
 
@@ -91,7 +91,7 @@ function ContactSection() {
     <div className="bg-gray-50 py-24">
       <Container>
         <div className="text-center">
-          <Heading as="h2" className="max-w-4xl">
+          <Heading as="h2" className="max-w-4xl font-display tracking-tight">
             Still have questions?
           </Heading>
           <p className="mt-6 max-w-2xl mx-auto text-lg text-gray-600">

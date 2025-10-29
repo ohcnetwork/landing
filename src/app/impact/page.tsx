@@ -40,7 +40,7 @@ function AtAGlanceSection() {
   return (
     <Container className="py-24">
       <Subheading>At a glance</Subheading>
-      <Heading as="h2" className="mt-2 max-w-4xl">
+      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
         Scale and impact across 11 Indian states
       </Heading>
 
@@ -71,7 +71,7 @@ function CaseStudiesSection() {
     <div className="bg-gray-50 py-24">
       <Container>
         <Subheading>Case studies</Subheading>
-        <Heading as="h2" className="mt-2 max-w-4xl">
+        <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
           Real-world deployments with measurable outcomes
         </Heading>
 
@@ -116,7 +116,7 @@ function ImpactMetricsSection() {
   return (
     <Container className="py-24">
       <Subheading>Impact metrics</Subheading>
-      <Heading as="h2" className="mt-2 max-w-4xl">
+      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
         Measurable outcomes across different healthcare settings
       </Heading>
 
@@ -149,7 +149,7 @@ function TestimonialsSection() {
     <div className="bg-gray-50 py-24">
       <Container>
         <Subheading>Testimonials</Subheading>
-        <Heading as="h2" className="mt-2 max-w-4xl">
+        <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
           What implementers and healthcare workers say about CARE
         </Heading>
 

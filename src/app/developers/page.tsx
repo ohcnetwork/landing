@@ -77,7 +77,7 @@ function TechStackSection() {
   return (
     <Container className="py-24">
       <Subheading>Tech Stack</Subheading>
-      <Heading as="h2" className="mt-2 max-w-4xl">
+      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
         Built with modern technologies for scalable healthcare solutions
       </Heading>
 
@@ -110,7 +110,7 @@ function PrerequisitesSection() {
     <div className="py-24">
       <Container>
         <Subheading>Prerequisites</Subheading>
-        <Heading as="h2" className="mt-2 max-w-4xl">
+        <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
           What you need to know before contributing
         </Heading>
 
@@ -206,7 +206,7 @@ function WhatYouCanBuildSection() {
   return (
     <Container className="py-24">
       <Subheading>What you can build</Subheading>
-      <Heading as="h2" className="mt-2 max-w-4xl">
+      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
         Plugins, modules, and integrations that extend CARE without changing the core
       </Heading>
 
@@ -241,7 +241,7 @@ function GetStartedSection() {
     <div className="py-24">
       <Container>
         <Subheading>Get started</Subheading>
-        <Heading as="h2" className="mt-2 max-w-4xl">
+        <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
           Everything you need to start contributing to CARE
         </Heading>
 
@@ -346,7 +346,7 @@ function ContributionPathsSection() {
   return (
     <Container className="py-24">
       <Subheading>How to contribute</Subheading>
-      <Heading as="h2" className="mt-2 max-w-4xl">
+      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
         Step-by-step process to start contributing to CARE
       </Heading>
 
@@ -420,7 +420,7 @@ function LearningResourcesSection() {
     <div className="py-24">
       <Container>
         <Subheading>Learning Resources</Subheading>
-        <Heading as="h2" className="mt-2 max-w-4xl">
+        <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
           Comprehensive resources to master our tech stack
         </Heading>
 
