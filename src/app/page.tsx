@@ -225,6 +225,7 @@ export default function Home() {
   return (
     <div className="overflow-hidden">
       <Hero />
+      <Testimonials />
       <main>
         <Container className="mt-10">
           <LogoCloud />
@@ -235,7 +236,6 @@ export default function Home() {
         <GitHubVideoSection />
         <OutcomesSection />
       </main>
-      <Testimonials />
       <Footer />
     </div>
   )

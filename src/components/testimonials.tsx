@@ -112,7 +112,7 @@ function TestimonialCard({
       ref={ref}
       style={{ opacity }}
       {...props}
-      className="relative flex aspect-9/16 w-72 shrink-0 snap-start scroll-ml-(--scroll-padding) flex-col justify-end overflow-hidden rounded-3xl sm:aspect-3/4 sm:w-96"
+      className="relative flex aspect-9/16 w-72 shrink-0 snap-start scroll-ml-(--scroll-padding) flex-col justify-end overflow-hidden rounded-3xl sm:aspect-3/4 sm:w-128"
     >
       <img
         alt=""
@@ -123,9 +123,9 @@ function TestimonialCard({
         aria-hidden="true"
         className="absolute inset-0 rounded-3xl bg-linear-to-t from-black from-[calc(7/16*100%)] ring-1 ring-gray-950/10 ring-inset sm:from-25%"
       />
-      <figure className="relative p-10">
+      <figure className="flex flex-col-reverse sm:flex-col relative p-10">
         <blockquote>
-          <p className="relative text-xl/7 text-white">
+          <p className="relative text-base sm:text-xl/7 text-white">
             <span aria-hidden="true" className="absolute -translate-x-full">
               “
             </span>
@@ -135,7 +135,8 @@ function TestimonialCard({
             </span>
           </p>
         </blockquote>
-        <figcaption className="mt-6 border-t border-white/20 pt-6">
+        <div className='my-4 sm:my-6 border-t border-white/20'/>
+        <figcaption>
           <p className="text-sm/6 font-medium text-white">{name}</p>
           <p className="text-sm/6 font-medium">
             <span className="bg-linear-to-r from-[#fff1be] from-28% via-[#ee87cb] via-70% to-[#b060ff] bg-clip-text text-transparent">
