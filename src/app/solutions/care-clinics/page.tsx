@@ -1,4 +1,4 @@
-import { Button } from '@/components/button'
+
 import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
 import { TopGradient } from '@/components/TopGradient'
@@ -21,10 +21,10 @@ function Hero() {
         <Navbar />
         <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-38">
           <h1 className="font-display text-6xl/[0.9] font-medium tracking-tight text-balance text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
-            Built for Clinics That Want to Scale, Not Just Digitize
+            Built for Clinics That Want to Scale, Not Just Digitize.
           </h1>
           <p className="mt-8 max-w-4xl text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
-            CARE gives clinics the digital foundation to scale efficiently and operate intelligently.
+          CARE gives clinics the digital foundation to scale and operate efficiently.
           </p>
           <ExploreButtons />
         </div>
