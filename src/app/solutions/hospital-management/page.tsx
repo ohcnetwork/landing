@@ -20,14 +20,14 @@ function Hero() {
       <TopGradient />
       <Container className="relative">
         <Navbar />
-        <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-48">
+        <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-38">
           <h1 className="font-display text-6xl/[0.9] font-medium tracking-tight text-balance text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
             Open Source Infrastructure for Intelligent Hospitals.
           </h1>
           <p className="mt-8 max-w-4xl text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
             An AI-ready, FHIR-native hospital system that powers everything from outpatient to intensive care.
           </p>
-         <ExploreButtons />
+          <ExploreButtons />
         </div>
       </Container>
     </div>
@@ -82,14 +82,14 @@ function PluginSection() {
         Community can create CARE Apps(Plugins) that add new features and integrations just like app on a smartphone but for healthcare flow
       </p>
       <BentoCard
-                eyebrow="Integrations"
-                title="Care Apps"
-                description="Extensible apps: ABDM M1–M3, TeleICU (ONVIF), Care Scribe (multilingual AI voice fill)."
-                graphic={<LogoTimeline />}
-                link={{ href: '/product/apps-integrations', label: 'Explore Care Apps' }}
-                fade={['bottom']}
-                className="lg:col-span-3 lg:rounded-tr-4xl"
-              />
+        eyebrow="Integrations"
+        title="Care Apps"
+        description="Extensible apps: ABDM M1–M3, TeleICU (ONVIF), Care Scribe (multilingual AI voice fill)."
+        graphic={<LogoTimeline />}
+        link={{ href: '/product/apps-integrations', label: 'Explore Care Apps' }}
+        fade={['bottom']}
+        className="lg:col-span-3 lg:rounded-tr-4xl"
+      />
     </Container>
   )
 }
@@ -117,7 +117,7 @@ function PluginSection() {
 //         <Heading as="h2" className="mt-2 max-w-4xl">
 //           Common questions about CARE HMIS deployment
 //         </Heading>
-        
+
 //         <div className="mt-16 space-y-8">
 //           {faqs.map((faq, index) => (
 //             <div key={index} className="bg-white p-6 rounded-lg border border-gray-200">
