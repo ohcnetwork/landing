@@ -16,19 +16,20 @@ function Logo({
   className,
 }: {
   label: string
-  src: string
+  src?: string
   className: string
 }) {
   return (
     <div
       className={clsx(
         className,
-        'absolute top-2 grid grid-cols-[1rem_1fr] items-center gap-2 px-3 py-1 whitespace-nowrap',
+        'absolute top-2 grid items-center gap-2 px-3 py-1 whitespace-nowrap w-fit',
+        src ? 'grid-cols-[1rem_1fr]' : 'grid-cols-1',
         'rounded-full bg-linear-to-t from-gray-800 from-50% to-gray-700 ring-1 ring-white/10 ring-inset',
         '[--move-x-from:-100%] [--move-x-to:calc(100%+100cqw)] [animation-iteration-count:infinite] [animation-name:move-x] [animation-timing-function:linear]',
       )}
     >
-      <img alt="" src={src} className="size-4" />
+      {src && <img alt="" src={src} className="size-4" />}
       <span className="text-sm/6 font-medium text-white">{label}</span>
     </div>
   )
@@ -40,74 +41,42 @@ export function LogoTimeline() {
       <div className="@container absolute inset-0 grid grid-cols-1 pt-8">
         <Row>
           <Logo
-            label="Loom"
-            src="/logo-timeline/loom.svg"
+            label="Tele-ICU"
             className="[animation-delay:-26s] [animation-duration:30s]"
           />
           <Logo
-            label="Gmail"
-            src="/logo-timeline/gmail.svg"
+            label="Analytics"
             className="[animation-delay:-8s] [animation-duration:30s]"
           />
         </Row>
         <Row>
           <Logo
-            label="Asana"
-            src="/logo-timeline/asana.svg"
+            label="ABDM"
             className="[animation-delay:-40s] [animation-duration:40s]"
           />
           <Logo
-            label="Microsoft Teams"
-            src="/logo-timeline/microsoft-teams.svg"
+            label="Doctor Connect"
             className="[animation-delay:-20s] [animation-duration:40s]"
           />
         </Row>
         <Row>
           <Logo
-            label="Google Calendar"
-            src="/logo-timeline/google-calendar.svg"
+            label="Pretty Print"
             className="[animation-delay:-10s] [animation-duration:40s]"
           />
           <Logo
-            label="Google Drive"
-            src="/logo-timeline/google-drive.svg"
+            label="Scribe"
             className="[animation-delay:-32s] [animation-duration:40s]"
           />
         </Row>
         <Row>
           <Logo
-            label="Basecamp"
-            src="/logo-timeline/basecamp.svg"
+            label="HCX"
             className="[animation-delay:-45s] [animation-duration:45s]"
           />
           <Logo
-            label="Discord"
-            src="/logo-timeline/discord.svg"
+            label="LiveKit"
             className="[animation-delay:-23s] [animation-duration:45s]"
-          />
-        </Row>
-        <Row>
-          <Logo
-            label="Hubspot"
-            src="/logo-timeline/hubspot.svg"
-            className="[animation-delay:-55s] [animation-duration:60s]"
-          />
-          <Logo
-            label="Slack"
-            src="/logo-timeline/slack.svg"
-            className="[animation-delay:-20s] [animation-duration:60s]"
-          />
-        </Row>
-        <Row>
-          <Logo
-            label="Adobe Creative Cloud"
-            src="/logo-timeline/adobe-creative-cloud.svg"
-            className="[animation-delay:-9s] [animation-duration:40s]"
-          />
-          <Logo
-            label="Zoom"
-            src="/logo-timeline/zoom.svg"
-            className="[animation-delay:-28s] [animation-duration:40s]"
           />
         </Row>
       </div>
