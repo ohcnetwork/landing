@@ -119,7 +119,7 @@ function CommunitySection() {
   return (
     <Container className="py-24">
       <Subheading>Community (by the numbers)</Subheading>
-      <Heading as="h2" className="mt-2 max-w-4xl">
+      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
         Global community of contributors and maintainers building Digital Public Goods
       </Heading>
 
@@ -146,7 +146,7 @@ function DeploymentSection() {
     <div className="bg-gray-50 py-24">
       <Container>
         <Subheading>Where it runs</Subheading>
-        <Heading as="h2" className="mt-2 max-w-4xl">
+        <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
           10 States have deployed CARE to power different solutions
         </Heading>
 
@@ -192,7 +192,7 @@ function TimelineSection() {
     <div className="bg-gray-50 py-24">
       <Container>
         <Subheading>Our Journey</Subheading>
-        <Heading as="h2" className="mt-2 max-w-4xl">
+        <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
           From pandemic response to comprehensive healthcare platform
         </Heading>
         <p className="mt-6 max-w-4xl text-lg text-gray-600">
@@ -253,7 +253,7 @@ function EcosystemSection() {
   return (
     <Container className="py-24">
       <Subheading>Ecosystem</Subheading>
-      <Heading as="h2" className="mt-2 max-w-4xl">
+      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
         Governments, hospitals, implementers, researchers, and volunteers
       </Heading>
       <p className="mt-6 max-w-4xl text-lg text-gray-600">

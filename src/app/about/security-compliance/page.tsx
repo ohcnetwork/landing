@@ -35,7 +35,7 @@ function StandardsSection() {
   return (
     <Container className="py-24">
       <Subheading>Standards</Subheading>
-      <Heading as="h2" className="mt-2 max-w-4xl">
+      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
         Built on global healthcare standards for interoperability and compliance
       </Heading>
       <p className="mt-6 max-w-4xl text-lg text-gray-600">
@@ -69,7 +69,7 @@ function AccessControlSection() {
     <div className="bg-gray-50 py-24">
       <Container>
         <Subheading>Access & Safety</Subheading>
-        <Heading as="h2" className="mt-2 max-w-4xl">
+        <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
           Hierarchical org model with RBAC and comprehensive logging
         </Heading>
 
@@ -129,7 +129,7 @@ function SovereigntySection() {
   return (
     <Container className="py-24">
       <Subheading>Sovereign infrastructure</Subheading>
-      <Heading as="h2" className="mt-2 max-w-4xl">
+      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
         Deploy in your VPC/gov cloud with complete control
       </Heading>
       <p className="mt-6 max-w-4xl text-lg text-gray-600">
@@ -159,7 +159,7 @@ function AIReadySection() {
     <div className="bg-gray-50 py-24">
       <Container>
         <Subheading>AI‑ready with guardrails</Subheading>
-        <Heading as="h2" className="mt-2 max-w-4xl">
+        <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
           AI tools integrate seamlessly without altering the core
         </Heading>
         <p className="mt-6 max-w-4xl text-lg text-gray-600">

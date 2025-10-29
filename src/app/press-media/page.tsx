@@ -36,7 +36,7 @@ function BoilerplateSection() {
   return (
     <Container className="py-24">
       <Subheading>Boilerplate</Subheading>
-      <Heading as="h2" className="mt-2 max-w-4xl">
+      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
         About Open Healthcare Network
       </Heading>
       <div className="mt-8 p-8 bg-gray-50 rounded-lg border border-gray-200">
@@ -53,7 +53,7 @@ function KeyFactsSection() {
     <div className="bg-gray-50 py-24">
       <Container>
         <Subheading>Key Facts</Subheading>
-        <Heading as="h2" className="mt-2 max-w-4xl">
+        <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
           Impact and deployment statistics
         </Heading>
 
@@ -98,7 +98,7 @@ function AssetsSection() {
   return (
     <Container className="py-24">
       <Subheading>Assets</Subheading>
-      <Heading as="h2" className="mt-2 max-w-4xl">
+      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
         Logos, product screenshots, deployment maps, and fact sheets
       </Heading>
 
@@ -128,7 +128,7 @@ function ContactSection() {
     <div className="bg-gray-50 py-24">
       <Container>
         <div className="text-center">
-          <Heading as="h2" className="max-w-4xl">
+          <Heading as="h2" className="max-w-4xl font-display tracking-tight">
             Media Inquiries
           </Heading>
           <p className="mt-6 max-w-2xl mx-auto text-lg text-gray-600">

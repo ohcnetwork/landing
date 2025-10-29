@@ -40,7 +40,7 @@ function CoreMaintainersSection() {
   return (
     <Container className="py-24">
       <Subheading>Core Maintainers</Subheading>
-      <Heading as="h2" className="mt-2 max-w-4xl">
+      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
         14+ experienced maintainers guide technical direction
       </Heading>
       <p className="mt-6 max-w-4xl text-lg text-gray-600">
@@ -82,7 +82,7 @@ function CommunitySection() {
     <div className="bg-gray-50 py-24">
       <Container>
         <Subheading>Community</Subheading>
-        <Heading as="h2" className="mt-2 max-w-4xl">
+        <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
           Global community of contributors and supporters
         </Heading>
 
@@ -127,7 +127,7 @@ function AdvisoryBoardSection() {
   return (
     <Container className="py-24">
       <Subheading>Advisory Board</Subheading>
-      <Heading as="h2" className="mt-2 max-w-4xl">
+      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
         Healthcare and technology experts guiding OHC&apos;s mission
       </Heading>
       <p className="mt-6 max-w-4xl text-lg text-gray-600">

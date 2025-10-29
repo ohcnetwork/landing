@@ -36,7 +36,7 @@ function CommunitySection() {
     <Container className="py-24">
       <div className="text-center">
         <Subheading>Join our Community</Subheading>
-        <Heading as="h2" className="mt-2 max-w-4xl mx-auto">
+        <Heading as="h2" className="mt-2 max-w-4xl mx-auto font-display tracking-tight">
           Connect, collaborate, and create change with like-minded innovators in our Slack community, dedicated to advancing healthcare through technology.
         </Heading>
       </div>
@@ -65,7 +65,7 @@ function ContactSection() {
       <Container>
         <div className="text-center">
           <Subheading>Get in Touch</Subheading>
-          <Heading as="h2" className="mt-2 max-w-4xl mx-auto">
+          <Heading as="h2" className="mt-2 max-w-4xl mx-auto font-display tracking-tight">
             Email us for demos, partnerships, and support
           </Heading>
         </div>
@@ -96,7 +96,7 @@ function AdditionalInfoSection() {
     <Container className="py-24">
       <div className="text-center">
         <Subheading>Other ways to connect</Subheading>
-        <Heading as="h2" className="mt-2 max-w-4xl mx-auto">
+        <Heading as="h2" className="mt-2 max-w-4xl mx-auto font-display tracking-tight">
           Explore our resources and stay updated
         </Heading>
       </div>
