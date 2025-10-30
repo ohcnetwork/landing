@@ -42,7 +42,7 @@ const testimonials = [
   {
     img: '/testimonials/sandeep.jpg',
     name: 'Sandeep Singhal',
-    title: 'Senior Advisor, Nexus Venture Partners',
+    title: 'Board Member, ACT Grants',
     quote:
       'With CARE, we hope every healthcare provider, whether government or private, across the world has access to the best and most relevant technology to scale delivery and improve health outcomes at the lowest cost.',
   },
