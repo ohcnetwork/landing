@@ -40,6 +40,13 @@ const testimonials = [
       'The Open Healthcare Network in India is a powerful example of people coming together to advance human progress – solving the problems that matter.',
   },
   {
+    img: '/testimonials/sandeep.jpg',
+    name: 'Sandeep Singhal',
+    title: 'Senior Advisor, Nexus Venture Partners',
+    quote:
+      'With CARE, we hope every healthcare provider, whether government or private, across the world has access to the best and most relevant technology to scale delivery and improve health outcomes at the lowest cost.',
+  },
+  {
     img: '/testimonials/sreevas_sahasranam.jpeg',
     name: 'Sreevas Sahasranam',
     title: 'University of Glasgow',
