@@ -14,7 +14,6 @@ import { motion } from 'framer-motion'
 import { usePathname } from 'next/navigation'
 import { Link } from './link'
 import { Logo } from './logo'
-import { PlusGridItem } from './plus-grid'
 
 const links = [
   { href: '/', label: 'Home' },
@@ -70,10 +69,11 @@ function DesktopNav() {
             {submenu ? (
               <Menu as="div" className="relative">
                 <MenuButton
-                  className={`flex items-center justify-center px-4 py-3 text-base font-medium bg-blend-multiply data-hover:bg-black/2.5 ${isActive || hasActiveSubmenu
-                    ? 'text-green-700'
-                    : 'text-gray-950'
-                    }`}
+                  className={`flex items-center justify-center px-4 py-3 text-base font-medium bg-blend-multiply data-hover:bg-black/2.5 ${
+                    isActive || hasActiveSubmenu
+                      ? 'text-green-700'
+                      : 'text-gray-950'
+                  }`}
                 >
                   {label}
                   <ChevronDownIcon className="ml-1 h-4 w-4 flex-shrink-0" />
@@ -85,10 +85,11 @@ function DesktopNav() {
                       <MenuItem key={item.href}>
                         <Link
                           href={item.href}
-                          className={`block px-4 py-2 text-sm data-hover:bg-gray-50 ${isSubmenuActive
-                            ? 'font-medium text-green-600'
-                            : 'text-gray-950'
-                            }`}
+                          className={`block px-4 py-2 text-sm data-hover:bg-gray-50 ${
+                            isSubmenuActive
+                              ? 'font-medium text-green-600'
+                              : 'text-gray-950'
+                          }`}
                         >
                           {item.label}
                         </Link>
@@ -100,8 +101,9 @@ function DesktopNav() {
             ) : (
               <Link
                 href={href}
-                className={`flex items-center justify-center px-4 py-3 text-base font-medium bg-blend-multiply data-hover:bg-black/2.5 ${isActive ? 'text-green-700' : 'text-gray-950'
-                  }`}
+                className={`flex items-center justify-center px-4 py-3 text-base font-medium bg-blend-multiply data-hover:bg-black/2.5 ${
+                  isActive ? 'text-green-700' : 'text-gray-950'
+                }`}
               >
                 {label}
               </Link>
@@ -150,10 +152,11 @@ function MobileNav() {
               {submenu ? (
                 <div>
                   <div
-                    className={`mb-2 text-base font-medium ${isActive || hasActiveSubmenu
-                      ? 'text-green-700'
-                      : 'text-gray-950'
-                      }`}
+                    className={`mb-2 text-base font-medium ${
+                      isActive || hasActiveSubmenu
+                        ? 'text-green-700'
+                        : 'text-gray-950'
+                    }`}
                   >
                     {label}
                   </div>
@@ -164,10 +167,11 @@ function MobileNav() {
                         <Link
                           key={item.href}
                           href={item.href}
-                          className={`block text-sm ${isSubmenuActive
-                            ? 'font-medium text-green-600'
-                            : 'text-gray-600'
-                            }`}
+                          className={`block text-sm ${
+                            isSubmenuActive
+                              ? 'font-medium text-green-600'
+                              : 'text-gray-600'
+                          }`}
                         >
                           {item.label}
                         </Link>
@@ -178,8 +182,9 @@ function MobileNav() {
               ) : (
                 <Link
                   href={href}
-                  className={`text-base font-medium ${isActive ? 'text-green-700' : 'text-gray-950'
-                    }`}
+                  className={`text-base font-medium ${
+                    isActive ? 'text-green-700' : 'text-gray-950'
+                  }`}
                 >
                   {label}
                 </Link>

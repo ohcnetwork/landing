@@ -13,26 +13,26 @@ interface VideoPlayerProps {
   height?: number
 }
 
-export function VideoPlayer({ 
-  src, 
-  poster, 
-  className = '', 
+export function VideoPlayer({
+  src,
+  poster,
+  className = '',
   autoplay = true,
   loop = true,
   muted = true,
   playsinline = true,
   width = 600,
-  height = 415
+  height = 415,
 }: VideoPlayerProps) {
   return (
-    <video 
+    <video
       src={src}
       poster={poster}
       autoPlay={autoplay}
       loop={loop}
       muted={muted}
       playsInline={playsinline}
-      className = {className}
+      className={className}
       width={width}
       height={height}
     />

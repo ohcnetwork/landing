@@ -1,7 +1,7 @@
 import fs from 'fs'
-import path from 'path'
 import matter from 'gray-matter'
 import { marked } from 'marked'
+import path from 'path'
 
 export interface BlogPost {
   slug: string
@@ -35,7 +35,7 @@ export function getAllPosts(): BlogPost[] {
       const fullPath = path.join(postsDirectory, fileName)
       const fileContents = fs.readFileSync(fullPath, 'utf8')
       const { data, content } = matter(fileContents)
-      
+
       return {
         slug,
         title: data.title || '',
@@ -48,7 +48,10 @@ export function getAllPosts(): BlogPost[] {
         featured: data.featured || false,
       }
     })
-    .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
+    .sort(
+      (a, b) =>
+        new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime(),
+    )
 
   return allPostsData
 }
@@ -58,7 +61,7 @@ export function getPostBySlug(slug: string): BlogPost | null {
     const fullPath = path.join(postsDirectory, `${slug}.md`)
     const fileContents = fs.readFileSync(fullPath, 'utf8')
     const { data, content } = matter(fileContents)
-    
+
     return {
       slug,
       title: data.title || '',
@@ -77,22 +80,25 @@ export function getPostBySlug(slug: string): BlogPost | null {
 
 export function getFeaturedPosts(limit: number = 3): BlogPost[] {
   return getAllPosts()
-    .filter(post => post.featured)
+    .filter((post) => post.featured)
     .slice(0, limit)
 }
 
 export function getPostsByCategory(category: string): BlogPost[] {
-  return getAllPosts().filter(post => 
-    post.categories?.some(cat => cat.slug === category)
+  return getAllPosts().filter((post) =>
+    post.categories?.some((cat) => cat.slug === category),
   )
 }
 
 export function getAllCategories() {
   const posts = getAllPosts()
-  const categoryMap = new Map<string, { title: string; slug: string; count: number }>()
-  
-  posts.forEach(post => {
-    post.categories?.forEach(category => {
+  const categoryMap = new Map<
+    string,
+    { title: string; slug: string; count: number }
+  >()
+
+  posts.forEach((post) => {
+    post.categories?.forEach((category) => {
       const existing = categoryMap.get(category.slug)
       if (existing) {
         existing.count++
@@ -100,12 +106,12 @@ export function getAllCategories() {
         categoryMap.set(category.slug, {
           title: category.title,
           slug: category.slug,
-          count: 1
+          count: 1,
         })
       }
     })
   })
-  
+
   return Array.from(categoryMap.values()).sort((a, b) => b.count - a.count)
 }
 
@@ -116,10 +122,14 @@ export function getPostsCount(category?: string): number {
   return getAllPosts().length
 }
 
-export function getPostsPaginated(page: number, limit: number, category?: string) {
+export function getPostsPaginated(
+  page: number,
+  limit: number,
+  category?: string,
+) {
   const posts = category ? getPostsByCategory(category) : getAllPosts()
   const startIndex = (page - 1) * limit
   const endIndex = startIndex + limit
-  
+
   return posts.slice(startIndex, endIndex)
 }

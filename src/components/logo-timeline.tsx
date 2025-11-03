@@ -23,7 +23,7 @@ function Logo({
     <div
       className={clsx(
         className,
-        'absolute top-2 grid items-center gap-2 px-3 py-1 whitespace-nowrap w-fit',
+        'absolute top-2 grid w-fit items-center gap-2 px-3 py-1 whitespace-nowrap',
         src ? 'grid-cols-[1rem_1fr]' : 'grid-cols-1',
         'rounded-full bg-linear-to-t from-gray-800 from-50% to-gray-700 ring-1 ring-white/10 ring-inset',
         '[--move-x-from:-100%] [--move-x-to:calc(100%+100cqw)] [animation-iteration-count:infinite] [animation-name:move-x] [animation-timing-function:linear]',

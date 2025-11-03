@@ -26,9 +26,9 @@ const variants = {
 type ButtonProps = {
   variant?: keyof typeof variants
 } & (
-    | React.ComponentPropsWithoutRef<typeof Link>
-    | (Headless.ButtonProps & { href?: undefined })
-  )
+  | React.ComponentPropsWithoutRef<typeof Link>
+  | (Headless.ButtonProps & { href?: undefined })
+)
 
 export function Button({
   variant = 'primary',

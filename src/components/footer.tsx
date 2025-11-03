@@ -18,13 +18,18 @@ function CallToAction() {
         </p>
       </hgroup>
       <p className="mx-auto mt-6 max-w-md text-sm/6 text-gray-500">
-        Join governments, hospitals, and innovators building Digital Public Goods for healthcare.
+        Join governments, hospitals, and innovators building Digital Public
+        Goods for healthcare.
       </p>
       <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:justify-center">
         <Button className="w-full sm:w-auto" href="/contact">
           Request a demo
         </Button>
-        <Button variant="secondary" className="w-full sm:w-auto" href="/developers">
+        <Button
+          variant="secondary"
+          className="w-full sm:w-auto"
+          href="/developers"
+        >
           Join the developer community
         </Button>
       </div>
@@ -58,16 +63,22 @@ function Sitemap() {
         <SitemapHeading>Product</SitemapHeading>
         <SitemapLinks>
           <SitemapLink href="/product/care-core">Care Core</SitemapLink>
-          <SitemapLink href="/product/apps-integrations">Apps & Integrations</SitemapLink>
+          <SitemapLink href="/product/apps-integrations">
+            Apps & Integrations
+          </SitemapLink>
           <SitemapLink href="/developers">Developers</SitemapLink>
         </SitemapLinks>
       </div>
       <div>
         <SitemapHeading>Solutions</SitemapHeading>
         <SitemapLinks>
-          <SitemapLink href="/solutions/hospital-management">Hospital Management</SitemapLink>
+          <SitemapLink href="/solutions/hospital-management">
+            Hospital Management
+          </SitemapLink>
           <SitemapLink href="/solutions/teleicu">TeleICU</SitemapLink>
-          <SitemapLink href="/solutions/palliative-care">Palliative Care</SitemapLink>
+          <SitemapLink href="/solutions/palliative-care">
+            Palliative Care
+          </SitemapLink>
           <SitemapLink href="/solutions/care-janwar">Care Janwar</SitemapLink>
           <SitemapLink href="/solutions/care-clinics">Care Clinics</SitemapLink>
         </SitemapLinks>
@@ -85,7 +96,9 @@ function Sitemap() {
         <SitemapLinks>
           <SitemapLink href="/faq">FAQ</SitemapLink>
           <SitemapLink href="/press-media">Press & Media</SitemapLink>
-          <SitemapLink href="/about/security-compliance">Security & Compliance</SitemapLink>
+          <SitemapLink href="/about/security-compliance">
+            Security & Compliance
+          </SitemapLink>
           <SitemapLink href="/contact">Contact</SitemapLink>
         </SitemapLinks>
       </div>
@@ -100,7 +113,6 @@ function SocialIconX(props: React.ComponentPropsWithoutRef<'svg'>) {
     </svg>
   )
 }
-
 
 function SocialIconLinkedIn(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (

@@ -16,11 +16,14 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Open Healthcare Network — Digital Public Goods for Healthcare',
-  description: 'Open Healthcare Network (OHC) builds FHIR-native, AI-ready Digital Public Goods for healthcare. Deploy CARE HMIS, TeleICU, and Palliative Care solutions across hospitals and states at national scale.',
-  keywords: 'Digital Public Goods, Open Healthcare Network, CARE HMIS, FHIR R5, Healthcare Interoperability, ABDM, TeleICU, AI Scribe, Open Source Health Infrastructure, MIT License',
+  description:
+    'Open Healthcare Network (OHC) builds FHIR-native, AI-ready Digital Public Goods for healthcare. Deploy CARE HMIS, TeleICU, and Palliative Care solutions across hospitals and states at national scale.',
+  keywords:
+    'Digital Public Goods, Open Healthcare Network, CARE HMIS, FHIR R5, Healthcare Interoperability, ABDM, TeleICU, AI Scribe, Open Source Health Infrastructure, MIT License',
   openGraph: {
     title: 'Open Healthcare Network — Digital Public Goods for Healthcare',
-    description: 'Building FHIR-native, AI-ready Digital Public Goods that power national health systems. Open, interoperable, and MIT-licensed — CARE HMIS, TeleICU, and Palliative Care Grid.',
+    description:
+      'Building FHIR-native, AI-ready Digital Public Goods that power national health systems. Open, interoperable, and MIT-licensed — CARE HMIS, TeleICU, and Palliative Care Grid.',
     images: [
       {
         url: '/og/ohc-landing-cover.png',
@@ -32,7 +35,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     title: 'Open Healthcare Network — Digital Public Goods for Healthcare',
-    description: 'OHC builds open, FHIR-powered infrastructure for governments, hospitals, and innovators. CARE HMIS, TeleICU, and Palliative Care Grid — all open, interoperable, and AI-ready.',
+    description:
+      'OHC builds open, FHIR-powered infrastructure for governments, hospitals, and innovators. CARE HMIS, TeleICU, and Palliative Care Grid — all open, interoperable, and AI-ready.',
     images: ['/og/ohc-landing-cover.png'],
   },
 }
@@ -45,19 +49,27 @@ function Hero() {
         <Navbar />
         <div className="flex flex-col gap-14 pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-42">
           <div className="flex flex-col items-center justify-center gap-4 text-center">
-            <h1 className="text-center font-display tracking-tight text-6xl/[0.9] font-bold sm:text-6xl md:text-8xl">
+            <h1 className="text-center font-display text-6xl/[0.9] font-bold tracking-tight sm:text-6xl md:text-8xl">
               Building digital healthcare <br />{' '}
               <span className="text-[#047857]">for everyone.</span>
             </h1>
             <p className="mt-8 max-w-4xl text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
-              <span className="font-semibold">Open Healthcare Network(OHC)</span> is an open-source
-              platform that helps governments, hospitals, and innovators build
-              connected healthcare systems faster, safer, and at national scale.
+              <span className="font-semibold">
+                Open Healthcare Network(OHC)
+              </span>{' '}
+              is an open-source platform that helps governments, hospitals, and
+              innovators build connected healthcare systems faster, safer, and
+              at national scale.
             </p>
           </div>
 
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Button href="https://github.com/ohcnetwork" target="_blank" className="flex items-center gap-2 w-full sm:w-auto" variant='primary'>
+            <Button
+              href="https://github.com/ohcnetwork"
+              target="_blank"
+              className="flex w-full items-center gap-2 sm:w-auto"
+              variant="primary"
+            >
               <Github className="size-4" />
               <span>Star us on Github</span>
             </Button>
@@ -65,7 +77,7 @@ function Hero() {
               variant="secondary"
               href="https://slack.ohc.network"
               target="_blank"
-              className='w-full sm:w-auto'
+              className="w-full sm:w-auto"
             >
               <span>Join the Community</span>
             </Button>
@@ -81,11 +93,16 @@ function WhatWeBuildSection() {
     <Container>
       <Subheading>What we build</Subheading>
       <Heading as="h3" className="mt-2 max-w-7xl">
-        <strong className='font-display font-bold text-5xl'>FHIR-powered modular EMR</strong><br />
-        <span className='font-display font-medium text-5xl text-gray-600'>with SNOMED, LOINC, UCUM, and ICD-10 integration.</span>
+        <strong className="font-display text-5xl font-bold">
+          FHIR-powered modular EMR
+        </strong>
+        <br />
+        <span className="font-display text-5xl font-medium text-gray-600">
+          with SNOMED, LOINC, UCUM, and ICD-10 integration.
+        </span>
       </Heading>
       <p className="mt-8 text-2xl text-gray-600">
-        FHIR R5   •   SNOMED   •   LOINC   •   UCUM  •   ICD-10   •   Open APIs   •   ABDM Compliant
+        FHIR R5 • SNOMED • LOINC • UCUM • ICD-10 • Open APIs • ABDM Compliant
       </p>
 
       <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
@@ -94,14 +111,13 @@ function WhatWeBuildSection() {
           title="CARE EMR"
           description="FHIR R5‑powered, MIT‑licensed, modular HMIS with SNOMED, LOINC, UCUM, ICD‑10, mobile‑first, cloud‑agnostic, MCP‑ready."
           graphic={
-            <div className="h-80 bg-gradient-to-br from-green-50 to-blue-100 flex items-center justify-center">
+            <div className="flex h-80 items-center justify-center bg-gradient-to-br from-green-50 to-blue-100">
               <div className="text-center">
                 <img
                   alt="Care EMR"
                   src="/logos/care-logo.svg"
                   className="w-120 rounded-full bg-white/15 ring-4 ring-white/10"
                 />
-
               </div>
             </div>
           }
@@ -114,7 +130,10 @@ function WhatWeBuildSection() {
           title="Care Apps"
           description="Extensible apps: ABDM M1–M3, TeleICU (ONVIF), Care Scribe (multilingual AI voice fill)."
           graphic={<LogoTimeline />}
-          link={{ href: '/product/apps-integrations', label: 'Explore Care Apps' }}
+          link={{
+            href: '/product/apps-integrations',
+            label: 'Explore Care Apps',
+          }}
           fade={['bottom']}
           className="lg:col-span-3 lg:rounded-tr-4xl"
         />
@@ -123,8 +142,8 @@ function WhatWeBuildSection() {
           title="FHIR R5 Native"
           description="Built on global standards: FHIR R5, SNOMED, LOINC, UCUM, ICD‑10; terminology server; BYOT."
           graphic={
-            <div className="flex size-full items-start justify-center pt-10 px-10 pb-8">
-              <div className="grid grid-cols-2 gap-x-6 gap-y-8 w-full max-w-sm">
+            <div className="flex size-full items-start justify-center px-10 pt-10 pb-8">
+              <div className="grid w-full max-w-sm grid-cols-2 gap-x-6 gap-y-8">
                 <div className="flex items-center justify-center">
                   <img
                     src="/logos/fhir.png"
@@ -153,9 +172,9 @@ function WhatWeBuildSection() {
                     className="h-16 w-16 object-contain"
                   />
                 </div>
-                <div className="col-span-2 flex justify-center mt-2">
-                  <div className="bg-sky-400 rounded-lg px-6 py-2.5">
-                    <span className="text-white text-sm font-bold">ICD-10</span>
+                <div className="col-span-2 mt-2 flex justify-center">
+                  <div className="rounded-lg bg-sky-400 px-6 py-2.5">
+                    <span className="text-sm font-bold text-white">ICD-10</span>
                   </div>
                 </div>
               </div>
@@ -175,7 +194,7 @@ function WhatWeBuildSection() {
           title="Open Source Healthcare"
           description="Recognised as 50th Digital Public Good."
           graphic={
-            <div className="h-80 flex flex-col items-center justify-center gap-8 px-10">
+            <div className="flex h-80 flex-col items-center justify-center gap-8 px-10">
               <div className="flex items-center justify-center">
                 <img
                   src="/logos/dpg.png"
@@ -238,9 +257,11 @@ function SolutionsSection() {
       <Container>
         <Subheading>What we build</Subheading>
         <Heading as="h3" className="mt-2 max-w-4xl font-display tracking-tight">
-          <span className='font-bold text-5xl'>Solutions that Power</span>
+          <span className="text-5xl font-bold">Solutions that Power</span>
           <br />
-          <span className='font-medium text-5xl text-gray-600'>every layer of Care</span>
+          <span className="text-5xl font-medium text-gray-600">
+            every layer of Care
+          </span>
         </Heading>
 
         <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
@@ -251,7 +272,7 @@ function SolutionsSection() {
               title={solution.title}
               description={solution.description}
               graphic={
-                <div className="h-80 flex items-center justify-center p-10 bg-white">
+                <div className="flex h-80 items-center justify-center bg-white p-10">
                   <img
                     src={solution.logo}
                     alt={solution.title}
@@ -262,10 +283,11 @@ function SolutionsSection() {
               link={{ href: solution.href, label: 'Inside the Core' }}
               className={clsx(
                 'lg:col-span-2',
-                index === 0 && 'max-lg:rounded-t-4xl lg:rounded-tl-4xl lg:col-span-4',
+                index === 0 &&
+                  'max-lg:rounded-t-4xl lg:col-span-4 lg:rounded-tl-4xl',
                 index === 1 && 'lg:rounded-tr-4xl',
                 index === 2 && 'lg:rounded-bl-4xl',
-                index === 4 && 'max-lg:rounded-b-4xl lg:rounded-br-4xl'
+                index === 4 && 'max-lg:rounded-b-4xl lg:rounded-br-4xl',
               )}
             />
           ))}
@@ -278,17 +300,23 @@ function SolutionsSection() {
 function GitHubVideoSection() {
   return (
     <Container className="py-24">
-      <div className="text-center mb-12">
+      <div className="mb-12 text-center">
         <Subheading>Featured Story</Subheading>
-        <Heading as="h3" className="mt-2 max-w-4xl mx-auto font-display tracking-tight">
-          How Open Healthcare Network has helped revolutionize access to healthcare across India
+        <Heading
+          as="h3"
+          className="mx-auto mt-2 max-w-4xl font-display tracking-tight"
+        >
+          How Open Healthcare Network has helped revolutionize access to
+          healthcare across India
         </Heading>
-        <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-          Our doctors and engineers show how open source collaboration on GitHub has been key to the success of our platform, CARE, and is impacting millions of lives throughout the country.
+        <p className="mx-auto mt-4 max-w-3xl text-lg text-gray-600">
+          Our doctors and engineers show how open source collaboration on GitHub
+          has been key to the success of our platform, CARE, and is impacting
+          millions of lives throughout the country.
         </p>
       </div>
 
-      <div className="max-w-4xl mx-auto">
+      <div className="mx-auto max-w-4xl">
         <YouTubeVideo
           videoId="-wxIzaqvkQA"
           title="Open Healthcare Network - GitHub Story"
@@ -307,7 +335,10 @@ export default function Home() {
       <main>
         <Container className="mt-10">
           <Subheading>Supported by</Subheading>
-          <Heading as="h3" className="mt-2 max-w-4xl font-display tracking-tight">
+          <Heading
+            as="h3"
+            className="mt-2 max-w-4xl font-display tracking-tight"
+          >
             Empowered by Institutions that Believe in Open Health
           </Heading>
           <LogoCloud className="mt-10" />

@@ -1,16 +1,17 @@
-
 import { Container } from '@/components/container'
+import { ExploreButtons } from '@/components/explore-buttons'
 import { Footer } from '@/components/footer'
-import { TopGradient } from '@/components/TopGradient'
 import { Navbar } from '@/components/navbar'
 import { Heading, Subheading } from '@/components/text'
+import { TopGradient } from '@/components/TopGradient'
 import type { Metadata } from 'next'
-import { ExploreButtons } from '@/components/explore-buttons'
 
 export const metadata: Metadata = {
   title: 'Care Clinics — Primary & Multi‑Specialty Clinic Platform',
-  description: 'Clinic‑ready EMR with scheduling, inventory, pharmacy, billing, reports, and telehealth—backed by a FHIR‑native core.',
-  keywords: 'clinic EMR FHIR, primary care EMR, multi‑clinic management, open source clinic software',
+  description:
+    'Clinic‑ready EMR with scheduling, inventory, pharmacy, billing, reports, and telehealth—backed by a FHIR‑native core.',
+  keywords:
+    'clinic EMR FHIR, primary care EMR, multi‑clinic management, open source clinic software',
 }
 
 function Hero() {
@@ -24,7 +25,8 @@ function Hero() {
             Built for Clinics That Want to Scale, Not Just Digitize.
           </h1>
           <p className="mt-8 max-w-4xl text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
-          CARE gives clinics the digital foundation to scale and operate efficiently.
+            CARE gives clinics the digital foundation to scale and operate
+            efficiently.
           </p>
           <ExploreButtons />
         </div>
@@ -42,17 +44,32 @@ function OutcomesSection() {
       </Heading>
 
       <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-3">
-        <div className="bg-blue-50 p-6 rounded-lg border border-blue-200">
-          <h3 className="text-lg font-semibold text-blue-900 mb-2">Faster Intake</h3>
-          <p className="text-blue-700">Templates, autocomplete, and voice-to-text reduce data entry time by 60%</p>
+        <div className="rounded-lg border border-blue-200 bg-blue-50 p-6">
+          <h3 className="mb-2 text-lg font-semibold text-blue-900">
+            Faster Intake
+          </h3>
+          <p className="text-blue-700">
+            Templates, autocomplete, and voice-to-text reduce data entry time by
+            60%
+          </p>
         </div>
-        <div className="bg-green-50 p-6 rounded-lg border border-green-200">
-          <h3 className="text-lg font-semibold text-green-900 mb-2">Public Facility Pages</h3>
-          <p className="text-green-700">Online booking and appointment management for better patient experience</p>
+        <div className="rounded-lg border border-green-200 bg-green-50 p-6">
+          <h3 className="mb-2 text-lg font-semibold text-green-900">
+            Public Facility Pages
+          </h3>
+          <p className="text-green-700">
+            Online booking and appointment management for better patient
+            experience
+          </p>
         </div>
-        <div className="bg-purple-50 p-6 rounded-lg border border-purple-200">
-          <h3 className="text-lg font-semibold text-purple-900 mb-2">Clean Billing & Reports</h3>
-          <p className="text-purple-700">Integrated inventory, procurement, billing, and reporting for complete clinic management</p>
+        <div className="rounded-lg border border-purple-200 bg-purple-50 p-6">
+          <h3 className="mb-2 text-lg font-semibold text-purple-900">
+            Clean Billing & Reports
+          </h3>
+          <p className="text-purple-700">
+            Integrated inventory, procurement, billing, and reporting for
+            complete clinic management
+          </p>
         </div>
       </div>
     </Container>
@@ -70,31 +87,59 @@ function FeaturesSection() {
 
         <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2">
           <div className="space-y-6">
-            <div className="bg-white p-6 rounded-lg border border-gray-200">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Visit Capture</h3>
-              <p className="text-gray-600">Structured encounter forms with templates and voice-to-text input</p>
+            <div className="rounded-lg border border-gray-200 bg-white p-6">
+              <h3 className="mb-2 text-lg font-semibold text-gray-900">
+                Visit Capture
+              </h3>
+              <p className="text-gray-600">
+                Structured encounter forms with templates and voice-to-text
+                input
+              </p>
             </div>
-            <div className="bg-white p-6 rounded-lg border border-gray-200">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Scheduling</h3>
-              <p className="text-gray-600">Appointment booking, reminders, and calendar management</p>
+            <div className="rounded-lg border border-gray-200 bg-white p-6">
+              <h3 className="mb-2 text-lg font-semibold text-gray-900">
+                Scheduling
+              </h3>
+              <p className="text-gray-600">
+                Appointment booking, reminders, and calendar management
+              </p>
             </div>
-            <div className="bg-white p-6 rounded-lg border border-gray-200">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Inventory & Procurement</h3>
-              <p className="text-gray-600">Stock management, procurement workflows, and supply chain tracking</p>
+            <div className="rounded-lg border border-gray-200 bg-white p-6">
+              <h3 className="mb-2 text-lg font-semibold text-gray-900">
+                Inventory & Procurement
+              </h3>
+              <p className="text-gray-600">
+                Stock management, procurement workflows, and supply chain
+                tracking
+              </p>
             </div>
           </div>
           <div className="space-y-6">
-            <div className="bg-white p-6 rounded-lg border border-gray-200">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">E-Prescription</h3>
-              <p className="text-gray-600">Digital prescriptions made safer with automatic drug and dosage checks.</p>
+            <div className="rounded-lg border border-gray-200 bg-white p-6">
+              <h3 className="mb-2 text-lg font-semibold text-gray-900">
+                E-Prescription
+              </h3>
+              <p className="text-gray-600">
+                Digital prescriptions made safer with automatic drug and dosage
+                checks.
+              </p>
             </div>
-            <div className="bg-white p-6 rounded-lg border border-gray-200">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Billing & Accounting</h3>
-              <p className="text-gray-600">Integrated billing, insurance processing, and financial reporting</p>
+            <div className="rounded-lg border border-gray-200 bg-white p-6">
+              <h3 className="mb-2 text-lg font-semibold text-gray-900">
+                Billing & Accounting
+              </h3>
+              <p className="text-gray-600">
+                Integrated billing, insurance processing, and financial
+                reporting
+              </p>
             </div>
-            <div className="bg-white p-6 rounded-lg border border-gray-200">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Telehealth</h3>
-              <p className="text-gray-600">Remote consultations with integrated video and documentation</p>
+            <div className="rounded-lg border border-gray-200 bg-white p-6">
+              <h3 className="mb-2 text-lg font-semibold text-gray-900">
+                Telehealth
+              </h3>
+              <p className="text-gray-600">
+                Remote consultations with integrated video and documentation
+              </p>
             </div>
           </div>
         </div>

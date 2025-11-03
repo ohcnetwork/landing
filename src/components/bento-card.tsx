@@ -60,7 +60,7 @@ export function BentoCard({
         {link && (
           <Link
             href={link.href}
-            className="mt-4 inline-flex items-center gap-2 text-sm/6 font-medium text-green-600 underline hover:text-green-700 group-data-dark:text-green-400 group-data-dark:hover:text-green-300"
+            className="mt-4 inline-flex items-center gap-2 text-sm/6 font-medium text-green-600 underline group-data-dark:text-green-400 hover:text-green-700 group-data-dark:hover:text-green-300"
           >
             {link.label}
             <ArrowLongRightIcon className="size-5" />

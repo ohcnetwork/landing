@@ -159,8 +159,8 @@ function CallToAction() {
   return (
     <div>
       <p className="max-w-sm text-sm/6 text-gray-600">
-        Join healthcare leaders and innovators who are transforming care
-        across India and beyond.
+        Join healthcare leaders and innovators who are transforming care across
+        India and beyond.
       </p>
       <div className="mt-2">
         <Link

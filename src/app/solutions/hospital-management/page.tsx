@@ -1,17 +1,19 @@
 import { BentoCard } from '@/components/bento-card'
 import { Container } from '@/components/container'
+import { ExploreButtons } from '@/components/explore-buttons'
 import { Footer } from '@/components/footer'
-import { TopGradient } from '@/components/TopGradient'
+import { LogoTimeline } from '@/components/logo-timeline'
 import { Navbar } from '@/components/navbar'
 import { Heading, Subheading } from '@/components/text'
+import { TopGradient } from '@/components/TopGradient'
 import type { Metadata } from 'next'
-import { LogoTimeline } from '@/components/logo-timeline'
-import { ExploreButtons } from '@/components/explore-buttons'
 
 export const metadata: Metadata = {
   title: 'CARE HMIS — FHIR‑Powered Hospital Platform',
-  description: 'A modular, MIT‑licensed HMIS covering every encounter with standards‑based interoperability and rapid rollouts at national scale.',
-  keywords: 'hospital management system FHIR, open source HMIS, SNOMED LOINC UCUM ICD‑10, healthcare interoperability',
+  description:
+    'A modular, MIT‑licensed HMIS covering every encounter with standards‑based interoperability and rapid rollouts at national scale.',
+  keywords:
+    'hospital management system FHIR, open source HMIS, SNOMED LOINC UCUM ICD‑10, healthcare interoperability',
 }
 
 function Hero() {
@@ -25,7 +27,8 @@ function Hero() {
             Open Source Infrastructure for Intelligent Hospitals.
           </h1>
           <p className="mt-8 max-w-4xl text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
-            An AI-ready, FHIR-native hospital system that powers everything from outpatient to intensive care.
+            An AI-ready, FHIR-native hospital system that powers everything from
+            outpatient to intensive care.
           </p>
           <ExploreButtons />
         </div>
@@ -33,7 +36,6 @@ function Hero() {
     </div>
   )
 }
-
 
 function CoreModulesSection() {
   const modules = [
@@ -44,7 +46,7 @@ function CoreModulesSection() {
     'Pharmacy & Inventory',
     'Laboratory & Diagnostics',
     'Patient login (OTP) & dynamic reports',
-    ' Billing & Accounting'
+    ' Billing & Accounting',
   ]
 
   return (
@@ -55,14 +57,28 @@ function CoreModulesSection() {
           Everything you need for comprehensive hospital management.
         </Heading>
         <p className="mt-6 max-w-4xl text-lg text-gray-600">
-          <span>CARE HMIS is built on a FHIR-inspired data model that brings structure, flexibility, and interoperability to every part of hospital operations.</span>
-          <span> Its modular architecture makes it easy to extend, integrate, and automate, ensuring that every workflow speaks the same clinical language.</span>
+          <span>
+            CARE HMIS is built on a FHIR-inspired data model that brings
+            structure, flexibility, and interoperability to every part of
+            hospital operations.
+          </span>
+          <span>
+            {' '}
+            Its modular architecture makes it easy to extend, integrate, and
+            automate, ensuring that every workflow speaks the same clinical
+            language.
+          </span>
         </p>
 
         <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {modules.map((module, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg border border-gray-200">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">{module}</h3>
+            <div
+              key={index}
+              className="rounded-lg border border-gray-200 bg-white p-6"
+            >
+              <h3 className="mb-2 text-lg font-semibold text-gray-900">
+                {module}
+              </h3>
             </div>
           ))}
         </div>
@@ -79,14 +95,18 @@ function PluginSection() {
         Built to plug in, extend, and evolve with your healthcare ecosystem
       </Heading>
       <p className="mt-6 max-w-4xl text-lg text-gray-600">
-        Community can create CARE Apps(Plugins) that add new features and integrations just like app on a smartphone but for healthcare flow
+        Community can create CARE Apps(Plugins) that add new features and
+        integrations just like app on a smartphone but for healthcare flow
       </p>
       <BentoCard
         eyebrow="Integrations"
         title="Care Apps"
         description="Extensible apps: ABDM M1–M3, TeleICU (ONVIF), Care Scribe (multilingual AI voice fill)."
         graphic={<LogoTimeline />}
-        link={{ href: '/product/apps-integrations', label: 'Explore Care Apps' }}
+        link={{
+          href: '/product/apps-integrations',
+          label: 'Explore Care Apps',
+        }}
         fade={['bottom']}
         className="lg:col-span-3 lg:rounded-tr-4xl"
       />

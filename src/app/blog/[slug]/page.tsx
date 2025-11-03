@@ -87,7 +87,7 @@ export default async function BlogPost({
                 />
               )}
               {post.content && (
-                <div 
+                <div
                   className="prose prose-lg max-w-none"
                   dangerouslySetInnerHTML={{ __html: post.content }}
                 />

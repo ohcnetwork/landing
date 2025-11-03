@@ -5,14 +5,9 @@ export function LogoCloud({
   className,
 }: React.ComponentPropsWithoutRef<'div'>) {
   return (
-    <div
-      className={clsx(
-        className,
-        'grid grid-cols-2 gap-5 md:grid-cols-4',
-      )}
-    >
+    <div className={clsx(className, 'grid grid-cols-2 gap-5 md:grid-cols-4')}>
       <div className="flex justify-center">
-        <div className="w-48 flex items-center">
+        <div className="flex w-48 items-center">
           <Image
             width={160}
             height={40}
@@ -22,9 +17,9 @@ export function LogoCloud({
           />
         </div>
       </div>
-      
+
       <div className="flex justify-center">
-        <div className="w-24 flex items-center">
+        <div className="flex w-24 items-center">
           <Image
             width={160}
             height={40}
@@ -34,9 +29,9 @@ export function LogoCloud({
           />
         </div>
       </div>
-      
+
       <div className="flex justify-center">
-        <div className="w-16 flex justify-center items-center">
+        <div className="flex w-16 items-center justify-center">
           <Image
             width={160}
             height={40}
@@ -46,9 +41,9 @@ export function LogoCloud({
           />
         </div>
       </div>
-      
+
       <div className="flex justify-center">
-        <div className="w-56 flex items-center">
+        <div className="flex w-56 items-center">
           <Image
             width={160}
             height={40}
@@ -58,9 +53,9 @@ export function LogoCloud({
           />
         </div>
       </div>
-      
+
       <div className="flex justify-center">
-        <div className="w-24 flex items-center">
+        <div className="flex w-24 items-center">
           <Image
             width={160}
             height={40}
@@ -70,9 +65,9 @@ export function LogoCloud({
           />
         </div>
       </div>
-      
-      <div className="flex justify-center items-center">
-        <div className="w-36 flex items-center">
+
+      <div className="flex items-center justify-center">
+        <div className="flex w-36 items-center">
           <Image
             width={160}
             height={40}
@@ -82,9 +77,9 @@ export function LogoCloud({
           />
         </div>
       </div>
-      
+
       <div className="flex justify-center">
-        <div className="w-36 flex items-center">
+        <div className="flex w-36 items-center">
           <Image
             width={160}
             height={40}
@@ -94,9 +89,9 @@ export function LogoCloud({
           />
         </div>
       </div>
-      
+
       <div className="flex justify-center">
-        <div className="w-32 flex items-center">
+        <div className="flex w-32 items-center">
           <Image
             width={160}
             height={40}

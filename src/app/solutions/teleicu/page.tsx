@@ -33,16 +33,15 @@ function Hero() {
             Critical Care reached every bed.
           </h1>
           <p className="mt-8 max-w-4xl text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
-            The <strong>10BedICU</strong> Project sets up 10-bed ICUs in government hospitals using the CARE technology
-            platform, standard clinical ICU protocols, and trained staff. We
-            partner with state governments to deliver high-quality critical care
-            in underserved areas across India.
+            The <strong>10BedICU</strong> Project sets up 10-bed ICUs in
+            government hospitals using the CARE technology platform, standard
+            clinical ICU protocols, and trained staff. We partner with state
+            governments to deliver high-quality critical care in underserved
+            areas across India.
           </p>
 
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-            <Button href="https://10bedicu.org">
-              10BedICU Project{' '}
-            </Button>
+            <Button href="https://10bedicu.org">10BedICU Project </Button>
             <Button variant="secondary" href="https://github.com/ohcnetwork">
               Explore the code
             </Button>
