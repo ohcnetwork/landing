@@ -2,14 +2,15 @@ import { BentoCard } from '@/components/bento-card'
 import { Button } from '@/components/button'
 import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
-import { TopGradient } from '@/components/TopGradient'
 import { Navbar } from '@/components/navbar'
 import { Heading, Subheading } from '@/components/text'
+import { TopGradient } from '@/components/TopGradient'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Team — Open Healthcare Network',
-  description: 'Meet the maintainers and contributors building Digital Public Goods for healthcare.',
+  description:
+    'Meet the maintainers and contributors building Digital Public Goods for healthcare.',
   keywords: 'OHC team, open source maintainers, healthcare DPG team',
 }
 
@@ -24,11 +25,20 @@ function Hero() {
             The community‑driven model.
           </h1>
           <p className="mt-8 max-w-4xl text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
-            OHC is stewarded by <strong>14+ core maintainers</strong> and a global community of <strong>1,040+ contributors</strong>. Meet the leadership, advisory board, and core maintainers.
+            OHC is stewarded by <strong>14+ core maintainers</strong> and a
+            global community of <strong>1,040+ contributors</strong>. Meet the
+            leadership, advisory board, and core maintainers.
           </p>
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-            <Button href="https://github.com/orgs/ohcnetwork/people" target="_blank">Meet the maintainers</Button>
-            <Button variant="secondary" href="/developers">Join the community</Button>
+            <Button
+              href="https://github.com/orgs/ohcnetwork/people"
+              target="_blank"
+            >
+              Meet the maintainers
+            </Button>
+            <Button variant="secondary" href="/developers">
+              Join the community
+            </Button>
           </div>
         </div>
       </Container>
@@ -38,13 +48,15 @@ function Hero() {
 
 function CoreMaintainersSection() {
   return (
-    <Container className="py-16 bg-gray-100">
+    <Container className="bg-gray-100 py-16">
       <Subheading>Core Maintainers</Subheading>
-      <Heading as="h2" className="mt-2 max-w-4xl">
+      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
         14+ experienced maintainers guide technical direction
       </Heading>
       <p className="mt-6 max-w-4xl text-lg text-gray-600">
-        Our core maintainers are experienced developers and healthcare professionals who guide the technical direction and architecture decisions for CARE.
+        Our core maintainers are experienced developers and healthcare
+        professionals who guide the technical direction and architecture
+        decisions for CARE.
       </p>
 
       {/* <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-3">
@@ -82,7 +94,7 @@ function CommunitySection() {
     <div className="bg-gray-50 py-24">
       <Container>
         <Subheading>Community</Subheading>
-        <Heading as="h2" className="mt-2 max-w-4xl">
+        <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
           Global community of contributors and supporters
         </Heading>
 
@@ -92,10 +104,10 @@ function CommunitySection() {
             title="1,040+ Contributors"
             description="Developers, healthcare professionals, and researchers from around the world contributing to CARE development."
             graphic={
-              <div className="h-80 bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center">
+              <div className="flex h-80 items-center justify-center bg-gradient-to-br from-blue-50 to-blue-100">
                 <div className="text-center">
                   <div className="text-4xl font-bold text-blue-900">1,040+</div>
-                  <div className="text-sm text-blue-700 mt-2">Contributors</div>
+                  <div className="mt-2 text-sm text-blue-700">Contributors</div>
                 </div>
               </div>
             }
@@ -107,10 +119,10 @@ function CommunitySection() {
             title="50% Growth in 6 months"
             description="Community grew 50% in the last 6 months (2025) with increasing contributions and engagement."
             graphic={
-              <div className="h-80 bg-gradient-to-br from-green-50 to-green-100 flex items-center justify-center">
+              <div className="flex h-80 items-center justify-center bg-gradient-to-br from-green-50 to-green-100">
                 <div className="text-center">
                   <div className="text-4xl font-bold text-green-900">50%</div>
-                  <div className="text-sm text-green-700 mt-2">Growth</div>
+                  <div className="mt-2 text-sm text-green-700">Growth</div>
                 </div>
               </div>
             }
@@ -127,25 +139,39 @@ function AdvisoryBoardSection() {
   return (
     <Container className="py-24">
       <Subheading>Advisory Board</Subheading>
-      <Heading as="h2" className="mt-2 max-w-4xl">
+      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
         Healthcare and technology experts guiding OHC&apos;s mission
       </Heading>
       <p className="mt-6 max-w-4xl text-lg text-gray-600">
-        Our advisory board includes healthcare professionals, technology experts, and policy makers who provide strategic guidance and domain expertise.
+        Our advisory board includes healthcare professionals, technology
+        experts, and policy makers who provide strategic guidance and domain
+        expertise.
       </p>
 
       <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-3">
-        <div className="bg-white p-8 rounded-lg border border-gray-200">
-          <h3 className="text-lg font-semibold text-gray-900 mb-2">Healthcare Policy</h3>
-          <p className="text-gray-600 mb-4">Former health ministry officials and policy experts</p>
+        <div className="rounded-lg border border-gray-200 bg-white p-8">
+          <h3 className="mb-2 text-lg font-semibold text-gray-900">
+            Healthcare Policy
+          </h3>
+          <p className="mb-4 text-gray-600">
+            Former health ministry officials and policy experts
+          </p>
         </div>
-        <div className="bg-white p-8 rounded-lg border border-gray-200">
-          <h3 className="text-lg font-semibold text-gray-900 mb-2">Technology Leadership</h3>
-          <p className="text-gray-600 mb-4">CTOs and technical leaders from healthcare organizations</p>
+        <div className="rounded-lg border border-gray-200 bg-white p-8">
+          <h3 className="mb-2 text-lg font-semibold text-gray-900">
+            Technology Leadership
+          </h3>
+          <p className="mb-4 text-gray-600">
+            CTOs and technical leaders from healthcare organizations
+          </p>
         </div>
-        <div className="bg-white p-8 rounded-lg border border-gray-200">
-          <h3 className="text-lg font-semibold text-gray-900 mb-2">Clinical Practice</h3>
-          <p className="text-gray-600 mb-4">Practicing physicians and healthcare administrators</p>
+        <div className="rounded-lg border border-gray-200 bg-white p-8">
+          <h3 className="mb-2 text-lg font-semibold text-gray-900">
+            Clinical Practice
+          </h3>
+          <p className="mb-4 text-gray-600">
+            Practicing physicians and healthcare administrators
+          </p>
         </div>
       </div>
     </Container>
