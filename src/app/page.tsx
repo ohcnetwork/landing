@@ -98,7 +98,7 @@ function WhatWeBuildSection() {
         </strong>
         <br />
         <span className="font-display text-5xl font-medium text-gray-600">
-          with SNOMED, LOINC, UCUM, and ICD-10 integration.
+          with SNOMED, LOINC, UCUM, and ICD-10 integration
         </span>
       </Heading>
       <p className="mt-8 text-2xl text-gray-600">

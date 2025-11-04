@@ -23,7 +23,7 @@ function Hero() {
         <Navbar />
         <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-38">
           <h1 className="font-display text-6xl/[0.9] font-medium tracking-tight text-balance text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
-            Apps extend the platform like a smartphone.
+            Apps extend the platform like a smartphone
           </h1>
           <p className="mt-8 max-w-4xl text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
             Browse verified apps and integrations for national rails, telemetry,
@@ -49,7 +49,7 @@ function FeaturedSection() {
     <Container className="py-24">
       <Subheading>Featured</Subheading>
       <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
-        Most popular integrations deployed across multiple states.
+        Most popular integrations deployed across multiple states
       </Heading>
 
       <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-3">

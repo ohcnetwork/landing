@@ -30,7 +30,7 @@ function Hero() {
             />
           </div>
           <h1 className="font-display text-6xl/[0.9] font-medium tracking-tight text-balance text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
-            Critical Care reached every bed.
+            Critical Care reached every bed
           </h1>
           <p className="mt-8 max-w-4xl text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
             The <strong>10BedICU</strong> Project sets up 10-bed ICUs in
@@ -58,7 +58,7 @@ function OutcomesSection() {
       <Subheading>Outcomes</Subheading>
       <Heading as="h2" className="mt-2 max-w-4xl">
         Proven results across 10 States with rapid deployment and frontline
-        adoption.
+        adoption
       </Heading>
 
       <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-4">
@@ -89,7 +89,7 @@ function ImpactSection() {
     <Container className="py-24">
       <Subheading>Impacts</Subheading>
       <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
-        Extend specialist capacity across districts with standardized care.
+        Extend specialist capacity across districts with standardized care
       </Heading>
 
       <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-3">
