@@ -159,7 +159,7 @@ function ContactSection() {
     <div className="bg-gray-50 py-24">
       <Container>
         <div className="text-center">
-          <Heading as="h2" className="max-w-4xl font-display tracking-tight">
+          <Heading as="h2" className="max-w-4xl mx-auto font-display tracking-tight">
             Media Inquiries
           </Heading>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-600">
