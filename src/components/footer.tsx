@@ -150,7 +150,7 @@ function SocialLinks() {
 function Copyright() {
   return (
     <div className="text-sm/6 text-gray-950">
-      &copy; {new Date().getFullYear()} Open Healthcare Network.
+      &copy; {new Date().getFullYear()} Open Healthcare Network Foundation.
     </div>
   )
 }
@@ -168,6 +168,15 @@ export function Footer() {
                 <div className="col-span-2 flex">
                   <PlusGridItem className="pt-6 lg:pb-6">
                     <Logo className="h-9" />
+                    <div className="mt-4">
+                        <div className="text-sm text-gray-950/80">
+                        <p className="text-gray-950/70">Registered Address</p>
+                        <p className="text-gray-950 pt-1.5">Open Healthcare Network Foundation</p>
+                        <p className="text-gray-950 pt-1.5">1st Floor, C M Complex, Kalavath Road, Palarivattom, Kochi, Ernakulam, Kerala, India — 682025</p>
+                        <p className="mt-8 text-gray-950/70">Corporate Identity Number (CIN)</p>
+                        <p className="text-gray-950 pt-1.5">U88100KL2025NPL098818</p>
+                      </div>
+                    </div>
                   </PlusGridItem>
                 </div>
                 <div className="col-span-2 grid grid-cols-2 gap-x-8 gap-y-12 lg:col-span-4 lg:grid-cols-subgrid lg:pt-6">

@@ -26,6 +26,13 @@ const testimonials = [
       'I had a chance to meet with the Open Healthcare Network, its fantastic to see what they are doing.',
   },
   {
+    img: '/testimonials/srikanth_nadhamuni.png',
+    name: 'Srikanth Nadhamuni',
+    title: 'Founder CTO Aadhaar',
+    quote:
+      'One of the most active Open source contributor communities in India',
+  },
+  {
     img: '/testimonials/vinod_khosla.jpeg',
     name: 'Vinod Khosla',
     title: 'Founder, Khosla Ventures',
