@@ -50,7 +50,7 @@ function ImpactSection() {
       <Subheading>By the numbers</Subheading>
       <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
         Kerala&apos;s Palliative Care Grid demonstrates real-world impact at
-        scale.
+        scale
       </Heading>
 
       <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-4">
