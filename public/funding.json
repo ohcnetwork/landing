@@ -1,0 +1,81 @@
+{
+  "$schema": "https://fundingjson.org/schema/v1.1.0.json",
+  "version": "v1.1.0",
+  "entity": {
+    "type": "organisation",
+    "role": "owner",
+    "name": "Open Healthcare Network Foundation",
+    "email": "finance@ohc.network",
+    "phone": "+918547673209",
+    "description": "Open Healthcare Network Foundation stewards open digital public infrastructure for healthcare. It supports the long-term development, release management, quality assurance, security, documentation, ecosystem enablement, and adoption of CARE and related open healthcare digital public goods.",
+    "webpageUrl": {
+      "url": "https://ohc.network"
+    }
+  },
+  "projects": [
+    {
+      "guid": "care",
+      "name": "CARE Core",
+      "description": "CARE is an open-source, standards-based healthcare platform used across hospital management, palliative care, critical care, and care coordination contexts. It is designed to support governments, hospitals, NGOs, and implementation partners with interoperable and self-hostable digital infrastructure.",
+      "webpageUrl": {
+        "url": "https://ohc.network"
+      },
+      "repositoryUrl": {
+        "url": "https://github.com/ohcnetwork/care"
+      },
+      "licenses": ["spdx:MIT"],
+      "tags": [
+        "healthcare",
+        "digital-public-goods",
+        "emr",
+        "hmis",
+        "fhir",
+        "teleicu",
+        "palliative-care",
+        "open-source"
+      ]
+    }
+  ],
+  "funding": {
+    "channels": [
+      {
+        "guid": "foundation-contact",
+        "type": "other",
+        "address": "mailto:finance@ohc.network",
+        "description": "For grants, sponsorships, memberships, and institutional support, please contact the Open Healthcare Network Foundation."
+      }
+    ],
+    "plans": [
+      {
+        "guid": "visionary-sponsor",
+        "status": "active",
+        "name": "Visionary Sponsor",
+        "description": "Major philanthropic or institutional support for stewarding open healthcare digital public infrastructure. This supports platform development, releases, security, documentation, ecosystem enablement, and long-term sustainability of CARE and related DPGs.",
+        "amount": 0,
+        "currency": "INR",
+        "frequency": "yearly",
+        "channels": ["foundation-contact"]
+      },
+      {
+        "guid": "foundation-member-company",
+        "status": "active",
+        "name": "Foundation Member (Company)",
+        "description": "Annual membership for companies, implementation partners, healthcare providers, and ecosystem organizations that want to support and participate in the long-term stewardship of open healthcare infrastructure. Intended in the spirit of open foundation membership models.",
+        "amount": 0,
+        "currency": "INR",
+        "frequency": "yearly",
+        "channels": ["foundation-contact"]
+      },
+      {
+        "guid": "individual-sponsor",
+        "status": "active",
+        "name": "Individual Sponsor",
+        "description": "Support from individual donors and well-wishers who want to back open healthcare infrastructure and the long-term mission of the Open Healthcare Network Foundation.",
+        "amount": 0,
+        "currency": "INR",
+        "frequency": "one-time",
+        "channels": ["foundation-contact"]
+      }
+    ]
+  }
+}
