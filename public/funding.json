@@ -21,7 +21,8 @@
         "url": "https://ohc.network"
       },
       "repositoryUrl": {
-        "url": "https://github.com/ohcnetwork/care"
+        "url": "https://github.com/ohcnetwork/care",
+        "wellKnown": "https://github.com/ohcnetwork/care/blob/develop/.well-known/funding-manifest-urls"
       },
       "licenses": ["spdx:MIT"],
       "tags": [

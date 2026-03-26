@@ -101,9 +101,6 @@ function Sitemap() {
           </SitemapLink>
           <SitemapLink href="/contact">Contact</SitemapLink>
           <SitemapLink href="/funding.json">Funding.json</SitemapLink>
-          <SitemapLink href="https://fundingjson.org/" target="_blank">
-            About Funding.json
-          </SitemapLink>
         </SitemapLinks>
       </div>
     </>
