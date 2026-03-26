@@ -40,9 +40,9 @@
   "funding": {
     "channels": [
       {
-        "guid": "foundation-contact",
+        "guid": "foundation",
         "type": "other",
-        "address": "mailto:finance@ohc.network",
+        "address": "finance@ohc.network",
         "description": "For grants, sponsorships, memberships, and institutional support, please contact the Open Healthcare Network Foundation."
       }
     ],
@@ -55,7 +55,7 @@
         "amount": 0,
         "currency": "INR",
         "frequency": "yearly",
-        "channels": ["foundation-contact"]
+        "channels": ["foundation"]
       },
       {
         "guid": "foundation-member-company",
@@ -65,7 +65,7 @@
         "amount": 0,
         "currency": "INR",
         "frequency": "yearly",
-        "channels": ["foundation-contact"]
+        "channels": ["foundation"]
       },
       {
         "guid": "individual-sponsor",
@@ -75,7 +75,7 @@
         "amount": 0,
         "currency": "INR",
         "frequency": "one-time",
-        "channels": ["foundation-contact"]
+        "channels": ["foundation"]
       }
     ]
   }
