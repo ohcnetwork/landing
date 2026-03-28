@@ -58,8 +58,9 @@ function Hero() {
                 Open Healthcare Network(OHC)
               </span>{' '}
               is an open-source platform that helps governments, hospitals, and
-              innovators build connected healthcare systems faster, safer, and
-              at national scale.
+              innovators build{' '}
+              <span className="font-semibold">connected healthcare</span>{' '}
+              systems faster, safer, and at national scale
             </p>
           </div>
 
