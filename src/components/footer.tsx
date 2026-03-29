@@ -50,7 +50,7 @@ function SitemapLink(props: React.ComponentPropsWithoutRef<typeof Link>) {
     <li>
       <Link
         {...props}
-        className="font-medium text-gray-950 data-hover:text-gray-950/75"
+        className="relative mt-1 after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:h-px after:w-0 after:bg-gray-950/75 after:transition-all after:duration-300 hover:after:w-full hover:text-gray-950/75 font-medium text-gray-950 data-hover:text-gray-950/75"
       />
     </li>
   )
@@ -187,7 +187,7 @@ export function Footer() {
             </PlusGridRow>
             <PlusGridRow className="flex justify-between">
               <div>
-                <PlusGridItem className="py-3">
+                <PlusGridItem className="py-3 ">
                   <Copyright />
                 </PlusGridItem>
               </div>
