@@ -51,7 +51,7 @@ function Hero() {
           <div className="flex flex-col items-center justify-center gap-4 text-center">
             <h1 className="text-center font-display text-6xl/[0.9] font-bold tracking-tight sm:text-6xl md:text-8xl">
               Building digital healthcare <br />{' '}
-              <span className="text-[#047857]">for everyone.</span>
+              <span className="text-[#047857]">for everyone</span>
             </h1>
             <p className="mt-8 max-w-4xl text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
               <span className="font-semibold">
@@ -98,7 +98,7 @@ function WhatWeBuildSection() {
         </strong>
         <br />
         <span className="font-display text-5xl font-medium text-gray-600">
-          with SNOMED, LOINC, UCUM, and ICD-10 integration.
+          with SNOMED, LOINC, UCUM, and ICD-10 integration
         </span>
       </Heading>
       <p className="mt-8 text-2xl text-gray-600">

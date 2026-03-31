@@ -46,7 +46,7 @@ function Hero() {
             </div>
 
             <h1 className="font-display text-6xl/[0.9] font-medium tracking-tight text-balance text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
-              Core: An open foundation for every workflow.
+              Core: An open foundation for every workflow
             </h1>
 
             <p className="mx-auto mt-8 max-w-4xl text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
@@ -321,7 +321,7 @@ function BenefitsSection() {
         <div className="mb-20 text-center">
           <Subheading>What you get</Subheading>
           <Heading as="h2" className="font-display tracking-tight">
-            Interoperability by default; clean analytics/exchange.
+            Interoperability by default; clean analytics/exchange
           </Heading>
           <p className="mx-auto mt-6 max-w-3xl text-xl leading-relaxed text-gray-600">
             Built for the future of healthcare with standards-first architecture
