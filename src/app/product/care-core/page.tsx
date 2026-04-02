@@ -58,7 +58,7 @@ function Hero() {
             <div className="mt-12 rounded-2xl border border-blue-200/50 bg-gradient-to-r from-blue-50 to-purple-50 p-6 backdrop-blur-sm">
               <p className="text-lg font-medium text-gray-800">
                 <strong>Built on global standards:</strong>{' '}
-                <strong>FHIR R5</strong>, <strong>SNOMED</strong>,{' '}
+                <strong>FHIR R5</strong>, <strong>SNOMED CT</strong>,{' '}
                 <strong>LOINC</strong>, <strong>UCUM</strong>,{' '}
                 <strong>ICD‑10</strong>; terminology server;{' '}
                 <strong>BYOT</strong>.
