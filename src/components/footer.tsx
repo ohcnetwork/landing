@@ -100,7 +100,7 @@ function Sitemap() {
             Security & Compliance
           </SitemapLink>
           <SitemapLink href="/contact">Contact</SitemapLink>
-          <SitemapLink href="/funding.json">Funding.json</SitemapLink>
+          <SitemapLink href="/funding.json">Funding</SitemapLink>
         </SitemapLinks>
       </div>
     </>
