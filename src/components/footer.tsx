@@ -89,6 +89,7 @@ function Sitemap() {
           <SitemapLink href="/network">The Network</SitemapLink>
           <SitemapLink href="/impact">Impact</SitemapLink>
           <SitemapLink href="/about/team">Team</SitemapLink>
+          <SitemapLink href="/careers">Careers</SitemapLink>
         </SitemapLinks>
       </div>
       <div>
