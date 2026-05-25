@@ -85,7 +85,7 @@ function DesktopNav() {
                       <MenuItem key={item.href}>
                         <Link
                           href={item.href}
-                          className={`block px-4 py-2 text-sm data-hover:bg-gray-50 ${
+                          className={`block px-4 py-2 text-sm data-hover:bg-gray-50 hover:rounded-lg ${
                             isSubmenuActive
                               ? 'font-medium text-green-600'
                               : 'text-gray-950'
