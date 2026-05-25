@@ -1,5 +1,6 @@
 import '@/styles/tailwind.css'
 import type { Metadata } from 'next'
+import localFont from 'next/font/local'
 
 import { Bricolage_Grotesque } from 'next/font/google'
 
@@ -7,6 +8,33 @@ const bricolage = Bricolage_Grotesque({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-bricolage',
+})
+
+const switzer = localFont({
+  src: [
+    {
+      path: '../fonts/Switzer-Regular.woff2',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../fonts/Switzer-Medium.woff2',
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: '../fonts/Switzer-Semibold.woff2',
+      weight: '600',
+      style: 'normal',
+    },
+    {
+      path: '../fonts/Switzer-Bold.woff2',
+      weight: '700',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-switzer',
+  display: 'swap',
 })
 
 export const metadata: Metadata = {
@@ -58,12 +86,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${bricolage.variable} antialiased`}>
+    <html lang="en" className={`${bricolage.variable} ${switzer.variable} antialiased`}>
       <head>
-        <link
-          rel="stylesheet"
-          href="https://api.fontshare.com/css?f%5B%5D=switzer@400,500,600,700&amp;display=swap"
-        />
         <link
           rel="alternate"
           type="application/rss+xml"
