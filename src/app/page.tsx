@@ -51,7 +51,7 @@ function Hero() {
           <div className="flex flex-col items-center justify-center gap-4 text-center">
             <h1 className="text-center font-display text-6xl/[0.9] font-bold tracking-tight sm:text-6xl md:text-8xl">
               Building digital healthcare <br />{' '}
-              <span className="text-[#047857]">for everyone.</span>
+              <span className="text-[#047857]">for everyone</span>
             </h1>
             <p className="mt-8 max-w-4xl text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
               <span className="font-semibold">
