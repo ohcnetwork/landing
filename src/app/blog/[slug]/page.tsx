@@ -4,7 +4,7 @@ import { Footer } from '@/components/footer'
 import { GradientBackground } from '@/components/gradient'
 import { Link } from '@/components/link'
 import { Navbar } from '@/components/navbar'
-import { Heading, Subheading } from '@/components/text'
+import { Heading, Lead, Subheading } from '@/components/text'
 import { getAllPosts, getPostBySlug } from '@/lib/blog'
 import { ChevronLeftIcon } from '@heroicons/react/16/solid'
 import dayjs from 'dayjs'
@@ -13,6 +13,7 @@ import { notFound } from 'next/navigation'
 
 export async function generateStaticParams() {
   const posts = getAllPosts()
+
   return posts.map((post) => ({
     slug: post.slug,
   }))
@@ -23,7 +24,7 @@ export async function generateMetadata({
 }: {
   params: Promise<{ slug: string }>
 }): Promise<Metadata> {
-  let post = getPostBySlug((await params).slug)
+  const post = getPostBySlug((await params).slug)
 
   return post ? { title: post.title, description: post.excerpt } : {}
 }
@@ -33,7 +34,7 @@ export default async function BlogPost({
 }: {
   params: Promise<{ slug: string }>
 }) {
-  let post = getPostBySlug((await params).slug)
+  const post = getPostBySlug((await params).slug)
   if (!post) notFound()
 
   return (
@@ -44,62 +45,66 @@ export default async function BlogPost({
         <Subheading className="mt-16">
           {dayjs(post.publishedAt).format('dddd, MMMM D, YYYY')}
         </Subheading>
-        <Heading as="h1" className="mt-2">
+        <Heading as="h1" className="mt-2 max-w-5xl">
           {post.title}
         </Heading>
-        <div className="mt-16 grid grid-cols-1 gap-8 pb-24 lg:grid-cols-[15rem_1fr] xl:grid-cols-[15rem_1fr_15rem]">
-          <div className="flex flex-wrap items-center gap-8 max-lg:justify-between lg:flex-col lg:items-start">
+        <Lead className="mt-6 max-w-3xl">{post.excerpt}</Lead>
+
+        <div className="mt-16 grid grid-cols-1 gap-10 pb-24 lg:grid-cols-[15rem_1fr] xl:grid-cols-[15rem_1fr_15rem]">
+          <aside className="flex flex-wrap items-start gap-8 max-lg:justify-between lg:flex-col">
             {post.author && (
-              <div className="flex items-center gap-3">
-                {post.author.image && (
-                  <img
-                    alt=""
-                    src={post.author.image}
-                    className="aspect-square size-6 rounded-full object-cover"
-                  />
-                )}
-                <div className="text-sm/5 text-gray-700">
+              <div>
+                <p className="font-mono text-xs font-semibold tracking-wide text-gray-500 uppercase">
+                  Author
+                </p>
+                <div className="mt-3 text-sm/5 font-medium text-gray-950">
                   {post.author.name}
                 </div>
               </div>
             )}
-            {Array.isArray(post.categories) && (
-              <div className="flex flex-wrap gap-2">
-                {post.categories.map((category) => (
-                  <Link
-                    key={category.slug}
-                    href={`/blog?category=${category.slug}`}
-                    className="rounded-full border border-dotted border-gray-300 bg-gray-50 px-2 text-sm/6 font-medium text-gray-500"
-                  >
-                    {category.title}
-                  </Link>
-                ))}
+            {Array.isArray(post.categories) && post.categories.length > 0 && (
+              <div>
+                <p className="font-mono text-xs font-semibold tracking-wide text-gray-500 uppercase">
+                  Categories
+                </p>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  {post.categories.map((category) => (
+                    <Link
+                      key={category.slug}
+                      href={`/blog?category=${category.slug}`}
+                      className="rounded-full border border-[#dfe6e2] bg-white px-3 py-1 text-sm/6 font-medium text-gray-600 hover:text-[#0b6b55]"
+                    >
+                      {category.title}
+                    </Link>
+                  ))}
+                </div>
               </div>
             )}
-          </div>
-          <div className="text-gray-700">
-            <div className="max-w-2xl xl:mx-auto">
+          </aside>
+
+          <article className="text-gray-700">
+            <div className="max-w-3xl xl:mx-auto">
               {post.mainImage && (
                 <img
                   alt={post.mainImage.alt || ''}
                   src={post.mainImage.src}
-                  className="mb-10 aspect-3/2 w-full rounded-2xl object-cover shadow-xl"
+                  className="mb-10 aspect-3/2 w-full rounded-lg object-cover shadow-xl"
                 />
               )}
               {post.content && (
                 <div
-                  className="prose prose-lg max-w-none"
+                  className="space-y-7 text-lg/8 [&_a]:font-semibold [&_a]:text-[#0b6b55] [&_h2]:pt-8 [&_h2]:text-3xl/9 [&_h2]:font-semibold [&_h2]:tracking-normal [&_h2]:text-gray-950 [&_h3]:pt-4 [&_h3]:text-xl/7 [&_h3]:font-semibold [&_h3]:text-gray-950 [&_li]:ml-6 [&_li]:list-disc [&_strong]:font-semibold [&_strong]:text-gray-950"
                   dangerouslySetInnerHTML={{ __html: post.content }}
                 />
               )}
-              <div className="mt-10">
+              <div className="mt-12">
                 <Button variant="outline" href="/blog">
                   <ChevronLeftIcon className="size-4" />
                   Back to blog
                 </Button>
               </div>
             </div>
-          </div>
+          </article>
         </div>
       </Container>
       <Footer />

@@ -125,7 +125,7 @@ function TestimonialCard({
       ref={ref}
       style={{ opacity }}
       {...props}
-      className="relative flex aspect-9/16 w-72 shrink-0 snap-start scroll-ml-(--scroll-padding) flex-col justify-end overflow-hidden rounded-3xl sm:aspect-3/4 sm:w-128"
+      className="relative flex aspect-9/16 w-72 shrink-0 snap-start scroll-ml-(--scroll-padding) flex-col justify-end overflow-hidden rounded-lg sm:aspect-3/4 sm:w-128"
     >
       <img
         alt=""
@@ -134,7 +134,7 @@ function TestimonialCard({
       />
       <div
         aria-hidden="true"
-        className="absolute inset-0 rounded-3xl bg-linear-to-t from-black from-[calc(7/16*100%)] ring-1 ring-gray-950/10 ring-inset sm:from-25%"
+        className="absolute inset-0 rounded-lg bg-linear-to-t from-black from-[calc(7/16*100%)] ring-1 ring-gray-950/10 ring-inset sm:from-25%"
       />
       <figure className="relative flex flex-col-reverse p-6 sm:flex-col sm:p-10">
         <blockquote>
@@ -152,7 +152,7 @@ function TestimonialCard({
         <figcaption>
           <p className="text-sm/6 font-medium text-white">{name}</p>
           <p className="text-sm/6 font-medium">
-            <span className="bg-linear-to-r from-[#fff1be] from-28% via-[#ee87cb] via-70% to-[#b060ff] bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-[#b8f36f] from-20% via-[#d8eadf] via-55% to-[#65b89f] bg-clip-text text-transparent">
               {title}
             </span>
           </p>
@@ -166,13 +166,12 @@ function CallToAction() {
   return (
     <div>
       <p className="max-w-sm text-sm/6 text-gray-600">
-        Join healthcare leaders and innovators who are transforming care across
-        India and beyond.
+        See the signals behind the open healthcare infrastructure community.
       </p>
       <div className="mt-2">
         <Link
           href="/network"
-          className="inline-flex items-center gap-2 text-sm/6 font-medium text-pink-600"
+          className="inline-flex items-center gap-2 text-sm/6 font-medium text-[#12806a]"
         >
           Learn more
           <ArrowLongRightIcon className="size-5" />
@@ -202,9 +201,9 @@ export function Testimonials() {
     <div className="overflow-hidden py-32">
       <Container>
         <div ref={setReferenceWindowRef}>
-          <Subheading>What the Community says about us</Subheading>
-          <Heading as="h3" className="mt-2 font-display tracking-tight">
-            We have worked with some amazing people
+          <Subheading>Community Signals</Subheading>
+          <Heading as="h3" className="mt-2 font-display tracking-normal">
+            Recognition from people who understand infrastructure.
           </Heading>
         </div>
       </Container>
@@ -246,7 +245,7 @@ export function Testimonials() {
                 aria-label={`Scroll to testimonial from ${name}`}
                 className={clsx(
                   'size-2.5 rounded-full border border-transparent bg-gray-300 transition',
-                  'data-active:bg-gray-400 data-hover:bg-gray-400',
+                  'hover:bg-gray-400 data-active:bg-gray-400',
                   'forced-colors:data-active:bg-[Highlight] forced-colors:data-focus:outline-offset-4',
                 )}
               />

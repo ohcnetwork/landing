@@ -17,8 +17,29 @@ import { Logo } from './logo'
 
 const links = [
   { href: '/', label: 'Home' },
-  { href: '/product/care-core', label: 'Core' },
-  { href: '/product/apps-integrations', label: 'Integrations' },
+  {
+    href: '/about',
+    label: 'Foundation',
+    submenu: [
+      { href: '/about', label: 'Mission' },
+      { href: '/foundation/governance', label: 'Governance' },
+      { href: '/about/team', label: 'Board & Advisors' },
+      { href: '/about/team/foundation', label: 'Foundation Team' },
+      { href: '/about/security-compliance', label: 'Security & Compliance' },
+    ],
+  },
+  {
+    href: '/product/care-core',
+    label: 'CARE',
+    submenu: [
+      { href: '/product/care-core', label: 'CARE Core' },
+      { href: '/product/apps-integrations', label: 'Apps & Integrations' },
+      {
+        href: '/product/standards-architecture',
+        label: 'Standards & Architecture',
+      },
+    ],
+  },
   {
     href: '/solutions',
     label: 'Solutions',
@@ -26,24 +47,35 @@ const links = [
       { href: '/solutions/hospital-management', label: 'Hospital Management' },
       { href: '/solutions/teleicu', label: 'TeleICU' },
       { href: '/solutions/palliative-care', label: 'Palliative Care' },
-      { href: '/solutions/care-janwar', label: 'Care Janwar' },
       { href: '/solutions/care-clinics', label: 'Care Clinics' },
     ],
   },
-  { href: '/developers', label: 'Developers' },
   { href: '/impact', label: 'Impact' },
   {
-    href: '/about',
-    label: 'About',
+    href: '/network',
+    label: 'Ecosystem',
     submenu: [
       { href: '/network', label: 'The Network' },
-      { href: '/about/team', label: 'Team' },
-      { href: '/about/security-compliance', label: 'Security & Compliance' },
-      { href: '/faq', label: 'FAQ' },
-      { href: '/press-media', label: 'Press & Media' },
+      {
+        href: '/ecosystem/implementation-partners',
+        label: 'Implementation Partners',
+      },
+      { href: '/ecosystem/clinicians', label: 'Clinicians' },
+      { href: '/developers', label: 'Developers' },
     ],
   },
-  { href: '/contact', label: 'Contact' },
+  { href: '/support', label: 'Support' },
+  {
+    href: '/resources',
+    label: 'Resources',
+    submenu: [
+      { href: '/blog', label: 'Blog' },
+      { href: '/press-media', label: 'Press & Media' },
+      { href: '/faq', label: 'FAQ' },
+      { href: '/funding.json', label: 'Funding.json' },
+      { href: '/contact', label: 'Contact' },
+    ],
+  },
 ]
 
 function isLinkActive(href: string, pathname: string): boolean {
@@ -57,7 +89,7 @@ function DesktopNav() {
   const pathname = usePathname()
 
   return (
-    <nav className="relative hidden lg:flex">
+    <nav className="relative hidden rounded-lg border border-black/8 bg-white/60 px-2 shadow-[0_10px_30px_rgba(7,24,19,0.06)] backdrop-blur-xl lg:flex">
       {links.map(({ href, label, submenu }) => {
         const isActive = isLinkActive(href, pathname)
         const hasActiveSubmenu = submenu?.some((item) =>
@@ -69,25 +101,25 @@ function DesktopNav() {
             {submenu ? (
               <Menu as="div" className="relative">
                 <MenuButton
-                  className={`flex items-center justify-center px-4 py-3 text-base font-medium bg-blend-multiply data-hover:bg-black/2.5 ${
+                  className={`flex items-center justify-center rounded-lg px-4 py-3 text-base font-medium bg-blend-multiply transition hover:bg-black/2.5 ${
                     isActive || hasActiveSubmenu
-                      ? 'text-green-700'
+                      ? 'text-[#0b6b55]'
                       : 'text-gray-950'
                   }`}
                 >
                   {label}
                   <ChevronDownIcon className="ml-1 h-4 w-4 flex-shrink-0" />
                 </MenuButton>
-                <MenuItems className="absolute left-0 z-10 mt-2 w-56 origin-top-left rounded-lg bg-white shadow-lg ring-1 ring-black/5">
+                <MenuItems className="absolute left-0 z-10 mt-2 w-60 origin-top-left overflow-hidden rounded-lg border border-black/8 bg-white shadow-[0_18px_45px_rgba(7,24,19,0.12)] ring-1 ring-black/5">
                   {submenu.map((item) => {
                     const isSubmenuActive = isLinkActive(item.href, pathname)
                     return (
                       <MenuItem key={item.href}>
                         <Link
                           href={item.href}
-                          className={`block px-4 py-2 text-sm data-hover:bg-gray-50 ${
+                          className={`block px-4 py-2.5 text-sm transition hover:bg-[#f4f7f7] ${
                             isSubmenuActive
-                              ? 'font-medium text-green-600'
+                              ? 'font-medium text-[#0b6b55]'
                               : 'text-gray-950'
                           }`}
                         >
@@ -101,8 +133,8 @@ function DesktopNav() {
             ) : (
               <Link
                 href={href}
-                className={`flex items-center justify-center px-4 py-3 text-base font-medium bg-blend-multiply data-hover:bg-black/2.5 ${
-                  isActive ? 'text-green-700' : 'text-gray-950'
+                className={`flex items-center justify-center rounded-lg px-4 py-3 text-base font-medium bg-blend-multiply transition hover:bg-black/2.5 ${
+                  isActive ? 'text-[#0b6b55]' : 'text-gray-950'
                 }`}
               >
                 {label}
@@ -118,7 +150,7 @@ function DesktopNav() {
 function MobileNavButton() {
   return (
     <DisclosureButton
-      className="flex size-12 items-center justify-center self-center rounded-lg data-hover:bg-black/5 lg:hidden"
+      className="flex size-12 items-center justify-center self-center rounded-lg border border-black/8 bg-white/62 shadow-sm backdrop-blur-xl hover:bg-white lg:hidden"
       aria-label="Open main menu"
     >
       <Bars2Icon className="size-6" />
@@ -154,7 +186,7 @@ function MobileNav() {
                   <div
                     className={`mb-2 text-base font-medium ${
                       isActive || hasActiveSubmenu
-                        ? 'text-green-700'
+                        ? 'text-[#0b6b55]'
                         : 'text-gray-950'
                     }`}
                   >
@@ -169,7 +201,7 @@ function MobileNav() {
                           href={item.href}
                           className={`block text-sm ${
                             isSubmenuActive
-                              ? 'font-medium text-green-600'
+                              ? 'font-medium text-[#0b6b55]'
                               : 'text-gray-600'
                           }`}
                         >
@@ -183,7 +215,7 @@ function MobileNav() {
                 <Link
                   href={href}
                   className={`text-base font-medium ${
-                    isActive ? 'text-green-700' : 'text-gray-950'
+                    isActive ? 'text-[#0b6b55]' : 'text-gray-950'
                   }`}
                 >
                   {label}

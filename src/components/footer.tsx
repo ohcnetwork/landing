@@ -10,27 +10,27 @@ function CallToAction() {
   return (
     <div className="relative pt-20 pb-16 text-center sm:py-24">
       <hgroup>
-        <Subheading>Get started</Subheading>
-        <p className="mt-6 text-3xl font-medium tracking-tight text-gray-950 sm:text-5xl">
-          Deploy CARE in your state
-          <br />
-          Build open health systems.
+        <Subheading>Build the commons</Subheading>
+        <p className="mt-6 text-3xl font-medium tracking-normal text-gray-950 sm:text-5xl">
+          Help steward open healthcare
+          <br className="hidden sm:block" />
+          infrastructure for the long term.
         </p>
       </hgroup>
-      <p className="mx-auto mt-6 max-w-md text-sm/6 text-gray-500">
-        Join governments, hospitals, and innovators building Digital Public
-        Goods for healthcare.
+      <p className="mx-auto mt-6 max-w-2xl text-sm/6 text-gray-500">
+        Governments can deploy, funders can support, implementation partners can
+        localize, and contributors can strengthen the shared core.
       </p>
       <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:justify-center">
-        <Button className="w-full sm:w-auto" href="/contact">
-          Request a demo
+        <Button className="w-full sm:w-auto" href="/support">
+          Fund the commons
         </Button>
         <Button
           variant="secondary"
           className="w-full sm:w-auto"
-          href="/developers"
+          href="/contact"
         >
-          Join the developer community
+          Start a partnership conversation
         </Button>
       </div>
     </div>
@@ -50,7 +50,7 @@ function SitemapLink(props: React.ComponentPropsWithoutRef<typeof Link>) {
     <li>
       <Link
         {...props}
-        className="font-medium text-gray-950 data-hover:text-gray-950/75"
+        className="font-medium text-gray-950 hover:text-gray-950/75"
       />
     </li>
   )
@@ -60,13 +60,30 @@ function Sitemap() {
   return (
     <>
       <div>
-        <SitemapHeading>Product</SitemapHeading>
+        <SitemapHeading>Foundation</SitemapHeading>
         <SitemapLinks>
-          <SitemapLink href="/product/care-core">Care Core</SitemapLink>
+          <SitemapLink href="/about">Mission</SitemapLink>
+          <SitemapLink href="/foundation/governance">Governance</SitemapLink>
+          <SitemapLink href="/about/team">Board & Advisors</SitemapLink>
+          <SitemapLink href="/about/team/foundation">
+            Foundation Team
+          </SitemapLink>
+          <SitemapLink href="/support">Support OHC</SitemapLink>
+        </SitemapLinks>
+      </div>
+      <div>
+        <SitemapHeading>CARE Platform</SitemapHeading>
+        <SitemapLinks>
+          <SitemapLink href="/product/care-core">CARE Core</SitemapLink>
           <SitemapLink href="/product/apps-integrations">
             Apps & Integrations
           </SitemapLink>
-          <SitemapLink href="/developers">Developers</SitemapLink>
+          <SitemapLink href="/product/standards-architecture">
+            Standards & Architecture
+          </SitemapLink>
+          <SitemapLink href="/about/security-compliance">
+            Security & Compliance
+          </SitemapLink>
         </SitemapLinks>
       </div>
       <div>
@@ -79,40 +96,34 @@ function Sitemap() {
           <SitemapLink href="/solutions/palliative-care">
             Palliative Care
           </SitemapLink>
-          <SitemapLink href="/solutions/care-janwar">Care Janwar</SitemapLink>
           <SitemapLink href="/solutions/care-clinics">Care Clinics</SitemapLink>
+          <SitemapLink href="/solutions/care-janwar">Animal Health</SitemapLink>
         </SitemapLinks>
       </div>
       <div>
-        <SitemapHeading>Network</SitemapHeading>
+        <SitemapHeading>Ecosystem</SitemapHeading>
         <SitemapLinks>
           <SitemapLink href="/network">The Network</SitemapLink>
+          <SitemapLink href="/ecosystem/implementation-partners">
+            Implementation Partners
+          </SitemapLink>
+          <SitemapLink href="/ecosystem/clinicians">Clinicians</SitemapLink>
+          <SitemapLink href="/developers">Developers</SitemapLink>
           <SitemapLink href="/impact">Impact</SitemapLink>
-          <SitemapLink href="/about/team">Team</SitemapLink>
-          <SitemapLink href="/careers">Careers</SitemapLink>
         </SitemapLinks>
       </div>
       <div>
         <SitemapHeading>Resources</SitemapHeading>
         <SitemapLinks>
+          <SitemapLink href="/blog">Blog</SitemapLink>
           <SitemapLink href="/faq">FAQ</SitemapLink>
           <SitemapLink href="/press-media">Press & Media</SitemapLink>
-          <SitemapLink href="/about/security-compliance">
-            Security & Compliance
-          </SitemapLink>
+          <SitemapLink href="/careers">Careers</SitemapLink>
           <SitemapLink href="/contact">Contact</SitemapLink>
           <SitemapLink href="/funding.json">Funding.json</SitemapLink>
         </SitemapLinks>
       </div>
     </>
-  )
-}
-
-function SocialIconX(props: React.ComponentPropsWithoutRef<'svg'>) {
-  return (
-    <svg viewBox="0 0 16 16" fill="currentColor" {...props}>
-      <path d="M12.6 0h2.454l-5.36 6.778L16 16h-4.937l-3.867-5.594L2.771 16H.316l5.733-7.25L0 0h5.063l3.495 5.114L12.6 0zm-.86 14.376h1.36L4.323 1.539H2.865l8.875 12.837z" />
-    </svg>
   )
 }
 
@@ -131,7 +142,7 @@ function SocialLinks() {
         href="https://github.com/ohcnetwork"
         target="_blank"
         aria-label="Visit us on GitHub"
-        className="text-gray-950 data-hover:text-gray-950/75"
+        className="text-gray-950 hover:text-gray-950/75"
       >
         <svg className="size-4" fill="currentColor" viewBox="0 0 24 24">
           <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
@@ -141,7 +152,7 @@ function SocialLinks() {
         href="https://linkedin.com/company/ohcnetwork"
         target="_blank"
         aria-label="Visit us on LinkedIn"
-        className="text-gray-950 data-hover:text-gray-950/75"
+        className="text-gray-950 hover:text-gray-950/75"
       >
         <SocialIconLinkedIn className="size-4" />
       </Link>
@@ -161,27 +172,36 @@ export function Footer() {
   return (
     <footer>
       <Gradient className="relative">
-        <div className="absolute inset-2 rounded-4xl bg-white/80" />
+        <div className="absolute inset-2 rounded-lg bg-white/86" />
         <Container>
           <CallToAction />
           <PlusGrid className="pb-16">
             <PlusGridRow>
-              <div className="grid grid-cols-2 gap-y-10 pb-6 lg:grid-cols-6 lg:gap-8">
+              <div className="grid grid-cols-2 gap-y-10 pb-6 lg:grid-cols-7 lg:gap-8">
                 <div className="col-span-2 flex">
                   <PlusGridItem className="pt-6 lg:pb-6">
                     <Logo className="h-9" />
                     <div className="mt-4">
-                        <div className="text-sm text-gray-950/80">
+                      <div className="text-sm text-gray-950/80">
                         <p className="text-gray-950/70">Registered Address</p>
-                        <p className="text-gray-950 pt-1.5">Open Healthcare Network Foundation</p>
-                        <p className="text-gray-950 pt-1.5">1st Floor, C M Complex, Kalavath Road, Palarivattom, Kochi, Ernakulam, Kerala, India — 682025</p>
-                        <p className="mt-8 text-gray-950/70">Corporate Identity Number (CIN)</p>
-                        <p className="text-gray-950 pt-1.5">U88100KL2025NPL098818</p>
+                        <p className="pt-1.5 text-gray-950">
+                          Open Healthcare Network Foundation
+                        </p>
+                        <p className="pt-1.5 text-gray-950">
+                          1st Floor, C M Complex, Kalavath Road, Palarivattom,
+                          Kochi, Ernakulam, Kerala, India — 682025
+                        </p>
+                        <p className="mt-8 text-gray-950/70">
+                          Corporate Identity Number (CIN)
+                        </p>
+                        <p className="pt-1.5 text-gray-950">
+                          U88100KL2025NPL098818
+                        </p>
                       </div>
                     </div>
                   </PlusGridItem>
                 </div>
-                <div className="col-span-2 grid grid-cols-2 gap-x-8 gap-y-12 lg:col-span-4 lg:grid-cols-subgrid lg:pt-6">
+                <div className="col-span-2 grid grid-cols-2 gap-x-8 gap-y-12 lg:col-span-5 lg:grid-cols-5 lg:pt-6">
                   <Sitemap />
                 </div>
               </div>

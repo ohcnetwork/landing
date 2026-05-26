@@ -27,7 +27,7 @@ import { notFound } from 'next/navigation'
 export const metadata: Metadata = {
   title: 'Blog',
   description:
-    'Stay informed with product updates, company news, and insights on how to sell smarter at your company.',
+    'Writing from Open Healthcare Network Foundation on CARE, open healthcare infrastructure, standards, deployments, and ecosystem work.',
 }
 
 const postsPerPage = 5
@@ -40,21 +40,30 @@ async function FeaturedPosts() {
   }
 
   return (
-    <div className="mt-16 bg-linear-to-t from-gray-100 pb-14">
+    <div className="mt-16 bg-linear-to-t from-[#f7f9f6] pb-14">
       <Container>
-        <h2 className="text-2xl font-medium tracking-tight">Featured</h2>
+        <h2 className="text-2xl font-medium tracking-normal">Featured</h2>
         <div className="mt-6 grid grid-cols-1 gap-8 lg:grid-cols-3">
           {featuredPosts.map((post) => (
             <div
               key={post.slug}
-              className="relative flex flex-col rounded-3xl bg-white p-2 shadow-md ring-1 shadow-black/5 ring-black/5"
+              className="relative flex min-h-[360px] flex-col overflow-hidden rounded-lg bg-white p-2 shadow-md ring-1 shadow-black/5 ring-black/5"
             >
               {post.mainImage && (
                 <img
                   alt={post.mainImage.alt || ''}
                   src={post.mainImage.src}
-                  className="aspect-3/2 w-full rounded-2xl object-cover"
+                  className="aspect-3/2 w-full rounded-lg object-cover"
                 />
+              )}
+              {!post.mainImage && (
+                <div className="relative aspect-3/2 overflow-hidden rounded-lg border border-[#dfe6e2] bg-[#052e24]">
+                  <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(184,243,111,0.22),transparent_34%,rgba(255,255,255,0.08)_100%)]" />
+                  <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px)] bg-size-[32px_32px]" />
+                  <div className="absolute right-5 bottom-5 font-mono text-xs font-semibold tracking-wide text-[#b8f36f] uppercase">
+                    OHC / Blog
+                  </div>
+                </div>
               )}
               <div className="flex flex-1 flex-col p-8">
                 <div className="text-sm/5 text-gray-700">
@@ -115,7 +124,7 @@ async function Categories({ selected }: { selected?: string }) {
             <Link
               href="/blog"
               data-selected={selected === undefined ? true : undefined}
-              className="group grid grid-cols-[1rem_1fr] items-center gap-2 rounded-md px-2 py-1 data-focus:bg-gray-950/5"
+              className="group grid grid-cols-[1rem_1fr] items-center gap-2 rounded-md px-2 py-1 data-focus:bg-[#052e24]/5"
             >
               <CheckIcon className="hidden size-4 group-data-selected:block" />
               <p className="col-start-2 text-sm/6">All categories</p>
@@ -126,7 +135,7 @@ async function Categories({ selected }: { selected?: string }) {
               <Link
                 href={`/blog?category=${category.slug}`}
                 data-selected={category.slug === selected ? true : undefined}
-                className="group grid grid-cols-[16px_1fr] items-center gap-2 rounded-md px-2 py-1 data-focus:bg-gray-950/5"
+                className="group grid grid-cols-[16px_1fr] items-center gap-2 rounded-md px-2 py-1 data-focus:bg-[#052e24]/5"
               >
                 <CheckIcon className="hidden size-4 group-data-selected:block" />
                 <p className="col-start-2 text-sm/6">{category.title}</p>
@@ -151,7 +160,17 @@ async function Posts({ page, category }: { page: number; category?: string }) {
   }
 
   if (posts.length === 0) {
-    return <p className="mt-6 text-gray-500">No posts found.</p>
+    return (
+      <div className="mt-6 rounded-lg border border-[#dfe6e2] bg-white p-8">
+        <h2 className="text-base font-semibold text-gray-950">
+          The blog is being prepared.
+        </h2>
+        <p className="mt-2 max-w-2xl text-sm/6 text-gray-600">
+          Foundation essays, release notes, field stories, and implementation
+          guides will appear here once they are ready for publication.
+        </p>
+      </div>
+    )
   }
 
   return (
@@ -159,7 +178,7 @@ async function Posts({ page, category }: { page: number; category?: string }) {
       {posts.map((post) => (
         <div
           key={post.slug}
-          className="relative grid grid-cols-1 border-b border-b-gray-100 py-10 first:border-t first:border-t-gray-200 max-sm:gap-3 sm:grid-cols-3"
+          className="relative grid grid-cols-1 border-b border-b-[#dfe6e2] py-10 first:border-t first:border-t-[#dfe6e2] max-sm:gap-3 sm:grid-cols-3"
         >
           <div>
             <div className="text-sm/5 max-sm:text-gray-700 sm:font-medium">
@@ -181,7 +200,9 @@ async function Posts({ page, category }: { page: number; category?: string }) {
             )}
           </div>
           <div className="sm:col-span-2 sm:max-w-2xl">
-            <h2 className="text-sm/5 font-medium">{post.title}</h2>
+            <h2 className="text-base/6 font-semibold text-gray-950">
+              {post.title}
+            </h2>
             <p className="mt-3 text-sm/6 text-gray-500">{post.excerpt}</p>
             <div className="mt-4">
               <Link
@@ -245,9 +266,9 @@ async function Pagination({
             data-active={i + 1 === page ? true : undefined}
             className={clsx(
               'size-7 rounded-lg text-center text-sm/7 font-medium',
-              'data-hover:bg-gray-100',
+              'hover:bg-gray-100',
               'data-active:shadow-sm data-active:ring-1 data-active:ring-black/10',
-              'data-active:data-hover:bg-gray-50',
+              'data-active:hover:bg-[#f7f9f6]',
             )}
           >
             {i + 1}
@@ -273,11 +294,11 @@ export default function Blog() {
         <Navbar />
         <Subheading className="mt-16">Blog</Subheading>
         <Heading as="h1" className="mt-2">
-          What’s happening at Radiant.
+          Writing for the open healthcare commons.
         </Heading>
         <Lead className="mt-6 max-w-3xl">
-          Stay informed with product updates, company news, and insights on how
-          to sell smarter at your company.
+          Foundation essays, release notes, field stories, and implementation
+          guidance from Open Healthcare Network.
         </Lead>
       </Container>
       {page === 1 && !category && <FeaturedPosts />}

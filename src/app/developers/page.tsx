@@ -29,7 +29,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Developers — Contribute to CARE Open Source EMR',
   description:
-    'Join the CARE developer community. Contribute to an open-source EMR system built with Django DRF and React TypeScript, powering healthcare across 10 States.',
+    'Join the CARE developer community. Contribute to open-source healthcare infrastructure built with Django DRF and React TypeScript.',
   keywords:
     'CARE EMR, open source healthcare, Django DRF, React TypeScript, FHIR compliance, healthcare developers, medical software, EMR development, healthcare API, medical records system',
 }
@@ -41,13 +41,13 @@ function Hero() {
       <Container className="relative">
         <Navbar />
         <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-38">
-          <h1 className="font-display text-6xl/[0.9] font-medium tracking-tight text-balance text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
-            Build open source healthcare. Save lives.
+          <h1 className="font-display text-6xl/[0.9] font-medium tracking-normal text-balance text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
+            Build open-source healthcare infrastructure.
           </h1>
           <p className="mt-8 max-w-4xl text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
             Contribute to CARE, an open-source EMR system built with Django DRF
-            and React TypeScript, powering cost-effective healthcare solutions
-            across 10 States.
+            and React TypeScript, powering practical healthcare workflows in
+            real clinical and public health settings.
           </p>
           <div className="mt-12 flex flex-col gap-x-4 gap-y-4 sm:flex-row">
             <Button
@@ -81,7 +81,7 @@ function Hero() {
           <div className="mt-8 flex flex-wrap gap-6 text-sm text-gray-950">
             <div className="flex items-center gap-2">
               <Users className="h-4 w-4" />
-              <span>1000+ Contributors</span>
+              <span>Public contributor community</span>
             </div>
             <div className="flex items-center gap-2">
               <Code className="h-4 w-4" />
@@ -98,14 +98,14 @@ function TechStackSection() {
   return (
     <Container className="py-24">
       <Subheading>Tech Stack</Subheading>
-      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
+      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-normal">
         Built with modern technologies for scalable healthcare solutions
       </Heading>
 
       <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2">
-        <div className="rounded-lg border border-gray-200 p-8">
+        <div className="rounded-lg border border-[#dfe6e2] p-8">
           <div className="mb-4 flex items-center gap-3">
-            <div className="rounded-lg bg-blue-500 p-2">
+            <div className="rounded-lg bg-[#12806a] p-2">
               <Database className="h-6 w-6 text-white" />
             </div>
             <h3 className="text-xl font-semibold text-gray-900">Backend</h3>
@@ -114,9 +114,9 @@ function TechStackSection() {
             Django Rest Framework powers our robust API and data management
           </p>
         </div>
-        <div className="rounded-lg border border-gray-200 p-8">
+        <div className="rounded-lg border border-[#dfe6e2] p-8">
           <div className="mb-4 flex items-center gap-3">
-            <div className="rounded-lg bg-green-500 p-2">
+            <div className="rounded-lg bg-[#12806a] p-2">
               <Monitor className="h-6 w-6 text-white" />
             </div>
             <h3 className="text-xl font-semibold text-gray-900">Frontend</h3>
@@ -135,14 +135,17 @@ function PrerequisitesSection() {
     <div className="py-24">
       <Container>
         <Subheading>Prerequisites</Subheading>
-        <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
+        <Heading
+          as="h2"
+          className="mt-2 max-w-4xl font-display tracking-normal"
+        >
           What you need to know before contributing
         </Heading>
 
         <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-3">
-          <div className="rounded-lg border border-gray-200 p-8">
+          <div className="rounded-lg border border-[#dfe6e2] p-8">
             <div className="mb-4 flex items-center gap-3">
-              <div className="rounded-lg bg-purple-500 p-2">
+              <div className="rounded-lg bg-[#0b6b55] p-2">
                 <Code className="h-6 w-6 text-white" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900">
@@ -168,9 +171,9 @@ function PrerequisitesSection() {
               </li>
             </ul>
           </div>
-          <div className="rounded-lg border border-gray-200 p-8">
+          <div className="rounded-lg border border-[#dfe6e2] p-8">
             <div className="mb-4 flex items-center gap-3">
-              <div className="rounded-lg bg-orange-500 p-2">
+              <div className="rounded-lg bg-[#b8f36f] p-2">
                 <BookOpen className="h-6 w-6 text-white" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900">
@@ -213,9 +216,9 @@ function PrerequisitesSection() {
               </li>
             </ul>
           </div>
-          <div className="rounded-lg border border-gray-200 p-8">
+          <div className="rounded-lg border border-[#dfe6e2] p-8">
             <div className="mb-4 flex items-center gap-3">
-              <div className="rounded-lg bg-blue-500 p-2">
+              <div className="rounded-lg bg-[#12806a] p-2">
                 <Download className="h-6 w-6 text-white" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900">
@@ -251,14 +254,14 @@ function WhatYouCanBuildSection() {
   return (
     <Container className="py-24">
       <Subheading>What you can build</Subheading>
-      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
+      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-normal">
         Plugins, modules, and integrations that extend CARE without changing the
         core
       </Heading>
 
       <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2">
         <div className="space-y-6">
-          <div className="rounded-lg border border-gray-200 p-6">
+          <div className="rounded-lg border border-[#dfe6e2] p-6">
             <h3 className="mb-2 text-lg font-semibold text-gray-900">
               Plugins
             </h3>
@@ -266,7 +269,7 @@ function WhatYouCanBuildSection() {
               TeleICU (ONVIF), ABDM M1–M3, Care Scribe, and more
             </p>
           </div>
-          <div className="rounded-lg border border-gray-200 p-6">
+          <div className="rounded-lg border border-[#dfe6e2] p-6">
             <h3 className="mb-2 text-lg font-semibold text-gray-900">
               Modules
             </h3>
@@ -276,7 +279,7 @@ function WhatYouCanBuildSection() {
           </div>
         </div>
         <div className="space-y-6">
-          <div className="rounded-lg border border-gray-200 p-6">
+          <div className="rounded-lg border border-[#dfe6e2] p-6">
             <h3 className="mb-2 text-lg font-semibold text-gray-900">
               Forms & Terminologies
             </h3>
@@ -284,7 +287,7 @@ function WhatYouCanBuildSection() {
               Forms mapped to FHIR; terminology bridges (SNOMED/LOINC/UCUM)
             </p>
           </div>
-          <div className="rounded-lg border border-gray-200 p-6">
+          <div className="rounded-lg border border-[#dfe6e2] p-6">
             <h3 className="mb-2 text-lg font-semibold text-gray-900">
               Integrations
             </h3>
@@ -303,7 +306,10 @@ function GetStartedSection() {
     <div className="py-24">
       <Container>
         <Subheading>Get started</Subheading>
-        <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
+        <Heading
+          as="h2"
+          className="mt-2 max-w-4xl font-display tracking-normal"
+        >
           Everything you need to start contributing to CARE
         </Heading>
 
@@ -313,15 +319,15 @@ function GetStartedSection() {
             title="Environment Setup"
             description="Clone repositories and set up your development environment with step-by-step instructions."
             graphic={
-              <div className="flex h-80 items-center justify-center bg-gradient-to-br from-blue-50 to-blue-100">
+              <div className="flex h-80 items-center justify-center bg-gradient-to-br from-[#f3f8f5] to-[#e8f2ed]">
                 <div className="text-center">
-                  <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-blue-500 p-4">
+                  <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#12806a] p-4">
                     <Download className="h-8 w-8 text-white" />
                   </div>
-                  <div className="text-lg font-bold text-blue-900">
+                  <div className="text-lg font-bold text-[#052e24]">
                     Quick Setup
                   </div>
-                  <div className="mt-2 text-sm text-blue-700">
+                  <div className="mt-2 text-sm text-[#12806a]">
                     Get started in minutes
                   </div>
                 </div>
@@ -335,15 +341,15 @@ function GetStartedSection() {
             title="Find Issues"
             description="Browse issues labeled 'good first issue' and claim them to start contributing immediately."
             graphic={
-              <div className="flex h-80 items-center justify-center bg-gradient-to-br from-green-50 to-green-100">
+              <div className="flex h-80 items-center justify-center bg-gradient-to-br from-[#f3f8f5] to-[#e8f2ed]">
                 <div className="text-center">
-                  <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-green-500 p-4">
+                  <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#12806a] p-4">
                     <Github className="h-8 w-8 text-white" />
                   </div>
-                  <div className="text-lg font-bold text-green-900">
+                  <div className="text-lg font-bold text-[#052e24]">
                     Good First Issues
                   </div>
-                  <div className="mt-2 text-sm text-green-700">
+                  <div className="mt-2 text-sm text-[#12806a]">
                     Perfect for beginners
                   </div>
                 </div>
@@ -362,15 +368,15 @@ function GetStartedSection() {
               title="Join Slack"
               description="Connect with the community at slack.ohc.network for discussions, help, and collaboration."
               graphic={
-                <div className="flex h-80 items-center justify-center bg-gradient-to-br from-purple-50 to-purple-100">
+                <div className="flex h-80 items-center justify-center bg-gradient-to-br from-[#f3f8f5] to-[#e8f2ed]">
                   <div className="text-center">
-                    <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-purple-500 p-4">
+                    <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#0b6b55] p-4">
                       <MessageCircle className="h-8 w-8 text-white" />
                     </div>
-                    <div className="text-lg font-bold text-purple-900">
+                    <div className="text-lg font-bold text-[#052e24]">
                       Slack Community
                     </div>
-                    <div className="mt-2 text-sm text-purple-700">
+                    <div className="mt-2 text-sm text-[#12806a]">
                       Get help & connect
                     </div>
                   </div>
@@ -382,7 +388,7 @@ function GetStartedSection() {
           </a>
         </div>
 
-        <div className="mt-16 rounded-lg border border-gray-200 p-8">
+        <div className="mt-16 rounded-lg border border-[#dfe6e2] p-8">
           <h3 className="mb-4 text-xl font-semibold text-gray-900">
             Quick Setup Steps
           </h3>
@@ -398,7 +404,7 @@ function GetStartedSection() {
                 href="https://github.com/ohcnetwork/care?tab=readme-ov-file#getting-started"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 hover:underline"
+                className="inline-flex items-center gap-2 text-[#12806a] hover:text-[#12806a] hover:underline"
               >
                 <BookOpen className="h-4 w-4" />
                 <span>Backend README</span>
@@ -416,7 +422,7 @@ function GetStartedSection() {
                 href="https://github.com/ohcnetwork/care_fe?tab=readme-ov-file#getting-started"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 hover:underline"
+                className="inline-flex items-center gap-2 text-[#12806a] hover:text-[#12806a] hover:underline"
               >
                 <BookOpen className="h-4 w-4" />
                 <span>Frontend README</span>
@@ -434,14 +440,14 @@ function ContributionPathsSection() {
   return (
     <Container className="py-24">
       <Subheading>How to contribute</Subheading>
-      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
+      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-normal">
         Step-by-step process to start contributing to CARE
       </Heading>
 
       <div className="mt-16 space-y-8">
-        <div className="rounded-lg border border-gray-200 p-8">
+        <div className="rounded-lg border border-[#dfe6e2] p-8">
           <div className="mb-4 flex items-center gap-3">
-            <div className="rounded-lg bg-blue-500 p-2">
+            <div className="rounded-lg bg-[#12806a] p-2">
               <Github className="h-6 w-6 text-white" />
             </div>
             <h3 className="text-xl font-semibold text-gray-900">
@@ -471,9 +477,9 @@ function ContributionPathsSection() {
           </ul>
         </div>
 
-        <div className="rounded-lg border border-gray-200 p-8">
+        <div className="rounded-lg border border-[#dfe6e2] p-8">
           <div className="mb-4 flex items-center gap-3">
-            <div className="rounded-lg bg-green-500 p-2">
+            <div className="rounded-lg bg-[#12806a] p-2">
               <MessageCircle className="h-6 w-6 text-white" />
             </div>
             <h3 className="text-xl font-semibold text-gray-900">
@@ -496,9 +502,9 @@ function ContributionPathsSection() {
           </ul>
         </div>
 
-        <div className="rounded-lg border border-gray-200 p-8">
+        <div className="rounded-lg border border-[#dfe6e2] p-8">
           <div className="mb-4 flex items-center gap-3">
-            <div className="rounded-lg bg-purple-500 p-2">
+            <div className="rounded-lg bg-[#0b6b55] p-2">
               <GitFork className="h-6 w-6 text-white" />
             </div>
             <h3 className="text-xl font-semibold text-gray-900">
@@ -511,9 +517,9 @@ function ContributionPathsSection() {
           </p>
         </div>
 
-        <div className="rounded-lg border border-gray-200 p-8">
+        <div className="rounded-lg border border-[#dfe6e2] p-8">
           <div className="mb-4 flex items-center gap-3">
-            <div className="rounded-lg bg-orange-500 p-2">
+            <div className="rounded-lg bg-[#b8f36f] p-2">
               <ArrowRight className="h-6 w-6 text-white" />
             </div>
             <h3 className="text-xl font-semibold text-gray-900">
@@ -535,14 +541,17 @@ function LearningResourcesSection() {
     <div className="py-24">
       <Container>
         <Subheading>Learning Resources</Subheading>
-        <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
+        <Heading
+          as="h2"
+          className="mt-2 max-w-4xl font-display tracking-normal"
+        >
           Comprehensive resources to master our tech stack
         </Heading>
 
         <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2">
-          <div className="rounded-lg border border-gray-200 p-8">
+          <div className="rounded-lg border border-[#dfe6e2] p-8">
             <div className="mb-4 flex items-center gap-3">
-              <div className="rounded-lg bg-blue-500 p-2">
+              <div className="rounded-lg bg-[#12806a] p-2">
                 <Database className="h-6 w-6 text-white" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900">
@@ -601,9 +610,9 @@ function LearningResourcesSection() {
               </li>
             </ul>
           </div>
-          <div className="rounded-lg border border-gray-200 p-8">
+          <div className="rounded-lg border border-[#dfe6e2] p-8">
             <div className="mb-4 flex items-center gap-3">
-              <div className="rounded-lg bg-green-500 p-2">
+              <div className="rounded-lg bg-[#12806a] p-2">
                 <Monitor className="h-6 w-6 text-white" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900">
@@ -660,9 +669,9 @@ function LearningResourcesSection() {
               </li>
             </ul>
           </div>
-          <div className="rounded-lg border border-gray-200 p-8">
+          <div className="rounded-lg border border-[#dfe6e2] p-8">
             <div className="mb-4 flex items-center gap-3">
-              <div className="rounded-lg bg-purple-500 p-2">
+              <div className="rounded-lg bg-[#0b6b55] p-2">
                 <Code className="h-6 w-6 text-white" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900">
@@ -704,9 +713,9 @@ function LearningResourcesSection() {
               </li>
             </ul>
           </div>
-          <div className="rounded-lg border border-gray-200 p-8">
+          <div className="rounded-lg border border-[#dfe6e2] p-8">
             <div className="mb-4 flex items-center gap-3">
-              <div className="rounded-lg bg-orange-500 p-2">
+              <div className="rounded-lg bg-[#b8f36f] p-2">
                 <Heart className="h-6 w-6 text-white" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900">

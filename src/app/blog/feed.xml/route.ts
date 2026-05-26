@@ -8,12 +8,12 @@ export async function GET() {
   let siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ohc.network'
 
   let feed = new Feed({
-    title: 'The Radiant Blog',
+    title: 'Open Healthcare Network Updates',
     description:
-      'Stay informed with product updates, company news, and insights on how to sell smarter at your company.',
+      'Foundation updates, release notes, field stories, and implementation guidance from Open Healthcare Network.',
     author: {
-      name: 'Michael Foster',
-      email: 'michael.foster@example.com',
+      name: 'Open Healthcare Network Foundation',
+      email: 'hello@ohc.network',
     },
     id: siteUrl,
     link: siteUrl,
@@ -21,7 +21,7 @@ export async function GET() {
     favicon: `${siteUrl}/favicon.ico`,
     copyright: `All rights reserved ${new Date().getFullYear()}`,
     feedLinks: {
-      rss2: `${siteUrl}/feed.xml`,
+      rss2: `${siteUrl}/blog/feed.xml`,
     },
   })
 

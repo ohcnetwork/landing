@@ -1,0 +1,92 @@
+{
+  "foundationBoard": [
+    {
+      "name": "Srikanth Nadhamuni",
+      "role": "Founding CTO, Aadhaar / Chairman, 10BedICU Project",
+      "image": "/people/srikanth.jpeg",
+      "initials": "SN"
+    },
+    {
+      "name": "Sandeep Singal",
+      "role": "Board Member, ACT Grants",
+      "image": "/testimonials/sandeep.jpg",
+      "initials": "SS"
+    },
+    {
+      "name": "Sanjay Vijayakumar",
+      "role": "Executive Director / Strategic Operations",
+      "image": "/people/sanjay-vijayakumar.jpg",
+      "initials": "S"
+    },
+    {
+      "name": "Dr. Athul Joseph Manuel",
+      "role": "President, IMA Kochi / Chief Medical Officer",
+      "initials": "AM"
+    },
+    {
+      "name": "Bodhish Thomas",
+      "role": "Chief Executive Officer",
+      "image": "https://github.com/bodhish.png",
+      "initials": "BT",
+      "github": "https://github.com/bodhish",
+      "linkedin": "https://www.linkedin.com/in/bodhish",
+      "website": "https://bodhish.in"
+    },
+    {
+      "name": "Vignesh Hari",
+      "role": "Chief Technology Officer",
+      "image": "https://github.com/vigneshhari.png",
+      "initials": "VH",
+      "github": "https://github.com/vigneshhari",
+      "linkedin": "https://www.linkedin.com/in/vigneshhari"
+    },
+    {
+      "name": "Gigin Chandy George",
+      "role": "CTO, eGov Healthcare",
+      "image": "https://github.com/gigincg.png",
+      "initials": "GC",
+      "github": "https://github.com/gigincg",
+      "linkedin": "https://www.linkedin.com/in/giginchandygeorge"
+    },
+    {
+      "name": "Pinaki Krishna",
+      "role": "Resources and Partnerships",
+      "initials": "PK"
+    }
+  ],
+  "advisoryBoard": [
+    {
+      "name": "Srikanth Nadhamuni",
+      "role": "Founding CTO, Aadhaar / Chairman, 10BedICU Project",
+      "image": "/people/srikanth.jpeg",
+      "initials": "SN"
+    }
+  ],
+  "foundationTeam": [
+    {
+      "name": "Bodhish Thomas",
+      "role": "Chief Executive Officer",
+      "image": "https://github.com/bodhish.png",
+      "initials": "BT",
+      "github": "https://github.com/bodhish",
+      "linkedin": "https://www.linkedin.com/in/bodhish",
+      "website": "https://bodhish.in"
+    },
+    {
+      "name": "Vignesh Hari",
+      "role": "Chief Technology Officer",
+      "image": "https://github.com/vigneshhari.png",
+      "initials": "VH",
+      "github": "https://github.com/vigneshhari",
+      "linkedin": "https://www.linkedin.com/in/vigneshhari"
+    }
+  ],
+  "maintainerRoles": [
+    "Technical Steering Committee",
+    "Project maintainers",
+    "Clinical reviewers",
+    "Security and release owners",
+    "Implementation partners",
+    "Open-source contributors"
+  ]
+}

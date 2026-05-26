@@ -1,102 +1,89 @@
-import { BentoCard } from '@/components/bento-card'
 import { Button } from '@/components/button'
 import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
 import { Navbar } from '@/components/navbar'
 import { Heading, Subheading } from '@/components/text'
 import { TopGradient } from '@/components/TopGradient'
-import { ChevronRightIcon } from '@heroicons/react/24/outline'
+import {
+  ArrowRight,
+  Building2,
+  Code2,
+  GitBranch,
+  Globe2,
+  HeartHandshake,
+  Hospital,
+  Landmark,
+  Stethoscope,
+} from 'lucide-react'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'The OHC Network — Partners, Plugins, Community',
+  title: 'The Network - OHC Ecosystem',
   description:
-    'A global community co‑building open, FHIR‑aligned health infrastructure with Care Core and Care Apps.',
+    'The OHC ecosystem brings together governments, hospitals, implementation partners, clinicians, developers, funders, and standards collaborators.',
   keywords:
-    'open health ecosystem, digital public goods community, healthcare plugins, FHIR contributors',
+    'OHC ecosystem, open healthcare network, CARE contributors, healthcare implementation partners, clinical community',
 }
 
-const timelineItems = [
+const ecosystem = [
   {
-    id: 1,
-    title: '2020 | Initial Development',
-    purpose:
-      'The COVID-19 pandemic was an unprecedented crisis, and there were no existing tools to manage the scale and complexity of the outbreak. In response, a group of volunteers came together to develop CARE, a software solution aimed at managing patient data, coordinating pandemic response efforts, and streamlining resource allocation. CARE was designed to support healthcare workers and administrators in handling the surge in cases efficiently while ensuring transparency and accountability in healthcare delivery.',
-    features: [
-      'Patient Registration and Tracking',
-      'Pandemic Response Coordination',
-      'Basic Hospital and Bed Management',
-      'Patient Shifting Across Facilities',
-      'Collaboration with NHM Kerala',
-      'Resource Allocation',
-    ],
+    title: 'Governments',
+    description:
+      'Deploy open, standards-based infrastructure with local ownership and long-term public-sector control.',
+    icon: Landmark,
   },
   {
-    id: 2,
-    title: '2021 | Enhanced Capabilities for Oxygen Tracking',
-    purpose:
-      'During the second wave of COVID-19, oxygen availability became a critical issue across India. Oxygen tracking and management features were added to CARE to effectively manage oxygen availability and distribution in Kerala. CARE powered the oxygen war room in Kerala helping district administration to effectively manage the pandemic.',
-    features: [
-      'Adoption by State Health Dept across 6 States',
-      'Oxygen Capacity and Utilization Tracking',
-      'Real-Time Resource Monitoring Dashboards',
-      'Facility-Level Allocation Management',
-      'Reporting and Analytics',
-    ],
+    title: 'Hospitals',
+    description:
+      'Adopt practical HMIS and EMR workflows without license lock-in.',
+    icon: Hospital,
   },
   {
-    id: 3,
-    title:
-      '2021 | Recognized as the 50th Digital Public Good by the United Nations.',
-    purpose:
-      'CARE was recognized as 50th Digital Public Good by United Nations considering its transformative healthcare management system, centralizing patient and capacity management across hospitals which empower administrators and healthcare professionals with real-time data for better decision-making',
-    features: [
-      'CARE was recognized as 50th Digital Public Good by United Nations',
-    ],
+    title: 'Implementation partners',
+    description:
+      'Localize, integrate, train, support, and contribute back to the shared core.',
+    icon: Building2,
   },
   {
-    id: 4,
-    title: '2021 | CARE powers the 10BedICU Project',
-    purpose:
-      'CARE identified as the teleICU tooling for 10BedICU Project, enabling technology-driven ICU care in rural India and providing TeleICU services to the remotest regions, impacting thousands of lives.CARE is deployed as part of the project by State health departments across government hospitals.',
-    features: [
-      'IoT integration with medical devices (FHIR and ONVIF based)',
-      'ICU Rounds and Charts',
-      'Clinical Scoring Systems',
-    ],
+    title: 'Clinicians',
+    description:
+      'Shape clinical workflows, forms, terminology, safety, and assistive AI behavior.',
+    icon: Stethoscope,
   },
   {
-    id: 5,
-    title: '2022-2023 | Continuous Improvements and Advanced Features',
-    purpose:
-      'Supported the expansion of the 10BedICU project and addressed broader healthcare needs. Over three years, the 10BedICU initiative expanded to 9 states, covering more than 200 hospitals and delivering critical care solutions to underserved regions.',
-    features: [
-      'Compliance with the Ayushman Bharat Digital Mission (ABDM)',
-      'Remote ICU Monitoring Capabilities',
-      'Integration with ICU Systems',
-      'Remote Doctor Connect',
-      'TeleICU Scalability',
-      'Secure Data Handling',
-      'Reports and Dashboards',
-    ],
+    title: 'Developers',
+    description:
+      'Maintain open-source healthcare infrastructure used in real care settings.',
+    icon: Code2,
   },
   {
-    id: 6,
-    title: '2024 | Transition to HMIS and tooling for Palliative Care Grid',
-    purpose:
-      'CARE is evolving into a comprehensive Hospital Management Information System (HMIS) to address the growing needs of healthcare institutions. Originally developed as a pandemic management and TeleICU tool, CARE is now expanding to deliver holistic solutions for hospital operations, patient workflows, and administrative management. This transformation empowers healthcare providers to optimize operations, enhance resource efficiency, and improve patient care. Building on its roots as a pandemic management and TeleICU platform, CARE is also being enhanced with a Palliative Care Grid to offer home-based care for elderly citizens. This innovative feature facilitates coordinated care delivery at home, catering to the unique requirements of the aging population. The first implementation is underway in Kerala, in partnership with the National Health Mission (NHM) and private NGOs, representing a significant leap in community healthcare development.',
-    features: [
-      'Integration with the Health Care Exchange (HCX)',
-      'End-to-End Patient Management Workflows',
-      'Inventory and Asset Management',
-      'Comprehensive Facility Management',
-      'Modular and Scalable Architecture',
-      'Home-Based Care Coordination',
-      'Caregiver and Patient Management',
-      'Collaboration with NHM and NGOs',
-      'Resource Allocation for Community Care',
-      'Telemedicine Support',
-    ],
+    title: 'Funders',
+    description:
+      'Sustain the public-good infrastructure, release discipline, documentation, and ecosystem.',
+    icon: HeartHandshake,
+  },
+]
+
+const milestones = [
+  {
+    title: 'Pandemic response roots',
+    text: 'CARE began as open-source infrastructure for health system coordination during the COVID-19 response.',
+  },
+  {
+    title: 'Digital Public Good verification',
+    text: 'CARE is listed in the Digital Public Goods registry as Care | Open Healthcare Network with MIT license.',
+  },
+  {
+    title: 'Critical care and TeleICU',
+    text: 'CARE evolved to support hub-and-spoke critical care workflows and TeleICU integrations.',
+  },
+  {
+    title: 'HMIS and palliative care',
+    text: 'The platform now supports broader hospital, community, and home-based care workflows.',
+  },
+  {
+    title: 'Foundation stewardship',
+    text: 'OHC Foundation provides the neutral institutional home for governance, quality, security, documentation, and ecosystem enablement.',
   },
 ]
 
@@ -107,167 +94,31 @@ function Hero() {
       <Container className="relative">
         <Navbar />
         <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-38">
-          <h1 className="font-display text-6xl/[0.9] font-medium tracking-tight text-balance text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
+          <Subheading>The OHC Network</Subheading>
+          <h1 className="mt-4 max-w-5xl font-display text-5xl/[0.92] font-bold tracking-normal text-balance text-gray-950 sm:text-7xl/[0.9] md:text-8xl/[0.85]">
             Open infrastructure only works when built together.
           </h1>
           <p className="mt-8 max-w-4xl text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
-            Governments, hospitals, implementers, researchers, and volunteers
-            co‑build around <strong>Care Core</strong> and{' '}
-            <strong>Care Apps</strong>.
+            OHC is a network of governments, hospitals, implementers,
+            clinicians, developers, standards collaborators, and funders
+            co-building around CARE Core and related open healthcare Digital
+            Public Goods.
           </p>
-          <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-            <Button href="/developers">Join the developer community</Button>
-            <Button variant="secondary" href="/contact">
-              Partner as an implementer
+          <div className="mt-12 flex flex-col gap-4 sm:flex-row">
+            <Button
+              href="/ecosystem/implementation-partners"
+              className="w-full sm:w-auto"
+            >
+              Implementation partners
             </Button>
-            <Button variant="secondary" href="/contact">
-              Sponsor a state program
+            <Button
+              variant="secondary"
+              href="/developers"
+              className="flex w-full items-center gap-2 sm:w-auto"
+            >
+              <span>Developer community</span>
+              <ArrowRight className="size-4" />
             </Button>
-          </div>
-        </div>
-      </Container>
-    </div>
-  )
-}
-
-function CommunitySection() {
-  return (
-    <Container className="py-24">
-      <Subheading>Community (by the numbers)</Subheading>
-      <Heading as="h2" className="max-w-4x mt-2 font-display tracking-tight">
-        Global community of contributors and maintainers building Digital Public
-        Goods
-      </Heading>
-
-      <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-3">
-        <div className="rounded-lg border border-blue-200 bg-blue-50 p-6 text-center">
-          <div className="mb-2 text-4xl font-bold text-blue-900">1,040+</div>
-          <p className="font-medium text-blue-700">Contributors</p>
-        </div>
-        <div className="rounded-lg border border-green-200 bg-green-50 p-6 text-center">
-          <div className="mb-2 text-4xl font-bold text-green-900">14+</div>
-          <p className="font-medium text-green-700">Core maintainers</p>
-        </div>
-        <div className="rounded-lg border border-purple-200 bg-purple-50 p-6 text-center">
-          <div className="mb-2 text-4xl font-bold text-purple-900">50%</div>
-          <p className="font-medium text-purple-700">Growth in last 6 months</p>
-        </div>
-      </div>
-    </Container>
-  )
-}
-
-function DeploymentSection() {
-  return (
-    <div className="bg-gray-50 py-24">
-      <Container>
-        <Subheading>Where it runs</Subheading>
-        <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
-          10 States have deployed CARE to power different solutions
-        </Heading>
-
-        <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2">
-          <BentoCard
-            eyebrow="States Deployed"
-            title="10 Indian States"
-            description="CARE powers solutions across 10 Indian states with proven deployment patterns and frontline adoption."
-            graphic={
-              <div className="flex h-80 items-center justify-center bg-gradient-to-br from-blue-50 to-blue-100">
-                <div className="text-center">
-                  <div className="text-6xl font-bold text-blue-900">10</div>
-                  <div className="mt-2 text-sm text-blue-700">States</div>
-                </div>
-              </div>
-            }
-            fade={['bottom']}
-            className="max-lg:rounded-t-4xl lg:col-span-1 lg:rounded-tl-4xl"
-          />
-          <BentoCard
-            eyebrow="Solutions"
-            title="Multiple Use Cases"
-            description="Hospital Management, TeleICU, Palliative Care, Care Janwar, and Care Clinics deployed across different states."
-            graphic={
-              <div className="flex h-80 items-center justify-center bg-gradient-to-br from-green-50 to-green-100">
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-green-900">5+</div>
-                  <div className="mt-2 text-sm text-green-700">Solutions</div>
-                </div>
-              </div>
-            }
-            fade={['bottom']}
-            className="max-lg:rounded-b-4xl lg:col-span-1 lg:rounded-tr-4xl"
-          />
-        </div>
-      </Container>
-    </div>
-  )
-}
-
-function TimelineSection() {
-  return (
-    <div className="bg-gray-50 py-24">
-      <Container>
-        <Subheading>Our Journey</Subheading>
-        <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
-          From pandemic response to comprehensive healthcare platform
-        </Heading>
-        <p className="mt-6 max-w-4xl text-lg text-gray-600">
-          CARE&apos;s evolution from a crisis response tool to a comprehensive
-          healthcare management system.
-        </p>
-
-        <div className="relative mt-16">
-          {/* Timeline line */}
-          <div className="absolute top-0 bottom-0 left-8 w-0.5 bg-gradient-to-b from-blue-500 via-green-500 to-purple-500"></div>
-
-          <div className="space-y-16">
-            {timelineItems.map((item) => (
-              <div key={item.id} className="relative flex items-start">
-                {/* Timeline dot */}
-                <div className="relative z-10 flex h-16 w-16 items-center justify-center rounded-full border-4 border-blue-500 bg-white shadow-lg">
-                  <div className="h-3 w-3 rounded-full bg-blue-500"></div>
-                </div>
-
-                {/* Content */}
-                <div className="ml-8 flex-1">
-                  <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-lg">
-                    <div className="p-8">
-                      <div className="mb-4 flex items-center justify-between">
-                        <h3 className="text-xl font-semibold text-gray-900">
-                          {item.title}
-                        </h3>
-                        <div className="flex items-center text-sm text-gray-500">
-                          <span className="rounded-full bg-blue-100 px-3 py-1 font-medium text-blue-800">
-                            Milestone {item.id}
-                          </span>
-                        </div>
-                      </div>
-
-                      <p className="mb-6 leading-relaxed text-gray-700">
-                        {item.purpose}
-                      </p>
-
-                      <div className="space-y-3">
-                        <h4 className="text-sm font-semibold tracking-wide text-gray-900 uppercase">
-                          Key Features & Achievements
-                        </h4>
-                        <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
-                          {item.features.map((feature, featureIndex) => (
-                            <div
-                              key={featureIndex}
-                              className="flex items-center text-sm text-gray-600"
-                            >
-                              <ChevronRightIcon className="mr-2 h-4 w-4 flex-shrink-0 text-blue-500" />
-                              <span>{feature}</span>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </Container>
@@ -278,50 +129,102 @@ function TimelineSection() {
 function EcosystemSection() {
   return (
     <Container className="py-24">
-      <Subheading>Ecosystem</Subheading>
-      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
-        Governments, hospitals, implementers, researchers, and volunteers
-      </Heading>
-      <p className="mt-6 max-w-4xl text-lg text-gray-600">
-        The OHC Network brings together diverse stakeholders to build open,
-        interoperable health infrastructure that serves everyone.
-      </p>
-
-      <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-4">
-        <div className="rounded-lg border border-blue-200 bg-blue-50 p-6">
-          <h3 className="mb-2 text-lg font-semibold text-blue-900">
-            Governments
-          </h3>
-          <p className="text-blue-700">
-            National and state health departments deploying CARE at scale
-          </p>
-        </div>
-        <div className="rounded-lg border border-green-200 bg-green-50 p-6">
-          <h3 className="mb-2 text-lg font-semibold text-green-900">
-            Hospitals
-          </h3>
-          <p className="text-green-700">
-            Healthcare facilities using CARE for patient care and management
-          </p>
-        </div>
-        <div className="rounded-lg border border-purple-200 bg-purple-50 p-6">
-          <h3 className="mb-2 text-lg font-semibold text-purple-900">
-            Implementers
-          </h3>
-          <p className="text-purple-700">
-            Technology partners and system integrators deploying CARE
-          </p>
-        </div>
-        <div className="rounded-lg border border-orange-200 bg-orange-50 p-6">
-          <h3 className="mb-2 text-lg font-semibold text-orange-900">
-            Researchers
-          </h3>
-          <p className="text-orange-700">
-            Academic and research institutions contributing to CARE development
-          </p>
-        </div>
+      <div className="max-w-4xl">
+        <Subheading>Ecosystem</Subheading>
+        <Heading as="h2" className="mt-2">
+          A shared core, many roles.
+        </Heading>
+      </div>
+      <div className="mt-16 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+        {ecosystem.map((item) => (
+          <div
+            key={item.title}
+            className="rounded-lg border border-[#dfe6e2] bg-white p-6"
+          >
+            <item.icon className="size-6 text-[#12806a]" />
+            <h3 className="mt-6 text-lg font-semibold text-gray-950">
+              {item.title}
+            </h3>
+            <p className="mt-3 text-sm/6 text-gray-600">{item.description}</p>
+          </div>
+        ))}
       </div>
     </Container>
+  )
+}
+
+function JourneySection() {
+  return (
+    <div className="bg-[#f7f9f6] py-24">
+      <Container>
+        <div className="grid gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
+          <div>
+            <Subheading>Journey</Subheading>
+            <Heading as="h2" className="mt-2">
+              From crisis response to foundation-stewarded healthcare commons.
+            </Heading>
+            <p className="mt-6 text-lg/7 text-gray-600">
+              The network story should show evolution without freezing OHC in
+              its pandemic origin. The durable identity is open healthcare
+              infrastructure under neutral stewardship.
+            </p>
+          </div>
+          <div className="space-y-4">
+            {milestones.map((item) => (
+              <div
+                key={item.title}
+                className="rounded-lg border border-[#dfe6e2] bg-white p-6"
+              >
+                <GitBranch className="size-5 text-[#12806a]" />
+                <h3 className="mt-4 text-lg font-semibold text-gray-950">
+                  {item.title}
+                </h3>
+                <p className="mt-3 text-sm/6 text-gray-600">{item.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </Container>
+    </div>
+  )
+}
+
+function CommonsSection() {
+  return (
+    <div className="bg-[#052e24] py-24 text-white">
+      <Container>
+        <div className="grid gap-12 lg:grid-cols-[1fr_1fr] lg:items-center">
+          <div>
+            <Subheading dark>Commons model</Subheading>
+            <Heading as="h2" dark className="mt-2">
+              The network is not a vendor channel. It is how the commons stays
+              useful.
+            </Heading>
+            <p className="mt-6 text-lg/7 text-white/65">
+              A foundation-led ecosystem lets many institutions build and deploy
+              CARE while sharing improvements, avoiding fragmentation, and
+              giving health systems more control over technology and data.
+            </p>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2">
+            {[
+              'Open-source contribution',
+              'Clinical workflow feedback',
+              'Implementation playbooks',
+              'Reusable standards work',
+            ].map((item) => (
+              <div
+                key={item}
+                className="rounded-lg border border-white/10 bg-white/5 p-6"
+              >
+                <Globe2 className="mb-4 size-5 text-lime-200" />
+                <p className="text-base/6 font-semibold text-white">{item}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </Container>
+    </div>
   )
 }
 
@@ -330,10 +233,9 @@ export default function Network() {
     <div className="overflow-hidden">
       <Hero />
       <main>
-        <CommunitySection />
-        <DeploymentSection />
-        <TimelineSection />
         <EcosystemSection />
+        <JourneySection />
+        <CommonsSection />
       </main>
       <Footer />
     </div>

@@ -21,7 +21,7 @@ function Hero() {
       <Container className="relative">
         <Navbar />
         <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-38">
-          <h1 className="font-display text-6xl/[0.9] font-medium tracking-tight text-balance text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
+          <h1 className="font-display text-6xl/[0.9] font-medium tracking-normal text-balance text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
             Built for Clinics That Want to Scale, Not Just Digitize.
           </h1>
           <p className="mt-8 max-w-4xl text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
@@ -39,34 +39,34 @@ function OutcomesSection() {
   return (
     <Container className="py-24">
       <Subheading>Outcomes</Subheading>
-      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
+      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-normal">
         Faster intake, fewer clicks with templates and voice‑to‑text
       </Heading>
 
       <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-3">
-        <div className="rounded-lg border border-blue-200 bg-blue-50 p-6">
-          <h3 className="mb-2 text-lg font-semibold text-blue-900">
+        <div className="rounded-lg border border-[#cbded6] bg-[#f3f8f5] p-6">
+          <h3 className="mb-2 text-lg font-semibold text-[#052e24]">
             Faster Intake
           </h3>
-          <p className="text-blue-700">
+          <p className="text-[#12806a]">
             Templates, autocomplete, and voice-to-text reduce data entry time by
             60%
           </p>
         </div>
-        <div className="rounded-lg border border-green-200 bg-green-50 p-6">
-          <h3 className="mb-2 text-lg font-semibold text-green-900">
+        <div className="rounded-lg border border-[#cbded6] bg-[#f3f8f5] p-6">
+          <h3 className="mb-2 text-lg font-semibold text-[#052e24]">
             Public Facility Pages
           </h3>
-          <p className="text-green-700">
+          <p className="text-[#12806a]">
             Online booking and appointment management for better patient
             experience
           </p>
         </div>
-        <div className="rounded-lg border border-purple-200 bg-purple-50 p-6">
-          <h3 className="mb-2 text-lg font-semibold text-purple-900">
+        <div className="rounded-lg border border-[#cbded6] bg-[#f3f8f5] p-6">
+          <h3 className="mb-2 text-lg font-semibold text-[#052e24]">
             Clean Billing & Reports
           </h3>
-          <p className="text-purple-700">
+          <p className="text-[#12806a]">
             Integrated inventory, procurement, billing, and reporting for
             complete clinic management
           </p>
@@ -78,16 +78,19 @@ function OutcomesSection() {
 
 function FeaturesSection() {
   return (
-    <div className="bg-gray-50 py-24">
+    <div className="bg-[#f7f9f6] py-24">
       <Container>
         <Subheading>Core Features</Subheading>
-        <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
+        <Heading
+          as="h2"
+          className="mt-2 max-w-4xl font-display tracking-normal"
+        >
           Everything you need for comprehensive clinic management
         </Heading>
 
         <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2">
           <div className="space-y-6">
-            <div className="rounded-lg border border-gray-200 bg-white p-6">
+            <div className="rounded-lg border border-[#dfe6e2] bg-white p-6">
               <h3 className="mb-2 text-lg font-semibold text-gray-900">
                 Visit Capture
               </h3>
@@ -96,7 +99,7 @@ function FeaturesSection() {
                 input
               </p>
             </div>
-            <div className="rounded-lg border border-gray-200 bg-white p-6">
+            <div className="rounded-lg border border-[#dfe6e2] bg-white p-6">
               <h3 className="mb-2 text-lg font-semibold text-gray-900">
                 Scheduling
               </h3>
@@ -104,7 +107,7 @@ function FeaturesSection() {
                 Appointment booking, reminders, and calendar management
               </p>
             </div>
-            <div className="rounded-lg border border-gray-200 bg-white p-6">
+            <div className="rounded-lg border border-[#dfe6e2] bg-white p-6">
               <h3 className="mb-2 text-lg font-semibold text-gray-900">
                 Inventory & Procurement
               </h3>
@@ -115,7 +118,7 @@ function FeaturesSection() {
             </div>
           </div>
           <div className="space-y-6">
-            <div className="rounded-lg border border-gray-200 bg-white p-6">
+            <div className="rounded-lg border border-[#dfe6e2] bg-white p-6">
               <h3 className="mb-2 text-lg font-semibold text-gray-900">
                 E-Prescription
               </h3>
@@ -124,7 +127,7 @@ function FeaturesSection() {
                 checks.
               </p>
             </div>
-            <div className="rounded-lg border border-gray-200 bg-white p-6">
+            <div className="rounded-lg border border-[#dfe6e2] bg-white p-6">
               <h3 className="mb-2 text-lg font-semibold text-gray-900">
                 Billing & Accounting
               </h3>
@@ -133,7 +136,7 @@ function FeaturesSection() {
                 reporting
               </p>
             </div>
-            <div className="rounded-lg border border-gray-200 bg-white p-6">
+            <div className="rounded-lg border border-[#dfe6e2] bg-white p-6">
               <h3 className="mb-2 text-lg font-semibold text-gray-900">
                 Telehealth
               </h3>

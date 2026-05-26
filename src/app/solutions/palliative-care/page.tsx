@@ -22,7 +22,7 @@ function Hero() {
       <Container className="relative">
         <Navbar />
         <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-38">
-          <h1 className="font-display text-6xl/[0.9] font-medium tracking-tight text-balance text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
+          <h1 className="font-display text-6xl/[0.9] font-medium tracking-normal text-balance text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
             Continuity of Care at Home, Reimagined
           </h1>
           <p className="mt-8 max-w-4xl text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
@@ -32,7 +32,7 @@ function Hero() {
           </p>
 
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-            <Button href="/contact">See a field demo</Button>
+            <Button href="/contact">Discuss deployment model</Button>
             {/* <Button variant="secondary" href="/contact">Fund a district</Button> */}
             <Button variant="secondary" href="/contact">
               Talk to implementers
@@ -45,31 +45,54 @@ function Hero() {
 }
 
 function ImpactSection() {
+  const impactAreas = [
+    {
+      title: 'Care centers and NGOs',
+      description:
+        'Facility and community teams coordinate home-based care through shared patient records and visit workflows.',
+    },
+    {
+      title: 'Registered patients',
+      description:
+        'Patient counts should be published with a current as-of date and program-owner verification.',
+    },
+    {
+      title: 'Home visits and encounters',
+      description:
+        'Encounter metrics should be separated from patient counts, active users, and impacted population.',
+    },
+    {
+      title: 'Daily adoption',
+      description:
+        'Active usage should define role, date range, and measurement method before publication.',
+    },
+  ]
+
   return (
     <Container className="py-24">
-      <Subheading>By the numbers</Subheading>
-      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
-        Kerala&apos;s Palliative Care Grid demonstrates real-world impact at
-        scale.
+      <Subheading>Impact model</Subheading>
+      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-normal">
+        Kerala&apos;s Palliative Care Grid demonstrates why home-based care
+        needs shared infrastructure.
       </Heading>
+      <p className="mt-6 max-w-4xl text-lg text-gray-600">
+        Public metrics for centers, registered patients, visits, and daily
+        adoption should be pulled from the metrics register with source and
+        as-of dates before publication.
+      </p>
 
       <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-4">
-        <div className="rounded-lg border border-green-200 bg-green-50 p-6 text-center">
-          <div className="mb-2 text-4xl font-bold text-green-900">2600+</div>
-          <p className="font-medium text-green-700">Care Facilities</p>
-        </div>
-        <div className="rounded-lg border border-blue-200 bg-blue-50 p-6 text-center">
-          <div className="mb-2 text-4xl font-bold text-blue-900">221k+</div>
-          <p className="font-medium text-blue-700">Patients registered</p>
-        </div>
-        <div className="rounded-lg border border-purple-200 bg-purple-50 p-6 text-center">
-          <div className="mb-2 text-4xl font-bold text-purple-900">750k+</div>
-          <p className="font-medium text-purple-700">Home Visits</p>
-        </div>
-        <div className="rounded-lg border border-orange-200 bg-orange-50 p-6 text-center">
-          <div className="mb-2 text-4xl font-bold text-orange-900">1,300+</div>
-          <p className="font-medium text-orange-700">active users</p>
-        </div>
+        {impactAreas.map((area) => (
+          <div
+            key={area.title}
+            className="rounded-lg border border-[#dfe6e2] bg-white p-6"
+          >
+            <h3 className="text-lg font-semibold text-gray-950">
+              {area.title}
+            </h3>
+            <p className="mt-3 text-sm/6 text-gray-600">{area.description}</p>
+          </div>
+        ))}
       </div>
     </Container>
   )
@@ -77,10 +100,13 @@ function ImpactSection() {
 
 function WhyItWorksSection() {
   return (
-    <div className="bg-gray-50 py-24">
+    <div className="bg-[#f7f9f6] py-24">
       <Container>
         <Subheading>Why it works</Subheading>
-        <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
+        <Heading
+          as="h2"
+          className="mt-2 max-w-4xl font-display tracking-normal"
+        >
           Frontline app for visits, notes, and follow‑ups with structured
           records
         </Heading>
@@ -91,12 +117,12 @@ function WhyItWorksSection() {
             title="Mobile-first for field workers"
             description="ASHA workers and nurses use mobile apps for home visits, notes, and follow-ups with offline capability."
             graphic={
-              <div className="flex h-80 items-center justify-center bg-gradient-to-br from-green-50 to-green-100">
+              <div className="flex h-80 items-center justify-center bg-gradient-to-br from-[#f3f8f5] to-[#e8f2ed]">
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-green-900">
+                  <div className="text-4xl font-bold text-[#052e24]">
                     Mobile
                   </div>
-                  <div className="mt-2 text-sm text-green-700">First</div>
+                  <div className="mt-2 text-sm text-[#12806a]">First</div>
                 </div>
               </div>
             }
@@ -108,10 +134,10 @@ function WhyItWorksSection() {
             title="Structured records & shareable"
             description="All patient data captured in FHIR format with seamless sharing across care teams and facilities."
             graphic={
-              <div className="flex h-80 items-center justify-center bg-gradient-to-br from-blue-50 to-blue-100">
+              <div className="flex h-80 items-center justify-center bg-gradient-to-br from-[#f3f8f5] to-[#e8f2ed]">
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-blue-900">FHIR</div>
-                  <div className="mt-2 text-sm text-blue-700">Structured</div>
+                  <div className="text-4xl font-bold text-[#052e24]">FHIR</div>
+                  <div className="mt-2 text-sm text-[#12806a]">Structured</div>
                 </div>
               </div>
             }
@@ -123,10 +149,10 @@ function WhyItWorksSection() {
             title="Live coverage & outcomes tracking"
             description="Real-time dashboards track coverage, outcomes, and quality metrics across the entire state."
             graphic={
-              <div className="flex h-80 items-center justify-center bg-gradient-to-br from-purple-50 to-purple-100">
+              <div className="flex h-80 items-center justify-center bg-gradient-to-br from-[#f3f8f5] to-[#e8f2ed]">
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-purple-900">Live</div>
-                  <div className="mt-2 text-sm text-purple-700">Dashboards</div>
+                  <div className="text-4xl font-bold text-[#052e24]">Live</div>
+                  <div className="mt-2 text-sm text-[#12806a]">Dashboards</div>
                 </div>
               </div>
             }
@@ -143,7 +169,7 @@ function ImplementationSection() {
   return (
     <Container className="py-24">
       <Subheading>Implementation</Subheading>
-      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
+      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-normal">
         Pilot a district → scale statewide
       </Heading>
       <p className="mt-6 max-w-4xl text-lg text-gray-600">
@@ -152,25 +178,25 @@ function ImplementationSection() {
       </p>
 
       <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-3">
-        <div className="rounded-lg border border-green-200 bg-green-50 p-6">
-          <h3 className="mb-2 text-lg font-semibold text-green-900">
+        <div className="rounded-lg border border-[#cbded6] bg-[#f3f8f5] p-6">
+          <h3 className="mb-2 text-lg font-semibold text-[#052e24]">
             District Pilot
           </h3>
-          <p className="text-green-700">
+          <p className="text-[#12806a]">
             Start with one district to validate workflows
           </p>
         </div>
-        <div className="rounded-lg border border-blue-200 bg-blue-50 p-6">
-          <h3 className="mb-2 text-lg font-semibold text-blue-900">
+        <div className="rounded-lg border border-[#cbded6] bg-[#f3f8f5] p-6">
+          <h3 className="mb-2 text-lg font-semibold text-[#052e24]">
             Training & Adoption
           </h3>
-          <p className="text-blue-700">Training of frontline workers</p>
+          <p className="text-[#12806a]">Training of frontline workers</p>
         </div>
-        <div className="rounded-lg border border-purple-200 bg-purple-50 p-6">
-          <h3 className="mb-2 text-lg font-semibold text-purple-900">
+        <div className="rounded-lg border border-[#cbded6] bg-[#f3f8f5] p-6">
+          <h3 className="mb-2 text-lg font-semibold text-[#052e24]">
             State Scale
           </h3>
-          <p className="text-purple-700">
+          <p className="text-[#12806a]">
             Scale across all districts with standardized processes and
             dashboards
           </p>

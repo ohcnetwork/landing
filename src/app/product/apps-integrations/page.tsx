@@ -1,6 +1,7 @@
 import { BentoCard } from '@/components/bento-card'
 import { Button } from '@/components/button'
 import { Container } from '@/components/container'
+import { CorePluginCloud } from '@/components/core-plugin-cloud'
 import { Footer } from '@/components/footer'
 import { Navbar } from '@/components/navbar'
 import { Heading, Subheading } from '@/components/text'
@@ -22,12 +23,13 @@ function Hero() {
       <Container className="relative">
         <Navbar />
         <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-38">
-          <h1 className="font-display text-6xl/[0.9] font-medium tracking-tight text-balance text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
-            Apps extend the platform like a smartphone.
+          <h1 className="font-display text-6xl/[0.9] font-medium tracking-normal text-balance text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
+            Plugins extend the healthcare OS without forking the core.
           </h1>
           <p className="mt-8 max-w-4xl text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
-            Browse verified apps and integrations for national rails, telemetry,
-            documentation, labs, pharmacy, billing, analytics.
+            CARE Apps connect national rails, telemetry, documentation, labs,
+            pharmacy, billing, analytics, messaging, video, and AI workflows to
+            the same shared foundation.
           </p>
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
             <Button href="/contact">Browse all integrations</Button>
@@ -44,11 +46,32 @@ function Hero() {
   )
 }
 
+function ArchitectureCloudSection() {
+  return (
+    <Container className="pb-24">
+      <div className="grid gap-10 lg:grid-cols-[0.78fr_1.22fr] lg:items-center">
+        <div>
+          <Subheading>Architecture</Subheading>
+          <Heading as="h2" className="mt-2">
+            CARE Core stays stable. Plugins move around it.
+          </Heading>
+          <p className="mt-6 text-lg/7 text-gray-600">
+            Apps and integrations extend CARE for national rails, TeleICU, AI
+            documentation, labs, pharmacy, billing, messaging, video, devices,
+            and analytics without fragmenting the shared clinical core.
+          </p>
+        </div>
+        <CorePluginCloud className="shadow-[0_32px_90px_rgba(5,46,36,0.24)]" />
+      </div>
+    </Container>
+  )
+}
+
 function FeaturedSection() {
   return (
     <Container className="py-24">
       <Subheading>Featured</Subheading>
-      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
+      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-normal">
         Most popular integrations deployed across multiple states.
       </Heading>
 
@@ -56,13 +79,13 @@ function FeaturedSection() {
         <BentoCard
           eyebrow="National Rails"
           title="ABDM Integration"
-          description="M1, M2, M3 (demographic & biometric auth); deployed across 6 states with seamless patient identification."
+          description="M1, M2, M3 style workflows for demographic and biometric authentication through a plugin model."
           graphic={
-            <div className="flex h-80 items-center justify-center bg-gradient-to-br from-blue-50 to-blue-100">
+            <div className="flex h-80 items-center justify-center bg-gradient-to-br from-[#f3f8f5] to-[#e8f2ed]">
               <div className="text-center">
-                <div className="text-4xl font-bold text-blue-900">ABDM</div>
-                <div className="mt-2 text-sm text-blue-700">
-                  6 States Deployed
+                <div className="text-4xl font-bold text-[#052e24]">ABDM</div>
+                <div className="mt-2 text-sm text-[#12806a]">
+                  National rails
                 </div>
               </div>
             </div>
@@ -73,12 +96,12 @@ function FeaturedSection() {
         <BentoCard
           eyebrow="Telemetry"
           title="TeleICU"
-          description="ONVIF camera and vitals monitor integration for near real-time monitoring with hub-and-spoke deployment across 9 states."
+          description="ONVIF camera and vitals monitor integration patterns for hub-and-spoke critical care workflows."
           graphic={
-            <div className="flex h-80 items-center justify-center bg-gradient-to-br from-green-50 to-green-100">
+            <div className="flex h-80 items-center justify-center bg-gradient-to-br from-[#f3f8f5] to-[#e8f2ed]">
               <div className="text-center">
-                <div className="text-4xl font-bold text-green-900">ONVIF</div>
-                <div className="mt-2 text-sm text-green-700">
+                <div className="text-4xl font-bold text-[#052e24]">ONVIF</div>
+                <div className="mt-2 text-sm text-[#12806a]">
                   Real-time Monitoring
                 </div>
               </div>
@@ -92,10 +115,10 @@ function FeaturedSection() {
           title="Care Scribe"
           description="Multilingual AI voice fill for forms/notes with support for multiple languages and clinical terminology."
           graphic={
-            <div className="flex h-80 items-center justify-center bg-gradient-to-br from-purple-50 to-purple-100">
+            <div className="flex h-80 items-center justify-center bg-gradient-to-br from-[#f3f8f5] to-[#e8f2ed]">
               <div className="text-center">
-                <div className="text-4xl font-bold text-purple-900">AI</div>
-                <div className="mt-2 text-sm text-purple-700">Voice Fill</div>
+                <div className="text-4xl font-bold text-[#052e24]">AI</div>
+                <div className="mt-2 text-sm text-[#12806a]">Voice Fill</div>
               </div>
             </div>
           }
@@ -139,10 +162,13 @@ function CategoriesSection() {
   ]
 
   return (
-    <div className="bg-gray-50 py-24">
+    <div className="bg-[#f7f9f6] py-24">
       <Container>
         <Subheading>Categories</Subheading>
-        <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
+        <Heading
+          as="h2"
+          className="mt-2 max-w-4xl font-display tracking-normal"
+        >
           Browse integrations by category
         </Heading>
         <p className="mt-6 max-w-4xl text-lg text-gray-600">
@@ -154,7 +180,7 @@ function CategoriesSection() {
           {categories.map((category, index) => (
             <div
               key={index}
-              className="rounded-lg border border-gray-200 bg-white p-6 transition-colors hover:border-blue-300"
+              className="rounded-lg border border-[#dfe6e2] bg-white p-6 transition-colors hover:border-[#bdd0c5]"
             >
               <h3 className="mb-2 text-lg font-semibold text-gray-900">
                 {category.name}
@@ -177,6 +203,7 @@ export default function AppsIntegrations() {
     <div className="overflow-hidden">
       <Hero />
       <main>
+        <ArchitectureCloudSection />
         <FeaturedSection />
         <CategoriesSection />
       </main>

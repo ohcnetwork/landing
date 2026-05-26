@@ -22,7 +22,7 @@ function Hero() {
       <Container className="relative">
         <Navbar />
         <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-38">
-          <h1 className="font-display text-6xl/[0.9] font-medium tracking-tight text-balance text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
+          <h1 className="font-display text-6xl/[0.9] font-medium tracking-normal text-balance text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
             One Platform for Animal Health, Modeled on Human-Care Standards.
           </h1>
           <p className="mt-8 max-w-4xl text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
@@ -40,41 +40,41 @@ function UseCasesSection() {
   return (
     <Container className="py-24">
       <Subheading>Use cases</Subheading>
-      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
+      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-normal">
         Comprehensive veterinary practice management from small clinics to
         district hospitals
       </Heading>
 
       <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2">
-        <div className="rounded-lg border border-green-200 bg-green-50 p-6">
-          <h3 className="mb-2 text-lg font-semibold text-green-900">
+        <div className="rounded-lg border border-[#cbded6] bg-[#f3f8f5] p-6">
+          <h3 className="mb-2 text-lg font-semibold text-[#052e24]">
             Outpatient Visits & Triage
           </h3>
-          <p className="text-green-700">
+          <p className="text-[#12806a]">
             Species/breed tagging, vaccination schedules, appointment management
           </p>
         </div>
-        <div className="rounded-lg border border-blue-200 bg-blue-50 p-6">
-          <h3 className="mb-2 text-lg font-semibold text-blue-900">
+        <div className="rounded-lg border border-[#cbded6] bg-[#f3f8f5] p-6">
+          <h3 className="mb-2 text-lg font-semibold text-[#052e24]">
             Inpatient & Observation
           </h3>
-          <p className="text-blue-700">
+          <p className="text-[#12806a]">
             Ward management, treatment protocols, monitoring systems
           </p>
         </div>
-        <div className="rounded-lg border border-purple-200 bg-purple-50 p-6">
-          <h3 className="mb-2 text-lg font-semibold text-purple-900">
+        <div className="rounded-lg border border-[#cbded6] bg-[#f3f8f5] p-6">
+          <h3 className="mb-2 text-lg font-semibold text-[#052e24]">
             LMIS & Pharmacy
           </h3>
-          <p className="text-purple-700">
+          <p className="text-[#12806a]">
             Lab orders/results, medication management, inventory tracking
           </p>
         </div>
-        <div className="rounded-lg border border-orange-200 bg-orange-50 p-6">
-          <h3 className="mb-2 text-lg font-semibold text-orange-900">
+        <div className="rounded-lg border border-[#cbded6] bg-[#f3f8f5] p-6">
+          <h3 className="mb-2 text-lg font-semibold text-[#052e24]">
             Billing & Client Accounts
           </h3>
-          <p className="text-orange-700">
+          <p className="text-[#12806a]">
             Client management, billing, payment processing, public facility
             pages
           </p>
@@ -86,10 +86,13 @@ function UseCasesSection() {
 
 function WhyCareJanwarSection() {
   return (
-    <div className="bg-gray-50 py-24">
+    <div className="bg-[#f7f9f6] py-24">
       <Container>
         <Subheading>Why Care Janwar</Subheading>
-        <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
+        <Heading
+          as="h2"
+          className="mt-2 max-w-4xl font-display tracking-normal"
+        >
           Standards‑aligned data model with configurable terminologies
         </Heading>
 
@@ -99,10 +102,10 @@ function WhyCareJanwarSection() {
             title="Standards‑aligned data model"
             description="Configurable terminologies and forms mapped to FHIR resources for veterinary practice."
             graphic={
-              <div className="flex h-80 items-center justify-center bg-gradient-to-br from-green-50 to-green-100">
+              <div className="flex h-80 items-center justify-center bg-gradient-to-br from-[#f3f8f5] to-[#e8f2ed]">
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-green-900">FHIR</div>
-                  <div className="mt-2 text-sm text-green-700">Veterinary</div>
+                  <div className="text-4xl font-bold text-[#052e24]">FHIR</div>
+                  <div className="mt-2 text-sm text-[#12806a]">Veterinary</div>
                 </div>
               </div>
             }
@@ -114,10 +117,10 @@ function WhyCareJanwarSection() {
             title="Sovereign & MIT‑licensed"
             description="No lock‑in with complete ownership of code and data. Deploy in your infrastructure."
             graphic={
-              <div className="flex h-80 items-center justify-center bg-gradient-to-br from-blue-50 to-blue-100">
+              <div className="flex h-80 items-center justify-center bg-gradient-to-br from-[#f3f8f5] to-[#e8f2ed]">
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-blue-900">MIT</div>
-                  <div className="mt-2 text-sm text-blue-700">Open Source</div>
+                  <div className="text-4xl font-bold text-[#052e24]">MIT</div>
+                  <div className="mt-2 text-sm text-[#12806a]">Open Source</div>
                 </div>
               </div>
             }
@@ -129,14 +132,12 @@ function WhyCareJanwarSection() {
             title="Mobile‑first for on‑site care"
             description="Field-ready mobile apps for on-site veterinary care, farm visits, and remote consultations."
             graphic={
-              <div className="flex h-80 items-center justify-center bg-gradient-to-br from-purple-50 to-purple-100">
+              <div className="flex h-80 items-center justify-center bg-gradient-to-br from-[#f3f8f5] to-[#e8f2ed]">
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-purple-900">
+                  <div className="text-4xl font-bold text-[#052e24]">
                     Mobile
                   </div>
-                  <div className="mt-2 text-sm text-purple-700">
-                    Field Ready
-                  </div>
+                  <div className="mt-2 text-sm text-[#12806a]">Field Ready</div>
                 </div>
               </div>
             }
@@ -153,11 +154,11 @@ function FAQSection() {
   return (
     <Container className="py-24">
       <Subheading>FAQ</Subheading>
-      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
+      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-normal">
         Common questions about Care Janwar deployment
       </Heading>
 
-      <div className="mt-16 rounded-lg border border-gray-200 bg-white p-8">
+      <div className="mt-16 rounded-lg border border-[#dfe6e2] bg-white p-8">
         <h3 className="mb-4 text-lg font-semibold text-gray-900">
           Do we need a separate instance?
         </h3>

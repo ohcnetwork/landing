@@ -23,12 +23,13 @@ function Hero() {
       <Container className="relative">
         <Navbar />
         <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-38">
-          <h1 className="font-display text-6xl/[0.9] font-medium tracking-tight text-balance text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
+          <h1 className="font-display text-6xl/[0.9] font-medium tracking-normal text-balance text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
             Open Source Infrastructure for Intelligent Hospitals.
           </h1>
           <p className="mt-8 max-w-4xl text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
-            An AI-ready, FHIR-native hospital system that powers everything from
-            outpatient to intensive care.
+            A modular, standards-based hospital system for outpatient,
+            inpatient, emergency, observation, pharmacy, lab, billing, and
+            reporting workflows.
           </p>
           <ExploreButtons />
         </div>
@@ -50,10 +51,13 @@ function CoreModulesSection() {
   ]
 
   return (
-    <div className="bg-gray-50 py-24">
+    <div className="bg-[#f7f9f6] py-24">
       <Container>
         <Subheading>Core modules</Subheading>
-        <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
+        <Heading
+          as="h2"
+          className="mt-2 max-w-4xl font-display tracking-normal"
+        >
           Everything you need for comprehensive hospital management.
         </Heading>
         <p className="mt-6 max-w-4xl text-lg text-gray-600">
@@ -74,7 +78,7 @@ function CoreModulesSection() {
           {modules.map((module, index) => (
             <div
               key={index}
-              className="rounded-lg border border-gray-200 bg-white p-6"
+              className="rounded-lg border border-[#dfe6e2] bg-white p-6"
             >
               <h3 className="mb-2 text-lg font-semibold text-gray-900">
                 {module}
@@ -131,7 +135,7 @@ function PluginSection() {
 //   ]
 
 //   return (
-//     <div className="bg-gray-50 py-24">
+//     <div className="bg-[#f7f9f6] py-24">
 //       <Container>
 //         <Subheading>FAQs</Subheading>
 //         <Heading as="h2" className="mt-2 max-w-4xl">
@@ -140,7 +144,7 @@ function PluginSection() {
 
 //         <div className="mt-16 space-y-8">
 //           {faqs.map((faq, index) => (
-//             <div key={index} className="bg-white p-6 rounded-lg border border-gray-200">
+//             <div key={index} className="bg-white p-6 rounded-lg border border-[#dfe6e2]">
 //               <h3 className="text-lg font-semibold text-gray-900 mb-2">{faq.question}</h3>
 //               <p className="text-gray-600">{faq.answer}</p>
 //             </div>

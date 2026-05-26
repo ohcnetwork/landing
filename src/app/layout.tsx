@@ -10,12 +10,14 @@ const bricolage = Bricolage_Grotesque({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://ohc.network'),
   title: {
     template: '%s - Open Healthcare Network',
-    default: 'Open Healthcare Network — Digital Public Goods for Healthcare',
+    default:
+      'Open Healthcare Network Foundation - Open Healthcare Infrastructure',
   },
   description:
-    'Open Healthcare Network (OHC) builds FHIR-native, AI-ready Digital Public Goods for healthcare. Deploy CARE HMIS, TeleICU, and Palliative Care solutions across hospitals and states at national scale.',
+    'Open Healthcare Network Foundation stewards CARE and related open-source Digital Public Goods for interoperable, self-hostable, standards-based healthcare systems without vendor lock-in.',
   keywords:
     'Digital Public Goods, Open Healthcare Network, CARE HMIS, FHIR R5, Healthcare Interoperability, ABDM, TeleICU, AI Scribe, Open Source Health Infrastructure, MIT License',
   authors: [{ name: 'Open Healthcare Network (OHC)' }],
@@ -27,9 +29,10 @@ export const metadata: Metadata = {
     type: 'website',
     siteName: 'Open Healthcare Network',
     url: 'https://ohc.network/',
-    title: 'Open Healthcare Network — Digital Public Goods for Healthcare',
+    title:
+      'Open Healthcare Network Foundation - Open Healthcare Infrastructure',
     description:
-      'Building FHIR-native, AI-ready Digital Public Goods that power national health systems. Open, interoperable, and MIT-licensed — CARE HMIS, TeleICU, and Palliative Care Grid.',
+      'A neutral foundation stewarding CARE and related open-source Digital Public Goods for healthcare.',
     images: [
       {
         url: '/og/ohc-landing-cover.png',
@@ -42,9 +45,10 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     site: '@ohcnetwork',
-    title: 'Open Healthcare Network — Digital Public Goods for Healthcare',
+    title:
+      'Open Healthcare Network Foundation - Open Healthcare Infrastructure',
     description:
-      'OHC builds open, FHIR-powered infrastructure for governments, hospitals, and innovators. CARE HMIS, TeleICU, and Palliative Care Grid — all open, interoperable, and AI-ready.',
+      'OHC Foundation stewards open, standards-based digital public infrastructure for healthcare.',
     images: ['/og/ohc-landing-cover.png'],
   },
   alternates: {

@@ -26,6 +26,14 @@ export interface BlogPost {
 
 const postsDirectory = path.join(process.cwd(), 'content/blog')
 
+function normalizePublishedAt(value: unknown): string {
+  if (value instanceof Date) {
+    return value.toISOString()
+  }
+
+  return typeof value === 'string' ? value : ''
+}
+
 export function getAllPosts(): BlogPost[] {
   const fileNames = fs.readdirSync(postsDirectory)
   const allPostsData = fileNames
@@ -41,7 +49,7 @@ export function getAllPosts(): BlogPost[] {
         title: data.title || '',
         excerpt: data.excerpt || '',
         content: marked(content) as string,
-        publishedAt: data.publishedAt || data.date || '',
+        publishedAt: normalizePublishedAt(data.publishedAt || data.date),
         author: data.author,
         categories: data.categories || [],
         mainImage: data.mainImage,
@@ -67,7 +75,7 @@ export function getPostBySlug(slug: string): BlogPost | null {
       title: data.title || '',
       excerpt: data.excerpt || '',
       content: marked(content) as string,
-      publishedAt: data.publishedAt || data.date || '',
+      publishedAt: normalizePublishedAt(data.publishedAt || data.date),
       author: data.author,
       categories: data.categories || [],
       mainImage: data.mainImage,

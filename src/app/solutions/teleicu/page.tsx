@@ -29,7 +29,7 @@ function Hero() {
               className="h-32 object-contain lg:h-40"
             />
           </div>
-          <h1 className="font-display text-6xl/[0.9] font-medium tracking-tight text-balance text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
+          <h1 className="font-display text-6xl/[0.9] font-medium tracking-normal text-balance text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
             Critical Care reached every bed.
           </h1>
           <p className="mt-8 max-w-4xl text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
@@ -53,33 +53,51 @@ function Hero() {
 }
 
 function OutcomesSection() {
+  const outcomes = [
+    {
+      title: 'Hub-and-spoke coverage',
+      description:
+        'Specialist teams can support multiple facilities through structured rounds, video, and escalation workflows.',
+    },
+    {
+      title: 'Standardized ICU workflows',
+      description:
+        'CARE supports rounds, charts, clinical scoring, notes, and monitoring patterns for critical care.',
+    },
+    {
+      title: 'Device and video integration',
+      description:
+        'ONVIF-compatible video and vitals integration patterns help connect bedside context to remote review.',
+    },
+    {
+      title: 'Metrics need dates',
+      description:
+        'Publish ICU, hub, hospital, state, and outcome counts only with source, date, and program-owner approval.',
+    },
+  ]
+
   return (
     <Container className="py-24">
       <Subheading>Outcomes</Subheading>
       <Heading as="h2" className="mt-2 max-w-4xl">
-        Proven results across 10 States with rapid deployment and frontline
-        adoption.
+        Extend specialist capacity across districts with standardized critical
+        care workflows.
       </Heading>
 
       <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-4">
-        <div className="rounded-lg border border-blue-200 bg-blue-50 p-6 text-center">
-          <div className="mb-2 text-4xl font-bold text-blue-900">216</div>
-          <p className="font-medium text-blue-700">10 BedICU Units</p>
-        </div>
-        <div className="rounded-lg border border-green-200 bg-green-50 p-6 text-center">
-          <div className="mb-2 text-4xl font-bold text-green-900">
-            1,00,000+
+        {outcomes.map((outcome) => (
+          <div
+            key={outcome.title}
+            className="rounded-lg border border-[#dfe6e2] bg-white p-6"
+          >
+            <h3 className="text-lg font-semibold text-gray-950">
+              {outcome.title}
+            </h3>
+            <p className="mt-3 text-sm/6 text-gray-600">
+              {outcome.description}
+            </p>
           </div>
-          <p className="font-medium text-green-700">Lives Saved</p>
-        </div>
-        <div className="rounded-lg border border-purple-200 bg-purple-50 p-6 text-center">
-          <div className="mb-2 text-4xl font-bold text-purple-900">15</div>
-          <p className="font-medium text-purple-700">TeleICU Hubs</p>
-        </div>
-        <div className="rounded-lg border border-orange-200 bg-orange-50 p-6 text-center">
-          <div className="mb-2 text-4xl font-bold text-orange-900">28%</div>
-          <p className="font-medium text-orange-700">Of India Covered</p>
-        </div>
+        ))}
       </div>
     </Container>
   )
@@ -88,32 +106,32 @@ function ImpactSection() {
   return (
     <Container className="py-24">
       <Subheading>Impacts</Subheading>
-      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
+      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-normal">
         Extend specialist capacity across districts with standardized care.
       </Heading>
 
       <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-3">
-        <div className="rounded-lg border border-blue-200 bg-blue-50 p-6">
-          <h3 className="mb-2 text-lg font-semibold text-blue-900">
+        <div className="rounded-lg border border-[#cbded6] bg-[#f3f8f5] p-6">
+          <h3 className="mb-2 text-lg font-semibold text-[#052e24]">
             Extend Specialist Capacity
           </h3>
-          <p className="text-blue-700">
+          <p className="text-[#12806a]">
             One specialist can monitor multiple ICUs across different locations
           </p>
         </div>
-        <div className="rounded-lg border border-green-200 bg-green-50 p-6">
-          <h3 className="mb-2 text-lg font-semibold text-green-900">
+        <div className="rounded-lg border border-[#cbded6] bg-[#f3f8f5] p-6">
+          <h3 className="mb-2 text-lg font-semibold text-[#052e24]">
             Standardize Rounds
           </h3>
-          <p className="text-green-700">
+          <p className="text-[#12806a]">
             Consistent care protocols and escalation procedures
           </p>
         </div>
-        <div className="rounded-lg border border-purple-200 bg-purple-50 p-6">
-          <h3 className="mb-2 text-lg font-semibold text-purple-900">
+        <div className="rounded-lg border border-[#cbded6] bg-[#f3f8f5] p-6">
+          <h3 className="mb-2 text-lg font-semibold text-[#052e24]">
             Quality Improvement
           </h3>
-          <p className="text-purple-700">
+          <p className="text-[#12806a]">
             Capture data for continuous quality improvement and training
           </p>
         </div>
@@ -124,10 +142,13 @@ function ImpactSection() {
 
 function FeaturesSection() {
   return (
-    <div className="bg-gray-50 py-24">
+    <div className="bg-[#f7f9f6] py-24">
       <Container>
         <Subheading>Features</Subheading>
-        <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
+        <Heading
+          as="h2"
+          className="mt-2 max-w-4xl font-display tracking-normal"
+        >
           ONVIF‑compatible video with integrated documentation
         </Heading>
 
@@ -137,10 +158,10 @@ function FeaturesSection() {
             title="ONVIF‑compatible cameras"
             description="Near real‑time bedside view with standard ONVIF protocol support for easy integration."
             graphic={
-              <div className="flex h-80 items-center justify-center bg-gradient-to-br from-blue-50 to-blue-100">
+              <div className="flex h-80 items-center justify-center bg-gradient-to-br from-[#f3f8f5] to-[#e8f2ed]">
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-blue-900">ONVIF</div>
-                  <div className="mt-2 text-sm text-blue-700">Real-time</div>
+                  <div className="text-4xl font-bold text-[#052e24]">ONVIF</div>
+                  <div className="mt-2 text-sm text-[#12806a]">Real-time</div>
                 </div>
               </div>
             }
@@ -152,10 +173,10 @@ function FeaturesSection() {
             title="Integrated rounds & notes"
             description="All TeleICU interactions documented inside the EMR with structured data capture."
             graphic={
-              <div className="flex h-80 items-center justify-center bg-gradient-to-br from-green-50 to-green-100">
+              <div className="flex h-80 items-center justify-center bg-gradient-to-br from-[#f3f8f5] to-[#e8f2ed]">
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-green-900">EMR</div>
-                  <div className="mt-2 text-sm text-green-700">Integrated</div>
+                  <div className="text-4xl font-bold text-[#052e24]">EMR</div>
+                  <div className="mt-2 text-sm text-[#12806a]">Integrated</div>
                 </div>
               </div>
             }
@@ -167,10 +188,10 @@ function FeaturesSection() {
             title="Hub dashboard oversight"
             description="Multi‑facility oversight with centralized monitoring and management capabilities."
             graphic={
-              <div className="flex h-80 items-center justify-center bg-gradient-to-br from-purple-50 to-purple-100">
+              <div className="flex h-80 items-center justify-center bg-gradient-to-br from-[#f3f8f5] to-[#e8f2ed]">
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-purple-900">Hub</div>
-                  <div className="mt-2 text-sm text-purple-700">Dashboard</div>
+                  <div className="text-4xl font-bold text-[#052e24]">Hub</div>
+                  <div className="mt-2 text-sm text-[#12806a]">Dashboard</div>
                 </div>
               </div>
             }
@@ -187,7 +208,7 @@ function ImplementationSection() {
   return (
     <Container className="py-24">
       <Subheading>Implementation</Subheading>
-      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
+      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-normal">
         Enable cameras in wards; pair with CARE; train teams
       </Heading>
       <p className="mt-6 max-w-4xl text-lg text-gray-600">
@@ -196,37 +217,37 @@ function ImplementationSection() {
       </p>
 
       <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-4">
-        <div className="rounded-lg border border-blue-200 bg-blue-50 p-6 text-center">
-          <div className="mb-2 text-4xl font-bold text-blue-900">1</div>
-          <h3 className="mb-2 text-lg font-semibold text-blue-900">
+        <div className="rounded-lg border border-[#cbded6] bg-[#f3f8f5] p-6 text-center">
+          <div className="mb-2 text-4xl font-bold text-[#052e24]">1</div>
+          <h3 className="mb-2 text-lg font-semibold text-[#052e24]">
             Enable Cameras
           </h3>
-          <p className="text-blue-700">
+          <p className="text-[#12806a]">
             Install ONVIF-compatible cameras in ICU wards
           </p>
         </div>
-        <div className="rounded-lg border border-green-200 bg-green-50 p-6 text-center">
-          <div className="mb-2 text-4xl font-bold text-green-900">2</div>
-          <h3 className="mb-2 text-lg font-semibold text-green-900">
+        <div className="rounded-lg border border-[#cbded6] bg-[#f3f8f5] p-6 text-center">
+          <div className="mb-2 text-4xl font-bold text-[#052e24]">2</div>
+          <h3 className="mb-2 text-lg font-semibold text-[#052e24]">
             Pair with CARE
           </h3>
-          <p className="text-green-700">
+          <p className="text-[#12806a]">
             Connect cameras to CARE platform for integrated monitoring
           </p>
         </div>
-        <div className="rounded-lg border border-purple-200 bg-purple-50 p-6 text-center">
-          <div className="mb-2 text-4xl font-bold text-purple-900">3</div>
-          <h3 className="mb-2 text-lg font-semibold text-purple-900">
+        <div className="rounded-lg border border-[#cbded6] bg-[#f3f8f5] p-6 text-center">
+          <div className="mb-2 text-4xl font-bold text-[#052e24]">3</div>
+          <h3 className="mb-2 text-lg font-semibold text-[#052e24]">
             Train Teams
           </h3>
-          <p className="text-purple-700">
+          <p className="text-[#12806a]">
             Train healthcare workers on TeleICU workflows and protocols
           </p>
         </div>
-        <div className="rounded-lg border border-orange-200 bg-orange-50 p-6 text-center">
-          <div className="mb-2 text-4xl font-bold text-orange-900">4</div>
-          <h3 className="mb-2 text-lg font-semibold text-orange-900">Scale</h3>
-          <p className="text-orange-700">
+        <div className="rounded-lg border border-[#cbded6] bg-[#f3f8f5] p-6 text-center">
+          <div className="mb-2 text-4xl font-bold text-[#052e24]">4</div>
+          <h3 className="mb-2 text-lg font-semibold text-[#052e24]">Scale</h3>
+          <p className="text-[#12806a]">
             Start with 10-20 beds and scale across facilities
           </p>
         </div>

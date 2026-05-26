@@ -21,7 +21,7 @@ function Hero() {
       <Container className="relative">
         <Navbar />
         <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-38">
-          <h1 className="font-display text-6xl/[0.9] font-medium tracking-tight text-balance text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
+          <h1 className="font-display text-6xl/[0.9] font-medium tracking-normal text-balance text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
             Frequently Asked Questions
           </h1>
           <p className="mt-8 max-w-4xl text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
@@ -39,7 +39,7 @@ function FAQSection() {
     {
       question: 'How fast can we implement?',
       answer:
-        'Typical multi‑hospital pilots are live in weeks, scaling to districts/states thereafter. Our proven implementation playbook ensures rapid deployment with minimal disruption to existing workflows.',
+        'Implementation timelines depend on scope, integrations, hosting, data migration, training, and governance. OHC focuses on reusable playbooks so deployments do not begin from scratch each time.',
     },
     {
       question: 'What about data ownership and licensing?',
@@ -54,7 +54,7 @@ function FAQSection() {
     {
       question: 'Does CARE support national programs like ABDM?',
       answer:
-        'Yes—ABDM M1–M3 via plugin; deployed across 6 states. CARE integrates seamlessly with national health programs and standards.',
+        'Yes—ABDM workflows can be supported through CARE Apps and integration patterns. Deployment claims should be checked against current program metrics before publication.',
     },
     {
       question: 'Can we add remote monitoring and AI tools?',
@@ -81,7 +81,7 @@ function FAQSection() {
   return (
     <Container className="py-24">
       <Subheading>FAQ</Subheading>
-      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-tight">
+      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-normal">
         Common questions about CARE and OHC
       </Heading>
 
@@ -89,7 +89,7 @@ function FAQSection() {
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className="rounded-lg border border-gray-200 bg-white p-8"
+            className="rounded-lg border border-[#dfe6e2] bg-white p-8"
           >
             <h3 className="mb-4 text-xl font-semibold text-gray-900">
               {faq.question}
@@ -104,10 +104,10 @@ function FAQSection() {
 
 function ContactSection() {
   return (
-    <div className="bg-gray-50 py-24">
+    <div className="bg-[#f7f9f6] py-24">
       <Container>
         <div className="text-center">
-          <Heading as="h2" className="max-w-4xl font-display tracking-tight">
+          <Heading as="h2" className="max-w-4xl font-display tracking-normal">
             Still have questions?
           </Heading>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-600">

@@ -25,9 +25,9 @@ import {
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Care Core — FHIR‑Native Healthcare Platform | Open Health',
+  title: 'CARE Core - Open Healthcare Infrastructure Primitives',
   description:
-    'MIT‑licensed, modular healthcare platform with FHIR R5 compliance. API‑first, mobile‑first architecture for hospitals, clinics, and health systems. Deploy in 10 States.',
+    'CARE Core is the MIT-licensed, standards-aligned operating layer for healthcare workflows across hospitals, public health programs, and care coordination.',
   keywords:
     'FHIR healthcare platform, hospital management system, EMR software, healthcare interoperability, open source healthcare, MIT licensed healthcare, healthcare API, mobile healthcare, cloud healthcare, healthcare data model, SNOMED CT, LOINC, healthcare standards, digital health platform',
 }
@@ -40,43 +40,36 @@ function Hero() {
         <Navbar />
         <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-38">
           <div className="mx-auto max-w-5xl text-center">
-            <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-medium text-blue-700">
-              <div className="h-2 w-2 animate-pulse rounded-full bg-blue-500"></div>
-              <span>Digital Public Good • MIT License • FHIR R5</span>
+            <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-[#cbded6] bg-white/70 px-4 py-2 text-sm font-medium text-[#0b6b55] shadow-sm backdrop-blur-xl">
+              <div className="h-2 w-2 animate-pulse rounded-full bg-[#12806a]"></div>
+              <span>Digital Public Good / MIT licensed / FHIR-aligned</span>
             </div>
 
-            <h1 className="font-display text-6xl/[0.9] font-medium tracking-tight text-balance text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
-              Core: An open foundation for every workflow.
+            <h1 className="font-display text-6xl/[0.9] font-bold tracking-normal text-balance text-[#05070c] sm:text-8xl/[0.82] md:text-9xl/[0.82]">
+              CARE Core is the reusable operating layer.
             </h1>
 
             <p className="mx-auto mt-8 max-w-4xl text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
-              <strong>MIT‑licensed</strong>, <strong>API‑first</strong>,{' '}
-              <strong>modular</strong>, <strong>cloud‑agnostic</strong>,{' '}
-              <strong>mobile‑first</strong>, <strong>MCP‑ready</strong>.
+              Common healthcare primitives, open APIs, and deployable workflow
+              modules for institutions that need interoperability without vendor
+              lock-in.
             </p>
 
-            <div className="mt-12 rounded-2xl border border-blue-200/50 bg-gradient-to-r from-blue-50 to-purple-50 p-6 backdrop-blur-sm">
-              <p className="text-lg font-medium text-gray-800">
-                <strong>Built on global standards:</strong>{' '}
+            <div className="mt-12 rounded-lg border border-[#cbded6] bg-white/72 p-6 shadow-[0_18px_45px_rgba(6,63,50,0.07)] backdrop-blur-xl">
+              <p className="text-lg font-medium text-[#173d34]">
+                Built with the language of modern health systems:{' '}
                 <strong>FHIR R5</strong>, <strong>SNOMED</strong>,{' '}
                 <strong>LOINC</strong>, <strong>UCUM</strong>,{' '}
-                <strong>ICD‑10</strong>; terminology server;{' '}
-                <strong>BYOT</strong>.
+                <strong>ICD-10</strong>, configurable terminology, and open
+                integration patterns.
               </p>
             </div>
             <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row sm:justify-center">
-              <Button
-                href="/contact"
-                className="bg-blue-600 text-white shadow-lg transition-all duration-300 hover:bg-blue-700 hover:shadow-xl"
-              >
+              <Button href="/product/standards-architecture">
                 Read the architecture brief
               </Button>
-              <Button
-                variant="secondary"
-                href="/developers"
-                className="border-gray-300 hover:border-gray-400 hover:bg-gray-50"
-              >
-                Explore the data model
+              <Button variant="secondary" href="/developers">
+                Explore developer docs
               </Button>
             </div>
           </div>
@@ -91,41 +84,43 @@ function ArchitectureSection() {
     {
       title: 'API-First',
       description:
-        'RESTful APIs with FHIR R5 compliance for seamless integration',
+        'Open APIs and FHIR-aligned resources for integrations, analytics, and national rails.',
       icon: Link,
     },
     {
       title: 'Mobile-First',
       description:
-        'Responsive design optimized for healthcare workers on the go',
+        'Workflows designed for facilities, wards, field visits, and frontline health workers.',
       icon: Smartphone,
     },
     {
       title: 'Cloud-Agnostic',
-      description: 'Deploy anywhere - your VPC, government cloud, or hybrid',
+      description:
+        'Deploy in a government cloud, hospital VPC, managed cloud, hybrid, or on-prem model.',
       icon: Cloud,
     },
   ]
 
   return (
-    <div className="bg-white py-24">
+    <div className="bg-white py-28">
       <Container>
         <div className="mb-20 text-center">
           <Subheading>Architecture</Subheading>
-          <Heading as="h2" className="font-display tracking-tight">
-            Modular, plugin‑ready core with modern frontend/backend stacks
+          <Heading as="h2" className="font-display tracking-normal">
+            Modular, plugin-ready core for serious health systems.
           </Heading>
           <p className="mx-auto mt-6 max-w-4xl text-xl leading-relaxed text-gray-600">
-            <strong>FHIR‑inspired data model</strong> covers encounters, orders,
-            meds, labs, imaging, billing, org hierarchies, and more.
+            CARE Core covers patients, facilities, encounters, orders,
+            medications, observations, questionnaires, tasks, care plans,
+            reports, access control, audit trails, and APIs.
           </p>
         </div>
 
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-3">
           {features.map((feature, index) => (
             <div key={index} className="group text-center">
-              <div className="mx-auto mb-8 flex h-20 w-20 items-center justify-center rounded-3xl bg-gray-100 transition-colors duration-300 group-hover:bg-gray-200">
-                <feature.icon className="h-10 w-10 text-gray-700" />
+              <div className="mx-auto mb-8 flex h-20 w-20 items-center justify-center rounded-lg bg-[#f3f8f5] transition-colors duration-300 group-hover:bg-[#e8f2ed]">
+                <feature.icon className="h-10 w-10 text-[#12806a]" />
               </div>
 
               <h3 className="mb-4 text-2xl font-bold text-gray-900">
@@ -224,16 +219,17 @@ function CoreModulesSection() {
   ]
 
   return (
-    <div className="bg-white py-24">
+    <div className="bg-[#f7f9f6] py-28">
       <Container>
         <div className="mb-20 text-center">
           <Subheading>Core Modules</Subheading>
-          <Heading as="h2" className="font-display tracking-tight">
-            Everything you need for comprehensive healthcare management
+          <Heading as="h2" className="font-display tracking-normal">
+            Workflow modules that extend the core without forking it.
           </Heading>
           <p className="mx-auto mt-6 max-w-3xl text-xl leading-relaxed text-gray-600">
-            Each module is designed with healthcare workflows in mind, built on
-            FHIR standards, and optimized for frontline healthcare workers.
+            CARE Apps and modules assemble reusable primitives into practical
+            HMIS, EMR, care coordination, pharmacy, billing, lab, and analytics
+            workflows.
           </p>
         </div>
 
@@ -247,14 +243,14 @@ function CoreModulesSection() {
                   className={`space-y-8 ${index % 2 === 1 ? 'lg:order-2' : ''}`}
                 >
                   <div className="flex items-center gap-6">
-                    <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-gray-100">
-                      <module.icon className="h-8 w-8 text-gray-700" />
+                    <div className="flex h-16 w-16 items-center justify-center rounded-lg bg-white shadow-sm ring-1 ring-[#dfe6e2]">
+                      <module.icon className="h-8 w-8 text-[#12806a]" />
                     </div>
                     <div>
                       <h3 className="mb-3 font-display text-4xl font-bold text-gray-900">
                         {module.title}
                       </h3>
-                      <div className="h-1 w-20 rounded-full bg-gray-300"></div>
+                      <div className="h-1 w-20 rounded-full bg-[#b8f36f]"></div>
                     </div>
                   </div>
 
@@ -262,9 +258,9 @@ function CoreModulesSection() {
                     {module.description}
                   </p>
 
-                  <div className="flex items-center gap-3 text-sm font-medium text-gray-500">
-                    <div className="h-2 w-2 animate-pulse rounded-full bg-gray-400"></div>
-                    <span>Live Demo Available</span>
+                  <div className="flex items-center gap-3 text-sm font-medium text-[#0b6b55]">
+                    <div className="h-2 w-2 rounded-full bg-[#12806a]"></div>
+                    <span>Standards-aligned workflow module</span>
                   </div>
                 </div>
 
@@ -274,14 +270,13 @@ function CoreModulesSection() {
                   <VideoPlayer
                     src={module.video}
                     title={module.title}
-                    poster={`/core/${module.title.toLowerCase().replace(/\s+/g, '_')}_poster.jpg`}
                     autoplay={true}
                     loop={true}
                     muted={true}
                     playsinline={true}
                     width={1200}
                     height={830}
-                    className="w-full rounded-3xl shadow-2xl"
+                    className="w-full rounded-lg border border-[#dfe6e2] bg-white shadow-[0_22px_70px_rgba(6,63,50,0.12)]"
                   />
                 </div>
               </div>
@@ -310,30 +305,31 @@ function BenefitsSection() {
     {
       title: 'Future-ready',
       description:
-        "AI tools and voice-fill integrate seamlessly. Plugins don't alter the core.",
+        'Assistive AI, voice workflows, and plugins can sit on structured data without altering the shared core.',
       icon: Rocket,
     },
   ]
 
   return (
-    <div className="bg-gray-50 py-24">
+    <div className="bg-white py-28">
       <Container>
         <div className="mb-20 text-center">
           <Subheading>What you get</Subheading>
-          <Heading as="h2" className="font-display tracking-tight">
-            Interoperability by default; clean analytics/exchange.
+          <Heading as="h2" className="font-display tracking-normal">
+            Designed for public ownership and long-term stewardship.
           </Heading>
           <p className="mx-auto mt-6 max-w-3xl text-xl leading-relaxed text-gray-600">
-            Built for the future of healthcare with standards-first architecture
-            and sovereign data control.
+            The foundation maintains the release discipline, documentation,
+            security posture, and implementation ecosystem needed for reuse at
+            scale.
           </p>
         </div>
 
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-3">
           {benefits.map((benefit, index) => (
             <div key={index} className="group text-center">
-              <div className="mx-auto mb-8 flex h-20 w-20 items-center justify-center rounded-3xl bg-gray-100 transition-colors duration-300 group-hover:bg-gray-200">
-                <benefit.icon className="h-10 w-10 text-gray-700" />
+              <div className="mx-auto mb-8 flex h-20 w-20 items-center justify-center rounded-lg bg-[#f3f8f5] transition-colors duration-300 group-hover:bg-[#e8f2ed]">
+                <benefit.icon className="h-10 w-10 text-[#12806a]" />
               </div>
 
               <h3 className="mb-4 text-2xl font-bold text-gray-900">
