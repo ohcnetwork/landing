@@ -12,7 +12,7 @@ function CallToAction() {
       <hgroup>
         <Subheading>Build the commons</Subheading>
         <p className="mt-6 text-3xl font-medium tracking-normal text-gray-950 sm:text-5xl">
-          Help steward open healthcare
+          Help steward open healthcare{' '}
           <br className="hidden sm:block" />
           infrastructure for the long term.
         </p>
@@ -75,6 +75,7 @@ function Sitemap() {
         <SitemapHeading>CARE Platform</SitemapHeading>
         <SitemapLinks>
           <SitemapLink href="/product/care-core">CARE Core</SitemapLink>
+          <SitemapLink href="/product/care-ai">CARE AI</SitemapLink>
           <SitemapLink href="/product/apps-integrations">
             Apps & Integrations
           </SitemapLink>

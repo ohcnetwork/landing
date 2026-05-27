@@ -33,6 +33,7 @@ const links = [
     label: 'CARE',
     submenu: [
       { href: '/product/care-core', label: 'CARE Core' },
+      { href: '/product/care-ai', label: 'CARE AI' },
       { href: '/product/apps-integrations', label: 'Apps & Integrations' },
       {
         href: '/product/standards-architecture',
