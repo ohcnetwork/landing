@@ -236,7 +236,7 @@ function MobileNav() {
 
 export function Navbar({ banner }: { banner?: React.ReactNode }) {
   return (
-    <Disclosure as="header" className="pt-8">
+    <Disclosure as="header" className="relative z-30 pt-8">
       <div>
         <div className="relative flex justify-between">
           <div className="relative flex gap-6">
