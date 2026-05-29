@@ -19,7 +19,7 @@ export function PersonPortrait({ person }: { person: Person }) {
       <img
         src={person.image}
         alt=""
-        className="size-18 rounded-full object-cover ring-1 ring-black/8 grayscale transition duration-300 group-hover:grayscale-0 sm:size-20"
+        className="size-18 rounded-full object-cover object-top ring-1 ring-black/8 grayscale transition duration-300 group-hover:grayscale-0 sm:size-20"
       />
     )
   }

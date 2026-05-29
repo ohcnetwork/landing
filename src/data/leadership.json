@@ -21,6 +21,7 @@
     {
       "name": "Dr. Athul Joseph Manuel",
       "role": "President, IMA Kochi / Chief Medical Officer",
+      "image": "/people/dr-athul-joseph-manuel.jpg",
       "initials": "AM"
     },
     {
@@ -50,7 +51,9 @@
     },
     {
       "name": "Pinaki Krishna",
-      "role": "Resources and Partnerships",
+      "role": "Director - Resources & Partnerships",
+      "image": "/people/pinaki-krishna.jpg",
+      "linkedin": "https://www.linkedin.com/in/pinakipillai",
       "initials": "PK"
     }
   ],
