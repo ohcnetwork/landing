@@ -121,7 +121,7 @@ function Sitemap() {
           <SitemapLink href="/press-media">Press & Media</SitemapLink>
           <SitemapLink href="/careers">Careers</SitemapLink>
           <SitemapLink href="/contact">Contact</SitemapLink>
-          <SitemapLink href="/funding.json">Funding.json</SitemapLink>
+          <SitemapLink href="/funding.json">Funding metadata</SitemapLink>
         </SitemapLinks>
       </div>
     </>

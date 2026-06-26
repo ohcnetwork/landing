@@ -73,7 +73,7 @@ const links = [
       { href: '/blog', label: 'Blog' },
       { href: '/press-media', label: 'Press & Media' },
       { href: '/faq', label: 'FAQ' },
-      { href: '/funding.json', label: 'Funding.json' },
+      { href: '/funding.json', label: 'Funding metadata' },
       { href: '/contact', label: 'Contact' },
     ],
   },
