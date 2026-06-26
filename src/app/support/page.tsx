@@ -117,7 +117,7 @@ function Hero() {
               href="/funding.json"
               className="w-full sm:w-auto"
             >
-              View funding.json
+              View raw funding.json
             </Button>
           </div>
         </div>
