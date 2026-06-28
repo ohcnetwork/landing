@@ -16,44 +16,68 @@ mainImage:
   alt: "CARE HMIS go-live at Sree Sudheendra Hospital cover illustration"
 ---
 
-January 2026 marked one of the most important milestones in CARE's HMIS journey: the full go-live of CARE HMIS at Sree Sudheendra Medical Mission Hospital on 18 January.
+On 18 January 2026, CARE HMIS went fully live at Sree Sudheendra Medical Mission Hospital.
 
-The launch moved CARE from pilot usage into full hospital operations. The hospital transitioned from its previous system to CARE, with departments relying on the platform for day-to-day workflows across clinical, administrative, pharmacy, laboratory, reception, billing, and inpatient settings.
+The launch marked the hospital's full transition from its previous system to CARE. It also marked the completion of one of the project's core deliverables: proving CARE as an end-to-end HMIS in a live, multi-specialty hospital setting.
 
-## Launch preparation and infrastructure
+This was not a software switch in isolation. It was a coordinated transition across infrastructure, devices, data migration, stock validation, department training, billing, pharmacy, lab, reception, inpatient documentation, and hospital management reporting.
 
-Go-live required much more than switching on software. The hospital procured production server infrastructure, and the CARE team configured an on-premise deployment for local operation.
+## On-premise infrastructure for hospital control
 
-Tablets, QR scanners, and other hardware were set up and assigned to departments. Staff received hands-on guidance on how to use devices within clinical workflows.
+The hospital procured production server infrastructure, and the CARE team configured an on-premise deployment using cloud-native deployment patterns adapted for local operation.
 
-Patient data was migrated from the previous system to preserve continuity of care. Medicine and consumable stock was imported into CARE and validated so pharmacy and inventory operations could begin accurately from day one.
+For a hospital environment, reliability, data control, and local network behavior are central. CARE needed to run as a fully local solution while preserving the deployment discipline of a modern platform.
 
-This combination of on-premise infrastructure, hardware setup, data migration, and department-level readiness gave CARE a solid operational base for launch.
+The team also configured tablets, QR scanners, and other hardware, assigned them to departments, and trained staff on device usage inside real clinical workflows. Hardware enablement was not an accessory to the go-live. It was part of the user interface of the hospital.
 
-## Department-level handholding
+## Migration without losing continuity
 
-The implementation team physically supported OPDs and departments during go-live. Doctors, nurses, reception teams, pharmacy staff, lab teams, and accountants all needed real-time help as they transitioned from old routines into CARE.
+Patient data was migrated from the previous system up to the latest operational date so continuity of care could be preserved. Medicine and consumable stock was imported into CARE, then validated and reconciled against physical stock.
 
-Reception received focused support because it is the first point of patient contact. Registration, appointments, billing handoffs, and queue handling had to remain fast enough to avoid congestion.
+This data work was high-risk because it happened under live transition conditions. A hospital cannot pause clinical care while records and inventory are moved. The team had to preserve record continuity, avoid stock mismatches, and make sure departments began day one with usable information.
 
-Pharmacy workflows were refined based on real-time feedback. Laboratory filters and report formats were adjusted for efficiency. Doctors and departments were supported in creating additional forms for specialty-specific documentation.
+The launch also required department-level handholding. Team members physically visited OPDs and departments to provide real-time help, clarify doubts, and support doctors and staff during active use.
 
-## Digitizing inpatient workflows
+## Reception as the first pressure point
 
-One of the most significant shifts was inpatient documentation. Before CARE, inpatient nursing notes and related documentation were largely paper-based. After go-live, these workflows were digitized.
+Reception received special attention because it is the first operational pressure point in a hospital.
 
-Active digital usage increased dramatically, moving from roughly 20 percent to nearly 90 percent in some inpatient workflows. That jump required intensive handholding, but it also showed that CARE could support a deep transition away from paper in a live hospital.
+Registration, appointment handling, billing handoffs, and patient movement all begin there. During go-live, focused training and on-ground support helped reception staff avoid queue buildup and reduce operational stress. Workflows were refined based on real-time feedback so front-desk activity could remain fast during peak periods.
 
-## Digital token system
+CARE also introduced a digital token system to replace manual calling by name or token number. This improved queue visibility, reduced waiting-room confusion, and made patient movement across service points more transparent.
 
-The hospital also introduced CARE's digital token system, replacing manual patient calling practices. This reduced confusion in waiting areas, improved queue visibility, and streamlined movement between departments.
+Token systems can sound simple, but in a live hospital they become part of the coordination fabric between reception, doctors, nurses, pharmacy, lab, and billing.
 
-Token systems can look like a front-desk feature, but in practice they affect patient experience, nurse workload, doctor readiness, and service point coordination. Making queues visible and predictable helped CARE become part of the hospital's operating rhythm.
+## Inpatient workflows become digital
 
-## Kerala CARE and Pallium India continue to scale
+Before CARE, inpatient nursing notes and documentation at Sudheendra were largely paper-based. Post go-live, these workflows moved into the system.
 
-The Kerala Palliative Care Grid continued steady production usage, crossing 257,000 live patient registrations and more than 1.2 million recorded home-care visits by January 2026. Governance dashboards and administrative dashboards were refined across ward, facility, district, and state levels.
+The adoption change was dramatic. Active digital usage rose from roughly 20 percent to nearly 90 percent, creating a steep support curve. Nurses and doctors needed help with inpatient documentation, medication administration, nursing station workflows, and shift-to-shift consistency.
 
-Pallium India also moved into full-scale CARE usage across outpatient and inpatient workflows after its December launch.
+The team supported doctors and departments in creating additional custom forms for specialty-specific documentation. Pharmacy processes were refined based on live feedback so dispensing could remain fast and accurate. Lab filters and report formats were adjusted to improve efficiency and reporting clarity.
 
-January proved that CARE could run as a hospital HMIS, not only as a public health grid. It was a month of infrastructure, migration, training, and operational courage, all pointing toward a more mature digital health platform.
+This is where HMIS implementation becomes clinical change management. The system had to become accurate enough for records, fast enough for staff, and flexible enough for department-specific documentation.
+
+## Finance and management workflows
+
+The accounting team received hands-on support during live usage, including finance tracking, reconciliation workflows, and dashboard-based monitoring.
+
+Hospital management was supported in configuring dashboards and financial tracking processes aligned to their review needs. January engineering also strengthened billing and payment reconciliation, charge item status handling, global and line-item discounts, QR-based invoice lookup, account reports, inventory workflows, diagnostic visibility, and governance controls.
+
+This made the go-live not only a clinical transition but an operational one. CARE needed to support how the hospital reviewed revenue, stock, payments, patient flow, and departmental performance.
+
+## Kerala CARE and Pallium continue in parallel
+
+While the Sudheendra go-live demanded intense on-site work, Kerala CARE continued operating at scale. In January 2026, the Grid had more than 2.57 lakh live patient registrations and more than 12 lakh recorded home care visits.
+
+Governance dashboards and administrative dashboards were refined for ward, facility, district, and state-level review. The team also supported NHM Kerala's KARE program, including requirement evaluation, questionnaire development for risk assessment, and planning for preventive health workflows at `kare.kerala.care`.
+
+Pallium India transitioned to full-scale CARE usage across outpatient and inpatient workflows after its December launch. The team continued coordination calls to review implementation progress, identify gaps, discuss dashboard needs, and refine workflows for facility and home-care operations.
+
+## The launch as a technical proof
+
+The Sudheendra go-live proved that CARE could carry a full hospital transition: on-premise infrastructure, migrated records, validated stock, QR scanners, digital token flows, OP and IP workflows, pharmacy, lab, reception, billing, accounts, dashboards, and department-specific forms.
+
+It also showed the true cost of real deployment. The team had to operate from the hospital for an extended period, support early mornings and late nights, move between floors and departments, reconcile data under live conditions, and optimize workflows while the hospital continued operating.
+
+The result was a working blueprint for affordable, open, production-grade HMIS deployment in a multi-specialty hospital.

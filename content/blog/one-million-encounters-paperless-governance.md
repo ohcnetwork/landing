@@ -16,49 +16,70 @@ mainImage:
   alt: "One million encounters and paperless governance cover illustration"
 ---
 
-December 2025 closed the year with a scale milestone: the Kerala Palliative Care Grid crossed 1 million encounters and more than 270,000 patient registrations.
+December 2025 marked a scale threshold for Kerala CARE: more than one million encounters and more than 2.7 lakh patient registrations were recorded by the end of the month.
 
-That number represented more than usage. It showed that CARE had become part of routine statewide palliative care operations, supporting clinical documentation, home visits, facility reviews, and governance workflows.
+The number is important, but the more interesting story is what the platform had to become to support it. At this scale, CARE could not remain a digital register. It needed governance dashboards, statutory registers, permissioned views, production-grade billing workflows, partner deployments, and launch readiness for a full hospital HMIS.
 
-## Governance dashboards and digital registers
+December was the month those threads converged.
 
-With the palliative care grid operating at scale, the focus shifted toward paperless governance. CARE developed facility-level digital registers that allowed staff to view and download statutory and operational records such as patient registers and procedure registers.
+## From records to governance
 
-Governance dashboards were developed across ward, facility, district, and state levels. These dashboards were permission-based, ensuring users could access the level of information relevant to their responsibilities.
+Kerala CARE moved toward paperless operations by building facility-level digital registers and governance dashboards across ward, facility, district, and state levels.
 
-This work reflected a key lesson from the year: large-scale digital health deployments need more than data capture. They need review systems, accountability structures, and operational visibility that help programs improve over time.
+Facility-level registers allowed staff to view and download statutory and operational records such as patient registers and procedure registers. Governance dashboards were permission-based, giving each level of the system access to the views needed for review and monitoring without exposing everything to everyone.
 
-## Sudheendra HMIS reaches launch readiness
+This matters in a statewide program because scale creates review burden. A state team needs program visibility. District teams need local accountability. Facilities need operational workload data. Ward-level users need actionable lists. A single dashboard cannot serve all of these layers.
 
-At Sree Sudheendra Medical Mission Hospital, December was a final readiness month before the full HMIS go-live planned for January 2026.
+The December dashboard work required repeated review cycles with NHM because initial demographic and operational data visibility was limited. The team refined indicators, registers, and dashboard structures until they matched actual reporting needs.
 
-The team completed staff onboarding and role-based access configuration for doctors, nurses, and administrative users. Department-specific refresher sessions focused on closing workflow gaps and building confidence across OP, IP, pharmacy, lab, reception, inpatient billing, and accounting.
+## Sudheendra reaches launch readiness
 
-The implementation team also worked from the hospital location throughout the month to support testing and real-time issue resolution. Fresh medicine and consumable stock was imported into CARE for validation. Activity definitions, charge items, and observation definitions were cleaned up so service requests and billing would align accurately.
+Sree Sudheendra Medical Mission Hospital moved into final launch-readiness during December. A January 2026 go-live date was agreed with hospital leadership.
 
-Infrastructure planning also continued, including servers, display units, laptops, and other IT requirements for launch.
+The work shifted from first-time onboarding to confidence-building and validation. Doctors, nurses, and administrative staff were onboarded with role-based access controls. Department-specific training continued across OP nursing, IP nursing, laboratory, pharmacy, reception, inpatient billing, and accounting.
 
-## Pallium India launches CARE HMIS
+The training focus became practical: queue management, vitals recording, nursing station operations, consumable dispensing, service order review, medication administration, lab report formats, purchase order handling, stock workflows, dispensing, peak-hour reception scenarios, appointment coordination, billing handoffs, and correction of common errors.
 
-Pallium India officially launched CARE HMIS on 5 December 2025. This was a significant expansion within India's palliative care ecosystem.
+The team also imported a fresh medicine and consumable stock export into CARE for testing and validation. Activity definitions, charge items, and observation definitions were cleaned up so service requests and billing would align correctly.
 
-CARE supported Pallium India's inpatient, outpatient, and home-care workflows. The implementation included training, patient data migration, dashboard setup, questionnaire customization, inventory digitization, and live operational support.
+Infrastructure planning continued with vendors for servers, display units, laptops, and related IT equipment required for launch. The team worked extensively from the hospital location so training and validation could happen in the same environment where CARE would be used.
 
-By the end of December, Pallium India was running CARE HMIS in production across facility and home-care units. This deployment reinforced CARE's adaptability for organizations that combine clinical care, home visits, training, advocacy, and reporting.
+## Production-grade HMIS improvements
 
-## Production-grade improvements
+The December engineering work focused on reliability in live healthcare settings.
 
-Engineering work in December focused on reliability in live environments. Billing, appointments, encounters, inventory, stock, multi-tenancy readiness, automated testing, and print quality all improved.
+Patient accounts and billing gained QR-based invoice and payment lookup, improved invoice filtering, official patient identifiers on invoice views and printouts, clearer print layouts, account lifecycle flexibility, and payment reconciliation layouts that better matched accounting workflows.
 
-Notable additions included:
+Appointments, queues, and encounters gained improved slot behavior, filter caching, restart encounter support, configurable default encounter statuses, clearer handling of discharged encounters, and more reliable navigation from beds and tabs.
 
-- QR-based invoice and payment lookup.
-- Better invoice layouts and patient identifier visibility.
-- Encounter restart and configurable default statuses.
-- Simplified inventory builder.
-- Patient ID card views.
-- Specimen retrieval by accession identifier.
-- Development-level multi-tenancy support.
-- Expanded Playwright coverage for queues, departments, payments, ValueSets, encounters, facilities, devices, and form submissions.
+Inventory and stock management improved through a simplified inventory builder, quantity validation, decimal pricing for purchase deliveries, lot-number tooltips, delivery order tagging, and better delivery payload handling.
 
-December showed CARE operating at two different kinds of scale: statewide palliative care and hospital launch readiness. The platform had become both a public health backbone and a serious HMIS candidate, with governance and reliability now central to the product story.
+Patient identity and clinical context improved through patient ID cards, specimen retrieval by accession identifier, redesigned past symptoms, diagnoses, and medication history tabs, and more reliable questionnaire search and editing.
+
+Development-level multitenancy support was also introduced, allowing simulation and testing of multiple organizations in one codebase. That was an important step toward supporting a broader deployment ecosystem.
+
+## Pallium India enters production
+
+On 5 December 2025, Pallium India officially launched CARE HMIS.
+
+This was a significant adoption milestone because Pallium India is one of India's most influential palliative care institutions. CARE supported inpatient, outpatient, and home-care operations across the organization.
+
+During December, the team conducted continuous training sessions, supported patient data migration, resolved inconsistencies from the previous system, held review meetings, finalized dashboard requirements, set up trackers aligned with regulatory and reporting needs, customized questionnaires to match care protocols, and incorporated improvements based on live feedback.
+
+Pallium India moved into production use of CARE HMIS across its facility and home-care units.
+
+## A public health tool beyond palliative care
+
+NHM Kerala also requested the CARE team to design and support a Health Risk Assessment Tool for the Government of Kerala's Vibe 4 Wellness Campaign, hosted at `health.kerala.care`.
+
+The statewide public health portal was launched by the Chief Minister on 1 January 2026. It enabled citizens to access self-assessment tools, receive evidence-based health guidance, and connect with government health services.
+
+This extended CARE's role beyond palliative care operations into preventive and promotive health infrastructure.
+
+## Scale changed the engineering standard
+
+Crossing one million encounters changes the engineering bar.
+
+At that point, improvements to billing validation, print quality, queue behavior, dashboard permissions, role access, and data extraction are not incremental polish. They are the difference between a system that records activity and a system that can be governed.
+
+December showed CARE operating at that threshold: Kerala CARE at population scale, Pallium India in production, Sree Sudheendra ready for full hospital go-live, and the platform itself becoming more reliable, more auditable, and more deployment-ready.

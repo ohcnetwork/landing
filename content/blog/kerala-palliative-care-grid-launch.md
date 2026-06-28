@@ -16,38 +16,76 @@ mainImage:
   alt: "Launching the Kerala Palliative Care Grid cover illustration"
 ---
 
-March 2025 was a turning point for CARE. On 3 March, the Kerala Palliative Care Grid was officially launched, beginning the statewide rollout of a digital backbone for community-based palliative care.
+On 3 March 2025, the Chief Minister of Kerala officially launched Kerala CARE, the state's Palliative Care Grid. It was the beginning of statewide rollout for a digital backbone designed to support community-based palliative care across government, local self-government, and health-system teams.
 
-The launch was only the visible moment. The deeper work happened in the days and weeks around it: training, onboarding, issue resolution, facility setup, role creation, documentation, and continuous product iteration based on what users encountered in the field.
+The launch was a public milestone, but the work that followed was the real test. CARE had to move quickly from ceremony to daily use: facilities had to be created, users had to be trained, Medical Officers in Charge had to be assigned, nurses had to register patients, and home visits had to be recorded digitally across districts.
 
-## Training across the state
+## Training NHM teams for statewide use
 
-A comprehensive training program was conducted for National Health Mission and Local Self Government Department teams. On 6 and 7 March, district-level nurses, doctors, and palliative care coordinators were trained in Trivandrum. Hands-on sessions introduced CARE workflows and gave participants access to a staging environment so they could practice before field use.
+Immediately after the launch, the team executed a comprehensive training program for National Health Mission teams.
 
-From 10 March onward, district-level training expanded to all 14 districts of Kerala. Some sessions were conducted physically, while others were supported remotely. District Medical Officers were trained on creating Medical Officer in Charge roles and configuring home-care teams within facilities.
+On 6 and 7 March, district-level NHM nurses, doctors, and palliative district coordinators were trained in Trivandrum. The sessions included hands-on CARE training, and staging credentials were shared so users could test workflows and become familiar with the platform before using it in production.
 
-The local government side also needed training. Teams were onboarded on facility creation, user ID setup, and the process of configuring primary palliative care units in the grid.
+From 10 March onward, district-level training began across all 14 districts of Kerala. The Pupilfirst team physically handled training in six districts and remotely trained eight districts. This split mattered because the rollout was statewide, but the implementation team was lean. The training model had to combine in-person handholding with remote scale.
 
-This mattered because CARE was not being deployed as software alone. It was being introduced as a new operational model across clinical, administrative, and community health teams.
+Separate sessions were also conducted for District Medical Officers. These sessions focused on role setup: creating Medical Officer in Charge roles within districts and configuring home care teams inside each facility.
 
-## From launch to operational handover
+## Training LSGD and local body teams
 
-After the launch, local teams began creating healthcare facilities and assigning medical officers. Nurses started registering patients and recording home-care visits through CARE. The implementation team provided real-time support, answered user queries, and ran frequent reviews with state and district teams.
+The Palliative Care Grid depends not only on health staff but also on local self-government structures. March therefore included a second training track for LSGD teams.
 
-By the end of the month, the platform, tools, and credentials had been handed over to the National Health Mission team so the grid could be managed independently. That handover was an important sign of institutional ownership. CARE was no longer just being demonstrated. It was becoming part of routine program operations.
+A state-level session introduced district-level LSGD directors to the overall flow of the Grid and the user creation process. The Information Kerala Mission team, an autonomous body under LSGD, received physical state-level training so it could provide technical support. District-level training followed for LSGD secretaries across panchayat, municipality, corporation, district, and state levels.
 
-## Malayalam and frontline usability
+This was crucial because LSGD teams were responsible for creating healthcare facilities and supporting the local operating structure. A digital grid only works if the administrative hierarchy behind it is correctly represented.
 
-March also completed the platform's Malayalam localization. This was essential for adoption among primary-level health workers and community teams.
+## Operationalizing the Grid
 
-The statewide rollout made one reality unmistakable: many frontline users had minimal prior exposure to digital systems. Some worked with older devices or unstable connectivity. Some preferred phone support even after training material was shared. Others needed repeated reassurance before moving away from paper-based habits.
+During March, the Grid moved into active operation.
 
-These constraints shaped CARE's product direction. The team made UI and workflow changes quickly based on field observations. The system became simpler, faster, and more forgiving in the places where users needed it most.
+LSGD teams began creating healthcare facilities across Kerala and assigning Medical Officers in Charge. NHM nurses started registering patients and recording home care visits. The implementation team provided on-ground and remote support, resolving issues and answering user queries in real time.
 
-## Student and contributor capacity
+Frequent reviews with NHM and LSGD helped keep the rollout aligned. The team also held weekly review calls with the State Palliative Care Grid Coordinator and reviewed implementation progress with officials across health and local self-government.
 
-March also saw a major expansion of the student contributor pipeline. A large number of students applied for a program connected to CARE development, creating a wider pool of future contributors and interns.
+The ABDM registration process for the Kerala CARE instance also progressed and was awaiting NHA approval, linking the deployment to India's broader digital health infrastructure direction.
 
-That effort reinforced a long-term belief behind CARE: digital public infrastructure needs people around it. It needs engineers, implementers, clinicians, documentation writers, trainers, and local problem-solvers who understand the system and can improve it.
+## Malayalam localization and field-led refinement
 
-March proved that CARE could move from pilot to statewide deployment. It also proved that the work after launch is the real product test. Training, support, localization, and rapid iteration became as important as the code itself.
+March confirmed that localization and usability were not optional. The platform's Malayalam localization was completed, making CARE more accessible for primary-level healthcare workers and local teams.
+
+Ground-level exposure also led to significant UI, UX, and functional improvements. Primary care nurses often had limited prior exposure to digital tools, and many field users worked on older or lower-performance mobile devices. The team had to respond with practical changes, not abstract design preferences.
+
+This is one of the most important lessons from the launch month: a statewide digital health system improves through field contact. Live usage exposed training gaps, mobile performance issues, workflow confusion, and paper-to-digital resistance. Each of those became product and implementation input.
+
+## Handover to NHM
+
+One of the most significant March milestones was the official handover of the Kerala CARE Grid to the NHM team. The platform, tools, and credentials were handed over so NHM could independently manage and operate the Grid statewide.
+
+That handover changed the meaning of the deployment. CARE was not being held as a vendor-controlled application. It was being embedded into a public health operating model, with government ownership and responsibility.
+
+For digital public infrastructure, this distinction matters. Long-term sustainability depends on whether the public system can operate the infrastructure, not merely whether a technical team can demonstrate it.
+
+## The human implementation challenge
+
+The launch also made the constraints visible.
+
+The team had to manage multiple training sessions in parallel across the state with limited staffing. Travel logistics were demanding. Field support volume was high, and many users preferred calling for help despite documentation and training materials. Some staff were hesitant to move away from pen-and-paper practices. Outdated mobile devices affected speed and user satisfaction.
+
+The absence of a dedicated implementation support team meant the core product team had to handle training, field support, issue resolution, and product development simultaneously. This slowed some HMIS work and made prioritization harder.
+
+These challenges are not footnotes. They are the reality of public health technology implementation. A system succeeds when it has enough operational humility to handle them.
+
+## A wider ecosystem of builders
+
+March also saw the launch of the GDC AI Workforce Internship Program in Kerala by the Higher Education Minister, Prof. R. Bindu. More than 4,600 students applied and began coursework through Kerala Technical University channels.
+
+While this initiative was separate from the Palliative Care Grid deliverable, it reflected a wider ecosystem-building ambition around CARE: train more people, create contributor pathways, and connect public-good software to young technical talent.
+
+## From launch event to operating model
+
+March 2025 converted CARE from a pilot-backed platform into an operating model for statewide palliative care.
+
+The statewide launch, training across all 14 districts, Malayalam localization, NHM handover, and live patient registration created a new responsibility structure around the software. CARE was no longer only a platform under development. It had become a live digital backbone for Kerala's palliative care network.
+
+That operating model included government ownership, district-level training, local facility creation, Medical Officer assignment, field support, and continuous product correction from frontline usage.
+
+The launch was the visible part. The durable achievement was the handover of a working system into the hands of the public health teams who would run it.

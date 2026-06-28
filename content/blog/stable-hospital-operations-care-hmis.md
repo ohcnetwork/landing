@@ -16,44 +16,74 @@ mainImage:
   alt: "From go-live support to stable hospital operations cover illustration"
 ---
 
-February 2026 was the month CARE HMIS moved from go-live support into stable hospital operations at Sree Sudheendra Medical Mission Hospital.
+February 2026 was the first full stabilization month after CARE HMIS went live at Sree Sudheendra Medical Mission Hospital.
 
-After the intensity of January's full launch, departments began using CARE more independently. The implementation team still supported edge cases, but the center of gravity changed from urgent handholding to continuous optimization.
+The center of gravity changed. January had required intense launch support. February was about proving that the hospital could use CARE independently, that departments could manage routine workflows, and that the platform could keep improving without remaining dependent on constant handholding.
 
-## Stabilizing daily hospital use
+Sree Sudheendra moved into a stable operational phase with strong adoption across OP, IP, pharmacy, laboratory, reception, accounts, and management workflows.
 
-CARE usage stabilized across OP, IP, pharmacy, laboratory, reception, accounts, and management workflows. Staff became more confident navigating the system and handling day-to-day operational scenarios.
+## Independent use across departments
 
-The team continued daily conversations with departments to identify friction points and refine workflows. Weekly department-level meetings helped surface pain points, review gaps, and introduce targeted improvements.
+Departments began managing day-to-day workflows in CARE with increasing confidence. The implementation team still supported complex edge cases, but routine operations were no longer entirely dependent on live intervention.
 
-Hospital-wide doctor meetings created a structured space for clinical feedback across specialties. This was essential because doctors experience software differently from reception, pharmacy, lab, or accounting teams. Their input helped prioritize usability improvements that supported clinical adoption.
+Daily conversations with departments helped identify friction points. Weekly department-level meetings reviewed workflow gaps and introduced targeted improvements. Hospital-wide doctor meetings created a structured space for clinicians across specialties to discuss what was working and what needed refinement.
 
-By the end of February, the hospital had moved into a stable operational phase with increasing independence across departments.
+This feedback loop was important because each department experiences HMIS differently. Reception feels queue pressure. Doctors feel documentation friction. Pharmacy feels stock and billing speed. Lab teams feel specimen and reporting accuracy. Accounts teams feel reconciliation and auditability. Management needs dashboards that show whether the system is running well.
 
-## Billing flexibility and auditability
+February's stabilization work treated those perspectives as input to product evolution.
 
-Engineering work in February strengthened patient accounts, billing, procurement, and audit trails.
+## Billing flexibility and audit trails
 
-The platform introduced support for transferring charge items between accounts, marking accounts as care completed, collecting pending payments after closure, and improving invoice layouts. Auditability improved through created-by tracking across dispense orders, request orders, delivery orders, and charge items.
+Patient accounts, billing, and financial workflows improved significantly.
 
-CARE also added a structured Goods Receipt Note numbering system for lab and pharmacy deliveries. This improved procurement traceability and helped align stock workflows with regulatory and operational requirements.
+CARE introduced support for transferring charge items between accounts, allowing real-world billing corrections and inter-department adjustments. Accounts could be marked as "Care Completed," formally closing the account after treatment and billing activities were complete. Once closed, new charge items could not be added, but pending payments could still be collected without reopening the account.
 
-These changes reflected a maturing HMIS principle: workflows need both discipline and correction paths. Real hospitals need to correct mistakes without corrupting audit trails.
+Invoice layouts improved, including medication billing UI, custom print headers, and clearer print formats across invoices, appointments, and prescriptions.
 
-## Templates for faster clinical work
+Auditability also improved. "Created by" tracking was added across dispense orders, request orders, delivery orders, and charge items. Audit information became visible in billing tables and workflows, improving transparency and compliance.
 
-February added medicine templates and service request templates. Clinicians could create reusable sets of medications or lab and procedure orders, then apply them quickly during care.
+Procurement gained a structured Goods Receipt Note numbering system for lab and pharmacy supply deliveries. Each delivery received a unique GRN number, improving traceability across vendor bills, pharmacy stock, and audit review.
 
-Organization-level template sharing also allowed teams to standardize common clinical patterns across departments. This reduced repetitive data entry and helped improve consistency in care processes.
+## Faster pharmacy and clinical templates
 
-CARE also improved clinical data capture with support for body weight, girth measurements, transfusion parameters, and standardized fluid intake and output tracking.
+Pharmacy operations became more efficient through multi-prescription billing, better invoice generation, faster dispensing, improved search within dispense dialogs, support for returns from multiple dispense events, and stronger quantity validation.
 
-## Dashboards and reporting mature
+Consumables were added to medication requests, allowing CARE to manage both medicines and consumable requests for a patient. FIFO logic improved stock lot selection, and delivery/request order views gained serial numbers, extended details, print functionality, and "created by" tracking.
 
-Operational dashboards became a major area of work. Departmental and individual performance tracking gave hospital leadership visibility into operational efficiency. Doctor-wise OP and IP income dashboards provided revenue and profitability insights. Counter-level financial tracking improved visibility into cash operations.
+Clinicians gained medicine templates and service request templates. Medicine templates allowed predefined sets of medications to be prescribed in one action. Service request templates allowed common lab investigations and procedures to be ordered through reusable sets.
 
-Automated daily and month-to-date reports gave stakeholders a regular view of operational and financial performance. Stock dashboards improved inventory control through stock movement views and low-stock alerts.
+Templates are more than convenience. They standardize routine care patterns, reduce repetitive typing, and improve speed during high-volume clinical work.
 
-Kerala CARE also continued scaling, reaching close to 300,000 patient registrations and more than 1.2 million home-care visits. A beta version of enhanced governance dashboards was released, improving visibility across ward, facility, district, and state levels.
+## Dashboards for performance and finance
 
-February showed CARE entering a more mature phase. The story was no longer only about launch. It was about reliable operations, data-driven management, and continuous improvement inside live healthcare environments.
+February also deepened CARE's analytics layer.
+
+Departmental and individual performance dashboards tracked operational efficiency and staff performance. Doctor-wise revenue and profitability dashboards gave management visibility into OP and IP income by doctor. Counter-level financial tracking captured cash dealings across invoices, payments, and transactions.
+
+Daily and month-to-date reports were generated and shared by email. Stock dashboards showed inventory levels, movement, and low-stock alerts to support audit and replenishment.
+
+These dashboards moved CARE from transaction capture toward operational intelligence. Hospital leadership could begin reviewing performance, revenue, cash flow, and stock using data produced by routine workflows rather than manually assembled reports.
+
+## Infrastructure, integrations, and hardware
+
+The team continued supporting infrastructure and hardware, including tablets, printers, and additional computer systems. High-traffic areas such as pharmacy and reception received focused workflow optimization to reduce turnaround time during peak hours.
+
+Discussions began with laboratory equipment vendors to explore direct diagnostic result integration into CARE. The team also engaged accounting ERP teams to plan financial system integrations.
+
+These conversations pointed to the next phase of HMIS maturity: reducing manual entry by connecting CARE with machines, instruments, and specialized finance systems.
+
+## Kerala CARE governance keeps advancing
+
+Kerala CARE continued operating at state scale. As of 28 February 2026, it had around 3 lakh patient registrations and more than 12 lakh home care visits.
+
+Stakeholder discussions shaped improved facility-level dashboards, and a beta version of governance dashboards was released with richer data points and actionable insights across ward, facility, district, and state levels.
+
+Groundwork also began for an organizational role structure within CARE, enabling clearer assignment of responsibility across administrative levels from state to ward. This would later become a key part of structured governance for the Palliative Care Grid.
+
+## Stabilization as proof of delivery
+
+The strongest signal in February was not a new launch. It was reduced dependency.
+
+Sree Sudheendra's departments could operate CARE with minimal support for routine workflows. The platform continued improving through live feedback. Billing, pharmacy, inventory, templates, dashboards, and auditability all became stronger because the hospital was using the system in real conditions.
+
+That stable operation is what validates an HMIS deployment. A go-live shows that a system can start. Stabilization shows that it can stay.

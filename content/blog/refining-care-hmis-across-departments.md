@@ -16,49 +16,82 @@ mainImage:
   alt: "Refining CARE HMIS across hospital departments cover illustration"
 ---
 
-October 2025 was about deepening adoption. After the September HMIS pilot launch, CARE moved further into day-to-day hospital operations at Sree Sudheendra Medical Mission Hospital. The work expanded across departments, improved core operational modules, and continued strengthening the Kerala Palliative Care Grid.
+October 2025 was the month CARE HMIS began moving from pilot presence into deeper departmental adoption at Sree Sudheendra Medical Mission Hospital.
 
-This phase was less about announcing a go-live and more about doing the slower work that makes go-live meaningful: workflow correction, staff training, data standardization, and repeated iteration.
+The September launch had proved CARE could run in a live hospital environment. October focused on the next, harder layer: expanding coverage, digitizing more real workflows, standardizing data, and adjusting the platform based on live use by doctors, nurses, pharmacists, lab staff, store teams, accountants, and administrators.
 
-## Expanding hospital coverage
+## Pediatric OP becomes structured digital care
 
-The pediatric outpatient unit was activated on CARE, with doctors and nursing station teams trained on OP workflows, patient documentation, and service request handling. Existing pediatric questionnaires and assessment formats were digitized so clinical data could be captured in structured form.
+The pediatric outpatient unit was activated on CARE. Doctors and nursing station teams were trained on outpatient workflows, patient documentation, and service request handling.
 
-User onboarding expanded across hospital staff. Accounts were created, departments assigned, and role-based permissions configured across nursing stations, OP desks, and support units.
+Existing pediatric questionnaires and assessment formats were digitized into CARE so clinical data could be captured in structured form. This is one of the most important shifts in an HMIS rollout: the system stops being only a patient registration and billing layer and begins representing specialty-specific clinical practice.
 
-Inpatient workflows also began. Nurses across designated IP floors were trained on admissions, vitals capture, order entry, medication administration, and handover documentation. This was a major step because inpatient care is documentation-heavy and shift-based. It requires continuity, not just one-time encounter capture.
+Pediatric workflows also tested whether CARE's questionnaire system could adapt to real departmental documentation without requiring custom software for every specialty. The answer shaped later work on templates, favorites, and extensible clinical forms.
 
-## Inventory, pharmacy, lab, and accounting
+## Hospital-wide users, roles, and nursing stations
 
-The inventory system was rebuilt to improve stock visibility and operational workflows for medicines, consumables, and equipment. Stock lists were validated and imported into CARE. Pharmacy and casualty workflows were reviewed and optimized based on early pilot usage.
+October brought broader user onboarding across the hospital.
 
-The lab module continued to mature. Activity definitions and observation definitions were updated with SNOMED CT coding. Observation interpretations were mapped so results could be classified more consistently.
+Floor in-charges and nursing staff were trained on account creation, department allocation, nurse-doctor linkage, and shift adjustments. Nursing stations across floors were brought into CARE workflows. User credentials were created, departments assigned, and role-based access configured for nursing stations, OP desks, and support units.
 
-Accounting integration also advanced. Multiple discussions and demonstrations with accounting and administrative teams helped refine the CARE-ERP plugin. Doctor consultation fees were configured as charge items, ensuring financial workflows reflected the hospital's actual operating model.
+This role configuration work is easy to miss, but it is central to healthcare software. A nurse, doctor, pharmacist, lab technician, receptionist, store manager, and accountant should not see or modify the same parts of the system. CARE had to support hospital-specific access while protecting governance and data integrity.
 
-## Platform improvements for live environments
+## Inventory and product knowledge are rebuilt
 
-October engineering work improved payments, inventory, bed management, queue operations, patient workflows, localization, access control, and testing.
+The engineering work in October rebuilt the inventory module to improve stock visibility, data structures, and operational workflows for medicines, consumables, and equipment.
 
-Notable improvements included:
+Product knowledge rendering was corrected so dosage forms, categories, pricing, and other attributes displayed consistently. Charge item definitions were standardized so they applied correctly when creating service requests or billing items. Inventory navigation was improved to reduce confusion.
 
-- Interactive bed layout visualization.
-- Role cloning for faster access setup.
-- Better patient tag display.
-- Improved clinical history and questionnaire print outputs.
-- Primary queue support in token workflows.
-- Animated queue counters.
-- Clearer deceased status in appointments.
-- Expanded translations.
-- Stronger two-factor authentication flows.
-- Introduction of Playwright end-to-end testing.
+At the hospital, the team worked with store management to review existing inventory workflows, identify stock-flow gaps, and improve stores operations. Updated stock lists for medicines, consumables, and implants were compiled, validated, and imported into CARE.
 
-These changes strengthened CARE as a live system, not just a feature roadmap.
+This work made the pharmacy and stores layer more reliable. In a hospital, stock data is not a background table. It affects dispensing, billing, procurement, expiry management, and financial reconciliation.
 
-## Kerala CARE volunteer and dashboard work
+## Lab standardization with SNOMED CT
 
-The Kerala Palliative Care Grid received a new version of CARE with simplified nursing workflows, faster access to past encounters, and smoother documentation. State and district teams were trained on the updated release.
+The lab module continued to mature through workflow optimization and terminology mapping.
 
-The volunteer module was implemented, allowing nurses to assign patients to volunteers and record volunteer visit details. Requirements were also captured for facility-level dashboards that would help monitor operations, performance indicators, and program metrics.
+Activity definitions and observation definitions were updated with SNOMED CT coding for clinical standardization. The team manually reviewed the complete list of tests and mapped corresponding SNOMED codes and observation interpretations so diagnostic results could be classified more consistently.
 
-October showed how CARE's two major deployment environments reinforced each other. Hospital workflows pushed the platform toward depth. The palliative care grid pushed it toward scale, governance, and community coordination. Together, they made CARE more complete.
+This is the sort of work that makes an HMIS more than digitized paperwork. A lab report with structured observations and standard terminology is easier to query, interpret, compare, and integrate. It can support dashboards, interoperability, and future clinical decision-support workflows.
+
+## Inpatient workflows begin
+
+October also marked the beginning of inpatient rollout.
+
+Nurses across designated inpatient floors were onboarded. Training covered admission flow, vitals capture, order entry, medication administration, and handover documentation.
+
+Inpatient care is a major leap in complexity compared with outpatient workflows. It involves shifts, beds, medication rounds, consumables, nursing notes, physician orders, discharge planning, and continuous documentation. Starting IP workflows meant CARE was moving into the operational core of the hospital, not merely its front desk.
+
+## Accounting and doctor fee configuration
+
+The CARE-ERP accounting plugin was demonstrated to accounting and administrative teams. Multiple feedback loops helped align the plugin with hospital financial practices.
+
+Doctor consultation fees were configured as charge items so billing could reflect the hospital's actual operating model. Patient account workflows improved through better transaction cancellation, discount calculations, invoice navigation, and financial error handling.
+
+The accounting work reinforced a recurring HMIS lesson: clinical adoption and financial correctness have to mature together. A hospital may tolerate some UI friction during transition, but it cannot tolerate unreliable billing.
+
+## Kerala CARE gets volunteer workflows
+
+The Kerala Palliative Care Grid also evolved in October.
+
+A new version of CARE was released across the palliative grid with simplified nursing workflows, faster access to past encounters, and improved documentation flows. NHM state teams were trained on the updated workflows, and district-level doubt-resolution sessions helped teams transition.
+
+The Volunteer Module was implemented, allowing nurses to assign patients to volunteers and record volunteer home-visit details directly within CARE. A Volunteer Visit Form supported structured documentation of volunteer activity.
+
+This extended CARE's representation of palliative care beyond formal clinical staff. Community participation is part of Kerala's palliative care model, and the software had to make that participation visible without losing accountability.
+
+## The quality discipline begins to shift
+
+October also introduced Playwright end-to-end testing. Early tests covered location creation, user schedule creation, and patient registration, and the team began refining workflows for automated testing, caching, and reporting.
+
+This was a quiet but important platform move. CARE was now touching billing, inventory, bed management, queues, lab, pharmacy, palliative care, roles, forms, and hospital workflows. Manual testing alone could not protect that surface area.
+
+Automated testing became part of making CARE deployable with confidence.
+
+## Live usage became the design review
+
+October's work was not defined by one headline feature. It was defined by refinement under live pressure.
+
+Pediatric OP, inpatient nursing, inventory, lab standardization, accounting, volunteer workflows, role management, keyboard interactions, multilingual support, and Playwright testing all moved in parallel. Around 100 pull requests landed during the month, while the team continued on-site hospital onboarding and statewide palliative support.
+
+That is what a real HMIS rollout looks like after go-live. The product becomes a negotiation between platform consistency and local workflow truth. October showed CARE absorbing that negotiation without losing its core architecture.

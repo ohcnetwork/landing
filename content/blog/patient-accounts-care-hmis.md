@@ -16,45 +16,84 @@ mainImage:
   alt: "Patient accounts and the next layer of CARE HMIS cover illustration"
 ---
 
-July 2025 added a major operational layer to CARE HMIS: patient accounts. With laboratory and pharmacy workflows taking shape, CARE needed a way to connect billable services, invoices, payments, advances, and outstanding balances to the patient journey.
+July 2025 added one of the most consequential layers in CARE HMIS: patient accounts.
 
-Patient accounts made that connection explicit.
+Hospitals do not operate on clinical records alone. Every consultation, lab test, procedure, medicine, consumable, advance, invoice, payment, and outstanding balance has to be tracked accurately. If financial workflows are disconnected from care workflows, staff are forced into duplicate entry, reconciliation becomes fragile, and management loses visibility into day-to-day operations.
 
-## Encounter-level accounts
+The Patient Accounts module was designed to connect billable activity to the encounter-level reality of care.
 
-CARE introduced per-encounter patient accounts so that every charge item could flow into a clear financial record. This allowed staff to review due amounts, billed totals, payments received, advances, and outstanding balances from a single account overview.
+## Encounter-level financial tracking
 
-The module supported:
+CARE's Patient Accounts module supports end-to-end account management: capturing charges for billable services, generating invoices, recording and reconciling payments, tracking advances, and showing outstanding balances.
 
-- Charge item definitions for billable services.
-- Automatic charge generation when services are prescribed.
-- Invoice creation from unbilled charge items.
-- Payment recording across full, partial, and advance payments.
-- Reconciliation of payments with invoices.
-- Quick filters for invoices, charge items, and payments.
+Charge item definitions allow facilities to configure billable services. When a service is prescribed, charges can auto-generate with the correct pricing, discounts, and applicable taxes. Each encounter creates its own account so charges can flow into the right clinical context rather than becoming a loose administrative entry.
 
-This was a key HMIS milestone because clinical workflows and financial workflows often break apart in hospital systems. CARE's direction was to keep them connected without making the clinician carry administrative burden.
+The account overview gives staff a consolidated view of amount due, billed totals, payments received, advances, and outstanding balances. Quick actions let users review charges, create invoices, and record payments.
 
-## Better patient identification
+Invoice management allows staff to generate invoices by selecting unbilled charge items. Payments can be recorded as full or partial payments, and multiple payment methods are supported. Quick filters make it easier to search invoices, charge items, and payments.
 
-July also improved patient identity handling. Facilities could configure their own patient identifiers, including official IDs or local hospital numbers. Multiple identifiers could be linked to the same patient, giving hospitals flexibility without losing searchability.
+This made CARE's HMIS story more complete. The platform could now begin to connect clinical orders, services, and financial settlement in a single patient-centered workflow.
 
-Patients, encounters, and appointments also gained configurable tags. This allowed facilities to classify patients by priority, program, illness type, visit type, or any local category required for care coordination and reporting.
+## Configurable identity and tagging
 
-These capabilities are simple on the surface, but powerful in practice. Hospitals and public health programs often have their own classification needs. CARE needed to support those realities without hardcoding them into the platform.
+July also improved patient and encounter identity.
 
-## A stronger encounter overview
+Facilities can configure patient identifiers according to their local needs, whether official IDs such as PAN or Aadhaar, hospital-assigned numbers, or other instance-specific identifiers. Multiple identifiers can be linked to a single patient.
 
-The encounter overview page was redesigned to give clinicians a more complete view of the patient journey. The new clinical history tab brought past encounters together, while action buttons made it faster to assign locations, update departments, and complete common tasks.
+This flexibility is crucial in India, where healthcare institutions may use different legacy identifiers, government IDs, local hospital numbers, and program-specific IDs. A rigid identifier model would make adoption harder and data migration more painful.
 
-Vitals comparison was added inside encounters, helping clinicians compare current values with earlier readings. Appointment search by patient identifier also improved navigation in high-volume settings.
+Patient tags, encounter tags, and appointment tags were also added. Facilities can use tags to classify patients by economic background, illness type, care priority, visit type, program affiliation, or other local categories. Tags are simple, but they make workflows more adaptable to real institutional needs.
 
-These improvements reduced friction for the users who spend the most time inside CARE: doctors, nurses, reception staff, and care coordinators.
+## A richer encounter overview
 
-## Preparing for hospital deployment
+The redesigned Encounter Overview page gave clinicians a more complete view of the patient journey.
 
-July also marked the beginning of pre-implementation groundwork for the Sudheendra Mission Hospital HMIS pilot. The team began workflow mapping, questionnaire specifications, infrastructure assessment, and operational readiness planning.
+The new Clinical History tab consolidated encounters from the first visit to the present, making it easier to review prior care. Vitals comparison allowed users to compare current readings with previous values during consultation. Action buttons were streamlined so tasks such as assigning a location or department could be completed faster.
 
-At the same time, Kerala CARE continued to scale. Patient registrations crossed 180,000 and cumulative home visits surpassed 400,000 by the end of July.
+The platform also added support for assigning a treating doctor to inpatient records, with the treating doctor's name appearing in discharge and treatment summaries. This aligned CARE with government hospital protocols where inpatient files are formally under a responsible doctor.
 
-July's work made CARE more complete as an HMIS. Patient accounts connected money to encounters. Identifiers and tags made the system more configurable. Encounter improvements made clinical review faster. And the hospital pilot moved from concept into concrete implementation planning.
+These improvements made the encounter page less of a static record and more of a working clinical surface.
+
+## Scheduling and front-desk improvements
+
+July included several improvements that would later matter deeply for hospital pilot readiness.
+
+Appointments could be searched by patient identifiers, making it easier to locate bookings in high-volume environments. Appointments could be grouped by practitioners so staff could coordinate schedules across multiple providers. A patient profile could be opened directly from the appointments list without requiring date-of-birth validation.
+
+Appointments could also be rescheduled to another practitioner within the same facility, allowing flexible reallocation when availability changed.
+
+The patient address field gained support for location links, so staff could open an exact location in maps. For home-based care and palliative follow-up, this small feature can reduce operational confusion.
+
+## Better forms, uploads, and validation
+
+The questionnaire editor was optimized for mobile view, with support for case-sensitive text, a sticky sidebar, and inline question insertion after each question. This reduced the friction of building and editing long clinical forms.
+
+File upload gained support for selecting a preferred camera when multiple cameras were available. The validation layer was upgraded to Zod v4, improving type inference, error messaging, schema consistency, and the safety of form handling.
+
+These changes may sound technical, but they make implementation easier. A platform that can be configured safely and quickly is more likely to adapt to different hospitals without becoming brittle.
+
+## Kerala CARE continues scaling
+
+While the HMIS financial layer advanced, the Kerala Palliative Care Grid continued to scale after its formal public launch.
+
+The Government of Kerala began planning to expand the Grid to secondary and tertiary healthcare units and NGOs. Discussions with NHM focused on new roles, access rights, data collection for secondary and tertiary settings, NGO and volunteer integration, and dashboards for monitoring expanded operations.
+
+By 31 July 2025, Kerala CARE had crossed 1.8 lakh patient registrations and more than 4 lakh cumulative home visits.
+
+This continued growth reinforced a central product lesson: CARE needed to support both patient-level clinical workflows and program-level governance at the same time.
+
+## Preparing for Sudheendra
+
+July also began concrete groundwork for the Sree Sudheendra Medical Mission Hospital HMIS pilot.
+
+The team conducted multiple hospital visits to understand the operational environment, map existing workflows, define questionnaire requirements, and document prerequisites for a staged go-live. This preparation covered clinical, administrative, and operational workflows and began turning CARE's modules into a deployment plan.
+
+The team also welcomed Gauritejas A as Product Operations Manager, strengthening daily operations, deployment coordination, and implementation capacity. This was important because by July, CARE was no longer only a software effort. It was a multi-deployment operational program.
+
+## Accounts changed CARE's center of gravity
+
+Patient Accounts changed CARE's center of gravity because it connected clinical activity to institutional operations.
+
+Before this layer, CARE could represent patients, encounters, orders, lab workflows, pharmacy requests, and forms. With accounts, each billable service could flow into charges, invoices, payments, advances, and balances at the encounter level. That made the system more usable for the people who actually keep a hospital running: reception, pharmacy, lab, billing, accounts, and management teams.
+
+Configurable identifiers, tags, appointment search, richer encounter views, and Sudheendra groundwork made the same point from another direction. CARE was becoming a shared core that could carry local variation without losing the integrity of the record.
