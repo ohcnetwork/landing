@@ -25,8 +25,51 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>
 }): Promise<Metadata> {
   const post = getPostBySlug((await params).slug)
+  if (!post) return {}
 
-  return post ? { title: post.title, description: post.excerpt } : {}
+  const canonicalPath = `/blog/${post.slug}`
+  const categories = post.categories?.map((category) => category.title) || []
+  const authorName = post.author?.name || 'Open Healthcare Network Foundation'
+  const image = {
+    url: `/blog/og/${post.slug}.png`,
+    width: 1200,
+    height: 630,
+    alt: post.mainImage?.alt || `${post.title} cover image`,
+  }
+
+  return {
+    title: post.title,
+    description: post.excerpt,
+    authors: [{ name: authorName }],
+    keywords: [
+      post.title,
+      'Open Healthcare Network',
+      'CARE HMIS',
+      'open healthcare infrastructure',
+      ...categories,
+    ],
+    alternates: {
+      canonical: canonicalPath,
+    },
+    openGraph: {
+      type: 'article',
+      url: canonicalPath,
+      title: post.title,
+      description: post.excerpt,
+      siteName: 'Open Healthcare Network',
+      publishedTime: post.publishedAt,
+      authors: [authorName],
+      tags: categories,
+      images: [image],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      site: '@ohcnetwork',
+      title: post.title,
+      description: post.excerpt,
+      images: [image.url],
+    },
+  }
 }
 
 export default async function BlogPost({
