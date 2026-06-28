@@ -1,3 +1,4 @@
+import { execFileSync } from 'child_process'
 import fs from 'fs'
 import matter from 'gray-matter'
 import path from 'path'
@@ -5,6 +6,7 @@ import path from 'path'
 const root = process.cwd()
 const postsDirectory = path.join(root, 'content/blog')
 const coversDirectory = path.join(root, 'public/blog/covers')
+const ogDirectory = path.join(root, 'public/blog/og')
 
 const palettes = [
   {
@@ -54,7 +56,7 @@ const palettes = [
   },
 ]
 
-const motifs = ['grid', 'route', 'modules', 'dashboard', 'clinical']
+const fallbackMotifs = ['grid', 'route', 'modules', 'dashboard', 'clinical']
 
 function escapeXml(value) {
   return String(value)
@@ -104,6 +106,16 @@ function shortDate(value) {
     year: 'numeric',
     timeZone: 'UTC',
   })
+}
+
+function selectMotif({ slug, title, excerpt, categories }, seed) {
+  const primaryText = `${slug} ${title}`
+
+  if (/\b(lab|laboratory|loinc|specimen)\b/i.test(primaryText)) {
+    return 'lab'
+  }
+
+  return fallbackMotifs[seed % fallbackMotifs.length]
 }
 
 function motifSvg(type, palette, seed) {
@@ -176,6 +188,29 @@ function motifSvg(type, palette, seed) {
     `
   }
 
+  if (type === 'lab') {
+    return `
+      <rect x="910" y="198" width="485" height="545" rx="38" fill="#ffffff" stroke="${palette.ink}" stroke-width="3" opacity="0.95"/>
+      <rect x="955" y="250" width="235" height="390" rx="24" fill="${palette.wash}" stroke="${palette.primary}" stroke-width="3" opacity="0.92"/>
+      <text x="985" y="305" fill="${palette.primary}" font-family="'Switzer', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="31" font-weight="800" letter-spacing="2">FHIR LAB</text>
+      <rect x="985" y="350" width="150" height="14" rx="7" fill="${palette.ink}" opacity="0.18"/>
+      <rect x="985" y="392" width="170" height="14" rx="7" fill="${palette.secondary}" opacity="0.78"/>
+      <rect x="985" y="434" width="122" height="14" rx="7" fill="${palette.ink}" opacity="0.18"/>
+      <rect x="985" y="494" width="72" height="72" rx="12" fill="#ffffff" opacity="0.95"/>
+      <path d="M999 508h14v14h-14zM1027 508h14v14h-14zM999 536h14v14h-14zM1041 536h14v14h-14z" fill="${palette.primary}" opacity="0.9"/>
+      <rect x="1228" y="260" width="54" height="302" rx="27" fill="#ffffff" stroke="${palette.ink}" stroke-width="3"/>
+      <path d="M1230 455 C1244 438 1264 438 1280 455 V534 C1280 550 1268 562 1255 562 C1242 562 1230 550 1230 534 Z" fill="${palette.secondary}" opacity="0.82"/>
+      <rect x="1304" y="300" width="54" height="262" rx="27" fill="#ffffff" stroke="${palette.ink}" stroke-width="3"/>
+      <path d="M1306 470 C1320 453 1340 453 1356 470 V536 C1356 551 1344 562 1331 562 C1318 562 1306 551 1306 536 Z" fill="${palette.accent}" opacity="0.86"/>
+      <circle cx="1248" cy="410" r="11" fill="${palette.bg}"/>
+      <circle cx="1272" cy="382" r="8" fill="${palette.bg}"/>
+      <circle cx="1325" cy="430" r="9" fill="${palette.bg}"/>
+      <circle cx="1342" cy="396" r="6" fill="${palette.bg}"/>
+      <rect x="1208" y="612" width="175" height="48" rx="24" fill="${palette.primary}" opacity="0.12"/>
+      <path d="M1228 635 H1362" stroke="${palette.primary}" stroke-width="9" stroke-linecap="round" opacity="0.9"/>
+    `
+  }
+
   return `
     <g opacity="0.75">
       ${Array.from({ length: 10 }, (_, row) =>
@@ -195,7 +230,7 @@ function motifSvg(type, palette, seed) {
 function createCover({ slug, title, excerpt, publishedAt, categories }) {
   const seed = hash(slug)
   const palette = palettes[seed % palettes.length]
-  const motif = motifs[seed % motifs.length]
+  const motif = selectMotif({ slug, title, excerpt, categories }, seed)
   const titleLines = wrapText(title, 18)
   const category = categories?.[0]?.title || 'CARE'
   const date = shortDate(publishedAt)
@@ -241,6 +276,43 @@ function createCover({ slug, title, excerpt, publishedAt, categories }) {
 `
 }
 
+function hasCommand(command) {
+  try {
+    execFileSync('sh', ['-lc', `command -v ${command}`], {
+      stdio: 'ignore',
+    })
+    return true
+  } catch {
+    return false
+  }
+}
+
+function createOgSvg(svg) {
+  return svg.replace(
+    'width="1600" height="1000" viewBox="0 0 1600 1000"',
+    'width="1200" height="630" viewBox="0 80 1600 840"',
+  )
+}
+
+function writeOgImage(slug, svg, canRenderPng) {
+  if (!canRenderPng) return
+
+  execFileSync(
+    'rsvg-convert',
+    [
+      '-f',
+      'png',
+      '-w',
+      '1200',
+      '-h',
+      '630',
+      '-o',
+      path.join(ogDirectory, `${slug}.png`),
+    ],
+    { input: createOgSvg(svg) },
+  )
+}
+
 function upsertMainImage(raw, slug, title) {
   const match = raw.match(/^---\n([\s\S]*?)\n---\n/)
   if (!match) return raw
@@ -259,6 +331,8 @@ function upsertMainImage(raw, slug, title) {
 }
 
 fs.mkdirSync(coversDirectory, { recursive: true })
+fs.mkdirSync(ogDirectory, { recursive: true })
+const canRenderPng = hasCommand('rsvg-convert')
 
 const files = fs
   .readdirSync(postsDirectory)
@@ -278,13 +352,20 @@ for (const fileName of files) {
     categories: data.categories || [],
   })
 
-  fs.writeFileSync(
-    path.join(coversDirectory, `${slug}.svg`),
-    svg.replace(/[ \t]+$/gm, ''),
-  )
+  const cleanedSvg = svg.replace(/[ \t]+$/gm, '')
+
+  fs.writeFileSync(path.join(coversDirectory, `${slug}.svg`), cleanedSvg)
+  writeOgImage(slug, cleanedSvg, canRenderPng)
   fs.writeFileSync(fullPath, upsertMainImage(raw, slug, data.title || slug))
 }
 
 console.log(
   `Generated ${files.length} blog covers in ${path.relative(root, coversDirectory)}`,
 )
+if (canRenderPng) {
+  console.log(
+    `Generated ${files.length} social cards in ${path.relative(root, ogDirectory)}`,
+  )
+} else {
+  console.log('Skipped social cards because rsvg-convert is not available')
+}

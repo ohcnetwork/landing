@@ -28,13 +28,24 @@
     <circle cx="1265" cy="220" r="116" fill="#2f80ed" opacity="0.13"/>
     <rect x="870" y="174" width="560" height="610" rx="52" fill="#ffffff" opacity="0.46"/>
 
-      <rect x="940" y="220" width="390" height="520" rx="34" fill="#ffffff" stroke="#202a24" stroke-width="3" opacity="0.95"/>
-      <path d="M1118 308 h64 v64 h64 v64 h-64 v64 h-64 v-64 h-64 v-64 h64 z" fill="#166534" opacity="0.94"/>
-      <rect x="995" y="570" width="280" height="14" rx="7" fill="#202a24" opacity="0.17"/>
-      <rect x="995" y="612" width="225" height="14" rx="7" fill="#be5b45" opacity="0.85"/>
-      <rect x="995" y="654" width="250" height="14" rx="7" fill="#202a24" opacity="0.17"/>
-      <circle cx="1015" cy="310" r="42" fill="#2f80ed" opacity="0.9"/>
-      <circle cx="1015" cy="310" r="14" fill="#f8f8f2"/>
+      <rect x="910" y="198" width="485" height="545" rx="38" fill="#ffffff" stroke="#202a24" stroke-width="3" opacity="0.95"/>
+      <rect x="955" y="250" width="235" height="390" rx="24" fill="#eef1d8" stroke="#166534" stroke-width="3" opacity="0.92"/>
+      <text x="985" y="305" fill="#166534" font-family="'Switzer', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="31" font-weight="800" letter-spacing="2">FHIR LAB</text>
+      <rect x="985" y="350" width="150" height="14" rx="7" fill="#202a24" opacity="0.18"/>
+      <rect x="985" y="392" width="170" height="14" rx="7" fill="#be5b45" opacity="0.78"/>
+      <rect x="985" y="434" width="122" height="14" rx="7" fill="#202a24" opacity="0.18"/>
+      <rect x="985" y="494" width="72" height="72" rx="12" fill="#ffffff" opacity="0.95"/>
+      <path d="M999 508h14v14h-14zM1027 508h14v14h-14zM999 536h14v14h-14zM1041 536h14v14h-14z" fill="#166534" opacity="0.9"/>
+      <rect x="1228" y="260" width="54" height="302" rx="27" fill="#ffffff" stroke="#202a24" stroke-width="3"/>
+      <path d="M1230 455 C1244 438 1264 438 1280 455 V534 C1280 550 1268 562 1255 562 C1242 562 1230 550 1230 534 Z" fill="#be5b45" opacity="0.82"/>
+      <rect x="1304" y="300" width="54" height="262" rx="27" fill="#ffffff" stroke="#202a24" stroke-width="3"/>
+      <path d="M1306 470 C1320 453 1340 453 1356 470 V536 C1356 551 1344 562 1331 562 C1318 562 1306 551 1306 536 Z" fill="#2f80ed" opacity="0.86"/>
+      <circle cx="1248" cy="410" r="11" fill="#f8f8f2"/>
+      <circle cx="1272" cy="382" r="8" fill="#f8f8f2"/>
+      <circle cx="1325" cy="430" r="9" fill="#f8f8f2"/>
+      <circle cx="1342" cy="396" r="6" fill="#f8f8f2"/>
+      <rect x="1208" y="612" width="175" height="48" rx="24" fill="#166534" opacity="0.12"/>
+      <path d="M1228 635 H1362" stroke="#166534" stroke-width="9" stroke-linecap="round" opacity="0.9"/>
 
   </g>
   <path d="M140 676 H615" stroke="#be5b45" stroke-width="8" stroke-linecap="round"/>
