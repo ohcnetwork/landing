@@ -9,10 +9,13 @@ categories:
     slug: foundation
   - title: Digital Public Infrastructure
     slug: digital-public-infrastructure
+mainImage:
+  src: "/blog/covers/why-open-healthcare-needs-a-foundation.svg"
+  alt: "Why open healthcare infrastructure needs a foundation cover illustration"
 featured: true
 ---
 
-Open healthcare infrastructure has a different job from ordinary software. It has to be trusted by governments, hospitals, clinicians, funders, system integrators, and contributors who may never sit in the same room. It has to support local ownership without fragmenting into one-off custom systems. It has to keep improving after the first deployment is announced.
+Open healthcare infrastructure has a different job from ordinary software. It has to be trusted by governments, hospitals, clinicians, implementation partners, system integrators, and contributors who may never sit in the same room. It has to support local ownership without fragmenting into one-off custom systems. It has to keep improving after the first deployment is announced.
 
 That is why Open Healthcare Network Foundation exists.
 
@@ -29,15 +32,15 @@ For healthcare, stewardship means answering operational questions that are easy 
 - How do implementation partners extend the platform without forking it permanently?
 - How do clinicians influence workflow design?
 - How are security issues reported and handled?
-- How do governments and funders know the work will not disappear after a grant cycle?
+- How do governments and institutions know the work will not disappear after one deployment?
 
 Those questions are foundation questions.
 
 ## A neutral home
 
-OHC Foundation exists so that CARE is not framed as the property of one vendor, one deployment partner, one state, or one donor. It is stewarded as shared healthcare infrastructure.
+OHC Foundation exists so that CARE is not framed as the property of one vendor, one deployment partner, or one state. It is stewarded as shared healthcare infrastructure.
 
-That matters because healthcare systems need room for many kinds of participation. Governments need sovereignty and procurement confidence. Hospitals need practical workflows. Implementation partners need commercial opportunity with a stable core. Developers need open contribution pathways. Clinicians need a way to shape safety-critical workflows. Funders need leverage beyond a single project.
+That matters because healthcare systems need room for many kinds of participation. Governments need sovereignty and procurement confidence. Hospitals need practical workflows. Implementation partners need commercial opportunity with a stable core. Developers need open contribution pathways. Clinicians need a way to shape safety-critical workflows. Public institutions and ecosystem partners need confidence beyond a single project.
 
 A foundation gives those groups a place to meet around a common core.
 

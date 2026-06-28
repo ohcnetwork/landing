@@ -9,6 +9,9 @@ categories:
     slug: ai
   - title: Standards
     slug: standards
+mainImage:
+  src: "/blog/covers/ai-ready-not-ai-hyped.svg"
+  alt: "AI-ready, not AI-hyped cover illustration"
 featured: true
 ---
 

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Launching the Kerala Palliative Care Grid</title>
+  <desc id="desc">March 2025 marked the statewide launch of the Kerala Palliative Care Grid, followed by district training, operational handover, Malayalam localization, and early digital care delivery.</desc>
+  <defs>
+    <pattern id="microgrid-kerala-palliative-care-grid-launch" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0V44" fill="none" stroke="#202a24" stroke-width="1" opacity="0.08"/>
+    </pattern>
+    <linearGradient id="wash-kerala-palliative-care-grid-launch" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f8f8f2"/>
+      <stop offset="0.58" stop-color="#eef1d8"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#wash-kerala-palliative-care-grid-launch)"/>
+  <rect width="1600" height="1000" fill="url(#microgrid-kerala-palliative-care-grid-launch)"/>
+  <path d="M0 780 C230 700 320 860 505 760 C700 656 720 515 930 565 C1168 621 1258 448 1600 498 V1000 H0 Z" fill="#166534" opacity="0.08"/>
+  <rect x="84" y="84" width="1432" height="832" rx="44" fill="none" stroke="#202a24" stroke-width="3" opacity="0.14"/>
+  <text x="140" y="180" fill="#166534" font-family="'Switzer', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="2">CARE / OHC ARCHIVE</text>
+  <text x="140" y="752" fill="#68746e" font-family="'Switzer', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="600">Mar 31, 2025</text>
+  <text x="140" y="812" fill="#202a24" font-family="'Switzer', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="3">CARE / OPEN HEALTHCARE NETWORK</text>
+  <g font-family="'Switzer', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="84" font-weight="700" letter-spacing="0" fill="#202a24">
+    <text x="140" y="310">Launching the</text>
+    <text x="140" y="406">Kerala Palliative</text>
+    <text x="140" y="502">Care Grid</text>
+  </g>
+  <g transform="translate(57 2)">
+    <circle cx="1265" cy="220" r="116" fill="#2f80ed" opacity="0.13"/>
+    <rect x="870" y="174" width="560" height="610" rx="52" fill="#ffffff" opacity="0.46"/>
+
+      <rect x="940" y="220" width="390" height="520" rx="34" fill="#ffffff" stroke="#202a24" stroke-width="3" opacity="0.95"/>
+      <path d="M1118 308 h64 v64 h64 v64 h-64 v64 h-64 v-64 h-64 v-64 h64 z" fill="#166534" opacity="0.94"/>
+      <rect x="995" y="570" width="280" height="14" rx="7" fill="#202a24" opacity="0.17"/>
+      <rect x="995" y="612" width="225" height="14" rx="7" fill="#be5b45" opacity="0.85"/>
+      <rect x="995" y="654" width="250" height="14" rx="7" fill="#202a24" opacity="0.17"/>
+      <circle cx="1015" cy="310" r="42" fill="#2f80ed" opacity="0.9"/>
+      <circle cx="1015" cy="310" r="14" fill="#f8f8f2"/>
+
+  </g>
+  <path d="M140 676 H615" stroke="#be5b45" stroke-width="8" stroke-linecap="round"/>
+  <path d="M140 704 H455" stroke="#2f80ed" stroke-width="8" stroke-linecap="round" opacity="0.9"/>
+</svg>

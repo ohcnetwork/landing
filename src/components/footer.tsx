@@ -12,18 +12,17 @@ function CallToAction() {
       <hgroup>
         <Subheading>Build the commons</Subheading>
         <p className="mt-6 text-3xl font-medium tracking-normal text-gray-950 sm:text-5xl">
-          Help steward open healthcare{' '}
-          <br className="hidden sm:block" />
+          Help steward open healthcare <br className="hidden sm:block" />
           infrastructure for the long term.
         </p>
       </hgroup>
       <p className="mx-auto mt-6 max-w-2xl text-sm/6 text-gray-500">
-        Governments can deploy, funders can support, implementation partners can
-        localize, and contributors can strengthen the shared core.
+        Governments can deploy, institutions can support, implementation
+        partners can localize, and contributors can strengthen the shared core.
       </p>
       <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:justify-center">
         <Button className="w-full sm:w-auto" href="/support">
-          Fund the commons
+          Support the commons
         </Button>
         <Button
           variant="secondary"
@@ -121,7 +120,7 @@ function Sitemap() {
           <SitemapLink href="/press-media">Press & Media</SitemapLink>
           <SitemapLink href="/careers">Careers</SitemapLink>
           <SitemapLink href="/contact">Contact</SitemapLink>
-          <SitemapLink href="/funding.json">Funding.json</SitemapLink>
+          <SitemapLink href="/funding.json">Support metadata</SitemapLink>
         </SitemapLinks>
       </div>
     </>
@@ -190,7 +189,7 @@ export function Footer() {
                         </p>
                         <p className="pt-1.5 text-gray-950">
                           1st Floor, C M Complex, Kalavath Road, Palarivattom,
-                          Kochi, Ernakulam, Kerala, India — 682025
+                          Kochi, Ernakulam, Kerala, India, 682025
                         </p>
                         <p className="mt-8 text-gray-950/70">
                           Corporate Identity Number (CIN)
