@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Preparing CARE for statewide palliative care rollout</title>
+  <desc id="desc">February 2025 focused on scaling the palliative care pilots, Malayalam support, security certification, CARE 3.0 architecture, and new HMIS modules for real-world use.</desc>
+  <defs>
+    <pattern id="microgrid-preparing-care-statewide-palliative-rollout" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0V44" fill="none" stroke="#1f2933" stroke-width="1" opacity="0.08"/>
+    </pattern>
+    <linearGradient id="wash-preparing-care-statewide-palliative-rollout" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f3f8f6"/>
+      <stop offset="0.58" stop-color="#dbeafe"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#wash-preparing-care-statewide-palliative-rollout)"/>
+  <rect width="1600" height="1000" fill="url(#microgrid-preparing-care-statewide-palliative-rollout)"/>
+  <path d="M0 780 C230 700 320 860 505 760 C700 656 720 515 930 565 C1168 621 1258 448 1600 498 V1000 H0 Z" fill="#0f766e" opacity="0.08"/>
+  <rect x="84" y="84" width="1432" height="832" rx="44" fill="none" stroke="#1f2933" stroke-width="3" opacity="0.14"/>
+  <text x="140" y="180" fill="#0f766e" font-family="'Switzer', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="2">CARE / OHC ARCHIVE</text>
+  <text x="140" y="752" fill="#63736d" font-family="'Switzer', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="600">Feb 28, 2025</text>
+  <text x="140" y="812" fill="#1f2933" font-family="'Switzer', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="3">CARE / OPEN HEALTHCARE NETWORK</text>
+  <g font-family="'Switzer', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="74" font-weight="700" letter-spacing="0" fill="#1f2933">
+    <text x="140" y="310">Preparing CARE for</text>
+    <text x="140" y="396">statewide</text>
+    <text x="140" y="482">palliative care</text>
+    <text x="140" y="568">rollout</text>
+  </g>
+  <g transform="translate(53 7)">
+    <circle cx="1265" cy="220" r="116" fill="#f0b429" opacity="0.13"/>
+    <rect x="870" y="174" width="560" height="610" rx="52" fill="#ffffff" opacity="0.46"/>
+
+      <path d="M 980 236 L 1100 299 L 1040 443 L 1200 530 L 1120 689 L 1320 751" fill="none" stroke="#3f82f6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+      <path d="M 980 236 L 1100 299 L 1040 443 L 1200 530 L 1120 689 L 1320 751" fill="none" stroke="#1f2933" stroke-width="2" stroke-linecap="round" stroke-dasharray="10 16" opacity="0.42"/>
+
+          <circle cx="980" cy="236" r="22" fill="#0f766e"/>
+          <circle cx="980" cy="236" r="6" fill="#f3f8f6"/>
+          <circle cx="1100" cy="299" r="15" fill="#f0b429"/>
+          <circle cx="1100" cy="299" r="6" fill="#f3f8f6"/>
+          <circle cx="1040" cy="443" r="15" fill="#0f766e"/>
+          <circle cx="1040" cy="443" r="6" fill="#f3f8f6"/>
+          <circle cx="1200" cy="530" r="15" fill="#f0b429"/>
+          <circle cx="1200" cy="530" r="6" fill="#f3f8f6"/>
+          <circle cx="1120" cy="689" r="15" fill="#0f766e"/>
+          <circle cx="1120" cy="689" r="6" fill="#f3f8f6"/>
+          <circle cx="1320" cy="751" r="22" fill="#f0b429"/>
+          <circle cx="1320" cy="751" r="6" fill="#f3f8f6"/>
+
+  </g>
+  <path d="M140 676 H615" stroke="#3f82f6" stroke-width="8" stroke-linecap="round"/>
+  <path d="M140 704 H455" stroke="#f0b429" stroke-width="8" stroke-linecap="round" opacity="0.9"/>
+</svg>

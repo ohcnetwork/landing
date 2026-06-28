@@ -11,12 +11,9 @@ import {
   getPostsCount,
   getPostsPaginated,
 } from '@/lib/blog'
-import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import {
-  CheckIcon,
   ChevronLeftIcon,
   ChevronRightIcon,
-  ChevronUpDownIcon,
   RssIcon,
 } from '@heroicons/react/16/solid'
 import { clsx } from 'clsx'
@@ -30,7 +27,7 @@ export const metadata: Metadata = {
     'Writing from Open Healthcare Network Foundation on CARE, open healthcare infrastructure, standards, deployments, and ecosystem work.',
 }
 
-const postsPerPage = 5
+const postsPerPage = 30
 
 async function FeaturedPosts() {
   let featuredPosts = getFeaturedPosts(3)
@@ -42,30 +39,29 @@ async function FeaturedPosts() {
   return (
     <div className="mt-16 bg-linear-to-t from-[#f7f9f6] pb-14">
       <Container>
-        <h2 className="text-2xl font-medium tracking-normal">Featured</h2>
+        <div className="flex items-end justify-between gap-6">
+          <div>
+            <h2 className="text-2xl font-medium tracking-normal">Featured</h2>
+            <p className="mt-2 max-w-2xl text-sm/6 text-gray-600">
+              Essays and field notes that frame the CARE platform as open
+              healthcare infrastructure.
+            </p>
+          </div>
+        </div>
         <div className="mt-6 grid grid-cols-1 gap-8 lg:grid-cols-3">
           {featuredPosts.map((post) => (
             <div
               key={post.slug}
-              className="relative flex min-h-[360px] flex-col overflow-hidden rounded-lg bg-white p-2 shadow-md ring-1 shadow-black/5 ring-black/5"
+              className="relative flex min-h-[420px] flex-col overflow-hidden rounded-lg bg-white p-2 shadow-md ring-1 shadow-black/5 ring-black/5 transition hover:-translate-y-0.5 hover:shadow-xl"
             >
               {post.mainImage && (
                 <img
                   alt={post.mainImage.alt || ''}
                   src={post.mainImage.src}
-                  className="aspect-3/2 w-full rounded-lg object-cover"
+                  className="aspect-16/10 w-full rounded-lg object-cover"
                 />
               )}
-              {!post.mainImage && (
-                <div className="relative aspect-3/2 overflow-hidden rounded-lg border border-[#dfe6e2] bg-[#052e24]">
-                  <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(184,243,111,0.22),transparent_34%,rgba(255,255,255,0.08)_100%)]" />
-                  <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px)] bg-size-[32px_32px]" />
-                  <div className="absolute right-5 bottom-5 font-mono text-xs font-semibold tracking-wide text-[#b8f36f] uppercase">
-                    OHC / Blog
-                  </div>
-                </div>
-              )}
-              <div className="flex flex-1 flex-col p-8">
+              <div className="flex flex-1 flex-col p-7">
                 <div className="text-sm/5 text-gray-700">
                   {dayjs(post.publishedAt).format('dddd, MMMM D, YYYY')}
                 </div>
@@ -101,7 +97,7 @@ async function FeaturedPosts() {
   )
 }
 
-async function Categories({ selected }: { selected?: string }) {
+async function Categories() {
   let categories = getAllCategories()
 
   if (categories.length === 0) {
@@ -109,41 +105,23 @@ async function Categories({ selected }: { selected?: string }) {
   }
 
   return (
-    <div className="flex flex-wrap items-center justify-between gap-2">
-      <Menu>
-        <MenuButton className="flex items-center justify-between gap-2 font-medium">
-          {categories.find(({ slug }) => slug === selected)?.title ||
-            'All categories'}
-          <ChevronUpDownIcon className="size-4 fill-gray-900" />
-        </MenuButton>
-        <MenuItems
-          anchor="bottom start"
-          className="min-w-40 rounded-lg bg-white p-1 shadow-lg ring-1 ring-gray-200 [--anchor-gap:6px] [--anchor-offset:-4px] [--anchor-padding:10px]"
-        >
-          <MenuItem>
-            <Link
-              href="/blog"
-              data-selected={selected === undefined ? true : undefined}
-              className="group grid grid-cols-[1rem_1fr] items-center gap-2 rounded-md px-2 py-1 data-focus:bg-[#052e24]/5"
-            >
-              <CheckIcon className="hidden size-4 group-data-selected:block" />
-              <p className="col-start-2 text-sm/6">All categories</p>
-            </Link>
-          </MenuItem>
+    <div
+      id="archive"
+      className="flex flex-wrap items-start justify-between gap-4"
+    >
+      <div>
+        <p className="text-sm/5 font-semibold text-gray-950">Browse themes</p>
+        <div className="mt-3 flex flex-wrap gap-2">
           {categories.map((category) => (
-            <MenuItem key={category.slug}>
-              <Link
-                href={`/blog?category=${category.slug}`}
-                data-selected={category.slug === selected ? true : undefined}
-                className="group grid grid-cols-[16px_1fr] items-center gap-2 rounded-md px-2 py-1 data-focus:bg-[#052e24]/5"
-              >
-                <CheckIcon className="hidden size-4 group-data-selected:block" />
-                <p className="col-start-2 text-sm/6">{category.title}</p>
-              </Link>
-            </MenuItem>
+            <span
+              key={category.slug}
+              className="rounded-full border border-[#dfe6e2] bg-white px-3 py-1 text-sm/6 font-medium text-gray-600"
+            >
+              {category.title} ({category.count})
+            </span>
           ))}
-        </MenuItems>
-      </Menu>
+        </div>
+      </div>
       <Button variant="outline" href="/blog/feed.xml" className="gap-1">
         <RssIcon className="size-4" />
         RSS Feed
@@ -178,41 +156,67 @@ async function Posts({ page, category }: { page: number; category?: string }) {
       {posts.map((post) => (
         <div
           key={post.slug}
-          className="relative grid grid-cols-1 border-b border-b-[#dfe6e2] py-10 first:border-t first:border-t-[#dfe6e2] max-sm:gap-3 sm:grid-cols-3"
+          className="relative grid grid-cols-1 gap-5 border-b border-b-[#dfe6e2] py-8 first:border-t first:border-t-[#dfe6e2] sm:grid-cols-[13rem_1fr]"
         >
-          <div>
-            <div className="text-sm/5 max-sm:text-gray-700 sm:font-medium">
-              {dayjs(post.publishedAt).format('dddd, MMMM D, YYYY')}
-            </div>
-            {post.author && (
-              <div className="mt-2.5 flex items-center gap-3">
-                {post.author.image && (
-                  <img
-                    alt=""
-                    src={post.author.image}
-                    className="aspect-square size-6 rounded-full object-cover"
-                  />
-                )}
-                <div className="text-sm/5 text-gray-700">
-                  {post.author.name}
-                </div>
-              </div>
+          <div className="sm:pt-1">
+            {post.mainImage && (
+              <img
+                alt={post.mainImage.alt || ''}
+                src={post.mainImage.src}
+                className="aspect-16/10 w-full rounded-lg object-cover shadow-sm ring-1 ring-black/10"
+              />
             )}
           </div>
-          <div className="sm:col-span-2 sm:max-w-2xl">
-            <h2 className="text-base/6 font-semibold text-gray-950">
-              {post.title}
-            </h2>
-            <p className="mt-3 text-sm/6 text-gray-500">{post.excerpt}</p>
-            <div className="mt-4">
-              <Link
-                href={`/blog/${post.slug}`}
-                className="flex items-center gap-1 text-sm/5 font-medium"
-              >
-                <span className="absolute inset-0" />
-                Read more
-                <ChevronRightIcon className="size-4 fill-gray-400" />
-              </Link>
+          <div className="grid gap-5 sm:grid-cols-[9rem_1fr]">
+            <div>
+              <div className="text-sm/5 max-sm:text-gray-700 sm:font-medium">
+                {dayjs(post.publishedAt).format('dddd, MMMM D, YYYY')}
+              </div>
+              {post.readingTime && (
+                <div className="mt-2 text-sm/5 text-gray-500">
+                  {post.readingTime} min read
+                </div>
+              )}
+              {post.author && (
+                <div className="mt-2.5 flex items-center gap-3">
+                  {post.author.image && (
+                    <img
+                      alt=""
+                      src={post.author.image}
+                      className="aspect-square size-6 rounded-full object-cover"
+                    />
+                  )}
+                  <div className="text-sm/5 text-gray-700">
+                    {post.author.name}
+                  </div>
+                </div>
+              )}
+            </div>
+            <div className="sm:max-w-2xl">
+              <div className="flex flex-wrap gap-2">
+                {post.categories?.slice(0, 2).map((category) => (
+                  <span
+                    key={category.slug}
+                    className="rounded-full border border-[#dfe6e2] bg-white px-2.5 py-0.5 text-xs/5 font-medium text-gray-600"
+                  >
+                    {category.title}
+                  </span>
+                ))}
+              </div>
+              <h2 className="mt-3 text-lg/6 font-semibold text-gray-950">
+                {post.title}
+              </h2>
+              <p className="mt-3 text-sm/6 text-gray-500">{post.excerpt}</p>
+              <div className="mt-4">
+                <Link
+                  href={`/blog/${post.slug}`}
+                  className="flex items-center gap-1 text-sm/5 font-medium"
+                >
+                  <span className="absolute inset-0" />
+                  Read article
+                  <ChevronRightIcon className="size-4 fill-gray-400" />
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -303,7 +307,7 @@ export default function Blog() {
       </Container>
       {page === 1 && !category && <FeaturedPosts />}
       <Container className="mt-16 pb-24">
-        <Categories selected={category} />
+        <Categories />
         <Posts page={page} category={category} />
         <Pagination page={page} category={category} />
       </Container>

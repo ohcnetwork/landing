@@ -9,6 +9,9 @@ categories:
     slug: care
   - title: Architecture
     slug: architecture
+mainImage:
+  src: "/blog/covers/care-core-as-operating-layer.svg"
+  alt: "CARE Core as an operating layer for healthcare workflows cover illustration"
 featured: true
 ---
 

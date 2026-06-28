@@ -1,7 +1,13 @@
 import fs from 'fs'
 import matter from 'gray-matter'
-import { marked } from 'marked'
+import { Renderer, marked, type Tokens } from 'marked'
 import path from 'path'
+
+export interface BlogHeading {
+  id: string
+  text: string
+  level: number
+}
 
 export interface BlogPost {
   slug: string
@@ -9,6 +15,8 @@ export interface BlogPost {
   excerpt: string
   content: string
   publishedAt: string
+  headings?: BlogHeading[]
+  readingTime?: number
   author?: {
     name: string
     image?: string
@@ -26,12 +34,113 @@ export interface BlogPost {
 
 const postsDirectory = path.join(process.cwd(), 'content/blog')
 
+function createHeadingIdGenerator() {
+  const counts = new Map<string, number>()
+
+  return (value: string) => {
+    const base =
+      value
+        .toLowerCase()
+        .replace(/&[a-z]+;/g, '')
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-+|-+$/g, '') || 'section'
+    const count = counts.get(base) || 0
+    counts.set(base, count + 1)
+
+    return count === 0 ? base : `${base}-${count + 1}`
+  }
+}
+
 function normalizePublishedAt(value: unknown): string {
   if (value instanceof Date) {
     return value.toISOString()
   }
 
   return typeof value === 'string' ? value : ''
+}
+
+function stripMarkdown(value: string): string {
+  return value
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+    .replace(/[`*_~]/g, '')
+    .trim()
+}
+
+function stripHtml(value: string): string {
+  return value.replace(/<[^>]*>/g, '').trim()
+}
+
+function extractHeadings(markdown: string): BlogHeading[] {
+  const createId = createHeadingIdGenerator()
+  const headings: BlogHeading[] = []
+  const headingPattern = /^(#{2,3})\s+(.+)$/gm
+  let match: RegExpExecArray | null
+
+  while ((match = headingPattern.exec(markdown)) !== null) {
+    const text = stripMarkdown(match[2])
+    headings.push({
+      id: createId(text),
+      text,
+      level: match[1].length,
+    })
+  }
+
+  return headings
+}
+
+function renderMarkdown(markdown: string): string {
+  const createId = createHeadingIdGenerator()
+  const renderer = new Renderer()
+
+  renderer.heading = function ({ tokens, depth }: Tokens.Heading) {
+    const html = this.parser.parseInline(tokens)
+    const id = createId(stripHtml(html))
+
+    return `<h${depth} id="${id}">${html}</h${depth}>\n`
+  }
+
+  return marked(markdown, { renderer }) as string
+}
+
+function getReadingTime(markdown: string): number {
+  const words = stripMarkdown(markdown).split(/\s+/).filter(Boolean).length
+
+  return Math.max(1, Math.ceil(words / 190))
+}
+
+function getCoverImage(
+  slug: string,
+  title: string,
+  data: matter.GrayMatterFile<string>['data'],
+) {
+  return (
+    data.mainImage || {
+      src: `/blog/covers/${slug}.svg`,
+      alt: `${title} cover illustration`,
+    }
+  )
+}
+
+function buildPost(
+  slug: string,
+  data: matter.GrayMatterFile<string>['data'],
+  content: string,
+): BlogPost {
+  const title = data.title || ''
+
+  return {
+    slug,
+    title,
+    excerpt: data.excerpt || '',
+    content: renderMarkdown(content),
+    publishedAt: normalizePublishedAt(data.publishedAt || data.date),
+    headings: extractHeadings(content),
+    readingTime: getReadingTime(content),
+    author: data.author,
+    categories: data.categories || [],
+    mainImage: getCoverImage(slug, title, data),
+    featured: data.featured || false,
+  }
 }
 
 export function getAllPosts(): BlogPost[] {
@@ -44,17 +153,7 @@ export function getAllPosts(): BlogPost[] {
       const fileContents = fs.readFileSync(fullPath, 'utf8')
       const { data, content } = matter(fileContents)
 
-      return {
-        slug,
-        title: data.title || '',
-        excerpt: data.excerpt || '',
-        content: marked(content) as string,
-        publishedAt: normalizePublishedAt(data.publishedAt || data.date),
-        author: data.author,
-        categories: data.categories || [],
-        mainImage: data.mainImage,
-        featured: data.featured || false,
-      }
+      return buildPost(slug, data, content)
     })
     .sort(
       (a, b) =>
@@ -70,19 +169,19 @@ export function getPostBySlug(slug: string): BlogPost | null {
     const fileContents = fs.readFileSync(fullPath, 'utf8')
     const { data, content } = matter(fileContents)
 
-    return {
-      slug,
-      title: data.title || '',
-      excerpt: data.excerpt || '',
-      content: marked(content) as string,
-      publishedAt: normalizePublishedAt(data.publishedAt || data.date),
-      author: data.author,
-      categories: data.categories || [],
-      mainImage: data.mainImage,
-      featured: data.featured || false,
-    }
+    return buildPost(slug, data, content)
   } catch {
     return null
+  }
+}
+
+export function getAdjacentPosts(slug: string) {
+  const posts = getAllPosts()
+  const index = posts.findIndex((post) => post.slug === slug)
+
+  return {
+    newerPost: index > 0 ? posts[index - 1] : null,
+    olderPost: index >= 0 && index < posts.length - 1 ? posts[index + 1] : null,
   }
 }
 
