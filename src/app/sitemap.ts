@@ -27,6 +27,7 @@ const routes = [
   ['/ecosystem/clinicians', 0.7],
   ['/developers', 0.8],
   ['/support', 0.75],
+  ['/supporters', 0.6],
   ['/blog', 0.75],
   ['/blog/why-open-healthcare-needs-a-foundation', 0.7],
   ['/blog/ai-ready-not-ai-hyped', 0.75],
