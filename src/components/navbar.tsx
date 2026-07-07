@@ -65,7 +65,14 @@ const links = [
       { href: '/developers', label: 'Developers' },
     ],
   },
-  { href: '/support', label: 'Support' },
+  {
+    href: '/support',
+    label: 'Support',
+    submenu: [
+      { href: '/support', label: 'Support OHC' },
+      { href: '/supporters', label: 'Supporters' },
+    ],
+  },
   {
     href: '/resources',
     label: 'Resources',
@@ -83,7 +90,7 @@ function isLinkActive(href: string, pathname: string): boolean {
   if (href === '/') {
     return pathname === '/'
   }
-  return pathname.startsWith(href)
+  return pathname === href || pathname.startsWith(href + '/')
 }
 
 function DesktopNav() {
