@@ -68,6 +68,7 @@ function Sitemap() {
             Foundation Team
           </SitemapLink>
           <SitemapLink href="/support">Support OHC</SitemapLink>
+          <SitemapLink href="/supporters">Supporters</SitemapLink>
         </SitemapLinks>
       </div>
       <div>
