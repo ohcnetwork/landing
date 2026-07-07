@@ -26,6 +26,7 @@ const links = [
       { href: '/about/team', label: 'Board & Advisors' },
       { href: '/about/team/foundation', label: 'Foundation Team' },
       { href: '/about/security-compliance', label: 'Security & Compliance' },
+      { href: '/supporters', label: 'Supporters' },
     ],
   },
   {
