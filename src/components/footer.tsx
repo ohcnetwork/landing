@@ -67,6 +67,10 @@ function Sitemap() {
           <SitemapLink href="/about/team/foundation">
             Foundation Team
           </SitemapLink>
+          <SitemapLink href="/foundation/documents">
+            Foundation Docs
+          </SitemapLink>
+          <SitemapLink href="/foundation/iso">ISO Certifications</SitemapLink>
           <SitemapLink href="/support">Support OHC</SitemapLink>
           <SitemapLink href="/supporters">Supporters</SitemapLink>
         </SitemapLinks>
@@ -192,12 +196,20 @@ export function Footer() {
                           1st Floor, C M Complex, Kalavath Road, Palarivattom,
                           Kochi, Ernakulam, Kerala, India, 682025
                         </p>
-                        <p className="mt-8 text-gray-950/70">
+                        <p className="mt-4 text-gray-950/70">
+                          Date of incorporation
+                        </p>
+                        <p className="pt-1.5 text-gray-950">2 December 2025</p>
+                        <p className="mt-4 text-gray-950/70">
                           Corporate Identity Number (CIN)
                         </p>
                         <p className="pt-1.5 text-gray-950">
                           U88100KL2025NPL098818
                         </p>
+                        <p className="mt-4 text-gray-950/70">80G Certificate</p>
+                        <p className="pt-1.5 text-gray-950">AAECO9546JF20261</p>
+                        <p className="mt-4 text-gray-950/70">12A Certificate</p>
+                        <p className="pt-1.5 text-gray-950">AAECO9546JF20251</p>
                       </div>
                     </div>
                   </PlusGridItem>
