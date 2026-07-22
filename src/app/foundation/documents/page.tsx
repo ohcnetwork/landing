@@ -90,13 +90,13 @@ const taxDocs: Document[] = [
     file: 'LUT GST 2026-27.pdf',
   },
   {
-    title: '12A Registration (Form 10AC)',
+    title: '12A Provisional Registration (Form 10AC)',
     description:
       'Income tax exemption registration for non-profit organisations under Section 12A of the Income Tax Act, 1961.',
     file: 'Form 10AC 12A registration.pdf',
   },
   {
-    title: '80G Registration (Form 10AC)',
+    title: '80G Provisional Registration (Form 10AC)',
     description:
       'Certificate enabling donors to claim tax deductions on contributions to the foundation under Section 80G.',
     file: 'Form 10AC 80G registration.pdf',
