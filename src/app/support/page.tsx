@@ -114,6 +114,13 @@ function Hero() {
             </Button>
             <Button
               variant="secondary"
+              className="w-full sm:w-auto"
+              href="/support/how-to-fund"
+            >
+              How to fund us
+            </Button>
+            <Button
+              variant="outline"
               href="/funding.json"
               className="w-full sm:w-auto"
             >

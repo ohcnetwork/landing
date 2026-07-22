@@ -72,6 +72,7 @@ function Sitemap() {
           </SitemapLink>
           <SitemapLink href="/foundation/iso">ISO Certifications</SitemapLink>
           <SitemapLink href="/support">Support OHC</SitemapLink>
+          <SitemapLink href="/support/how-to-fund">How to Fund Us</SitemapLink>
           <SitemapLink href="/supporters">Supporters</SitemapLink>
         </SitemapLinks>
       </div>
