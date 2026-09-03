@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
   <title id="title">Sprint Highlights: Product, Platform &amp; Engineering Improvements</title>
-  <desc id="desc">The latest Open Healthcare Network community call showcased improvements across CARE's clinical workflows, reliability, testing, deployment, and development automation.</desc>
+  <desc id="desc">This sprint delivered clearer medication dosage visibility, agentic Jira-GitHub workflow automation, reliability fixes, end-to-end load testing, and continued CARE Desktop offline progress.</desc>
   <defs>
     <pattern id="microgrid-sprint-highlights-product-platform-engineering" width="44" height="44" patternUnits="userSpaceOnUse">
       <path d="M44 0H0V44" fill="none" stroke="#1f2933" stroke-width="1" opacity="0.08"/>
@@ -17,7 +17,7 @@
   <path d="M0 780 C230 700 320 860 505 760 C700 656 720 515 930 565 C1168 621 1258 448 1600 498 V1000 H0 Z" fill="#0f766e" opacity="0.08"/>
   <rect x="84" y="84" width="1432" height="832" rx="44" fill="none" stroke="#1f2933" stroke-width="3" opacity="0.14"/>
   <text x="140" y="180" fill="#0f766e" font-family="'Switzer', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="2">CARE PLATFORM / OHC ARCHIVE</text>
-  <text x="140" y="752" fill="#63736d" font-family="'Switzer', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="600">Sep 2, 2026</text>
+  <text x="140" y="752" fill="#63736d" font-family="'Switzer', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="600">Jul 21, 2026</text>
   <text x="140" y="812" fill="#1f2933" font-family="'Switzer', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="3">CARE / OPEN HEALTHCARE NETWORK</text>
   <g font-family="'Switzer', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="74" font-weight="700" letter-spacing="0" fill="#1f2933">
     <text x="140" y="310">Sprint Highlights:</text>

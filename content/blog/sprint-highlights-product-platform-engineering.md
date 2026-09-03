@@ -1,6 +1,6 @@
 ---
 title: "Sprint Highlights: Product, Platform & Engineering Improvements"
-excerpt: "The latest Open Healthcare Network community call showcased improvements across CARE's clinical workflows, reliability, testing, deployment, and development automation."
+excerpt: "This sprint delivered clearer medication dosage visibility, agentic Jira-GitHub workflow automation, reliability fixes, end-to-end load testing, and continued CARE Desktop offline progress."
 publishedAt: 2026-07-21
 author:
   name: Open Healthcare Network Foundation
@@ -15,7 +15,7 @@ mainImage:
 featured: true
 ---
 
-The latest Open Healthcare Network community call showcased improvements across CARE's clinical workflows, reliability, testing, deployment, and development automation. Here are the key contributions from this sprint.
+These highlights come from the Open Healthcare Network community calls held every Tuesday, showcasing improvements across CARE's clinical workflows, reliability, testing, deployment, and development automation.
 
 ## Highlight Medication Dosages
 
