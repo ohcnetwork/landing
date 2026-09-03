@@ -47,7 +47,7 @@ This comprehensive testing approach reveals how CARE performs under realistic cl
 
 ## CARE Desktop
 
-CARE Desktop has progressed with streamlined setup, service management, backup and restore, and configuration options enabling offline and local-network access ([ohcnetwork/care_desktop](https://github.com/ohcnetwork/care_desktop)). Frontend plugin configuration and HTTPS support are the next areas of development.
+CARE Desktop has progressed with streamlined setup, service management, backup and restore, and configuration options enabling offline and local-network access ([ohcnetwork/care_desktop](https://github.com/ohcnetwork/care_desktop)).
 
 CARE Desktop extends the platform's reach to environments with limited connectivity, critical for many rural and remote healthcare settings.
 
