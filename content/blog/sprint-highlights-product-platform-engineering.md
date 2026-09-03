@@ -47,7 +47,7 @@ This comprehensive testing approach reveals how CARE performs under realistic cl
 
 ## CARE Desktop
 
-CARE Desktop has progressed with streamlined setup, service management, backup and restore, and configuration options enabling offline and local-network access ([ohcnetwork/care_desktop](https://github.com/ohcnetwork/care_desktop)).
+CARE Desktop is a desktop application for macOS, Windows, and Linux that enables offline deployment with encrypted daily backups. It orchestrates multiple Docker containers (backend, frontend, Minio, Caddy, Postgres, Redis, Celery, Celery Beat, and backup services) and uses mDNS for local domain configuration with HTTPS support via self-signed certificates ([ohcnetwork/care_desktop](https://github.com/ohcnetwork/care_desktop)).
 
 CARE Desktop extends the platform's reach to environments with limited connectivity, critical for many rural and remote healthcare settings.
 
