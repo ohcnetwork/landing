@@ -23,17 +23,6 @@ A usability issue where dosage information could be missed on mobile screens has
 
 This improvement ensures that medication instructions are clearer and harder to overlook, especially in time-sensitive clinical environments where precision matters.
 
-## New UI Designs in Development
-
-Several new user interface designs have been completed and are currently in review and implementation:
-
-- Historic table view for observations across encounters, enabling quick review of diagnostic report component-level data over time ([#16756](https://github.com/ohcnetwork/care_fe/pull/16756))
-- Drug chart print preview redesigned for landscape mode, improving print layout and usability ([#16446](https://github.com/ohcnetwork/care_fe/pull/16446))
-- Notification UI for real-time alert visibility across the platform ([ENG-632](https://openhealthcarenetwork.atlassian.net/browse/ENG-632))
-- Facility-level questionnaire UX improvements for better form interaction and workflow ([#16618](https://github.com/ohcnetwork/care_fe/pull/16618))
-
-These designs represent the next generation of clinical workflows, currently being refined through community feedback and testing.
-
 ## Agentic Workflow Optimization
 
 An agentic workflow connecting Jira and GitHub automates ticket progression, PR creation, code review, QA, and rework through workflow labels ([#16616](https://github.com/ohcnetwork/care_fe/pull/16616)). The approach enables faster development while retaining human review at key stages.
@@ -71,3 +60,14 @@ Together, these contributions strengthen CARE across three key areas:
 - **More efficient development lifecycle**: Agentic workflow automation accelerates development while maintaining quality and oversight
 
 The Open Healthcare Network continues to evolve CARE as a robust, user-centered platform for healthcare delivery.
+
+## New UI Designs in Development
+
+Several new user interface designs have been completed and are currently in review and implementation:
+
+- Historic table view for observations across encounters, enabling quick review of diagnostic report component-level data over time ([#16756](https://github.com/ohcnetwork/care_fe/pull/16756))
+- Drug chart print preview redesigned for landscape mode, improving print layout and usability ([#16446](https://github.com/ohcnetwork/care_fe/pull/16446))
+- Notification UI for real-time alert visibility across the platform ([ENG-632](https://openhealthcarenetwork.atlassian.net/browse/ENG-632))
+- Facility-level questionnaire UX improvements for better form interaction and workflow ([#16618](https://github.com/ohcnetwork/care_fe/pull/16618))
+
+These designs represent the next generation of clinical workflows, currently being refined through community feedback and testing.
