@@ -20,10 +20,9 @@
   <text x="140" y="752" fill="#63736d" font-family="'Switzer', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="600">Jul 21, 2026</text>
   <text x="140" y="812" fill="#1f2933" font-family="'Switzer', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="3">CARE / OPEN HEALTHCARE NETWORK</text>
   <g font-family="'Switzer', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="74" font-weight="700" letter-spacing="0" fill="#1f2933">
-    <text x="140" y="310">Sprint Highlights:</text>
-    <text x="140" y="396">Product, Platform</text>
-    <text x="140" y="482">&amp; Engineering</text>
-    <text x="140" y="568">Improvements</text>
+    <text x="140" y="310">Product, Platform</text>
+    <text x="140" y="396">&amp; Engineering</text>
+    <text x="140" y="482">Improvements</text>
   </g>
   <g transform="translate(63 7)">
     <circle cx="1265" cy="220" r="116" fill="#f0b429" opacity="0.13"/>
