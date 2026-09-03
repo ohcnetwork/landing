@@ -51,16 +51,6 @@ CARE Desktop is a desktop application for macOS, Windows, and Linux that enables
 
 CARE Desktop extends the platform's reach to environments with limited connectivity, critical for many rural and remote healthcare settings.
 
-## Strengthening CARE Across Three Dimensions
-
-Together, these contributions strengthen CARE across three key areas:
-
-- **Better clinical usability**: New UI designs for observations, drug charts, notifications, and questionnaires represent the next generation of intuitive clinical workflows
-- **Greater platform reliability**: Load testing, workflow improvements, and controlled updates ensure CARE performs under real-world demands
-- **More efficient development lifecycle**: Agentic workflow automation accelerates development while maintaining quality and oversight
-
-The Open Healthcare Network continues to evolve CARE as a robust, user-centered platform for healthcare delivery.
-
 ## New UI Designs in Development
 
 Several new user interface designs have been completed and are currently in review and implementation:
@@ -70,3 +60,13 @@ Several new user interface designs have been completed and are currently in revi
 - Facility-level questionnaire UX improvements for better form interaction and workflow ([#16618](https://github.com/ohcnetwork/care_fe/pull/16618))
 
 These designs represent the next generation of clinical workflows, currently being refined through community feedback and testing.
+
+## Strengthening CARE Across Three Dimensions
+
+Together, these contributions strengthen CARE across three key areas:
+
+- **Better clinical usability**: New UI designs for observations, drug charts, and questionnaires represent the next generation of intuitive clinical workflows
+- **Greater platform reliability**: Load testing, workflow improvements, and controlled updates ensure CARE performs under real-world demands
+- **More efficient development lifecycle**: Agentic workflow automation accelerates development while maintaining quality and oversight
+
+The Open Healthcare Network continues to evolve CARE as a robust, user-centered platform for healthcare delivery.
