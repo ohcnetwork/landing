@@ -67,7 +67,6 @@ Several new user interface designs have been completed and are currently in revi
 
 - Historic table view for observations across encounters, enabling quick review of diagnostic report component-level data over time ([#16756](https://github.com/ohcnetwork/care_fe/pull/16756))
 - Drug chart print preview redesigned for landscape mode, improving print layout and usability ([#16446](https://github.com/ohcnetwork/care_fe/pull/16446))
-- Notification UI for real-time alert visibility across the platform ([ENG-632](https://openhealthcarenetwork.atlassian.net/browse/ENG-632))
 - Facility-level questionnaire UX improvements for better form interaction and workflow ([#16618](https://github.com/ohcnetwork/care_fe/pull/16618))
 
 These designs represent the next generation of clinical workflows, currently being refined through community feedback and testing.
