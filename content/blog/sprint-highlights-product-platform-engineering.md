@@ -23,15 +23,16 @@ A usability issue where dosage information could be missed on mobile screens has
 
 This improvement ensures that medication instructions are clearer and harder to overlook, especially in time-sensitive clinical environments where precision matters.
 
-## Clinical Data & Documentation Improvements
+## New UI Designs in Development
 
-Several enhancements improve how clinicians access and document clinical data:
+Several new user interface designs have been completed and are currently in review and implementation:
 
 - Historic table view for observations across encounters, enabling quick review of diagnostic report component-level data over time ([#16756](https://github.com/ohcnetwork/care_fe/pull/16756))
 - Drug chart print preview redesigned for landscape mode, improving print layout and usability ([#16446](https://github.com/ohcnetwork/care_fe/pull/16446))
+- Notification UI for real-time alert visibility across the platform ([ENG-632](https://openhealthcarenetwork.atlassian.net/browse/ENG-632))
 - Facility-level questionnaire UX improvements for better form interaction and workflow ([#16618](https://github.com/ohcnetwork/care_fe/pull/16618))
 
-These changes make clinical workflows faster and more intuitive for documentation and data retrieval.
+These designs represent the next generation of clinical workflows, currently being refined through community feedback and testing.
 
 ## Agentic Workflow Optimization
 
@@ -46,9 +47,8 @@ Several workflow improvements strengthen the platform's stability and user contr
 - Controlled auto-updates that require user confirmation ([#16380](https://github.com/ohcnetwork/care_fe/pull/16380))
 - Integration of 'url' type for integrated notes in questionnaire input ([#16382](https://github.com/ohcnetwork/care_fe/pull/16382))
 - Jira-based PR validation workflow for pull request title standards ([#16358](https://github.com/ohcnetwork/care_fe/pull/16358))
-- Notification UI implementation for real-time alert visibility across the platform ([ENG-632](https://openhealthcarenetwork.atlassian.net/browse/ENG-632))
 
-These changes ensure developers can confidently deploy updates and clinicians have better visibility into system events.
+These changes ensure developers can confidently deploy updates and clinicians have more control over their workflows.
 
 ## Locust Load Testing
 
@@ -66,7 +66,7 @@ CARE Desktop extends the platform's reach to environments with limited connectiv
 
 Together, these contributions strengthen CARE across three key areas:
 
-- **Better clinical usability**: Medication dosage highlighting, historic observation views, drug chart printing, questionnaire enhancements, and notification visibility keep clinicians focused on patient care
+- **Better clinical usability**: New UI designs for observations, drug charts, notifications, and questionnaires represent the next generation of intuitive clinical workflows
 - **Greater platform reliability**: Load testing, workflow improvements, and controlled updates ensure CARE performs under real-world demands
 - **More efficient development lifecycle**: Agentic workflow automation accelerates development while maintaining quality and oversight
 
