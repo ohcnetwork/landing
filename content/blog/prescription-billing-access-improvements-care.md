@@ -47,7 +47,7 @@ Patient age is now shown consistently across encounters, appointments, queues, b
 
 ## Under the hood
 
-Plugin UI components now register automatically through a Vite plugin rather than manual wiring. The frontend moved to Node.js 24 with a round of dependency upgrades. The month also added test coverage across billing and medication timing logic, hardened the shared request layer against pagination and response parsing edge cases, and introduced an automated pull request review workflow, alongside the usual continuous integration and tooling changes.
+Plugin UI components now register automatically through a Vite plugin rather than requiring manual wiring. The frontend has also moved to Node.js 24, accompanied by dependency upgrades. Additional platform improvements strengthen billing and medication timing test coverage, make the shared request layer more resilient to pagination and response-parsing edge cases, and add an automated pull request review workflow alongside ongoing continuous integration and tooling improvements.
 
 ## Operations and ecosystem
 
