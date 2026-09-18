@@ -25,7 +25,7 @@ The docs platform gained a dedicated Docusaurus plugin to improve AI accessibili
 
 ## Pharmacy Workflow and Clinical Billing
 
-CARE's pharmacy workflow received billing improvements focused on reducing friction during medication billing operations ([#16083](https://github.com/ohcnetwork/care_fe/pull/16083)). These refinements improve reliability in day-to-day dispensing and invoicing workflows, where speed and billing correctness need to coexist.
+CARE's pharmacy workflow received billing improvements focused on reducing friction during medication billing operations ([#16083](https://github.com/ohcnetwork/care_fe/pull/16083)). The changes increase user friendliness by reducing the number of overall clicks needed to complete billing tasks. These refinements improve reliability in day-to-day dispensing and invoicing workflows, where speed and billing correctness need to coexist.
 
 ## Engineering Health and Observability
 
@@ -39,7 +39,7 @@ The CARE experience sandbox remains an important enablement surface for product 
 
 ## AI Vision Interface Enhancements
 
-AI Vision projects shipped interface updates in both supporting repositories:
+AI Vision is a diagnostic and clinical support system that uses computer vision and AI to assist healthcare practitioners in analyzing medical images and patient data. The projects shipped interface updates in both supporting repositories:
 
 - Language selection and transcript editing with broader UI enhancements in `care_filly_fe` ([#42](https://github.com/ohcnetwork/care_filly_fe/pull/42))
 - New UI updates in `care_ai_vision_fe` ([#15](https://github.com/ohcnetwork/care_ai_vision_fe/pull/15))
