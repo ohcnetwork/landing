@@ -1,10 +1,21 @@
 {
   "positions": [
     {
+      "title": "Junior Product Manager",
+      "type": "Full Time",
+      "location": "Trivandrum",
+      "applyUrl": "https://forms.gle/94XBGsRovXS2atA86",
+      "requirements": [
+        "Experience in Product Operations",
+        "Interest in Open Source & Global Health",
+        "Familiar with Healthcare Standards"
+      ]
+    },
+    {
       "title": "Clinical Product Specialist",
       "type": "Full Time",
       "location": "Ernakulam",
-      "applyUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeTYHY__qriRP0j5_-e3rX7GFXIkT8UGLl3vhLHr4QIupYRmQ/viewform",
+      "applyUrl": "https://forms.gle/gzgcXxFrDDtSHwTS9",
       "requirements": [
         "5+ years of Clinical Experience",
         "Curious about Technology",
