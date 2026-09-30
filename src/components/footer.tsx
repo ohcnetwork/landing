@@ -203,6 +203,15 @@ export function Footer() {
                         <p className="pt-1.5 text-gray-950">
                           U88100KL2025NPL098818
                         </p>
+                        <p className="mt-8 text-gray-950/70">Email</p>
+                        <p className="pt-1.5">
+                          <Link
+                            href="mailto:support@ohc.network"
+                            className="font-medium text-gray-950 hover:text-gray-950/75"
+                          >
+                            support@ohc.network
+                          </Link>
+                        </p>
                       </div>
                     </div>
                   </PlusGridItem>
