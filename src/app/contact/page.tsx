@@ -65,6 +65,15 @@ function Hero() {
             partnerships, funding conversations, contribution pathways, and
             clinical workflow collaboration.
           </p>
+          <p className="mt-6 text-base/7 text-gray-600">
+            Email us at{' '}
+            <a
+              href="mailto:support@ohc.network"
+              className="font-semibold text-[#12806a] hover:text-[#0b5f4f]"
+            >
+              support@ohc.network
+            </a>
+          </p>
         </div>
       </Container>
     </div>
