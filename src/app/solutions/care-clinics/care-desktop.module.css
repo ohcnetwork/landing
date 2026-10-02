@@ -1,0 +1,194 @@
+/* Motion for the Care Desktop page. Layout and colour live in Tailwind classes. */
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.94) translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes drift {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(70px, -50px) scale(1.12);
+  }
+}
+
+@keyframes driftAlt {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-80px, 60px) scale(0.9);
+  }
+}
+
+@keyframes ticker {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(49, 196, 141, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(49, 196, 141, 0);
+  }
+}
+
+@keyframes floaty {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes shine {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 200% 50%;
+  }
+}
+
+/* Hero entrance, played once on load */
+.intro {
+  animation: rise 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+.delay1 {
+  animation-delay: 0.08s;
+}
+.delay2 {
+  animation-delay: 0.18s;
+}
+.delay3 {
+  animation-delay: 0.28s;
+}
+.delay4 {
+  animation-delay: 0.38s;
+}
+.delay5 {
+  animation-delay: 0.55s;
+}
+
+.blob {
+  animation: drift 18s ease-in-out infinite;
+}
+.blobAlt {
+  animation: driftAlt 24s ease-in-out infinite;
+}
+
+.ticker {
+  animation: ticker 42s linear infinite;
+}
+.tickerWrap:hover .ticker {
+  animation-play-state: paused;
+}
+
+.pulse {
+  animation: pulse 2.2s ease-out infinite;
+}
+
+.floaty {
+  animation: floaty 6s ease-in-out infinite;
+}
+.floatyAlt {
+  animation: floaty 7s ease-in-out 1.5s infinite;
+}
+
+.shine {
+  background-size: 200% 100%;
+  animation: shine 6s linear infinite;
+}
+
+/* Scroll-linked reveals. Browsers without view timelines show content as-is. */
+@supports (animation-timeline: view()) {
+  .reveal {
+    animation: rise linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 35%;
+  }
+  .zoom {
+    animation: zoomIn linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 45%;
+  }
+  .fromLeft {
+    animation: slideLeft linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 40%;
+  }
+  .fromRight {
+    animation: slideRight linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 40%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .intro,
+  .blob,
+  .blobAlt,
+  .ticker,
+  .pulse,
+  .floaty,
+  .floatyAlt,
+  .shine,
+  .reveal,
+  .zoom,
+  .fromLeft,
+  .fromRight {
+    animation: none;
+  }
+}
