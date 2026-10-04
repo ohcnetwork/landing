@@ -24,7 +24,7 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Care Clinic downloads
+## CARE Clinic downloads
 
 The Mac and Windows buttons on `/solutions/care-clinics` look up the latest
 published release from `ohcnetwork/care_clinic` in the browser and request its
@@ -37,6 +37,8 @@ spinner indicating the temporary disabled state. A hidden attachment frame keeps
 the clinic page open. Browsers do not expose native download start or completion
 events, so the cooldown is only duplicate-click protection, not a progress
 indicator. Lookup failures are shown beside the button and allow retry.
+Only the initiating button announces status changes and errors to screen readers;
+other copies still show the shared loading and error state without live announcements.
 An ordinary "Download from GitHub releases" link stays available beside both
 button groups without JavaScript, and also appears in errors, for API rate limits
 or browser-blocked attachment handoffs. It opens the official release page rather
