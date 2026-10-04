@@ -102,7 +102,7 @@ function Sitemap() {
           <SitemapLink href="/solutions/palliative-care">
             Palliative Care
           </SitemapLink>
-          <SitemapLink href="/solutions/care-clinics">Care Clinics</SitemapLink>
+          <SitemapLink href="/solutions/care-clinics">CARE Clinic</SitemapLink>
           <SitemapLink href="/solutions/care-janwar">Animal Health</SitemapLink>
         </SitemapLinks>
       </div>

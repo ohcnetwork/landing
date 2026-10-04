@@ -9,7 +9,11 @@ import {
   useState,
   type ReactNode,
 } from 'react'
-import { getLatestInstaller, type InstallerPlatform } from './release-download'
+import {
+  CLINIC_RELEASES_URL,
+  getLatestInstaller,
+  type InstallerPlatform,
+} from './release-download'
 
 type DownloadState = {
   status: 'idle' | 'loading' | 'starting' | 'error'
@@ -144,7 +148,13 @@ export function ClinicDownloadButton({
           role="alert"
           className="absolute top-full left-0 z-10 mt-2 w-full rounded-lg border border-red-200 bg-white p-3 text-sm leading-relaxed text-red-800 shadow-lg"
         >
-          {state.error}
+          {state.error}{' '}
+          <a
+            href={CLINIC_RELEASES_URL}
+            className="font-semibold underline underline-offset-2"
+          >
+            Download from GitHub releases
+          </a>
         </p>
       )}
     </div>

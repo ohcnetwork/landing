@@ -48,7 +48,7 @@ const links = [
       { href: '/solutions/hospital-management', label: 'Hospital Management' },
       { href: '/solutions/teleicu', label: 'TeleICU' },
       { href: '/solutions/palliative-care', label: 'Palliative Care' },
-      { href: '/solutions/care-clinics', label: 'Care Clinics' },
+      { href: '/solutions/care-clinics', label: 'CARE Clinic' },
     ],
   },
   { href: '/impact', label: 'Impact' },

@@ -1,4 +1,5 @@
 export const CLINIC_REPO_URL = 'https://github.com/ohcnetwork/care_clinic'
+export const CLINIC_RELEASES_URL = `${CLINIC_REPO_URL}/releases/latest`
 export type InstallerPlatform = 'mac' | 'windows'
 
 const installerPatterns = {

@@ -192,10 +192,10 @@ const solutionListing = [
     href: '/solutions/palliative-care',
   },
   {
-    title: 'Care Clinics',
+    title: 'CARE Clinic',
     description:
-      'Primary care and outpatient workflows for scheduling, prescriptions, investigations, and continuity.',
-    logo: '/logos/care-clinics.svg',
+      'Free, open-source clinic software for Mac and Windows. Run CARE on your own computer, with core workflows on the clinic network after online setup.',
+    logo: '/logos/care-logo.svg',
     href: '/solutions/care-clinics',
   },
   {
