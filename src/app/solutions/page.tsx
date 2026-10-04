@@ -84,14 +84,14 @@ const solutions = [
     status: 'Reference model',
   },
   {
-    title: 'Clinics and Primary Care',
-    eyebrow: 'CARE Clinics',
+    title: 'CARE Clinic',
+    eyebrow: 'Your clinic’s own computer',
     description:
-      'Clinic and primary-care workflows for appointments, registration, encounters, prescriptions, investigations, follow-up, and reporting.',
+      'A free, open-source Mac and Windows application that sets up CARE on a clinic computer, with patient records, appointments, prescriptions, billing and encrypted backups.',
     href: '/solutions/care-clinics',
     icon: Stethoscope,
-    logo: '/logos/care-clinics.svg',
-    status: 'Deployment blueprint',
+    logo: '/logos/care-logo.svg',
+    status: 'Download for Mac and Windows',
   },
   {
     title: 'Animal Health',
