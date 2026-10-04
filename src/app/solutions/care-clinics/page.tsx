@@ -10,7 +10,6 @@ import {
   Calendar,
   Clock,
   Database,
-  Download,
   FileText,
   Key,
   Lock,
@@ -26,16 +25,18 @@ import {
 import type { Metadata } from 'next'
 import { AutoplayVideo } from './autoplay-video'
 import s from './care-desktop.module.css'
+import { ClinicDownloadButton, ClinicDownloadProvider } from './download-button'
+import { CLINIC_REPO_URL } from './release-download'
 
-const pageTitle = 'Care Desktop: Free, Open-Source Clinic Management Software'
+const pageTitle = 'Care Clinic: Free, Open-Source Clinic Management Software'
 const pageDescription =
-  'Care Desktop is free, open-source clinic management software for small clinics. One installer runs Care on a clinic computer: patient records, appointments, prescriptions, billing and encrypted daily backups, working offline after setup.'
+  'Care Clinic is free, open-source clinic management software for small clinics. One installer runs Care on a clinic computer: patient records, appointments, prescriptions, billing and encrypted daily backups, working offline after setup.'
 
 export const metadata: Metadata = {
   title: pageTitle,
   description: pageDescription,
   keywords: [
-    'Care Desktop',
+    'Care Clinic',
     'free clinic management software',
     'open source clinic software',
     'clinic EMR',
@@ -59,7 +60,7 @@ export const metadata: Metadata = {
         url: '/og/care-desktop.jpg',
         width: 1200,
         height: 630,
-        alt: 'Care Desktop: free clinic software. Your data. Your control.',
+        alt: 'Care Clinic: free clinic software. Your data. Your control.',
       },
     ],
   },
@@ -71,8 +72,7 @@ export const metadata: Metadata = {
   },
 }
 
-const REPO_URL = 'https://github.com/ohcnetwork/care_desktop'
-const RELEASES_URL = `${REPO_URL}/releases/latest`
+const REPO_URL = CLINIC_REPO_URL
 const LICENSE_URL = `${REPO_URL}/blob/main/LICENSE`
 const DOCS_URL = `${REPO_URL}/blob/main/docs/README.md`
 
@@ -232,7 +232,7 @@ const dataPoints: { icon: LucideIcon; title: string; text: string }[] = [
   {
     icon: Shield,
     title: 'No telemetry.',
-    text: 'Care Desktop sends no usage data, analytics or crash reports. It goes online for installation, updates, plugins and the services you switch on, and for nothing else.',
+    text: 'Care Clinic sends no usage data, analytics or crash reports. It goes online for installation, updates, plugins and the services you switch on, and for nothing else.',
   },
   {
     icon: Lock,
@@ -247,18 +247,18 @@ const dataPoints: { icon: LucideIcon; title: string; text: string }[] = [
   {
     icon: Key,
     title: 'Locked with a password and recovery codes.',
-    text: 'Setup creates a Desktop admin password and six recovery codes. Restoring a backup, changing protected settings and uninstalling all ask for the password.',
+    text: 'Setup creates a Care Clinic admin password and six recovery codes. Restoring a backup, changing protected settings and uninstalling all ask for the password.',
   },
 ]
 
 const setupSteps = [
   {
     title: 'Download.',
-    text: 'Get Care Desktop for Mac or Windows.',
+    text: 'Get Care Clinic for Mac or Windows.',
     image: '/care-desktop/first-run.webp',
     width: 2200,
     height: 1400,
-    alt: 'The first-run choice in Care Desktop: set up the clinic here, or connect to an existing clinic',
+    alt: 'The first-run choice in Care Clinic: set up the clinic here, or connect to an existing clinic',
   },
   {
     title: 'Set up the clinic computer.',
@@ -270,7 +270,7 @@ const setupSteps = [
   },
   {
     title: 'Connect the team.',
-    text: 'Open Care Desktop on each staff computer, choose “Connect to an existing server on the local network” and enter the clinic address. Phones and tablets scan the QR code in the control panel.',
+    text: 'Open Care Clinic on each staff computer, choose “Connect to an existing server on the local network” and enter the clinic address. Phones and tablets scan the QR code in the control panel.',
     image: '/care-desktop/client-connect.webp',
     width: 2200,
     height: 1400,
@@ -320,7 +320,7 @@ const specs: [string, React.ReactNode][] = [
   ['Installers', '.dmg for macOS, -setup.exe for Windows, code-signed'],
   [
     'Staff devices',
-    'Mac and Windows computers running Care Desktop in client mode; iOS and Android through the browser on the clinic network',
+    'Mac and Windows computers running Care Clinic in client mode; iOS and Android through the browser on the clinic network',
   ],
   [
     'Network',
@@ -360,21 +360,21 @@ const specs: [string, React.ReactNode][] = [
         'text-[13.5px] font-semibold text-[#046c4e] hover:text-[#014737]',
       )}
     >
-      github.com/ohcnetwork/care_desktop
+      github.com/ohcnetwork/care_clinic
     </a>,
   ],
 ]
 
 const faqs = [
   {
-    question: 'Is Care Desktop really free?',
+    question: 'Is Care Clinic really free?',
     answer:
-      'Yes. The Care Desktop software is free to download and use under the MIT licence. There is no software subscription, no licence fee and no trial period that ends.',
+      'Yes. The Care Clinic software is free to download and use under the MIT licence. There is no software subscription, no licence fee and no trial period that ends.',
   },
   {
     question: 'Why is it free?',
     answer:
-      'Care is built as open-source healthcare infrastructure. Open Healthcare Network Foundation releases Care Desktop under the MIT licence so clinics and their technical partners can use and adapt the software without buying a licence.',
+      'Care is built as open-source healthcare infrastructure. Open Healthcare Network Foundation releases Care Clinic under the MIT licence so clinics and their technical partners can use and adapt the software without buying a licence.',
   },
   {
     question: 'What might still cost money?',
@@ -384,7 +384,7 @@ const faqs = [
   {
     question: 'Where are my patient records stored?',
     answer:
-      'The clinic database and files are stored on the computer that hosts Care Desktop, and backups go to the location you choose. Your clinic manages access and backups. Services you switch on, such as SMS or email, send information to the provider you configured, so review each one before using it.',
+      'The clinic database and files are stored on the computer that hosts Care Clinic, and backups go to the location you choose. Your clinic manages access and backups. Services you switch on, such as SMS or email, send information to the provider you configured, so review each one before using it.',
   },
   {
     question: 'Does open source mean patient records are public?',
@@ -394,10 +394,10 @@ const faqs = [
   {
     question: 'Can my whole team use it?',
     answer:
-      'Yes. One computer hosts the clinic, and other staff computers connect over the clinic’s local network using Care Desktop in client mode. Phones and tablets connect through a setup page on the clinic network. There is no per-user licence fee; capacity depends on the host computer, network and configuration.',
+      'Yes. One computer hosts the clinic, and other staff computers connect over the clinic’s local network using Care Clinic in client mode. Phones and tablets connect through a setup page on the clinic network. There is no per-user licence fee; capacity depends on the host computer, network and configuration.',
   },
   {
-    question: 'Does Care Desktop work without internet?',
+    question: 'Does Care Clinic work without internet?',
     answer:
       'Core clinic workflows run on the local network without internet once installation and setup are complete. Installation, updates, hosted plugins and any online service you switch on need an internet connection.',
   },
@@ -407,14 +407,14 @@ const faqs = [
       'The host computer runs Windows 64-bit or macOS (Apple Silicon or Intel). Staff computers run the same app in client mode on Windows or macOS, and phones and tablets connect through a browser on the clinic network.',
   },
   {
-    question: 'Where do I download Care Desktop?',
+    question: 'Where do I download Care Clinic?',
     answer:
-      'From the Care Desktop release page on GitHub, where each release lists a .dmg installer for macOS and a -setup.exe installer for Windows. Windows releases are code-signed, so the installer verifies as coming from the project.',
+      'Use Download for Mac or Download for Windows on this page to download the matching installer from the latest release directly. Mac downloads use .dmg and Windows downloads use -setup.exe. If nothing appears in your browser’s downloads, wait for the button to become available and try again.',
   },
   {
     question: 'Who is responsible for backups?',
     answer:
-      'Your clinic or its technical partner. Care Desktop takes an encrypted backup every 24 hours and includes a restore workflow. Keep the recovery file safe, keep a copy of the backups away from the host computer, and test a restore before relying on it.',
+      'Your clinic or its technical partner. Care Clinic takes an encrypted backup every 24 hours and includes a restore workflow. Keep the recovery file safe, keep a copy of the backups away from the host computer, and test a restore before relying on it.',
   },
   {
     question: 'Can I move my records to another system later?',
@@ -422,24 +422,24 @@ const faqs = [
       'Local access to the database, open-source code and your own backups give your clinic control over its system. Moving records into a different product is a separate migration task that depends on the formats and workflows involved.',
   },
   {
-    question: 'Is Care Desktop the same as Care?',
+    question: 'Is Care Clinic the same as Care?',
     answer:
-      'Care Desktop packages the open-source Care platform for a single clinic computer. The hosted Care platform serves hospitals and community-care programmes; Care Desktop brings the same platform to a small clinic without a hosted account or a software licence fee.',
+      'Care Clinic packages the open-source Care platform for a single clinic computer. The hosted Care platform serves hospitals and community-care programmes; Care Clinic brings the same platform to a small clinic without a hosted account or a software licence fee.',
   },
   {
-    question: 'Does Care Desktop collect usage data?',
+    question: 'Does Care Clinic collect usage data?',
     answer:
-      'No. Care Desktop has no telemetry, analytics or crash reporting. It connects to the internet only for installation, updates, hosted plugins and the online services your clinic configures.',
+      'No. Care Clinic has no telemetry, analytics or crash reporting. It connects to the internet only for installation, updates, hosted plugins and the online services your clinic configures.',
   },
   {
-    question: 'Is Care Desktop OPD management software?',
+    question: 'Is Care Clinic OPD management software?',
     answer:
       'Yes, in the sense that it covers outpatient clinic work: registration, appointments, consultations, prescriptions and billing. It is built for a small clinic running on one computer. Hospitals with wards and multiple departments should look at the hosted Care platform.',
   },
   {
     question: 'What are plugins?',
     answer:
-      'Plugins add capabilities to Care without changing its core. Care Desktop ships with a catalog of three: CARE Onboarding for setting up a new clinic, Booking notifications for appointment reminders by SMS and web push, and Filly for voice-driven form filling. A technical partner can add other Care plugins as custom plugins. Plugins that use online services need internet, and those services may have their own terms and costs.',
+      'Plugins add capabilities to Care without changing its core. Care Clinic ships with a catalog of three: CARE Onboarding for setting up a new clinic, Booking notifications for appointment reminders by SMS and web push, and Filly for voice-driven form filling. A technical partner can add other Care plugins as custom plugins. Plugins that use online services need internet, and those services may have their own terms and costs.',
   },
 ]
 
@@ -447,11 +447,11 @@ const structuredData = [
   {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
-    name: 'Care Desktop',
+    name: 'Care Clinic',
     applicationCategory: 'HealthApplication',
     operatingSystem: 'macOS, Windows',
     url: 'https://ohc.network/solutions/care-clinics',
-    downloadUrl: RELEASES_URL,
+    downloadUrl: 'https://ohc.network/solutions/care-clinics#download',
     description: pageDescription,
     license: 'https://opensource.org/license/mit/',
     offers: {
@@ -694,7 +694,7 @@ function Hero() {
                 'block size-[9px] rounded-full bg-[#31c48d]',
               )}
             />
-            Care Desktop
+            Care Clinic
             <span
               aria-hidden="true"
               className="hidden text-[#84e1bc] sm:inline"
@@ -734,29 +734,24 @@ function Hero() {
               'mt-2.5 flex w-full flex-col items-stretch justify-center gap-3.5 sm:w-auto sm:flex-row sm:items-center',
             )}
           >
-            <a
-              href={RELEASES_URL}
+            <ClinicDownloadButton
+              platform="mac"
               className={clsx(
                 mintButton,
                 'h-14 justify-center px-7 text-[17px]',
               )}
             >
-              <Download
-                className="size-[18px]"
-                strokeWidth={2.4}
-                aria-hidden="true"
-              />
               Download for Mac
-            </a>
-            <a
-              href={RELEASES_URL}
+            </ClinicDownloadButton>
+            <ClinicDownloadButton
+              platform="windows"
               className={clsx(
                 glassButton,
                 'h-14 justify-center px-4 text-base sm:px-6',
               )}
             >
-              Also available for Windows
-            </a>
+              Download for Windows
+            </ClinicDownloadButton>
           </div>
           <p
             className={clsx(
@@ -860,7 +855,7 @@ function Overview() {
         >
           <h2 className={h2Class}>The whole clinic. One computer.</h2>
           <p className={leadClass}>
-            Care Desktop is a free, open-source clinic management software for
+            Care Clinic is a free, open-source clinic management software for
             small clinics. One installer sets up the whole system on a clinic
             computer, from patient records, appointments, prescriptions and
             billing to the database, file storage and daily encrypted backups.
@@ -931,7 +926,7 @@ function Overview() {
             >
               <span className="text-[#5e5d59]">$</span>
               <span className="truncate">
-                git clone github.com/ohcnetwork/care_desktop
+                git clone github.com/ohcnetwork/care_clinic
               </span>
             </span>
           </div>
@@ -1121,7 +1116,7 @@ function AlsoInTheBox() {
   )
 }
 
-function DesktopSection() {
+function ClinicSection() {
   return (
     <section
       id="desktop"
@@ -1144,10 +1139,10 @@ function DesktopSection() {
           )}
         >
           <p className="font-mono text-xs font-semibold tracking-[0.18em] text-[#84e1bc] uppercase">
-            Care Desktop
+            Care Clinic
           </p>
           <h2 className="text-[clamp(34px,4.4vw,62px)] leading-[1.02] font-medium tracking-normal text-balance text-white">
-            Care is the platform. Desktop is how one clinic runs it.
+            Care is the platform. Care Clinic is how one clinic runs it.
           </h2>
           <p className="max-w-[680px] text-[clamp(17px,1.4vw,20px)] leading-[1.6] text-pretty text-[#bdf0d9]">
             The same open-source Care platform that hospitals and public-health
@@ -1172,7 +1167,7 @@ function DesktopSection() {
               height={1400}
               loading="lazy"
               decoding="async"
-              alt="Care Desktop control panel showing a running clinic at care.local, an up-to-date encrypted backup and storage on this computer"
+              alt="Care Clinic control panel showing a running clinic at care.local, an up-to-date encrypted backup and storage on this computer"
               className="size-full object-cover"
             />
           </figure>
@@ -1207,7 +1202,7 @@ function PluginsSection() {
           <h2 className={h2Class}>Add what your clinic needs.</h2>
           <p className={leadClass}>
             Plugins extend Care without changing its core. Choose one in the
-            control panel, press Save and apply, and Care Desktop installs what
+            control panel, press Save and apply, and Care Clinic installs what
             it needs.
           </p>
         </div>
@@ -1261,7 +1256,7 @@ function PluginsSection() {
               </a>{' '}
               reaches national rails, AI documentation, labs, pharmacy, imaging,
               payments and messaging. A technical partner can add any Care
-              plugin to Care Desktop as a custom plugin from the same control
+              plugin to Care Clinic as a custom plugin from the same control
               panel.
             </p>
           </div>
@@ -1292,7 +1287,7 @@ function PluginsSection() {
                   height={1040}
                   loading="lazy"
                   decoding="async"
-                  alt="The Plugins tab of the Care Desktop control panel, with Booking notifications and Filly listed and an Add a plugin menu"
+                  alt="The Plugins tab of the Care Clinic control panel, with Booking notifications and Filly listed and an Add a plugin menu"
                   className="size-full object-cover"
                 />
               </div>
@@ -1382,7 +1377,7 @@ function TeamSection() {
               height={1400}
               loading="lazy"
               decoding="async"
-              alt="The Care Desktop client Connect screen with the clinic address field"
+              alt="The Care Clinic client Connect screen with the clinic address field"
               className="size-full object-cover"
             />
           </figure>
@@ -1544,7 +1539,7 @@ function OpenSourceSection() {
                 LICENSE
               </span>
               <span className="truncate">
-                github.com/ohcnetwork/care_desktop
+                github.com/ohcnetwork/care_clinic
               </span>
             </span>
             <span className="text-base font-semibold text-white">
@@ -1630,7 +1625,7 @@ function WhichCareSection() {
                     scope="col"
                     className="w-2/5 border-b border-l border-[#dfe6e2] border-l-[#eef2ef] bg-[#def7ec] px-6 py-[22px] text-[22px] font-semibold text-[#014737]"
                   >
-                    Care Desktop
+                    Care Clinic
                   </th>
                   <th
                     scope="col"
@@ -1666,15 +1661,10 @@ function WhichCareSection() {
                   </th>
                   <td className="border-l border-[#eef2ef] bg-[#def7ec]/35 px-6 py-[18px] align-middle">
                     <a
-                      href={RELEASES_URL}
+                      href="#download"
                       className="inline-flex h-[46px] items-center gap-2 rounded-xl bg-[#057a55] px-5 text-[15px] font-bold text-white no-underline transition-colors hover:bg-[#046c4e]"
                     >
-                      <Download
-                        className="size-4"
-                        strokeWidth={2.2}
-                        aria-hidden="true"
-                      />
-                      Download
+                      Choose your installer
                     </a>
                   </td>
                   <td className="border-l border-[#eef2ef] px-6 py-[18px] align-middle">
@@ -1790,37 +1780,27 @@ function DownloadSection() {
             </span>
           </h2>
           <p className="text-[clamp(19px,1.6vw,23px)] leading-[1.5] text-[#def7ec]">
-            Get Care Desktop for your clinic.
+            Get Care Clinic for your clinic.
           </p>
           <div className="mt-2 flex w-full flex-col items-stretch justify-center gap-3.5 sm:w-auto sm:flex-row sm:items-center">
-            <a
-              href={RELEASES_URL}
+            <ClinicDownloadButton
+              platform="mac"
               className={clsx(
                 mintButton,
                 'h-[58px] justify-center px-[30px] text-[17px]',
               )}
             >
-              <Download
-                className="size-[18px]"
-                strokeWidth={2.4}
-                aria-hidden="true"
-              />
               Download for Mac
-            </a>
-            <a
-              href={RELEASES_URL}
+            </ClinicDownloadButton>
+            <ClinicDownloadButton
+              platform="windows"
               className={clsx(
                 glassButton,
                 'h-[58px] justify-center border-white/30 bg-white/12 px-7 text-[17px]',
               )}
             >
-              <Download
-                className="size-[18px]"
-                strokeWidth={2.4}
-                aria-hidden="true"
-              />
               Download for Windows
-            </a>
+            </ClinicDownloadButton>
           </div>
           <div className="flex flex-wrap justify-center gap-x-7 gap-y-2.5">
             <ArrowLink
@@ -1837,7 +1817,7 @@ function DownloadSection() {
             </ArrowLink>
           </div>
           <p className="mt-6 max-w-[760px] text-sm leading-[1.6] text-pretty text-[#bdf0d9]">
-            Care Desktop is released under the MIT licence by Open Healthcare
+            Care Clinic is released under the MIT licence by Open Healthcare
             Network Foundation. The software is free; hardware, support and
             external services may involve separate costs. Internet is needed for
             installation, updates, hosted plugins and connected services.
@@ -1859,7 +1839,7 @@ function StructuredData() {
   )
 }
 
-export default function CareDesktopPage() {
+export default function CareClinicPage() {
   return (
     <div className="overflow-x-clip bg-white">
       <StructuredData />
@@ -1869,24 +1849,26 @@ export default function CareDesktopPage() {
         </Container>
       </div>
       <div className="text-[#111827]">
-        <main>
-          <Hero />
-          <Ticker />
-          <Overview />
-          <Price />
-          <CareInMotion />
-          <AlsoInTheBox />
-          <DesktopSection />
-          <PluginsSection />
-          <DataSection />
-          <TeamSection />
-          <OfflineSection />
-          <SetupSection />
-          <OpenSourceSection />
-          <WhichCareSection />
-          <FaqSection />
-          <DownloadSection />
-        </main>
+        <ClinicDownloadProvider>
+          <main>
+            <Hero />
+            <Ticker />
+            <Overview />
+            <Price />
+            <CareInMotion />
+            <AlsoInTheBox />
+            <ClinicSection />
+            <PluginsSection />
+            <DataSection />
+            <TeamSection />
+            <OfflineSection />
+            <SetupSection />
+            <OpenSourceSection />
+            <WhichCareSection />
+            <FaqSection />
+            <DownloadSection />
+          </main>
+        </ClinicDownloadProvider>
       </div>
       <Footer />
     </div>

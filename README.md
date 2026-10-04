@@ -24,6 +24,26 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+## Care Clinic downloads
+
+The Mac and Windows buttons on `/solutions/care-clinics` look up the latest
+published release from `ohcnetwork/care_clinic` in the browser and request its
+`-macos.dmg` or `-windows-amd64-setup.exe` asset directly. This works with the
+site's static export and does not require a server or GitHub token.
+
+Buttons for the same platform share a lock while the release is loading and for
+a three-second handoff cooldown. The label and dimensions stay unchanged, with a
+spinner indicating the temporary disabled state. A hidden attachment frame keeps
+the clinic page open. Browsers do not expose native download start or completion
+events, so the cooldown is only duplicate-click protection, not a progress
+indicator. Lookup failures are shown beside the button and allow retry.
+
+Run the release-selection checks with:
+
+```bash
+node --experimental-strip-types --test src/app/solutions/care-clinics/release-download.test.mjs
+```
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
