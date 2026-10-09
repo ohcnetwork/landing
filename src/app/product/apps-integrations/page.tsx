@@ -32,12 +32,12 @@ function Hero() {
             the same shared foundation.
           </p>
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-            <Button href="/contact">Browse all integrations</Button>
-            <Button variant="secondary" href="/developers">
-              Request an integration
+            <Button href="/build-on-care">Build on Care</Button>
+            <Button variant="secondary" href="#integrations">
+              Explore integrations
             </Button>
-            <Button variant="secondary" href="/developers">
-              Submit your plugin
+            <Button variant="secondary" href="/contact">
+              Discuss an integration
             </Button>
           </div>
         </div>
@@ -70,7 +70,9 @@ function ArchitectureCloudSection() {
 function FeaturedSection() {
   return (
     <Container className="py-24">
-      <Subheading>Featured</Subheading>
+      <Subheading id="integrations" className="scroll-mt-8">
+        Featured
+      </Subheading>
       <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-normal">
         Most popular integrations deployed across multiple states.
       </Heading>
