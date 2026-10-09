@@ -2,6 +2,7 @@ import { BentoCard } from '@/components/bento-card'
 import { Button } from '@/components/button'
 import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
+import { Link } from '@/components/link'
 import { Navbar } from '@/components/navbar'
 import { Heading, Subheading } from '@/components/text'
 import { TopGradient } from '@/components/TopGradient'
@@ -87,6 +88,24 @@ function Hero() {
               <Code className="h-4 w-4" />
               <span>MIT License</span>
             </div>
+          </div>
+          <div className="mt-10 flex max-w-4xl flex-col gap-4 rounded-lg border border-[#dfe6e2] bg-white/70 p-6 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <p className="font-medium text-[#052e24]">
+                Building your own app or integration?
+              </p>
+              <p className="mt-1 text-sm/6 text-gray-600">
+                Explore extension points, working examples, and a path to your
+                first CARE plugin.
+              </p>
+            </div>
+            <Link
+              href="/build-on-care"
+              className="inline-flex shrink-0 items-center gap-2 rounded-sm font-medium text-[#0b6b55] hover:text-[#052e24] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#0b6b55]"
+            >
+              Build on Care
+              <ArrowRight className="size-4" aria-hidden="true" />
+            </Link>
           </div>
         </div>
       </Container>

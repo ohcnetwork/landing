@@ -25,6 +25,7 @@ const routes = [
   ['/network', 0.75],
   ['/ecosystem/implementation-partners', 0.75],
   ['/ecosystem/clinicians', 0.7],
+  ['/build-on-care', 0.85],
   ['/developers', 0.8],
   ['/support', 0.75],
   ['/supporters', 0.6],

@@ -10,7 +10,7 @@ import {
   MenuItems,
 } from '@headlessui/react'
 import { Bars2Icon, ChevronDownIcon } from '@heroicons/react/24/solid'
-import { motion } from 'framer-motion'
+import { motion, useReducedMotion } from 'framer-motion'
 import { usePathname } from 'next/navigation'
 import { Link } from './link'
 import { Logo } from './logo'
@@ -62,6 +62,7 @@ const links = [
         label: 'Implementation Partners',
       },
       { href: '/ecosystem/clinicians', label: 'Clinicians' },
+      { href: '/build-on-care', label: 'Build on Care' },
       { href: '/developers', label: 'Developers' },
     ],
   },
@@ -97,7 +98,7 @@ function DesktopNav() {
   const pathname = usePathname()
 
   return (
-    <nav className="relative hidden rounded-lg border border-black/8 bg-white/60 px-2 shadow-[0_10px_30px_rgba(7,24,19,0.06)] backdrop-blur-xl lg:flex">
+    <nav className="relative hidden rounded-lg border border-black/8 bg-white/60 px-2 shadow-[0_10px_30px_rgba(7,24,19,0.06)] backdrop-blur-xl xl:flex">
       {links.map(({ href, label, submenu }) => {
         const isActive = isLinkActive(href, pathname)
         const hasActiveSubmenu = submenu?.some((item) =>
@@ -158,7 +159,7 @@ function DesktopNav() {
 function MobileNavButton() {
   return (
     <DisclosureButton
-      className="flex size-12 items-center justify-center self-center rounded-lg border border-black/8 bg-white/62 shadow-sm backdrop-blur-xl hover:bg-white lg:hidden"
+      className="flex size-12 items-center justify-center self-center rounded-lg border border-black/8 bg-white/62 shadow-sm backdrop-blur-xl hover:bg-white xl:hidden"
       aria-label="Open main menu"
     >
       <Bars2Icon className="size-6" />
@@ -168,9 +169,10 @@ function MobileNavButton() {
 
 function MobileNav() {
   const pathname = usePathname()
+  const reduceMotion = useReducedMotion()
 
   return (
-    <DisclosurePanel className="lg:hidden">
+    <DisclosurePanel className="xl:hidden">
       <div className="flex flex-col gap-6 py-4">
         {links.map(({ href, label, submenu }, linkIndex) => {
           const isActive = isLinkActive(href, pathname)
@@ -180,12 +182,15 @@ function MobileNav() {
 
           return (
             <motion.div
-              initial={{ opacity: 0, rotateX: -90 }}
+              initial={reduceMotion ? false : { opacity: 0, rotateX: -90 }}
               animate={{ opacity: 1, rotateX: 0 }}
               transition={{
-                duration: 0.15,
+                duration: reduceMotion ? 0 : 0.15,
                 ease: 'easeInOut',
-                rotateX: { duration: 0.3, delay: linkIndex * 0.1 },
+                rotateX: {
+                  duration: reduceMotion ? 0 : 0.3,
+                  delay: reduceMotion ? 0 : linkIndex * 0.1,
+                },
               }}
               key={href}
             >
@@ -253,7 +258,7 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
               </Link>
             </div>
             {banner && (
-              <div className="relative hidden items-center py-3 lg:flex">
+              <div className="relative hidden items-center py-3 xl:flex">
                 {banner}
               </div>
             )}

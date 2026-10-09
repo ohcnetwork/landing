@@ -114,6 +114,7 @@ function Sitemap() {
             Implementation Partners
           </SitemapLink>
           <SitemapLink href="/ecosystem/clinicians">Clinicians</SitemapLink>
+          <SitemapLink href="/build-on-care">Build on Care</SitemapLink>
           <SitemapLink href="/developers">Developers</SitemapLink>
           <SitemapLink href="/impact">Impact</SitemapLink>
         </SitemapLinks>
@@ -174,13 +175,17 @@ function Copyright() {
   )
 }
 
-export function Footer() {
+export function Footer({
+  showCallToAction = true,
+}: {
+  showCallToAction?: boolean
+}) {
   return (
     <footer>
       <Gradient className="relative">
         <div className="absolute inset-2 rounded-lg bg-white/86" />
         <Container>
-          <CallToAction />
+          {showCallToAction && <CallToAction />}
           <PlusGrid className="pb-16">
             <PlusGridRow>
               <div className="grid grid-cols-2 gap-y-10 pb-6 lg:grid-cols-7 lg:gap-8">
