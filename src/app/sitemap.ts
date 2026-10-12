@@ -35,6 +35,7 @@ const routes = [
   ['/blog/care-core-as-operating-layer', 0.7],
   ['/press-media', 0.65],
   ['/faq', 0.65],
+  ['/system-requirements', 0.65],
   ['/careers', 0.45],
   ['/contact', 0.65],
 ] as const
@@ -42,7 +43,10 @@ const routes = [
 export default function sitemap(): MetadataRoute.Sitemap {
   return routes.map(([route, priority]) => ({
     url: `${baseUrl}${route}`,
-    lastModified,
+    lastModified:
+      route === '/system-requirements'
+        ? new Date('2026-10-12')
+        : lastModified,
     changeFrequency: route === '' ? 'weekly' : 'monthly',
     priority,
   }))

@@ -336,7 +336,16 @@ const specs: [string, React.ReactNode][] = [
   ],
   [
     'System requirements',
-    'Recommended: 8 GB RAM, 4-core processor and 30 GB free storage.',
+    <>
+      Recommended: 8 GB RAM, 4-core processor and 30 GB free storage.{' '}
+      <a
+        href="/system-requirements"
+        className="font-semibold text-[#046c4e] underline decoration-[#046c4e]/30 underline-offset-4 hover:text-[#014737]"
+      >
+        CARE browser and device guidance
+      </a>
+      .
+    </>,
   ],
   [
     'Telemetry',
