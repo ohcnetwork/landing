@@ -125,7 +125,7 @@ function Sitemap() {
           <SitemapLink href="/blog">Blog</SitemapLink>
           <SitemapLink href="/faq">FAQ</SitemapLink>
           <SitemapLink href="/system-requirements">
-            System requirements
+            Browser requirements
           </SitemapLink>
           <SitemapLink href="/press-media">Press & Media</SitemapLink>
           <SitemapLink href="/careers">Careers</SitemapLink>
