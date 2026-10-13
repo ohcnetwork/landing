@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
-  <title id="title">Plugin extensions, bed management, and billing refinements in CARE</title>
-  <desc id="desc">June 2026 opened new plugin points for logistics, invoice printing, and patient profiles, simplified bed and location management, tightened payment reconciliation, and made encounters easier to find.</desc>
+  <title id="title">Encounter lookup, versioned valuesets, and steadier releases in CARE</title>
+  <desc id="desc">June was a month of tightening the core. Staff can now go straight to an encounter by its ID, service requests carry the location they belong to, and clinical valuesets are versioned so every deployment knows exactly which terminology it is working with. CARE also became more dependable after each release, with fixes that stop the app failing to load after an update and builds that can be traced to the moment they were made. The new plugin extension points from the month are covered briefly at the end.</desc>
   <defs>
     <pattern id="microgrid-plugin-extensions-bed-management-billing-care" width="44" height="44" patternUnits="userSpaceOnUse">
       <path d="M44 0H0V44" fill="none" stroke="#12312c" stroke-width="1" opacity="0.08"/>
@@ -20,10 +20,10 @@
   <text x="140" y="752" fill="#5f6f69" font-family="'Switzer', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="600">Jun 30, 2026</text>
   <text x="140" y="812" fill="#12312c" font-family="'Switzer', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="3">CARE / OPEN HEALTHCARE NETWORK</text>
   <g font-family="'Switzer', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="74" font-weight="700" letter-spacing="0" fill="#12312c">
-    <text x="140" y="310">Plugin extensions,</text>
-    <text x="140" y="396">bed management, and</text>
-    <text x="140" y="482">billing refinements</text>
-    <text x="140" y="568">in CARE</text>
+    <text x="140" y="310">Encounter lookup,</text>
+    <text x="140" y="396">versioned</text>
+    <text x="140" y="482">valuesets, and</text>
+    <text x="140" y="568">steadier releases</text>
   </g>
   <g transform="translate(54 -8)">
     <circle cx="1265" cy="220" r="116" fill="#e9b44c" opacity="0.13"/>

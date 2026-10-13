@@ -1,6 +1,6 @@
 ---
-title: Plugin extensions, bed management, and billing refinements in CARE
-excerpt: June 2026 opened new plugin points for logistics, invoice printing, and patient profiles, simplified bed and location management, tightened payment reconciliation, and made encounters easier to find.
+title: Encounter lookup, versioned valuesets, and steadier releases in CARE
+excerpt: June was a month of tightening the core. Staff can now go straight to an encounter by its ID, service requests carry the location they belong to, and clinical valuesets are versioned so every deployment knows exactly which terminology it is working with. CARE also became more dependable after each release, with fixes that stop the app failing to load after an update and builds that can be traced to the moment they were made. The new plugin extension points from the month are covered briefly at the end.
 publishedAt: 2026-06-30
 author:
   name: Open Healthcare Network Foundation
@@ -11,7 +11,7 @@ categories:
     slug: hmis
 mainImage:
   src: "/blog/covers/plugin-extensions-bed-management-billing-care.svg"
-  alt: "Plugin extensions, bed management, and billing refinements in CARE cover illustration"
+  alt: "Encounter lookup, versioned valuesets, and steadier releases in CARE cover illustration"
 ---
 
 June focused on the everyday workflows that hospital staff depend on: finding encounters and tracking orders. Alongside that came versioned clinical valuesets, a more reliable app after updates, and a steady set of fixes across the platform.
