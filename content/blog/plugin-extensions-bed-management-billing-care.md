@@ -36,4 +36,4 @@ Forms also got easier to work with. The payment reconciliation form now scrolls 
 
 ## Extending CARE with plugins
 
-June also added new extension points that build on May's Plugs V3 work. Facilities can now customize invoice print formats, show additional facility specific fields on patient profiles, and connect CARE to external delivery and logistics systems, all without changes to the shared core. Bed and location management, delivered through plugins, also improved: patients can be assigned directly to a reserved bed, room controls are clearer, and custom bed names are kept when a location's bed count changes.
+Building on May's Plugs V3 work, June added new extension points across billing, patient records, bed management, and external integrations. Each one gives facilities more room to shape CARE around their own workflows while the shared core stays consistent for every deployment.
