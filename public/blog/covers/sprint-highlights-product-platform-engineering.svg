@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Sprint Highlights: Product, Platform &amp; Engineering Improvements</title>
+  <desc id="desc">This sprint delivered clearer medication dosage visibility, agentic Jira-GitHub workflow automation, reliability fixes, end-to-end load testing, and continued CARE Desktop offline progress.</desc>
+  <defs>
+    <pattern id="microgrid-sprint-highlights-product-platform-engineering" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0V44" fill="none" stroke="#1f2933" stroke-width="1" opacity="0.08"/>
+    </pattern>
+    <linearGradient id="wash-sprint-highlights-product-platform-engineering" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f3f8f6"/>
+      <stop offset="0.58" stop-color="#dbeafe"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#wash-sprint-highlights-product-platform-engineering)"/>
+  <rect width="1600" height="1000" fill="url(#microgrid-sprint-highlights-product-platform-engineering)"/>
+  <path d="M0 780 C230 700 320 860 505 760 C700 656 720 515 930 565 C1168 621 1258 448 1600 498 V1000 H0 Z" fill="#0f766e" opacity="0.08"/>
+  <rect x="84" y="84" width="1432" height="832" rx="44" fill="none" stroke="#1f2933" stroke-width="3" opacity="0.14"/>
+  <text x="140" y="180" fill="#0f766e" font-family="'Switzer', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="2">SPRINT HIGHLIGHTS / OHC UPDATES</text>
+  <text x="140" y="752" fill="#63736d" font-family="'Switzer', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="600">Jul 21, 2026</text>
+  <text x="140" y="812" fill="#1f2933" font-family="'Switzer', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="3">CARE / OPEN HEALTHCARE NETWORK</text>
+  <g font-family="'Switzer', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="74" font-weight="700" letter-spacing="0" fill="#1f2933">
+    <text x="140" y="310">Product, Platform</text>
+    <text x="140" y="396">&amp; Engineering</text>
+    <text x="140" y="482">Improvements</text>
+  </g>
+  <g transform="translate(63 7)">
+    <circle cx="1265" cy="220" r="116" fill="#f0b429" opacity="0.13"/>
+    <rect x="870" y="174" width="560" height="610" rx="52" fill="#ffffff" opacity="0.46"/>
+
+      <path d="M 980 227 L 1100 312 L 1040 432 L 1200 525 L 1120 668 L 1320 740" fill="none" stroke="#3f82f6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+      <path d="M 980 227 L 1100 312 L 1040 432 L 1200 525 L 1120 668 L 1320 740" fill="none" stroke="#1f2933" stroke-width="2" stroke-linecap="round" stroke-dasharray="10 16" opacity="0.42"/>
+
+          <circle cx="980" cy="227" r="22" fill="#0f766e"/>
+          <circle cx="980" cy="227" r="6" fill="#f3f8f6"/>
+          <circle cx="1100" cy="312" r="15" fill="#f0b429"/>
+          <circle cx="1100" cy="312" r="6" fill="#f3f8f6"/>
+          <circle cx="1040" cy="432" r="15" fill="#0f766e"/>
+          <circle cx="1040" cy="432" r="6" fill="#f3f8f6"/>
+          <circle cx="1200" cy="525" r="15" fill="#f0b429"/>
+          <circle cx="1200" cy="525" r="6" fill="#f3f8f6"/>
+          <circle cx="1120" cy="668" r="15" fill="#0f766e"/>
+          <circle cx="1120" cy="668" r="6" fill="#f3f8f6"/>
+          <circle cx="1320" cy="740" r="22" fill="#f0b429"/>
+          <circle cx="1320" cy="740" r="6" fill="#f3f8f6"/>
+
+  </g>
+  <path d="M140 676 H615" stroke="#3f82f6" stroke-width="8" stroke-linecap="round"/>
+  <path d="M140 704 H455" stroke="#f0b429" stroke-width="8" stroke-linecap="round" opacity="0.9"/>
+</svg>
