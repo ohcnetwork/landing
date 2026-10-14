@@ -26,7 +26,7 @@ The form filling side was improved as well, giving clinical staff a cleaner expe
 
 Pharmacy billing now follows a streamlined workflow, making it faster for pharmacy staff to process medication charges for patients.
 
-Medication records also became safer to work with. When staff view historical medication requests, the dosage fields are now locked so they cannot be changed by accident. Medication requests created from templates no longer show a dispense status before anything has actually been dispensed, which removes a source of confusion at the pharmacy counter. Dispense history now loads in pages, making long medication records easier to browse.
+Medication records also became safer to work with. Dispense history now loads in pages, making long medication records easier to browse.
 
 ## Encounters
 
