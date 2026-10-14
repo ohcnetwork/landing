@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Questionnaire builder and workflow improvements in CARE</title>
+  <desc id="desc">August 2026 brought a redesigned questionnaire builder and forms system, smoother pharmacy billing, clearer encounter controls, and reliability improvements across everyday workflows.</desc>
+  <defs>
+    <pattern id="microgrid-questionnaire-workflows" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0V44" fill="none" stroke="#12312c" stroke-width="1" opacity="0.08"/>
+    </pattern>
+    <linearGradient id="wash-questionnaire-workflows" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f7f3e8"/>
+      <stop offset="0.58" stop-color="#e2eee7"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#wash-questionnaire-workflows)"/>
+  <rect width="1600" height="1000" fill="url(#microgrid-questionnaire-workflows)"/>
+  <path d="M0 780 C230 700 320 860 505 760 C700 656 720 515 930 565 C1168 621 1258 448 1600 498 V1000 H0 Z" fill="#0b6b55" opacity="0.08"/>
+  <rect x="84" y="84" width="1432" height="832" rx="44" fill="none" stroke="#12312c" stroke-width="3" opacity="0.14"/>
+  <text x="140" y="180" fill="#0b6b55" font-family="'Switzer', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="2">CARE / OHC ARCHIVE</text>
+  <text x="140" y="752" fill="#5f6f69" font-family="'Switzer', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="600">August 31, 2026</text>
+  <text x="140" y="812" fill="#12312c" font-family="'Switzer', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="3">CARE / OPEN HEALTHCARE NETWORK</text>
+  <g font-family="'Switzer', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="64" font-weight="700" letter-spacing="0" fill="#12312c">
+    <text x="140" y="310">Questionnaire</text>
+    <text x="140" y="390">builder and</text>
+    <text x="140" y="470">workflow</text>
+    <text x="140" y="550">improvements</text>
+  </g>
+  <g>
+    <circle cx="1260" cy="220" r="116" fill="#e9b44c" opacity="0.13"/>
+    <rect x="870" y="174" width="560" height="610" rx="52" fill="#ffffff" opacity="0.46"/>
+
+    <rect x="955" y="248" width="390" height="410" rx="26" fill="#ffffff" opacity="0.76" stroke="#12312c" stroke-width="4" stroke-opacity="0.12"/>
+    <rect x="995" y="286" width="216" height="16" rx="8" fill="#0b6b55" opacity="0.34"/>
+    <rect x="995" y="324" width="308" height="9" rx="4.5" fill="#12312c" opacity="0.12"/>
+
+    <rect x="995" y="364" width="310" height="92" rx="15" fill="#e2eee7" opacity="0.8"/>
+    <circle cx="1025" cy="397" r="10" fill="none" stroke="#0b6b55" stroke-width="4" opacity="0.55"/>
+    <rect x="1048" y="390" width="195" height="10" rx="5" fill="#12312c" opacity="0.24"/>
+    <rect x="1048" y="415" width="226" height="8" rx="4" fill="#12312c" opacity="0.12"/>
+    <path d="M1282 378l10 10-10 10" fill="none" stroke="#d66f3d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+
+    <rect x="995" y="477" width="310" height="92" rx="15" fill="#f7f3e8" opacity="0.9"/>
+    <circle cx="1025" cy="510" r="10" fill="none" stroke="#d66f3d" stroke-width="4" opacity="0.55"/>
+    <rect x="1048" y="503" width="170" height="10" rx="5" fill="#12312c" opacity="0.24"/>
+    <rect x="1048" y="528" width="210" height="8" rx="4" fill="#12312c" opacity="0.12"/>
+    <path d="M1282 491l10 10-10 10" fill="none" stroke="#0b6b55" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+
+    <rect x="995" y="590" width="138" height="42" rx="12" fill="#0b6b55" opacity="0.14"/>
+    <path d="M1020 611l10 10 19-22" fill="none" stroke="#0b6b55" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity="0.64"/>
+    <rect x="1064" y="606" width="46" height="8" rx="4" fill="#0b6b55" opacity="0.34"/>
+
+    <path d="M910 705 C1020 610 1125 760 1240 640 C1295 584 1325 580 1370 615" fill="none" stroke="#e9b44c" stroke-width="9" stroke-linecap="round"/>
+  </g>
+  <path d="M140 676 H615" stroke="#d66f3d" stroke-width="8" stroke-linecap="round"/>
+  <path d="M140 704 H455" stroke="#e9b44c" stroke-width="8" stroke-linecap="round" opacity="0.9"/>
+</svg>
