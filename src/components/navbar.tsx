@@ -81,6 +81,7 @@ const links = [
       { href: '/blog', label: 'Blog' },
       { href: '/press-media', label: 'Press & Media' },
       { href: '/faq', label: 'FAQ' },
+      { href: '/system-requirements', label: 'Browser requirements' },
       { href: '/funding.json', label: 'Support metadata' },
       { href: '/contact', label: 'Contact' },
     ],
