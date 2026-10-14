@@ -1,6 +1,6 @@
 ---
 title: A new questionnaire builder and simpler pharmacy billing in CARE
-excerpt: August 2026 launched version two of CARE's questionnaire builder and forms, streamlined pharmacy billing, made medication records safer to review, and simplified how encounters are managed.
+excerpt: August 2026 launched version two of CARE's questionnaire builder and forms, streamlined pharmacy billing, and simplified how encounters are managed.
 publishedAt: 2026-08-31
 author:
   name: Open Healthcare Network Foundation
@@ -14,7 +14,7 @@ mainImage:
   alt: "A new questionnaire builder and simpler pharmacy billing in CARE cover illustration"
 ---
 
-August brought one of the bigger changes to CARE this year: a rebuilt questionnaire builder and forms system. Alongside it, pharmacy billing became faster to process, medication records became safer to review, and encounter management was simplified so staff see only the options that apply to them.
+August brought one of the bigger changes to CARE this year: a rebuilt questionnaire builder and forms system. Alongside it, pharmacy billing became faster to process, and encounter management was simplified so staff see only the options that apply to them.
 
 ## Questionnaire builder and forms, version two
 
@@ -26,7 +26,7 @@ The form filling side was improved as well, giving clinical staff a cleaner expe
 
 Pharmacy billing now follows a streamlined workflow, making it faster for pharmacy staff to process medication charges for patients.
 
-Medication records also became safer to work with. When staff view historical medication requests, the dosage fields are now locked so they cannot be changed by accident. Medication requests created from templates no longer show a dispense status before anything has actually been dispensed, which removes a source of confusion at the pharmacy counter. Dispense history now loads in pages, making long medication records easier to browse.
+Dispense history now loads in pages, making long medication records easier to browse.
 
 ## Encounters
 
