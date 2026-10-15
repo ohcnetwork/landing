@@ -1,5 +1,6 @@
 import '@/styles/tailwind.css'
 import type { Metadata } from 'next'
+import { ScrollToTop } from '@/components/scroll-to-top'
 
 import { Bricolage_Grotesque } from 'next/font/google'
 
@@ -75,7 +76,10 @@ export default function RootLayout({
           href="/blog/feed.xml"
         />
       </head>
-      <body className="text-gray-950 antialiased">{children}</body>
+      <body className="text-gray-950 antialiased">
+        {children}
+        <ScrollToTop/>
+      </body>
     </html>
   )
 }
