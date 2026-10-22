@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Quicker queues, a sharper pharmacy and clearer billing in CARE</title>
+  <desc id="desc">September 2026 brings quicker queue handling, pharmacy medicine mapping, inventory expiry tracking, clearer billing, facility level patient identifiers and a round of mobile fixes.</desc>
+  <defs>
+    <pattern id="microgrid-september-2026-care-updates" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0V44" fill="none" stroke="#12312c" stroke-width="1" opacity="0.08"/>
+    </pattern>
+    <linearGradient id="wash-september-2026-care-updates" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f7f3e8"/>
+      <stop offset="0.58" stop-color="#e2eee7"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#wash-september-2026-care-updates)"/>
+  <rect width="1600" height="1000" fill="url(#microgrid-september-2026-care-updates)"/>
+  <path d="M0 780 C230 700 320 860 505 760 C700 656 720 515 930 565 C1168 621 1258 448 1600 498 V1000 H0 Z" fill="#0b6b55" opacity="0.08"/>
+  <rect x="84" y="84" width="1432" height="832" rx="44" fill="none" stroke="#12312c" stroke-width="3" opacity="0.14"/>
+  <text x="140" y="180" fill="#0b6b55" font-family="'Switzer', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="2">CARE / OHC ARCHIVE</text>
+  <text x="140" y="752" fill="#5f6f69" font-family="'Switzer', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="600">September 30, 2026</text>
+  <text x="140" y="812" fill="#12312c" font-family="'Switzer', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="3">CARE / OPEN HEALTHCARE NETWORK</text>
+  <g font-family="'Switzer', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="62" font-weight="700" letter-spacing="0" fill="#12312c">
+    <text x="140" y="310">Quicker queues,</text>
+    <text x="140" y="388">a sharper pharmacy</text>
+    <text x="140" y="466">and clearer billing</text>
+    <text x="140" y="544">in CARE</text>
+  </g>
+  <g transform="translate(58 8)">
+    <circle cx="1265" cy="220" r="116" fill="#e9b44c" opacity="0.13"/>
+    <rect x="870" y="174" width="560" height="610" rx="52" fill="#ffffff" opacity="0.46"/>
+    <g opacity="0.82">
+      <rect x="950" y="245" width="392" height="455" rx="24" fill="#ffffff" stroke="#12312c" stroke-width="3" opacity="0.96"/>
+      <rect x="985" y="278" width="230" height="15" rx="7" fill="#0b6b55" opacity="0.9"/>
+      <rect x="985" y="310" width="300" height="10" rx="5" fill="#12312c" opacity="0.14"/>
+      <rect x="985" y="350" width="322" height="66" rx="14" fill="#e2eee7"/>
+      <circle cx="1018" cy="383" r="15" fill="#0b6b55"/>
+      <path d="m1011 383 5 5 10-11" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="1048" y="374" width="215" height="12" rx="6" fill="#12312c" opacity="0.28"/>
+      <rect x="985" y="434" width="322" height="66" rx="14" fill="#f7f3e8"/>
+      <rect x="1003" y="453" width="31" height="28" rx="8" fill="#e9b44c" opacity="0.85"/>
+      <path d="M1010 467h17M1018 459v16" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+      <rect x="1048" y="461" width="190" height="12" rx="6" fill="#12312c" opacity="0.28"/>
+      <rect x="985" y="518" width="322" height="66" rx="14" fill="#e2eee7"/>
+      <rect x="1003" y="537" width="31" height="28" rx="8" fill="#d66f3d" opacity="0.82"/>
+      <path d="M1010 551h17" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+      <rect x="1048" y="545" width="230" height="12" rx="6" fill="#12312c" opacity="0.28"/>
+      <path d="M985 622h322" stroke="#12312c" stroke-width="2" opacity="0.12"/>
+      <rect x="985" y="644" width="150" height="16" rx="8" fill="#0b6b55" opacity="0.65"/>
+      <rect x="1180" y="636" width="127" height="32" rx="16" fill="#d66f3d" opacity="0.82"/>
+    </g>
+  </g>
+  <path d="M140 676 H615" stroke="#d66f3d" stroke-width="8" stroke-linecap="round"/>
+  <path d="M140 704 H455" stroke="#e9b44c" stroke-width="8" stroke-linecap="round" opacity="0.9"/>
+</svg>
