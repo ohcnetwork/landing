@@ -1,6 +1,7 @@
 'use client'
 
-import { Download, LoaderCircle } from 'lucide-react'
+import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
+import { ChevronDown, Download, LoaderCircle } from 'lucide-react'
 import {
   createContext,
   useContext,
@@ -109,41 +110,57 @@ export function ClinicDownloadProvider({ children }: { children: ReactNode }) {
   )
 }
 
-export function ClinicDownloadButton({
-  platform,
-  className,
-  children,
-}: {
-  platform: InstallerPlatform
-  className: string
-  children: ReactNode
-}) {
+export function ClinicDownloadButton({ className }: { className: string }) {
   const buttonId = useId()
+  const [platform, setPlatform] = useState<InstallerPlatform>('mac')
   const context = useContext(DownloadContext)
   if (!context) {
     throw new Error('ClinicDownloadButton requires ClinicDownloadProvider')
   }
   const state = context.states[platform]
   const isInitiator = state.initiatorId === buttonId
-  const busy = state.status === 'loading' || state.status === 'starting'
+  const busy = Object.values(context.states).some(
+    (state) => state.status === 'loading' || state.status === 'starting',
+  )
   const Icon = busy ? LoaderCircle : Download
 
   return (
     <div className="relative">
-      <button
-        type="button"
-        className={`${className} w-full cursor-pointer disabled:cursor-wait`}
-        disabled={busy}
-        aria-busy={busy}
-        onClick={() => void context.download(platform, buttonId)}
-      >
-        <Icon
-          className={`size-[18px] shrink-0 ${busy ? 'animate-spin motion-reduce:animate-none' : ''}`}
-          strokeWidth={2.4}
-          aria-hidden="true"
-        />
-        {children}
-      </button>
+      <Menu>
+        <MenuButton
+          className={`${className} w-full cursor-pointer disabled:cursor-wait`}
+          disabled={busy}
+          aria-busy={busy}
+        >
+          <Icon
+            className={`size-[18px] shrink-0 ${busy ? 'animate-spin motion-reduce:animate-none' : ''}`}
+            strokeWidth={2.4}
+            aria-hidden="true"
+          />
+          Download CARE Clinic
+          <ChevronDown className="size-4 shrink-0" aria-hidden="true" />
+        </MenuButton>
+        <MenuItems
+          anchor="bottom start"
+          className="z-50 mt-2 w-64 rounded-[14px] border border-black/10 bg-white p-1.5 text-[#014737] shadow-xl focus:outline-none"
+        >
+          {(['mac', 'windows'] as const).map((option) => (
+            <MenuItem key={option}>
+              <button
+                type="button"
+                className="flex w-full cursor-pointer items-center gap-2.5 rounded-lg px-4 py-3 text-left font-semibold data-focus:bg-[#def7ec]"
+                onClick={() => {
+                  setPlatform(option)
+                  void context.download(option, buttonId)
+                }}
+              >
+                <Download className="size-[18px]" aria-hidden="true" />
+                Download for {option === 'mac' ? 'Mac' : 'Windows'}
+              </button>
+            </MenuItem>
+          ))}
+        </MenuItems>
+      </Menu>
       <span className="sr-only" role="status">
         {!isInitiator
           ? ''

@@ -12,6 +12,7 @@ import {
   FileText,
   Key,
   Lock,
+  MessageCircle,
   QrCode,
   Server,
   Shield,
@@ -73,6 +74,7 @@ export const metadata: Metadata = {
 const REPO_URL = CLINIC_REPO_URL
 const LICENSE_URL = `${REPO_URL}/blob/main/LICENSE`
 const DOCS_URL = `${REPO_URL}/blob/main/docs/README.md`
+const SUPPORT_FORM_URL = 'https://forms.gle/tW2LT3edhMWFTBxw8'
 
 const highlights = [
   '₹0 for the software',
@@ -415,7 +417,7 @@ const faqs = [
   {
     question: 'Where do I download CARE Clinic?',
     answer:
-      'The Mac and Windows buttons use JavaScript and the public GitHub API to request the matching latest installer. If the API is unavailable, JavaScript is disabled or the browser blocks the download, use “Download from GitHub releases” beside the buttons and select the installer there.',
+      'Click “Download CARE Clinic” and choose Mac or Windows. The download menu uses JavaScript and the public GitHub API to request the matching latest installer. If the API is unavailable, JavaScript is disabled or the browser blocks the download, use “Download from GitHub releases” beside the buttons and select the installer there.',
   },
   {
     question: 'Who is responsible for backups?',
@@ -746,23 +748,23 @@ function Hero() {
             )}
           >
             <ClinicDownloadButton
-              platform="mac"
               className={clsx(
                 mintButton,
                 'h-14 justify-center px-7 text-[17px]',
               )}
-            >
-              Download for Mac
-            </ClinicDownloadButton>
-            <ClinicDownloadButton
-              platform="windows"
+            />
+            <a
+              href={SUPPORT_FORM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className={clsx(
                 glassButton,
                 'h-14 justify-center px-4 text-base sm:px-6',
               )}
             >
-              Download for Windows
-            </ClinicDownloadButton>
+              <MessageCircle className="size-[18px]" aria-hidden="true" />
+              Contact support
+            </a>
           </div>
           <a
             href={CLINIC_RELEASES_URL}
@@ -1929,23 +1931,23 @@ function DownloadSection() {
           </p>
           <div className="mt-2 flex w-full flex-col items-stretch justify-center gap-3.5 sm:w-auto sm:flex-row sm:items-center">
             <ClinicDownloadButton
-              platform="mac"
               className={clsx(
                 mintButton,
                 'h-[58px] justify-center px-[30px] text-[17px]',
               )}
-            >
-              Download for Mac
-            </ClinicDownloadButton>
-            <ClinicDownloadButton
-              platform="windows"
+            />
+            <a
+              href={SUPPORT_FORM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className={clsx(
                 glassButton,
                 'h-[58px] justify-center border-white/30 bg-white/12 px-7 text-[17px]',
               )}
             >
-              Download for Windows
-            </ClinicDownloadButton>
+              <MessageCircle className="size-[18px]" aria-hidden="true" />
+              Contact support
+            </a>
           </div>
           <a
             href={CLINIC_RELEASES_URL}
