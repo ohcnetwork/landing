@@ -10,8 +10,8 @@ categories:
   - title: CARE
     slug: care
 mainImage:
-  src: '/blog/activities/indiafoss-2026/cover.jpg'
-  alt: 'The CARE stall at IndiaFOSS 2026, Bengaluru'
+  src: '/blog/covers/care-at-indiafoss-2026.svg'
+  alt: "CARE at IndiaFOSS 2026, and an award for OHC's CTO cover illustration"
 ---
 
 IndiaFOSS 2026, the annual free and open source software festival run by the FOSS United community, took place on 26 and 27 September at the NIMHANS Convention Centre in Bengaluru. The OHC team set up a stall to exhibit CARE and connect with the wider open source community.
