@@ -42,7 +42,7 @@ function StandardsSection() {
         Built on global healthcare standards for interoperability
       </Heading>
       <p className="mt-6 max-w-4xl text-lg text-gray-600">
-        <strong>FHIR R5</strong>, <strong>SNOMED</strong>,{' '}
+        <strong>FHIR R5</strong>, <strong>SNOMED CT</strong>,{' '}
         <strong>LOINC</strong>, <strong>UCUM</strong>, <strong>ICD‑10</strong>;
         terminology server; <strong>BYOT</strong>.
       </p>
@@ -55,7 +55,9 @@ function StandardsSection() {
           </p>
         </div>
         <div className="rounded-lg border border-[#cbded6] bg-[#f3f8f5] p-6 text-center">
-          <div className="mb-2 text-2xl font-bold text-[#052e24]">SNOMED</div>
+          <div className="mb-2 text-2xl font-bold text-[#052e24]">
+            SNOMED CT
+          </div>
           <p className="text-sm text-[#12806a]">Clinical terminology</p>
         </div>
         <div className="rounded-lg border border-[#cbded6] bg-[#f3f8f5] p-6 text-center">
