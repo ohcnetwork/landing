@@ -25,6 +25,7 @@ import type { Metadata } from 'next'
 import { AutoplayVideo } from './autoplay-video'
 import s from './care-desktop.module.css'
 import { ClinicDownloadButton, ClinicDownloadProvider } from './download-button'
+import { FaqList } from './faq-list'
 import { CLINIC_RELEASES_URL, CLINIC_REPO_URL } from './release-download'
 
 const pageTitle = 'CARE Clinic: Free, Open-Source Clinic Management Software'
@@ -375,19 +376,14 @@ const specs: [string, React.ReactNode][] = [
 
 const faqs = [
   {
-    question: 'Is CARE Clinic really free?',
+    question: 'Is CARE Clinic free and open source?',
     answer:
-      'Yes. The CARE Clinic software is free to download and use under the MIT licence. There is no software subscription, no licence fee and no trial period that ends.',
+      'Yes. Open Healthcare Network Foundation releases CARE Clinic as free, open-source software under the MIT licence. Clinics and their technical partners can download, use and adapt it without buying a licence. There is no software subscription, no licence fee and no trial period that ends.',
   },
   {
-    question: 'Why is it free?',
+    question: 'Minimum requirements and add-ons',
     answer:
-      'CARE is built as open-source healthcare infrastructure. Open Healthcare Network Foundation releases CARE Clinic under the MIT licence so clinics and their technical partners can use and adapt the software without buying a licence.',
-  },
-  {
-    question: 'What might still cost money?',
-    answer:
-      'A suitable computer, backup storage, installation help, support and external services such as SMS or email may cost money. Those costs are separate from the software. Check the terms and prices of any service you choose to add.',
+      'You need a host computer running Windows 64-bit or macOS (Apple Silicon or Intel). We recommend 8 GB RAM, a 4-core processor and 30 GB free storage. Staff computers connect using CARE Clinic in client mode on Windows or macOS; phones and tablets connect through a browser on the clinic network. Internet is needed for installation, updates, hosted plugins and configured online services. The computer, backup storage, installation help, support and optional services such as SMS or email may cost money separately from the free software. Check the requirements, terms and prices of any add-ons you choose.',
   },
   {
     question: 'Where are my patient records stored?',
@@ -408,11 +404,6 @@ const faqs = [
     question: 'Does CARE Clinic work without internet?',
     answer:
       'Core workflows run without internet after setup while the host is awake, running CARE and reachable over the clinic network. Staff devices are not independent offline replicas. Installation, updates, hosted plugins and configured online services need internet.',
-  },
-  {
-    question: 'Which computers does it run on?',
-    answer:
-      'The host computer runs Windows 64-bit or macOS (Apple Silicon or Intel). Staff computers run the same app in client mode on Windows or macOS, and phones and tablets connect through a browser on the clinic network.',
   },
   {
     question: 'Where do I download CARE Clinic?',
@@ -763,7 +754,7 @@ function Hero() {
               )}
             >
               <MessageCircle className="size-[18px]" aria-hidden="true" />
-              Contact support
+              Request setup
             </a>
           </div>
           <a
@@ -1859,22 +1850,7 @@ function FaqSection() {
     <section id="faq" className="bg-white">
       <Shell className="flex flex-col gap-10 py-20 lg:py-24">
         <h2 className={clsx(s.reveal, h2Class)}>Frequently asked questions</h2>
-        {/* Columns rather than a grid, so answers of different lengths pack without row gaps */}
-        <div className="gap-x-12 md:columns-2">
-          {faqs.map((faq) => (
-            <div
-              key={faq.question}
-              className="-mx-4 flex break-inside-avoid flex-col gap-2.5 rounded-xl border-t border-[#dfe6e2] px-4 py-[26px] transition-colors hover:bg-[#f4f7f5]"
-            >
-              <h3 className="text-xl leading-[1.25] font-semibold">
-                {faq.question}
-              </h3>
-              <p className="text-base leading-[1.6] text-[#374151]">
-                {faq.answer}
-              </p>
-            </div>
-          ))}
-        </div>
+        <FaqList faqs={faqs} />
       </Shell>
     </section>
   )
@@ -1946,7 +1922,7 @@ function DownloadSection() {
               )}
             >
               <MessageCircle className="size-[18px]" aria-hidden="true" />
-              Contact support
+              Request setup
             </a>
           </div>
           <a
