@@ -6,6 +6,7 @@ import { Link } from '@/components/link'
 import { Navbar } from '@/components/navbar'
 import { Heading, Lead, Subheading } from '@/components/text'
 import { getAdjacentPosts, getAllPosts, getPostBySlug } from '@/lib/blog'
+import { blogArchiveUrl } from '@/lib/blog-filters'
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/16/solid'
 import dayjs from 'dayjs'
 import type { Metadata } from 'next'
@@ -135,7 +136,7 @@ export default async function BlogPost({
                   {post.categories.map((category) => (
                     <Link
                       key={category.slug}
-                      href="/blog#archive"
+                      href={blogArchiveUrl({ category: category.slug })}
                       className="rounded-full border border-[#dfe6e2] bg-white px-3 py-1 text-sm/6 font-medium text-gray-600 hover:text-[#0b6b55]"
                     >
                       {category.title}
