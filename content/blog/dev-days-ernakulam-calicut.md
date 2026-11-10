@@ -10,8 +10,8 @@ categories:
   - title: AI
     slug: ai
 mainImage:
-  src: '/blog/activities/dev-days-ernakulam-calicut/cover.jpg'
-  alt: 'Developers at Dev Day Ernakulam, September 2026'
+  src: '/blog/covers/dev-days-ernakulam-calicut.svg'
+  alt: 'Dev Days in Ernakulam and Calicut cover illustration'
 ---
 
 In September, OHC and GitHub hosted two Dev Days, in Ernakulam on 12 September and in Calicut on 19 September. Both events focused on a practical question for developers: how AI agents can make building software easier and more efficient.
