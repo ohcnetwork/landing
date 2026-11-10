@@ -1,12 +1,22 @@
 import '@/styles/tailwind.css'
 import type { Metadata } from 'next'
 
-import { Bricolage_Grotesque } from 'next/font/google'
+import localFont from 'next/font/local'
 
-const bricolage = Bricolage_Grotesque({
-  subsets: ['latin'],
+const bricolage = localFont({
+  src: '../../public/fonts/bricolage-grotesque-latin-variable.woff2',
+  weight: '200 800',
+  style: 'normal',
   display: 'swap',
   variable: '--font-bricolage',
+})
+
+const inter = localFont({
+  src: '../../public/fonts/inter-latin-variable.woff2',
+  weight: '100 900',
+  style: 'normal',
+  display: 'swap',
+  variable: '--font-inter',
 })
 
 export const metadata: Metadata = {
@@ -62,12 +72,11 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${bricolage.variable} antialiased`}>
+    <html
+      lang="en"
+      className={`${bricolage.variable} ${inter.variable} antialiased`}
+    >
       <head>
-        <link
-          rel="stylesheet"
-          href="https://api.fontshare.com/css?f%5B%5D=switzer@400,500,600,700&amp;display=swap"
-        />
         <link
           rel="alternate"
           type="application/rss+xml"
