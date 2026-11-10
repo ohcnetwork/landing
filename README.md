@@ -24,6 +24,22 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+## Blog archive
+
+The blog at `/blog` supports shareable theme and publication-month filters, for
+example `/blog?category=care&month=2026-05`. Theme labels in the archive and on
+articles link to filtered results. The month menu lists all publication months
+with their years. Both filters apply together before pagination (30 posts per
+page); changing or clearing a filter returns to page one. Each filter can be
+cleared independently, or all filters can be cleared at once.
+
+Invalid month formats are ignored and invalid page numbers default to page one.
+Valid filters with no matching posts show an empty state; out-of-range archive
+pages show the last available page. The default archive is pre-rendered, and URL
+filtering runs in the browser to support the site's static export.
+
+Run the focused filter checks with `npm run test:blog` (Node.js 22.6 or newer).
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

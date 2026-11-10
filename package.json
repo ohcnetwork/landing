@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "test:blog": "node --experimental-strip-types --test scripts/blog-filters.test.mjs",
     "format": "prettier --write ."
   },
   "dependencies": {
