@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Sprint Highlights: Product, Platform and Engineering Improvements</title>
+  <desc id="desc">Open Healthcare Network sprint highlights shared on September 1, 2026 across docs, CARE, AI Vision, and observability workstreams.</desc>
+  <defs>
+    <linearGradient id="bg-community-call-5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7f3e8" />
+      <stop offset="0.55" stop-color="#e2eee7" />
+      <stop offset="1" stop-color="#ffffff" />
+    </linearGradient>
+    <pattern id="grid-community-call-5" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0V44" fill="none" stroke="#12312c" stroke-width="1" opacity="0.08" />
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg-community-call-5)" />
+  <rect width="1600" height="1000" fill="url(#grid-community-call-5)" />
+  <rect x="84" y="84" width="1432" height="832" rx="44" fill="none" stroke="#12312c" stroke-width="3" opacity="0.14" />
+
+  <text x="140" y="180" fill="#0b6b55" font-family="'Switzer', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="2">SPRINT HIGHLIGHTS / OHC UPDATES</text>
+  <text x="140" y="760" fill="#5f6f69" font-family="'Switzer', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="600">September 1, 2026</text>
+  <text x="140" y="814" fill="#12312c" font-family="'Switzer', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="3">OPEN HEALTHCARE NETWORK</text>
+
+  <g fill="#12312c" font-family="'Switzer', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-weight="700">
+    <text x="140" y="316" font-size="72">Product, Platform</text>
+    <text x="140" y="402" font-size="72">&amp; Engineering</text>
+    <text x="140" y="488" font-size="72">Improvements</text>
+  </g>
+
+  <g transform="translate(930 250)">
+    <rect x="0" y="0" width="520" height="470" rx="36" fill="#ffffff" opacity="0.62" />
+    <circle cx="88" cy="84" r="18" fill="#0b6b55" opacity="0.85" />
+    <rect x="128" y="70" width="300" height="28" rx="14" fill="#0b6b55" opacity="0.2" />
+
+    <circle cx="88" cy="170" r="18" fill="#e9b44c" opacity="0.85" />
+    <rect x="128" y="156" width="340" height="28" rx="14" fill="#12312c" opacity="0.16" />
+
+    <circle cx="88" cy="256" r="18" fill="#d66f3d" opacity="0.85" />
+    <rect x="128" y="242" width="280" height="28" rx="14" fill="#12312c" opacity="0.16" />
+
+    <circle cx="88" cy="342" r="18" fill="#0b6b55" opacity="0.85" />
+    <rect x="128" y="328" width="320" height="28" rx="14" fill="#12312c" opacity="0.16" />
+  </g>
+
+  <path d="M140 684 H642" stroke="#d66f3d" stroke-width="8" stroke-linecap="round" />
+  <path d="M140 716 H486" stroke="#e9b44c" stroke-width="8" stroke-linecap="round" />
+</svg>
