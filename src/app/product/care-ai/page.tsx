@@ -4,6 +4,7 @@ import { Footer } from '@/components/footer'
 import { Navbar } from '@/components/navbar'
 import { Heading, Subheading } from '@/components/text'
 import { TopGradient } from '@/components/TopGradient'
+import { FaqList } from '@/components/faq-list'
 import {
   Activity,
   ArrowRight,
@@ -1070,19 +1071,7 @@ function FAQSection() {
               What CARE AI is, and what it is not.
             </Heading>
           </div>
-          <div className="grid gap-3">
-            {faqs.map((faq) => (
-              <article
-                key={faq.question}
-                className="rounded-lg border border-white/10 bg-white/[0.055] p-6"
-              >
-                <h3 className="text-xl/6 font-semibold text-white">
-                  {faq.question}
-                </h3>
-                <p className="mt-4 text-sm/6 text-white/62">{faq.answer}</p>
-              </article>
-            ))}
-          </div>
+          <FaqList faqs={faqs} dark />
         </div>
       </Container>
     </div>

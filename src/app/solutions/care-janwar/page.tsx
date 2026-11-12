@@ -4,6 +4,7 @@ import { Footer } from '@/components/footer'
 import { Navbar } from '@/components/navbar'
 import { Heading, Subheading } from '@/components/text'
 import { TopGradient } from '@/components/TopGradient'
+import { FaqList } from '@/components/faq-list'
 import {
   Activity,
   ArrowRight,
@@ -712,16 +713,7 @@ function FaqSection() {
             Animal-health deployment, explained plainly.
           </Heading>
         </div>
-        <div className="mx-auto mt-12 max-w-4xl divide-y divide-[#dfe6e2] rounded-lg border border-[#dfe6e2] bg-white">
-          {faqs.map((item) => (
-            <article key={item.question} className="p-6 sm:p-8">
-              <h3 className="text-xl/6 font-semibold text-gray-950">
-                {item.question}
-              </h3>
-              <p className="mt-4 text-sm/6 text-gray-600">{item.answer}</p>
-            </article>
-          ))}
-        </div>
+        <FaqList faqs={faqs} className="mx-auto mt-12 max-w-4xl" />
       </Container>
     </div>
   )

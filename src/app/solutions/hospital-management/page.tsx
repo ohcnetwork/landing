@@ -4,6 +4,7 @@ import { Footer } from '@/components/footer'
 import { Navbar } from '@/components/navbar'
 import { Heading, Subheading } from '@/components/text'
 import { TopGradient } from '@/components/TopGradient'
+import { FaqList } from '@/components/faq-list'
 import {
   Activity,
   ArrowRight,
@@ -977,19 +978,7 @@ function FAQSection() {
             EMR, and hospital management software options.
           </p>
         </div>
-        <div className="grid gap-3">
-          {faqs.map((faq) => (
-            <article
-              key={faq.question}
-              className="rounded-lg border border-[#dfe6e2] bg-white p-6"
-            >
-              <h3 className="text-xl/6 font-semibold text-gray-950">
-                {faq.question}
-              </h3>
-              <p className="mt-4 text-sm/6 text-gray-600">{faq.answer}</p>
-            </article>
-          ))}
-        </div>
+        <FaqList faqs={faqs} />
       </div>
     </Container>
   )

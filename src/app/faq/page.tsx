@@ -4,6 +4,7 @@ import { Footer } from '@/components/footer'
 import { Navbar } from '@/components/navbar'
 import { Heading, Subheading } from '@/components/text'
 import { TopGradient } from '@/components/TopGradient'
+import { FaqList } from '@/components/faq-list'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -85,19 +86,7 @@ function FAQSection() {
         Common questions about CARE and OHC
       </Heading>
 
-      <div className="mt-16 space-y-8">
-        {faqs.map((faq, index) => (
-          <div
-            key={index}
-            className="rounded-lg border border-[#dfe6e2] bg-white p-8"
-          >
-            <h3 className="mb-4 text-xl font-semibold text-gray-900">
-              {faq.question}
-            </h3>
-            <p className="text-gray-600">{faq.answer}</p>
-          </div>
-        ))}
-      </div>
+      <FaqList faqs={faqs} className="mt-16" />
     </Container>
   )
 }
