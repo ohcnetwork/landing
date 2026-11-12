@@ -4,7 +4,7 @@ import { Footer } from '@/components/footer'
 import { Navbar } from '@/components/navbar'
 import { Heading, Subheading } from '@/components/text'
 import { TopGradient } from '@/components/TopGradient'
-import { FaqList } from '@/components/faq-list'
+import { FaqSection } from '@/components/faq-section'
 import {
   Activity,
   ArrowRight,
@@ -1061,21 +1061,7 @@ function DifferenceSection() {
 }
 
 function FAQSection() {
-  return (
-    <div className="bg-[#052e24] py-20 text-white sm:py-24">
-      <Container>
-        <div className="grid gap-10 lg:grid-cols-[0.72fr_1.28fr] lg:items-start">
-          <div>
-            <Subheading dark>FAQ</Subheading>
-            <Heading as="h2" dark className="mt-3">
-              What CARE AI is, and what it is not.
-            </Heading>
-          </div>
-          <FaqList faqs={faqs} dark />
-        </div>
-      </Container>
-    </div>
-  )
+  return <FaqSection faqs={faqs} />
 }
 
 function FinalSection() {

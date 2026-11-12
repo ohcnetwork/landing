@@ -4,7 +4,7 @@ import { Footer } from '@/components/footer'
 import { Navbar } from '@/components/navbar'
 import { Heading, Subheading } from '@/components/text'
 import { TopGradient } from '@/components/TopGradient'
-import { FaqList } from '@/components/faq-list'
+import { FaqSection } from '@/components/faq-section'
 import {
   Activity,
   ArrowRight,
@@ -965,23 +965,7 @@ function DeploymentSection() {
 }
 
 function FAQSection() {
-  return (
-    <Container className="py-20 sm:py-24">
-      <div className="grid gap-10 lg:grid-cols-[0.72fr_1.28fr] lg:items-start">
-        <div>
-          <Subheading>HIS FAQ</Subheading>
-          <Heading as="h2" className="mt-3">
-            What hospitals usually ask before evaluating CARE HMIS.
-          </Heading>
-          <p className="mt-6 text-lg/7 text-gray-600">
-            These answers are written for teams comparing open-source HIS, HMIS,
-            EMR, and hospital management software options.
-          </p>
-        </div>
-        <FaqList faqs={faqs} />
-      </div>
-    </Container>
-  )
+  return <FaqSection faqs={faqs} />
 }
 
 function FinalSection() {

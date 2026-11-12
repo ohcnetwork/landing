@@ -2,9 +2,9 @@ import { Button } from '@/components/button'
 import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
 import { Navbar } from '@/components/navbar'
-import { Heading, Subheading } from '@/components/text'
+import { Heading } from '@/components/text'
 import { TopGradient } from '@/components/TopGradient'
-import { FaqList } from '@/components/faq-list'
+import { FaqSection } from '@/components/faq-section'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -79,16 +79,7 @@ function FAQSection() {
     },
   ]
 
-  return (
-    <Container className="py-24">
-      <Subheading>FAQ</Subheading>
-      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-normal">
-        Common questions about CARE and OHC
-      </Heading>
-
-      <FaqList faqs={faqs} className="mt-16" />
-    </Container>
-  )
+  return <FaqSection faqs={faqs} />
 }
 
 function ContactSection() {

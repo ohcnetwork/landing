@@ -4,7 +4,7 @@ import { Footer } from '@/components/footer'
 import { Navbar } from '@/components/navbar'
 import { Heading, Subheading } from '@/components/text'
 import { TopGradient } from '@/components/TopGradient'
-import { FaqList } from '@/components/faq-list'
+import { FaqSection } from '@/components/faq-section'
 import {
   Activity,
   ArrowRight,
@@ -624,22 +624,6 @@ function AiSection() {
   )
 }
 
-function FaqSection() {
-  return (
-    <div className="bg-[#f7f9f6] py-20 sm:py-24">
-      <Container>
-        <div className="mx-auto max-w-4xl text-center">
-          <Subheading as="div">TeleICU FAQ</Subheading>
-          <Heading as="h2" className="mt-3">
-            Critical-care infrastructure, explained plainly.
-          </Heading>
-        </div>
-        <FaqList faqs={faqs} className="mx-auto mt-12 max-w-4xl" />
-      </Container>
-    </div>
-  )
-}
-
 function FinalSection() {
   return (
     <Container className="py-20 sm:py-24">
@@ -687,7 +671,7 @@ export default function TeleICU() {
         <StateCoverageSection />
         <VideoSection />
         <AiSection />
-        <FaqSection />
+        <FaqSection faqs={faqs} />
         <FinalSection />
       </main>
       <Footer />
