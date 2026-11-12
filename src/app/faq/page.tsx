@@ -2,8 +2,9 @@ import { Button } from '@/components/button'
 import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
 import { Navbar } from '@/components/navbar'
-import { Heading, Subheading } from '@/components/text'
+import { Heading } from '@/components/text'
 import { TopGradient } from '@/components/TopGradient'
+import { FaqSection } from '@/components/faq-section'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -78,28 +79,7 @@ function FAQSection() {
     },
   ]
 
-  return (
-    <Container className="py-24">
-      <Subheading>FAQ</Subheading>
-      <Heading as="h2" className="mt-2 max-w-4xl font-display tracking-normal">
-        Common questions about CARE and OHC
-      </Heading>
-
-      <div className="mt-16 space-y-8">
-        {faqs.map((faq, index) => (
-          <div
-            key={index}
-            className="rounded-lg border border-[#dfe6e2] bg-white p-8"
-          >
-            <h3 className="mb-4 text-xl font-semibold text-gray-900">
-              {faq.question}
-            </h3>
-            <p className="text-gray-600">{faq.answer}</p>
-          </div>
-        ))}
-      </div>
-    </Container>
-  )
+  return <FaqSection faqs={faqs} />
 }
 
 function ContactSection() {
