@@ -1,4 +1,5 @@
 import { Container } from '@/components/container'
+import { FaqSection } from '@/components/faq-section'
 import { Footer } from '@/components/footer'
 import { Navbar } from '@/components/navbar'
 import { clsx } from 'clsx'
@@ -25,7 +26,6 @@ import type { Metadata } from 'next'
 import { AutoplayVideo } from './autoplay-video'
 import s from './care-desktop.module.css'
 import { ClinicDownloadButton, ClinicDownloadProvider } from './download-button'
-import { FaqList } from './faq-list'
 import { CLINIC_RELEASES_URL, CLINIC_REPO_URL } from './release-download'
 
 const pageTitle = 'CARE Clinic: Free, Open-Source Clinic Management Software'
@@ -1845,17 +1845,6 @@ function WhichCareSection() {
   )
 }
 
-function FaqSection() {
-  return (
-    <section id="faq" className="bg-white">
-      <Shell className="flex flex-col gap-10 py-20 lg:py-24">
-        <h2 className={clsx(s.reveal, h2Class)}>Frequently asked questions</h2>
-        <FaqList faqs={faqs} />
-      </Shell>
-    </section>
-  )
-}
-
 function DownloadSection() {
   return (
     <section
@@ -1999,7 +1988,7 @@ export default function CareClinicPage() {
             <SetupSection />
             <OpenSourceSection />
             <WhichCareSection />
-            <FaqSection />
+            <FaqSection faqs={faqs} />
             <DownloadSection />
           </main>
         </ClinicDownloadProvider>

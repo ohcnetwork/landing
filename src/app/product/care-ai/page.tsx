@@ -4,6 +4,7 @@ import { Footer } from '@/components/footer'
 import { Navbar } from '@/components/navbar'
 import { Heading, Subheading } from '@/components/text'
 import { TopGradient } from '@/components/TopGradient'
+import { FaqSection } from '@/components/faq-section'
 import {
   Activity,
   ArrowRight,
@@ -1060,33 +1061,7 @@ function DifferenceSection() {
 }
 
 function FAQSection() {
-  return (
-    <div className="bg-[#052e24] py-20 text-white sm:py-24">
-      <Container>
-        <div className="grid gap-10 lg:grid-cols-[0.72fr_1.28fr] lg:items-start">
-          <div>
-            <Subheading dark>FAQ</Subheading>
-            <Heading as="h2" dark className="mt-3">
-              What CARE AI is, and what it is not.
-            </Heading>
-          </div>
-          <div className="grid gap-3">
-            {faqs.map((faq) => (
-              <article
-                key={faq.question}
-                className="rounded-lg border border-white/10 bg-white/[0.055] p-6"
-              >
-                <h3 className="text-xl/6 font-semibold text-white">
-                  {faq.question}
-                </h3>
-                <p className="mt-4 text-sm/6 text-white/62">{faq.answer}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </Container>
-    </div>
-  )
+  return <FaqSection faqs={faqs} />
 }
 
 function FinalSection() {

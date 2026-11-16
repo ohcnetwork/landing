@@ -4,6 +4,7 @@ import { Footer } from '@/components/footer'
 import { Navbar } from '@/components/navbar'
 import { Heading, Subheading } from '@/components/text'
 import { TopGradient } from '@/components/TopGradient'
+import { FaqSection } from '@/components/faq-section'
 import {
   Activity,
   ArrowRight,
@@ -964,35 +965,7 @@ function DeploymentSection() {
 }
 
 function FAQSection() {
-  return (
-    <Container className="py-20 sm:py-24">
-      <div className="grid gap-10 lg:grid-cols-[0.72fr_1.28fr] lg:items-start">
-        <div>
-          <Subheading>HIS FAQ</Subheading>
-          <Heading as="h2" className="mt-3">
-            What hospitals usually ask before evaluating CARE HMIS.
-          </Heading>
-          <p className="mt-6 text-lg/7 text-gray-600">
-            These answers are written for teams comparing open-source HIS, HMIS,
-            EMR, and hospital management software options.
-          </p>
-        </div>
-        <div className="grid gap-3">
-          {faqs.map((faq) => (
-            <article
-              key={faq.question}
-              className="rounded-lg border border-[#dfe6e2] bg-white p-6"
-            >
-              <h3 className="text-xl/6 font-semibold text-gray-950">
-                {faq.question}
-              </h3>
-              <p className="mt-4 text-sm/6 text-gray-600">{faq.answer}</p>
-            </article>
-          ))}
-        </div>
-      </div>
-    </Container>
-  )
+  return <FaqSection faqs={faqs} />
 }
 
 function FinalSection() {
