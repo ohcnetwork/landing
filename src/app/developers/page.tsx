@@ -303,7 +303,7 @@ function WhatYouCanBuildSection() {
               Forms & Terminologies
             </h3>
             <p className="text-gray-600">
-              Forms mapped to FHIR; terminology bridges (SNOMED/LOINC/UCUM)
+              Forms mapped to FHIR; terminology bridges (SNOMED CT/LOINC/UCUM)
             </p>
           </div>
           <div className="rounded-lg border border-[#dfe6e2] p-6">
@@ -752,7 +752,7 @@ function LearningResourcesSection() {
               <li className="flex items-start gap-2">
                 <Shield className="mt-0.5 h-4 w-4 flex-shrink-0" />
                 <div>
-                  <strong>Healthcare Standards:</strong> FHIR, HL7, SNOMED,
+                  <strong>Healthcare Standards:</strong> FHIR, HL7, SNOMED CT,
                   LOINC
                 </div>
               </li>
