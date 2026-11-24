@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "title": "Apoiadores - Parceiros de tecnologia da OHC",
+    "description": "Parceiros de tecnologia que cedem software, ferramentas e infraestrutura usados por voluntários para construir e manter os produtos da Open Healthcare Network."
+  },
+  "hero": {
+    "eyebrow": "Apoiadores",
+    "title": "Os parceiros por trás do bem comum.",
+    "body": "Parceiros de tecnologia cedem software, ferramentas e infraestrutura que voluntários usam para construir, atualizar e manter os produtos da Open Healthcare Network.",
+    "becomeSupporter": "Torne-se apoiador",
+    "contactFinance": "Fale com o financeiro"
+  },
+  "current": {
+    "eyebrow": "Apoiadores atuais",
+    "title": "Contribuindo hoje para o bem comum.",
+    "body": "Estes parceiros de tecnologia cedem atualmente tecnologias de software e ferramentas que voluntários utilizam para construir, atualizar e manter os produtos da Open Healthcare Network."
+  },
+  "past": {
+    "eyebrow": "Apoiadores anteriores",
+    "title": "Um apoio pelo qual seguimos gratos.",
+    "body": "Somos gratos pelo apoio que estes parceiros ofereceram no passado, contribuindo para o crescimento e o sucesso da Open Healthcare Network."
+  },
+  "join": {
+    "eyebrow": "Junte-se a eles",
+    "title": "Apoie a infraestrutura sobre a qual a saúde aberta funciona.",
+    "fund": "Financie o bem comum",
+    "fundText": "Patrocínios, doações e associação à fundação.",
+    "contribute": "Contribua com tecnologia",
+    "contributeText": "Ofereça software, ferramentas ou créditos de infraestrutura."
+  }
+}

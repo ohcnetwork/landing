@@ -1,0 +1,17 @@
+{
+  "cta": {
+    "eyebrow": "Build the commons",
+    "title": "Help steward open healthcare <br></br>infrastructure for the long term.",
+    "body": "Governments can deploy, institutions can support, implementation partners can localize, and contributors can strengthen the shared core.",
+    "support": "Support the commons",
+    "partner": "Start a partnership conversation"
+  },
+  "carePlatform": "CARE Platform",
+  "registeredAddress": "Registered Address",
+  "organizationName": "Open Healthcare Network Foundation",
+  "cin": "Corporate Identity Number (CIN)",
+  "email": "Email",
+  "github": "Visit us on GitHub",
+  "linkedin": "Visit us on LinkedIn",
+  "copyright": "© {year} Open Healthcare Network Foundation."
+}

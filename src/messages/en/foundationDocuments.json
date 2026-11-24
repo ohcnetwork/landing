@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "title": "Foundation Documents - Open Healthcare Network Foundation",
+    "description": "Legal registration, compliance, and certification documents for Open Healthcare Network Foundation, including COI, MOA, AOA, PAN, GST, 80G, 12A, and ISO certificates."
+  },
+  "hero": {
+    "title": "Foundation documents.",
+    "body": "Legal, compliance, and certification documents for Open Healthcare Network Foundation — available for funders, partners, and implementation organisations."
+  },
+  "registration": {
+    "eyebrow": "Registration details",
+    "title": "Key identifiers at a glance.",
+    "labels": {
+      "entityName": "Entity name",
+      "entityType": "Entity type",
+      "incorporationDate": "Date of incorporation",
+      "cin": "Corporate Identity Number (CIN)",
+      "address": "Registered address",
+      "certificate80g": "80G Certificate",
+      "certificate12a": "12A Certificate",
+      "gst": "GST Number",
+      "pan": "PAN Number"
+    },
+    "values": {
+      "entityType": "Section 8 Company (Non-Profit)",
+      "incorporationDate": "2 December 2025"
+    }
+  },
+  "incorporation": {
+    "eyebrow": "Incorporation & constitution",
+    "title": "Foundational legal documents."
+  },
+  "tax": {
+    "eyebrow": "Tax & compliance",
+    "title": "Tax registration and statutory compliance.",
+    "body": "Donations to OHC Foundation are eligible for 80G tax deduction. For donation receipts, contact <link>{email}</link>."
+  },
+  "other": {
+    "eyebrow": "Other registrations",
+    "title": "Portal and programme registrations."
+  },
+  "documents": {
+    "viewDocument": "View document",
+    "items": {
+      "incorporationCertificate": {
+        "title": "Certificate of Incorporation",
+        "description": "Official certificate issued by the Ministry of Corporate Affairs confirming registration as a Section 8 company."
+      },
+      "moa": {
+        "title": "Memorandum of Association (MOA)",
+        "description": "Defines the foundation's objects, scope, purpose, and the limits within which it may operate."
+      },
+      "aoa": {
+        "title": "Articles of Association (AOA)",
+        "description": "Governs the foundation's internal management, meeting rules, officer roles, and operational procedures."
+      },
+      "section8License": {
+        "title": "Section 8 License",
+        "description": "License granted under Section 8 of the Companies Act, 2013, confirming non-profit status and purpose."
+      },
+      "pan": {
+        "title": "PAN Card",
+        "description": "Permanent Account Number issued by the Income Tax Department of India."
+      },
+      "tan": {
+        "title": "TAN Certificate",
+        "description": "Tax Deduction and Collection Account Number for compliance with TDS obligations."
+      },
+      "gst": {
+        "title": "GST Certificate",
+        "description": "Goods and Services Tax registration certificate issued by the GST Council."
+      },
+      "lut": {
+        "title": "LUT (GST) 2026–27",
+        "description": "Letter of Undertaking filed under GST for zero-rated supply of services without payment of integrated tax."
+      },
+      "registration12a": {
+        "title": "12A Provisional Registration (Form 10AC)",
+        "description": "Income tax exemption registration for non-profit organisations under Section 12A of the Income Tax Act, 1961."
+      },
+      "registration80g": {
+        "title": "80G Provisional Registration (Form 10AC)",
+        "description": "Certificate enabling donors to claim tax deductions on contributions to the foundation under Section 80G."
+      },
+      "msme": {
+        "title": "MSME Certificate",
+        "description": "Udyam registration under the Micro, Small and Medium Enterprises Development Act."
+      },
+      "darpan": {
+        "title": "NGO Darpan Registration",
+        "description": "Registration with the NGO Darpan portal, a NITI Aayog initiative for transparency in non-profit organisations."
+      },
+      "spree": {
+        "title": "Spree Registration",
+        "description": "Spree portal registration document."
+      }
+    }
+  },
+  "iso": {
+    "eyebrow": "ISO Certifications",
+    "title": "Certified for security and health software safety.",
+    "body": "OHC Foundation holds ISO 27001:2022, ISO 82304-1:2016, and ISO 82304-2:2021 certifications covering information security management and health software safety requirements.",
+    "cta": "View ISO certifications"
+  }
+}

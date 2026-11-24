@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "title": "Support - Fund the Open Healthcare Commons",
+    "description": "Fund OHC Foundation to sustain CARE Core, security, documentation, release discipline, implementation ecosystem enablement, and open healthcare DPG adoption."
+  },
+  "hero": {
+    "eyebrow": "Support OHC Foundation",
+    "title": "Fund the open healthcare commons.",
+    "body": "Help maintain the shared infrastructure, governance, security, documentation, and ecosystem that make open healthcare systems possible at scale.",
+    "contactFinance": "Contact finance",
+    "howToFund": "How to fund us",
+    "viewFile": "View {file}"
+  },
+  "whyFund": {
+    "eyebrow": "Why fund",
+    "title": "Funding OHC is not funding one deployment.",
+    "body": "It funds the shared platform, governance, release practices, documentation, security, and implementation ecosystem that make many deployments safer and less expensive to repeat.",
+    "model": "The foundation model lets funders support public-good infrastructure that governments, hospitals, NGOs, and implementation partners can reuse without license lock-in."
+  },
+  "areas": {
+    "eyebrow": "What support funds",
+    "title": "The institutional work behind reusable deployments.",
+    "items": {
+      "careCore": {
+        "title": "CARE Core",
+        "description": "Shared healthcare primitives, APIs, workflows, FHIR-aligned data models, and platform reliability."
+      },
+      "security": {
+        "title": "Security and LTS",
+        "description": "Release discipline, quality assurance, vulnerability response, auditability, and long-term support direction."
+      },
+      "documentation": {
+        "title": "Documentation and guides",
+        "description": "Implementation guides, deployment packs, technical references, training material, and reusable playbooks."
+      },
+      "ecosystem": {
+        "title": "Implementation ecosystem",
+        "description": "System integrator enablement, plugin compatibility, contribution pathways, and localization support."
+      },
+      "ai": {
+        "title": "Assistive AI for health",
+        "description": "Human-in-the-loop documentation, voice-native forms, summarization, and safe workflow support."
+      },
+      "southToSouth": {
+        "title": "South-to-South reuse",
+        "description": "Deployment patterns and country-ready infrastructure that can be adapted beyond one state or program."
+      }
+    }
+  },
+  "sponsors": {
+    "eyebrow": "Sponsor paths",
+    "title": "Institutional support for a public-good infrastructure layer.",
+    "body": "Funding conversations can be structured around the public {file} plans while tailoring scope, governance, reporting, and compliance needs directly with the foundation.",
+    "items": {
+      "visionary": {
+        "title": "Visionary Sponsor",
+        "description": "Major philanthropic or institutional support for stewarding open healthcare digital public infrastructure."
+      },
+      "member": {
+        "title": "Foundation Member",
+        "description": "Company, healthcare provider, implementation partner, or ecosystem organization support for long-term stewardship."
+      },
+      "program": {
+        "title": "Program Sponsor",
+        "description": "Targeted support for CARE Core, security, AI documentation, palliative care, TeleICU, or deployment packs."
+      },
+      "individual": {
+        "title": "Individual Sponsor",
+        "description": "Support from individuals who want to back open healthcare infrastructure and the OHC mission."
+      }
+    }
+  },
+  "contact": {
+    "eyebrow": "Start the conversation",
+    "title": "Back the commons that health systems can own, adapt, and scale.",
+    "grants": "Grants and sponsorships",
+    "partnerships": "Partnerships",
+    "partnershipsText": "Government, hospital, SI, and ecosystem conversations."
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "meta": {
+    "title": "Developers — Contribute to CARE Open Source EMR",
+    "description": "Join the CARE developer community. Contribute to open-source healthcare infrastructure built with Django DRF and React TypeScript."
+  },
+  "hero": {
+    "title": "Build open-source healthcare infrastructure.",
+    "body": "Contribute to CARE, an open-source EMR system built with Django DRF and React TypeScript, powering practical healthcare workflows in real clinical and public health settings.",
+    "starGithub": "Star us on Github",
+    "joinSlack": "Join Slack",
+    "docs": "Docs",
+    "community": "Public contributor community",
+    "license": "MIT License",
+    "buildOnCare": {
+      "title": "Building your own app or integration?",
+      "body": "Explore extension points, working examples, and a path to your first CARE plugin.",
+      "link": "Build on Care"
+    }
+  },
+  "techStack": {
+    "eyebrow": "Tech Stack",
+    "title": "Built with modern technologies for scalable healthcare solutions",
+    "backend": {
+      "title": "Backend",
+      "body": "Django Rest Framework powers our robust API and data management"
+    },
+    "frontend": {
+      "title": "Frontend",
+      "body": "React TypeScript provides a modern, type-safe user interface"
+    }
+  },
+  "prerequisites": {
+    "eyebrow": "Prerequisites",
+    "title": "What you need to know before contributing",
+    "basic": {
+      "title": "Basic Requirements",
+      "items": {
+        "git": "Git and GitHub familiarity",
+        "web": "Basic web development knowledge",
+        "languages": "HTML, CSS, JavaScript understanding",
+        "cli": "Command line basics"
+      }
+    },
+    "learningPath": {
+      "title": "Learning Path",
+      "intro": "New to web development? Start here:",
+      "items": {
+        "wd101": "WD101 Course by {site}",
+        "djangoForAll": "DjangoForAll for Django & DRF",
+        "reactForAll": "ReactForAll for React TypeScript"
+      }
+    },
+    "tools": {
+      "title": "Development Tools",
+      "items": {
+        "ide": "VS Code or preferred IDE",
+        "runtimes": "Node.js and Python environments",
+        "docker": "Docker for containerization",
+        "git": "Git for version control"
+      }
+    }
+  },
+  "build": {
+    "eyebrow": "What you can build",
+    "title": "Plugins, modules, and integrations that extend CARE without changing the core",
+    "items": {
+      "plugins": {
+        "title": "Plugins",
+        "description": "TeleICU (ONVIF), ABDM M1–M3, Care Scribe, and more"
+      },
+      "modules": {
+        "title": "Modules",
+        "description": "LMIS, Pharmacy, Billing, Dashboards, and custom modules"
+      },
+      "forms": {
+        "title": "Forms & Terminologies",
+        "description": "Forms mapped to FHIR; terminology bridges (SNOMED/LOINC/UCUM)"
+      },
+      "integrations": {
+        "title": "Integrations",
+        "description": "Connect with existing systems, devices, and third-party services"
+      }
+    }
+  },
+  "getStarted": {
+    "eyebrow": "Get started",
+    "title": "Everything you need to start contributing to CARE",
+    "cards": {
+      "setup": {
+        "eyebrow": "Setup",
+        "title": "Environment Setup",
+        "description": "Clone repositories and set up your development environment with step-by-step instructions.",
+        "graphicTitle": "Quick Setup",
+        "graphicText": "Get started in minutes"
+      },
+      "issues": {
+        "title": "Find Issues",
+        "description": "Browse issues labeled 'good first issue' and claim them to start contributing immediately.",
+        "graphicTitle": "Good First Issues",
+        "graphicText": "Perfect for beginners"
+      },
+      "slack": {
+        "eyebrow": "Community",
+        "title": "Join Slack",
+        "description": "Connect with the community at {url} for discussions, help, and collaboration.",
+        "graphicTitle": "Slack Community",
+        "graphicText": "Get help & connect"
+      }
+    },
+    "steps": {
+      "title": "Quick Setup Steps",
+      "backend": {
+        "title": "Backend Setup",
+        "body": "Follow the installation guide for the Django backend.",
+        "link": "Backend README"
+      },
+      "frontend": {
+        "title": "Frontend Setup",
+        "body": "Follow the installation guide for the React frontend.",
+        "link": "Frontend README"
+      }
+    }
+  },
+  "contribute": {
+    "eyebrow": "How to contribute",
+    "title": "Step-by-step process to start contributing to CARE",
+    "find": {
+      "title": "1. Find an Issue",
+      "body": "Browse issues on GitHub and look for issues labeled 'good first issue' to get started.",
+      "visit": "Visit <link>{repo}</link>",
+      "label": "Look for issues with 'good first issue' label"
+    },
+    "claim": {
+      "title": "2. Claim the Issue",
+      "body": "Comment on the issue explaining your approach and request to be assigned to it.",
+      "comment": "Comment with your understanding and explain your approach",
+      "assign": "Request to be assigned to the issue"
+    },
+    "work": {
+      "title": "3. Work on the Issue",
+      "body": "Fork the repository, create a branch, and start coding with proper testing."
+    },
+    "submit": {
+      "title": "4. Submit a Pull Request",
+      "body": "Open a draft PR early and request review once ready for final submission."
+    }
+  },
+  "learning": {
+    "eyebrow": "Learning Resources",
+    "title": "Comprehensive resources to master our tech stack",
+    "groups": {
+      "backend": "Backend Development",
+      "frontend": "Frontend Development",
+      "basics": "Web Development Basics",
+      "healthcare": "Healthcare Domain"
+    },
+    "items": {
+      "django": "<strong>Django Documentation:</strong> <link>Official Django docs</link> for web framework",
+      "drf": "<strong>DRF Documentation:</strong> <link>Django Rest Framework</link> for API development",
+      "djangoForAll": "<strong>DjangoForAll:</strong> <link>Comprehensive course</link> for Django and DRF",
+      "fhir": "<strong>FHIR R5:</strong> Healthcare interoperability standards",
+      "react": "<strong>React Documentation:</strong> <link>Official React docs</link> and guides",
+      "typescript": "<strong>TypeScript Documentation:</strong> <link>Type-safe JavaScript</link> development",
+      "reactForAll": "<strong>ReactForAll:</strong> <link>Complete React TypeScript course</link>",
+      "css": "<strong>Modern CSS:</strong> Styling and responsive design",
+      "wd101": "<strong>WD101 Course:</strong> <link>Complete web development fundamentals</link>",
+      "git": "<strong>Git & GitHub:</strong> Version control and collaboration",
+      "web": "<strong>HTML/CSS/JavaScript:</strong> Core web technologies",
+      "cli": "<strong>Command Line:</strong> Terminal and development tools",
+      "emr": "<strong>EMR Systems:</strong> Electronic Medical Records basics",
+      "standards": "<strong>Healthcare Standards:</strong> FHIR, HL7, SNOMED, LOINC",
+      "workflows": "<strong>Medical Workflows:</strong> Patient care processes",
+      "privacy": "<strong>Data Privacy:</strong> HIPAA and healthcare compliance"
+    }
+  }
+}

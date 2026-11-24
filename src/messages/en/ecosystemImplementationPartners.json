@@ -1,0 +1,60 @@
+{
+  "meta": {
+    "title": "Implementation Partners - Deploy and Extend CARE",
+    "description": "Join the OHC implementation ecosystem to deploy, localize, and extend CARE while strengthening the shared open core."
+  },
+  "hero": {
+    "eyebrow": "Implementation ecosystem",
+    "title": "Deploy open healthcare infrastructure while strengthening the shared core.",
+    "body": "OHC Foundation enables implementation partners to deploy, extend, and localize CARE for governments, hospitals, NGOs, and public health programs without creating a fragmented product landscape.",
+    "becomePartner": "Become a partner",
+    "explorePlugins": "Explore plugin model"
+  },
+  "capabilities": {
+    "eyebrow": "What partners can implement",
+    "title": "CARE is a platform for many deployment shapes, not one fixed app.",
+    "items": [
+      "Hospital HMIS and EMR deployments",
+      "TeleICU and hub-and-spoke critical care workflows",
+      "Palliative care and home-based care coordination",
+      "ABDM, national rails, and identity integrations",
+      "Labs, pharmacy, billing, inventory, and analytics modules",
+      "Custom forms, terminology bindings, reports, and dashboards"
+    ]
+  },
+  "expectations": {
+    "eyebrow": "Partner expectations",
+    "title": "Commercial opportunity and public-good discipline can work together.",
+    "items": {
+      "deploy": {
+        "title": "Deploy without fragmenting",
+        "description": "Localize workflows through configuration, plugins, and documented extensions before forking the core."
+      },
+      "contribute": {
+        "title": "Contribute improvements back",
+        "description": "Bug fixes, reusable modules, forms, integrations, and documentation should strengthen the shared core."
+      },
+      "compatibility": {
+        "title": "Respect release compatibility",
+        "description": "Implementations should track supported releases, upgrade paths, and security advisories."
+      },
+      "trust": {
+        "title": "Build clinical trust",
+        "description": "Workflow changes should be tested with frontline staff and reviewed for safety, usability, and auditability."
+      }
+    }
+  },
+  "roadmap": {
+    "eyebrow": "Partner program direction",
+    "title": "The ecosystem needs playbooks, not one-off handholding.",
+    "body": "OHC can support more deployments by publishing implementation guides, compatibility expectations, contribution rules, and training paths that let partners deliver locally while improving the shared commons.",
+    "items": {
+      "onboarding": "Partner onboarding",
+      "guides": "Implementation guides",
+      "plugins": "Plugin submission rules",
+      "training": "Training and certification direction",
+      "quality": "Deployment quality checklist",
+      "support": "Support and escalation boundaries"
+    }
+  }
+}

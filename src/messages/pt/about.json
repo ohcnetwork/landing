@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "title": "Fundação - Missão e gestão responsável",
+    "description": "A Open Healthcare Network Foundation é a guardiã neutra do CARE e de outros Bens Públicos Digitais abertos para a saúde."
+  },
+  "hero": {
+    "title": "Uma casa neutra para a infraestrutura aberta de saúde.",
+    "body": "A OHC Foundation existe para garantir que a infraestrutura pública digital aberta para a saúde tenha governança duradoura, gestão responsável, disciplina de versões, documentação, segurança e uma comunidade capaz de ir além de qualquer implantação isolada.",
+    "governance": "Modelo de governança",
+    "support": "Apoie a fundação"
+  },
+  "mission": {
+    "eyebrow": "Missão",
+    "title": "Zelar por uma infraestrutura pública digital aberta e baseada em padrões para a saúde.",
+    "body": "A fundação mantém o CARE e outros componentes de código aberto que ajudam governos, hospitais, ONGs e parceiros de implementação a implantar sistemas de saúde interoperáveis e auto-hospedáveis, sem dependência de fornecedor.",
+    "commons": "O CARE é a plataforma principal e a prova concreta. O papel mais amplo da fundação é proteger o bem comum ao redor dele: governança, padrões, versões, documentação, segurança, caminhos para colaboradores e participação do ecossistema."
+  },
+  "whyFoundation": {
+    "eyebrow": "Por que uma fundação",
+    "title": "Infraestrutura de bem público precisa de uma instituição, não apenas de um repositório.",
+    "body": "Sistemas de saúde abertos precisam conquistar a confiança de governos, profissionais de saúde, hospitais, integradores de sistemas e financiadores. Essa confiança vem de governança visível, regras claras de contribuição, versões confiáveis, processos de segurança e uma casa neutra onde adotar não significa depender de um único fornecedor.",
+    "principles": {
+      "open": {
+        "title": "Aberto por padrão",
+        "description": "Software sob licença MIT, padrões abertos, APIs abertas e caminhos públicos de contribuição."
+      },
+      "neutral": {
+        "title": "Gestão neutra",
+        "description": "Uma casa comum onde governos, hospitais, fornecedores, ONGs, financiadores e colaboradores podem trabalhar juntos."
+      },
+      "standards": {
+        "title": "Padrões em primeiro lugar",
+        "description": "FHIR, SNOMED CT, LOINC, UCUM, ICD-10, alinhamento à ABDM, vinculações terminológicas e APIs interoperáveis."
+      },
+      "trust": {
+        "title": "Confiança no longo prazo",
+        "description": "Disciplina de versões, segurança, documentação, garantia de qualidade e fortalecimento do ecossistema de implementação."
+      }
+    }
+  },
+  "stewardship": {
+    "eyebrow": "Pelo que zelamos",
+    "title": "Um bem comum da saúde que pode ser controlado localmente e reutilizado globalmente.",
+    "body": "O trabalho da OHC abrange as camadas de produto, governança e ecossistema. O CARE Core oferece a camada operacional comum. Os CARE Apps e os modelos de implantação a adaptam a hospitais, programas de saúde pública, infraestruturas digitais nacionais, TeleICU, cuidados paliativos e documentação assistiva com IA.",
+    "items": [
+      "CARE Core e componentes fundamentais comuns de saúde",
+      "CARE Apps e modelos de implementação",
+      "Alinhamento a padrões e terminologias",
+      "Processos de segurança, qualidade e versões",
+      "Comunidades de desenvolvedores, profissionais de saúde e implementação",
+      "Documentação, financiamento e sustentabilidade do ecossistema"
+    ]
+  },
+  "institution": {
+    "eyebrow": "Confiança institucional",
+    "title": "A OHC Foundation foi concebida para separar a gestão do bem comum do controle por fornecedores.",
+    "items": {
+      "board": {
+        "title": "Supervisão do conselho",
+        "text": "Gestão da missão e das dimensões fiduciária, jurídica, financeira e estratégica."
+      },
+      "technical": {
+        "title": "Governança técnica",
+        "text": "Mantenedores e comitês técnicos orientam a arquitetura, as versões e os processos de contribuição."
+      },
+      "security": {
+        "title": "Postura de segurança",
+        "text": "Canais para relatar problemas de segurança, critérios de controle de acesso e práticas responsáveis de versões."
+      },
+      "license": {
+        "title": "Licença aberta",
+        "text": "Código sob licença MIT e documentação aberta mantêm o bem comum reutilizável."
+      }
+    }
+  }
+}

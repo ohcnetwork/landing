@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "title": "Careers — Join Open Healthcare Network",
+    "description": "Join the Open Healthcare Network team. We are hiring a Clinical Product Specialist with 5+ years of clinical experience."
+  },
+  "hero": {
+    "hiringTitle": "We're Hiring!",
+    "hiringBody": "Join our mission to build open, interoperable Digital Public Goods for healthcare. We're looking for passionate people who want to make a difference.",
+    "notHiringTitle": "Not Hiring!",
+    "notHiringBody": "There are no open positions at the moment. Check back soon!"
+  },
+  "positions": {
+    "eyebrow": "Open Positions",
+    "title": "Current Opportunities",
+    "apply": "Apply Now",
+    "requirements": "Requirements",
+    "items": {
+      "juniorProductManager": {
+        "title": "Junior Product Manager",
+        "type": "Full Time",
+        "location": "Trivandrum",
+        "requirements": [
+          "Experience in Product Operations",
+          "Interest in Open Source & Global Health",
+          "Familiar with Healthcare Standards"
+        ]
+      },
+      "fullStackInternship": {
+        "title": "Junior Full Stack Engineering Internship",
+        "type": "Internship",
+        "location": "Remote",
+        "requirements": [
+          "Basic Knowledge of Python & Django",
+          "Familiarity with React & TypeScript",
+          "Git & GitHub Experience",
+          "Curiosity for Open-Source Development"
+        ]
+      },
+      "documentationInternship": {
+        "title": "Documentation Internship",
+        "type": "Internship",
+        "location": "Remote",
+        "requirements": [
+          "Strong Written Communication",
+          "Ability to Simplify Complex Concepts",
+          "Attention to Detail",
+          "Interest in Technology & Open Source"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "title": "Foundation - Mission and Stewardship",
+    "description": "Open Healthcare Network Foundation is the neutral steward of CARE and related open healthcare Digital Public Goods."
+  },
+  "hero": {
+    "title": "A neutral home for open healthcare infrastructure.",
+    "body": "OHC Foundation exists to ensure that open healthcare digital public infrastructure has durable governance, accountable stewardship, release discipline, documentation, security, and a community that can outlast any single deployment.",
+    "governance": "Governance model",
+    "support": "Support the foundation"
+  },
+  "mission": {
+    "eyebrow": "Mission",
+    "title": "Steward open, standards-based digital public infrastructure for healthcare.",
+    "body": "The foundation maintains CARE and related open-source building blocks that help governments, hospitals, NGOs, and implementation partners deploy interoperable, self-hostable health systems without vendor lock-in.",
+    "commons": "CARE is the flagship platform and proof point. The foundation's broader role is to protect the commons around it: governance, standards, releases, documentation, security, contributor pathways, and ecosystem participation."
+  },
+  "whyFoundation": {
+    "eyebrow": "Why a foundation",
+    "title": "Public-good infrastructure needs an institution, not only a repo.",
+    "body": "Open healthcare systems must be trusted by governments, clinicians, hospitals, system integrators, and funders. That trust comes from visible governance, clear contribution rules, reliable releases, security processes, and a neutral home where adoption does not mean dependency on a single vendor.",
+    "principles": {
+      "open": {
+        "title": "Open by default",
+        "description": "MIT-licensed software, open standards, open APIs, and public contribution pathways."
+      },
+      "neutral": {
+        "title": "Neutral stewardship",
+        "description": "A shared home where governments, hospitals, vendors, NGOs, funders, and contributors can collaborate."
+      },
+      "standards": {
+        "title": "Standards-first",
+        "description": "FHIR, SNOMED CT, LOINC, UCUM, ICD-10, ABDM alignment, terminology bindings, and interoperable APIs."
+      },
+      "trust": {
+        "title": "Long-term trust",
+        "description": "Release discipline, security, documentation, quality assurance, and implementation ecosystem enablement."
+      }
+    }
+  },
+  "stewardship": {
+    "eyebrow": "What we steward",
+    "title": "A healthcare commons that can be owned locally and reused globally.",
+    "body": "OHC's work spans product, governance, and ecosystem layers. CARE Core provides the common operating layer. CARE Apps and deployment patterns adapt it to hospitals, public health programs, national rails, TeleICU, palliative care, and assistive AI documentation.",
+    "items": [
+      "CARE Core and common healthcare primitives",
+      "CARE Apps and implementation patterns",
+      "Standards and terminology alignment",
+      "Security, quality, and release processes",
+      "Developer, clinician, and implementation communities",
+      "Documentation, funding, and ecosystem sustainability"
+    ]
+  },
+  "institution": {
+    "eyebrow": "Institutional trust",
+    "title": "OHC Foundation is designed to separate stewardship from vendor control.",
+    "items": {
+      "board": {
+        "title": "Board oversight",
+        "text": "Mission, fiduciary, legal, financial, and strategic stewardship."
+      },
+      "technical": {
+        "title": "Technical governance",
+        "text": "Maintainers and technical committees guide architecture, releases, and contribution processes."
+      },
+      "security": {
+        "title": "Security posture",
+        "text": "Security reporting, access-control expectations, and accountable release practices."
+      },
+      "license": {
+        "title": "Open license",
+        "text": "MIT-licensed code and open documentation patterns keep the commons reusable."
+      }
+    }
+  }
+}

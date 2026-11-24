@@ -1,8 +1,10 @@
 import { Container } from '@/components/container'
 import { Heading, Subheading } from '@/components/text'
 import { Github, Globe2, Linkedin, type LucideIcon } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 
 export type Person = {
+  id: string
   name: string
   role: string
   image?: string
@@ -31,27 +33,25 @@ export function PersonPortrait({ person }: { person: Person }) {
   )
 }
 
-function getPersonLinks(person: Person): Array<{
-  label: string
+type PersonLink = {
+  service: 'github' | 'linkedin' | 'website'
   href: string
   icon: LucideIcon
-}> {
-  const links: Array<{
-    label: string
-    href: string
-    icon: LucideIcon
-  }> = []
+}
+
+function getPersonLinks(person: Person): PersonLink[] {
+  const links: PersonLink[] = []
 
   if (person.github) {
-    links.push({ label: 'GitHub', href: person.github, icon: Github })
+    links.push({ service: 'github', href: person.github, icon: Github })
   }
 
   if (person.linkedin) {
-    links.push({ label: 'LinkedIn', href: person.linkedin, icon: Linkedin })
+    links.push({ service: 'linkedin', href: person.linkedin, icon: Linkedin })
   }
 
   if (person.website) {
-    links.push({ label: 'Website', href: person.website, icon: Globe2 })
+    links.push({ service: 'website', href: person.website, icon: Globe2 })
   }
 
   return links
@@ -64,7 +64,14 @@ export function PersonSocialLinks({
   person: Person
   variant?: 'pill' | 'icon'
 }) {
+  const t = useTranslations('personRoster')
   const links = getPersonLinks(person)
+  // Service names are brands and stay in English.
+  const labels = {
+    github: 'GitHub',
+    linkedin: 'LinkedIn',
+    website: t('website'),
+  }
 
   if (links.length === 0) {
     return null
@@ -78,7 +85,10 @@ export function PersonSocialLinks({
           href={link.href}
           target="_blank"
           rel="noreferrer"
-          aria-label={`${person.name} on ${link.label}`}
+          aria-label={t('profileLink', {
+            name: person.name,
+            service: labels[link.service],
+          })}
           className={
             variant === 'icon'
               ? 'inline-flex size-11 items-center justify-center rounded-full border border-[#dfe6e2] bg-white text-[#173d34] shadow-[0_10px_26px_rgba(7,24,19,0.06)] transition hover:-translate-y-0.5 hover:border-[#bdd0c5] hover:bg-[#f7f9f6]'
@@ -86,7 +96,7 @@ export function PersonSocialLinks({
           }
         >
           <link.icon className={variant === 'icon' ? 'size-4' : 'size-3.5'} />
-          {variant === 'pill' ? link.label : null}
+          {variant === 'pill' ? labels[link.service] : null}
         </a>
       ))}
     </div>

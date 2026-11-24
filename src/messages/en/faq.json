@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "FAQ — CARE & OHC",
+    "description": "Answers about implementation speed, licensing, customization, and integrations for CARE and Care Apps."
+  },
+  "hero": {
+    "title": "Frequently Asked Questions",
+    "body": "Common questions about CARE implementation, licensing, customization, and integrations."
+  },
+  "items": {
+    "implementation": {
+      "question": "How fast can we implement?",
+      "answer": "Implementation timelines depend on scope, integrations, hosting, data migration, training, and governance. OHC focuses on reusable playbooks so deployments do not begin from scratch each time."
+    },
+    "ownership": {
+      "question": "What about data ownership and licensing?",
+      "answer": "MIT license; governments own code and data; no vendor lock\u2011in. You have complete control over your infrastructure and data sovereignty with zero ongoing licensing costs."
+    },
+    "localization": {
+      "question": "Can we localize forms and terminologies?",
+      "answer": "Yes—custom EMR forms map to FHIR; BYOT (Bring Your Own Terminology) supported. You can configure local terminologies, forms, and workflows while maintaining FHIR compliance."
+    },
+    "nationalPrograms": {
+      "question": "Does CARE support national programs like ABDM?",
+      "answer": "Yes—ABDM workflows can be supported through CARE Apps and integration patterns. Deployment claims should be checked against current program metrics before publication."
+    },
+    "monitoringAi": {
+      "question": "Can we add remote monitoring and AI tools?",
+      "answer": "Yes—TeleICU (ONVIF), Care Scribe (AI voice fill) are available as Care Apps. AI tools integrate as plugins without modifying the core platform."
+    },
+    "security": {
+      "question": "What about security and compliance?",
+      "answer": "CARE implements FHIR R5 compliance with RBAC, audit trails, and sovereign hosting options. Built-in security measures ensure data protection and regulatory compliance."
+    },
+    "settings": {
+      "question": "How does CARE handle different healthcare settings?",
+      "answer": "CARE adapts to various settings—hospitals, clinics, palliative care, veterinary practice. The modular architecture allows customization for different healthcare workflows."
+    },
+    "support": {
+      "question": "What support is available for implementation?",
+      "answer": "We provide implementation guides, training materials, and community support. The global developer corps offers technical assistance and best practices sharing."
+    }
+  },
+  "contact": {
+    "title": "Still have questions?",
+    "body": "Our team is here to help. Contact us for technical support, implementation guidance, or partnership opportunities.",
+    "contactUs": "Contact us",
+    "joinCommunity": "Join the community"
+  }
+}

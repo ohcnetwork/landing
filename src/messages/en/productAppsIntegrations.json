@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "title": "Care Apps & Integrations — Extend CARE",
+    "description": "Add ABDM, TeleICU, AI Scribe, and more with Care Apps—plugins that extend CARE without changing the core."
+  },
+  "hero": {
+    "title": "Plugins extend the healthcare OS without forking the core.",
+    "body": "CARE Apps connect national rails, telemetry, documentation, labs, pharmacy, billing, analytics, messaging, video, and AI workflows to the same shared foundation.",
+    "buildOnCare": "Build on Care",
+    "exploreIntegrations": "Explore integrations",
+    "discussIntegration": "Discuss an integration"
+  },
+  "architecture": {
+    "eyebrow": "Architecture",
+    "title": "CARE Core stays stable. Plugins move around it.",
+    "body": "Apps and integrations extend CARE for national rails, TeleICU, AI documentation, labs, pharmacy, billing, messaging, video, devices, and analytics without fragmenting the shared clinical core."
+  },
+  "featured": {
+    "eyebrow": "Featured",
+    "title": "Most popular integrations deployed across multiple states.",
+    "abdm": {
+      "eyebrow": "National Rails",
+      "title": "ABDM Integration",
+      "description": "M1, M2, M3 style workflows for demographic and biometric authentication through a plugin model.",
+      "graphicLabel": "National rails"
+    },
+    "teleicu": {
+      "eyebrow": "Telemetry",
+      "title": "TeleICU",
+      "description": "ONVIF camera and vitals monitor integration patterns for hub-and-spoke critical care workflows.",
+      "graphicLabel": "Real-time Monitoring"
+    },
+    "scribe": {
+      "eyebrow": "AI & Documentation",
+      "title": "Care Scribe",
+      "description": "Multilingual AI voice fill for forms/notes with support for multiple languages and clinical terminology.",
+      "graphicTitle": "AI",
+      "graphicLabel": "Voice Fill"
+    }
+  },
+  "categories": {
+    "eyebrow": "Categories",
+    "title": "Browse integrations by category",
+    "body": "Pattern inspired by best‑practice plugin galleries with verified, production-ready integrations.",
+    "items": {
+      "nationalId": {
+        "name": "National & ID",
+        "description": "ABDM, Aadhaar, National ID systems"
+      },
+      "telemetry": {
+        "name": "Telemetry & Video",
+        "description": "ONVIF, RTSP, medical device integration"
+      },
+      "documentation": {
+        "name": "Documentation & AI",
+        "description": "Voice-to-text, AI scribe, clinical notes"
+      },
+      "labs": {
+        "name": "Labs & Diagnostics",
+        "description": "Lab equipment, diagnostic tools, results"
+      },
+      "pharmacy": {
+        "name": "Pharmacy & Supply",
+        "description": "Inventory, procurement, supply chain"
+      },
+      "imaging": {
+        "name": "Imaging",
+        "description": "DICOM, PACS, medical imaging systems"
+      },
+      "payments": {
+        "name": "Payments",
+        "description": "Billing, insurance, payment gateways"
+      },
+      "messaging": {
+        "name": "Messaging",
+        "description": "SMS, email, notification systems"
+      },
+      "data": {
+        "name": "Data & Dashboards",
+        "description": "Analytics, reporting, business intelligence"
+      }
+    },
+    "browseAll": "Browse all integrations"
+  }
+}

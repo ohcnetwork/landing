@@ -1,0 +1,60 @@
+{
+  "meta": {
+    "title": "Parceiros de implementação - Implante e estenda o CARE",
+    "description": "Participe do ecossistema de implementação da OHC para implantar, adaptar e estender o CARE, fortalecendo o núcleo aberto compartilhado."
+  },
+  "hero": {
+    "eyebrow": "Ecossistema de implementação",
+    "title": "Implante infraestrutura aberta de saúde e fortaleça o núcleo compartilhado.",
+    "body": "A OHC Foundation capacita parceiros de implementação a implantar, estender e adaptar o CARE para governos, hospitais, ONGs e programas de saúde pública, sem criar um cenário fragmentado de produtos.",
+    "becomePartner": "Torne-se parceiro",
+    "explorePlugins": "Conheça o modelo de plugins"
+  },
+  "capabilities": {
+    "eyebrow": "O que os parceiros podem implementar",
+    "title": "O CARE é uma plataforma para muitos formatos de implantação, não um aplicativo fixo.",
+    "items": [
+      "Implantações hospitalares de HMIS e EMR",
+      "TeleICU e fluxos de terapia intensiva no modelo hub-and-spoke",
+      "Cuidados paliativos e coordenação do cuidado domiciliar",
+      "ABDM, infraestruturas digitais nacionais e integrações de identidade",
+      "Módulos de laboratório, farmácia, faturamento, estoque e análise de dados",
+      "Formulários personalizados, vinculações terminológicas, relatórios e painéis"
+    ]
+  },
+  "expectations": {
+    "eyebrow": "O que se espera dos parceiros",
+    "title": "Oportunidade comercial e disciplina de bem público podem caminhar juntas.",
+    "items": {
+      "deploy": {
+        "title": "Implante sem fragmentar",
+        "description": "Adapte os fluxos por meio de configuração, plugins e extensões documentadas antes de criar um fork do núcleo."
+      },
+      "contribute": {
+        "title": "Devolva as melhorias",
+        "description": "Correções de bugs, módulos reutilizáveis, formulários, integrações e documentação devem fortalecer o núcleo compartilhado."
+      },
+      "compatibility": {
+        "title": "Respeite a compatibilidade entre versões",
+        "description": "As implementações devem acompanhar as versões com suporte, os caminhos de atualização e os alertas de segurança."
+      },
+      "trust": {
+        "title": "Construa confiança clínica",
+        "description": "Mudanças nos fluxos devem ser testadas com as equipes da linha de frente e revisadas quanto à segurança, à usabilidade e à auditabilidade."
+      }
+    }
+  },
+  "roadmap": {
+    "eyebrow": "Direção do programa de parceiros",
+    "title": "O ecossistema precisa de manuais de execução, não de acompanhamento pontual.",
+    "body": "A OHC pode apoiar mais implantações publicando guias de implementação, critérios de compatibilidade, regras de contribuição e trilhas de capacitação que permitam aos parceiros atuar localmente enquanto aprimoram o bem comum.",
+    "items": {
+      "onboarding": "Integração de parceiros",
+      "guides": "Guias de implementação",
+      "plugins": "Regras para envio de plugins",
+      "training": "Diretrizes de capacitação e certificação",
+      "quality": "Checklist de qualidade da implantação",
+      "support": "Limites de suporte e escalonamento"
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "meta": {
+    "title": "Imprensa e mídia - Open Healthcare Network Foundation",
+    "description": "Texto institucional, fatos públicos, logotipos e orientações com indicação de fontes sobre a Open Healthcare Network Foundation e o CARE."
+  },
+  "hero": {
+    "eyebrow": "Imprensa e mídia",
+    "title": "Linguagem clara sobre a fundação e o CARE.",
+    "body": "Use linguagem fundamentada em fontes ao cobrir a OHC Foundation, o CARE e a infraestrutura pública digital aberta para a saúde. Números de impacto devem ser conferidos no registro de métricas antes da publicação."
+  },
+  "boilerplate": {
+    "eyebrow": "Texto institucional",
+    "title": "Sobre a Open Healthcare Network Foundation",
+    "foundation": "A Open Healthcare Network Foundation é guardiã de uma infraestrutura pública digital aberta para a saúde. A fundação mantém o CARE e outros componentes de código aberto que ajudam governos, hospitais, ONGs e parceiros de implementação a implantar sistemas de saúde interoperáveis, auto-hospedáveis e baseados em padrões, sem dependência de fornecedor.",
+    "care": "O CARE é um Bem Público Digital de código aberto para fluxos de trabalho em saúde em hospitais, programas de saúde pública, terapia intensiva, cuidados paliativos e coordenação do cuidado. Foi projetado com base em padrões abertos, arquitetura modular e adoção real pelas equipes da linha de frente."
+  },
+  "facts": {
+    "eyebrow": "Fatos públicos",
+    "title": "Use estas informações como base mínima para publicação.",
+    "items": {
+      "role": {
+        "title": "Papel da fundação",
+        "text": "A Open Healthcare Network Foundation é guardiã do CARE e de outros Bens Públicos Digitais de código aberto para a saúde."
+      },
+      "dpg": {
+        "title": "O CARE no registro de DPGs",
+        "text": "O CARE consta no registro de Bens Públicos Digitais como Care | Open Healthcare Network e está sob licença MIT."
+      },
+      "openSource": {
+        "title": "Código aberto",
+        "text": "O CARE é desenvolvido publicamente, com repositórios de código aberto, caminhos de contribuição e modelos de implantação reutilizáveis."
+      },
+      "standards": {
+        "title": "Padrões em primeiro lugar",
+        "text": "Os materiais públicos da OHC descrevem o CARE com base em FHIR R5, SNOMED CT, LOINC, UCUM, ICD-10, ABDM e APIs abertas."
+      }
+    }
+  },
+  "assets": {
+    "eyebrow": "Materiais",
+    "title": "Logotipos, capturas de tela do produto, mapas de implantação e links para fontes.",
+    "logos": {
+      "title": "Logotipos e materiais de marca",
+      "text": "Use os logotipos aprovados da OHC e do CARE disponíveis no repositório de marca.",
+      "action": "Repositório de marca"
+    },
+    "map": {
+      "title": "Mapa de implantações",
+      "text": "Use os mapas junto com o registro de métricas para não confundir a abrangência geográfica com o status atual das implantações.",
+      "action": "Baixar mapa"
+    },
+    "metrics": {
+      "title": "Orientação sobre métricas",
+      "text": "Use apenas métricas datadas e aprovadas em citações à imprensa, apresentações e fichas informativas.",
+      "action": "Verificar uma métrica"
+    }
+  },
+  "contact": {
+    "eyebrow": "Contato para imprensa",
+    "title": "Para entrevistas, checagem de fatos e métricas aprovadas, fale com a equipe da OHC.",
+    "action": "Fale com a OHC"
+  }
+}

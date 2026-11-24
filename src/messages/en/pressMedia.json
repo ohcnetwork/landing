@@ -1,0 +1,63 @@
+{
+  "meta": {
+    "title": "Press & Media - Open Healthcare Network Foundation",
+    "description": "Media boilerplate, public facts, logos, and source-aware guidance for Open Healthcare Network Foundation and CARE."
+  },
+  "hero": {
+    "eyebrow": "Press and media",
+    "title": "Clear language for the foundation and CARE.",
+    "body": "Use source-aware language when covering OHC Foundation, CARE, and open healthcare digital public infrastructure. Impact numbers should be checked against the metrics register before publication."
+  },
+  "boilerplate": {
+    "eyebrow": "Boilerplate",
+    "title": "About Open Healthcare Network Foundation",
+    "foundation": "Open Healthcare Network Foundation stewards open digital public infrastructure for healthcare. The foundation maintains CARE and related open-source building blocks that help governments, hospitals, NGOs, and implementation partners deploy interoperable, self-hostable, standards-based health systems without vendor lock-in.",
+    "care": "CARE is an open-source Digital Public Good for healthcare workflows across hospitals, public health programs, critical care, palliative care, and care coordination. It is designed around open standards, modular architecture, and real-world frontline adoption."
+  },
+  "facts": {
+    "eyebrow": "Public facts",
+    "title": "Use these as the publication floor.",
+    "items": {
+      "role": {
+        "title": "Foundation role",
+        "text": "Open Healthcare Network Foundation stewards CARE and related open-source Digital Public Goods for healthcare."
+      },
+      "dpg": {
+        "title": "CARE DPG listing",
+        "text": "CARE is listed in the Digital Public Goods registry as Care | Open Healthcare Network and is MIT licensed."
+      },
+      "openSource": {
+        "title": "Open source",
+        "text": "CARE is built in public with open-source repositories, contribution pathways, and reusable deployment patterns."
+      },
+      "standards": {
+        "title": "Standards-first",
+        "text": "OHC public materials describe CARE around FHIR R5, SNOMED CT, LOINC, UCUM, ICD-10, ABDM, and open APIs."
+      }
+    }
+  },
+  "assets": {
+    "eyebrow": "Assets",
+    "title": "Logos, product screenshots, deployment maps, and source links.",
+    "logos": {
+      "title": "Logos and brand assets",
+      "text": "Use approved OHC and CARE logos from the branding repository.",
+      "action": "Branding repository"
+    },
+    "map": {
+      "title": "Deployment map",
+      "text": "Use maps with the metrics register so geography and current deployment status are not confused.",
+      "action": "Download map"
+    },
+    "metrics": {
+      "title": "Metrics guidance",
+      "text": "Use only dated, approved metrics for press quotes, decks, and fact sheets.",
+      "action": "Verify a metric"
+    }
+  },
+  "contact": {
+    "eyebrow": "Media inquiries",
+    "title": "For interviews, fact-checks, and approved metrics, contact the OHC team.",
+    "action": "Contact OHC"
+  }
+}

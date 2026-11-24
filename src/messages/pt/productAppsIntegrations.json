@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "title": "Care Apps e integrações — Estenda o CARE",
+    "description": "Adicione ABDM, TeleICU, AI Scribe e muito mais com os Care Apps, plugins que estendem o CARE sem alterar o núcleo."
+  },
+  "hero": {
+    "title": "Plugins estendem o sistema operacional da saúde sem criar forks do núcleo.",
+    "body": "Os CARE Apps conectam infraestruturas digitais nacionais, telemetria, documentação, laboratório, farmácia, faturamento, análise de dados, mensagens, vídeo e fluxos com IA à mesma base compartilhada.",
+    "buildOnCare": "Desenvolva com o CARE",
+    "exploreIntegrations": "Conheça as integrações",
+    "discussIntegration": "Converse sobre uma integração"
+  },
+  "architecture": {
+    "eyebrow": "Arquitetura",
+    "title": "O CARE Core permanece estável. Os plugins giram ao redor dele.",
+    "body": "Aplicativos e integrações estendem o CARE para infraestruturas digitais nacionais, TeleICU, documentação com IA, laboratório, farmácia, faturamento, mensagens, vídeo, dispositivos e análise de dados, sem fragmentar o núcleo clínico compartilhado."
+  },
+  "featured": {
+    "eyebrow": "Destaques",
+    "title": "As integrações mais usadas, implantadas em vários estados.",
+    "abdm": {
+      "eyebrow": "Infraestrutura nacional",
+      "title": "Integração com a ABDM",
+      "description": "Fluxos nos moldes M1, M2 e M3 para autenticação demográfica e biométrica por meio de um modelo de plugins.",
+      "graphicLabel": "Infraestrutura nacional"
+    },
+    "teleicu": {
+      "eyebrow": "Telemetria",
+      "title": "TeleICU",
+      "description": "Modelos de integração com câmeras ONVIF e monitores de sinais vitais para fluxos de terapia intensiva no modelo hub-and-spoke.",
+      "graphicLabel": "Monitoramento em tempo real"
+    },
+    "scribe": {
+      "eyebrow": "IA e documentação",
+      "title": "Care Scribe",
+      "description": "Preenchimento por voz com IA para formulários e notas, com suporte a vários idiomas e à terminologia clínica.",
+      "graphicTitle": "IA",
+      "graphicLabel": "Preenchimento por voz"
+    }
+  },
+  "categories": {
+    "eyebrow": "Categorias",
+    "title": "Navegue pelas integrações por categoria",
+    "body": "Modelo inspirado nas melhores galerias de plugins, com integrações verificadas e prontas para produção.",
+    "items": {
+      "nationalId": {
+        "name": "Nacional e identidade",
+        "description": "ABDM, Aadhaar, sistemas nacionais de identificação"
+      },
+      "telemetry": {
+        "name": "Telemetria e vídeo",
+        "description": "ONVIF, RTSP, integração com dispositivos médicos"
+      },
+      "documentation": {
+        "name": "Documentação e IA",
+        "description": "Voz para texto, escriba com IA, notas clínicas"
+      },
+      "labs": {
+        "name": "Laboratório e diagnóstico",
+        "description": "Equipamentos de laboratório, ferramentas diagnósticas, resultados"
+      },
+      "pharmacy": {
+        "name": "Farmácia e suprimentos",
+        "description": "Estoque, compras, cadeia de suprimentos"
+      },
+      "imaging": {
+        "name": "Imagem",
+        "description": "DICOM, PACS, sistemas de imagem médica"
+      },
+      "payments": {
+        "name": "Pagamentos",
+        "description": "Faturamento, seguros, gateways de pagamento"
+      },
+      "messaging": {
+        "name": "Mensagens",
+        "description": "SMS, e-mail, sistemas de notificação"
+      },
+      "data": {
+        "name": "Dados e painéis",
+        "description": "Análise de dados, relatórios, business intelligence"
+      }
+    },
+    "browseAll": "Ver todas as integrações"
+  }
+}

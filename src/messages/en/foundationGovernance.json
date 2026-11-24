@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "title": "Governance - Open Healthcare Network Foundation",
+    "description": "How OHC Foundation separates fiduciary stewardship, technical direction, maintainership, contribution, security, and release governance."
+  },
+  "hero": {
+    "eyebrow": "Governance",
+    "title": "Shared infrastructure needs visible decision-making.",
+    "body": "OHC Foundation exists so CARE is not controlled by one vendor, one donor, one state, or one implementation partner. Governance separates fiduciary stewardship from technical direction while keeping maintainers close to the work."
+  },
+  "layers": {
+    "eyebrow": "Stewardship model",
+    "title": "Clear roles for institutional oversight and technical ownership.",
+    "items": {
+      "board": {
+        "title": "Foundation Board",
+        "description": "Mission, legal, fiduciary, financial, fundraising, risk, and long-term institutional stewardship."
+      },
+      "steeringCommittee": {
+        "title": "Technical Steering Committee",
+        "description": "Architecture, technical vision, maintainership, release discipline, and community process oversight."
+      },
+      "maintainers": {
+        "title": "Project maintainers",
+        "description": "Day-to-day code review, roadmap execution, issue triage, documentation, and contributor mentorship."
+      },
+      "projectGroups": {
+        "title": "Project groups",
+        "description": "Focused ownership for CARE Core, Apps, standards, security, implementation guides, and clinical workflows."
+      }
+    }
+  },
+  "decisions": {
+    "eyebrow": "How decisions are made",
+    "title": "The board stewards the institution. Technical leaders steward the platform.",
+    "rows": {
+      "institution": {
+        "scope": "Mission, legal, finance, risk",
+        "owner": "Foundation Board"
+      },
+      "architecture": {
+        "scope": "Architecture and technical roadmap",
+        "owner": "Technical Steering Committee"
+      },
+      "codeReview": {
+        "scope": "Code review and release readiness",
+        "owner": "Maintainers"
+      },
+      "plugins": {
+        "scope": "Plugin compatibility and extensions",
+        "owner": "Project groups and maintainers"
+      },
+      "clinicalSafety": {
+        "scope": "Clinical workflow safety",
+        "owner": "Clinicians, maintainers, and product leads"
+      },
+      "securityDisclosure": {
+        "scope": "Security disclosure and response",
+        "owner": "Security maintainers and foundation"
+      }
+    }
+  },
+  "policies": {
+    "eyebrow": "Public commitments",
+    "title": "Governance should be published as operating practice, not branding.",
+    "items": {
+      "contribution": {
+        "title": "Open contribution",
+        "text": "Contributions should flow through public repositories, clear review rules, and a documented maintainer path."
+      },
+      "license": {
+        "title": "License clarity",
+        "text": "CARE code is MIT licensed. Documentation and implementation guides should use open content licenses where appropriate."
+      },
+      "releases": {
+        "title": "Release governance",
+        "text": "Stable releases, compatibility expectations, and long-term support direction should be visible to implementers."
+      },
+      "security": {
+        "title": "Security reporting",
+        "text": "Vulnerability reporting, disclosure expectations, access-control practices, and auditability are foundation concerns."
+      },
+      "conflicts": {
+        "title": "Conflict handling",
+        "text": "The foundation should make conflicts of interest and decision escalation paths explicit as the ecosystem grows."
+      },
+      "clinical": {
+        "title": "Clinical accountability",
+        "text": "Clinical workflow and AI-related changes need review paths that respect safety, auditability, and human accountability."
+      }
+    }
+  },
+  "security": {
+    "eyebrow": "Trust and safety",
+    "title": "Security, release quality, and clinical safety are governance work.",
+    "body": "Open healthcare infrastructure must be auditable, maintainable, and safe to operate in real clinical settings. Governance connects technical review, responsible disclosure, release compatibility, and human-in-the-loop AI practices.",
+    "securityCompliance": "Security & compliance",
+    "contribute": "Contribute",
+    "items": {
+      "auditTrails": "Audit trails",
+      "accessControls": "Access controls",
+      "releaseReadiness": "Release readiness",
+      "maintainerReview": "Maintainer review"
+    }
+  }
+}

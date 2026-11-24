@@ -1,0 +1,39 @@
+{
+  "eyebrow": "Sinais da comunidade",
+  "title": "Reconhecimento de quem entende de infraestrutura.",
+  "cta": {
+    "body": "Conheça os sinais por trás da comunidade de infraestrutura aberta de saúde.",
+    "learnMore": "Saiba mais"
+  },
+  "scrollTo": "Ir para o depoimento de {name}",
+  "items": {
+    "satyaNadella": {
+      "role": "CEO, Microsoft",
+      "quote": "Tive a oportunidade de conhecer a Open Healthcare Network, e é fantástico ver o que eles estão fazendo."
+    },
+    "srikanthNadhamuni": {
+      "role": "CTO fundador do Aadhaar",
+      "quote": "Uma das comunidades de colaboradores de código aberto mais ativas da Índia"
+    },
+    "vinodKhosla": {
+      "role": "Fundador, Khosla Ventures",
+      "quote": "Ótimo trabalho do @10BedICU ao implantar mais de 200 tele-UTIs em distritos remotos da Índia."
+    },
+    "kyleDaigle": {
+      "role": "COO, GitHub",
+      "quote": "A Open Healthcare Network na Índia é um exemplo poderoso de pessoas se unindo para promover o progresso humano – resolvendo os problemas que importam."
+    },
+    "sandeepSinghal": {
+      "role": "Membro do conselho, ACT Grants",
+      "quote": "Com o CARE, esperamos que todo prestador de serviços de saúde, seja público ou privado, em qualquer lugar do mundo, tenha acesso à melhor e mais relevante tecnologia para ampliar o atendimento e melhorar os resultados em saúde com o menor custo possível."
+    },
+    "sreevasSahasranam": {
+      "role": "University of Glasgow",
+      "quote": "Que trajetória a do CARE: de um painel de COVID mantido inteiramente por voluntários para um distrito de Kerala até isto... ufa!!! Simbolicamente, para mim isso equivale quase à avaliação de um unicórnio no setor social"
+    },
+    "kaiChen": {
+      "role": "OpenAI",
+      "quote": "Uma das organizações sem fins lucrativos mais legais do setor de saúde acaba de completar 4 anos 🐣 - eles levam cuidados avançados de UTI a regiões rurais da Índia.\n\nConhecer e trabalhar com a equipe foi um dos pontos altos dos últimos meses :)"
+    }
+  }
+}

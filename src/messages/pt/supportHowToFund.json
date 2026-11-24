@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "title": "Como financiar a OHC Foundation",
+    "description": "Faça uma doação ou transferência à Open Healthcare Network Foundation: dados bancários, instruções para envios internacionais e benefícios fiscais para financiadores."
+  },
+  "hero": {
+    "title": "Como nos financiar.",
+    "body": "Faça uma transferência bancária direta ou internacional para a OHC Foundation. As doações apoiam a infraestrutura aberta de saúde usada por hospitais, programas de saúde pública e governos.",
+    "contactFinance": "Fale com a equipe financeira",
+    "legalDocuments": "Ver documentos legais"
+  },
+  "bankTransfer": {
+    "eyebrow": "Transferência bancária",
+    "body": "Transfira diretamente para a conta corrente da fundação. Use o nome da sua organização ou do doador como referência.",
+    "labels": {
+      "accountName": "Titular da conta",
+      "accountNumber": "Número da conta",
+      "ifsc": "Código IFSC",
+      "bank": "Banco",
+      "branch": "Agência",
+      "accountType": "Tipo de conta",
+      "swift": "SWIFT / BIC"
+    },
+    "receiptNote": "* Após a transferência, escreva para <link>{email}</link> para receber o recibo de doação."
+  },
+  "international": {
+    "eyebrow": "Transferência internacional",
+    "title": "De fora da Índia",
+    "body": "Doadores internacionais e financiadores institucionais devem falar com a equipe financeira antes de iniciar uma transferência. Confirmaremos a situação atual do registro FCRA e informaremos os dados corretos para a transferência."
+  },
+  "orgDetails": {
+    "eyebrow": "Dados da fundação",
+    "title": "Identificadores do beneficiário e de conformidade.",
+    "body": "Use estes dados em solicitações de financiamento, transferências internacionais, formulários de doação ou quando sua equipe de conformidade precisar verificar a entidade beneficiária.",
+    "labels": {
+      "entityName": "Nome da entidade",
+      "pan": "PAN",
+      "certificate80g": "Certificado 80G",
+      "certificate12a": "Certificado 12A",
+      "gst": "GST",
+      "cin": "CIN",
+      "address": "Endereço registrado"
+    },
+    "viewDocuments": "Ver todos os documentos da fundação"
+  },
+  "taxBenefits": {
+    "eyebrow": "Benefícios fiscais",
+    "title": "Dedução 80G para doadores indianos.",
+    "body": "A OHC Foundation possui registro provisório 80G. Pessoas físicas e empresas residentes na Índia podem deduzir doações nos termos da Seção 80G do Income Tax Act de 1961.",
+    "requestReceipt": "Solicite um recibo de doação",
+    "items": {
+      "deduction": {
+        "title": "Dedução 80G",
+        "description": "Doadores residentes na Índia podem deduzir o valor doado nos termos da Seção 80G do Income Tax Act de 1961."
+      },
+      "receipts": {
+        "title": "Recibos de doação",
+        "description": "A fundação emite recibos oficiais para todas as doações. Escreva para {email} após transferir os recursos."
+      },
+      "fcra": {
+        "title": "Situação FCRA",
+        "description": "Para transferências internacionais, fale conosco para confirmar a situação atual do registro FCRA e os requisitos de conformidade aplicáveis."
+      }
+    }
+  },
+  "whatYouFund": {
+    "eyebrow": "O que o seu financiamento apoia",
+    "title": "O trabalho institucional por trás de cada implantação.",
+    "body": "Financiar a OHC Foundation não é financiar um hospital ou uma única implantação. É financiar a plataforma compartilhada, a governança, as práticas de versões, a documentação, a segurança e o ecossistema de implementação que tornam muitas implantações mais seguras e mais baratas de replicar.",
+    "items": {
+      "careCore": {
+        "title": "CARE Core",
+        "description": "Componentes fundamentais de saúde compartilhados, APIs, fluxos, modelos de dados alinhados ao FHIR e a confiabilidade da plataforma, dos quais toda implantação depende."
+      },
+      "security": {
+        "title": "Segurança e LTS",
+        "description": "Disciplina de versões, garantia de qualidade, resposta a vulnerabilidades, auditabilidade e suporte de longo prazo para as implantações ativas."
+      },
+      "documentation": {
+        "title": "Documentação e guias",
+        "description": "Guias de implementação, pacotes de implantação, referências técnicas, material de capacitação e manuais de execução reutilizáveis para novas implantações."
+      },
+      "ecosystem": {
+        "title": "Ecossistema de implementação",
+        "description": "Capacitação de integradores de sistemas, compatibilidade de plugins, caminhos de contribuição e apoio à adaptação a diferentes idiomas e regiões."
+      },
+      "ai": {
+        "title": "IA assistiva para a saúde",
+        "description": "Documentação com revisão humana, formulários com entrada por voz, resumos e apoio seguro aos fluxos de trabalho de profissionais de saúde e equipes."
+      },
+      "southToSouth": {
+        "title": "Reutilização Sul-Sul",
+        "description": "Modelos de implantação e infraestrutura pronta para outros países, que podem ser adaptados além de um único estado ou programa."
+      }
+    }
+  },
+  "tiers": {
+    "eyebrow": "Formas de financiamento",
+    "title": "Arranjos flexíveis para todo tipo de financiador.",
+    "body": "O financiamento pode ser estruturado como doação única, patrocínio anual, associação institucional ou apoio direcionado a programas. Fale com a equipe financeira para definir o arranjo mais adequado à sua organização.",
+    "items": {
+      "visionary": {
+        "title": "Patrocinador visionário",
+        "description": "Grande apoio filantrópico ou institucional para a gestão de infraestrutura pública digital aberta para a saúde em escala.",
+        "note": "Fale conosco para definir escopo e estrutura."
+      },
+      "member": {
+        "title": "Membro da fundação",
+        "description": "Associação anual para empresas, prestadores de serviços de saúde, parceiros de implementação e organizações do ecossistema.",
+        "note": "Inclui direito de participação na governança."
+      },
+      "program": {
+        "title": "Patrocinador de programa",
+        "description": "Apoio direcionado ao CARE Core, à segurança, à documentação com IA, aos cuidados paliativos, ao TeleICU ou a pacotes de implantação.",
+        "note": "Escopo definido, com prestação de contas regular."
+      },
+      "individual": {
+        "title": "Apoiador individual",
+        "description": "Apoio único ou recorrente de pessoas que desejam sustentar a infraestrutura aberta de saúde e a missão da OHC.",
+        "note": "Elegível à dedução fiscal 80G para doadores indianos."
+      }
+    }
+  },
+  "contact": {
+    "eyebrow": "Entre em contato",
+    "title": "Orientamos você em todo o processo.",
+    "body": "Seja uma pequena contribuição individual ou uma grande doação institucional, a equipe financeira está à disposição para ajudar com recibos, documentação, conformidade e prestação de contas.",
+    "finance": "Equipe financeira",
+    "financeText": "Recibos, instruções de transferência, documentação de doações.",
+    "documents": "Documentos da fundação",
+    "documentsText": "COI, MOA, PAN, 80G, 12A, GST e outros certificados legais.",
+    "viewDocuments": "Ver todos os documentos"
+  }
+}

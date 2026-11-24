@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "title": "Contato - Sistemas de saúde abertos",
+    "description": "Fale com a Open Healthcare Network Foundation sobre implantações, parcerias, financiamento, formas de contribuir e participação na comunidade."
+  },
+  "hero": {
+    "eyebrow": "Contato",
+    "title": "Comece pela conversa certa.",
+    "body": "Fale com a OHC Foundation sobre modelos de implantação, parcerias de implementação, financiamento, formas de contribuir e colaboração em fluxos clínicos.",
+    "emailUs": "Escreva para <link>{email}</link>"
+  },
+  "paths": {
+    "partnerships": {
+      "title": "Parcerias e implantações",
+      "description": "Para governos, hospitais, programas de saúde pública, financiadores e parceiros de implementação que estão avaliando o CARE ou outras infraestruturas abertas de saúde relacionadas."
+    },
+    "developers": {
+      "title": "Comunidade de desenvolvedores",
+      "description": "Participe da comunidade de código aberto, leia a documentação e contribua com o CARE Core, aplicativos, integrações e guias de implementação.",
+      "label": "Acesse o GitHub"
+    },
+    "slack": {
+      "title": "Slack e ecossistema",
+      "description": "Conecte-se com mantenedores, colaboradores, profissionais de saúde e equipes de implementação que atuam em todo o ecossistema da OHC.",
+      "label": "Entre no Slack"
+    }
+  },
+  "resources": {
+    "eyebrow": "Antes de escrever",
+    "title": "Bons pontos de partida.",
+    "body": "Estas páginas respondem à maioria das primeiras perguntas sobre a fundação, o CARE, a governança, a implementação e as formas de contribuir.",
+    "items": {
+      "foundation": {
+        "title": "Fundação",
+        "description": "Missão, gestão responsável e governança."
+      },
+      "careCore": {
+        "title": "CARE Core",
+        "description": "Componentes fundamentais e arquitetura da plataforma."
+      },
+      "support": {
+        "title": "Apoio",
+        "description": "Financie o bem comum aberto da saúde."
+      }
+    }
+  },
+  "footerNote": "A OHC é guardiã de <strong>Bens Públicos Digitais</strong> para a saúde. <strong>Licença MIT.</strong> A propriedade dos dados permanece com os governos e as instituições que fazem a implantação."
+}

@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "title": "Profissionais de saúde - Ajude a moldar o CARE",
+    "description": "Profissionais de saúde ajudam a OHC a moldar fluxos, formulários, terminologia, notas, visitas, prescrições, segurança e documentação assistiva com IA no CARE."
+  },
+  "hero": {
+    "eyebrow": "Comunidade clínica",
+    "title": "O CARE deve funcionar como infraestrutura clínica, não apenas como TI.",
+    "body": "A OHC precisa que profissionais de saúde e trabalhadores da linha de frente ajudem a moldar fluxos, formulários, terminologia, práticas de segurança e ferramentas de IA assistiva, para que o CARE reflita como o cuidado é de fato prestado.",
+    "joinReview": "Participe da revisão clínica",
+    "reviewModules": "Revise os módulos do CARE"
+  },
+  "workflow": {
+    "eyebrow": "Onde os profissionais de saúde moldam a plataforma",
+    "title": "A governança clínica deve estar perto das decisões de produto.",
+    "items": {
+      "notes": {
+        "title": "Notas clínicas e visitas",
+        "description": "Adequar a documentação aos fluxos reais à beira do leito, no ambulatório, na emergência, na atenção domiciliar e na terapia intensiva."
+      },
+      "forms": {
+        "title": "Formulários e terminologia",
+        "description": "Revisar questionários, mapeamentos para SNOMED CT, LOINC, UCUM e ICD-10 e necessidades de terminologia local."
+      },
+      "coordination": {
+        "title": "Coordenação do cuidado",
+        "description": "Moldar tarefas, encaminhamentos, planos de cuidado, visitas domiciliares, acompanhamento e padrões de continuidade do cuidado."
+      },
+      "ai": {
+        "title": "Revisão da documentação com IA",
+        "description": "Orientar formulários com entrada por voz, sinalização de rascunhos gerados por IA, resumos e expectativas de segurança com revisão humana no processo."
+      }
+    }
+  },
+  "safety": {
+    "eyebrow": "Segurança e adoção",
+    "title": "Registros melhores só importam se as equipes da linha de frente conseguirem usá-los de fato.",
+    "body": "O desenho clínico do CARE deve reduzir a carga de documentação, preservar a responsabilização e apoiar a continuidade do cuidado entre unidades, visitas domiciliares, encaminhamentos e fluxos de programas.",
+    "principles": [
+      "Segurança clínica antes da automação",
+      "Revisão humana na documentação assistida por IA",
+      "Dados estruturados sem sobrecarregar as equipes da linha de frente",
+      "Auditabilidade das ações clínicas e administrativas",
+      "Sensibilidade ao idioma e aos fluxos de trabalho locais",
+      "Canais abertos de retorno com mantenedores e equipes de implementação"
+    ]
+  },
+  "ai": {
+    "eyebrow": "IA assistiva",
+    "title": "Voz e IA devem redigir, não decidir.",
+    "body": "O Care Scribe e outros fluxos com IA devem ajudar os profissionais de saúde a registrar notas estruturadas, formulários, resumos e planos de cuidado, com estados de rascunho claros, caminhos de revisão e rastreabilidade.",
+    "quote": "O papel da fundação é tornar a IA mais segura, ancorando-a em padrões abertos, dados clínicos estruturados, revisão humana e escolhas de implantação que os sistemas de saúde possam governar localmente."
+  },
+  "community": {
+    "eyebrow": "Participe",
+    "title": "Ajude a transformar a realidade clínica em fluxos abertos e reutilizáveis.",
+    "items": {
+      "share": "Compartilhe necessidades de fluxo",
+      "review": "Revise formulários e módulos",
+      "test": "Teste fluxos de documentação com IA",
+      "mentor": "Oriente equipes de implementação"
+    }
+  }
+}

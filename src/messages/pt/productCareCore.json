@@ -1,0 +1,231 @@
+{
+  "meta": {
+    "title": "CARE Core - A camada aberta do sistema operacional da saúde",
+    "description": "O CARE Core é a camada operacional aberta da saúde, sob licença MIT e alinhada ao FHIR R5: componentes fundamentais, APIs, controle de acesso, trilhas de auditoria e fluxos prontos para plugins.",
+    "ogDescription": "O núcleo estável e baseado em padrões por trás do CARE: componentes fundamentais, APIs, fluxos, plugins e infraestrutura de dados de saúde pronta para IA.",
+    "ogImageAlt": "Interface de fluxo clínico do CARE Core",
+    "twitterDescription": "Infraestrutura de saúde aberta e baseada em padrões para hospitais, programas de saúde pública e coordenação do cuidado."
+  },
+  "structuredData": {
+    "description": "O CARE Core é a camada operacional aberta, sob licença MIT e alinhada ao FHIR R5, para fluxos de saúde em hospitais, programas de saúde pública e coordenação do cuidado.",
+    "featureList": [
+      "Pacientes, unidades, usuários, perfis e controle de acesso",
+      "Atendimentos, observações, documentação clínica, solicitações e relatórios",
+      "Questionários, formulários configuráveis, vinculações terminológicas e APIs",
+      "Fluxos de laboratório, farmácia, estoque, faturamento, agendamento e análise de dados",
+      "Integrações via plugins para IA, TeleICU, dispositivos, mensagens, reembolsos e infraestruturas digitais nacionais",
+      "Modelos de implantação auto-hospedáveis com trilhas de auditoria e dados alinhados a padrões"
+    ]
+  },
+  "coreSlab": {
+    "eyebrow": "Núcleo da plataforma",
+    "modules": {
+      "administration": {
+        "name": "Administração",
+        "detail": "Pacientes / Unidades / Usuários"
+      },
+      "definitions": {
+        "name": "Definições",
+        "detail": "ValueSets / Questionários"
+      },
+      "clinical": {
+        "name": "Clínico",
+        "detail": "Atendimentos / Observações"
+      },
+      "scheduling": {
+        "name": "Agendamento",
+        "detail": "Agendas / Horários / Reservas"
+      },
+      "pharmacy": {
+        "name": "Farmácia",
+        "detail": "Dispensação / Estoque"
+      },
+      "labs": {
+        "name": "Laboratório",
+        "detail": "Solicitações de serviço / Diagnósticos"
+      },
+      "billing": {
+        "name": "Faturamento",
+        "detail": "Reembolsos / Cobertura / Faturas"
+      },
+      "coordination": {
+        "name": "Coordenação",
+        "detail": "Tarefas / Planos de cuidado / Encaminhamentos"
+      }
+    },
+    "persistence": "Persistência / <b>PostgreSQL</b> / <b>Redis</b> / <b>Armazenamento de objetos</b>",
+    "runtime": "Execução / <b>Django</b> / <b>DRF</b> / <b>Celery</b>"
+  },
+  "heroVisual": {
+    "pluginSurface": "Superfície de plugins",
+    "plugins": [
+      "Escriba com IA",
+      "TeleICU",
+      "Dispositivos",
+      "Reembolsos",
+      "Mensagens",
+      "Análises"
+    ],
+    "enabledSolutions": "Soluções viabilizadas",
+    "solutions": [
+      "SO hospitalar",
+      "Terapia intensiva",
+      "Cuidados paliativos",
+      "Redes de clínicas",
+      "Programas de saúde pública"
+    ]
+  },
+  "hero": {
+    "title": "O sistema operacional aberto da saúde começa pelo Core.",
+    "body": "O CARE Core é a camada operacional estável e baseada em padrões por trás do CARE: componentes fundamentais de saúde compartilhados, APIs, permissões, trilhas de auditoria, módulos e superfícies de plugins que permitem que muitas soluções funcionem sobre uma única base confiável.",
+    "seePlugins": "Veja o núcleo e os plugins",
+    "developerDocs": "Documentação para desenvolvedores",
+    "proofPoints": [
+      "Bem Público Digital verificado",
+      "Licença MIT",
+      "Alinhado ao FHIR R5",
+      "Orientado a APIs",
+      "Auto-hospedável"
+    ]
+  },
+  "architecture": {
+    "eyebrow": "Arquitetura",
+    "title": "Um kernel para os fluxos de saúde.",
+    "body": "O CARE Core mantém os componentes fundamentais estáveis para que hospitais, programas de saúde pública, parceiros de implementação e ferramentas de IA possam construir sobre o mesmo prontuário, as mesmas permissões e a mesma superfície de integração.",
+    "items": {
+      "sharedCore": {
+        "title": "Núcleo compartilhado estável",
+        "text": "Pacientes, unidades, profissionais, atendimentos, observações, solicitações, formulários, tarefas, planos de cuidado, relatórios, perfis e trilhas de auditoria ficam em uma única base reutilizável."
+      },
+      "workflows": {
+        "title": "Fluxos configuráveis",
+        "text": "Os programas podem modelar fluxos clínicos e operacionais por meio de questionários, formulários, vinculações terminológicas e configurações específicas de cada implantação."
+      },
+      "plugins": {
+        "title": "Superfície pronta para plugins",
+        "text": "Aplicativos e integrações acrescentam escriba com IA, TeleICU, dispositivos, laboratório, farmácia, faturamento, mensagens, reembolsos, análise de dados e infraestruturas digitais nacionais sem fragmentar o núcleo."
+      }
+    }
+  },
+  "primitives": {
+    "eyebrow": "Componentes fundamentais",
+    "title": "Blocos de construção reutilizáveis, não telas pontuais.",
+    "body": "Cada implantação do CARE pode ter uma aparência diferente na camada de fluxos e, ainda assim, compartilhar por baixo o mesmo modelo de dados, o mesmo modelo de acesso, a mesma trilha de auditoria e a mesma superfície de APIs.",
+    "items": {
+      "patients": "Pacientes e identidade",
+      "facilities": "Unidades e hierarquia",
+      "providers": "Profissionais e equipes",
+      "encounters": "Atendimentos e episódios",
+      "forms": "Questionários e formulários",
+      "observations": "Observações e sinais vitais",
+      "orders": "Solicitações e pedidos",
+      "medications": "Medicamentos e farmácia",
+      "labs": "Laboratório e diagnóstico",
+      "scheduling": "Agendamento e horários",
+      "access": "Controle de acesso e auditoria",
+      "reports": "Relatórios e análises"
+    }
+  },
+  "demos": {
+    "eyebrow": "Módulos de fluxo",
+    "title": "O Core se torna visível onde o trabalho acontece.",
+    "body": "O CARE Core não é uma plataforma de dados vazia. Ele já vem com fluxos clínicos, operacionais e financeiros reais que podem ser combinados em implantações de HMIS, EMR, coordenação do cuidado e saúde pública.",
+    "videoLabel": "Demonstração de {title} no CARE Core",
+    "items": {
+      "dataCapture": {
+        "title": "Registro de dados clínicos",
+        "text": "Formulários estruturados, observações, notas, terminologia e contexto clínico registrados dentro do prontuário longitudinal."
+      },
+      "emrForms": {
+        "title": "Formulários de EMR configuráveis",
+        "text": "Equipes de programas e hospitais podem moldar os fluxos sem transformar cada implantação em um novo fork do produto."
+      },
+      "labs": {
+        "title": "Gestão laboratorial",
+        "text": "Solicitações, amostras, laudos, valores, unidades e resultados voltam para a mesma linha do tempo do paciente."
+      },
+      "pharmacy": {
+        "title": "Farmácia e estoque",
+        "text": "As prescrições se conectam à dispensação, à movimentação de estoque, às substituições, aos alertas, às compras e à visibilidade do estoque."
+      },
+      "billing": {
+        "title": "Faturamento e contabilidade",
+        "text": "Faturas, pagamentos, reembolsos, coberturas, programas governamentais de saúde e conciliação permanecem conectados à atividade real de cuidado."
+      },
+      "reports": {
+        "title": "Relatórios dinâmicos",
+        "text": "Relatórios clínicos e operacionais são gerados a partir dos mesmos fluxos estruturados, e não reconstruídos depois em planilhas."
+      }
+    }
+  },
+  "plugins": {
+    "eyebrow": "Núcleo + plugins",
+    "title": "Mantenha a base estável. Deixe as soluções avançarem mais rápido.",
+    "body": "Os CARE Apps estendem a plataforma para documentação com IA, TeleICU, dispositivos, mensagens, reembolsos, análise de dados, terminologia, infraestruturas digitais nacionais e fluxos específicos de cada implantação. O resultado é reutilização sem dependência e extensão sem fragmentação.",
+    "exploreApps": "Conheça os aplicativos e integrações"
+  },
+  "standards": {
+    "eyebrow": "Camada de padrões",
+    "title": "Projetado para a interoperabilidade antes da primeira integração.",
+    "body": "O CARE Core modela dados e fluxos de saúde com base em padrões abertos, APIs abertas, terminologia configurável e modelos de implantação que as instituições podem controlar.",
+    "items": {
+      "fhir": {
+        "name": "FHIR R5",
+        "detail": "modelo de recursos e APIs"
+      },
+      "snomed": {
+        "name": "SNOMED CT",
+        "detail": "direcionamento de terminologia clínica"
+      },
+      "loinc": {
+        "name": "LOINC",
+        "detail": "exames laboratoriais e observações"
+      },
+      "ucum": {
+        "name": "UCUM",
+        "detail": "unidades de medida"
+      },
+      "icd10": {
+        "name": "ICD-10",
+        "detail": "suporte à classificação"
+      },
+      "openApis": {
+        "name": "APIs abertas",
+        "detail": "integração desde a concepção"
+      }
+    }
+  },
+  "deployment": {
+    "eyebrow": "Modelo de implantação",
+    "title": "Feito para instituições que precisam ter controle.",
+    "body": "O CARE Core é de código aberto e auto-hospedável. Governos, hospitais e parceiros de implementação podem implantá-lo localmente, integrá-lo ao seu ecossistema e continuar aprimorando o núcleo compartilhado.",
+    "items": {
+      "sovereign": {
+        "title": "Hospedagem soberana",
+        "text": "Implante em uma nuvem governamental, na VPC de um hospital, em nuvem gerenciada, em modelo híbrido ou em ambiente local (on-premises)."
+      },
+      "mobile": {
+        "title": "Cuidado pensado para o celular",
+        "text": "Apoie enfermarias, clínicas, visitas domiciliares, equipes de campo e fluxos da linha de frente com os mesmos componentes fundamentais da plataforma."
+      },
+      "aiReady": {
+        "title": "Prontuários prontos para IA",
+        "text": "A IA assistiva funciona melhor quando o contexto do paciente, os formulários, os atendimentos, as permissões e as trilhas de auditoria já existem."
+      }
+    }
+  },
+  "stewardship": {
+    "eyebrow": "Gestão pela fundação",
+    "title": "Infraestrutura aberta de saúde precisa de mais do que código.",
+    "body": "A OHC Foundation zela pelo CARE Core para que ele sirva como infraestrutura duradoura de bem público: disciplina de versões, segurança, documentação, alinhamento a padrões, orientação para implementação, caminhos para colaboradores e uma casa neutra para governos, hospitais, financiadores, desenvolvedores e parceiros de implementação.",
+    "governance": "Modelo de governança",
+    "fund": "Financie o bem comum"
+  },
+  "final": {
+    "eyebrow": "Construa sobre o CARE Core",
+    "title": "Uma base aberta. Muitos sistemas de saúde.",
+    "body": "Use o CARE Core para implantar sistemas hospitalares, redes de terapia intensiva, redes de cuidados paliativos, fluxos de clínicas, programas de saúde pública e ferramentas de saúde assistidas por IA sem começar do zero.",
+    "exploreHmis": "Conheça o CARE HMIS",
+    "talk": "Fale com a OHC"
+  }
+}

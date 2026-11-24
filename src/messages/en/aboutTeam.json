@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "title": "Board, Advisors, and Maintainers - Open Healthcare Network Foundation",
+    "description": "Foundation board, advisory board, governance layers, and maintainers stewarding OHC Foundation and CARE."
+  },
+  "hero": {
+    "eyebrow": "Leadership and governance layers",
+    "title": "A full institution around CARE Core.",
+    "body": "OHC Foundation is being built as a durable home for open healthcare infrastructure: board stewardship, independent advisors, foundation operators, and maintainers close to the code and field deployments.",
+    "governance": "Governance model",
+    "foundationTeam": "Foundation team"
+  },
+  "layers": {
+    "eyebrow": "Governance map",
+    "title": "Board, advisors, team, and maintainers have different jobs.",
+    "body": "This separation matters. The board safeguards the institution. Advisors sharpen direction. The foundation team operates the roadmap. Maintainers protect technical quality.",
+    "items": {
+      "board": {
+        "title": "Foundation Board",
+        "text": "Mission, fiduciary oversight, risk, funding, legal accountability, and long-term institutional stewardship."
+      },
+      "advisors": {
+        "title": "Advisory Board",
+        "text": "Independent guidance from public infrastructure, health systems, philanthropy, technology, and open-source leaders."
+      },
+      "team": {
+        "title": "Foundation Team",
+        "text": "Product, engineering, AI, community, partnerships, and operating leadership for OHC Foundation."
+      },
+      "maintainers": {
+        "title": "Maintainers",
+        "text": "Architecture, code review, release discipline, security, documentation, and contributor pathways."
+      }
+    }
+  },
+  "board": {
+    "eyebrow": "Foundation Board",
+    "title": "Board stewardship for a neutral healthcare commons.",
+    "description": "The foundation board provides institutional oversight for mission, fiduciary responsibility, partnerships, and long-term trust."
+  },
+  "advisors": {
+    "eyebrow": "Advisory Board",
+    "title": "Independent guidance for public-good infrastructure.",
+    "description": "The advisory board section is designed to grow as OHC adds leaders from digital public infrastructure, healthcare, philanthropy, standards, and open source."
+  },
+  "people": {
+    "srikanthNadhamuni": {
+      "role": "Founding CTO, Aadhaar / Chairman, 10BedICU Project"
+    },
+    "sandeepSingal": {
+      "role": "Board Member, ACT Grants"
+    },
+    "sanjayVijayakumar": {
+      "role": "Director / Strategic Operations"
+    },
+    "athulJosephManuel": {
+      "role": "President, IMA Kochi / Chief Medical Officer"
+    },
+    "bodhishThomas": {
+      "role": "Chief Executive Officer"
+    },
+    "vigneshHari": {
+      "role": "Chief Technology Officer"
+    },
+    "giginChandyGeorge": {
+      "role": "CTO, eGov Healthcare"
+    },
+    "pinakiKrishna": {
+      "role": "Director - Resources & Partnerships"
+    }
+  },
+  "maintainers": {
+    "eyebrow": "Maintainers and contributors",
+    "title": "The wider technical community remains central.",
+    "body": "The public roster will grow as maintainer, clinical, and project committee roles are confirmed. For now, this page reserves the structure for a complete foundation team page.",
+    "roles": [
+      "Technical Steering Committee",
+      "Project maintainers",
+      "Clinical reviewers",
+      "Security and release owners",
+      "Implementation partners",
+      "Open-source contributors"
+    ]
+  },
+  "final": {
+    "title": "Open healthcare infrastructure needs visible stewardship.",
+    "body": "The roster will expand as the foundation formalizes additional board, advisory, maintainer, clinical, and operating roles.",
+    "governance": "Read governance model",
+    "support": "Support the foundation"
+  }
+}

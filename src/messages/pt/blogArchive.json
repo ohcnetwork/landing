@@ -1,0 +1,36 @@
+{
+  "featured": {
+    "title": "Destaques",
+    "body": "Ensaios e notas de campo que apresentam a plataforma CARE como infraestrutura aberta de saúde."
+  },
+  "filters": {
+    "browseThemes": "Navegar por temas",
+    "allThemes": "Todos os temas",
+    "filterByMonth": "Filtrar por mês",
+    "monthNavLabel": "Mês de publicação",
+    "allMonths": "Todos os meses",
+    "rssFeed": "Feed RSS",
+    "clearTheme": "Limpar tema: <category>{theme}</category>",
+    "clearMonth": "Limpar mês: {month}",
+    "clearAll": "Limpar todos os filtros"
+  },
+  "status": {
+    "count": "{count, plural, one {# publicação} other {# publicações}}",
+    "countFiltered": "{count, plural, one {# publicação corresponde aos seus filtros} other {# publicações correspondem aos seus filtros}}"
+  },
+  "empty": {
+    "noMatchesTitle": "Nenhuma publicação corresponde a estes filtros.",
+    "noMatchesBody": "Experimente outro tema ou mês, ou limpe os filtros para ver todas as publicações.",
+    "viewAll": "Ver todas as publicações",
+    "noPostsTitle": "O blog está em preparação.",
+    "noPostsBody": "Ensaios da fundação, notas de versão, histórias de campo e guias de implementação aparecerão aqui assim que estiverem prontos para publicação."
+  },
+  "post": {
+    "readingTime": "{minutes} min de leitura",
+    "readArticle": "Ler artigo"
+  },
+  "pagination": {
+    "previous": "Anterior",
+    "next": "Próxima"
+  }
+}

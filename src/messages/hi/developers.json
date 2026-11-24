@@ -1,0 +1,176 @@
+{
+  "meta": {
+    "title": "डेवलपर — CARE ओपन-सोर्स EMR में योगदान दें",
+    "description": "CARE डेवलपर समुदाय से जुड़ें। Django DRF और React TypeScript से बने ओपन-सोर्स स्वास्थ्य बुनियादी ढाँचे में योगदान दें।"
+  },
+  "hero": {
+    "title": "ओपन-सोर्स स्वास्थ्य बुनियादी ढाँचा बनाएँ।",
+    "body": "CARE में योगदान दें, जो Django DRF और React TypeScript से बना एक ओपन-सोर्स EMR सिस्टम है और वास्तविक क्लिनिकल और सार्वजनिक स्वास्थ्य परिस्थितियों में व्यावहारिक वर्कफ़्लो चलाता है।",
+    "starGithub": "GitHub पर हमें स्टार दें",
+    "joinSlack": "Slack से जुड़ें",
+    "docs": "दस्तावेज़",
+    "community": "योगदानकर्ताओं का सार्वजनिक समुदाय",
+    "license": "MIT लाइसेंस",
+    "buildOnCare": {
+      "title": "अपना ऐप या इंटीग्रेशन बना रहे हैं?",
+      "body": "एक्सटेंशन पॉइंट, काम करते उदाहरण और अपना पहला CARE प्लगइन बनाने का रास्ता देखें।",
+      "link": "Care पर बनाएँ"
+    }
+  },
+  "techStack": {
+    "eyebrow": "टेक स्टैक",
+    "title": "स्वास्थ्य सेवा के ऐसे समाधानों के लिए आधुनिक तकनीकों से बना, जो बड़े पैमाने पर चल सकें",
+    "backend": {
+      "title": "बैकएंड",
+      "body": "Django Rest Framework हमारे मज़बूत API और डेटा प्रबंधन को चलाता है"
+    },
+    "frontend": {
+      "title": "फ़्रंटएंड",
+      "body": "React TypeScript एक आधुनिक, टाइप-सेफ़ यूज़र इंटरफ़ेस देता है"
+    }
+  },
+  "prerequisites": {
+    "eyebrow": "पूर्व-आवश्यकताएँ",
+    "title": "योगदान देने से पहले आपको क्या जानना चाहिए",
+    "basic": {
+      "title": "बुनियादी आवश्यकताएँ",
+      "items": {
+        "git": "Git और GitHub से परिचय",
+        "web": "वेब डेवलपमेंट की बुनियादी जानकारी",
+        "languages": "HTML, CSS, JavaScript की समझ",
+        "cli": "कमांड लाइन की बुनियादी बातें"
+      }
+    },
+    "learningPath": {
+      "title": "सीखने का रास्ता",
+      "intro": "वेब डेवलपमेंट में नए हैं? यहाँ से शुरू करें:",
+      "items": {
+        "wd101": "{site} का WD101 कोर्स",
+        "djangoForAll": "Django और DRF के लिए DjangoForAll",
+        "reactForAll": "React TypeScript के लिए ReactForAll"
+      }
+    },
+    "tools": {
+      "title": "डेवलपमेंट टूल",
+      "items": {
+        "ide": "VS Code या आपकी पसंद का IDE",
+        "runtimes": "Node.js और Python एनवायरनमेंट",
+        "docker": "कंटेनराइज़ेशन के लिए Docker",
+        "git": "वर्ज़न कंट्रोल के लिए Git"
+      }
+    }
+  },
+  "build": {
+    "eyebrow": "आप क्या बना सकते हैं",
+    "title": "प्लगइन, मॉड्यूल और इंटीग्रेशन, जो कोर को बदले बिना CARE का विस्तार करते हैं",
+    "items": {
+      "plugins": {
+        "title": "प्लगइन",
+        "description": "TeleICU (ONVIF), ABDM M1–M3, Care Scribe और बहुत कुछ"
+      },
+      "modules": {
+        "title": "मॉड्यूल",
+        "description": "LMIS, फ़ार्मेसी, बिलिंग, डैशबोर्ड और कस्टम मॉड्यूल"
+      },
+      "forms": {
+        "title": "फ़ॉर्म और शब्दावली",
+        "description": "FHIR से मैप किए गए फ़ॉर्म; शब्दावली ब्रिज (SNOMED/LOINC/UCUM)"
+      },
+      "integrations": {
+        "title": "इंटीग्रेशन",
+        "description": "मौजूदा सिस्टम, उपकरणों और थर्ड-पार्टी सेवाओं से जुड़ें"
+      }
+    }
+  },
+  "getStarted": {
+    "eyebrow": "शुरुआत करें",
+    "title": "CARE में योगदान शुरू करने के लिए ज़रूरी सब कुछ",
+    "cards": {
+      "setup": {
+        "eyebrow": "सेटअप",
+        "title": "एनवायरनमेंट सेटअप",
+        "description": "रिपॉज़िटरी क्लोन करें और चरण-दर-चरण निर्देशों के साथ अपना डेवलपमेंट एनवायरनमेंट सेट अप करें।",
+        "graphicTitle": "झटपट सेटअप",
+        "graphicText": "कुछ ही मिनटों में शुरू करें"
+      },
+      "issues": {
+        "title": "इश्यू खोजें",
+        "description": "'good first issue' लेबल वाले इश्यू देखें और उन्हें अपने नाम करके तुरंत योगदान शुरू करें।",
+        "graphicTitle": "शुरुआती इश्यू",
+        "graphicText": "नए लोगों के लिए बिल्कुल सही"
+      },
+      "slack": {
+        "eyebrow": "समुदाय",
+        "title": "Slack से जुड़ें",
+        "description": "चर्चा, मदद और सहयोग के लिए {url} पर समुदाय से जुड़ें।",
+        "graphicTitle": "Slack समुदाय",
+        "graphicText": "मदद पाएँ और जुड़ें"
+      }
+    },
+    "steps": {
+      "title": "झटपट सेटअप के चरण",
+      "backend": {
+        "title": "बैकएंड सेटअप",
+        "body": "Django बैकएंड के लिए इंस्टॉलेशन गाइड का पालन करें।",
+        "link": "बैकएंड README"
+      },
+      "frontend": {
+        "title": "फ़्रंटएंड सेटअप",
+        "body": "React फ़्रंटएंड के लिए इंस्टॉलेशन गाइड का पालन करें।",
+        "link": "फ़्रंटएंड README"
+      }
+    }
+  },
+  "contribute": {
+    "eyebrow": "योगदान कैसे दें",
+    "title": "CARE में योगदान शुरू करने की चरण-दर-चरण प्रक्रिया",
+    "find": {
+      "title": "1. इश्यू खोजें",
+      "body": "GitHub पर इश्यू देखें और शुरुआत के लिए 'good first issue' लेबल वाले इश्यू चुनें।",
+      "visit": "<link>{repo}</link> पर जाएँ",
+      "label": "'good first issue' लेबल वाले इश्यू खोजें"
+    },
+    "claim": {
+      "title": "2. इश्यू अपने नाम करें",
+      "body": "इश्यू पर कमेंट करके अपना तरीका बताएँ और उसे अपने नाम असाइन करने का अनुरोध करें।",
+      "comment": "कमेंट में अपनी समझ लिखें और अपना तरीका बताएँ",
+      "assign": "इश्यू अपने नाम असाइन करने का अनुरोध करें"
+    },
+    "work": {
+      "title": "3. इश्यू पर काम करें",
+      "body": "रिपॉज़िटरी फ़ोर्क करें, एक ब्रांच बनाएँ और सही टेस्टिंग के साथ कोडिंग शुरू करें।"
+    },
+    "submit": {
+      "title": "4. पुल रिक्वेस्ट भेजें",
+      "body": "जल्दी ही एक ड्राफ़्ट PR खोलें और अंतिम सबमिशन के लिए तैयार होने पर समीक्षा का अनुरोध करें।"
+    }
+  },
+  "learning": {
+    "eyebrow": "सीखने के संसाधन",
+    "title": "हमारे टेक स्टैक में महारत हासिल करने के लिए व्यापक संसाधन",
+    "groups": {
+      "backend": "बैकएंड डेवलपमेंट",
+      "frontend": "फ़्रंटएंड डेवलपमेंट",
+      "basics": "वेब डेवलपमेंट की बुनियादी बातें",
+      "healthcare": "स्वास्थ्य सेवा का क्षेत्र"
+    },
+    "items": {
+      "django": "<strong>Django दस्तावेज़ीकरण:</strong> वेब फ़्रेमवर्क के लिए <link>Django के आधिकारिक दस्तावेज़</link>",
+      "drf": "<strong>DRF दस्तावेज़ीकरण:</strong> API डेवलपमेंट के लिए <link>Django Rest Framework</link>",
+      "djangoForAll": "<strong>DjangoForAll:</strong> Django और DRF के लिए <link>व्यापक कोर्स</link>",
+      "fhir": "<strong>FHIR R5:</strong> स्वास्थ्य सेवा में इंटरऑपरेबिलिटी के मानक",
+      "react": "<strong>React दस्तावेज़ीकरण:</strong> <link>React के आधिकारिक दस्तावेज़</link> और गाइड",
+      "typescript": "<strong>TypeScript दस्तावेज़ीकरण:</strong> <link>टाइप-सेफ़ JavaScript</link> डेवलपमेंट",
+      "reactForAll": "<strong>ReactForAll:</strong> <link>React TypeScript का पूरा कोर्स</link>",
+      "css": "<strong>आधुनिक CSS:</strong> स्टाइलिंग और रिस्पॉन्सिव डिज़ाइन",
+      "wd101": "<strong>WD101 कोर्स:</strong> <link>वेब डेवलपमेंट की पूरी बुनियादी बातें</link>",
+      "git": "<strong>Git और GitHub:</strong> वर्ज़न कंट्रोल और सहयोग",
+      "web": "<strong>HTML/CSS/JavaScript:</strong> वेब की मुख्य तकनीकें",
+      "cli": "<strong>कमांड लाइन:</strong> टर्मिनल और डेवलपमेंट टूल",
+      "emr": "<strong>EMR सिस्टम:</strong> इलेक्ट्रॉनिक मेडिकल रिकॉर्ड की बुनियादी बातें",
+      "standards": "<strong>स्वास्थ्य सेवा के मानक:</strong> FHIR, HL7, SNOMED, LOINC",
+      "workflows": "<strong>मेडिकल वर्कफ़्लो:</strong> मरीज़ों की देखभाल की प्रक्रियाएँ",
+      "privacy": "<strong>डेटा गोपनीयता:</strong> HIPAA और स्वास्थ्य सेवा अनुपालन"
+    }
+  }
+}

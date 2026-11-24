@@ -1,0 +1,174 @@
+{
+  "meta": {
+    "title": "CARE TeleICU - Infraestrutura aberta para terapia intensiva",
+    "description": "O CARE TeleICU sustenta redes de terapia intensiva hub-and-spoke em hospitais públicos e UTIs de 10 leitos, com avaliação remota por especialistas, protocolos e capacitação.",
+    "ogDescription": "Um modelo de TeleICU baseado no CARE para UTIs de 10 leitos, centrais de especialistas, protocolos, capacitação e documentação em terapia intensiva.",
+    "ogImageAlt": "Logotipo do 10BedICU",
+    "twitterDescription": "Redes de terapia intensiva hub-and-spoke com o CARE: fluxos de TeleICU, protocolos, capacitação e infraestrutura aberta."
+  },
+  "states": {
+    "karnataka": "Karnataka",
+    "manipur": "Manipur",
+    "meghalaya": "Meghalaya",
+    "sikkim": "Sikkim",
+    "nagaland": "Nagaland",
+    "assam": "Assam",
+    "puducherry": "Puducherry",
+    "jharkhand": "Jharkhand",
+    "andhraPradesh": "Andhra Pradesh",
+    "telangana": "Telangana"
+  },
+  "diagram": {
+    "spokeUnit": "Unidade remota (spoke)",
+    "spokeTitle": "UTI de 10 leitos",
+    "spokeBody": "Leitos de UTI em hospitais públicos, com equipes locais, equipamentos e fluxos do CARE.",
+    "technologyLayer": "Camada tecnológica",
+    "technologyBadge": "EMR + vídeo + protocolos",
+    "technologyItems": [
+      "Visitas",
+      "Sinais vitais",
+      "Solicitações",
+      "Notas",
+      "Alertas",
+      "Relatórios"
+    ],
+    "specialistHub": "Central de especialistas",
+    "hubTitle": "Central de TeleICU",
+    "hubItems": ["Avaliação remota", "Escalonamento", "Mentoria", "Painel"]
+  },
+  "hero": {
+    "title": "Terapia intensiva em qualquer lugar.",
+    "body": "O CARE TeleICU é a camada aberta de terapia intensiva por trás do 10BedICU: UTIs de 10 leitos, centrais de especialistas, fluxos no EMR do CARE, contexto por vídeo e dispositivos, protocolos, capacitação e painéis de programa para hospitais em regiões com pouco acesso a cuidados.",
+    "visit10BedIcu": "Visite o 10BedICU",
+    "planDeployment": "Planeje uma implantação de TeleICU",
+    "metrics": {
+      "units": "UTIs do 10BedICU",
+      "lives": "vidas salvas",
+      "hubs": "centrais de TeleICU",
+      "states": "estados no programa",
+      "coverage": "de cobertura na Índia"
+    },
+    "metricsSource": "Os números do programa vêm dos relatórios públicos do 10BedICU."
+  },
+  "model": {
+    "eyebrow": "Modelo do programa",
+    "title": "A UTI é local. A rede de especialistas é compartilhada.",
+    "body": "O 10BedICU começou em 2021 para levar infraestrutura de terapia intensiva a hospitais públicos rurais e de menor porte. O CARE torna o modelo digital: prontuários, visitas na UTI, escalonamento, relatórios e avaliação remota ficam em uma única plataforma compartilhada.",
+    "items": {
+      "spoke": {
+        "title": "Hospital público remoto (spoke)",
+        "text": "Uma UTI de 10 leitos é instalada dentro de um hospital público de nível secundário, perto de pacientes que, de outra forma, precisariam se deslocar para receber terapia intensiva."
+      },
+      "hub": {
+        "title": "Central de TeleICU com especialistas",
+        "text": "Equipes de faculdades de medicina ou de centrais de especialistas apoiam vários hospitais remotos por meio de avaliação remota, visitas estruturadas, escalonamento e mentoria."
+      },
+      "platform": {
+        "title": "Plataforma tecnológica CARE",
+        "text": "O CARE reúne o prontuário da UTI, a linha do tempo do paciente, solicitações, notas, visitas, formulários, contexto por vídeo e relatórios em uma plataforma clínica aberta."
+      }
+    }
+  },
+  "operatingSystem": {
+    "eyebrow": "Do que o modelo precisa",
+    "title": "Terapia intensiva é um sistema, não uma transmissão de câmera.",
+    "body": "A abordagem do 10BedICU funciona porque infraestrutura física, CARE, centrais de TeleICU, capacitação, protocolos e participação da comunidade local se reforçam mutuamente.",
+    "items": {
+      "equipment": {
+        "title": "Equipamentos de UTI",
+        "text": "Leitos, monitores, ventiladores, suporte de oxigênio e infraestrutura à beira do leito dão a cada unidade a base física para a terapia intensiva."
+      },
+      "video": {
+        "title": "Vídeo e dispositivos de TeleICU",
+        "text": "Câmeras e sinais à beira do leito ajudam os especialistas a ver o contexto, avaliar pacientes e orientar remotamente as equipes locais."
+      },
+      "emr": {
+        "title": "Fluxos no EMR do CARE",
+        "text": "Visitas, notas, exames, sinais vitais, formulários clínicos, solicitações e registros de passagem de plantão ficam vinculados à linha do tempo do paciente."
+      },
+      "protocols": {
+        "title": "Protocolos de UTI",
+        "text": "Protocolos clínicos padronizados tornam o cuidado mais consistente e dão às equipes um modelo operacional comum para situações críticas."
+      },
+      "training": {
+        "title": "Programas de capacitação",
+        "text": "As equipes clínicas são capacitadas em práticas de UTI, manuseio de equipamentos, fluxos de TeleICU e uso do software CARE."
+      },
+      "community": {
+        "title": "Participação da comunidade",
+        "text": "A governança local e a participação nos moldes do Rogi Kalyan Samithi (comitês de bem-estar do paciente) apoiam a adoção, a responsabilização e a sustentabilidade no longo prazo."
+      }
+    }
+  },
+  "outcomes": {
+    "eyebrow": "Por que isso importa",
+    "title": "O cuidado especializado chega por meio da infraestrutura.",
+    "body": "O CARE TeleICU permite que conhecimento, protocolos e capacidade de avaliação em terapia intensiva circulem por uma rede, enquanto os pacientes permanecem mais perto de casa.",
+    "items": {
+      "reach": {
+        "title": "Alcance especializado sem transferir cada paciente",
+        "text": "As equipes das centrais podem apoiar vários hospitais distritais e de menor porte, enquanto as equipes locais continuam sendo o ponto de atendimento."
+      },
+      "records": {
+        "title": "Prontuários estruturados de terapia intensiva",
+        "text": "O CARE mantém avaliações remotas, notas de UTI, observações, solicitações e fluxos de escalonamento no mesmo prontuário clínico."
+      },
+      "quality": {
+        "title": "Ciclo de melhoria da qualidade",
+        "text": "Documentação, protocolos e painéis consistentes facilitam a capacitação, a supervisão, os relatórios e a revisão operacional."
+      }
+    }
+  },
+  "stateCoverage": {
+    "eyebrow": "Estados do programa",
+    "title": "Um modelo de expansão replicável entre estados.",
+    "body": "As implantações do 10BedICU abrangem dez estados e territórios da união, com lançamentos estaduais documentados em vários programas."
+  },
+  "video": {
+    "eyebrow": "História de campo",
+    "title": "Veja como uma UTI de 10 leitos chega a áreas remotas.",
+    "body": "Uma história de campo de Nagaland mostra como infraestrutura de terapia intensiva, capacitação e apoio remoto mudam o acesso em hospitais de menor porte.",
+    "watchOnYoutube": "Assista no YouTube"
+  },
+  "ai": {
+    "eyebrow": "Terapia intensiva pronta para IA",
+    "title": "A IA deve operar sobre prontuários confiáveis, não fora da UTI.",
+    "body": "O CARE TeleICU gera dados estruturados de terapia intensiva: observações, solicitações, notas, formulários, escalonamentos, passagens de plantão e desfechos. Isso viabiliza o apoio da IA à documentação, aos resumos, à avaliação de riscos, à passagem de plantão e à melhoria da qualidade, mantendo os profissionais de saúde no controle.",
+    "exploreCareAi": "Conheça o CARE AI",
+    "careCore": "CARE Core"
+  },
+  "faq": {
+    "items": {
+      "what": {
+        "question": "O que é o CARE TeleICU?",
+        "answer": "O CARE TeleICU é um fluxo de terapia intensiva no modelo hub-and-spoke construído sobre o CARE. Ele conecta hospitais com UTIs remotas a centrais de especialistas por meio de documentação no EMR do CARE, contexto por vídeo e dispositivos, protocolos de UTI, capacitação, painéis e fluxos de escalonamento."
+      },
+      "tenBedIcu": {
+        "question": "Como o CARE é usado no modelo do 10BedICU?",
+        "answer": "O 10BedICU usa o CARE como plataforma tecnológica para documentação de UTI, fluxos de TeleICU, linhas do tempo dos pacientes, formulários, visitas, notas, relatórios e avaliação remota por especialistas, junto com equipamentos, protocolos, capacitação e participação da comunidade."
+      },
+      "outside": {
+        "question": "O TeleICU pode ser implantado fora do programa 10BedICU?",
+        "answer": "Sim. A mesma arquitetura do CARE TeleICU pode apoiar redes de terapia intensiva, grupos hospitalares, programas governamentais e parceiros de implementação que precisem de avaliação remota por especialistas e documentação estruturada de terapia intensiva."
+      }
+    }
+  },
+  "final": {
+    "eyebrow": "Implante o CARE TeleICU",
+    "title": "Construa uma rede de terapia intensiva capaz de melhorar continuamente.",
+    "body": "A OHC pode ajudar governos, hospitais e parceiros de implementação a planejar implantações de TeleICU baseadas no CARE, integrar fluxos de avaliação remota por especialistas e adaptar o modelo às realidades clínicas e operacionais locais.",
+    "startConversation": "Converse sobre uma implantação",
+    "teleicuApp": "TeleICU como aplicativo do CARE"
+  },
+  "structuredData": {
+    "description": "O CARE TeleICU apoia redes de terapia intensiva no modelo hub-and-spoke com avaliação remota de UTI, fluxos no EMR do CARE, contexto por vídeo e dispositivos, protocolos, capacitação e painéis.",
+    "featureList": [
+      "Fluxos de TeleICU no modelo hub-and-spoke",
+      "Documentação no EMR do CARE para visitas, notas, observações e solicitações na UTI",
+      "Contexto por vídeo e por dispositivos à beira do leito",
+      "Protocolos de UTI e fluxos de capacitação",
+      "Painéis de programa e relatórios de implementação",
+      "Prontuários estruturados de terapia intensiva prontos para IA"
+    ]
+  }
+}

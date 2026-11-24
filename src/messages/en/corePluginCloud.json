@@ -1,0 +1,57 @@
+{
+  "ariaLabel": "CARE Core plus plugins enables many healthcare solutions",
+  "eyebrow": "Core + Plugins",
+  "modules": {
+    "administration": {
+      "name": "Administration",
+      "detail": "Patients / Facilities / Users"
+    },
+    "definitions": {
+      "name": "Definitions",
+      "detail": "ValueSets / Questionnaires"
+    },
+    "clinical": {
+      "name": "Clinical",
+      "detail": "Encounters / Observations"
+    },
+    "scheduling": {
+      "name": "Scheduling",
+      "detail": "Schedules / Slots / Bookings"
+    },
+    "pharmacy": {
+      "name": "Pharmacy",
+      "detail": "Dispense / Inventory"
+    },
+    "labs": {
+      "name": "Labs",
+      "detail": "Service Req / Diagnostics"
+    },
+    "billing": {
+      "name": "Billing",
+      "detail": "Claims / Coverage / Invoice"
+    }
+  },
+  "persistence": "Persistence / <b>PostgreSQL</b> / <b>Redis</b> / <b>Object storage</b>",
+  "runtime": "Runtime / <b>Django</b> / <b>DRF</b> / <b>Celery</b>",
+  "pluginRuntime": "Plugin runtime",
+  "plugins": {
+    "aiScribe": "AI Scribe",
+    "teleicu": "TeleICU",
+    "imaging": "Imaging",
+    "devices": "Devices",
+    "messaging": "Messaging",
+    "analytics": "Analytics",
+    "claims": "Claims",
+    "terminology": "Terminology"
+  },
+  "enabledSolutions": "Enabled solutions",
+  "enabledBy": "Core + plugins enable",
+  "solutions": {
+    "hospitalOs": "Hospital OS",
+    "criticalCare": "Critical care",
+    "homeCare": "Home care grid",
+    "clinicNetwork": "Clinic network",
+    "publicHealth": "Public health"
+  },
+  "caption": "CARE Core provides the stable platform slab. Plugins add capabilities such as AI documentation, TeleICU, imaging, devices, messaging, analytics, claims, and terminology. Together they enable hospital, critical care, home care, clinic, and public health solutions."
+}

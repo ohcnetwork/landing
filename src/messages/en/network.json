@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "title": "The Network - OHC Ecosystem",
+    "description": "The OHC ecosystem brings together governments, hospitals, implementation partners, clinicians, developers, funders, and standards collaborators."
+  },
+  "hero": {
+    "eyebrow": "The OHC Network",
+    "title": "Open infrastructure only works when built together.",
+    "body": "OHC is a network of governments, hospitals, implementers, clinicians, developers, standards collaborators, and funders co-building around CARE Core and related open healthcare Digital Public Goods.",
+    "implementationPartners": "Implementation partners",
+    "developerCommunity": "Developer community"
+  },
+  "ecosystem": {
+    "eyebrow": "Ecosystem",
+    "title": "A shared core, many roles.",
+    "items": {
+      "governments": {
+        "title": "Governments",
+        "description": "Deploy open, standards-based infrastructure with local ownership and long-term public-sector control."
+      },
+      "hospitals": {
+        "title": "Hospitals",
+        "description": "Adopt practical HMIS and EMR workflows without license lock-in."
+      },
+      "partners": {
+        "title": "Implementation partners",
+        "description": "Localize, integrate, train, support, and contribute back to the shared core."
+      },
+      "clinicians": {
+        "title": "Clinicians",
+        "description": "Shape clinical workflows, forms, terminology, safety, and assistive AI behavior."
+      },
+      "developers": {
+        "title": "Developers",
+        "description": "Maintain open-source healthcare infrastructure used in real care settings."
+      },
+      "funders": {
+        "title": "Funders",
+        "description": "Sustain the public-good infrastructure, release discipline, documentation, and ecosystem."
+      }
+    }
+  },
+  "journey": {
+    "eyebrow": "Journey",
+    "title": "From crisis response to foundation-stewarded healthcare commons.",
+    "body": "The network story should show evolution without freezing OHC in its pandemic origin. The durable identity is open healthcare infrastructure under neutral stewardship.",
+    "milestones": {
+      "pandemic": {
+        "title": "Pandemic response roots",
+        "text": "CARE began as open-source infrastructure for health system coordination during the COVID-19 response."
+      },
+      "dpg": {
+        "title": "Digital Public Good verification",
+        "text": "CARE is listed in the Digital Public Goods registry as Care | Open Healthcare Network with MIT license."
+      },
+      "criticalCare": {
+        "title": "Critical care and TeleICU",
+        "text": "CARE evolved to support hub-and-spoke critical care workflows and TeleICU integrations."
+      },
+      "hmis": {
+        "title": "HMIS and palliative care",
+        "text": "The platform now supports broader hospital, community, and home-based care workflows."
+      },
+      "foundation": {
+        "title": "Foundation stewardship",
+        "text": "OHC Foundation provides the neutral institutional home for governance, quality, security, documentation, and ecosystem enablement."
+      }
+    }
+  },
+  "commons": {
+    "eyebrow": "Commons model",
+    "title": "The network is not a vendor channel. It is how the commons stays useful.",
+    "body": "A foundation-led ecosystem lets many institutions build and deploy CARE while sharing improvements, avoiding fragmentation, and giving health systems more control over technology and data.",
+    "items": [
+      "Open-source contribution",
+      "Clinical workflow feedback",
+      "Implementation playbooks",
+      "Reusable standards work"
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "meta": {
+    "title": "Blog",
+    "description": "Textos da Open Healthcare Network Foundation sobre o CARE, infraestrutura aberta de saúde, padrões, implantações e o trabalho do ecossistema."
+  },
+  "hero": {
+    "eyebrow": "Blog",
+    "title": "Textos para o bem comum aberto da saúde.",
+    "lead": "Ensaios da fundação, notas de versão, histórias de campo e orientações de implementação da Open Healthcare Network."
+  }
+}

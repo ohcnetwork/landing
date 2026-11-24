@@ -1,0 +1,321 @@
+{
+  "meta": {
+    "title": "CARE Home Care Grid - Open Source Palliative Care Platform",
+    "description": "CARE powers palliative and home-based care grids for patient registration, care-team coordination, home visits, follow-ups, referrals, dashboards, AI-ready documentation, and statewide program visibility.",
+    "ogTitle": "CARE Home Care Grid - Open Palliative Care Infrastructure",
+    "ogDescription": "A CARE-powered operating layer for home-based and community-based palliative care.",
+    "ogImageAlt": "CARE Palliative logo",
+    "twitterDescription": "Coordinate vulnerable patients, home visits, care teams, follow-ups, referrals, dashboards, and AI-ready records with CARE."
+  },
+  "hero": {
+    "eyebrow": "CARE Home Care Grid",
+    "title": "Care is local. Coordination is statewide.",
+    "body": "CARE powers palliative and home-based care grids that help health systems know every vulnerable patient, coordinate local care teams, document home visits, track follow-ups, and monitor coverage across communities.",
+    "buildGrid": "Build a Home Care Grid",
+    "exploreCareCore": "Explore CARE Core",
+    "pills": [
+      "Patient registry",
+      "Home visits",
+      "Care teams",
+      "Follow-ups",
+      "Dashboards",
+      "AI-ready records"
+    ]
+  },
+  "grid": {
+    "columns": {
+      "community": "Community layer",
+      "program": "Program layer"
+    },
+    "items": {
+      "patientHome": {
+        "title": "Patient home",
+        "detail": "needs, caregiver, locality"
+      },
+      "fieldTeams": {
+        "title": "Field teams",
+        "detail": "workers, volunteers, nurses"
+      },
+      "facilities": {
+        "title": "Facilities",
+        "detail": "primary care, hospitals, referrals"
+      },
+      "visitQueue": {
+        "title": "Visit queue",
+        "detail": "today, due, overdue"
+      },
+      "escalations": {
+        "title": "Escalations",
+        "detail": "doctor review, referral, supplies"
+      },
+      "coverage": {
+        "title": "Coverage view",
+        "detail": "ward, district, state"
+      }
+    },
+    "solutionLabel": "CARE solution",
+    "solutionTitle": "Home Care Grid",
+    "poweredBy": "Powered by CARE Core",
+    "timelineTitle": "Shared patient timeline",
+    "timelineBody": "Every visit, task, referral, and follow-up in one record.",
+    "timelineItems": ["Need", "Visit", "Task", "Plan"],
+    "blocks": ["Forms", "Roles", "Tasks", "Dashboards"]
+  },
+  "operatingLayer": {
+    "eyebrow": "Why CARE",
+    "title": "Home-based care is a coordination problem.",
+    "body": "Palliative care happens through relationships over time: patients, caregivers, volunteers, nurses, doctors, facilities, NGOs, and program teams working together. CARE gives that network a shared operating layer without turning care into a narrow registry or a standalone app.",
+    "primitivesTitle": "CARE Core primitives",
+    "primitives": [
+      "Patients",
+      "Facilities",
+      "Users",
+      "Roles",
+      "Forms",
+      "Tasks",
+      "Referrals",
+      "Care plans",
+      "Dashboards",
+      "APIs",
+      "Audit trails",
+      "FHIR-aligned records"
+    ],
+    "verticalTitle": "Not another vertical system.",
+    "verticalBody": "The same patient may move between home care, primary care, hospitals, pharmacy, diagnostics, TeleICU, and follow-up. CARE keeps those workflows connected on one open foundation."
+  },
+  "workflow": {
+    "eyebrow": "A care grid around every patient",
+    "title": "From first identification to the next safe follow-up.",
+    "body": "CARE supports the complete loop of community-based care: who needs help, who is responsible, what happened at the visit, what must happen next, and where the system is falling behind.",
+    "steps": {
+      "identify": {
+        "title": "Identify",
+        "text": "Find patients who need continuous support."
+      },
+      "register": {
+        "title": "Register",
+        "text": "Create a shared record with local context."
+      },
+      "assess": {
+        "title": "Assess",
+        "text": "Capture clinical, functional, and social needs."
+      },
+      "assign": {
+        "title": "Assign",
+        "text": "Link the patient to a care team and facility."
+      },
+      "visit": {
+        "title": "Visit",
+        "text": "Document home care at the point of service."
+      },
+      "followUp": {
+        "title": "Follow up",
+        "text": "Schedule the next action and owner."
+      },
+      "escalate": {
+        "title": "Escalate",
+        "text": "Route medical, referral, or supply needs."
+      },
+      "monitor": {
+        "title": "Monitor",
+        "text": "See coverage, gaps, and program quality."
+      }
+    }
+  },
+  "capabilities": {
+    "eyebrow": "Product capabilities",
+    "title": "The pieces a home-care network actually needs.",
+    "body": "CARE turns home visits into structured continuity of care: records, teams, visits, referrals, tasks, dashboards, and improvement loops.",
+    "items": {
+      "registry": {
+        "title": "Patient registry",
+        "text": "A shared registry for vulnerable patients, families, caregivers, addresses, facility linkage, care needs, risk status, and local body mapping."
+      },
+      "homeVisits": {
+        "title": "Home visit workflows",
+        "text": "Mobile-first workflows for visit lists, vitals, symptoms, nursing needs, medicine needs, caregiver concerns, notes, and next visit dates."
+      },
+      "coordination": {
+        "title": "Care-team coordination",
+        "text": "Assign field workers, nurses, doctors, volunteers, NGOs, facilities, and follow-up owners without losing accountability across the network."
+      },
+      "records": {
+        "title": "Structured records",
+        "text": "Every visit, assessment, referral, note, follow-up, and care plan becomes part of the longitudinal CARE record."
+      },
+      "dashboards": {
+        "title": "Dashboards and coverage",
+        "text": "Track registered patients, overdue visits, high-risk patients, referral status, workload, district coverage, and service gaps."
+      },
+      "volunteers": {
+        "title": "Volunteer and NGO coordination",
+        "text": "Support registration, role mapping, training status, patient assignment, activity tracking, and collaboration with care teams."
+      },
+      "referrals": {
+        "title": "Referral and escalation",
+        "text": "Move from home care to doctor review, facility referral, specialist palliative care, teleconsultation, or supply support when risk increases."
+      },
+      "carePlanning": {
+        "title": "Care planning",
+        "text": "Turn problems, goals, interventions, home-care tasks, follow-up schedules, caregiver instructions, and review cycles into action."
+      }
+    }
+  },
+  "proof": {
+    "eyebrow": "Reference deployment",
+    "title": "CARE has already been tested at population scale.",
+    "body": "Kerala's palliative-care grid is the strongest proof point: CARE supports a statewide care-coordination model across patients, home visits, care teams, voluntary organizations, public facilities, and program dashboards.",
+    "stats": {
+      "centers": "primary care centers",
+      "organizations": "NGOs and care organizations",
+      "patients": "registered patients",
+      "consultations": "home-care consultations",
+      "users": "daily users"
+    },
+    "note": "Deployment snapshot for CARE-powered home and palliative-care programs."
+  },
+  "differentiators": {
+    "eyebrow": "Built on CARE Core",
+    "title": "Reusable infrastructure, not a one-off palliative module.",
+    "body": "CARE gives governments, hospitals, NGOs, and implementation partners a common foundation for home-based care that can be adapted locally and reused across programs.",
+    "items": [
+      "Open-source and public-good oriented",
+      "Built on CARE Core, not a one-off app",
+      "FHIR-aligned structured patient records",
+      "Mobile-first frontline workflows",
+      "Designed for government and voluntary-sector networks",
+      "Dashboards for live program visibility",
+      "Role-based access and audit trails",
+      "Ready for AI-assisted documentation and summaries"
+    ]
+  },
+  "implementation": {
+    "eyebrow": "Implementation model",
+    "title": "Pilot a district. Train the network. Scale the grid.",
+    "body": "CARE deployments can begin with a focused geography and expand through repeatable workflows, training packs, dashboards, and data-quality routines.",
+    "steps": {
+      "mapModel": {
+        "title": "Map the care model",
+        "text": "Understand patient identification, field teams, facilities, NGOs, referral routes, home-visit forms, training, and reporting needs."
+      },
+      "pilot": {
+        "title": "Pilot one geography",
+        "text": "Configure forms, dashboards, roles, visit workflows, and support processes in one district, network, or program area."
+      },
+      "train": {
+        "title": "Train by role",
+        "text": "Prepare field workers, nurses, doctors, volunteers, facility admins, coordinators, and program teams with workflow-specific training."
+      },
+      "scale": {
+        "title": "Scale with playbooks",
+        "text": "Reuse deployment checklists, training packs, dashboard packs, data-quality reviews, support models, and governance rhythms."
+      }
+    }
+  },
+  "ai": {
+    "eyebrow": "CARE AI for home care",
+    "title": "Reduce documentation burden without reducing accountability.",
+    "body": "AI belongs inside the care workflow, on top of trusted records, roles, forms, and audit trails. In home-based care, CARE AI can help field teams document faster and help program teams see what needs attention.",
+    "items": {
+      "voiceNotes": {
+        "title": "Voice-native visit notes",
+        "text": "Help nurses and field teams document in local languages with review before saving."
+      },
+      "summaries": {
+        "title": "Patient summaries",
+        "text": "Summarize long histories, recent visits, open tasks, and follow-up needs before a home visit."
+      },
+      "followUpDrafts": {
+        "title": "Follow-up drafts",
+        "text": "Draft care plans, caregiver instructions, referral summaries, and next-step checklists."
+      }
+    },
+    "principles": [
+      "AI drafts",
+      "Humans decide",
+      "CARE records",
+      "Systems learn"
+    ]
+  },
+  "replication": {
+    "eyebrow": "Reusable Home Care Grid",
+    "title": "One reference model, many care programs.",
+    "body": "CARE's home-care architecture can support palliative care, elderly care, NCD follow-up, oncology follow-up, post-discharge monitoring, disability care, rehabilitation, and other programs that depend on continuity outside the facility.",
+    "assets": [
+      "Deployment blueprint",
+      "Workflow templates",
+      "Form templates",
+      "Dashboard indicators",
+      "Training materials",
+      "Volunteer role model",
+      "Security baseline",
+      "Localization guide"
+    ]
+  },
+  "outcomes": {
+    "eyebrow": "Outcomes to measure",
+    "title": "Measure continuity, not just registrations.",
+    "items": {
+      "coverage": {
+        "title": "Coverage",
+        "text": "registered patients, assigned teams, local body coverage"
+      },
+      "continuity": {
+        "title": "Continuity",
+        "text": "visits completed, overdue patients, follow-up closure"
+      },
+      "quality": {
+        "title": "Quality",
+        "text": "documentation completeness, referral completion, review time"
+      },
+      "equity": {
+        "title": "Equity",
+        "text": "coverage gaps across geographies and vulnerable groups"
+      }
+    }
+  },
+  "faq": {
+    "items": {
+      "what": {
+        "question": "What is CARE Home Care Grid?",
+        "answer": "CARE Home Care Grid is the CARE-powered operating layer for home-based and community-based care programs. It supports patient registration, care-team assignment, home visits, structured documentation, follow-ups, referrals, dashboards, and program visibility."
+      },
+      "onlyPalliative": {
+        "question": "Is CARE only for palliative care?",
+        "answer": "No. The same CARE Core primitives can support palliative care, elderly care, NCD follow-up, post-discharge follow-up, oncology follow-up, disability and rehabilitation programs, and other longitudinal community-care workflows."
+      },
+      "fieldTeams": {
+        "question": "How does CARE support field teams?",
+        "answer": "CARE gives field teams mobile-first workflows for visit lists, assessments, notes, symptoms, vitals, medicine needs, caregiver concerns, follow-up dates, and escalation requests, while keeping the patient record connected to facilities and program dashboards."
+      },
+      "kerala": {
+        "question": "How is Kerala relevant to this page?",
+        "answer": "Kerala is the reference deployment that shows the model at population scale. The page focuses on CARE as reusable infrastructure, with Kerala used as proof that home-based care can be coordinated through a shared digital grid."
+      },
+      "partners": {
+        "question": "Can implementation partners deploy a Home Care Grid?",
+        "answer": "Yes. CARE provides the open core, workflows, APIs, forms, roles, dashboards, and implementation patterns. Partners can localize the care model, train users, integrate local systems, and contribute improvements back to the shared core."
+      }
+    }
+  },
+  "final": {
+    "eyebrow": "Deploy CARE for home-based care",
+    "title": "Build a care grid for every vulnerable patient.",
+    "body": "CARE helps health systems move from fragmented home-visit programs to coordinated, measurable, and compassionate care networks.",
+    "startConversation": "Start a deployment conversation",
+    "exploreCareAi": "Explore CARE AI"
+  },
+  "structuredData": {
+    "name": "CARE Home Care Grid",
+    "description": "CARE Home Care Grid supports palliative and home-based care programs with patient registration, home visits, care-team coordination, referrals, dashboards, structured records, and AI-ready workflows.",
+    "featureList": [
+      "Palliative care patient registry",
+      "Home visit workflows",
+      "Care-team and volunteer coordination",
+      "Follow-up and referral management",
+      "Program dashboards and coverage monitoring",
+      "FHIR-aligned structured records",
+      "AI-ready documentation and summarization workflows"
+    ]
+  }
+}

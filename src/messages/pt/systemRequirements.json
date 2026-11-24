@@ -1,0 +1,195 @@
+{
+  "meta": {
+    "title": "Requisitos de navegador do CARE",
+    "description": "Especificações práticas de navegador, processador, memória RAM e conexão para usar o CARE no seu dispositivo, inclusive durante chamadas de vídeo.",
+    "ogImageAlt": "Requisitos de navegador do CARE"
+  },
+  "skipToArticle": "Pular para o artigo",
+  "breadcrumb": {
+    "label": "Trilha de navegação",
+    "home": "Início",
+    "care": "CARE",
+    "current": "Requisitos de navegador"
+  },
+  "header": {
+    "eyebrow": "CARE · GUIA DO NAVEGADOR",
+    "title": "Requisitos de navegador<br></br><span>para o CARE.</span>",
+    "lede": "O que você precisa no seu computador, tablet ou celular para usar o CARE em um navegador web. Verifique o navegador, o dispositivo, a conexão e as configurações antes de começar."
+  },
+  "actions": {
+    "copyLink": "Copiar link",
+    "linkCopied": "Link copiado",
+    "copyFailed": "Copie o URL na barra do navegador",
+    "print": "Imprimir"
+  },
+  "quickLinks": {
+    "label": "Links rápidos",
+    "browsers": {
+      "title": "Navegadores",
+      "detail": "Compatibilidade e atualizações"
+    },
+    "devices": {
+      "title": "Especificações do dispositivo",
+      "detail": "Processador, RAM e chamadas de vídeo"
+    },
+    "connection": {
+      "title": "Conexão",
+      "detail": "Acesso enquanto você trabalha"
+    }
+  },
+  "toc": {
+    "title": "Neste artigo",
+    "helpTitle": "Precisa de ajuda para acessar o CARE?",
+    "helpBody": "Obtenha ajuda com seu navegador ou dispositivo.",
+    "contact": "Fale com a OHC ↗"
+  },
+  "sections": {
+    "general": "Como usar o CARE no navegador",
+    "practical": "Especificações práticas",
+    "webBrowsers": "Compatibilidade de navegadores",
+    "devices": "Dispositivos e telas",
+    "network": "Requisitos de conexão",
+    "browserSettings": "Configurações do navegador",
+    "gettingStarted": "Pronto para usar o CARE"
+  },
+  "general": {
+    "body": "Abra no navegador o endereço do CARE da sua organização e entre com sua conta do CARE. Para registros e formulários do dia a dia, você precisa de um navegador atualizado, um dispositivo adequado e uma conexão confiável.",
+    "noteTitle": "Comece com um navegador atualizado.",
+    "noteBody": "Recomendamos o Chrome. Mantenha o software do dispositivo atualizado e permita o JavaScript e o armazenamento de dados do site do CARE. Impressoras, câmeras e microfones só são necessários para os recursos que os utilizam."
+  },
+  "practical": {
+    "intro": "Especificações sugeridas para o computador que você usa para acessar o CARE. A configuração recomendada dá mais folga para usar o CARE com uma chamada de vídeo aberta.",
+    "table": {
+      "caption": "Especificações práticas para usar o CARE no navegador e fazer chamadas de vídeo",
+      "component": "Componente",
+      "baseline": "Base prática",
+      "recommended": "Recomendado para usar o CARE com chamadas de vídeo",
+      "recommendedShort": "Recomendado com chamadas de vídeo"
+    },
+    "rows": {
+      "processor": {
+        "component": "Processador",
+        "baseline": "Dual-core moderno de 64 bits, 2,0 GHz ou desempenho equivalente.",
+        "recommended": "Quad-core moderno de 64 bits, 2,5 GHz ou desempenho equivalente."
+      },
+      "ram": {
+        "component": "RAM",
+        "baseline": "4 GB para o uso rotineiro do CARE.",
+        "recommended": "8 GB ou mais."
+      },
+      "videoBandwidth": {
+        "component": "Internet para chamadas de vídeo",
+        "baseline": "5 Mbps de upload e 5 Mbps de download disponíveis por dispositivo.",
+        "recommended": "10 Mbps de upload e 10 Mbps de download disponíveis por dispositivo."
+      },
+      "cameraAndAudio": {
+        "component": "Câmera e áudio",
+        "baseline": "Câmera e microfone necessários para fazer chamadas de vídeo.",
+        "recommended": "Webcam 720p, microfone e headset."
+      }
+    },
+    "noteTitle": "Compare o desempenho do processador, não apenas a frequência.",
+    "noteBody": "Os valores de 2,0 GHz e 2,5 GHz são referências de desempenho, não exigências rígidas de frequência base. Um processador moderno e capaz de notebook pode ter uma frequência base menor. Verifique o modelo, a geração, a frequência base e a frequência máxima de boost em conjunto. <link>A Intel explica por que a frequência base, sozinha, não permite comparar processadores de gerações diferentes.</link>",
+    "planning": "Os valores de internet são metas de planejamento com folga para cada dispositivo em uma chamada de vídeo. Em uma conexão compartilhada, reserve capacidade de upload e download para cada chamada simultânea, além do CARE, de uploads e de outros tráfegos. Valide essas metas práticas com a sua configuração do CARE e o serviço de chamadas escolhido.",
+    "reference": "Como referência, os <link>requisitos de navegador do Zoom</link> indicam 3,8 Mbps de upload e 3,0 Mbps de download para vídeo em 1080p e recomendam pelo menos 8 GB de RAM no Windows e no macOS. Os valores acima são metas sugeridas de dispositivo e conexão, não mínimos medidos para o CARE."
+  },
+  "requirementsTable": {
+    "caption": "{group}: o que você precisa",
+    "requirement": "Requisito",
+    "whatYouNeed": "O que você precisa"
+  },
+  "groups": {
+    "webBrowsers": "Use um navegador estável e atualizado e mantenha as atualizações automáticas ativadas.",
+    "devices": "Escolha um dispositivo que execute um navegador atual com folga e ofereça espaço de tela suficiente para o seu trabalho.",
+    "network": "Seu dispositivo precisa de uma conexão confiável com o endereço do CARE da sua organização enquanto você trabalha.",
+    "browserSettings": "Permita os recursos do navegador de que o CARE precisa. Outras permissões dependem das tarefas que você realiza."
+  },
+  "requirements": {
+    "chrome": {
+      "item": "Navegador recomendado",
+      "requirement": "Google Chrome, versão estável mais recente.",
+      "guidance": "O Chrome é o ponto de partida recomendado para o uso diário do CARE."
+    },
+    "otherBrowsers": {
+      "item": "Outras opções de navegador",
+      "requirement": "Versões atuais do Microsoft Edge, Mozilla Firefox ou Safari.",
+      "guidance": "Confirme com a equipe de suporte do CARE os fluxos que você usa, incluindo uploads, impressão e eventuais chamadas de vídeo."
+    },
+    "browserUpdates": {
+      "item": "Atualizações do navegador",
+      "requirement": "Instale as atualizações do navegador e reinicie-o quando solicitado.",
+      "guidance": "Se o CARE exibir um aviso de navegador não compatível, atualize o navegador ou passe a usar a versão mais recente do Chrome."
+    },
+    "computer": {
+      "item": "Desktop ou notebook",
+      "requirement": "Um computador com Windows, macOS ou Linux que atenda aos requisitos do navegador escolhido.",
+      "guidance": "Teclado, mouse ou trackpad e uma tela maior são recomendados para digitação contínua de dados, faturamento e relatórios."
+    },
+    "mobile": {
+      "item": "Tablet ou celular",
+      "requirement": "Um dispositivo Android, iPadOS ou iOS capaz de executar um navegador atual.",
+      "guidance": "Verifique no seu dispositivo os formulários e recursos de que você precisa. Use uma tela maior para registros detalhados e tabelas largas."
+    },
+    "operatingSystem": {
+      "item": "Sistema operacional",
+      "requirement": "Um sistema operacional que receba atualizações de segurança e seja compatível com o seu navegador atual.",
+      "guidance": "Mantenha atualizados tanto o software do dispositivo quanto o navegador."
+    },
+    "storage": {
+      "item": "Armazenamento",
+      "requirement": "Espaço livre para atualizações do navegador e documentos baixados.",
+      "guidance": "Siga a orientação de RAM nas especificações práticas acima. Feche as abas que não estiver usando se o dispositivo ficar lento."
+    },
+    "connection": {
+      "item": "Acesso à rede",
+      "requirement": "Acesso à internet para o CARE online, ou acesso à rede da sua organização quando necessário.",
+      "guidance": "Use uma conexão Wi-Fi ou cabeada estável. Mantenha-se conectado ao abrir registros, salvar formulários e enviar arquivos."
+    },
+    "uploadsAndCalls": {
+      "item": "Uploads e chamadas",
+      "requirement": "Uma conexão capaz de suportar os documentos que você envia e os recursos de áudio ou vídeo que você usa.",
+      "guidance": "Para chamadas de vídeo, use as metas de upload e download por dispositivo indicadas nas especificações práticas acima. Uploads grandes compartilham essa capacidade; verifique também os requisitos do seu serviço de chamadas."
+    },
+    "secureConnection": {
+      "item": "Conexão segura",
+      "requirement": "Use o endereço HTTPS do CARE fornecido pela sua organização.",
+      "guidance": "Os recursos de câmera e microfone exigem uma conexão segura no navegador."
+    },
+    "javascript": {
+      "item": "JavaScript",
+      "requirement": "Ative o JavaScript para o CARE.",
+      "guidance": "As páginas interativas e os formulários do CARE precisam de JavaScript para funcionar."
+    },
+    "siteStorage": {
+      "item": "Dados do site",
+      "requirement": "Permita que o CARE use o armazenamento de dados do site no navegador.",
+      "guidance": "Bloquear ou apagar os dados do site do CARE pode afetar o login e as preferências salvas."
+    },
+    "documents": {
+      "item": "Documentos e impressão",
+      "requirement": "Permita downloads e a visualização de PDFs quando seu trabalho envolver documentos. Permita janelas de impressão, se solicitado.",
+      "guidance": "Para cópias em papel, conecte uma impressora compatível com o seu dispositivo e navegador."
+    },
+    "mediaPermissions": {
+      "item": "Câmera e microfone",
+      "requirement": "Permita o acesso à câmera ou ao microfone somente ao usar um recurso que precise deles.",
+      "guidance": "Use câmera e microfone funcionando para chamadas de vídeo, quando disponíveis. Essas permissões são opcionais para registros e formulários de rotina."
+    }
+  },
+  "gettingStarted": {
+    "intro": "Verifique estes itens no dispositivo que você vai usar no trabalho:",
+    "checklist": [
+      "Atualize o navegador e abra o endereço do CARE da sua organização.",
+      "Entre e confira se as páginas e os formulários de que você precisa estão legíveis e fáceis de usar.",
+      "Confira a visualização de documentos, os downloads e a impressão, se a sua função os utiliza.",
+      "Confira as permissões de câmera e microfone, se você usa recursos de áudio ou vídeo."
+    ]
+  },
+  "help": {
+    "eyebrow": "PRECISA DE AJUDA?",
+    "title": "Obtenha ajuda para usar o CARE no navegador.",
+    "body": "Se uma página não carregar ou um recurso não funcionar, entre em contato com a equipe de suporte do CARE da sua organização informando o dispositivo, a versão do navegador e o problema que você está vendo.",
+    "contact": "Fale com a OHC"
+  },
+  "backToTop": "Voltar ao topo ↑"
+}

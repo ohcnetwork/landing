@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "Certificações ISO - Open Healthcare Network Foundation",
+    "description": "Certificações ISO 27001:2022, ISO 82304-1:2016 e ISO 82304-2:2021 obtidas pela Open Healthcare Network Foundation."
+  },
+  "hero": {
+    "title": "Certificações ISO.",
+    "body": "A OHC Foundation possui certificações ISO em gestão de segurança da informação e em segurança de software de saúde, uma verificação independente de que o CARE atende a normas internacionais para implantação clínica e institucional."
+  },
+  "certifications": {
+    "scope": "Escopo",
+    "certified": "Certificado",
+    "viewCertificate": "Ver certificado",
+    "items": {
+      "informationSecurity": {
+        "title": "Sistema de gestão de segurança da informação",
+        "description": "Norma internacional para a gestão de segurança da informação. Certifica que a OHC Foundation estabeleceu, implementou e mantém um SGSI robusto, que abrange gestão de riscos, controle de acesso, resposta a incidentes, gestão de ativos e melhoria contínua das práticas de segurança da informação.",
+        "scope": "Aplica-se à gestão dos ativos de informação em toda a fundação e na plataforma CARE, incluindo o código-fonte, a infraestrutura de implantação e as práticas de tratamento de dados de pacientes."
+      },
+      "healthSoftware": {
+        "title": "Software de saúde — Requisitos gerais para a segurança do produto",
+        "description": "Estabelece requisitos para a segurança de produtos de software de saúde, abrangendo projeto, desenvolvimento, testes, manutenção e gestão do ciclo de vida. Garante que o CARE atenda a normas de segurança de produto reconhecidas internacionalmente para aplicações de saúde.",
+        "scope": "Abrange o CARE Core e componentes de software de saúde relacionados, usados em contextos clínicos, hospitalares e de atenção comunitária."
+      },
+      "wellnessApps": {
+        "title": "Aplicativos de saúde e bem-estar — Qualidade e confiabilidade",
+        "description": "Oferece orientações para a validação e a reutilização de aplicativos de saúde e bem-estar, abordando qualidade, segurança, desempenho, usabilidade e tratamento de dados. Apoia a implantação confiável de software de saúde em diferentes ambientes de cuidado.",
+        "scope": "Aplicável a aplicativos baseados no CARE e a módulos voltados ao bem-estar implantados em programas comunitários e de atenção domiciliar."
+      }
+    }
+  },
+  "whyCertified": {
+    "eyebrow": "Por que a certificação importa",
+    "title": "Verificação independente para software à altura das exigências da saúde.",
+    "points": {
+      "trust": {
+        "title": "Implantações em saúde exigem confiança",
+        "text": "Hospitais, governos e programas de saúde pública precisam ter a garantia de que o software que adotam atende a normas internacionais de segurança do produto e da informação."
+      },
+      "patientData": {
+        "title": "Dados de pacientes exigem rigor",
+        "text": "A certificação ISO 27001 confirma que a segurança da informação não é uma preocupação secundária: é uma disciplina gerida, auditada e aprimorada continuamente dentro da fundação."
+      },
+      "safety": {
+        "title": "A segurança do software de saúde é inegociável",
+        "text": "As normas ISO 82304 confirmam que o CARE é desenvolvido e mantido com processos documentados para software de saúde crítico para a segurança, o que reduz riscos clínicos e operacionais para as equipes de implementação."
+      }
+    }
+  }
+}

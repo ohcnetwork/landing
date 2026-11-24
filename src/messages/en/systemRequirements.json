@@ -1,0 +1,195 @@
+{
+  "meta": {
+    "title": "CARE browser requirements",
+    "description": "Practical browser, processor, RAM and connection specifications for using CARE on your device, including alongside video calls.",
+    "ogImageAlt": "CARE browser requirements"
+  },
+  "skipToArticle": "Skip to article",
+  "breadcrumb": {
+    "label": "Breadcrumb",
+    "home": "Home",
+    "care": "CARE",
+    "current": "Browser requirements"
+  },
+  "header": {
+    "eyebrow": "CARE · BROWSER GUIDE",
+    "title": "Browser requirements<br></br><span>for CARE.</span>",
+    "lede": "What you need on your computer, tablet or phone to use CARE in a web browser. Check your browser, device, connection and settings before you start."
+  },
+  "actions": {
+    "copyLink": "Copy link",
+    "linkCopied": "Link copied",
+    "copyFailed": "Copy the URL from your browser",
+    "print": "Print"
+  },
+  "quickLinks": {
+    "label": "Quick links",
+    "browsers": {
+      "title": "Browsers",
+      "detail": "Compatibility & updates"
+    },
+    "devices": {
+      "title": "Device specs",
+      "detail": "Processor, RAM & video calls"
+    },
+    "connection": {
+      "title": "Connection",
+      "detail": "Access while you work"
+    }
+  },
+  "toc": {
+    "title": "In this article",
+    "helpTitle": "Need help accessing CARE?",
+    "helpBody": "Get help with your browser or device.",
+    "contact": "Contact OHC ↗"
+  },
+  "sections": {
+    "general": "Using CARE in your browser",
+    "practical": "Practical specifications",
+    "webBrowsers": "Browser compatibility",
+    "devices": "Devices & displays",
+    "network": "Connection requirements",
+    "browserSettings": "Browser settings",
+    "gettingStarted": "Ready to use CARE"
+  },
+  "general": {
+    "body": "Open your organisation’s CARE address in your browser and sign in with your CARE account. For everyday records and forms, you need a current browser, a suitable device and a reliable connection.",
+    "noteTitle": "Start with an updated browser.",
+    "noteBody": "Chrome is recommended. Keep your device software up to date and allow JavaScript and CARE’s site storage. Printers, cameras and microphones are needed only for features that use them."
+  },
+  "practical": {
+    "intro": "Suggested specifications for the computer you use to access CARE. The recommended configuration gives you more room to use CARE while keeping a video call open.",
+    "table": {
+      "caption": "Practical specifications for CARE browser use and video calls",
+      "component": "Component",
+      "baseline": "Practical baseline",
+      "recommended": "Recommended for CARE alongside video calls",
+      "recommendedShort": "Recommended with video calls"
+    },
+    "rows": {
+      "processor": {
+        "component": "Processor",
+        "baseline": "Modern 64-bit dual-core, 2.0 GHz or equivalent performance.",
+        "recommended": "Modern 64-bit quad-core, 2.5 GHz or equivalent performance."
+      },
+      "ram": {
+        "component": "RAM",
+        "baseline": "4 GB for routine CARE use.",
+        "recommended": "8 GB or more."
+      },
+      "videoBandwidth": {
+        "component": "Internet for video calls",
+        "baseline": "5 Mbps upload and 5 Mbps download available per device.",
+        "recommended": "10 Mbps upload and 10 Mbps download available per device."
+      },
+      "cameraAndAudio": {
+        "component": "Camera & audio",
+        "baseline": "Camera and microphone required when making video calls.",
+        "recommended": "720p webcam, microphone and headset."
+      }
+    },
+    "noteTitle": "Compare processor performance, not just clock speed.",
+    "noteBody": "The 2.0 GHz and 2.5 GHz figures are performance guidance, not strict base-frequency requirements. A capable modern laptop processor may have a lower base clock. Check the model, generation, base frequency and maximum boost frequency together. <link>Intel explains why base frequency alone cannot compare processors across generations.</link>",
+    "planning": "The internet figures are planning targets with spare capacity for each device on a video call. On a shared connection, allow upload and download capacity for every simultaneous call plus CARE, uploads and other traffic. Validate these practical targets with your CARE setup and chosen calling service.",
+    "reference": "For reference, <link>Zoom’s browser requirements</link> list 3.8 Mbps upload and 3.0 Mbps download for 1080p video, and recommend at least 8 GB RAM on Windows and macOS. The figures above are suggested device and connection targets, not measured CARE minimums."
+  },
+  "requirementsTable": {
+    "caption": "{group}: what you need",
+    "requirement": "Requirement",
+    "whatYouNeed": "What you need"
+  },
+  "groups": {
+    "webBrowsers": "Use an up-to-date stable browser and keep automatic updates enabled.",
+    "devices": "Choose a device that runs a current browser comfortably and gives you enough screen space for your work.",
+    "network": "Your device needs a reliable connection to your organisation’s CARE address while you work.",
+    "browserSettings": "Allow the browser features CARE needs. Additional permissions depend on the tasks you perform."
+  },
+  "requirements": {
+    "chrome": {
+      "item": "Recommended browser",
+      "requirement": "Google Chrome, latest stable release.",
+      "guidance": "Chrome is the recommended starting point for everyday CARE use."
+    },
+    "otherBrowsers": {
+      "item": "Other browser options",
+      "requirement": "Current Microsoft Edge, Mozilla Firefox or Safari.",
+      "guidance": "Check the workflows you use with your CARE support team, including uploads, printing and any video calls."
+    },
+    "browserUpdates": {
+      "item": "Browser updates",
+      "requirement": "Install browser updates and restart when prompted.",
+      "guidance": "If CARE shows an unsupported-browser warning, update your browser or switch to the latest Chrome."
+    },
+    "computer": {
+      "item": "Desktop or laptop",
+      "requirement": "A Windows, macOS or Linux computer that meets the requirements of your chosen browser.",
+      "guidance": "A keyboard, mouse or trackpad and a larger display are recommended for sustained data entry, billing and reports."
+    },
+    "mobile": {
+      "item": "Tablet or phone",
+      "requirement": "An Android, iPadOS or iOS device that can run a current browser.",
+      "guidance": "Check the forms and features you need on your device. Use a larger screen for detailed records and wide tables."
+    },
+    "operatingSystem": {
+      "item": "Operating system",
+      "requirement": "An operating system that receives security updates and supports your current browser.",
+      "guidance": "Keep both your device software and browser up to date."
+    },
+    "storage": {
+      "item": "Storage",
+      "requirement": "Free space for browser updates and downloaded documents.",
+      "guidance": "Use the RAM guidance in the practical specifications above. Close unused tabs if your device slows down."
+    },
+    "connection": {
+      "item": "Network access",
+      "requirement": "Internet access for online CARE, or access to your organisation’s network where required.",
+      "guidance": "Use a stable Wi-Fi or wired connection. Stay connected when opening records, saving forms and uploading files."
+    },
+    "uploadsAndCalls": {
+      "item": "Uploads & calls",
+      "requirement": "A connection that can handle the documents you upload and any audio or video features you use.",
+      "guidance": "For video calls, use the per-device upload and download targets in the practical specifications above. Large uploads share that capacity; also check your calling service’s requirements."
+    },
+    "secureConnection": {
+      "item": "Secure connection",
+      "requirement": "Use the HTTPS CARE address provided by your organisation.",
+      "guidance": "Camera and microphone features need a secure browser connection."
+    },
+    "javascript": {
+      "item": "JavaScript",
+      "requirement": "Enable JavaScript for CARE.",
+      "guidance": "CARE’s interactive pages and forms need JavaScript to work."
+    },
+    "siteStorage": {
+      "item": "Site data",
+      "requirement": "Allow CARE to use browser site storage.",
+      "guidance": "Blocking or clearing CARE’s site data can affect sign-in and saved preferences."
+    },
+    "documents": {
+      "item": "Documents & printing",
+      "requirement": "Allow downloads and PDF viewing when your work includes documents. Allow print windows if prompted.",
+      "guidance": "For paper copies, connect a printer that works with your device and browser."
+    },
+    "mediaPermissions": {
+      "item": "Camera & microphone",
+      "requirement": "Allow camera or microphone access only when using a feature that needs it.",
+      "guidance": "Use a working camera and microphone for video calls, where enabled. These permissions are optional for routine records and forms."
+    }
+  },
+  "gettingStarted": {
+    "intro": "Check these on the device you will use for your work:",
+    "checklist": [
+      "Update your browser and open your organisation’s CARE address.",
+      "Sign in and check that the pages and forms you need are readable and easy to use.",
+      "Check document viewing, downloads and printing if your role uses them.",
+      "Check camera and microphone permissions if you use audio or video features."
+    ]
+  },
+  "help": {
+    "eyebrow": "NEED HELP?",
+    "title": "Get help using CARE in your browser.",
+    "body": "If a page does not load or a feature does not work, contact your organisation’s CARE support team with your device, browser version and the issue you are seeing.",
+    "contact": "Contact OHC"
+  },
+  "backToTop": "Back to top ↑"
+}

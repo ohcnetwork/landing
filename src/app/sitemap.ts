@@ -1,3 +1,5 @@
+import { defaultLocale, localeInfo, locales } from '@/i18n/config'
+import { localizedPaths } from '@/i18n/paths'
 import type { MetadataRoute } from 'next'
 
 export const dynamic = 'force-static'
@@ -40,14 +42,38 @@ const routes = [
   ['/contact', 0.65],
 ] as const
 
+// Blog posts are only published in English, so they have no translations.
+const isEnglishOnly = (route: string) => route.startsWith('/blog/')
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  return routes.map(([route, priority]) => ({
-    url: `${baseUrl}${route}`,
-    lastModified:
-      route === '/system-requirements'
-        ? new Date('2026-10-12')
-        : lastModified,
-    changeFrequency: route === '' ? 'weekly' : 'monthly',
-    priority,
-  }))
+  return routes.flatMap(([route, priority]) => {
+    const entry = {
+      lastModified:
+        route === '/system-requirements'
+          ? new Date('2026-10-12')
+          : lastModified,
+      changeFrequency: route === '' ? 'weekly' : 'monthly',
+      priority,
+    } as const
+
+    if (isEnglishOnly(route)) {
+      return [{ url: `${baseUrl}${route}`, ...entry }]
+    }
+
+    const paths = localizedPaths(route || '/')
+    const url = (path: string) => `${baseUrl}${path === '/' ? '' : path}`
+    const languages = Object.fromEntries([
+      ...locales.map((locale) => [
+        localeInfo[locale].htmlLang,
+        url(paths[locale]),
+      ]),
+      ['x-default', url(paths[defaultLocale])],
+    ])
+
+    return locales.map((locale) => ({
+      url: url(paths[locale]),
+      ...entry,
+      alternates: { languages },
+    }))
+  })
 }

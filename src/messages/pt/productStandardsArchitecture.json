@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "title": "Padrões e arquitetura - Plataforma CARE",
+    "description": "O CARE foi projetado com base em FHIR R5, SNOMED CT, LOINC, UCUM, ICD-10, alinhamento à ABDM, APIs abertas, serviços de terminologia e implantação auto-hospedável."
+  },
+  "hero": {
+    "eyebrow": "Padrões e arquitetura do CARE",
+    "title": "Padrões em primeiro lugar desde a concepção, e não integração improvisada depois.",
+    "body": "O CARE foi concebido como um núcleo orientado a padrões: formulários configuráveis, recursos alinhados ao FHIR, vinculações terminológicas, plugins, APIs abertas, hospedagem soberana e dados estruturados prontos para IA.",
+    "exploreCore": "Conheça o CARE Core",
+    "securityCompliance": "Segurança e conformidade"
+  },
+  "standards": {
+    "eyebrow": "Camada de padrões",
+    "title": "O CARE fala a língua dos sistemas de saúde modernos.",
+    "items": {
+      "fhir": "Recursos e APIs alinhados ao FHIR para o intercâmbio moderno de dados de saúde e a modelagem de fluxos de trabalho.",
+      "snomed": "Direcionamento de terminologia clínica para observações, achados, procedimentos e conceitos estruturados.",
+      "loinc": "Codificação de exames laboratoriais e observações para fluxos de diagnóstico e de medição.",
+      "ucum": "Unidades padronizadas para medições, sinais vitais, exames laboratoriais e observações quantitativas.",
+      "icd10": "Suporte à classificação para agrupamento de diagnósticos, relatórios e análises de programas.",
+      "abdm": "Alinhamento à saúde digital da Índia por meio dos CARE Apps e de modelos de integração."
+    }
+  },
+  "architecture": {
+    "eyebrow": "Princípios de arquitetura",
+    "title": "Fluxos modulares sobre uma base compartilhada de dados clínicos.",
+    "body": "O CARE evita tratar a interoperabilidade como um projeto de integração para depois. A plataforma usa recursos estruturados, formulários configuráveis, terminologia e APIs para que as implantações possam se adaptar localmente sem perder a reutilização dos dados.",
+    "items": {
+      "forms": {
+        "title": "Formulários configuráveis",
+        "description": "Questionários e formulários de EMR mapeiam fluxos operacionais para dados clínicos estruturados."
+      },
+      "terminology": {
+        "title": "Vinculações terminológicas",
+        "description": "Terminologias próprias e serviços de terminologia compartilhados podem alinhar os fluxos locais aos padrões."
+      },
+      "apis": {
+        "title": "APIs abertas",
+        "description": "A arquitetura orientada a APIs permite que hospitais, governos e parceiros façam integrações sem barreiras impostas por fornecedores."
+      },
+      "plugins": {
+        "title": "Extensibilidade por plugins",
+        "description": "Aplicativos e integrações estendem o CARE para infraestruturas digitais nacionais, TeleICU, documentação com IA, laboratório, farmácia, faturamento e análise de dados."
+      }
+    }
+  },
+  "deployment": {
+    "eyebrow": "Implantação soberana",
+    "title": "Sistemas de saúde devem poder ser donos de sua infraestrutura e de seus dados.",
+    "body": "O CARE é auto-hospedável e independente de provedor de nuvem. Governos e instituições podem executá-lo em sua própria infraestrutura, integrá-lo a sistemas nacionais e manter o controle local sobre dados e operações.",
+    "options": [
+      "Hospedagem própria",
+      "Nuvem governamental",
+      "VPC do hospital",
+      "Implantações híbridas",
+      "Infraestrutura independente de nuvem",
+      "Fluxos pensados para o celular"
+    ]
+  },
+  "ai": {
+    "eyebrow": "Preparo para IA",
+    "title": "A IA funciona melhor quando o prontuário de saúde subjacente é estruturado, rastreável e interoperável.",
+    "body": "A OHC trata a IA como assistiva e com revisão humana no processo. O CARE pode apoiar formulários com entrada por voz, rascunhos de documentação, resumos e compreensão de documentos porque os fluxos estão conectados a dados estruturados e trilhas de auditoria.",
+    "items": {
+      "draftFlags": "Sinalização de rascunhos de IA",
+      "auditability": "Auditabilidade",
+      "roleBasedAccess": "Acesso baseado em perfis",
+      "structuredData": "Dados clínicos estruturados"
+    }
+  }
+}

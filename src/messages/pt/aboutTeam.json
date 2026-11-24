@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "title": "Conselho, consultores e mantenedores - Open Healthcare Network Foundation",
+    "description": "Conselho da fundação, conselho consultivo, camadas de governança e mantenedores que zelam pela OHC Foundation e pelo CARE."
+  },
+  "hero": {
+    "eyebrow": "Liderança e camadas de governança",
+    "title": "Uma instituição completa em torno do CARE Core.",
+    "body": "A OHC Foundation está sendo construída como uma casa duradoura para a infraestrutura aberta de saúde: gestão pelo conselho, consultores independentes, equipe operacional da fundação e mantenedores próximos do código e das implantações em campo.",
+    "governance": "Modelo de governança",
+    "foundationTeam": "Equipe da fundação"
+  },
+  "layers": {
+    "eyebrow": "Mapa de governança",
+    "title": "Conselho, consultores, equipe e mantenedores têm funções diferentes.",
+    "body": "Essa separação é importante. O conselho protege a instituição. Os consultores refinam a direção. A equipe da fundação executa o roteiro. Os mantenedores protegem a qualidade técnica.",
+    "items": {
+      "board": {
+        "title": "Conselho da fundação",
+        "text": "Missão, supervisão fiduciária, riscos, financiamento, responsabilidade legal e gestão institucional de longo prazo."
+      },
+      "advisors": {
+        "title": "Conselho consultivo",
+        "text": "Orientação independente de lideranças em infraestrutura pública, sistemas de saúde, filantropia, tecnologia e código aberto."
+      },
+      "team": {
+        "title": "Equipe da fundação",
+        "text": "Liderança de produto, engenharia, IA, comunidade, parcerias e operações da OHC Foundation."
+      },
+      "maintainers": {
+        "title": "Mantenedores",
+        "text": "Arquitetura, revisão de código, disciplina de versões, segurança, documentação e caminhos para colaboradores."
+      }
+    }
+  },
+  "board": {
+    "eyebrow": "Conselho da fundação",
+    "title": "A gestão do conselho a serviço de um bem comum neutro da saúde.",
+    "description": "O conselho da fundação exerce a supervisão institucional sobre a missão, a responsabilidade fiduciária, as parcerias e a confiança no longo prazo."
+  },
+  "advisors": {
+    "eyebrow": "Conselho consultivo",
+    "title": "Orientação independente para uma infraestrutura de bem público.",
+    "description": "A seção do conselho consultivo foi pensada para crescer à medida que a OHC incorporar lideranças de infraestrutura pública digital, saúde, filantropia, padrões e código aberto."
+  },
+  "people": {
+    "srikanthNadhamuni": {
+      "role": "CTO fundador do Aadhaar / Presidente do projeto 10BedICU"
+    },
+    "sandeepSingal": {
+      "role": "Membro do conselho, ACT Grants"
+    },
+    "sanjayVijayakumar": {
+      "role": "Diretor / Operações estratégicas"
+    },
+    "athulJosephManuel": {
+      "role": "Presidente, IMA Kochi / Diretor médico"
+    },
+    "bodhishThomas": {
+      "role": "Diretor executivo (CEO)"
+    },
+    "vigneshHari": {
+      "role": "Diretor de tecnologia (CTO)"
+    },
+    "giginChandyGeorge": {
+      "role": "CTO, eGov Healthcare"
+    },
+    "pinakiKrishna": {
+      "role": "Direção de recursos e parcerias"
+    }
+  },
+  "maintainers": {
+    "eyebrow": "Mantenedores e colaboradores",
+    "title": "A comunidade técnica mais ampla continua sendo central.",
+    "body": "A lista pública crescerá à medida que as funções de mantenedores, revisão clínica e comitês de projeto forem confirmadas. Por ora, esta página reserva a estrutura para uma página completa da equipe da fundação.",
+    "roles": [
+      "Comitê de direção técnica",
+      "Mantenedores de projetos",
+      "Revisores clínicos",
+      "Responsáveis por segurança e versões",
+      "Parceiros de implementação",
+      "Colaboradores de código aberto"
+    ]
+  },
+  "final": {
+    "title": "Infraestrutura aberta de saúde precisa de uma gestão visível.",
+    "body": "A lista crescerá à medida que a fundação formalizar novas funções no conselho, no conselho consultivo, entre os mantenedores, na área clínica e nas operações.",
+    "governance": "Leia o modelo de governança",
+    "support": "Apoie a fundação"
+  }
+}

@@ -1,39 +1,16 @@
 {
   "positions": [
     {
-      "title": "Junior Product Manager",
-      "type": "Full Time",
-      "location": "Trivandrum",
-      "applyUrl": "https://forms.gle/94XBGsRovXS2atA86",
-      "requirements": [
-        "Experience in Product Operations",
-        "Interest in Open Source & Global Health",
-        "Familiar with Healthcare Standards"
-      ]
+      "id": "juniorProductManager",
+      "applyUrl": "https://forms.gle/94XBGsRovXS2atA86"
     },
     {
-      "title": "Junior Full Stack Engineering Internship",
-      "type": "Internship",
-      "location": "Remote",
-      "applyUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeYrwbrsC8K_6b2cNRd525PxZa9e_Z368VlDIRVLHu-GVNmhg/viewform?usp=publish-editor",
-      "requirements": [
-        "Basic Knowledge of Python & Django",
-        "Familiarity with React & TypeScript",
-        "Git & GitHub Experience",
-        "Curiosity for Open-Source Development"
-      ]
+      "id": "fullStackInternship",
+      "applyUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeYrwbrsC8K_6b2cNRd525PxZa9e_Z368VlDIRVLHu-GVNmhg/viewform?usp=publish-editor"
     },
     {
-      "title": "Documentation Internship",
-      "type": "Internship",
-      "location": "Remote",
-      "applyUrl": "https://docs.google.com/forms/d/e/1FAIpQLSe68Tcp9i65ZurZjLeDbWZRIMPVbY9PjNMT9JtXyBnPiS6YhQ/viewform?usp=dialog",
-      "requirements": [
-        "Strong Written Communication",
-        "Ability to Simplify Complex Concepts",
-        "Attention to Detail",
-        "Interest in Technology & Open Source"
-      ]
+      "id": "documentationInternship",
+      "applyUrl": "https://docs.google.com/forms/d/e/1FAIpQLSe68Tcp9i65ZurZjLeDbWZRIMPVbY9PjNMT9JtXyBnPiS6YhQ/viewform?usp=dialog"
     }
   ]
 }

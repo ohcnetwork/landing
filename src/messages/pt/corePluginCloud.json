@@ -1,0 +1,57 @@
+{
+  "ariaLabel": "O CARE Core com plugins viabiliza diversas soluções de saúde",
+  "eyebrow": "Núcleo + plugins",
+  "modules": {
+    "administration": {
+      "name": "Administração",
+      "detail": "Pacientes / Unidades / Usuários"
+    },
+    "definitions": {
+      "name": "Definições",
+      "detail": "ValueSets / Questionários"
+    },
+    "clinical": {
+      "name": "Clínico",
+      "detail": "Atendimentos / Observações"
+    },
+    "scheduling": {
+      "name": "Agendamento",
+      "detail": "Agendas / Horários / Reservas"
+    },
+    "pharmacy": {
+      "name": "Farmácia",
+      "detail": "Dispensação / Estoque"
+    },
+    "labs": {
+      "name": "Laboratório",
+      "detail": "Solicitações / Diagnósticos"
+    },
+    "billing": {
+      "name": "Faturamento",
+      "detail": "Reembolsos / Cobertura / Faturas"
+    }
+  },
+  "persistence": "Persistência / <b>PostgreSQL</b> / <b>Redis</b> / <b>Armazenamento de objetos</b>",
+  "runtime": "Execução / <b>Django</b> / <b>DRF</b> / <b>Celery</b>",
+  "pluginRuntime": "Execução de plugins",
+  "plugins": {
+    "aiScribe": "Escriba com IA",
+    "teleicu": "TeleICU",
+    "imaging": "Imagens",
+    "devices": "Dispositivos",
+    "messaging": "Mensagens",
+    "analytics": "Análises",
+    "claims": "Reembolsos",
+    "terminology": "Terminologia"
+  },
+  "enabledSolutions": "Soluções viabilizadas",
+  "enabledBy": "Núcleo + plugins viabilizam",
+  "solutions": {
+    "hospitalOs": "SO hospitalar",
+    "criticalCare": "Terapia intensiva",
+    "homeCare": "Rede de atenção domiciliar",
+    "clinicNetwork": "Rede de clínicas",
+    "publicHealth": "Saúde pública"
+  },
+  "caption": "O CARE Core fornece a base estável da plataforma. Os plugins acrescentam recursos como documentação com IA, TeleICU, imagens, dispositivos, mensagens, análises, reembolsos e terminologia. Juntos, eles viabilizam soluções para hospitais, terapia intensiva, atenção domiciliar, clínicas e saúde pública."
+}
