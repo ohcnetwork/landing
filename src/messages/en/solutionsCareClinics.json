@@ -1,0 +1,440 @@
+{
+  "meta": {
+    "title": "CARE Clinic: Free, Open-Source Clinic Management Software",
+    "description": "CARE Clinic is free, open-source clinic management software for small clinics: patient records, appointments, prescriptions, billing and encrypted backups on your own computer. Core workflows run on the clinic network after online setup.",
+    "ogDescription": "The whole clinic on one computer. No licence fees, no subscription, and patient records on a computer your clinic controls.",
+    "ogImageAlt": "CARE Clinic: free clinic software. Your data. Your control.",
+    "twitterDescription": "Free, open-source clinic software that runs on your clinic’s own computer."
+  },
+  "structuredData": {
+    "featureList": [
+      "Patient registration, appointments and visit queues",
+      "Consultation notes, configurable forms and prescriptions",
+      "Lab orders and results, pharmacy and stock",
+      "Billing, invoices, payments and receipts",
+      "Encrypted backups every 24 hours while the backup service runs and storage is accessible",
+      "Core workflows on the local network after setup, with the host awake and running CARE"
+    ]
+  },
+  "links": {
+    "requestSetup": "Request setup",
+    "githubReleases": "Download from GitHub releases",
+    "documentation": "Documentation"
+  },
+  "installer": {
+    "button": "Download CARE Clinic",
+    "downloadFor": "Download for {platform}",
+    "preparing": "Preparing {platform} download",
+    "requested": "Download requested",
+    "frameTitle": "{platform} installer download",
+    "errors": {
+      "rateLimited": "GitHub is limiting download requests. Please wait a few minutes and try again.",
+      "releaseUnavailable": "The latest release could not be loaded. Please try again shortly.",
+      "invalidRelease": "The release information is invalid. Please try again later.",
+      "noInstaller": "The latest release does not have a matching {platform} installer. Please try again later.",
+      "invalidUrl": "The installer download address is invalid.",
+      "reload": "Please reload the page and try downloading again.",
+      "network": "Could not reach the download service. Check your connection and try again."
+    }
+  },
+  "hero": {
+    "tagline": "The open-source Care platform, on your clinic’s own computer",
+    "title": "Free clinic software. <shine>Your data. Your control.</shine>",
+    "body": "The whole clinic on one computer. No licence fees, no subscription, and patient records on a computer your clinic controls.",
+    "motto": "Free. Open source. Built on Care.",
+    "imageAlt": "CARE Clinic Overview: clinic status, local address, phone connection and encrypted backup summary",
+    "imageCaption": "Overview screenshot from version {version}, with earlier CARE Desktop branding.",
+    "clinicAddress": "Clinic address: <mono>{host}</mono>",
+    "backups": "Encrypted backups · your storage",
+    "screenshotNote": "Screenshots include version {version} with the earlier CARE Desktop name. Interface details vary by version; personal file paths are redacted."
+  },
+  "ticker": {
+    "label": "Highlights",
+    "items": [
+      "₹0 for the software",
+      "Open source, MIT licence",
+      "Works offline after setup",
+      "Encrypted automatic backups",
+      "Every desk on the clinic Wi-Fi",
+      "No telemetry",
+      "Mac and Windows"
+    ]
+  },
+  "overview": {
+    "title": "The whole clinic. One computer.",
+    "body": "CARE Clinic is free, open-source clinic management software for small clinics. One installer sets up the whole system on a clinic computer, from patient records, appointments, prescriptions and billing to the database, file storage and automatic encrypted backups. Staff connect from other computers on the clinic Wi-Fi, and the core clinic keeps working without internet after online setup, while the host stays awake, runs CARE and is reachable on the local network.",
+    "price": {
+      "title": "₹0 for the software",
+      "text": "No licence fee. No subscription."
+    },
+    "tiles": {
+      "records": {
+        "title": "Records on your computer",
+        "text": "Your clinic holds the database and the backups."
+      },
+      "desks": {
+        "title": "Every desk connected",
+        "text": "Staff computers join over the clinic Wi-Fi."
+      },
+      "offline": {
+        "title": "Works offline",
+        "text": "After setup, core workflows need a running host and clinic network, not internet."
+      },
+      "backups": {
+        "title": "Backed up every 24 hours",
+        "text": "While the backup service runs and its storage is accessible. Restore is built in."
+      }
+    },
+    "openSource": {
+      "title": "Open source",
+      "text": "MIT licence. Source on GitHub."
+    }
+  },
+  "price": {
+    "title": "<amount>₹0</amount><text>for the software.</text>",
+    "body": "Free clinic management software, in the plain sense: nothing to pay to download, install or keep using. There is no licence fee, no software subscription and no trial that ends. Open Healthcare Network Foundation releases it under the MIT licence.",
+    "note": "The software is free. A computer, backup storage, installation help, support and connected services such as SMS may cost money."
+  },
+  "care": {
+    "eyebrow": "Care, in motion",
+    "title": "From booking to bill. One record.",
+    "body": "Every step of the visit lands on the same patient timeline, so the front desk, the consulting room and the billing counter see one record.",
+    "disclaimer": "These are general CARE platform demos, not recordings of the default Clinic installation. Screens, forms and reports vary by version and configuration. Hospital workflows and integrations shown may need additional setup, plugins or online services.",
+    "videoLabel": "General CARE demo: {caption}. Configuration-dependent.",
+    "demoCaption": "General CARE platform demo: {caption}",
+    "demoNote": "General CARE demo · features depend on configuration.",
+    "reportsAlt": "Illustration of configured report templates, not a CARE application screenshot",
+    "reportsCaption": "Report-template illustration: {caption}",
+    "reportsNote": "Illustration only. Choose report templates during clinic setup.",
+    "steps": {
+      "consultation": {
+        "label": "Consultation",
+        "title": "Notes that keep up with you.",
+        "text": "Clinical notes, vitals, diagnoses, observations and advice, on forms configured for your clinic and specialty.",
+        "caption": "Structured forms, observations, notes, terminology and clinical context captured inside the longitudinal record"
+      },
+      "forms": {
+        "label": "Forms and questionnaires",
+        "title": "Forms that fit your practice.",
+        "text": "Configure questionnaires and clinical forms for your clinic and specialty, without changing Care’s core.",
+        "caption": "Clinic teams shaping forms and workflows in Care without forking the product"
+      },
+      "investigations": {
+        "label": "Investigations",
+        "title": "Orders and results, on the record.",
+        "text": "Lab orders and results linked to the visit, so a report is never lost in a drawer.",
+        "caption": "Orders, samples, diagnostic reports, values, units and results flowing back into the same patient timeline"
+      },
+      "pharmacy": {
+        "label": "Pharmacy and stock",
+        "title": "Dispense and count.",
+        "text": "Dispensing linked to prescriptions, with stock levels, expiry review and alerts.",
+        "caption": "Prescriptions connecting to dispensing, stock movement, substitutions, alerts and inventory visibility"
+      },
+      "billing": {
+        "label": "Billing",
+        "title": "Bill at the desk.",
+        "text": "Service charges, invoices, payments and receipts connected to the visit.",
+        "caption": "Invoices, payments, coverage and reconciliation staying connected to real care activity"
+      },
+      "reports": {
+        "label": "Reports",
+        "title": "Reports, from the same record.",
+        "text": "Generate reports from recorded clinical data using the templates configured for your clinic. Available reports depend on your setup.",
+        "caption": "Clinical and operational reports generated from the same structured workflows"
+      }
+    }
+  },
+  "also": {
+    "eyebrow": "Also in the box",
+    "title": "The front desk and the follow-up, on the same record as the consulting room.",
+    "items": {
+      "appointments": {
+        "label": "Appointments",
+        "title": "The day, at a glance.",
+        "text": "Appointment slots, walk-ins and a visit queue, so reception always knows who is next."
+      },
+      "registration": {
+        "label": "Registration",
+        "title": "Every patient, one record.",
+        "text": "Demographics, identifiers, contact details and patient search, with each visit added to the same timeline."
+      },
+      "prescriptions": {
+        "label": "Prescriptions",
+        "title": "Clear and complete.",
+        "text": "Medication requests with dosage instructions, ready to print or hand to dispensing."
+      },
+      "followUp": {
+        "label": "Follow-up",
+        "title": "The next visit, already planned.",
+        "text": "Record follow-up advice and plan the next appointment. Patient SMS or push reminders need compatible plugins and configured services; they are not included by default."
+      }
+    }
+  },
+  "clinic": {
+    "title": "CARE is the platform. CARE Clinic is how one clinic runs it.",
+    "body": "The same open-source Care platform that hospitals and public-health programmes run, packaged for a single clinic computer, with a control panel that keeps it running, backed up and up to date.",
+    "imageAlt": "Overview with six control-panel tabs, clinic status, local address and encrypted backup summary; version {version} with earlier CARE Desktop branding",
+    "localCare": "Core care on your local network",
+    "backups": "Encrypted backups · restore built in"
+  },
+  "plugins": {
+    "title": "Add what your clinic needs.",
+    "body": "Plugins extend CARE without changing its core. The updated catalog focuses on CARE Onboarding, enabled by default for new clinics. Manage compatible additions in the control panel’s Plugins tab.",
+    "items": {
+      "onboarding": {
+        "title": "A guided start for your clinic.",
+        "text": "Walks a new clinic through its location, facility, departments, staff, numbering, questionnaires and report templates.",
+        "note": "On by default for new clinics; needs internet"
+      }
+    },
+    "hostedNote": "CARE Onboarding is hosted online, so staff browsers need internet to load it. Connected services may have separate terms and costs. Existing saved and custom plugins are preserved, not automatically uninstalled when the catalog changes.",
+    "releaseNote": "Release note, checked 4 October 2026: the <catalog>updated source catalog</catalog> contains only CARE Onboarding. The latest published release, <release>{version}</release>, still includes the older catalog.",
+    "beyond": {
+      "title": "Beyond the catalog",
+      "body": "The Care platform’s <link>plugin ecosystem</link> reaches national rails, AI documentation, labs, pharmacy, imaging, payments and messaging. A technical partner can add compatible CARE plugins as custom plugins, with the configuration, dependencies and external services they require.",
+      "applyNote": "Save and apply needs a healthy, running clinic. Backend changes can rebuild and restart CARE, briefly interrupting staff; frontend-only changes sync registrations for the next page load. Plugins does not ask for the CARE Clinic admin password, so restrict access to trusted staff.",
+      "trustNote": "Install only trusted plugins and keep backups. Recovery can restore configuration and images, but cannot undo arbitrary database migrations or changes in external services."
+    },
+    "breadcrumb": {
+      "controlPanel": "Control panel",
+      "plugins": "Plugins"
+    },
+    "imageAlt": "Top-level Plugins tab showing CARE Onboarding and Save and apply, with earlier CARE Desktop branding"
+  },
+  "updates": {
+    "eyebrow": "Updates",
+    "title": "Choose when to make a change.",
+    "careUpdates": "CARE software updates follow your configured backend and frontend source branches, with builds prepared in the background. Install now may interrupt staff; Later queues a prepared update for the next clinic start. Plan changes outside consultation hours.",
+    "appUpdates": "CARE Clinic application updates are separate. The clinic can keep running while the desktop app updates, and the app may hand off to an operating-system installer. Follow its prompts and confirm the result; opening an installer is not proof that it finished.",
+    "pluginUpdates": "The plugin catalog comes with the desktop app. After upgrading, catalog source changes reach existing plugin settings on the next Save and apply in Plugins. Hosted frontend bundles are fetched separately by staff browsers. There is no single update-everything action.",
+    "workflowLink": "Read the update workflow",
+    "imageAlt": "Updates tab separating CARE software from the desktop application; screenshot retains version {version} and CARE Desktop branding"
+  },
+  "data": {
+    "title": "Your records. On your computer.",
+    "body": "The clinic database, files and backups live on the computer you choose. Your clinic decides who has access and where the backups go. There is no Care-hosted account between your clinic and its records.",
+    "points": {
+      "telemetry": {
+        "title": "No telemetry.",
+        "text": "CARE Clinic itself has no usage analytics or crash reporting. Installation downloads and automatic update checks use internet. Dependencies, hosted plugins and configured providers have their own network activity and privacy policies."
+      },
+      "encryption": {
+        "title": "Encrypted across the clinic.",
+        "text": "After device setup, staff reach CARE over HTTPS using a clinic-issued certificate. Connect only on a trusted clinic network and complete certificate approval. A web application firewall adds another layer of protection."
+      },
+      "backups": {
+        "title": "Backed up every 24 hours.",
+        "text": "Backups run at a 24-hour interval while the backup service is running, not at a fixed nightly time. Keep the chosen destination accessible. Set retention, back up now or restore from a file; keep an off-device copy and test a restore."
+      },
+      "recovery": {
+        "title": "Two recovery materials. Different jobs.",
+        "text": "Save and verify the private PEM recovery file to decrypt backups. Six single-use codes reset the CARE Clinic admin password, not staff logins, and cannot decrypt backups. Keep both secure and separate from the host and backups. Protected settings, restore and uninstall require the admin password."
+      }
+    }
+  },
+  "team": {
+    "title": "One clinic. Every desk.",
+    "body": "Host the clinic on one computer. Reception, the consulting rooms and the billing counter connect from their own Mac or Windows computers over the clinic Wi-Fi. First find the clinic, then choose Connect and approve certificate installation and any operating-system prompts. Clients do not need Docker or Git, but do need this device setup and a trusted clinic network.",
+    "note": "No per-user licence. Capacity depends on the host computer and the network.",
+    "imageAlt": "CARE Clinic client discovery screen: enter the clinic address and find the server before connecting",
+    "phones": "<strong>Phones and tablets.</strong> “Connect phone or tablet” in the control panel shows a QR code that opens <mono>{url}</mono>. Follow the device’s certificate installation and trust steps before opening CARE over HTTPS. Scanning the QR code alone does not establish trust."
+  },
+  "offline": {
+    "title": "Works when the internet doesn’t.",
+    "body": "After setup, the core clinic runs on the local network with no internet connection while the host is awake, running CARE and reachable on the clinic LAN. Staff devices are not independent offline copies. Internet is needed to install, to update, to load hosted plugins and for the online services you switch on."
+  },
+  "setup": {
+    "title": "One installer sets everything up.",
+    "body": "Download it, run setup on the clinic computer, and the wizard takes you through it. Internet is required: setup downloads prerequisites such as Git and Docker through Rancher Desktop, WSL 2 on Windows, and CARE sources, images and dependencies. Installation time varies.",
+    "steps": {
+      "download": {
+        "title": "Download.",
+        "text": "Get CARE Clinic for Mac or Windows.",
+        "alt": "The first-run choice: start setup or connect to an existing clinic, with earlier CARE Desktop branding"
+      },
+      "host": {
+        "title": "Set up the clinic computer.",
+        "text": "Choose a clinic address and backup folder, save and verify the PEM backup recovery file, then set an admin password and save six recovery codes before installation. Setup downloads required software and builds CARE; keep the computer online and follow any permission prompts.",
+        "alt": "Setup review with verified backup recovery file and saved admin recovery codes before installation; personal backup path redacted"
+      },
+      "team": {
+        "title": "Connect the team.",
+        "text": "On a trusted clinic network, choose “Connect to an existing server on the local network” and find the clinic by its address. Review it, choose Connect and approve certificate setup. Phones and tablets use the QR setup page and follow its certificate instructions.",
+        "alt": "CARE Clinic client discovery screen asking for the clinic address before connecting"
+      },
+      "onboarding": {
+        "title": "Set up your clinic.",
+        "text": "With internet access, open CARE Onboarding in the CARE web app. It guides facility, department, staff, numbering, clinical form and report-template setup before you start seeing patients.",
+        "alt": "CARE Onboarding Get started screen showing the ten clinic setup steps, before facility setup begins"
+      }
+    },
+    "note": "Screenshots show the supplied versions, including earlier CARE Desktop branding. The review image has its personal backup path redacted. The onboarding image shows the start of setup, not a completed clinic."
+  },
+  "openSource": {
+    "title": "Open source. Open to you.",
+    "body": "The full source is on GitHub under the MIT licence. Read it, change it, keep running it. That is also why the software is free. There is no licence to sell.",
+    "viewSource": "View the source",
+    "readLicence": "Read the licence",
+    "underTheHood": {
+      "title": "Under the hood",
+      "body": "A Go and Wails desktop app with a React interface drives a Docker Compose stack: the Care backend and its workers, the Care web app, PostgreSQL, Redis, Silo for files, and Caddy with the Coraza web application firewall as the HTTPS front door. Both Care images are built on the clinic’s own computer from configured sources, with resolved commits recorded per build. Configured branches can track upstream updates; they are not fixed release-wide pins. Installer signing varies by platform."
+    }
+  },
+  "whichCare": {
+    "title": "Which Care is right for your clinic?",
+    "comparison": "Comparison",
+    "partnerColumn": "CARE, partner-deployed",
+    "rows": {
+      "bestFor": {
+        "label": "Best for",
+        "clinic": "One small clinic on one computer",
+        "partner": "Clinic networks, hospitals and programmes across sites"
+      },
+      "whereItRuns": {
+        "label": "Where it runs",
+        "clinic": "Your clinic’s own computer",
+        "partner": "Cloud, on-premise or hybrid, run with an implementation partner"
+      },
+      "price": {
+        "label": "Software price",
+        "clinic": "₹0, MIT licence",
+        "partner": "Open source; deployment, hosting and support arranged with a partner"
+      },
+      "internet": {
+        "label": "Internet",
+        "clinic": "For setup, updates, hosted plugins and online services; local care needs the running host and LAN",
+        "partner": "Depends on deployment: cloud access needs internet; on-premise workflows may use a local network"
+      },
+      "teamAccess": {
+        "label": "Team access",
+        "clinic": "Staff computers, phones and tablets on the clinic network",
+        "partner": "Devices and remote access depend on deployment, network and access controls"
+      },
+      "backups": {
+        "label": "Backups",
+        "clinic": "Encrypted backups every 24 hours while the service runs, on accessible storage you choose",
+        "partner": "Managed by the deployment"
+      }
+    },
+    "getStarted": "Get started",
+    "chooseInstaller": "Choose your installer",
+    "deploymentConversation": "Start a deployment conversation",
+    "specsTitle": "Tech specs",
+    "specs": {
+      "platforms": {
+        "term": "Platforms",
+        "detail": "macOS (Apple Silicon and Intel), Windows 64-bit"
+      },
+      "installers": {
+        "term": "Installers",
+        "detail": ".dmg for macOS, -setup.exe for Windows. In {version}: macOS notarized; Windows unsigned. Check each release’s manifest."
+      },
+      "staffDevices": {
+        "term": "Staff devices",
+        "detail": "Mac and Windows computers running CARE Clinic in client mode; iOS and Android through the browser on the clinic network"
+      },
+      "network": {
+        "term": "Network",
+        "detail": "One clinic Wi-Fi or wired network; the clinic is reached at <mono>{url}</mono>"
+      },
+      "internet": {
+        "term": "Internet",
+        "detail": "Installation, updates, hosted plugins and configured online services"
+      },
+      "backups": {
+        "term": "Backups",
+        "detail": "Encrypted, every 24 hours while the service runs and storage is accessible; configurable retention, backup-now and restore"
+      },
+      "security": {
+        "term": "Security",
+        "detail": "HTTPS after clinic certificate setup, web application firewall, admin password, six reset codes and a separate PEM backup recovery file"
+      },
+      "systemRequirements": {
+        "term": "System requirements",
+        "detail": "Recommended: 8 GB RAM, 4-core processor and 30 GB free storage. <link>CARE browser and device guidance</link>."
+      },
+      "telemetry": {
+        "term": "Telemetry",
+        "detail": "None in CARE Clinic itself; dependencies, plugins and providers have separate policies"
+      },
+      "licence": {
+        "term": "Licence"
+      },
+      "updates": {
+        "term": "Updates",
+        "detail": "Separate CARE software and CARE Clinic application updates in Updates; plugin changes in Plugins"
+      },
+      "source": {
+        "term": "Source"
+      }
+    }
+  },
+  "faq": {
+    "items": {
+      "free": {
+        "question": "Is CARE Clinic free and open source?",
+        "answer": "Yes. Open Healthcare Network Foundation releases CARE Clinic as free, open-source software under the MIT licence. Clinics and their technical partners can download, use and adapt it without buying a licence. There is no software subscription, no licence fee and no trial period that ends."
+      },
+      "requirements": {
+        "question": "Minimum requirements and add-ons",
+        "answer": "You need a host computer running Windows 64-bit or macOS (Apple Silicon or Intel). We recommend 8 GB RAM, a 4-core processor and 30 GB free storage. Staff computers connect using CARE Clinic in client mode on Windows or macOS; phones and tablets connect through a browser on the clinic network. Internet is needed for installation, updates, hosted plugins and configured online services. The computer, backup storage, installation help, support and optional services such as SMS or email may cost money separately from the free software. Check the requirements, terms and prices of any add-ons you choose."
+      },
+      "storage": {
+        "question": "Where are my patient records stored?",
+        "answer": "The clinic database and files are stored on the computer that hosts CARE Clinic, and backups go to the location you choose. Your clinic manages access and backups. Services you switch on, such as SMS or email, send information to the provider you configured, so review each one before using it."
+      },
+      "public": {
+        "question": "Does open source mean patient records are public?",
+        "answer": "No. Open source refers to the software’s code, which anyone can read on GitHub. Your clinic’s patient records stay on your clinic’s computer, and your clinic still needs to set up access properly and protect its computers, network and backups."
+      },
+      "team": {
+        "question": "Can my whole team use it?",
+        "answer": "Yes. One computer hosts the clinic, and other staff computers connect over the clinic’s local network using CARE Clinic in client mode. Phones and tablets connect through a setup page on the clinic network and complete certificate trust. There is no per-user licence fee; capacity depends on the host computer, network and configuration."
+      },
+      "offline": {
+        "question": "Does CARE Clinic work without internet?",
+        "answer": "Core workflows run without internet after setup while the host is awake, running CARE and reachable over the clinic network. Staff devices are not independent offline replicas. Installation, updates, hosted plugins and configured online services need internet."
+      },
+      "download": {
+        "question": "Where do I download CARE Clinic?",
+        "answer": "Click “Download CARE Clinic” and choose Mac or Windows. The download menu uses JavaScript and the public GitHub API to request the matching latest installer. If the API is unavailable, JavaScript is disabled or the browser blocks the download, use “Download from GitHub releases” beside the buttons and select the installer there."
+      },
+      "backups": {
+        "question": "Who is responsible for backups?",
+        "answer": "Your clinic or its technical partner. Encrypted backups run every 24 hours while the backup service runs and the destination is accessible, not at a fixed time of night. Keep backups and the private PEM recovery file safely off-device, separately from each other, and test a restore. Admin reset codes cannot decrypt backups."
+      },
+      "migration": {
+        "question": "Can I move my records to another system later?",
+        "answer": "Local access to the database, open-source code and your own backups give your clinic control over its system. Moving records into a different product is a separate migration task that depends on the formats and workflows involved."
+      },
+      "sameAsCare": {
+        "question": "Is CARE Clinic the same as CARE?",
+        "answer": "CARE Clinic packages the open-source CARE platform for a single clinic computer. Partner-managed CARE deployments also serve hospitals and community-care programmes. CARE Clinic brings the platform to a small clinic without a hosted account or a software licence fee; available workflows depend on configuration."
+      },
+      "usageData": {
+        "question": "Does CARE Clinic collect usage data?",
+        "answer": "CARE Clinic itself has no telemetry, analytics or crash reporting. It makes installation downloads and automatic update checks. Dependencies, hosted frontend plugins and configured online providers have separate network activity and privacy policies; this is not a no-telemetry promise for the entire stack."
+      },
+      "opd": {
+        "question": "Is CARE Clinic OPD management software?",
+        "answer": "Yes, in the sense that it covers outpatient clinic work: registration, appointments, consultations, prescriptions and billing. It is built for a small clinic running on one computer. Hospitals with wards and multiple departments should look at the hosted Care platform."
+      },
+      "plugins": {
+        "question": "What are plugins?",
+        "answer": "Plugins extend CARE. The updated source catalog contains CARE Onboarding only, enabled by default for new clinics and loaded from an internet host. The latest published release checked on 4 October 2026, {version}, still has the older catalog. Previously saved and custom plugins are preserved, not automatically uninstalled. A technical partner can configure compatible plugins and their required dependencies or services."
+      },
+      "updates": {
+        "question": "How do updates and plugin changes work?",
+        "answer": "Updates separates CARE backend/frontend builds from CARE Clinic application releases. CARE builds follow configured source branches: Install now may interrupt staff; Later queues the prepared update for the next clinic start. App updates can leave CARE running and may open an OS installer. The plugin catalog ships with the app; after an upgrade, catalog source changes reach saved plugins on their next Save and apply. Staff browsers fetch hosted plugin bundles separately."
+      }
+    }
+  },
+  "download": {
+    "title": "Free to use. <shine>Yours to run.</shine>",
+    "body": "Get CARE Clinic for your clinic.",
+    "fallback": "If JavaScript, the GitHub API or your browser’s download handoff is unavailable, use the release-page link to choose an installer.",
+    "viewOnGithub": "View on GitHub",
+    "legal": "CARE Clinic is released under the MIT licence by Open Healthcare Network Foundation. The software is free; hardware, support and external services may involve separate costs. Internet is needed for installation, updates, hosted plugins and connected services."
+  }
+}

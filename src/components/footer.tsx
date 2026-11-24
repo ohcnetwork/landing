@@ -1,4 +1,5 @@
 import { PlusGrid, PlusGridItem, PlusGridRow } from '@/components/plus-grid'
+import { useTranslations } from 'next-intl'
 import { Button } from './button'
 import { Container } from './container'
 import { Gradient } from './gradient'
@@ -7,29 +8,31 @@ import { Logo } from './logo'
 import { Subheading } from './text'
 
 function CallToAction() {
+  const t = useTranslations('footer.cta')
+
   return (
     <div className="relative pt-20 pb-16 text-center sm:py-24">
       <hgroup>
-        <Subheading>Build the commons</Subheading>
+        <Subheading>{t('eyebrow')}</Subheading>
         <p className="mt-6 text-3xl font-medium tracking-normal text-gray-950 sm:text-5xl">
-          Help steward open healthcare <br className="hidden sm:block" />
-          infrastructure for the long term.
+          {t.rich('title', {
+            br: () => <br className="hidden sm:block" />,
+          })}
         </p>
       </hgroup>
       <p className="mx-auto mt-6 max-w-2xl text-sm/6 text-gray-500">
-        Governments can deploy, institutions can support, implementation
-        partners can localize, and contributors can strengthen the shared core.
+        {t('body')}
       </p>
       <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:justify-center">
         <Button className="w-full sm:w-auto" href="/support">
-          Support the commons
+          {t('support')}
         </Button>
         <Button
           variant="secondary"
           className="w-full sm:w-auto"
           href="/contact"
         >
-          Start a partnership conversation
+          {t('partner')}
         </Button>
       </div>
     </div>
@@ -56,81 +59,96 @@ function SitemapLink(props: React.ComponentPropsWithoutRef<typeof Link>) {
 }
 
 function Sitemap() {
+  const t = useTranslations('nav.links')
+  const tFooter = useTranslations('footer')
+
   return (
     <>
       <div>
-        <SitemapHeading>Foundation</SitemapHeading>
+        <SitemapHeading>{t('foundation')}</SitemapHeading>
         <SitemapLinks>
-          <SitemapLink href="/about">Mission</SitemapLink>
-          <SitemapLink href="/foundation/governance">Governance</SitemapLink>
-          <SitemapLink href="/about/team">Board & Advisors</SitemapLink>
+          <SitemapLink href="/about">{t('mission')}</SitemapLink>
+          <SitemapLink href="/foundation/governance">
+            {t('governance')}
+          </SitemapLink>
+          <SitemapLink href="/about/team">{t('boardAdvisors')}</SitemapLink>
           <SitemapLink href="/about/team/foundation">
-            Foundation Team
+            {t('foundationTeam')}
           </SitemapLink>
           <SitemapLink href="/foundation/documents">
-            Foundation Docs
+            {t('foundationDocs')}
           </SitemapLink>
-          <SitemapLink href="/foundation/iso">ISO Certifications</SitemapLink>
-          <SitemapLink href="/support">Support OHC</SitemapLink>
-          <SitemapLink href="/support/how-to-fund">How to Fund Us</SitemapLink>
-          <SitemapLink href="/supporters">Supporters</SitemapLink>
+          <SitemapLink href="/foundation/iso">
+            {t('isoCertifications')}
+          </SitemapLink>
+          <SitemapLink href="/support">{t('supportOhc')}</SitemapLink>
+          <SitemapLink href="/support/how-to-fund">
+            {t('howToFund')}
+          </SitemapLink>
+          <SitemapLink href="/supporters">{t('supporters')}</SitemapLink>
         </SitemapLinks>
       </div>
       <div>
-        <SitemapHeading>CARE Platform</SitemapHeading>
+        <SitemapHeading>{tFooter('carePlatform')}</SitemapHeading>
         <SitemapLinks>
-          <SitemapLink href="/product/care-core">CARE Core</SitemapLink>
-          <SitemapLink href="/product/care-ai">CARE AI</SitemapLink>
+          <SitemapLink href="/product/care-core">{t('careCore')}</SitemapLink>
+          <SitemapLink href="/product/care-ai">{t('careAi')}</SitemapLink>
           <SitemapLink href="/product/apps-integrations">
-            Apps & Integrations
+            {t('appsIntegrations')}
           </SitemapLink>
           <SitemapLink href="/product/standards-architecture">
-            Standards & Architecture
+            {t('standardsArchitecture')}
           </SitemapLink>
           <SitemapLink href="/about/security-compliance">
-            Security & Compliance
+            {t('securityCompliance')}
           </SitemapLink>
         </SitemapLinks>
       </div>
       <div>
-        <SitemapHeading>Solutions</SitemapHeading>
+        <SitemapHeading>{t('solutions')}</SitemapHeading>
         <SitemapLinks>
           <SitemapLink href="/solutions/hospital-management">
-            Hospital Management
+            {t('hospitalManagement')}
           </SitemapLink>
-          <SitemapLink href="/solutions/teleicu">TeleICU</SitemapLink>
+          <SitemapLink href="/solutions/teleicu">{t('teleicu')}</SitemapLink>
           <SitemapLink href="/solutions/palliative-care">
-            Palliative Care
+            {t('palliativeCare')}
           </SitemapLink>
-          <SitemapLink href="/solutions/care-clinics">CARE Clinic</SitemapLink>
-          <SitemapLink href="/solutions/care-janwar">Animal Health</SitemapLink>
+          <SitemapLink href="/solutions/care-clinics">
+            {t('careClinic')}
+          </SitemapLink>
+          <SitemapLink href="/solutions/care-janwar">
+            {t('animalHealth')}
+          </SitemapLink>
         </SitemapLinks>
       </div>
       <div>
-        <SitemapHeading>Ecosystem</SitemapHeading>
+        <SitemapHeading>{t('ecosystem')}</SitemapHeading>
         <SitemapLinks>
-          <SitemapLink href="/network">The Network</SitemapLink>
+          <SitemapLink href="/network">{t('network')}</SitemapLink>
           <SitemapLink href="/ecosystem/implementation-partners">
-            Implementation Partners
+            {t('implementationPartners')}
           </SitemapLink>
-          <SitemapLink href="/ecosystem/clinicians">Clinicians</SitemapLink>
-          <SitemapLink href="/build-on-care">Build on Care</SitemapLink>
-          <SitemapLink href="/developers">Developers</SitemapLink>
-          <SitemapLink href="/impact">Impact</SitemapLink>
+          <SitemapLink href="/ecosystem/clinicians">
+            {t('clinicians')}
+          </SitemapLink>
+          <SitemapLink href="/build-on-care">{t('buildOnCare')}</SitemapLink>
+          <SitemapLink href="/developers">{t('developers')}</SitemapLink>
+          <SitemapLink href="/impact">{t('impact')}</SitemapLink>
         </SitemapLinks>
       </div>
       <div>
-        <SitemapHeading>Resources</SitemapHeading>
+        <SitemapHeading>{t('resources')}</SitemapHeading>
         <SitemapLinks>
-          <SitemapLink href="/blog">Blog</SitemapLink>
-          <SitemapLink href="/faq">FAQ</SitemapLink>
+          <SitemapLink href="/blog">{t('blog')}</SitemapLink>
+          <SitemapLink href="/faq">{t('faq')}</SitemapLink>
           <SitemapLink href="/system-requirements">
-            Browser requirements
+            {t('browserRequirements')}
           </SitemapLink>
-          <SitemapLink href="/press-media">Press & Media</SitemapLink>
-          <SitemapLink href="/careers">Careers</SitemapLink>
-          <SitemapLink href="/contact">Contact</SitemapLink>
-          <SitemapLink href="/funding.json">Support metadata</SitemapLink>
+          <SitemapLink href="/press-media">{t('pressMedia')}</SitemapLink>
+          <SitemapLink href="/careers">{t('careers')}</SitemapLink>
+          <SitemapLink href="/contact">{t('contact')}</SitemapLink>
+          <SitemapLink href="/funding.json">{t('supportMetadata')}</SitemapLink>
         </SitemapLinks>
       </div>
     </>
@@ -146,12 +164,14 @@ function SocialIconLinkedIn(props: React.ComponentPropsWithoutRef<'svg'>) {
 }
 
 function SocialLinks() {
+  const t = useTranslations('footer')
+
   return (
     <>
       <Link
         href="https://github.com/ohcnetwork"
         target="_blank"
-        aria-label="Visit us on GitHub"
+        aria-label={t('github')}
         className="text-gray-950 hover:text-gray-950/75"
       >
         <svg className="size-4" fill="currentColor" viewBox="0 0 24 24">
@@ -161,7 +181,7 @@ function SocialLinks() {
       <Link
         href="https://linkedin.com/company/ohcnetwork"
         target="_blank"
-        aria-label="Visit us on LinkedIn"
+        aria-label={t('linkedin')}
         className="text-gray-950 hover:text-gray-950/75"
       >
         <SocialIconLinkedIn className="size-4" />
@@ -171,9 +191,11 @@ function SocialLinks() {
 }
 
 function Copyright() {
+  const t = useTranslations('footer')
+
   return (
     <div className="text-sm/6 text-gray-950">
-      &copy; {new Date().getFullYear()} Open Healthcare Network Foundation.
+      {t('copyright', { year: String(new Date().getFullYear()) })}
     </div>
   )
 }
@@ -183,6 +205,8 @@ export function Footer({
 }: {
   showCallToAction?: boolean
 }) {
+  const t = useTranslations('footer')
+
   return (
     <footer>
       <Gradient className="relative">
@@ -197,21 +221,22 @@ export function Footer({
                     <Logo className="h-9" />
                     <div className="mt-4">
                       <div className="text-sm text-gray-950/80">
-                        <p className="text-gray-950/70">Registered Address</p>
-                        <p className="pt-1.5 text-gray-950">
-                          Open Healthcare Network Foundation
+                        <p className="text-gray-950/70">
+                          {t('registeredAddress')}
                         </p>
                         <p className="pt-1.5 text-gray-950">
+                          {t('organizationName')}
+                        </p>
+                        {/* The postal address stays in its official form. */}
+                        <p lang="en" className="pt-1.5 text-gray-950">
                           1st Floor, C M Complex, Kalavath Road, Palarivattom,
                           Kochi, Ernakulam, Kerala, India, 682025
                         </p>
-                        <p className="mt-8 text-gray-950/70">
-                          Corporate Identity Number (CIN)
-                        </p>
+                        <p className="mt-8 text-gray-950/70">{t('cin')}</p>
                         <p className="pt-1.5 text-gray-950">
                           U88100KL2025NPL098818
                         </p>
-                        <p className="mt-8 text-gray-950/70">Email</p>
+                        <p className="mt-8 text-gray-950/70">{t('email')}</p>
                         <p className="pt-1.5">
                           <Link
                             href="mailto:support@ohc.network"

@@ -1,5 +1,7 @@
 'use client'
 
+import type { Messages } from '@/i18n/messages'
+import { splitLocaleFromPath } from '@/i18n/paths'
 import {
   Disclosure,
   DisclosureButton,
@@ -11,82 +13,97 @@ import {
 } from '@headlessui/react'
 import { Bars2Icon, ChevronDownIcon } from '@heroicons/react/24/solid'
 import { motion, useReducedMotion } from 'framer-motion'
+import { useTranslations } from 'next-intl'
 import { usePathname } from 'next/navigation'
 import { Link } from './link'
+import { LocaleSwitcher } from './locale-switcher'
 import { Logo } from './logo'
 
-const links = [
-  { href: '/', label: 'Home' },
+type NavLabel = keyof Messages['nav']['links']
+
+type NavLink = {
+  href: string
+  label: NavLabel
+  submenu?: { href: string; label: NavLabel }[]
+}
+
+const links: NavLink[] = [
+  { href: '/', label: 'home' },
   {
     href: '/about',
-    label: 'Foundation',
+    label: 'foundation',
     submenu: [
-      { href: '/about', label: 'Mission' },
-      { href: '/foundation/governance', label: 'Governance' },
-      { href: '/about/team', label: 'Board & Advisors' },
-      { href: '/about/team/foundation', label: 'Foundation Team' },
-      { href: '/about/security-compliance', label: 'Security & Compliance' },
+      { href: '/about', label: 'mission' },
+      { href: '/foundation/governance', label: 'governance' },
+      { href: '/about/team', label: 'boardAdvisors' },
+      { href: '/about/team/foundation', label: 'foundationTeam' },
+      { href: '/about/security-compliance', label: 'securityCompliance' },
     ],
   },
   {
     href: '/product/care-core',
-    label: 'CARE',
+    label: 'care',
     submenu: [
-      { href: '/product/care-core', label: 'CARE Core' },
-      { href: '/product/care-ai', label: 'CARE AI' },
-      { href: '/product/apps-integrations', label: 'Apps & Integrations' },
+      { href: '/product/care-core', label: 'careCore' },
+      { href: '/product/care-ai', label: 'careAi' },
+      { href: '/product/apps-integrations', label: 'appsIntegrations' },
       {
         href: '/product/standards-architecture',
-        label: 'Standards & Architecture',
+        label: 'standardsArchitecture',
       },
     ],
   },
   {
     href: '/solutions',
-    label: 'Solutions',
+    label: 'solutions',
     submenu: [
-      { href: '/solutions/hospital-management', label: 'Hospital Management' },
-      { href: '/solutions/teleicu', label: 'TeleICU' },
-      { href: '/solutions/palliative-care', label: 'Palliative Care' },
-      { href: '/solutions/care-clinics', label: 'CARE Clinic' },
+      { href: '/solutions/hospital-management', label: 'hospitalManagement' },
+      { href: '/solutions/teleicu', label: 'teleicu' },
+      { href: '/solutions/palliative-care', label: 'palliativeCare' },
+      { href: '/solutions/care-clinics', label: 'careClinic' },
     ],
   },
-  { href: '/impact', label: 'Impact' },
+  { href: '/impact', label: 'impact' },
   {
     href: '/network',
-    label: 'Ecosystem',
+    label: 'ecosystem',
     submenu: [
-      { href: '/network', label: 'The Network' },
+      { href: '/network', label: 'network' },
       {
         href: '/ecosystem/implementation-partners',
-        label: 'Implementation Partners',
+        label: 'implementationPartners',
       },
-      { href: '/ecosystem/clinicians', label: 'Clinicians' },
-      { href: '/build-on-care', label: 'Build on Care' },
-      { href: '/developers', label: 'Developers' },
+      { href: '/ecosystem/clinicians', label: 'clinicians' },
+      { href: '/build-on-care', label: 'buildOnCare' },
+      { href: '/developers', label: 'developers' },
     ],
   },
   {
     href: '/support',
-    label: 'Support',
+    label: 'support',
     submenu: [
-      { href: '/support', label: 'Support OHC' },
-      { href: '/supporters', label: 'Supporters' },
+      { href: '/support', label: 'supportOhc' },
+      { href: '/supporters', label: 'supporters' },
     ],
   },
   {
     href: '/resources',
-    label: 'Resources',
+    label: 'resources',
     submenu: [
-      { href: '/blog', label: 'Blog' },
-      { href: '/press-media', label: 'Press & Media' },
-      { href: '/faq', label: 'FAQ' },
-      { href: '/system-requirements', label: 'Browser requirements' },
-      { href: '/funding.json', label: 'Support metadata' },
-      { href: '/contact', label: 'Contact' },
+      { href: '/blog', label: 'blog' },
+      { href: '/press-media', label: 'pressMedia' },
+      { href: '/faq', label: 'faq' },
+      { href: '/system-requirements', label: 'browserRequirements' },
+      { href: '/funding.json', label: 'supportMetadata' },
+      { href: '/contact', label: 'contact' },
     ],
   },
 ]
+
+/** The current path without its locale prefix, to compare against hrefs. */
+function useSitePath() {
+  return splitLocaleFromPath(usePathname()).path
+}
 
 function isLinkActive(href: string, pathname: string): boolean {
   if (href === '/') {
@@ -96,7 +113,8 @@ function isLinkActive(href: string, pathname: string): boolean {
 }
 
 function DesktopNav() {
-  const pathname = usePathname()
+  const t = useTranslations('nav.links')
+  const pathname = useSitePath()
 
   return (
     <nav className="relative hidden rounded-lg border border-black/8 bg-white/60 px-2 shadow-[0_10px_30px_rgba(7,24,19,0.06)] backdrop-blur-xl xl:flex">
@@ -117,7 +135,7 @@ function DesktopNav() {
                       : 'text-gray-950'
                   }`}
                 >
-                  {label}
+                  {t(label)}
                   <ChevronDownIcon className="ml-1 h-4 w-4 flex-shrink-0" />
                 </MenuButton>
                 <MenuItems className="absolute left-0 z-10 mt-2 w-60 origin-top-left overflow-hidden rounded-lg border border-black/8 bg-white shadow-[0_18px_45px_rgba(7,24,19,0.12)] ring-1 ring-black/5">
@@ -133,7 +151,7 @@ function DesktopNav() {
                               : 'text-gray-950'
                           }`}
                         >
-                          {item.label}
+                          {t(item.label)}
                         </Link>
                       </MenuItem>
                     )
@@ -147,7 +165,7 @@ function DesktopNav() {
                   isActive ? 'text-[#0b6b55]' : 'text-gray-950'
                 }`}
               >
-                {label}
+                {t(label)}
               </Link>
             )}
           </div>
@@ -158,10 +176,12 @@ function DesktopNav() {
 }
 
 function MobileNavButton() {
+  const t = useTranslations('nav')
+
   return (
     <DisclosureButton
       className="flex size-12 items-center justify-center self-center rounded-lg border border-black/8 bg-white/62 shadow-sm backdrop-blur-xl hover:bg-white xl:hidden"
-      aria-label="Open main menu"
+      aria-label={t('openMenu')}
     >
       <Bars2Icon className="size-6" />
     </DisclosureButton>
@@ -169,7 +189,8 @@ function MobileNavButton() {
 }
 
 function MobileNav() {
-  const pathname = usePathname()
+  const t = useTranslations('nav.links')
+  const pathname = useSitePath()
   const reduceMotion = useReducedMotion()
 
   return (
@@ -204,7 +225,7 @@ function MobileNav() {
                         : 'text-gray-950'
                     }`}
                   >
-                    {label}
+                    {t(label)}
                   </div>
                   <div className="ml-4 space-y-2">
                     {submenu.map((item) => {
@@ -219,7 +240,7 @@ function MobileNav() {
                               : 'text-gray-600'
                           }`}
                         >
-                          {item.label}
+                          {t(item.label)}
                         </Link>
                       )
                     })}
@@ -232,7 +253,7 @@ function MobileNav() {
                     isActive ? 'text-[#0b6b55]' : 'text-gray-950'
                   }`}
                 >
-                  {label}
+                  {t(label)}
                 </Link>
               )}
             </motion.div>
@@ -248,13 +269,15 @@ function MobileNav() {
 }
 
 export function Navbar({ banner }: { banner?: React.ReactNode }) {
+  const t = useTranslations('nav.links')
+
   return (
     <Disclosure as="header" className="relative z-30 pt-8">
       <div>
         <div className="relative flex justify-between">
           <div className="relative flex gap-6">
             <div className="py-3">
-              <Link href="/" title="Home">
+              <Link href="/" title={t('home')}>
                 <Logo className="h-12" />
               </Link>
             </div>
@@ -264,8 +287,11 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
               </div>
             )}
           </div>
-          <DesktopNav />
-          <MobileNavButton />
+          <div className="flex gap-3">
+            <DesktopNav />
+            <LocaleSwitcher className="self-center" />
+            <MobileNavButton />
+          </div>
         </div>
       </div>
       <MobileNav />

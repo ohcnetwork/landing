@@ -1,0 +1,200 @@
+{
+  "meta": {
+    "title": "Open Healthcare Network Foundation - Open Health Infrastructure",
+    "description": "Open Healthcare Network Foundation stewards CARE, an MIT-licensed Digital Public Good for self-hostable, standards-based health infrastructure without vendor lock-in.",
+    "ogDescription": "The neutral foundation stewarding CARE and the open-source health infrastructure layer.",
+    "ogImageAlt": "Open Healthcare Network Foundation",
+    "twitterDescription": "CARE is the flagship open-source Digital Public Good stewarded by OHC Foundation."
+  },
+  "hero": {
+    "badges": {
+      "dpg": "Verified DPG",
+      "mit": "MIT licensed",
+      "selfHostable": "Self-hostable"
+    },
+    "title": "The open operating system for healthcare.",
+    "body": "OHC Foundation stewards CARE Core, apps, standards, and integrations so governments, hospitals, and implementers can run interoperable health systems without vendor lock-in.",
+    "exploreCare": "Explore CARE",
+    "fundCommons": "Fund the commons",
+    "partner": "Partner with OHC"
+  },
+  "credibility": {
+    "eyebrow": "Public proof",
+    "title": "Open infrastructure, supported by real institutions and verifiable public-good signals.",
+    "points": {
+      "dpg": {
+        "label": "Verified DPG",
+        "detail": "CARE is listed in the Digital Public Goods registry."
+      },
+      "mit": {
+        "label": "MIT licensed",
+        "detail": "Reusable by governments, hospitals, NGOs, and partners."
+      },
+      "fhir": {
+        "label": "FHIR-native",
+        "detail": "Built around standards, terminology, and open APIs."
+      }
+    },
+    "supportedBy": "Supported by"
+  },
+  "foundationLayer": {
+    "eyebrow": "Foundation layer",
+    "title": "The institution around the healthcare OS.",
+    "body": "Healthcare systems do not adopt source code alone. They need governance, releases, documentation, security, and an ecosystem that keeps the shared core dependable over years.",
+    "items": {
+      "core": {
+        "title": "Core platform",
+        "description": "Stable primitives, APIs, forms, access control, audit trails, reports, and extensibility."
+      },
+      "standards": {
+        "title": "Standards",
+        "description": "FHIR-aligned modeling, terminology bindings, ABDM patterns, and implementation guides."
+      },
+      "quality": {
+        "title": "Quality and security",
+        "description": "Release discipline, vulnerability handling, testing expectations, and documentation quality."
+      },
+      "ecosystem": {
+        "title": "Ecosystem",
+        "description": "Developer community, clinical review, implementation partners, and public-good funding paths."
+      },
+      "ai": {
+        "title": "AI readiness",
+        "description": "Assistive, human-reviewed documentation and summarization on structured clinical data."
+      }
+    }
+  },
+  "care": {
+    "eyebrow": "CARE is the product proof",
+    "title": "One open core. Many real workflows.",
+    "body": "CARE Core provides the common primitives. CARE Apps extend the platform for national rails, HMIS, TeleICU, palliative care, AI documentation, LMIS, pharmacy, billing, and analytics.",
+    "modules": [
+      "Longitudinal patient records",
+      "OP, IP, emergency, observation, home visits",
+      "Clinical notes, forms, orders, prescriptions",
+      "Labs, pharmacy, inventory, radiology, billing",
+      "Tasks, referrals, care plans, dashboards",
+      "ABDM, TeleICU, AI documentation, open APIs"
+    ],
+    "careCore": "CARE Core",
+    "appsIntegrations": "Apps & integrations"
+  },
+  "solutions": {
+    "eyebrow": "Solutions",
+    "title": "Deployable workflows on the healthcare OS.",
+    "body": "CARE Core is the shared foundation. Solutions package that core into practical workflows for hospitals, critical care, home care, clinics, public health programs, and specialized field operations.",
+    "items": {
+      "hmis": {
+        "title": "CARE HMIS",
+        "description": "Hospital management workflows for registration, encounters, labs, pharmacy, billing, reports, and patient portal."
+      },
+      "teleicu": {
+        "title": "TeleICU",
+        "description": "Hub-and-spoke critical care workflows with remote rounds, escalation, devices, and video context."
+      },
+      "palliative": {
+        "title": "Palliative Care Grid",
+        "description": "Home-based care coordination, longitudinal records, tasks, referrals, follow-up, and field workflows."
+      },
+      "clinic": {
+        "title": "CARE Clinic",
+        "description": "Free, open-source clinic software for Mac and Windows. Run CARE on your own computer, with core workflows on the clinic network after online setup."
+      },
+      "janwar": {
+        "title": "Care Janwar",
+        "description": "Animal health workflows built on the same open-core pattern for facilities and field programs."
+      }
+    },
+    "explore": "Explore",
+    "viewAll": "View all solutions"
+  },
+  "standards": {
+    "eyebrow": "Architecture",
+    "title": "AI-ready because the data layer is structured first.",
+    "body": "CARE is designed around configurable forms, FHIR-aligned resources, terminology bindings, open APIs, audit trails, and role-based access. AI is framed as assistive and human-reviewed because clinical accountability cannot be automated away."
+  },
+  "compounding": {
+    "eyebrow": "Why this can scale",
+    "title": "A nonprofit with product leverage.",
+    "body": "The best nonprofit technology organizations compound: each implementation makes the infrastructure better, each partner expands distribution, and each funded release makes future adoption cheaper.",
+    "items": {
+      "software": {
+        "title": "Software leverage",
+        "description": "Each reusable module, form, and integration reduces the cost of the next public health deployment."
+      },
+      "distribution": {
+        "title": "Open distribution",
+        "description": "Governments, hospitals, implementers, clinicians, and developers can adopt without vendor permission."
+      },
+      "data": {
+        "title": "Data foundation for AI",
+        "description": "Assistive AI becomes safer when it sits on structured, interoperable, auditable health data."
+      },
+      "governance": {
+        "title": "Governance moat",
+        "description": "The foundation turns open source into infrastructure institutions can trust for long-term operations."
+      }
+    }
+  },
+  "github": {
+    "eyebrow": "GitHub Story",
+    "title": "Open-source collaboration, shown through the work.",
+    "body": "The GitHub story is useful proof because it shows OHC as a real contributor network: clinicians, engineers, and institutions building healthcare infrastructure in the open.",
+    "videoTitle": "Open Healthcare Network - GitHub Story"
+  },
+  "impact": {
+    "eyebrow": "Evidence",
+    "title": "Field proof, handled with discipline.",
+    "body": "OHC has public proof across the DPG registry, open-source repositories, standards architecture, and program deployments. The site keeps metrics dated and program-specific so funders, governments, and media see disciplined claims instead of impact theater.",
+    "viewImpact": "View impact",
+    "pressFacts": "Press facts",
+    "facts": {
+      "dpg": { "label": "DPG", "text": "Externally listed" },
+      "mit": { "label": "MIT", "text": "Reusable by default" },
+      "apis": { "label": "Open APIs", "text": "Built for integration" }
+    }
+  },
+  "blog": {
+    "eyebrow": "Blog",
+    "title": "Notes for builders of public-good health infrastructure.",
+    "readBlog": "Read the blog",
+    "readEssay": "Read essay"
+  },
+  "audience": {
+    "eyebrow": "Who should work with OHC",
+    "title": "One foundation, multiple high-leverage paths.",
+    "body": "Governments can deploy, funders can support, implementation partners can localize, developers can contribute, and clinicians can shape workflows.",
+    "items": {
+      "governments": {
+        "title": "Governments",
+        "text": "Own, adapt, and scale health infrastructure locally."
+      },
+      "funders": {
+        "title": "Funders",
+        "text": "Back the shared core, not one-off software delivery."
+      },
+      "hospitals": {
+        "title": "Hospitals",
+        "text": "Deploy practical HMIS and EMR workflows without license lock-in."
+      },
+      "partners": {
+        "title": "Implementation partners",
+        "text": "Localize CARE and contribute improvements back."
+      },
+      "developers": {
+        "title": "Developers",
+        "text": "Build open-source healthcare infrastructure used in the field."
+      },
+      "clinicians": {
+        "title": "Clinicians",
+        "text": "Shape workflows, forms, safety, and AI documentation behavior."
+      }
+    }
+  },
+  "finalCta": {
+    "title": "Build the open healthcare commons.",
+    "body": "Help OHC Foundation maintain the shared core, governance, security, documentation, and ecosystem that let health systems deploy modern software without vendor lock-in.",
+    "fund": "Fund the commons",
+    "conversation": "Start a conversation"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "title": "Governança - Open Healthcare Network Foundation",
+    "description": "Como a OHC Foundation separa a gestão fiduciária, a direção técnica, a manutenção, a contribuição, a segurança e a governança de versões."
+  },
+  "hero": {
+    "eyebrow": "Governança",
+    "title": "Infraestrutura compartilhada exige tomada de decisão visível.",
+    "body": "A OHC Foundation existe para que o CARE não seja controlado por um único fornecedor, doador, estado ou parceiro de implementação. A governança separa a gestão fiduciária da direção técnica, mantendo os mantenedores próximos do trabalho."
+  },
+  "layers": {
+    "eyebrow": "Modelo de gestão",
+    "title": "Papéis claros para a supervisão institucional e a responsabilidade técnica.",
+    "items": {
+      "board": {
+        "title": "Conselho da fundação",
+        "description": "Missão, aspectos jurídicos, fiduciários e financeiros, captação de recursos, riscos e gestão institucional de longo prazo."
+      },
+      "steeringCommittee": {
+        "title": "Comitê de direção técnica",
+        "description": "Supervisão da arquitetura, da visão técnica, da manutenção dos projetos, da disciplina de versões e dos processos da comunidade."
+      },
+      "maintainers": {
+        "title": "Mantenedores de projetos",
+        "description": "Revisão de código no dia a dia, execução do roteiro, triagem de issues, documentação e mentoria de colaboradores."
+      },
+      "projectGroups": {
+        "title": "Grupos de projeto",
+        "description": "Responsabilidade focada no CARE Core, nos aplicativos, nos padrões, na segurança, nos guias de implementação e nos fluxos clínicos."
+      }
+    }
+  },
+  "decisions": {
+    "eyebrow": "Como as decisões são tomadas",
+    "title": "O conselho zela pela instituição. As lideranças técnicas zelam pela plataforma.",
+    "rows": {
+      "institution": {
+        "scope": "Missão, jurídico, finanças, riscos",
+        "owner": "Conselho da fundação"
+      },
+      "architecture": {
+        "scope": "Arquitetura e roteiro técnico",
+        "owner": "Comitê de direção técnica"
+      },
+      "codeReview": {
+        "scope": "Revisão de código e prontidão de versões",
+        "owner": "Mantenedores"
+      },
+      "plugins": {
+        "scope": "Compatibilidade de plugins e extensões",
+        "owner": "Grupos de projeto e mantenedores"
+      },
+      "clinicalSafety": {
+        "scope": "Segurança dos fluxos clínicos",
+        "owner": "Profissionais de saúde, mantenedores e lideranças de produto"
+      },
+      "securityDisclosure": {
+        "scope": "Divulgação e resposta a vulnerabilidades",
+        "owner": "Mantenedores de segurança e fundação"
+      }
+    }
+  },
+  "policies": {
+    "eyebrow": "Compromissos públicos",
+    "title": "A governança deve ser publicada como prática operacional, não como marca.",
+    "items": {
+      "contribution": {
+        "title": "Contribuição aberta",
+        "text": "As contribuições devem passar por repositórios públicos, regras claras de revisão e um caminho documentado para se tornar mantenedor."
+      },
+      "license": {
+        "title": "Clareza de licença",
+        "text": "O código do CARE está sob licença MIT. A documentação e os guias de implementação devem usar licenças de conteúdo aberto quando apropriado."
+      },
+      "releases": {
+        "title": "Governança de versões",
+        "text": "Versões estáveis, critérios de compatibilidade e a direção do suporte de longo prazo devem estar visíveis para as equipes de implementação."
+      },
+      "security": {
+        "title": "Relato de vulnerabilidades",
+        "text": "O relato de vulnerabilidades, as regras de divulgação, as práticas de controle de acesso e a auditabilidade são responsabilidades da fundação."
+      },
+      "conflicts": {
+        "title": "Tratamento de conflitos",
+        "text": "A fundação deve explicitar os conflitos de interesse e os caminhos de escalonamento de decisões à medida que o ecossistema cresce."
+      },
+      "clinical": {
+        "title": "Responsabilidade clínica",
+        "text": "Mudanças em fluxos clínicos e relacionadas à IA precisam de caminhos de revisão que respeitem a segurança, a auditabilidade e a responsabilidade humana."
+      }
+    }
+  },
+  "security": {
+    "eyebrow": "Confiança e segurança",
+    "title": "Segurança, qualidade das versões e segurança clínica são trabalho de governança.",
+    "body": "A infraestrutura aberta de saúde deve ser auditável, sustentável e segura para operar em contextos clínicos reais. A governança conecta a revisão técnica, a divulgação responsável, a compatibilidade entre versões e práticas de IA com revisão humana no processo.",
+    "securityCompliance": "Segurança e conformidade",
+    "contribute": "Contribua",
+    "items": {
+      "auditTrails": "Trilhas de auditoria",
+      "accessControls": "Controles de acesso",
+      "releaseReadiness": "Prontidão de versões",
+      "maintainerReview": "Revisão por mantenedores"
+    }
+  }
+}

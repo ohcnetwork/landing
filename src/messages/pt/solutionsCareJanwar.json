@@ -1,0 +1,269 @@
+{
+  "meta": {
+    "title": "CARE Janwar - EMR veterinário e de saúde animal de código aberto",
+    "description": "O CARE Janwar é um modelo sobre o CARE Core para clínicas veterinárias, programas públicos de saúde animal, visitas de campo, vacinação, diagnóstico, farmácia e painéis.",
+    "ogTitle": "CARE Janwar - Infraestrutura aberta para a saúde animal",
+    "ogDescription": "Um modelo do CARE para clínicas veterinárias, programas públicos de saúde animal, visitas de campo, vacinação, diagnóstico, farmácia e painéis.",
+    "ogImageAlt": "Logotipo do CARE Janwar",
+    "twitterDescription": "Fluxos veterinários e de saúde animal pública construídos sobre o CARE Core."
+  },
+  "structuredData": {
+    "description": "O CARE Janwar é um modelo de código aberto de EMR veterinário e de saúde animal para clínicas, visitas de campo, vacinação, diagnóstico, farmácia, faturamento, estoque e painéis.",
+    "featureList": [
+      "Registros de animais e tutores",
+      "Atendimentos veterinários e visitas de campo",
+      "Calendários de vacinação e fluxos de campanhas",
+      "Diagnóstico, farmácia, estoque e faturamento",
+      "Painéis e relatórios de programas",
+      "Registros estruturados de saúde animal prontos para IA"
+    ]
+  },
+  "hero": {
+    "title": "Infraestrutura aberta para a saúde animal.",
+    "body": "O CARE Janwar adapta o CARE Core para clínicas veterinárias, programas públicos de saúde animal, visitas de campo, vacinação, diagnóstico, farmácia, faturamento, estoque e painéis de programa.",
+    "discuss": "Converse sobre fluxos de saúde animal",
+    "exploreCore": "Conheça o CARE Core",
+    "pills": [
+      "EMR veterinário",
+      "Visitas de campo",
+      "Vacinação",
+      "Diagnóstico",
+      "Farmácia",
+      "Painéis de programa"
+    ]
+  },
+  "visual": {
+    "recordLabel": "Prontuário veterinário",
+    "programLabel": "Camada de programa",
+    "solutionLabel": "Solução CARE",
+    "oneHealth": "Pronto para Saúde Única",
+    "subjectModel": [
+      "Registro do animal",
+      "Tutor ou responsável",
+      "Espécie",
+      "Raça",
+      "Idade e sexo",
+      "Unidade",
+      "Atendimento",
+      "Vacinação",
+      "Medicação",
+      "Resultado de exame",
+      "Visita de campo",
+      "Acompanhamento"
+    ],
+    "activities": [
+      "Consulta na clínica",
+      "Ação de campo",
+      "Vacinação",
+      "Laudo laboratorial"
+    ],
+    "sharedLayer": {
+      "title": "Camada operacional compartilhada",
+      "text": "Registros, atendimentos, vacinação, farmácia, laboratório, faturamento, visitas de campo e painéis permanecem conectados."
+    }
+  },
+  "overview": {
+    "eyebrow": "Por que o CARE Janwar",
+    "title": "A saúde animal precisa de registros, fluxos, estoque e visibilidade dos programas.",
+    "body": "O cuidado veterinário vai além de uma nota de consulta. Envolve tutores, responsáveis, localidades, espécies, calendários de vacinação, medicamentos, resultados de exames, equipes de campo, programas públicos e relatórios operacionais. O CARE Janwar reúne esses fluxos sobre a mesma base aberta.",
+    "useCases": {
+      "clinics": {
+        "title": "Clínicas veterinárias",
+        "text": "Fluxos de cadastro, consultas, prescrições, vacinação, faturamento, acompanhamento e farmácia."
+      },
+      "hospitals": {
+        "title": "Hospitais veterinários públicos",
+        "text": "Operação das unidades, demanda ambulatorial, farmácia, diagnóstico, relatórios, perfis de usuários e supervisão dos programas."
+      },
+      "field": {
+        "title": "Equipes móveis e de campo",
+        "text": "Visitas de campo, contexto de localização, direcionamento para uso offline, campanhas de vacinação e listas de acompanhamento."
+      },
+      "programs": {
+        "title": "Programas de saúde animal",
+        "text": "Campanhas de vacinação, direcionamento para vigilância de doenças, fluxos de bem-estar animal, laboratório e painéis distritais."
+      }
+    }
+  },
+  "workflow": {
+    "eyebrow": "Fluxo de saúde animal",
+    "title": "Do cadastro ao acompanhamento em campo.",
+    "body": "O CARE Janwar pode conectar consultas na clínica, vacinação, diagnóstico, farmácia, equipes de campo e painéis por meio de um único prontuário longitudinal.",
+    "steps": {
+      "register": {
+        "title": "Cadastrar",
+        "text": "Crie o contexto do animal, do tutor ou responsável, da unidade e da localidade."
+      },
+      "triage": {
+        "title": "Triar",
+        "text": "Registre o motivo da consulta, observações específicas da espécie e sinais de risco."
+      },
+      "examine": {
+        "title": "Examinar",
+        "text": "Registre notas clínicas, sinais vitais, achados, diagnóstico e orientações de cuidado."
+      },
+      "order": {
+        "title": "Solicitar",
+        "text": "Solicite exames laboratoriais, direcionamento para exames de imagem, procedimentos, medicamentos ou encaminhamentos."
+      },
+      "vaccinate": {
+        "title": "Vacinar",
+        "text": "Acompanhe calendários de vacinação, doses, dados de lote e lembretes."
+      },
+      "dispense": {
+        "title": "Dispensar",
+        "text": "Conecte as prescrições à farmácia, ao estoque e às trilhas de auditoria."
+      },
+      "followUp": {
+        "title": "Acompanhar",
+        "text": "Agende uma reavaliação, visita de campo, encaminhamento ou ação no nível do programa."
+      },
+      "report": {
+        "title": "Monitorar",
+        "text": "Veja a atividade clínica, o estoque, a cobertura vacinal e os sinais do programa."
+      }
+    }
+  },
+  "capabilities": {
+    "eyebrow": "Recursos do produto",
+    "title": "Os blocos de construção para programas veterinários e de saúde animal pública.",
+    "body": "O CARE Janwar adapta o modelo operacional do CARE para prontuários clínicos, fluxos de campo, vacinação, diagnóstico, farmácia, estoque, faturamento e painéis de programa.",
+    "items": {
+      "records": {
+        "title": "Registros de animais e tutores",
+        "text": "Prontuários longitudinais dos animais vinculados a tutores, responsáveis, unidades, localidades, identificadores e histórico de consultas."
+      },
+      "encounters": {
+        "title": "Atendimentos veterinários",
+        "text": "Fluxos ambulatoriais, de internação, observação, visita de campo e acompanhamento, com formulários clínicos configuráveis."
+      },
+      "vaccination": {
+        "title": "Fluxos de vacinação",
+        "text": "Calendários de vacinação, registros de doses, dados de lote, lembretes, relatórios de campanhas e painéis de cobertura."
+      },
+      "diagnostics": {
+        "title": "Diagnóstico e laboratório",
+        "text": "Solicitações de exames, direcionamento para rastreamento de amostras, laudos, revisão de resultados e observações estruturadas."
+      },
+      "pharmacy": {
+        "title": "Farmácia e estoque",
+        "text": "Solicitações de medicamentos, dispensação, substituições, alertas de estoque, compras, controle de validade e registros de movimentação."
+      },
+      "billing": {
+        "title": "Faturamento e contas",
+        "text": "Cobrança de serviços, faturas, recibos, registro de pagamentos, direcionamento para programas governamentais e relatórios financeiros diários."
+      },
+      "field": {
+        "title": "Cuidado em campo e móvel",
+        "text": "Fluxos pensados para o celular em visitas a propriedades rurais, clínicas de campo, acompanhamento de surtos, mutirões comunitários e áreas remotas."
+      },
+      "dashboards": {
+        "title": "Painéis de programa",
+        "text": "Acompanhe consultas, categorias de doenças, vacinação, estoque, atividade laboratorial, cobertura geográfica e carga operacional."
+      }
+    }
+  },
+  "core": {
+    "eyebrow": "Construído sobre o CARE Core",
+    "title": "Um fluxo especializado não deveria exigir uma base separada.",
+    "body": "O CARE Janwar é um modelo de solução sobre o mesmo núcleo aberto: registros, atendimentos, formulários, usuários, perfis, solicitações, tarefas, relatórios, APIs, trilhas de auditoria e extensões baseadas em plugins.",
+    "benefits": [
+      "Adaptado dos componentes fundamentais do CARE Core",
+      "De código aberto e sob licença MIT",
+      "Formulários e terminologia configuráveis",
+      "Auto-hospedável, sob controle do setor público",
+      "Acesso baseado em perfis e trilhas de auditoria",
+      "Extensível com plugins de farmácia, laboratório, faturamento, painéis e IA"
+    ]
+  },
+  "implementation": {
+    "eyebrow": "Modelo de implementação",
+    "title": "Comece pelo registro do cuidado. Expanda para a camada de saúde pública.",
+    "body": "Implantações de saúde animal podem começar pelos fluxos da clínica e se estender a equipes de campo, campanhas de vacinação, laboratório, estoque e painéis de programa.",
+    "steps": {
+      "model": {
+        "title": "Modele o contexto de cuidado",
+        "text": "Defina os fluxos de clínica, hospital, campo, programa, vacinação, laboratório, farmácia e relatórios."
+      },
+      "configure": {
+        "title": "Configure registros e formulários",
+        "text": "Defina atributos dos animais, campos de espécie e raça, modelos de atendimento, formulários de vacinação e a lógica de acompanhamento."
+      },
+      "launch": {
+        "title": "Coloque o ciclo principal em operação",
+        "text": "Comece por cadastro, atendimento, prescrição, vacinação, faturamento, relatórios e movimentação de estoque."
+      },
+      "scale": {
+        "title": "Amplie por programa",
+        "text": "Estenda para visitas de campo, painéis de campanhas, diagnóstico, compras, direcionamento para vigilância e apoio de IA."
+      }
+    }
+  },
+  "ai": {
+    "eyebrow": "Saúde animal pronta para IA",
+    "title": "A IA deve apoiar as equipes de campo e clínicas, com revisão.",
+    "body": "O CARE Janwar pode disponibilizar dados estruturados de saúde animal para fluxos assistivos, como redação de notas de campo, resumos, alertas de campos faltantes, revisão de estoque e monitoramento de programas.",
+    "items": {
+      "fieldNotes": {
+        "title": "Rascunhos de notas de campo",
+        "text": "Converta observações de campo e notas faladas em rascunhos de registros estruturados para revisão."
+      },
+      "summaries": {
+        "title": "Resumos de prontuários",
+        "text": "Resuma o histórico do animal, vacinas, tratamentos, acompanhamentos pendentes e diagnósticos recentes."
+      },
+      "signals": {
+        "title": "Sinais do programa",
+        "text": "Ajude as equipes de programa a identificar padrões, campos faltantes, acompanhamentos atrasados, falta de estoque e atividades incomuns."
+      }
+    }
+  },
+  "outcomes": {
+    "eyebrow": "Resultados a medir",
+    "title": "Meça a continuidade do cuidado e a visibilidade em saúde pública.",
+    "items": {
+      "continuity": {
+        "title": "Continuidade do cuidado",
+        "text": "retornos, acompanhamentos concluídos, lembretes de vacinação"
+      },
+      "coverage": {
+        "title": "Cobertura do programa",
+        "text": "visitas de campo, cobertura de campanhas, abrangência geográfica, atividade das unidades"
+      },
+      "operations": {
+        "title": "Operações",
+        "text": "níveis de estoque, validade, faturamento, tempo de resposta do laboratório, carga de trabalho das equipes"
+      },
+      "dataQuality": {
+        "title": "Qualidade dos dados",
+        "text": "registros completos, campos codificados, redução de duplicidades, uso dos painéis"
+      }
+    }
+  },
+  "faq": {
+    "items": {
+      "what": {
+        "question": "O que é o CARE Janwar?",
+        "answer": "O CARE Janwar é um modelo sobre o CARE Core para fluxos veterinários e de saúde animal pública. Ele adapta conceitos do CARE, como registros, atendimentos, formulários, solicitações, farmácia, estoque, faturamento, relatórios, controle de acesso e painéis, a contextos de saúde animal."
+      },
+      "separate": {
+        "question": "O CARE Janwar é uma plataforma separada?",
+        "answer": "O ideal é tratá-lo como uma solução construída sobre o CARE Core, e não como um produto desconectado. A implantação pode usar registros, formulários, terminologia, relatórios e fluxos específicos da veterinária, continuando a fortalecer a arquitetura compartilhada do CARE."
+      },
+      "programs": {
+        "question": "Ele pode apoiar programas públicos de saúde animal?",
+        "answer": "Sim. O modelo pode apoiar campanhas de vacinação, visitas de campo, hospitais veterinários públicos, fluxos de laboratório, farmácia e estoque, painéis distritais e relatórios de programa quando adaptado a um programa específico."
+      },
+      "judgment": {
+        "question": "Isso substitui o julgamento veterinário?",
+        "answer": "Não. O CARE Janwar registra e coordena fluxos. A IA, quando usada, deve continuar assistiva, revisada, governada por perfis de acesso e sujeita a auditoria."
+      }
+    }
+  },
+  "final": {
+    "eyebrow": "Implante o CARE Janwar",
+    "title": "Construa fluxos de saúde animal sobre a mesma base aberta.",
+    "body": "O CARE Janwar oferece a parceiros de implementação e programas públicos um ponto de partida para prontuários veterinários, fluxos de campo, vacinação, diagnóstico, farmácia, estoque, faturamento e visibilidade dos programas.",
+    "start": "Converse sobre os seus fluxos"
+  }
+}

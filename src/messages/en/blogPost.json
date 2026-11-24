@@ -1,0 +1,13 @@
+{
+  "meta": {
+    "coverImageAlt": "{title} cover image"
+  },
+  "author": "Author",
+  "readingTime": "Reading time",
+  "readingTimeValue": "{minutes} min read",
+  "categories": "Categories",
+  "newer": "Newer",
+  "older": "Older",
+  "backToBlog": "Back to blog",
+  "tableOfContents": "In this article"
+}

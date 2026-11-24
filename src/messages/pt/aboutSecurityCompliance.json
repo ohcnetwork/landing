@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "title": "Segurança e conformidade — Plataforma CARE",
+    "description": "O CARE foi projetado para interoperabilidade baseada em padrões, acesso baseado em perfis, auditabilidade e opções de hospedagem soberana."
+  },
+  "hero": {
+    "title": "Padrões, privacidade e controle desde a concepção.",
+    "body": "O CARE foi projetado para interoperabilidade baseada em padrões, controles de acesso robustos, auditabilidade e opções de hospedagem soberana."
+  },
+  "standards": {
+    "eyebrow": "Padrões",
+    "title": "Construído sobre padrões globais de saúde para a interoperabilidade",
+    "body": "<strong>FHIR R5</strong>, <strong>SNOMED</strong>, <strong>LOINC</strong>, <strong>UCUM</strong>, <strong>ICD‑10</strong>; servidor de terminologia; <strong>BYOT</strong>.",
+    "items": {
+      "fhir": "Fast Healthcare Interoperability Resources",
+      "snomed": "Terminologia clínica",
+      "loinc": "Códigos laboratoriais",
+      "icd10": "Códigos de diagnóstico"
+    }
+  },
+  "access": {
+    "eyebrow": "Acesso e segurança",
+    "title": "Modelo organizacional hierárquico com RBAC e registro abrangente de atividades",
+    "hierarchy": {
+      "eyebrow": "Modelo organizacional",
+      "title": "Estrutura hierárquica",
+      "description": "Hierarquia nacional → estadual → distrital → unidade de saúde, com controle de acesso baseado em perfis.",
+      "graphicTitle": "RBAC",
+      "graphicLabel": "Controle de acesso"
+    },
+    "auditTrails": {
+      "eyebrow": "Registro e monitoramento",
+      "title": "Trilhas de auditoria abrangentes",
+      "description": "Todas as ações são registradas em trilhas de auditoria detalhadas para conformidade e monitoramento de segurança.",
+      "graphicTitle": "Auditoria",
+      "graphicLabel": "Trilhas"
+    },
+    "monitoring": {
+      "eyebrow": "Painéis",
+      "title": "Monitoramento em tempo real",
+      "description": "Painéis ao vivo para monitorar o sistema, a atividade dos usuários e eventos de segurança.",
+      "graphicTitle": "Ao vivo",
+      "graphicLabel": "Monitoramento"
+    }
+  },
+  "sovereignty": {
+    "eyebrow": "Infraestrutura soberana",
+    "title": "Implante na sua VPC ou nuvem governamental com controle total",
+    "body": "<strong>Sem taxas de licença</strong>; o código e os dados são seus. Implante na sua infraestrutura com soberania e controle totais.",
+    "items": {
+      "infrastructure": {
+        "title": "Sua infraestrutura",
+        "text": "Implante na sua VPC, na nuvem governamental ou em um ambiente híbrido"
+      },
+      "licenseFees": {
+        "title": "Sem taxas de licença",
+        "text": "Com a licença MIT, não há custos recorrentes de licenciamento nem dependência de fornecedor"
+      },
+      "dataOwnership": {
+        "title": "Propriedade dos dados",
+        "text": "Todos os dados e o código são seus, com controle e soberania totais"
+      }
+    }
+  },
+  "aiReady": {
+    "eyebrow": "Pronto para IA, com salvaguardas",
+    "title": "Ferramentas de IA se integram sem alterar o núcleo",
+    "body": "Preenchimento por voz, escriba com IA e outras ferramentas assistivas devem funcionar como plugins, sem modificar a plataforma central, preservando a segurança, a manutenibilidade e a revisão humana.",
+    "plugins": {
+      "title": "Plugins de IA",
+      "body": "Ferramentas de IA funcionam como plugins, sem modificar a plataforma central",
+      "items": [
+        "Voz para texto em notas clínicas",
+        "Escriba com IA para rascunhos de documentação",
+        "Resumos com revisão do profissional de saúde",
+        "Compreensão de documentos para fluxos estruturados"
+      ]
+    },
+    "guardrails": {
+      "title": "Salvaguardas de segurança",
+      "body": "Medidas de segurança nativas garantem que as ferramentas de IA não comprometam a integridade dos dados",
+      "items": [
+        "Controles de acesso baseados em perfis",
+        "Trilhas de auditoria das interações com IA",
+        "Estados claros de rascunho e revisão",
+        "Responsabilidade humana pelas decisões clínicas"
+      ]
+    }
+  }
+}

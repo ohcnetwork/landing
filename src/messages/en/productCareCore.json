@@ -1,0 +1,231 @@
+{
+  "meta": {
+    "title": "CARE Core - The Open Healthcare OS Layer",
+    "description": "CARE Core is the open, MIT-licensed, FHIR R5-aligned operating layer for healthcare: shared primitives, APIs, role-based access, audit trails, forms, encounters, orders, labs, pharmacy, billing, analytics, and plugin-ready workflows.",
+    "ogDescription": "The stable standards-based core behind CARE: primitives, APIs, workflows, plugins, and AI-ready health data infrastructure.",
+    "ogImageAlt": "CARE Core clinical workflow interface",
+    "twitterDescription": "Open, standards-based healthcare infrastructure for hospitals, public health programs, and care coordination."
+  },
+  "structuredData": {
+    "description": "CARE Core is the open, MIT-licensed, FHIR R5-aligned operating layer for healthcare workflows across hospitals, public health programs, and care coordination.",
+    "featureList": [
+      "Patients, facilities, users, roles, and access control",
+      "Encounters, observations, clinical documentation, orders, and reports",
+      "Questionnaires, configurable forms, terminology bindings, and APIs",
+      "Labs, pharmacy, inventory, billing, scheduling, and analytics workflows",
+      "Plugin-ready integrations for AI, TeleICU, devices, messaging, claims, and national rails",
+      "Self-hostable deployment models with audit trails and standards-aligned data"
+    ]
+  },
+  "coreSlab": {
+    "eyebrow": "Platform core",
+    "modules": {
+      "administration": {
+        "name": "Administration",
+        "detail": "Patients / Facilities / Users"
+      },
+      "definitions": {
+        "name": "Definitions",
+        "detail": "ValueSets / Questionnaires"
+      },
+      "clinical": {
+        "name": "Clinical",
+        "detail": "Encounters / Observations"
+      },
+      "scheduling": {
+        "name": "Scheduling",
+        "detail": "Schedules / Slots / Bookings"
+      },
+      "pharmacy": {
+        "name": "Pharmacy",
+        "detail": "Dispense / Inventory"
+      },
+      "labs": {
+        "name": "Labs",
+        "detail": "Service requests / Diagnostics"
+      },
+      "billing": {
+        "name": "Billing",
+        "detail": "Claims / Coverage / Invoice"
+      },
+      "coordination": {
+        "name": "Coordination",
+        "detail": "Tasks / Care plans / Referrals"
+      }
+    },
+    "persistence": "Persistence / <b>PostgreSQL</b> / <b>Redis</b> / <b>Object Storage</b>",
+    "runtime": "Runtime / <b>Django</b> / <b>DRF</b> / <b>Celery</b>"
+  },
+  "heroVisual": {
+    "pluginSurface": "Plugin surface",
+    "plugins": [
+      "AI Scribe",
+      "TeleICU",
+      "Devices",
+      "Claims",
+      "Messaging",
+      "Analytics"
+    ],
+    "enabledSolutions": "Enabled solutions",
+    "solutions": [
+      "Hospital OS",
+      "Critical care",
+      "Palliative care",
+      "Clinic networks",
+      "Public health programs"
+    ]
+  },
+  "hero": {
+    "title": "The open healthcare OS starts with Core.",
+    "body": "CARE Core is the stable, standards-based operating layer behind CARE: shared healthcare primitives, APIs, permissions, audit trails, modules, and plugin surfaces that let many solutions run on one trusted foundation.",
+    "seePlugins": "See Core + plugins",
+    "developerDocs": "Developer docs",
+    "proofPoints": [
+      "Verified Digital Public Good",
+      "MIT licensed",
+      "FHIR R5-aligned",
+      "API-first",
+      "Self-hostable"
+    ]
+  },
+  "architecture": {
+    "eyebrow": "Architecture",
+    "title": "A kernel for healthcare workflows.",
+    "body": "CARE Core keeps the primitives stable so hospitals, public health programs, implementation partners, and AI tools can build on the same record, the same permissions, and the same integration surface.",
+    "items": {
+      "sharedCore": {
+        "title": "Stable shared core",
+        "text": "Patients, facilities, providers, encounters, observations, orders, forms, tasks, care plans, reports, roles, and audit trails live in one reusable foundation."
+      },
+      "workflows": {
+        "title": "Configurable workflows",
+        "text": "Programs can model clinical and operational workflows through questionnaires, forms, terminology bindings, and deployment-specific configuration."
+      },
+      "plugins": {
+        "title": "Plugin-ready surface",
+        "text": "Apps and integrations add AI scribe, TeleICU, devices, labs, pharmacy, billing, messaging, claims, analytics, and national rails without fragmenting the core."
+      }
+    }
+  },
+  "primitives": {
+    "eyebrow": "Core primitives",
+    "title": "Reusable building blocks, not one-off screens.",
+    "body": "Each CARE deployment can look different at the workflow layer while sharing the same data model, access model, audit trail, and API surface underneath.",
+    "items": {
+      "patients": "Patients and identity",
+      "facilities": "Facilities and hierarchy",
+      "providers": "Providers and teams",
+      "encounters": "Encounters and episodes",
+      "forms": "Questionnaires and forms",
+      "observations": "Observations and vitals",
+      "orders": "Orders and requests",
+      "medications": "Medications and pharmacy",
+      "labs": "Labs and diagnostics",
+      "scheduling": "Scheduling and slots",
+      "access": "Access control and audit",
+      "reports": "Reports and analytics"
+    }
+  },
+  "demos": {
+    "eyebrow": "Workflow modules",
+    "title": "The Core becomes visible where work happens.",
+    "body": "CARE Core is not a blank data platform. It ships with real clinical, operational, and financial workflows that can be composed into HMIS, EMR, care coordination, and public health deployments.",
+    "videoLabel": "CARE Core {title} demo",
+    "items": {
+      "dataCapture": {
+        "title": "Clinical data capture",
+        "text": "Structured forms, observations, notes, terminology, and clinical context captured inside the longitudinal record."
+      },
+      "emrForms": {
+        "title": "Configurable EMR forms",
+        "text": "Program and hospital teams can shape workflows without turning every deployment into a new product fork."
+      },
+      "labs": {
+        "title": "Lab management",
+        "text": "Orders, samples, diagnostic reports, values, units, and results flow back into the same patient timeline."
+      },
+      "pharmacy": {
+        "title": "Pharmacy and inventory",
+        "text": "Prescriptions connect to dispense, stock movement, substitutions, alerts, procurement, and inventory visibility."
+      },
+      "billing": {
+        "title": "Billing and accounting",
+        "text": "Invoices, payments, claims, coverage, scheme support, and reconciliation stay connected to real care activity."
+      },
+      "reports": {
+        "title": "Dynamic reports",
+        "text": "Clinical and operational reports are generated from the same structured workflows, not rebuilt in spreadsheets later."
+      }
+    }
+  },
+  "plugins": {
+    "eyebrow": "Core + plugins",
+    "title": "Keep the foundation stable. Let solutions move faster.",
+    "body": "CARE Apps extend the platform for AI documentation, TeleICU, devices, messaging, claims, analytics, terminology, national rails, and deployment-specific workflows. The result is reuse without lock-in, and extension without fragmentation.",
+    "exploreApps": "Explore apps and integrations"
+  },
+  "standards": {
+    "eyebrow": "Standards layer",
+    "title": "Designed for interoperability before the first integration.",
+    "body": "CARE Core models healthcare data and workflows around open standards, open APIs, configurable terminology, and deployment patterns that institutions can own.",
+    "items": {
+      "fhir": {
+        "name": "FHIR R5",
+        "detail": "resource model and APIs"
+      },
+      "snomed": {
+        "name": "SNOMED CT",
+        "detail": "clinical terminology direction"
+      },
+      "loinc": {
+        "name": "LOINC",
+        "detail": "labs and observations"
+      },
+      "ucum": {
+        "name": "UCUM",
+        "detail": "units of measure"
+      },
+      "icd10": {
+        "name": "ICD-10",
+        "detail": "classification support"
+      },
+      "openApis": {
+        "name": "Open APIs",
+        "detail": "integration by design"
+      }
+    }
+  },
+  "deployment": {
+    "eyebrow": "Deployment model",
+    "title": "Built for institutions that need ownership.",
+    "body": "CARE Core is open-source and self-hostable. Governments, hospitals, and implementation partners can deploy it locally, integrate it with their ecosystem, and keep improving the shared core.",
+    "items": {
+      "sovereign": {
+        "title": "Sovereign hosting",
+        "text": "Deploy in a government cloud, hospital VPC, managed cloud, hybrid model, or on-prem environment."
+      },
+      "mobile": {
+        "title": "Mobile-first care",
+        "text": "Support wards, clinics, home visits, field teams, and frontline workflows from the same platform primitives."
+      },
+      "aiReady": {
+        "title": "AI-ready records",
+        "text": "Assistive AI works best when patient context, forms, encounters, permissions, and audit trails already exist."
+      }
+    }
+  },
+  "stewardship": {
+    "eyebrow": "Foundation stewardship",
+    "title": "Open healthcare infrastructure needs more than code.",
+    "body": "OHC Foundation stewards CARE Core so it can serve as durable public-good infrastructure: release discipline, security, documentation, standards alignment, implementation guidance, contributor pathways, and a neutral home for governments, hospitals, funders, developers, and implementation partners.",
+    "governance": "Governance model",
+    "fund": "Fund the commons"
+  },
+  "final": {
+    "eyebrow": "Build on CARE Core",
+    "title": "One open foundation. Many healthcare systems.",
+    "body": "Use CARE Core to deploy hospital systems, critical care networks, palliative care grids, clinic workflows, public health programs, and AI-assisted healthcare tools without starting from scratch.",
+    "exploreHmis": "Explore CARE HMIS",
+    "talk": "Talk to OHC"
+  }
+}

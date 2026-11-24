@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "title": "Foundation Team - Open Healthcare Network Foundation",
+    "description": "The foundation team operating OHC Foundation, CARE Core, open healthcare infrastructure, AI, product, engineering, partnerships, and ecosystem enablement."
+  },
+  "hero": {
+    "eyebrow": "Foundation team",
+    "title": "The operators building the institution.",
+    "body": "This page is the foundation team roster. It starts with the CEO and CTO, and is structured so product, engineering, AI, partnerships, documentation, community, and operations roles can be added as the foundation grows.",
+    "boardAdvisors": "Board and advisors",
+    "governance": "Governance model"
+  },
+  "operatingAreas": {
+    "eyebrow": "Operating model",
+    "title": "A small foundation team with high leverage.",
+    "body": "The foundation team exists to make CARE reusable, governable, and fundable beyond any one deployment. The roster will expand as roles become public.",
+    "items": {
+      "productAi": {
+        "title": "Product and AI",
+        "text": "Roadmap, workflow strategy, assistive AI direction, and product quality for healthcare users."
+      },
+      "engineering": {
+        "title": "Architecture and engineering",
+        "text": "CARE Core, APIs, plugins, implementation quality, and platform maintainability."
+      },
+      "operations": {
+        "title": "Foundation operations",
+        "text": "Governance support, documentation, fundraising readiness, reporting, and institutional systems."
+      },
+      "ecosystem": {
+        "title": "Ecosystem enablement",
+        "text": "Implementation partners, hospitals, governments, funders, clinicians, and open-source contributors."
+      }
+    }
+  },
+  "team": {
+    "eyebrow": "Current team",
+    "title": "Foundation operating leads.",
+    "body": "This public roster starts intentionally small and is built to expand. Product, engineering, AI, community, partnerships, documentation, and operations leaders can be added as the foundation publishes those roles.",
+    "headshotAlt": "{name} headshot"
+  },
+  "people": {
+    "bodhishThomas": {
+      "role": "Chief Executive Officer"
+    },
+    "vigneshHari": {
+      "role": "Chief Technology Officer"
+    }
+  },
+  "roster": {
+    "eyebrow": "Public roster",
+    "title": "Leadership should be visible, current, and deliberate.",
+    "body": "The foundation team page will expand as roles are confirmed for publication, with clear accountability for product, engineering, partnerships, operations, community, and stewardship.",
+    "signalTitle": "Stewardship signal",
+    "signalBody": "A public roster helps governments, funders, hospitals, and contributors understand who is accountable for the institution behind CARE and related open healthcare infrastructure."
+  }
+}

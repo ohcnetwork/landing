@@ -1,0 +1,218 @@
+{
+  "meta": {
+    "title": "Build on Care | Open Healthcare Network",
+    "description": "Build plugins, integrations, and AI-assisted workflows on Care. Watch the walkthrough, explore real examples, and start with the Care plugin scaffold.",
+    "ogImageAlt": "Open Healthcare Network — Digital Public Goods for Healthcare"
+  },
+  "skipLink": "Skip to content",
+  "architecture": {
+    "label": "THE BUILDING BLOCKS",
+    "core": {
+      "number": "01 / THE FOUNDATION",
+      "capabilities": [
+        "Patients & encounters",
+        "Forms & questionnaires",
+        "Scheduling",
+        "Facilities & organizations"
+      ]
+    },
+    "extension": {
+      "number": "02 / YOUR EXTENSION",
+      "heading": "Make it your own.",
+      "options": {
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "integration": "Integration"
+      },
+      "body": "Choose what your workflow needs."
+    },
+    "workflow": {
+      "number": "03 / THE EXPERIENCE",
+      "heading": "A useful workflow.",
+      "body": "For a care team, an administrator, or the people you build for."
+    },
+    "caption": "Care Core provides shared healthcare capabilities. Add the frontend, backend, or integration your feature needs to create a focused workflow."
+  },
+  "hero": {
+    "eyebrow": "BUILD ON CARE",
+    "title": "Build your next healthcare application <accent>on Care.</accent>",
+    "body": "Create plugins, integrations and AI-assisted workflows on an open-source healthcare platform. Start with the walkthrough, use the developer tools, and bring your idea to life.",
+    "startBuilding": "Start building",
+    "watch": "Watch the walkthrough",
+    "docs": "Read the plugin docs",
+    "footnote": "Your idea. A shared foundation. Open source."
+  },
+  "sectionNav": {
+    "label": "On this page",
+    "title": "A PLACE TO BEGIN",
+    "watch": "Watch",
+    "understand": "Understand",
+    "build": "Build",
+    "explore": "Explore"
+  },
+  "walkthrough": {
+    "eyebrow": "01 / THE WALKTHROUGH",
+    "title": "See how to build on Care.",
+    "body": "A walkthrough to help you get started with Care’s developer tools and plugin ecosystem.",
+    "note": "Get oriented, then take the next step with the scaffold and documentation below.",
+    "link": "Go to the getting-started path",
+    "player": {
+      "videoTitle": "How to Build Healthcare Apps on CARE",
+      "load": "Load the Care walkthrough video",
+      "label": "CARE / DEVELOPER WALKTHROUGH",
+      "title": "See where your idea begins.",
+      "hint": "Load the walkthrough",
+      "captionIdle": "Loads Loom only when you choose to watch.",
+      "captionLoaded": "Player not loading? Open the video on Loom.",
+      "watchOnLoom": "Watch on Loom"
+    }
+  },
+  "platform": {
+    "eyebrow": "02 / THE PLATFORM",
+    "title": "Extend the platform.<br></br>Build your workflow.",
+    "body": "Reuse Care’s patient and encounter data, forms, scheduling, and organizational structure. Keep your extension focused on the new experience you want to create.",
+    "extensions": {
+      "frontend": {
+        "title": "Frontend plugins",
+        "description": "Add the interface your users need: a view, a navigation entry, or a component in an existing workflow.",
+        "detail": "React apps declare supported extension points in a <code>{file}</code> and can be delivered through Vite module federation."
+      },
+      "backend": {
+        "title": "Backend plugins",
+        "description": "Add server-side logic, APIs, or a connection to an external service. Keep service credentials on the server.",
+        "detail": "Django apps register with Care’s PlugManager and expose their own namespaced API routes."
+      },
+      "integrations": {
+        "title": "Integrations",
+        "description": "Connect a device or another system to a focused Care workflow using the available APIs and extension points.",
+        "detail": "Use a frontend, a backend, or both as needed. Check the supported interfaces for your target Care version."
+      }
+    },
+    "footer": "Not every feature needs both a frontend and a backend plugin. Some ideas may need changes to core.",
+    "link": "Explore the architecture"
+  },
+  "start": {
+    "eyebrow": "03 / YOUR FIRST BUILD",
+    "title": "From an idea to your first plugin.",
+    "body": "Start small. Make one workflow work from end to end.",
+    "steps": {
+      "workflow": {
+        "title": "Choose a focused workflow",
+        "body": "Define the user, their problem, and one useful outcome. Choose a small feature you can demonstrate with synthetic data."
+      },
+      "workspace": {
+        "title": "Set up your workspace",
+        "body": "The Care scaffold brings together plugin-building guidance and frontend and backend templates in an isolated development workspace.",
+        "prerequisites": "Have Git, Node.js/npm, Python 3, and Docker with Compose available. Check the current setup instructions for required versions and environment checks.",
+        "scaffold": "Open the scaffold",
+        "setup": "Setup instructions"
+      },
+      "tools": {
+        "title": "Build with the right tools",
+        "agent": "<strong>With an AI coding agent:</strong> use the starter prompt and let the scaffold’s plugin-building guidance help shape your implementation.",
+        "docs": "<strong>With the documentation:</strong> follow the plugin guide and use the templates as a starting point.",
+        "link": "Read the plugin guide"
+      },
+      "test": {
+        "title": "Test the workflow",
+        "body": "Run the demo end to end. Check permissions, write clear setup instructions, and document limitations. A working prototype is the starting point for further validation."
+      }
+    },
+    "note": {
+      "title": "Build with synthetic data.",
+      "body": "Use synthetic data while developing and demonstrating your project. Before using a solution in clinical care, validate the workflow and review security, access controls, privacy and operational requirements."
+    }
+  },
+  "starterPrompt": {
+    "label": "YOUR IDEA → A PLAN",
+    "title": "Start a useful conversation.",
+    "body": "Give your coding agent the context it needs. Replace the feature description with your idea.",
+    "promptLabel": "STARTER PROMPT",
+    "copy": "Copy starter prompt",
+    "copied": "Prompt copied",
+    "helpIdle": "Copies text only. Nothing is installed or run.",
+    "helpCopied": "Copied. Paste it into your coding agent and add your feature.",
+    "helpManual": "Clipboard unavailable. The prompt is selected above; copy it manually."
+  },
+  "toolkit": {
+    "eyebrow": "04 / THE TOOLKIT",
+    "title": "Keep these<br></br>within reach.",
+    "body": "A short path to the source.<br></br>Start with the scaffold and the docs; go deeper when your idea needs it.",
+    "items": {
+      "scaffold": {
+        "kind": "Start here",
+        "title": "Care plugin scaffold",
+        "description": "Start with a development workspace, plugin-building guidance, and frontend and backend templates.",
+        "action": "Open the scaffold"
+      },
+      "docs": {
+        "kind": "Guide",
+        "title": "Plugin documentation",
+        "description": "Understand the extension architecture and follow the development workflow.",
+        "action": "Read the docs"
+      },
+      "skills": {
+        "kind": "Agent tools",
+        "title": "AI coding skills",
+        "description": "Reusable agent guidance for Care reviews, analytics queries, report templates, and browser verification.",
+        "action": "Explore the skills"
+      },
+      "backendTemplate": {
+        "kind": "Template",
+        "title": "Backend plugin starter",
+        "description": "A focused Django plugin template when you need a backend starting point rather than the full scaffold workspace.",
+        "action": "View the template"
+      }
+    }
+  },
+  "examples": {
+    "eyebrow": "05 / IN THE OPEN",
+    "title": "Real code.<br></br>Useful starting points.",
+    "body": "Look inside two extensions to see how the pieces fit. These are reference implementations; check their setup, dependencies, and compatibility with your Care version.",
+    "items": {
+      "backendExample": {
+        "kind": "Backend example",
+        "description": "See a Django plugin authenticate Care users, check facility permissions, and issue short-lived Medispeak session tokens.",
+        "detail": "Service credentials stay on the server.",
+        "action": "Explore the backend"
+      },
+      "frontendExample": {
+        "kind": "Frontend example",
+        "description": "Explore a React app that extracts patient details from photographed forms and fills registration fields for user review.",
+        "detail": "A reference for extending the Care interface.",
+        "action": "Explore the frontend"
+      }
+    }
+  },
+  "ideas": {
+    "eyebrow": "IDEAS TO EXPLORE",
+    "title": "What will you build?",
+    "body": "Find a small problem worth solving.<br></br>Use these ideas as a starting point.",
+    "items": [
+      "A care-team view for follow-ups and coordination",
+      "An integration with a device or external service",
+      "AI-assisted documentation with human review",
+      "A focused operational dashboard"
+    ],
+    "hackathon": {
+      "title": "Building at a hackathon?",
+      "body": "Start with one workflow, use synthetic data, and make the demo easy for someone else to run.",
+      "checklistTitle": "YOUR DEMO CHECKLIST",
+      "checklist": [
+        "Problem & intended user",
+        "Working workflow",
+        "Setup instructions",
+        "Synthetic sample data",
+        "Known limitations"
+      ]
+    }
+  },
+  "closing": {
+    "eyebrow": "BUILT IN THE OPEN. BUILT TO BE EXTENDED.",
+    "title": "Bring your idea to Care.",
+    "body": "Start with the scaffold, explore an example, and build a focused workflow.",
+    "startBuilding": "Start building",
+    "docs": "Read the plugin docs",
+    "contribute": "Want to improve the shared platform? <link>Contribute to Care</link>"
+  }
+}

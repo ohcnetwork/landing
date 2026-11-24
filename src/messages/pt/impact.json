@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "title": "Impacto - O CARE em campo",
+    "description": "Impacto do CARE em cuidados paliativos em Kerala, TeleICU, implantações do CARE HMIS, colaboradores de código aberto e validação como Bem Público Digital."
+  },
+  "hero": {
+    "eyebrow": "Impacto",
+    "title": "Infraestrutura aberta de saúde, comprovada na prestação de cuidados.",
+    "body": "O CARE já não é apenas um projeto promissor de código aberto. Ele opera cuidados paliativos, terapia intensiva, fluxos hospitalares e infraestrutura de bem público em sistemas de saúde reais.",
+    "deploymentsMap": "Mapa de implantações do Care",
+    "updates": "Novidades de 2026"
+  },
+  "snapshot": {
+    "consultations": "consultas domiciliares",
+    "teleicuHospitals": "hospitais com TeleICU",
+    "hmisHospitals": "hospitais com HMIS",
+    "contributors": "colaboradores no GitHub"
+  },
+  "programs": {
+    "eyebrow": "Onde o CARE opera",
+    "title": "Um núcleo. Muitos sistemas de prestação de cuidados.",
+    "body": "Não são produtos separados. São modelos de implantação construídos sobre a mesma camada operacional aberta de saúde.",
+    "items": {
+      "palliative": {
+        "eyebrow": "Cuidados paliativos em Kerala",
+        "title": "Uma rede estadual de cuidado domiciliar.",
+        "text": "O CARE sustenta as operações diárias de unidades de atenção primária, ONGs, profissionais de saúde e equipes de campo que atendem pacientes que precisam de continuidade além do hospital."
+      },
+      "teleicu": {
+        "eyebrow": "TeleICU",
+        "title": "Terapia intensiva especializada, ampliada por meio de infraestrutura aberta.",
+        "text": "O CARE apoia fluxos de UTI no modelo hub-and-spoke entre hospitais, estados, pacientes e usuários clínicos diários."
+      },
+      "hmis": {
+        "eyebrow": "CARE HMIS 3.0",
+        "title": "Uma camada moderna de HMIS já em operação em diversas implantações.",
+        "text": "O CARE HMIS 3.0 apoia fluxos hospitalares de cadastro, atendimentos, notas, solicitações, laboratório, farmácia, faturamento, relatórios e análise de dados."
+      }
+    },
+    "metrics": {
+      "primaryCareCenters": "unidades de atenção primária",
+      "ngos": "ONGs",
+      "registeredPatients": "pacientes cadastrados",
+      "homeCareConsultations": "consultas domiciliares",
+      "dailyUsers": "usuários diários",
+      "hospitals": "hospitais",
+      "states": "estados",
+      "patients": "pacientes",
+      "dailyActiveUsers": "usuários ativos diários",
+      "deploymentStates": "estados com implantação",
+      "liveDeployment": "implantação ativa",
+      "liveDeployments": "implantações ativas"
+    },
+    "places": {
+      "kerala": "Kerala",
+      "karnataka": "Karnataka",
+      "jharkhandAssamManipur": "Jharkhand, Assam, Manipur"
+    }
+  },
+  "map": {
+    "eyebrow": "Mapa de implantações do Care",
+    "title": "A comprovação das implantações deve ser visível, navegável e atualizada.",
+    "body": "O mapa mostra onde programas baseados no CARE já operaram em saúde pública, hospitais, terapia intensiva e atenção comunitária. A página de novidades de 2026 traz o panorama atual à medida que as implantações amadurecem.",
+    "download": "Baixar mapa",
+    "updates": "Novidades de 2026"
+  },
+  "validation": {
+    "eyebrow": "Além das implantações",
+    "title": "Sinais de bem público que vão além de qualquer programa.",
+    "body": "O impacto da OHC não é apenas o software em operação em campo. É a comunidade de código aberto, a licença, a disciplina em padrões e a validação externa que tornam o CARE reutilizável.",
+    "items": {
+      "dpg": {
+        "label": "Bem Público Digital verificado",
+        "detail": "O CARE consta no registro da DPGA e foi avaliado pela última vez em {date}."
+      },
+      "mit": {
+        "label": "Licença MIT",
+        "detail": "O núcleo continua reutilizável por governos, hospitais, ONGs e parceiros de implementação."
+      },
+      "community": {
+        "label": "Comunidade de código aberto",
+        "detail": "{count} colaboradores de código ajudaram a construir o ecossistema do CARE no GitHub."
+      }
+    }
+  },
+  "final": {
+    "title": "O objetivo não é uma implantação. É capacidade reutilizável.",
+    "body": "O CARE oferece aos sistemas de saúde uma camada operacional compartilhada que eles podem adaptar, controlar e estender. A OHC Foundation existe para manter essa camada aberta, governada e pronta para o próximo programa.",
+    "exploreCore": "Conheça o CARE Core",
+    "conversation": "Converse sobre uma implantação"
+  }
+}

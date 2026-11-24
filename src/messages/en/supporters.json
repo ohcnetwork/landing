@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "title": "Supporters - Technology Partners Behind OHC",
+    "description": "The technology partners contributing software, tools, and infrastructure that volunteers use to build, upgrade, and maintain Open Healthcare Network products."
+  },
+  "hero": {
+    "eyebrow": "Supporters",
+    "title": "The partners behind the commons.",
+    "body": "Technology partners contribute software, tools, and infrastructure that volunteers use to build, upgrade, and maintain Open Healthcare Network products.",
+    "becomeSupporter": "Become a supporter",
+    "contactFinance": "Contact finance"
+  },
+  "current": {
+    "eyebrow": "Current supporters",
+    "title": "Contributing to the commons today.",
+    "body": "These technology partners are currently contributing software technologies and tools that volunteers utilize to build, upgrade, and maintain Open Healthcare Network products."
+  },
+  "past": {
+    "eyebrow": "Past supporters",
+    "title": "Support we remain grateful for.",
+    "body": "We're grateful for the support these partners have provided in the past, contributing to the growth and success of Open Healthcare Network."
+  },
+  "join": {
+    "eyebrow": "Join them",
+    "title": "Support the infrastructure open healthcare runs on.",
+    "fund": "Fund the commons",
+    "fundText": "Sponsorships, grants, and foundation membership.",
+    "contribute": "Contribute technology",
+    "contributeText": "Offer software, tools, or infrastructure credits."
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "title": "Perguntas frequentes",
+  "showAll": "{count, plural, one {Mostrar # pergunta} other {Mostrar todas as # perguntas}}",
+  "showFewer": "Mostrar menos perguntas"
+}

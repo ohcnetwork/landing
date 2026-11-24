@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "Perguntas frequentes — CARE e OHC",
+    "description": "Respostas sobre prazos de implementação, licenciamento, personalização e integrações do CARE e dos Care Apps."
+  },
+  "hero": {
+    "title": "Perguntas frequentes",
+    "body": "Dúvidas comuns sobre implementação, licenciamento, personalização e integrações do CARE."
+  },
+  "items": {
+    "implementation": {
+      "question": "Em quanto tempo podemos implementar?",
+      "answer": "Os prazos de implementação dependem do escopo, das integrações, da hospedagem, da migração de dados, da capacitação e da governança. A OHC prioriza manuais de execução reutilizáveis para que as implantações não comecem do zero a cada vez."
+    },
+    "ownership": {
+      "question": "E quanto à propriedade dos dados e ao licenciamento?",
+      "answer": "Licença MIT; os governos são donos do código e dos dados; sem dependência de fornecedor. Você tem controle total sobre sua infraestrutura e sua soberania de dados, sem custos recorrentes de licença."
+    },
+    "localization": {
+      "question": "Podemos adaptar formulários e terminologias ao contexto local?",
+      "answer": "Sim. Formulários personalizados de EMR são mapeados para FHIR, e há suporte a BYOT (Bring Your Own Terminology, ou seja, traga sua própria terminologia). Você pode configurar terminologias, formulários e fluxos locais mantendo a conformidade com o FHIR."
+    },
+    "nationalPrograms": {
+      "question": "O CARE oferece suporte a programas nacionais como a ABDM?",
+      "answer": "Sim. Fluxos da ABDM podem ser atendidos por meio dos CARE Apps e de modelos de integração. Afirmações sobre implantações devem ser conferidas com as métricas atuais do programa antes da publicação."
+    },
+    "monitoringAi": {
+      "question": "Podemos adicionar monitoramento remoto e ferramentas de IA?",
+      "answer": "Sim. TeleICU (ONVIF) e Care Scribe (preenchimento por voz com IA) estão disponíveis como Care Apps. Ferramentas de IA se integram como plugins, sem modificar a plataforma central."
+    },
+    "security": {
+      "question": "E quanto à segurança e à conformidade?",
+      "answer": "O CARE implementa conformidade com o FHIR R5, com RBAC, trilhas de auditoria e opções de hospedagem soberana. Medidas de segurança nativas garantem a proteção dos dados e a conformidade regulatória."
+    },
+    "settings": {
+      "question": "Como o CARE lida com diferentes contextos de atendimento?",
+      "answer": "O CARE se adapta a diversos contextos: hospitais, clínicas, cuidados paliativos e clínicas veterinárias. A arquitetura modular permite personalizar diferentes fluxos de trabalho em saúde."
+    },
+    "support": {
+      "question": "Que apoio está disponível para a implementação?",
+      "answer": "Oferecemos guias de implementação, materiais de capacitação e suporte da comunidade. A rede global de desenvolvedores oferece assistência técnica e compartilhamento de boas práticas."
+    }
+  },
+  "contact": {
+    "title": "Ainda tem dúvidas?",
+    "body": "Nossa equipe está aqui para ajudar. Fale conosco para suporte técnico, orientação de implementação ou oportunidades de parceria.",
+    "contactUs": "Fale conosco",
+    "joinCommunity": "Participe da comunidade"
+  }
+}

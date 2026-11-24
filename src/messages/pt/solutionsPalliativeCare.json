@@ -1,0 +1,321 @@
+{
+  "meta": {
+    "title": "CARE Home Care Grid - Plataforma de cuidados paliativos de código aberto",
+    "description": "O CARE sustenta redes de cuidados paliativos e domiciliares: cadastro de pacientes, coordenação de equipes, visitas domiciliares, encaminhamentos e painéis.",
+    "ogTitle": "CARE Home Care Grid - Infraestrutura aberta para cuidados paliativos",
+    "ogDescription": "Uma camada operacional baseada no CARE para cuidados paliativos domiciliares e comunitários.",
+    "ogImageAlt": "Logotipo do CARE Palliative",
+    "twitterDescription": "Coordene pacientes vulneráveis, visitas domiciliares, equipes de cuidado, acompanhamento, encaminhamentos, painéis e prontuários prontos para IA com o CARE."
+  },
+  "hero": {
+    "eyebrow": "CARE Home Care Grid",
+    "title": "O cuidado é local. A coordenação é estadual.",
+    "body": "O CARE sustenta redes de cuidados paliativos e domiciliares que ajudam os sistemas de saúde a conhecer cada paciente vulnerável, coordenar as equipes de cuidado locais, documentar visitas domiciliares, acompanhar retornos e monitorar a cobertura nas comunidades.",
+    "buildGrid": "Monte uma rede de atenção domiciliar",
+    "exploreCareCore": "Conheça o CARE Core",
+    "pills": [
+      "Cadastro de pacientes",
+      "Visitas domiciliares",
+      "Equipes de cuidado",
+      "Acompanhamento",
+      "Painéis",
+      "Prontuários prontos para IA"
+    ]
+  },
+  "grid": {
+    "columns": {
+      "community": "Camada comunitária",
+      "program": "Camada de programa"
+    },
+    "items": {
+      "patientHome": {
+        "title": "Casa do paciente",
+        "detail": "necessidades, cuidador, localidade"
+      },
+      "fieldTeams": {
+        "title": "Equipes de campo",
+        "detail": "agentes, voluntários, enfermagem"
+      },
+      "facilities": {
+        "title": "Unidades de saúde",
+        "detail": "atenção primária, hospitais, encaminhamentos"
+      },
+      "visitQueue": {
+        "title": "Fila de visitas",
+        "detail": "hoje, previstas, atrasadas"
+      },
+      "escalations": {
+        "title": "Escalonamentos",
+        "detail": "avaliação médica, encaminhamento, insumos"
+      },
+      "coverage": {
+        "title": "Visão de cobertura",
+        "detail": "bairro, distrito, estado"
+      }
+    },
+    "solutionLabel": "Solução CARE",
+    "solutionTitle": "Home Care Grid",
+    "poweredBy": "Baseado no CARE Core",
+    "timelineTitle": "Linha do tempo compartilhada do paciente",
+    "timelineBody": "Cada visita, tarefa, encaminhamento e acompanhamento em um único prontuário.",
+    "timelineItems": ["Necessidade", "Visita", "Tarefa", "Plano"],
+    "blocks": ["Formulários", "Perfis", "Tarefas", "Painéis"]
+  },
+  "operatingLayer": {
+    "eyebrow": "Por que o CARE",
+    "title": "O cuidado domiciliar é um problema de coordenação.",
+    "body": "Os cuidados paliativos acontecem por meio de relações ao longo do tempo: pacientes, cuidadores, voluntários, enfermeiros, médicos, unidades de saúde, ONGs e equipes de programa trabalhando juntos. O CARE oferece a essa rede uma camada operacional compartilhada, sem reduzir o cuidado a um cadastro limitado ou a um aplicativo isolado.",
+    "primitivesTitle": "Componentes fundamentais do CARE Core",
+    "primitives": [
+      "Pacientes",
+      "Unidades",
+      "Usuários",
+      "Perfis",
+      "Formulários",
+      "Tarefas",
+      "Encaminhamentos",
+      "Planos de cuidado",
+      "Painéis",
+      "APIs",
+      "Trilhas de auditoria",
+      "Registros alinhados ao FHIR"
+    ],
+    "verticalTitle": "Não é mais um sistema vertical.",
+    "verticalBody": "O mesmo paciente pode transitar entre atenção domiciliar, atenção primária, hospitais, farmácia, diagnóstico, TeleICU e acompanhamento. O CARE mantém esses fluxos conectados sobre uma única base aberta."
+  },
+  "workflow": {
+    "eyebrow": "Uma rede de cuidado em torno de cada paciente",
+    "title": "Da primeira identificação ao próximo acompanhamento seguro.",
+    "body": "O CARE apoia o ciclo completo do cuidado comunitário: quem precisa de ajuda, quem é responsável, o que aconteceu na visita, o que precisa acontecer em seguida e onde o sistema está ficando para trás.",
+    "steps": {
+      "identify": {
+        "title": "Identificar",
+        "text": "Encontre os pacientes que precisam de apoio contínuo."
+      },
+      "register": {
+        "title": "Cadastrar",
+        "text": "Crie um prontuário compartilhado com o contexto local."
+      },
+      "assess": {
+        "title": "Avaliar",
+        "text": "Registre as necessidades clínicas, funcionais e sociais."
+      },
+      "assign": {
+        "title": "Atribuir",
+        "text": "Vincule o paciente a uma equipe de cuidado e a uma unidade."
+      },
+      "visit": {
+        "title": "Visitar",
+        "text": "Documente o cuidado domiciliar no ponto de atendimento."
+      },
+      "followUp": {
+        "title": "Acompanhar",
+        "text": "Agende a próxima ação e defina o responsável."
+      },
+      "escalate": {
+        "title": "Escalonar",
+        "text": "Encaminhe necessidades médicas, de referência ou de insumos."
+      },
+      "monitor": {
+        "title": "Monitorar",
+        "text": "Veja a cobertura, as lacunas e a qualidade do programa."
+      }
+    }
+  },
+  "capabilities": {
+    "eyebrow": "Recursos do produto",
+    "title": "As peças de que uma rede de atenção domiciliar realmente precisa.",
+    "body": "O CARE transforma visitas domiciliares em continuidade estruturada do cuidado: prontuários, equipes, visitas, encaminhamentos, tarefas, painéis e ciclos de melhoria.",
+    "items": {
+      "registry": {
+        "title": "Cadastro de pacientes",
+        "text": "Um cadastro compartilhado de pacientes vulneráveis, famílias, cuidadores, endereços, vínculo com unidades, necessidades de cuidado, nível de risco e mapeamento por governo local."
+      },
+      "homeVisits": {
+        "title": "Fluxos de visita domiciliar",
+        "text": "Fluxos pensados para o celular com listas de visitas, sinais vitais, sintomas, necessidades de enfermagem e de medicamentos, preocupações do cuidador, notas e datas da próxima visita."
+      },
+      "coordination": {
+        "title": "Coordenação das equipes de cuidado",
+        "text": "Atribua agentes de campo, enfermeiros, médicos, voluntários, ONGs, unidades e responsáveis pelo acompanhamento sem perder a responsabilização na rede."
+      },
+      "records": {
+        "title": "Prontuários estruturados",
+        "text": "Cada visita, avaliação, encaminhamento, nota, acompanhamento e plano de cuidado passa a fazer parte do prontuário longitudinal do CARE."
+      },
+      "dashboards": {
+        "title": "Painéis e cobertura",
+        "text": "Acompanhe pacientes cadastrados, visitas atrasadas, pacientes de alto risco, status dos encaminhamentos, carga de trabalho, cobertura distrital e lacunas de atendimento."
+      },
+      "volunteers": {
+        "title": "Coordenação de voluntários e ONGs",
+        "text": "Apoie o cadastro, o mapeamento de funções, o status de capacitação, a atribuição de pacientes, o acompanhamento de atividades e a colaboração com as equipes de cuidado."
+      },
+      "referrals": {
+        "title": "Encaminhamento e escalonamento",
+        "text": "Passe do cuidado domiciliar para avaliação médica, encaminhamento a uma unidade, cuidados paliativos especializados, teleconsulta ou apoio com insumos quando o risco aumentar."
+      },
+      "carePlanning": {
+        "title": "Planejamento do cuidado",
+        "text": "Transforme problemas, metas, intervenções, tarefas domiciliares, agendas de acompanhamento, orientações ao cuidador e ciclos de revisão em ação."
+      }
+    }
+  },
+  "proof": {
+    "eyebrow": "Implantação de referência",
+    "title": "O CARE já foi testado em escala populacional.",
+    "body": "A rede de cuidados paliativos de Kerala é a prova mais sólida: o CARE apoia um modelo estadual de coordenação do cuidado que reúne pacientes, visitas domiciliares, equipes de cuidado, organizações voluntárias, unidades públicas e painéis de programa.",
+    "stats": {
+      "centers": "unidades de atenção primária",
+      "organizations": "ONGs e organizações de cuidado",
+      "patients": "pacientes cadastrados",
+      "consultations": "consultas domiciliares",
+      "users": "usuários diários"
+    },
+    "note": "Panorama das implantações em programas de cuidados domiciliares e paliativos baseados no CARE."
+  },
+  "differentiators": {
+    "eyebrow": "Construído sobre o CARE Core",
+    "title": "Infraestrutura reutilizável, não um módulo paliativo pontual.",
+    "body": "O CARE oferece a governos, hospitais, ONGs e parceiros de implementação uma base comum para o cuidado domiciliar, que pode ser adaptada localmente e reutilizada em vários programas.",
+    "items": [
+      "De código aberto e orientado ao bem público",
+      "Construído sobre o CARE Core, não um aplicativo pontual",
+      "Prontuários estruturados alinhados ao FHIR",
+      "Fluxos da linha de frente pensados para o celular",
+      "Projetado para redes governamentais e do setor voluntário",
+      "Painéis com visibilidade do programa em tempo real",
+      "Acesso baseado em perfis e trilhas de auditoria",
+      "Pronto para documentação e resumos assistidos por IA"
+    ]
+  },
+  "implementation": {
+    "eyebrow": "Modelo de implementação",
+    "title": "Comece por um distrito. Capacite a rede. Expanda a cobertura.",
+    "body": "As implantações do CARE podem começar em uma área geográfica delimitada e se expandir por meio de fluxos replicáveis, pacotes de capacitação, painéis e rotinas de qualidade dos dados.",
+    "steps": {
+      "mapModel": {
+        "title": "Mapeie o modelo de cuidado",
+        "text": "Entenda a identificação de pacientes, as equipes de campo, as unidades, as ONGs, as rotas de encaminhamento, os formulários de visita domiciliar e as necessidades de capacitação e de relatórios."
+      },
+      "pilot": {
+        "title": "Faça um piloto em uma área",
+        "text": "Configure formulários, painéis, perfis, fluxos de visita e processos de suporte em um distrito, rede ou área de programa."
+      },
+      "train": {
+        "title": "Capacite por função",
+        "text": "Prepare agentes de campo, enfermeiros, médicos, voluntários, administradores de unidades, coordenadores e equipes de programa com capacitação específica para cada fluxo."
+      },
+      "scale": {
+        "title": "Amplie com manuais",
+        "text": "Reutilize checklists de implantação, pacotes de capacitação e de painéis, revisões de qualidade dos dados, modelos de suporte e rotinas de governança."
+      }
+    }
+  },
+  "ai": {
+    "eyebrow": "CARE AI para o cuidado domiciliar",
+    "title": "Reduza a carga de documentação sem reduzir a responsabilização.",
+    "body": "A IA pertence ao fluxo de cuidado, sobre prontuários, perfis, formulários e trilhas de auditoria confiáveis. No cuidado domiciliar, o CARE AI pode ajudar as equipes de campo a documentar mais rápido e as equipes de programa a ver o que precisa de atenção.",
+    "items": {
+      "voiceNotes": {
+        "title": "Notas de visita por voz",
+        "text": "Ajude a equipe de enfermagem e as equipes de campo a documentar em idiomas locais, com revisão antes de salvar."
+      },
+      "summaries": {
+        "title": "Resumos do paciente",
+        "text": "Resuma históricos longos, visitas recentes, tarefas em aberto e necessidades de acompanhamento antes de uma visita domiciliar."
+      },
+      "followUpDrafts": {
+        "title": "Rascunhos de acompanhamento",
+        "text": "Redija planos de cuidado, orientações ao cuidador, resumos de encaminhamento e checklists dos próximos passos."
+      }
+    },
+    "principles": [
+      "A IA redige",
+      "As pessoas decidem",
+      "O CARE registra",
+      "Os sistemas aprendem"
+    ]
+  },
+  "replication": {
+    "eyebrow": "Home Care Grid reutilizável",
+    "title": "Um modelo de referência, muitos programas de cuidado.",
+    "body": "A arquitetura de cuidado domiciliar do CARE pode apoiar cuidados paliativos, cuidado de pessoas idosas, acompanhamento de DCNT, acompanhamento oncológico, monitoramento pós-alta, cuidado de pessoas com deficiência, reabilitação e outros programas que dependem da continuidade fora da unidade de saúde.",
+    "assets": [
+      "Modelo de implantação",
+      "Modelos de fluxo",
+      "Modelos de formulário",
+      "Indicadores de painel",
+      "Materiais de capacitação",
+      "Modelo de funções de voluntários",
+      "Linha de base de segurança",
+      "Guia de adaptação local"
+    ]
+  },
+  "outcomes": {
+    "eyebrow": "Resultados a medir",
+    "title": "Meça a continuidade, não apenas os cadastros.",
+    "items": {
+      "coverage": {
+        "title": "Cobertura",
+        "text": "pacientes cadastrados, equipes atribuídas, cobertura por governo local"
+      },
+      "continuity": {
+        "title": "Continuidade",
+        "text": "visitas realizadas, pacientes em atraso, acompanhamentos concluídos"
+      },
+      "quality": {
+        "title": "Qualidade",
+        "text": "completude da documentação, encaminhamentos concluídos, tempo de revisão"
+      },
+      "equity": {
+        "title": "Equidade",
+        "text": "lacunas de cobertura entre regiões e grupos vulneráveis"
+      }
+    }
+  },
+  "faq": {
+    "items": {
+      "what": {
+        "question": "O que é o CARE Home Care Grid?",
+        "answer": "O CARE Home Care Grid é a camada operacional baseada no CARE para programas de cuidado domiciliar e comunitário. Ele apoia o cadastro de pacientes, a atribuição de equipes de cuidado, as visitas domiciliares, a documentação estruturada, o acompanhamento, os encaminhamentos, os painéis e a visibilidade do programa."
+      },
+      "onlyPalliative": {
+        "question": "O CARE serve apenas para cuidados paliativos?",
+        "answer": "Não. Os mesmos componentes fundamentais do CARE Core podem apoiar cuidados paliativos, cuidado de pessoas idosas, acompanhamento de DCNT, acompanhamento pós-alta, acompanhamento oncológico, programas para pessoas com deficiência e de reabilitação e outros fluxos longitudinais de cuidado comunitário."
+      },
+      "fieldTeams": {
+        "question": "Como o CARE apoia as equipes de campo?",
+        "answer": "O CARE oferece às equipes de campo fluxos pensados para o celular com listas de visitas, avaliações, notas, sintomas, sinais vitais, necessidades de medicamentos, preocupações do cuidador, datas de acompanhamento e solicitações de escalonamento, mantendo o prontuário do paciente conectado às unidades de saúde e aos painéis do programa."
+      },
+      "kerala": {
+        "question": "Qual é a relevância de Kerala para esta página?",
+        "answer": "Kerala é a implantação de referência que demonstra o modelo em escala populacional. A página trata o CARE como infraestrutura reutilizável e usa Kerala como prova de que o cuidado domiciliar pode ser coordenado por meio de uma rede digital compartilhada."
+      },
+      "partners": {
+        "question": "Parceiros de implementação podem implantar uma rede de atenção domiciliar?",
+        "answer": "Sim. O CARE oferece o núcleo aberto, fluxos, APIs, formulários, perfis, painéis e modelos de implementação. Os parceiros podem adaptar o modelo de cuidado ao contexto local, capacitar usuários, integrar sistemas locais e devolver melhorias ao núcleo compartilhado."
+      }
+    }
+  },
+  "final": {
+    "eyebrow": "Implante o CARE para o cuidado domiciliar",
+    "title": "Construa uma rede de cuidado para cada paciente vulnerável.",
+    "body": "O CARE ajuda os sistemas de saúde a passar de programas fragmentados de visitas domiciliares para redes de cuidado coordenadas, mensuráveis e humanizadas.",
+    "startConversation": "Converse sobre uma implantação",
+    "exploreCareAi": "Conheça o CARE AI"
+  },
+  "structuredData": {
+    "name": "CARE Home Care Grid",
+    "description": "O CARE Home Care Grid apoia programas de cuidados paliativos e domiciliares com cadastro de pacientes, visitas domiciliares, coordenação de equipes de cuidado, encaminhamentos, painéis, prontuários estruturados e fluxos prontos para IA.",
+    "featureList": [
+      "Cadastro de pacientes em cuidados paliativos",
+      "Fluxos de visita domiciliar",
+      "Coordenação de equipes de cuidado e voluntários",
+      "Gestão de acompanhamento e encaminhamentos",
+      "Painéis de programa e monitoramento de cobertura",
+      "Prontuários estruturados alinhados ao FHIR",
+      "Fluxos de documentação e resumos prontos para IA"
+    ]
+  }
+}

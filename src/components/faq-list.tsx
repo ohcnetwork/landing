@@ -5,8 +5,11 @@ import { useId, useState } from 'react'
 
 export function FaqList({
   faqs,
+  labels,
 }: {
   faqs: { question: string; answer: string }[]
+  /** Translated button labels, passed from the server component. */
+  labels: { showAll: string; showFewer: string }
 }) {
   const [expanded, setExpanded] = useState(false)
   const listId = useId()
@@ -17,7 +20,7 @@ export function FaqList({
       <div id={listId}>
         {faqs.map((faq, index) => (
           <details
-            key={faq.question}
+            key={index}
             hidden={!expanded && index >= initialCount}
             className="group rounded-xl border-t border-[#dfe6e2] transition-colors open:bg-[#f4f7f5] hover:bg-[#f4f7f5]"
           >
@@ -45,9 +48,7 @@ export function FaqList({
             onClick={() => setExpanded(!expanded)}
             className="inline-flex cursor-pointer items-center justify-center gap-2 rounded-full border border-[#046c4e]/25 px-6 py-3 font-semibold text-[#046c4e] transition-colors hover:bg-[#f4f7f5] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#046c4e]"
           >
-            {expanded
-              ? 'Show fewer questions'
-              : `Show all ${faqs.length} questions`}
+            {expanded ? labels.showFewer : labels.showAll}
             <ChevronDown
               className={`size-4 transition-transform motion-reduce:transition-none ${expanded ? 'rotate-180' : ''}`}
               aria-hidden="true"

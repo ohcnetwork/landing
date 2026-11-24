@@ -1,0 +1,200 @@
+{
+  "meta": {
+    "title": "Open Healthcare Network Foundation - Infraestrutura aberta de saúde",
+    "description": "A Open Healthcare Network Foundation zela pelo CARE, Bem Público Digital sob licença MIT para saúde auto-hospedável, baseada em padrões e sem dependência de fornecedor.",
+    "ogDescription": "A fundação neutra que zela pelo CARE e pela camada de infraestrutura de saúde de código aberto.",
+    "ogImageAlt": "Open Healthcare Network Foundation",
+    "twitterDescription": "O CARE é o principal Bem Público Digital de código aberto sob a guarda da OHC Foundation."
+  },
+  "hero": {
+    "badges": {
+      "dpg": "DPG verificado",
+      "mit": "Licença MIT",
+      "selfHostable": "Auto-hospedável"
+    },
+    "title": "O sistema operacional aberto da saúde.",
+    "body": "A OHC Foundation zela pelo CARE Core, por aplicativos, padrões e integrações para que governos, hospitais e equipes de implementação operem sistemas de saúde interoperáveis sem dependência de fornecedor.",
+    "exploreCare": "Conheça o CARE",
+    "fundCommons": "Financie o bem comum",
+    "partner": "Seja parceiro da OHC"
+  },
+  "credibility": {
+    "eyebrow": "Comprovação pública",
+    "title": "Infraestrutura aberta, apoiada por instituições reais e por sinais verificáveis de bem público.",
+    "points": {
+      "dpg": {
+        "label": "DPG verificado",
+        "detail": "O CARE consta no registro de Bens Públicos Digitais."
+      },
+      "mit": {
+        "label": "Licença MIT",
+        "detail": "Reutilizável por governos, hospitais, ONGs e parceiros."
+      },
+      "fhir": {
+        "label": "Nativo em FHIR",
+        "detail": "Construído sobre padrões, terminologias e APIs abertas."
+      }
+    },
+    "supportedBy": "Com o apoio de"
+  },
+  "foundationLayer": {
+    "eyebrow": "Camada da fundação",
+    "title": "A instituição em torno do sistema operacional da saúde.",
+    "body": "Sistemas de saúde não adotam apenas código-fonte. Eles precisam de governança, versões, documentação, segurança e um ecossistema que mantenha o núcleo compartilhado confiável ao longo dos anos.",
+    "items": {
+      "core": {
+        "title": "Plataforma central",
+        "description": "Componentes fundamentais estáveis, APIs, formulários, controle de acesso, trilhas de auditoria, relatórios e extensibilidade."
+      },
+      "standards": {
+        "title": "Padrões",
+        "description": "Modelagem alinhada ao FHIR, vinculações terminológicas, modelos de integração com a ABDM e guias de implementação."
+      },
+      "quality": {
+        "title": "Qualidade e segurança",
+        "description": "Disciplina de versões, tratamento de vulnerabilidades, critérios de teste e qualidade da documentação."
+      },
+      "ecosystem": {
+        "title": "Ecossistema",
+        "description": "Comunidade de desenvolvedores, revisão clínica, parceiros de implementação e caminhos de financiamento como bem público."
+      },
+      "ai": {
+        "title": "Preparo para IA",
+        "description": "Documentação e resumos assistivos, revisados por pessoas, sobre dados clínicos estruturados."
+      }
+    }
+  },
+  "care": {
+    "eyebrow": "O CARE como prova concreta",
+    "title": "Um núcleo aberto. Muitos fluxos reais.",
+    "body": "O CARE Core oferece os componentes fundamentais comuns. Os CARE Apps estendem a plataforma para infraestruturas digitais nacionais, HMIS, TeleICU, cuidados paliativos, documentação com IA, LMIS, farmácia, faturamento e análise de dados.",
+    "modules": [
+      "Prontuários longitudinais de pacientes",
+      "Ambulatório, internação, emergência, observação, visitas domiciliares",
+      "Notas clínicas, formulários, solicitações, prescrições",
+      "Laboratório, farmácia, estoque, radiologia, faturamento",
+      "Tarefas, encaminhamentos, planos de cuidado, painéis",
+      "ABDM, TeleICU, documentação com IA, APIs abertas"
+    ],
+    "careCore": "CARE Core",
+    "appsIntegrations": "Aplicativos e integrações"
+  },
+  "solutions": {
+    "eyebrow": "Soluções",
+    "title": "Fluxos prontos para implantar sobre o sistema operacional da saúde.",
+    "body": "O CARE Core é a base compartilhada. As soluções transformam esse núcleo em fluxos práticos para hospitais, terapia intensiva, atenção domiciliar, clínicas, programas de saúde pública e operações de campo especializadas.",
+    "items": {
+      "hmis": {
+        "title": "CARE HMIS",
+        "description": "Fluxos de gestão hospitalar para cadastro, atendimentos, laboratório, farmácia, faturamento, relatórios e portal do paciente."
+      },
+      "teleicu": {
+        "title": "TeleICU",
+        "description": "Fluxos de terapia intensiva no modelo hub-and-spoke, com visitas remotas, escalonamento, dispositivos e contexto por vídeo."
+      },
+      "palliative": {
+        "title": "Palliative Care Grid",
+        "description": "Coordenação do cuidado domiciliar, prontuários longitudinais, tarefas, encaminhamentos, acompanhamento e fluxos de campo."
+      },
+      "clinic": {
+        "title": "CARE Clinic",
+        "description": "Software de clínica gratuito e de código aberto para Mac e Windows. Execute o CARE no seu próprio computador, com os fluxos essenciais na rede da clínica após a configuração online."
+      },
+      "janwar": {
+        "title": "Care Janwar",
+        "description": "Fluxos de saúde animal construídos sobre o mesmo modelo de núcleo aberto, para unidades e programas de campo."
+      }
+    },
+    "explore": "Explorar",
+    "viewAll": "Ver todas as soluções"
+  },
+  "standards": {
+    "eyebrow": "Arquitetura",
+    "title": "Pronto para IA porque a camada de dados é estruturada desde o início.",
+    "body": "O CARE foi projetado em torno de formulários configuráveis, recursos alinhados ao FHIR, vinculações terminológicas, APIs abertas, trilhas de auditoria e acesso baseado em perfis. A IA é tratada como assistiva e revisada por pessoas, porque a responsabilidade clínica não pode ser automatizada."
+  },
+  "compounding": {
+    "eyebrow": "Por que este modelo ganha escala",
+    "title": "Uma organização sem fins lucrativos com a alavancagem de um produto.",
+    "body": "As melhores organizações de tecnologia sem fins lucrativos acumulam ganhos: cada implementação melhora a infraestrutura, cada parceiro amplia a distribuição e cada versão financiada torna as próximas adoções mais baratas.",
+    "items": {
+      "software": {
+        "title": "Alavancagem de software",
+        "description": "Cada módulo, formulário e integração reutilizável reduz o custo da próxima implantação de saúde pública."
+      },
+      "distribution": {
+        "title": "Distribuição aberta",
+        "description": "Governos, hospitais, equipes de implementação, profissionais de saúde e desenvolvedores podem adotar sem pedir permissão a um fornecedor."
+      },
+      "data": {
+        "title": "Base de dados para IA",
+        "description": "A IA assistiva fica mais segura quando opera sobre dados de saúde estruturados, interoperáveis e auditáveis."
+      },
+      "governance": {
+        "title": "Governança como diferencial",
+        "description": "A fundação transforma código aberto em infraestrutura na qual as instituições podem confiar para operar no longo prazo."
+      }
+    }
+  },
+  "github": {
+    "eyebrow": "Nossa história no GitHub",
+    "title": "Colaboração em código aberto, demonstrada pelo trabalho.",
+    "body": "A história no GitHub é uma prova útil porque mostra a OHC como uma rede real de colaboradores: profissionais de saúde, engenheiros e instituições construindo infraestrutura de saúde de forma aberta.",
+    "videoTitle": "Open Healthcare Network - Nossa história no GitHub"
+  },
+  "impact": {
+    "eyebrow": "Evidências",
+    "title": "Comprovação em campo, tratada com rigor.",
+    "body": "A OHC tem comprovação pública no registro de DPGs, em repositórios de código aberto, na arquitetura de padrões e em implantações de programas. O site mantém as métricas datadas e específicas por programa, para que financiadores, governos e imprensa encontrem afirmações rigorosas, e não encenação de impacto.",
+    "viewImpact": "Ver impacto",
+    "pressFacts": "Dados para imprensa",
+    "facts": {
+      "dpg": { "label": "DPG", "text": "Listado externamente" },
+      "mit": { "label": "MIT", "text": "Reutilizável por padrão" },
+      "apis": { "label": "APIs abertas", "text": "Feitas para integração" }
+    }
+  },
+  "blog": {
+    "eyebrow": "Blog",
+    "title": "Notas para quem constrói infraestrutura de saúde como bem público.",
+    "readBlog": "Ler o blog",
+    "readEssay": "Ler artigo"
+  },
+  "audience": {
+    "eyebrow": "Quem deve trabalhar com a OHC",
+    "title": "Uma fundação, vários caminhos de alto impacto.",
+    "body": "Governos podem implantar, financiadores podem apoiar, parceiros de implementação podem adaptar ao contexto local, desenvolvedores podem contribuir e profissionais de saúde podem moldar os fluxos de trabalho.",
+    "items": {
+      "governments": {
+        "title": "Governos",
+        "text": "Controlar, adaptar e expandir localmente a infraestrutura de saúde."
+      },
+      "funders": {
+        "title": "Financiadores",
+        "text": "Apoiar o núcleo compartilhado, e não entregas pontuais de software."
+      },
+      "hospitals": {
+        "title": "Hospitais",
+        "text": "Implantar fluxos práticos de HMIS e EMR sem dependência de licenças."
+      },
+      "partners": {
+        "title": "Parceiros de implementação",
+        "text": "Adaptar o CARE ao contexto local e devolver melhorias ao projeto."
+      },
+      "developers": {
+        "title": "Desenvolvedores",
+        "text": "Construir infraestrutura de saúde de código aberto usada em campo."
+      },
+      "clinicians": {
+        "title": "Profissionais de saúde",
+        "text": "Moldar fluxos, formulários, segurança e o comportamento da documentação com IA."
+      }
+    }
+  },
+  "finalCta": {
+    "title": "Construa o bem comum aberto da saúde.",
+    "body": "Ajude a OHC Foundation a manter o núcleo compartilhado, a governança, a segurança, a documentação e o ecossistema que permitem aos sistemas de saúde implantar software moderno sem dependência de fornecedor.",
+    "fund": "Financie o bem comum",
+    "conversation": "Inicie uma conversa"
+  }
+}

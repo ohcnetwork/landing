@@ -1,0 +1,384 @@
+{
+  "meta": {
+    "title": "CARE HMIS - Open Source Hospital Information System (HIS)",
+    "description": "CARE HMIS is an open-source, FHIR R5-aligned Hospital Information System (HIS/HMIS) for OPD, IPD, emergency, labs, pharmacy, billing, inventory, reporting, and AI-ready clinical workflows.",
+    "ogTitle": "CARE HMIS - Open Source Hospital Information System",
+    "ogDescription": "A modular Hospital Information System connecting patient flow, clinical information, hospital operations, revenue workflows, and AI-ready data.",
+    "ogImageAlt": "CARE HMIS encounter overview screen",
+    "twitterDescription": "Open-source HIS/HMIS for hospitals that need connected OPD, IPD, emergency, lab, pharmacy, billing, reporting, and AI-ready workflows."
+  },
+  "hero": {
+    "title": "The open hospital OS for connected care.",
+    "body": "CARE HMIS is an open-source Hospital Information System that connects patient flow, information flow, and revenue flow across outpatient, emergency, inpatient, labs, pharmacy, billing, and reporting workflows.",
+    "planDeployment": "Plan an HMIS deployment",
+    "exploreCareCore": "Explore CARE Core",
+    "videoLabel": "CARE HMIS workflow video showing a connected hospital information system",
+    "liveWorkflow": "Live HIS workflow",
+    "liveWorkflowDetail": "Encounters, orders, forms, reports, and operational context."
+  },
+  "proof": {
+    "hospitals": "hospitals",
+    "states": "deployment states",
+    "fhir": "standards-first core",
+    "mit": "open-source licence"
+  },
+  "overview": {
+    "eyebrow": "Hospital Information System",
+    "title": "HIS depth with open-source ownership.",
+    "body": "CARE HMIS is built for hospitals that need more than a digital file. It combines EMR, HMIS, hospital operations, revenue cycle workflows, interoperability, and AI-ready clinical data in one reusable open platform.",
+    "layerLabel": "HIS layer",
+    "layers": {
+      "clinicalRecord": {
+        "title": "Clinical record",
+        "text": "Patients, encounters, notes, diagnoses, orders, observations, medications, care plans, and discharge summaries."
+      },
+      "operations": {
+        "title": "Hospital operations",
+        "text": "Appointments, queues, beds, wards, departments, staff roles, stock movement, reports, and dashboards."
+      },
+      "revenue": {
+        "title": "Revenue cycle",
+        "text": "Charge capture, invoices, payments, scheme coverage, claims direction, reconciliation, and accounting integration."
+      },
+      "interoperability": {
+        "title": "Interoperability layer",
+        "text": "FHIR-aligned APIs, terminology bindings, ABDM workflows, device integrations, and plugin-based extensions."
+      }
+    }
+  },
+  "problem": {
+    "eyebrow": "The real problem",
+    "title": "Software exists. A connected workflow does not.",
+    "body": "The goal is not electronic records. It is a hospital that can coordinate care, measure quality, manage resources, and safely use assistive AI.",
+    "items": {
+      "fragments": {
+        "title": "Discrete fragments",
+        "text": "Registration, labs, medications, discharge, and billing live as separate events instead of one care story."
+      },
+      "disconnected": {
+        "title": "Disconnected workflows",
+        "text": "Orders, results, prescriptions, stock, and dispensing move through silos with no single operational flow."
+      },
+      "digitalPaper": {
+        "title": "Digital paper",
+        "text": "Forms were digitized without redesigning the work around them, so software becomes one more burden."
+      },
+      "lostRevenue": {
+        "title": "Lost revenue",
+        "text": "Unbilled services, missed charges, and manual invoicing leave money on the table every day."
+      }
+    }
+  },
+  "flows": {
+    "eyebrow": "Three flows at once",
+    "title": "Records become workflows. Workflows become operations.",
+    "body": "CARE HMIS treats a hospital as a living system. Every patient event, clinical decision, and financial transaction can move through one connected operating layer.",
+    "items": {
+      "patient": {
+        "label": "Patient flow",
+        "detail": "Registration, appointments, OPD, emergency, IPD, ICU, discharge, and follow-up."
+      },
+      "information": {
+        "label": "Information flow",
+        "detail": "Encounters, orders, results, records, decisions, and longitudinal clinical context."
+      },
+      "revenue": {
+        "label": "Revenue flow",
+        "detail": "Charges, invoices, scheme coverage, payments, and reconciliation as care is delivered."
+      }
+    }
+  },
+  "encounters": {
+    "eyebrow": "Every encounter",
+    "title": "One platform for every care setting.",
+    "body": "CARE supports the full patient journey, while keeping clinical documentation consistent across hospitals, clinics, homes, and virtual visits.",
+    "videoLabel": "CARE HMIS questionnaire and doctor notes workflow",
+    "types": {
+      "outpatient": {
+        "title": "Outpatient",
+        "text": "Clinical visits linked to the patient record."
+      },
+      "emergency": {
+        "title": "Emergency",
+        "text": "Priority care and emergency workflows."
+      },
+      "inpatient": {
+        "title": "Inpatient",
+        "text": "Admissions, rounds, orders, notes, and discharge."
+      },
+      "observation": {
+        "title": "Observation",
+        "text": "Short-stay monitoring with continuity."
+      },
+      "homeHealth": {
+        "title": "Home health",
+        "text": "Mobile documentation and care plans."
+      },
+      "virtualCare": {
+        "title": "Virtual care",
+        "text": "Remote consultation with structured records."
+      }
+    }
+  },
+  "coreModules": {
+    "eyebrow": "Core modules",
+    "title": "The workflows a hospital expects, built on one core.",
+    "body": "Modules are not isolated applications. They share patients, encounters, orders, observations, roles, reports, and audit trails.",
+    "items": {
+      "clinicalData": {
+        "title": "Clinical data capture",
+        "text": "Structured forms, symptoms, conditions, orders, medication requests, and observations."
+      },
+      "scheduling": {
+        "title": "Scheduling",
+        "text": "Appointment calendars, public facility pages, doctor availability, and open slots."
+      },
+      "queues": {
+        "title": "Queues",
+        "text": "Doctor, department, pharmacy, billing, and custom service queues for high-volume settings."
+      },
+      "formBuilder": {
+        "title": "EMR form builder",
+        "text": "Configurable department forms mapped to interoperable clinical resources."
+      },
+      "beds": {
+        "title": "Bed management",
+        "text": "Live locations, beds, admission status, hierarchy, and availability."
+      },
+      "hierarchy": {
+        "title": "Administrative hierarchy",
+        "text": "Facility, district, state, program, and national structures with data segregation."
+      },
+      "rbac": {
+        "title": "RBAC and audit",
+        "text": "Granular role-based access control for doctors, nurses, admins, and health workers."
+      },
+      "reports": {
+        "title": "Dynamic reports",
+        "text": "Treatment summaries, discharge summaries, dashboards, and custom operational reports."
+      }
+    }
+  },
+  "workflows": {
+    "eyebrow": "Workflows in motion",
+    "title": "See the hospital OS as real product workflows.",
+    "body": "These are not static module names. CARE HMIS supports live workflows across bed management, clinical drawings, and dynamic reporting on the same shared patient and facility data layer.",
+    "videoLabel": "CARE HMIS {title} workflow video",
+    "items": {
+      "beds": {
+        "title": "Bed management",
+        "text": "Track beds, locations, admissions, discharge states, and live availability across hospital hierarchies."
+      },
+      "drawings": {
+        "title": "Clinical drawings",
+        "text": "Capture drawings, body maps, annotations, and visual clinical context directly in the patient record."
+      },
+      "reports": {
+        "title": "Dynamic reports",
+        "text": "Generate operational and clinical reports from shared encounters, forms, orders, and care activity."
+      }
+    }
+  },
+  "departments": {
+    "eyebrow": "HIS coverage",
+    "title": "One operating layer across hospital departments.",
+    "body": "CARE HMIS gives hospitals a shared information system for clinical, administrative, operational, and financial work. Each department can keep its workflow while contributing to one longitudinal record.",
+    "items": {
+      "frontDesk": {
+        "title": "Front desk",
+        "text": "Registration, demographics, patient search, appointments, queues, and visit creation."
+      },
+      "opd": {
+        "title": "OPD and clinics",
+        "text": "Consultations, notes, prescriptions, investigations, follow-up, referrals, and summaries."
+      },
+      "emergency": {
+        "title": "Emergency",
+        "text": "Rapid registration, triage direction, emergency encounters, orders, observation, and handover."
+      },
+      "inpatient": {
+        "title": "Inpatient wards",
+        "text": "Admissions, bed allocation, rounds, nursing updates, orders, discharge, and transfers."
+      },
+      "icu": {
+        "title": "ICU and critical care",
+        "text": "TeleICU extension, vitals/device direction, remote review, video, and escalation workflows."
+      },
+      "laboratory": {
+        "title": "Laboratory",
+        "text": "Lab orders, specimen tracking direction, results, diagnostic reports, and LOINC/UCUM alignment."
+      },
+      "pharmacy": {
+        "title": "Pharmacy",
+        "text": "Prescriptions, dispensing, substitutions, stock alerts, procurement, inventory, and audit trails."
+      },
+      "billing": {
+        "title": "Billing and accounts",
+        "text": "Service charges, invoices, payments, insurance/scheme support, and reconciliation workflows."
+      },
+      "administration": {
+        "title": "Administration",
+        "text": "Facilities, departments, users, roles, access control, audit logs, reports, and operational analytics."
+      }
+    }
+  },
+  "operations": {
+    "eyebrow": "Hospital operations",
+    "title": "The back office is clinical infrastructure.",
+    "body": "Labs, pharmacy, stock, billing, and accounting are not downstream admin tasks. They are part of the same clinical timeline.",
+    "videoLabel": "CARE HMIS {title} workflow video",
+    "items": {
+      "lab": {
+        "title": "Lab and diagnostics / LMIS",
+        "text": "Clinicians order tests, labs track samples, results attach to the record, and observations use standard codes and units."
+      },
+      "pharmacy": {
+        "title": "Pharmacy and inventory",
+        "text": "Prescriptions flow into dispensing, substitutions, stock movement, alerts, procurement, and supply chain workflows."
+      },
+      "billing": {
+        "title": "Billing and accounting",
+        "text": "Cash, insurance, government schemes, invoices, payment capture, and reconciliation connect back to care activity."
+      }
+    }
+  },
+  "standards": {
+    "eyebrow": "Standards and architecture",
+    "title": "Built for exchange, analytics, and assistive AI.",
+    "body": "CARE HMIS is standards-first, API-first, modular, cloud agnostic, mobile-first, and designed to be extended without forking the core.",
+    "items": {
+      "fhir": "clinical resources and APIs",
+      "snomed": "clinical terminology",
+      "loinc": "labs and observations",
+      "ucum": "units of measure",
+      "icd10": "classification support",
+      "byot": "bring your own terminology"
+    }
+  },
+  "apps": {
+    "eyebrow": "Apps and AI",
+    "title": "Extend the hospital OS without breaking the core.",
+    "body": "CARE Apps add national rails, TeleICU, AI documentation, devices, claims, token display, messaging, and analytics through a plugin layer. AI drafts. Humans decide. CARE records.",
+    "items": {
+      "abdm": {
+        "title": "ABDM",
+        "text": "M1, M2, M3 and identity workflows through plugins."
+      },
+      "teleicu": {
+        "title": "TeleICU",
+        "text": "Camera, vitals, remote review, and critical care extension."
+      },
+      "scribe": {
+        "title": "Care Scribe",
+        "text": "Multilingual voice fill and assistive documentation."
+      },
+      "tokenDisplay": {
+        "title": "Token display",
+        "text": "Queue and token screens for TVs and public counters."
+      },
+      "labsDevices": {
+        "title": "Labs and devices",
+        "text": "Orders, results, PACS, and bedside integrations."
+      },
+      "claimsMessaging": {
+        "title": "Claims and messaging",
+        "text": "HCX, reminders, analytics, and patient communication."
+      }
+    },
+    "imageAlt": "Care Scribe AI documentation concept",
+    "responsibleAi": "Responsible AI",
+    "responsibleAiBody": "Voice fill, document understanding, record summaries, discharge drafts, and decision support sit on top of structured clinical data with human review."
+  },
+  "implementation": {
+    "eyebrow": "Implementation model",
+    "title": "A serious HIS rollout is product, process, and governance.",
+    "body": "CARE HMIS deployments can start with a focused hospital workflow and expand into a complete Hospital Information System. The same open core supports phased adoption, local configuration, partner-led implementation, and long-term release upgrades.",
+    "items": {
+      "masterData": {
+        "title": "Master data",
+        "text": "Facilities, departments, rooms, beds, services, staff, user roles, tariffs, and drug catalogues."
+      },
+      "workflowMapping": {
+        "title": "Workflow mapping",
+        "text": "OPD, emergency, IPD, pharmacy, lab, billing, and discharge flows aligned to local practice."
+      },
+      "formsTerminology": {
+        "title": "Forms and terminology",
+        "text": "Configurable EMR forms, FHIR resources, ValueSets, SNOMED CT, LOINC, UCUM, and ICD-10."
+      },
+      "integrations": {
+        "title": "Integrations",
+        "text": "ABDM, devices, lab systems, accounting tools, messaging, analytics, payments, and partner plugins."
+      },
+      "security": {
+        "title": "Security model",
+        "text": "Role-based access, audit trails, hosting choices, data ownership, backup, and operational controls."
+      },
+      "adoption": {
+        "title": "Adoption plan",
+        "text": "Training, phased rollout, support desk, reporting cadence, feedback loops, and release upgrades."
+      }
+    }
+  },
+  "deployment": {
+    "eyebrow": "Deployment proof",
+    "title": "CARE HMIS {version} is live across multiple deployments.",
+    "body": "CARE HMIS {version} is now live across deployments in Kerala, Karnataka, Jharkhand, Assam, and Manipur, supporting 100+ hospitals through a reusable open-core model.",
+    "startConversation": "Start a deployment conversation",
+    "viewImpact": "View impact",
+    "states": {
+      "kerala": "Kerala",
+      "karnataka": "Karnataka",
+      "jharkhand": "Jharkhand",
+      "assam": "Assam",
+      "manipur": "Manipur"
+    },
+    "liveDeployment": "live deployment",
+    "hospitals": "hospitals"
+  },
+  "faq": {
+    "items": {
+      "what": {
+        "question": "What is CARE HMIS?",
+        "answer": "CARE HMIS is an open-source Hospital Information System and Hospital Management Information System built around CARE Core. It connects clinical records, hospital operations, billing, reporting, integrations, and AI-ready workflows on one standards-based platform."
+      },
+      "emrOrHis": {
+        "question": "Is CARE HMIS an EMR or a full HIS?",
+        "answer": "CARE HMIS includes EMR capabilities, but it is broader than an electronic medical record. It supports patient registration, OPD, emergency, inpatient care, labs, pharmacy, inventory, billing, reporting, access control, integrations, and deployment workflows."
+      },
+      "selfHosted": {
+        "question": "Can CARE HMIS be self-hosted?",
+        "answer": "Yes. CARE is designed for self-hosted, cloud, hybrid, and on-premise deployment models, so hospitals and governments can own their infrastructure and avoid software licence lock-in."
+      },
+      "departments": {
+        "question": "Which hospital departments can CARE HMIS support?",
+        "answer": "CARE HMIS can support front desk, OPD, emergency, inpatient wards, ICU and TeleICU workflows, laboratory, pharmacy, inventory, billing, administration, analytics, and patient-facing workflows."
+      },
+      "interoperability": {
+        "question": "How does CARE HMIS support interoperability?",
+        "answer": "CARE HMIS is standards-first, with FHIR R5-aligned resources, open APIs, terminology support for SNOMED CT, LOINC, UCUM and ICD-10, and plugin-based integrations for national rails, devices, labs, claims, messaging, and analytics."
+      },
+      "ai": {
+        "question": "How is AI used in CARE HMIS?",
+        "answer": "AI is assistive and human-in-the-loop. CARE HMIS can support voice fill, documentation drafts, document understanding, summaries, and decision-support workflows on top of structured clinical data and audit-aware processes."
+      }
+    }
+  },
+  "final": {
+    "title": "Intelligent hospitals need connected workflows first.",
+    "body": "CARE HMIS gives hospitals the shared operating layer for clinical work, operations, revenue, analytics, and carefully governed AI.",
+    "planDeployment": "Plan an HMIS deployment",
+    "exploreApps": "Explore apps and integrations"
+  },
+  "structuredData": {
+    "description": "CARE HMIS is an open-source Hospital Information System for connected clinical, operational, financial, reporting, and AI-ready hospital workflows.",
+    "featureList": [
+      "Patient registration and longitudinal records",
+      "OPD, emergency, inpatient, observation, home health, and virtual care workflows",
+      "Clinical notes, orders, prescriptions, forms, observations, and reports",
+      "Laboratory, pharmacy, inventory, billing, and accounting workflows",
+      "FHIR R5-aligned APIs and terminology support",
+      "Plugin-based extensions for ABDM, TeleICU, Care Scribe, devices, messaging, and analytics"
+    ]
+  }
+}

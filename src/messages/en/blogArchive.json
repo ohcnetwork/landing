@@ -1,0 +1,36 @@
+{
+  "featured": {
+    "title": "Featured",
+    "body": "Essays and field notes that frame the CARE platform as open healthcare infrastructure."
+  },
+  "filters": {
+    "browseThemes": "Browse themes",
+    "allThemes": "All themes",
+    "filterByMonth": "Filter by month",
+    "monthNavLabel": "Publication month",
+    "allMonths": "All months",
+    "rssFeed": "RSS Feed",
+    "clearTheme": "Clear theme: <category>{theme}</category>",
+    "clearMonth": "Clear month: {month}",
+    "clearAll": "Clear all filters"
+  },
+  "status": {
+    "count": "{count, plural, one {# post} other {# posts}}",
+    "countFiltered": "{count, plural, one {# post matching your filters} other {# posts matching your filters}}"
+  },
+  "empty": {
+    "noMatchesTitle": "No posts match these filters.",
+    "noMatchesBody": "Try another theme or month, or clear the filters to see all posts.",
+    "viewAll": "View all posts",
+    "noPostsTitle": "The blog is being prepared.",
+    "noPostsBody": "Foundation essays, release notes, field stories, and implementation guides will appear here once they are ready for publication."
+  },
+  "post": {
+    "readingTime": "{minutes} min read",
+    "readArticle": "Read article"
+  },
+  "pagination": {
+    "previous": "Previous",
+    "next": "Next"
+  }
+}

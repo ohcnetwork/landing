@@ -1,0 +1,13 @@
+{
+  "meta": {
+    "coverImageAlt": "{title} की कवर इमेज"
+  },
+  "author": "लेखक",
+  "readingTime": "पढ़ने का समय",
+  "readingTimeValue": "{minutes} मिनट में पढ़ें",
+  "categories": "श्रेणियाँ",
+  "newer": "नई पोस्ट",
+  "older": "पुरानी पोस्ट",
+  "backToBlog": "ब्लॉग पर वापस जाएँ",
+  "tableOfContents": "इस लेख में"
+}

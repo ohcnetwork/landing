@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "title": "Carreiras — Trabalhe na Open Healthcare Network",
+    "description": "Faça parte da equipe da Open Healthcare Network. Estamos contratando especialista em produto clínico com mais de 5 anos de experiência clínica."
+  },
+  "hero": {
+    "hiringTitle": "Estamos contratando!",
+    "hiringBody": "Junte-se à nossa missão de construir Bens Públicos Digitais abertos e interoperáveis para a saúde. Procuramos pessoas engajadas que queiram fazer a diferença.",
+    "notHiringTitle": "Nenhuma vaga aberta",
+    "notHiringBody": "Não há vagas abertas no momento. Volte em breve!"
+  },
+  "positions": {
+    "eyebrow": "Vagas abertas",
+    "title": "Oportunidades atuais",
+    "apply": "Candidate-se",
+    "requirements": "Requisitos",
+    "items": {
+      "juniorProductManager": {
+        "title": "Gerente de produto júnior",
+        "type": "Tempo integral",
+        "location": "Trivandrum",
+        "requirements": [
+          "Experiência em operações de produto",
+          "Interesse em código aberto e saúde global",
+          "Familiaridade com padrões de saúde"
+        ]
+      },
+      "fullStackInternship": {
+        "title": "Estágio em engenharia full stack júnior",
+        "type": "Estágio",
+        "location": "Remoto",
+        "requirements": [
+          "Conhecimentos básicos de Python e Django",
+          "Familiaridade com React e TypeScript",
+          "Experiência com Git e GitHub",
+          "Curiosidade por desenvolvimento de código aberto"
+        ]
+      },
+      "documentationInternship": {
+        "title": "Estágio em documentação",
+        "type": "Estágio",
+        "location": "Remoto",
+        "requirements": [
+          "Boa comunicação escrita",
+          "Capacidade de simplificar conceitos complexos",
+          "Atenção aos detalhes",
+          "Interesse em tecnologia e código aberto"
+        ]
+      }
+    }
+  }
+}

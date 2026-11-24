@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "ISO Certifications - Open Healthcare Network Foundation",
+    "description": "ISO 27001:2022, ISO 82304-1:2016, and ISO 82304-2:2021 certifications held by Open Healthcare Network Foundation."
+  },
+  "hero": {
+    "title": "ISO certifications.",
+    "body": "OHC Foundation holds ISO certifications in information security management and health software safety — independently verifying that CARE meets international standards for clinical and institutional deployment."
+  },
+  "certifications": {
+    "scope": "Scope",
+    "certified": "Certified",
+    "viewCertificate": "View certificate",
+    "items": {
+      "informationSecurity": {
+        "title": "Information Security Management System",
+        "description": "International standard for information security management. Certifies that OHC Foundation has established, implemented, and maintains a robust ISMS covering risk management, access control, incident response, asset management, and continuous improvement of information security practices.",
+        "scope": "Applies to the management of information assets across the foundation and the CARE platform, including source code, deployment infrastructure, and patient data handling practices."
+      },
+      "healthSoftware": {
+        "title": "Health Software — General Requirements for Product Safety",
+        "description": "Establishes requirements for the safety of health software products, covering design, development, testing, maintenance, and lifecycle management. Ensures CARE meets internationally recognised product safety standards for healthcare applications.",
+        "scope": "Covers CARE Core and related health software components used in clinical, hospital, and community care settings."
+      },
+      "wellnessApps": {
+        "title": "Health and Wellness Apps — Quality and Reliability",
+        "description": "Provides guidance for the validation and reusability of health and wellness apps, addressing quality, safety, performance, usability, and data handling. Supports trustworthy deployment of health software across diverse care environments.",
+        "scope": "Applicable to CARE-based apps and wellness-oriented modules deployed in community and home-care programs."
+      }
+    }
+  },
+  "whyCertified": {
+    "eyebrow": "Why certification matters",
+    "title": "Independent verification for healthcare-grade software.",
+    "points": {
+      "trust": {
+        "title": "Healthcare deployments require trust",
+        "text": "Hospitals, governments, and public health programs need assurance that the software they adopt meets internationally recognised safety and security standards."
+      },
+      "patientData": {
+        "title": "Patient data demands rigour",
+        "text": "ISO 27001 certification confirms that information security is not an afterthought — it is a managed, audited, and continuously improved discipline within the foundation."
+      },
+      "safety": {
+        "title": "Health software safety is non-negotiable",
+        "text": "ISO 82304 standards confirm that CARE is developed and maintained with documented processes for safety-critical health software, reducing clinical and operational risk for implementers."
+      }
+    }
+  }
+}

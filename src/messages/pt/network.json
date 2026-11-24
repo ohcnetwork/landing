@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "title": "A rede - Ecossistema da OHC",
+    "description": "O ecossistema da OHC reúne governos, hospitais, parceiros de implementação, profissionais de saúde, desenvolvedores, financiadores e colaboradores em padrões."
+  },
+  "hero": {
+    "eyebrow": "A rede OHC",
+    "title": "Infraestrutura aberta só funciona quando é construída em conjunto.",
+    "body": "A OHC é uma rede de governos, hospitais, equipes de implementação, profissionais de saúde, desenvolvedores, colaboradores em padrões e financiadores que constroem juntos em torno do CARE Core e de outros Bens Públicos Digitais abertos para a saúde.",
+    "implementationPartners": "Parceiros de implementação",
+    "developerCommunity": "Comunidade de desenvolvedores"
+  },
+  "ecosystem": {
+    "eyebrow": "Ecossistema",
+    "title": "Um núcleo compartilhado, muitos papéis.",
+    "items": {
+      "governments": {
+        "title": "Governos",
+        "description": "Implantam infraestrutura aberta e baseada em padrões, com propriedade local e controle do setor público no longo prazo."
+      },
+      "hospitals": {
+        "title": "Hospitais",
+        "description": "Adotam fluxos práticos de HMIS e EMR sem dependência de licenças."
+      },
+      "partners": {
+        "title": "Parceiros de implementação",
+        "description": "Adaptam, integram, capacitam, dão suporte e devolvem melhorias ao núcleo compartilhado."
+      },
+      "clinicians": {
+        "title": "Profissionais de saúde",
+        "description": "Moldam fluxos clínicos, formulários, terminologia, segurança e o comportamento da IA assistiva."
+      },
+      "developers": {
+        "title": "Desenvolvedores",
+        "description": "Mantêm infraestrutura de saúde de código aberto usada em contextos reais de cuidado."
+      },
+      "funders": {
+        "title": "Financiadores",
+        "description": "Sustentam a infraestrutura de bem público, a disciplina de versões, a documentação e o ecossistema."
+      }
+    }
+  },
+  "journey": {
+    "eyebrow": "Trajetória",
+    "title": "Da resposta a uma crise a um bem comum da saúde sob a guarda de uma fundação.",
+    "body": "A história da rede deve mostrar sua evolução, sem congelar a OHC em sua origem na pandemia. A identidade duradoura é a de uma infraestrutura aberta de saúde sob gestão neutra.",
+    "milestones": {
+      "pandemic": {
+        "title": "Raízes na resposta à pandemia",
+        "text": "O CARE nasceu como infraestrutura de código aberto para coordenar o sistema de saúde durante a resposta à COVID-19."
+      },
+      "dpg": {
+        "title": "Verificação como Bem Público Digital",
+        "text": "O CARE consta no registro de Bens Públicos Digitais como Care | Open Healthcare Network, sob licença MIT."
+      },
+      "criticalCare": {
+        "title": "Terapia intensiva e TeleICU",
+        "text": "O CARE evoluiu para apoiar fluxos de terapia intensiva no modelo hub-and-spoke e integrações de TeleICU."
+      },
+      "hmis": {
+        "title": "HMIS e cuidados paliativos",
+        "text": "Hoje a plataforma apoia fluxos mais amplos de cuidado hospitalar, comunitário e domiciliar."
+      },
+      "foundation": {
+        "title": "Gestão pela fundação",
+        "text": "A OHC Foundation oferece a sede institucional neutra para governança, qualidade, segurança, documentação e fortalecimento do ecossistema."
+      }
+    }
+  },
+  "commons": {
+    "eyebrow": "Modelo de bem comum",
+    "title": "A rede não é um canal de vendas. É o que mantém o bem comum útil.",
+    "body": "Um ecossistema liderado por uma fundação permite que muitas instituições construam e implantem o CARE compartilhando melhorias, evitando a fragmentação e dando aos sistemas de saúde mais controle sobre a tecnologia e os dados.",
+    "items": [
+      "Contribuições de código aberto",
+      "Retorno sobre fluxos clínicos",
+      "Manuais de implementação",
+      "Trabalho reutilizável em padrões"
+    ]
+  }
+}

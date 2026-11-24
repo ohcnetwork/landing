@@ -1,7 +1,16 @@
+import createNextIntlPlugin from 'next-intl/plugin'
+
+const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts')
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   output: 'export',
+  experimental: {
+    // Each locale group has its own root layout, so the 404 page needs its
+    // own document (src/app/global-not-found.tsx).
+    globalNotFound: true,
+  },
   images: {
     unoptimized: true,
   },
@@ -24,4 +33,4 @@ const nextConfig = {
   },
 }
 
-export default nextConfig
+export default withNextIntl(nextConfig)

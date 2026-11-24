@@ -1,0 +1,551 @@
+{
+  "meta": {
+    "title": "CARE AI - IA responsável sobre infraestrutura de saúde confiável",
+    "description": "O CARE AI é a camada de IA responsável do CARE Core: escriba médico com IA, escriba por voz em tempo real, EMR por voz, resumos clínicos, IA para documentos e alertas de segurança de medicamentos.",
+    "ogDescription": "IA assistiva para a saúde sobre o CARE Core: fluxos por voz, resumos clínicos, inteligência documental, planos de cuidado, alertas de segurança e revisão humana.",
+    "ogImageAlt": "Conceito de fluxo do CARE AI e do Care Scribe",
+    "twitterDescription": "Escriba médico com IA, EMR por voz, resumos clínicos, IA para documentos, alertas de segurança e inteligência de fluxos sobre o CARE Core."
+  },
+  "structuredData": {
+    "pageDescription": "O CARE AI é uma IA assistiva e responsável para a saúde, construída sobre o CARE Core, para escrita clínica, fluxos por voz, inteligência de formulários, resumos clínicos, IA para documentos, planos de cuidado, segurança de medicamentos e apoio aos fluxos de trabalho.",
+    "about": [
+      "IA responsável para a saúde",
+      "Escriba médico com IA",
+      "EMR por voz",
+      "Resumos clínicos",
+      "IA para documentos de saúde",
+      "IA com revisão humana no processo"
+    ],
+    "breadcrumbHome": "Início",
+    "appDescription": "O CARE AI é a camada de IA responsável do CARE Core e apoia fluxos de escriba médico com IA, documentação de EMR por voz, resumos clínicos, compreensão de documentos, planos de cuidado, alertas de segurança de medicamentos, calculadoras de escores e fluxos de saúde com revisão humana no processo.",
+    "capabilitiesListName": "Recursos do CARE AI"
+  },
+  "heroVisual": {
+    "videoLabel": "Fluxo de escriba médico do CARE AI mostrando documentação por voz e contexto clínico",
+    "steps": {
+      "context": {
+        "title": "Contexto",
+        "text": "O CARE Core fornece o contexto do paciente, do perfil, da unidade, do fluxo e do prontuário."
+      },
+      "draft": {
+        "title": "Rascunho",
+        "text": "A IA escuta, extrai, resume, sugere, calcula ou prepara um rascunho."
+      },
+      "review": {
+        "title": "Revisão",
+        "text": "A equipe de cuidado edita, aprova, rejeita ou pede mais evidências."
+      },
+      "record": {
+        "title": "Registro",
+        "text": "O resultado aceito se torna um dado auditável dentro do CARE."
+      }
+    }
+  },
+  "hero": {
+    "title": "IA responsável sobre infraestrutura de saúde confiável",
+    "body": "O CARE AI leva documentação com IA, resumos, fluxos por voz, inteligência de formulários, contexto clínico, planos de cuidado, alertas de segurança e apoio aos fluxos de trabalho para a mesma plataforma aberta de saúde onde o cuidado é prestado.",
+    "discuss": "Converse sobre o CARE AI",
+    "exploreCore": "Conheça o CARE Core"
+  },
+  "healthSystem": {
+    "eyebrow": "O sistema de saúde em primeiro lugar",
+    "title": "A IA na saúde não deve ficar fora do sistema de saúde.",
+    "body": "A maioria das ferramentas de IA para a saúde começa por um modelo. O CARE AI começa pelo sistema de saúde: pacientes, atendimentos, unidades, usuários, perfis, formulários, solicitações, exames laboratoriais, medicamentos, encaminhamentos, planos de cuidado, tarefas, trilhas de auditoria, APIs e modelos de dados baseados em padrões.",
+    "thesis": [
+      "Ela deve entender o prontuário do paciente.",
+      "Ela deve respeitar os fluxos clínicos.",
+      "Ela deve seguir permissões e trilhas de auditoria.",
+      "Ela deve ajudar os profissionais de saúde, e não substituí-los."
+    ]
+  },
+  "principle": {
+    "eyebrow": "Nosso princípio",
+    "title": "A IA redige. As pessoas decidem. O CARE registra. Os sistemas aprendem.",
+    "body": "O CARE AI não é um chatbot isolado, um médico de IA nem uma ferramenta de caixa-preta fora do fluxo clínico. É um conjunto de habilidades de IA sustentadas pelo CARE Core e projetadas para equipes de cuidado que respondem por suas decisões.",
+    "items": {
+      "grounded": {
+        "title": "Ancorada no contexto",
+        "text": "A IA deve usar o contexto do paciente, do atendimento, da unidade, do perfil, do formulário, da tarefa e do fluxo fornecido pelo CARE Core."
+      },
+      "reviewed": {
+        "title": "Revisada antes de salvar",
+        "text": "A IA pode escutar, extrair, resumir, sugerir, calcular e redigir. A equipe de cuidado continua no controle."
+      },
+      "traceable": {
+        "title": "Rastreável até as fontes",
+        "text": "Resumos, passagens de plantão, planos de cuidado e rascunhos de alta devem remeter às informações de origem sempre que possível."
+      },
+      "roles": {
+        "title": "Governada por perfis",
+        "text": "Médicos, enfermeiros, agentes de campo, administradores, voluntários e pesquisadores não devem ter as mesmas permissões de IA."
+      },
+      "safety": {
+        "title": "Projetada para a segurança",
+        "text": "A IA deve reduzir a carga de trabalho sem reduzir a responsabilização, e cada recurso deve ser avaliado em contextos reais de cuidado."
+      },
+      "recorded": {
+        "title": "Registrada pelo CARE",
+        "text": "O resultado de IA aceito passa a fazer parte do mesmo prontuário auditável e alinhado a padrões onde o cuidado é prestado."
+      }
+    }
+  },
+  "core": {
+    "eyebrow": "Sustentado pelo CARE Core",
+    "title": "Atento ao fluxo, atento ao paciente e responsável.",
+    "body": "Um médico que abre um atendimento precisa de um apoio de IA diferente daquele de uma enfermeira preparando a passagem de plantão, de um agente de campo concluindo uma visita domiciliar, de um profissional da recepção digitalizando documentos ou de um gestor de programa aprimorando um formulário clínico. O CARE AI foi projetado para essa realidade.",
+    "context": [
+      "Prontuários longitudinais dos pacientes",
+      "Formulários clínicos e respostas enviadas",
+      "Histórico de atendimentos",
+      "Medicamentos, alergias, sinais vitais, exames laboratoriais e observações",
+      "Planos de cuidado, tarefas, encaminhamentos e acompanhamentos",
+      "Contexto da unidade e do usuário",
+      "Permissões baseadas em perfis",
+      "Trilhas de auditoria",
+      "APIs e arquitetura de plugins",
+      "Modelos de dados alinhados a padrões"
+    ]
+  },
+  "capabilities": {
+    "eyebrow": "Recursos do CARE AI",
+    "title": "Do escriba médico com IA a fluxos clínicos que aprendem.",
+    "body": "O CARE AI é uma camada de recursos, não uma funcionalidade isolada. Cada habilidade busca reduzir a carga de trabalho, melhorar o registro de dados estruturados, trazer à tona o contexto relevante do paciente e facilitar a conclusão dos fluxos de saúde.",
+    "items": {
+      "careScribe": {
+        "title": "Care Scribe",
+        "category": "Escriba médico com IA",
+        "text": "Apoio à documentação por voz, ancorado no prontuário do paciente e no fluxo ativo do CARE.",
+        "points": [
+          "Notas clínicas e resumos de consulta",
+          "Preenchimento estruturado de formulários",
+          "Documentação de enfermagem e de visitas de campo",
+          "Revisão antes de salvar",
+          "Auditoria do conteúdo gerado e aceito"
+        ]
+      },
+      "realtimeScribe": {
+        "title": "Escriba por voz em tempo real",
+        "category": "EMR por voz",
+        "text": "Apoio à fala em tempo real que estrutura a documentação enquanto a consulta acontece.",
+        "points": [
+          "Transcrição em tempo real",
+          "Detecção de história, sintomas, exame físico, avaliação e plano",
+          "Sugestões de campos estruturados",
+          "Alertas de informações faltantes",
+          "Edição, aprovação e salvamento pelo profissional de saúde"
+        ]
+      },
+      "visionRegistration": {
+        "title": "Visão computacional para o cadastro de pacientes",
+        "category": "IA na recepção",
+        "text": "Inteligência no cadastro para prontuários mais limpos e menos digitação manual na porta de entrada do cuidado.",
+        "points": [
+          "Extrair dados de formulários, documentos de identidade ou outros documentos",
+          "Preencher automaticamente os campos de cadastro",
+          "Sugerir possíveis registros duplicados",
+          "Sinalizar informações faltantes ou inconsistentes",
+          "Anexar os documentos de origem ao prontuário do paciente"
+        ]
+      },
+      "visionDocumentation": {
+        "title": "Visão computacional para a documentação",
+        "category": "IA para documentos de saúde",
+        "text": "Compreensão de documentos para laudos digitalizados, receitas, cartas de encaminhamento, resultados de exames e notas antigas.",
+        "points": [
+          "Ler documentos e imagens enviados",
+          "Extrair campos-chave de laudos",
+          "Converter registros em papel em dados estruturados",
+          "Resumir cartas de encaminhamento",
+          "Revisar os dados extraídos antes de salvar"
+        ]
+      },
+      "recordSummary": {
+        "title": "Resumo de prontuários com IA",
+        "category": "Resumos clínicos",
+        "text": "Resumos do paciente que ajudam as equipes de cuidado a chegar mais rápido à parte certa de um prontuário extenso.",
+        "points": [
+          "Visão geral do paciente em uma linha",
+          "Resumo da consulta mais recente",
+          "Resumo orientado por problemas",
+          "Resumos da evolução de medicamentos e exames",
+          "Resumos de tarefas e acompanhamentos pendentes"
+        ]
+      },
+      "doctorSummary": {
+        "title": "Resumo para o médico",
+        "category": "Contexto antes do atendimento",
+        "text": "Uma visão concisa do paciente antes do início da consulta, pensada para reduzir a carga cognitiva.",
+        "points": [
+          "Queixa principal e história relevante",
+          "Problemas ativos e medicamentos em uso",
+          "Alergias e exames recentes",
+          "Investigações pendentes",
+          "Sinais de risco e necessidades de acompanhamento"
+        ]
+      },
+      "careAsk": {
+        "title": "Care Ask",
+        "category": "Copiloto médico",
+        "text": "Um copiloto voltado ao médico para perguntas sobre o contexto do paciente e apoio aos fluxos em todo o prontuário do CARE.",
+        "points": [
+          "O que mudou desde a última consulta?",
+          "Mostrar exames recentes alterados",
+          "Resumir a internação atual",
+          "Listar os medicamentos em uso",
+          "Gerar orientações ao paciente a partir do plano de hoje"
+        ]
+      },
+      "differentialDiagnosis": {
+        "title": "Apoio ao diagnóstico diferencial",
+        "category": "Apoio ao raciocínio clínico",
+        "text": "Apoio cuidadoso ao raciocínio clínico, conduzido pelo profissional, com checklists estruturados, sinais de alerta e lembretes de história faltante.",
+        "points": [
+          "Geração de checklists de diagnóstico diferencial",
+          "Lembretes de sinais de alerta",
+          "Sugestões de perguntas para o exame",
+          "Lembretes de investigação",
+          "Sugestões do que considerar, perguntar, verificar e descartar"
+        ]
+      },
+      "carePlan": {
+        "title": "Geração de planos de cuidado",
+        "category": "Planos de cuidado acionáveis",
+        "text": "Rascunhos de planos de cuidado que podem se tornar tarefas, lembretes, encaminhamentos, acompanhamentos e continuidade mensurável.",
+        "points": [
+          "Problemas e metas",
+          "Medicamentos e investigações",
+          "Aconselhamento e acompanhamento",
+          "Encaminhamentos e tarefas de cuidado domiciliar",
+          "Planos de monitoramento e orientações ao cuidador"
+        ]
+      },
+      "scoreCalculators": {
+        "title": "Calculadoras de escores com IA",
+        "category": "Escores clínicos",
+        "text": "Calculadoras de escores conectadas aos dados estruturados e aos fluxos de escalonamento que se seguem.",
+        "points": [
+          "IMC, MEWS, NEWS2 e GCS",
+          "Escores específicos de programas",
+          "Escores de risco em cuidados paliativos",
+          "Escores de risco de DCNT",
+          "Direcionamento para acompanhamento e escalonamento"
+        ]
+      },
+      "drugSafety": {
+        "title": "Alertas de segurança de medicamentos",
+        "category": "Segurança medicamentosa",
+        "text": "Alertas de prescrição relevantes, explicáveis e classificados por gravidade, no momento em que as decisões sobre medicamentos são tomadas.",
+        "points": [
+          "Riscos de alergia e de interação",
+          "Terapia duplicada",
+          "Contraindicações e problemas de dose",
+          "Cuidados renais, hepáticos, na gestação e por idade",
+          "Possibilidade de ignorar o alerta com justificativa, quando apropriado"
+        ]
+      },
+      "dischargeSummary": {
+        "title": "Gerador de resumo de alta",
+        "category": "Continuidade após a alta",
+        "text": "Rascunhos de resumos de alta gerados a partir da linha do tempo real da internação, depois revisados e assinados.",
+        "points": [
+          "Motivo da internação e diagnósticos",
+          "Procedimentos e evolução clínica",
+          "Mudanças na medicação e evolução dos exames",
+          "Resultados pendentes",
+          "Notas de acompanhamento e encaminhamento"
+        ]
+      },
+      "handoverChart": {
+        "title": "Quadro de passagem de plantão",
+        "category": "Transições do cuidado",
+        "text": "Notas estruturadas de passagem de plantão para turnos, enfermarias, equipes e transições de cuidado de alto risco.",
+        "points": [
+          "Estado do paciente e riscos atuais",
+          "Exames e tarefas pendentes",
+          "Mudanças na medicação",
+          "Necessidades de escalonamento",
+          "Prioridades de enfermagem e preparo para a alta"
+        ]
+      },
+      "formBuilder": {
+        "title": "Care Form Builder Skill",
+        "category": "Da diretriz ao fluxo",
+        "text": "Apoio de IA para converter diretrizes, PDFs, POPs e formulários em papel em rascunhos de formulários e fluxos do CARE.",
+        "points": [
+          "Seções do formulário e definição de campos",
+          "Validações e lógica condicional",
+          "Mapeamentos terminológicos",
+          "Indicadores e visões por perfil",
+          "Rascunho da estrutura do fluxo"
+        ]
+      },
+      "formEnhancer": {
+        "title": "Care Form Enhancer",
+        "category": "Fluxos que aprendem",
+        "text": "Análise das respostas enviadas que sugere como os formulários dos programas podem ficar mais claros, mais rápidos e mais estruturados.",
+        "points": [
+          "Campos frequentemente vazios",
+          "Rótulos confusos e campos duplicados",
+          "Falhas de validação",
+          "Tempo de preenchimento longo e pontos de abandono",
+          "Padrões de texto livre que deveriam virar campos estruturados"
+        ]
+      }
+    }
+  },
+  "teams": {
+    "eyebrow": "Feito para equipes de cuidado",
+    "title": "Equipes diferentes precisam de inteligências diferentes.",
+    "body": "O CARE AI foi projetado para médicos, enfermeiros, agentes de campo, hospitais, programas de saúde pública e parceiros de implementação que precisam de uma IA prática, responsável e ancorada em dados reais do sistema de saúde.",
+    "items": {
+      "doctors": {
+        "title": "Para médicos",
+        "text": "Menos tempo procurando e digitando, mais tempo tomando decisões.",
+        "items": [
+          "Care Scribe",
+          "Documentação por voz em tempo real",
+          "Resumo para o médico",
+          "Care Ask",
+          "Apoio ao diagnóstico diferencial",
+          "Alertas de segurança de medicamentos",
+          "Gerador de resumo de alta"
+        ]
+      },
+      "nurses": {
+        "title": "Para a enfermagem",
+        "text": "Documente mais rápido, coordene melhor e reduza os riscos na passagem de plantão.",
+        "items": [
+          "Notas de enfermagem em tempo real",
+          "Quadros de passagem de plantão",
+          "Calculadoras de escores",
+          "Resumos de tarefas pendentes",
+          "Resumos do estado do paciente",
+          "Apoio à documentação nas enfermarias"
+        ]
+      },
+      "fieldWorkers": {
+        "title": "Para agentes de campo",
+        "text": "Documentação estruturada completa com menos digitação e melhor suporte a idiomas locais.",
+        "items": [
+          "Formulários com entrada por voz",
+          "Resumos de visitas domiciliares",
+          "Lembretes de acompanhamento",
+          "Sugestões de sinais de risco",
+          "Rascunhos de orientações ao cuidador",
+          "Suporte a idiomas locais"
+        ]
+      },
+      "hospitals": {
+        "title": "Para hospitais",
+        "text": "Melhore a qualidade da documentação, os fluxos de alta, as passagens de plantão e a segurança medicamentosa.",
+        "items": [
+          "Gerador de resumo de alta",
+          "Quadro de passagem de plantão",
+          "Alertas de segurança de medicamentos",
+          "Resumos para o médico",
+          "Calculadoras de escores",
+          "Análise da documentação"
+        ]
+      },
+      "publicHealth": {
+        "title": "Para programas de saúde pública",
+        "text": "Passe das diretrizes a fluxos digitais melhores e a ciclos de aprendizagem mais fortes nos programas.",
+        "items": [
+          "Care Form Builder Skill",
+          "Care Form Enhancer",
+          "Resumos dos fluxos do programa",
+          "Extração de indicadores",
+          "Revisão da qualidade das respostas",
+          "Sugestões de melhoria por campo"
+        ]
+      }
+    }
+  },
+  "extensible": {
+    "eyebrow": "Extensível por concepção",
+    "title": "O CARE pode ser a base confiável para a IA de parceiros.",
+    "body": "Nem todo recurso de IA precisa ser construído pela OHC Foundation. O CARE deve permitir que parceiros de IA confiáveis, instituições de pesquisa, iniciativas públicas de IA e provedores locais de modelos se integrem com segurança aos fluxos de saúde.",
+    "items": {
+      "externalScribes": {
+        "title": "Provedores externos de escriba",
+        "text": "O CARE pode apoiar integrações de voz para dados discretos, em que o escriba de um parceiro transforma conversas entre médico e paciente em notas estruturadas, enquanto o CARE continua sendo a camada de contexto do paciente e o sistema de registro."
+      },
+      "ekaScribe": {
+        "title": "Eka Scribe por meio de integrações no estilo V2DD",
+        "text": "Um parceiro de escriba pode fornecer resultados de voz estruturados, enquanto o CARE fornece o contexto do fluxo, as telas de revisão, o salvamento final e a auditabilidade."
+      },
+      "indiaAi": {
+        "title": "Modelos de IA indianos e Centros de Excelência em IA",
+        "text": "À medida que os modelos fundacionais indianos, os modelos em idiomas locais e a pesquisa em IA para a saúde amadurecem, o CARE pode oferecer a camada real do sistema de saúde para sua avaliação e seu uso responsáveis."
+      },
+      "researchModels": {
+        "title": "Modelos de IA de pesquisa e aprovados pelo governo",
+        "text": "Parceiros confiáveis podem trazer modelos de fala, visão, segurança de medicamentos, cálculo de escores, resumos e específicos de programas por meio de plugins."
+      }
+    }
+  },
+  "safety": {
+    "eyebrow": "Segurança e governança",
+    "title": "A IA na saúde deve ser projetada para a confiança.",
+    "body": "O CARE AI adota uma postura de segurança em primeiro lugar: ancoragem nas fontes, revisão humana, acesso baseado em perfis, trilhas de auditoria, responsabilidade clínica e avaliação em condições reais.",
+    "items": {
+      "humanReview": {
+        "title": "Revisão humana",
+        "text": "Conteúdo clínico gerado por IA deve ser revisado antes de fazer parte do prontuário."
+      },
+      "sourceGrounding": {
+        "title": "Ancoragem nas fontes",
+        "text": "Resumos, notas de alta, passagens de plantão e planos de cuidado devem remeter aos registros de origem sempre que possível."
+      },
+      "roleBasedAccess": {
+        "title": "Acesso baseado em perfis",
+        "text": "Médicos, enfermeiros, voluntários, administradores e pesquisadores não devem ter os mesmos recursos de IA nem o mesmo acesso aos dados."
+      },
+      "auditTrails": {
+        "title": "Trilhas de auditoria",
+        "text": "Cada interação com IA deve registrar quem a usou, qual contexto foi usado, o que foi gerado, o que foi editado e o que foi salvo."
+      },
+      "accountability": {
+        "title": "Responsabilidade clínica",
+        "text": "A IA apoia a equipe de cuidado. Ela não substitui a responsabilidade clínica."
+      },
+      "evaluation": {
+        "title": "Avaliação",
+        "text": "Cada recurso de IA deve ser medido pelo impacto nos fluxos, pela segurança, pela adoção, pela qualidade e pelos desfechos."
+      }
+    },
+    "metricsTitle": "Métricas úteis de avaliação",
+    "metrics": [
+      "Tempo de documentação economizado",
+      "Taxa de preenchimento de formulários",
+      "Taxa de correção",
+      "Completude dos dados",
+      "Precisão dos resumos",
+      "Tempo para emissão da alta",
+      "Completude das passagens de plantão",
+      "Taxa de aceitação de alertas",
+      "Taxa de alertas ignorados",
+      "Satisfação dos profissionais de saúde",
+      "Acompanhamentos concluídos",
+      "Incidentes de segurança"
+    ]
+  },
+  "roadmap": {
+    "eyebrow": "Roteiro",
+    "title": "Do alívio na documentação a sistemas de saúde que aprendem.",
+    "items": {
+      "horizon1": {
+        "horizon": "Horizonte 1",
+        "title": "Alívio na documentação",
+        "text": "Reduzir a digitação e melhorar o registro estruturado.",
+        "focus": [
+          "Care Scribe",
+          "Documentação por voz em tempo real",
+          "Visão computacional para a documentação",
+          "Resumos com IA",
+          "Resumo para o médico",
+          "Gerador de resumo de alta",
+          "Quadro de passagem de plantão"
+        ]
+      },
+      "horizon2": {
+        "horizon": "Horizonte 2",
+        "title": "Inteligência nos fluxos",
+        "text": "Tornar os fluxos do CARE assistidos por IA.",
+        "focus": [
+          "Care Ask, copiloto médico",
+          "Geração de planos de cuidado",
+          "Calculadoras de escores com IA",
+          "Alertas de segurança de medicamentos",
+          "Care Form Builder Skill",
+          "Care Form Enhancer",
+          "Visão computacional para o cadastro"
+        ]
+      },
+      "horizon3": {
+        "horizon": "Horizonte 3",
+        "title": "Sistemas de saúde que aprendem",
+        "text": "Passar da assistência à melhoria contínua.",
+        "focus": [
+          "Apoio ao diagnóstico diferencial",
+          "Copilotos para programas",
+          "Análises para melhoria da qualidade",
+          "Estratificação de risco",
+          "Inteligência operacional",
+          "Infraestrutura de avaliação de IA",
+          "Fluxos de IA reutilizáveis na cooperação Sul-Sul"
+        ]
+      }
+    }
+  },
+  "difference": {
+    "eyebrow": "O diferencial do CARE AI",
+    "title": "Uma interface mais segura e mais rápida para uma infraestrutura de saúde confiável.",
+    "body": "O objetivo não é tornar os profissionais de saúde dependentes de mais um produto de caixa-preta. O objetivo é oferecer a eles uma interface mais inteligente para uma infraestrutura aberta e responsável.",
+    "items": {
+      "workflowNative": {
+        "title": "Nativo nos fluxos",
+        "text": "Integrado onde o cuidado acontece."
+      },
+      "patientAware": {
+        "title": "Atento ao paciente",
+        "text": "Ancorado nos prontuários do CARE."
+      },
+      "humanReviewed": {
+        "title": "Revisado por pessoas",
+        "text": "Projetado para a responsabilidade clínica."
+      },
+      "standardsAligned": {
+        "title": "Alinhado a padrões",
+        "text": "Construído sobre modelos abertos de dados de saúde."
+      },
+      "auditReady": {
+        "title": "Pronto para auditoria",
+        "text": "Rastreável e governável."
+      },
+      "extensible": {
+        "title": "Extensível",
+        "text": "Pronto para modelos de parceiros e integrações de IA."
+      },
+      "publicGood": {
+        "title": "Orientado ao bem público",
+        "text": "Projetado para fortalecer a infraestrutura aberta de saúde."
+      }
+    }
+  },
+  "faq": {
+    "items": {
+      "whatIs": {
+        "question": "O que é o CARE AI?",
+        "answer": "O CARE AI é a camada de inteligência assistiva construída sobre o CARE Core. Ele leva documentação com IA, resumos, fluxos por voz, inteligência de formulários, contexto clínico, planos de cuidado, alertas de segurança e apoio aos fluxos de trabalho para a mesma plataforma aberta de saúde onde o cuidado é prestado."
+      },
+      "aiDoctor": {
+        "question": "O CARE AI é um médico de IA?",
+        "answer": "Não. O CARE AI não é um médico de IA, uma ferramenta de diagnóstico autônomo nem um produto de caixa-preta fora do fluxo clínico. Ele redige, extrai, resume, sugere e calcula, enquanto as pessoas revisam e decidem."
+      },
+      "principle": {
+        "question": "Qual é o princípio do CARE AI?",
+        "answer": "A IA redige. As pessoas decidem. O CARE registra. Os sistemas aprendem. O CARE AI é construído em torno da revisão humana, da responsabilidade clínica, da ancoragem nas fontes, das permissões baseadas em perfis e das trilhas de auditoria."
+      },
+      "careScribe": {
+        "question": "O que é o Care Scribe?",
+        "answer": "O Care Scribe ajuda médicos, enfermeiros e equipes de cuidado a converter falas e conversas clínicas em documentação estruturada dentro do CARE. É um apoio à documentação ancorado no prontuário do paciente e no fluxo ativo."
+      },
+      "chatbot": {
+        "question": "Em que o CARE AI se diferencia de um chatbot isolado?",
+        "answer": "O CARE AI começa pelo sistema de saúde. Ele usa o contexto do CARE Core, como pacientes, atendimentos, formulários, perfis, solicitações, medicamentos, exames laboratoriais, planos de cuidado, tarefas, trilhas de auditoria, APIs e modelos de dados baseados em padrões."
+      },
+      "partners": {
+        "question": "Parceiros externos de IA podem se integrar ao CARE AI?",
+        "answer": "Sim. O CARE AI foi projetado como uma camada de IA aberta e extensível, na qual provedores confiáveis de escriba, modelos de fala, modelos de visão, modelos em idiomas locais, mecanismos de segurança de medicamentos, calculadoras de escores e modelos de pesquisa podem se integrar com segurança aos fluxos do CARE."
+      }
+    }
+  },
+  "final": {
+    "title": "IA para o bem comum da saúde.",
+    "body": "O CARE Core dá o contexto à IA. O CARE AI dá a interface aos profissionais de saúde. A revisão humana mantém a responsabilidade no cuidado. A infraestrutura aberta torna o modelo reutilizável.",
+    "tagline": "O CARE AI é IA responsável sobre infraestrutura de saúde confiável.",
+    "discuss": "Converse sobre o CARE AI",
+    "exploreCore": "Conheça o CARE Core"
+  }
+}

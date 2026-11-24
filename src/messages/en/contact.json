@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "title": "Contact OHC - Build Open Health Systems",
+    "description": "Contact Open Healthcare Network Foundation for deployments, partnerships, funding conversations, contribution pathways, and community participation."
+  },
+  "hero": {
+    "eyebrow": "Contact",
+    "title": "Start the right conversation.",
+    "body": "Reach OHC Foundation for deployment models, implementation partnerships, funding conversations, contribution pathways, and clinical workflow collaboration.",
+    "emailUs": "Email us at <link>{email}</link>"
+  },
+  "paths": {
+    "partnerships": {
+      "title": "Partnerships and deployments",
+      "description": "For governments, hospitals, public health programs, funders, and implementation partners exploring CARE or related open healthcare infrastructure."
+    },
+    "developers": {
+      "title": "Developer community",
+      "description": "Join the open-source community, read the docs, and contribute to CARE Core, apps, integrations, and implementation guides.",
+      "label": "Explore GitHub"
+    },
+    "slack": {
+      "title": "Slack and ecosystem",
+      "description": "Connect with maintainers, contributors, clinicians, and implementation teams working across the OHC ecosystem.",
+      "label": "Join Slack"
+    }
+  },
+  "resources": {
+    "eyebrow": "Before you write",
+    "title": "Useful starting points.",
+    "body": "These pages answer most first questions about the foundation, CARE, governance, implementation, and contribution.",
+    "items": {
+      "foundation": {
+        "title": "Foundation",
+        "description": "Mission, stewardship, and governance."
+      },
+      "careCore": {
+        "title": "CARE Core",
+        "description": "Platform primitives and architecture."
+      },
+      "support": {
+        "title": "Support",
+        "description": "Fund the open healthcare commons."
+      }
+    }
+  },
+  "footerNote": "OHC stewards healthcare <strong>Digital Public Goods</strong>. <strong>MIT License.</strong> Data ownership remains with deploying governments and institutions."
+}

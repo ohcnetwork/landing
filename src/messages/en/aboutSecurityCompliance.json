@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "title": "Security & Compliance — CARE Platform",
+    "description": "CARE is designed for standards-based interoperability, role-based access, auditability, and sovereign hosting choices."
+  },
+  "hero": {
+    "title": "Standards, privacy, and control—by design.",
+    "body": "CARE is designed for standards-based interoperability, strong access controls, auditability, and sovereign hosting choices."
+  },
+  "standards": {
+    "eyebrow": "Standards",
+    "title": "Built on global healthcare standards for interoperability",
+    "body": "<strong>FHIR R5</strong>, <strong>SNOMED</strong>, <strong>LOINC</strong>, <strong>UCUM</strong>, <strong>ICD‑10</strong>; terminology server; <strong>BYOT</strong>.",
+    "items": {
+      "fhir": "Fast Healthcare Interoperability Resources",
+      "snomed": "Clinical terminology",
+      "loinc": "Laboratory codes",
+      "icd10": "Diagnosis codes"
+    }
+  },
+  "access": {
+    "eyebrow": "Access & Safety",
+    "title": "Hierarchical org model with RBAC and comprehensive logging",
+    "hierarchy": {
+      "eyebrow": "Organization Model",
+      "title": "Hierarchical structure",
+      "description": "National → state → district → facility hierarchy with role-based access control.",
+      "graphicTitle": "RBAC",
+      "graphicLabel": "Access Control"
+    },
+    "auditTrails": {
+      "eyebrow": "Logging & Monitoring",
+      "title": "Comprehensive audit trails",
+      "description": "All actions logged with detailed audit trails for compliance and security monitoring.",
+      "graphicTitle": "Audit",
+      "graphicLabel": "Trails"
+    },
+    "monitoring": {
+      "eyebrow": "Dashboards",
+      "title": "Real-time monitoring",
+      "description": "Live dashboards for system monitoring, user activity, and security events.",
+      "graphicTitle": "Live",
+      "graphicLabel": "Monitoring"
+    }
+  },
+  "sovereignty": {
+    "eyebrow": "Sovereign infrastructure",
+    "title": "Deploy in your VPC/gov cloud with complete control",
+    "body": "<strong>Zero license fees</strong>; you own code and data. Deploy in your infrastructure with complete sovereignty and control.",
+    "items": {
+      "infrastructure": {
+        "title": "Your Infrastructure",
+        "text": "Deploy in your VPC, government cloud, or hybrid environment"
+      },
+      "licenseFees": {
+        "title": "Zero License Fees",
+        "text": "MIT license means no ongoing licensing costs or vendor lock-in"
+      },
+      "dataOwnership": {
+        "title": "Data Ownership",
+        "text": "You own all data and code with complete control and sovereignty"
+      }
+    }
+  },
+  "aiReady": {
+    "eyebrow": "AI‑ready with guardrails",
+    "title": "AI tools integrate seamlessly without altering the core",
+    "body": "Voice-fill, AI scribe, and other assistive tools should work as plugins without modifying the core platform, preserving security, maintainability, and human review.",
+    "plugins": {
+      "title": "AI Plugins",
+      "body": "AI tools work as plugins without modifying the core platform",
+      "items": [
+        "Voice-to-text for clinical notes",
+        "AI scribe for documentation drafts",
+        "Summarization with clinician review",
+        "Document understanding for structured workflows"
+      ]
+    },
+    "guardrails": {
+      "title": "Security Guardrails",
+      "body": "Built-in security measures ensure AI tools don't compromise data integrity",
+      "items": [
+        "Role-based access controls",
+        "Audit trails for AI interactions",
+        "Clear draft and review states",
+        "Human accountability for clinical decisions"
+      ]
+    }
+  }
+}

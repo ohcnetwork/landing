@@ -1,0 +1,13 @@
+{
+  "meta": {
+    "coverImageAlt": "{title} གི་ཁ་ཤོག་པར"
+  },
+  "author": "རྩོམ་པ་པོ",
+  "readingTime": "ལྷག་ནིའི་ཡུན་ཚད",
+  "readingTimeValue": "ལྷག་ནི་ལུ་སྐར་མ་ {minutes}",
+  "categories": "དབྱེ་ཁག",
+  "newer": "ཇེ་གསར",
+  "older": "ཇེ་རྙིང",
+  "backToBlog": "བློག་ལུ་ལོག",
+  "tableOfContents": "རྩོམ་ཡིག་འདི་ནང"
+}

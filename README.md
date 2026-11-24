@@ -24,6 +24,14 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+## Translations
+
+The site is available in English (default, unprefixed URLs), Portuguese
+(`/pt`), Dzongkha (`/dz`) and Hindi (`/hi`). Page copy lives in
+`src/messages/<locale>/*.json`, not in the components. Run
+`npm run i18n:check` to validate the catalogs. See [docs/i18n.md](docs/i18n.md)
+for how pages are localized and how to add a language.
+
 ## Blog archive
 
 The blog at `/blog` supports shareable theme and publication-month filters, for

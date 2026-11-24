@@ -1,0 +1,440 @@
+{
+  "meta": {
+    "title": "CARE Clinic: software de gestão de clínicas gratuito e de código aberto",
+    "description": "O CARE Clinic é um software gratuito e de código aberto para pequenas clínicas: prontuários, agendamentos, prescrições, faturamento e backups criptografados no seu próprio computador.",
+    "ogDescription": "A clínica inteira em um computador. Sem taxas de licença, sem assinatura e com os prontuários em um computador controlado pela sua clínica.",
+    "ogImageAlt": "CARE Clinic: software gratuito para clínicas. Seus dados. Seu controle.",
+    "twitterDescription": "Software de clínica gratuito e de código aberto que funciona no computador da própria clínica."
+  },
+  "structuredData": {
+    "featureList": [
+      "Cadastro de pacientes, agendamentos e filas de atendimento",
+      "Notas de consulta, formulários configuráveis e prescrições",
+      "Solicitações e resultados de exames, farmácia e estoque",
+      "Faturamento, faturas, pagamentos e recibos",
+      "Backups criptografados a cada 24 horas enquanto o serviço de backup estiver em execução e o armazenamento estiver acessível",
+      "Fluxos essenciais na rede local após a configuração, com o computador principal ligado e executando o CARE"
+    ]
+  },
+  "links": {
+    "requestSetup": "Solicitar instalação",
+    "githubReleases": "Baixar pelo GitHub Releases",
+    "documentation": "Documentação"
+  },
+  "installer": {
+    "button": "Baixar o CARE Clinic",
+    "downloadFor": "Baixar para {platform}",
+    "preparing": "Preparando o download para {platform}",
+    "requested": "Download solicitado",
+    "frameTitle": "Download do instalador para {platform}",
+    "errors": {
+      "rateLimited": "O GitHub está limitando as solicitações de download. Aguarde alguns minutos e tente novamente.",
+      "releaseUnavailable": "Não foi possível carregar a versão mais recente. Tente novamente em instantes.",
+      "invalidRelease": "As informações da versão são inválidas. Tente novamente mais tarde.",
+      "noInstaller": "A versão mais recente não tem um instalador correspondente para {platform}. Tente novamente mais tarde.",
+      "invalidUrl": "O endereço de download do instalador é inválido.",
+      "reload": "Recarregue a página e tente baixar novamente.",
+      "network": "Não foi possível acessar o serviço de download. Verifique sua conexão e tente novamente."
+    }
+  },
+  "hero": {
+    "tagline": "A plataforma de código aberto Care, no computador da sua própria clínica",
+    "title": "Software gratuito para clínicas. <shine>Seus dados. Seu controle.</shine>",
+    "body": "A clínica inteira em um computador. Sem taxas de licença, sem assinatura e com os prontuários em um computador controlado pela sua clínica.",
+    "motto": "Gratuito. Código aberto. Construído sobre o Care.",
+    "imageAlt": "Visão geral do CARE Clinic: status da clínica, endereço local, conexão de celulares e resumo dos backups criptografados",
+    "imageCaption": "Captura de tela da visão geral da versão {version}, ainda com a marca anterior CARE Desktop.",
+    "clinicAddress": "Endereço da clínica: <mono>{host}</mono>",
+    "backups": "Backups criptografados · seu armazenamento",
+    "screenshotNote": "As capturas de tela incluem a versão {version}, com o nome anterior CARE Desktop. Os detalhes da interface variam conforme a versão; caminhos de arquivos pessoais foram ocultados."
+  },
+  "ticker": {
+    "label": "Destaques",
+    "items": [
+      "₹0 pelo software",
+      "Código aberto, licença MIT",
+      "Funciona offline após a configuração",
+      "Backups automáticos criptografados",
+      "Todas as mesas no Wi-Fi da clínica",
+      "Sem telemetria",
+      "Mac e Windows"
+    ]
+  },
+  "overview": {
+    "title": "A clínica inteira. Um computador.",
+    "body": "O CARE Clinic é um software gratuito e de código aberto de gestão para pequenas clínicas. Um único instalador configura todo o sistema em um computador da clínica, dos prontuários, agendamentos, prescrições e faturamento ao banco de dados, ao armazenamento de arquivos e aos backups automáticos criptografados. A equipe se conecta a partir de outros computadores pelo Wi-Fi da clínica, e o núcleo da clínica continua funcionando sem internet após a configuração online, desde que o computador principal permaneça ligado, executando o CARE e acessível na rede local.",
+    "price": {
+      "title": "₹0 pelo software",
+      "text": "Sem taxa de licença. Sem assinatura."
+    },
+    "tiles": {
+      "records": {
+        "title": "Prontuários no seu computador",
+        "text": "Sua clínica guarda o banco de dados e os backups."
+      },
+      "desks": {
+        "title": "Todas as mesas conectadas",
+        "text": "Os computadores da equipe se conectam pelo Wi-Fi da clínica."
+      },
+      "offline": {
+        "title": "Funciona offline",
+        "text": "Após a configuração, os fluxos essenciais precisam do computador principal em execução e da rede da clínica, não de internet."
+      },
+      "backups": {
+        "title": "Backup a cada 24 horas",
+        "text": "Enquanto o serviço de backup estiver em execução e seu armazenamento estiver acessível. A restauração já vem incluída."
+      }
+    },
+    "openSource": {
+      "title": "Código aberto",
+      "text": "Licença MIT. Código-fonte no GitHub."
+    }
+  },
+  "price": {
+    "title": "<amount>₹0</amount><text>pelo software.</text>",
+    "body": "Software gratuito de gestão de clínicas, no sentido literal: não há nada a pagar para baixar, instalar ou continuar usando. Não há taxa de licença, assinatura de software nem período de teste que expira. A Open Healthcare Network Foundation o disponibiliza sob a licença MIT.",
+    "note": "O software é gratuito. O computador, o armazenamento de backup, a ajuda na instalação, o suporte e serviços conectados, como SMS, podem ter custo."
+  },
+  "care": {
+    "eyebrow": "O Care em ação",
+    "title": "Do agendamento à cobrança. Um único prontuário.",
+    "body": "Cada etapa da consulta chega à mesma linha do tempo do paciente, para que a recepção, o consultório e o caixa vejam um único prontuário.",
+    "disclaimer": "Estas são demonstrações gerais da plataforma CARE, não gravações da instalação padrão do Clinic. Telas, formulários e relatórios variam conforme a versão e a configuração. Os fluxos hospitalares e as integrações mostrados podem exigir configuração adicional, plugins ou serviços online.",
+    "videoLabel": "Demonstração geral do CARE: {caption}. Depende da configuração.",
+    "demoCaption": "Demonstração geral da plataforma CARE: {caption}",
+    "demoNote": "Demonstração geral do CARE · os recursos dependem da configuração.",
+    "reportsAlt": "Ilustração de modelos de relatório configurados, não uma captura de tela do aplicativo CARE",
+    "reportsCaption": "Ilustração de modelo de relatório: {caption}",
+    "reportsNote": "Apenas ilustração. Escolha os modelos de relatório durante a configuração da clínica.",
+    "steps": {
+      "consultation": {
+        "label": "Consulta",
+        "title": "Notas que acompanham o seu ritmo.",
+        "text": "Notas clínicas, sinais vitais, diagnósticos, observações e orientações, em formulários configurados para a sua clínica e especialidade.",
+        "caption": "Formulários estruturados, observações, notas, terminologia e contexto clínico registrados no prontuário longitudinal"
+      },
+      "forms": {
+        "label": "Formulários e questionários",
+        "title": "Formulários que se ajustam à sua prática.",
+        "text": "Configure questionários e formulários clínicos para a sua clínica e especialidade, sem alterar o núcleo do Care.",
+        "caption": "Equipes de clínicas moldando formulários e fluxos no Care sem criar um fork do produto"
+      },
+      "investigations": {
+        "label": "Exames",
+        "title": "Solicitações e resultados, no prontuário.",
+        "text": "Solicitações e resultados de exames vinculados à consulta, para que nenhum laudo se perca em uma gaveta.",
+        "caption": "Solicitações, amostras, laudos, valores, unidades e resultados voltando para a mesma linha do tempo do paciente"
+      },
+      "pharmacy": {
+        "label": "Farmácia e estoque",
+        "title": "Dispense e controle.",
+        "text": "Dispensação vinculada às prescrições, com níveis de estoque, controle de validade e alertas.",
+        "caption": "Prescrições conectadas à dispensação, à movimentação de estoque, às substituições, aos alertas e à visibilidade do estoque"
+      },
+      "billing": {
+        "label": "Faturamento",
+        "title": "Cobre no balcão.",
+        "text": "Cobrança de serviços, faturas, pagamentos e recibos conectados à consulta.",
+        "caption": "Faturas, pagamentos, coberturas e conciliação conectados à atividade real de cuidado"
+      },
+      "reports": {
+        "label": "Relatórios",
+        "title": "Relatórios a partir do mesmo prontuário.",
+        "text": "Gere relatórios a partir dos dados clínicos registrados, usando os modelos configurados para a sua clínica. Os relatórios disponíveis dependem da sua configuração.",
+        "caption": "Relatórios clínicos e operacionais gerados a partir dos mesmos fluxos estruturados"
+      }
+    }
+  },
+  "also": {
+    "eyebrow": "Também incluído",
+    "title": "A recepção e o acompanhamento no mesmo prontuário que o consultório.",
+    "items": {
+      "appointments": {
+        "label": "Agendamentos",
+        "title": "O dia, em um relance.",
+        "text": "Horários de consulta, atendimentos sem agendamento e uma fila de atendimento, para que a recepção sempre saiba quem é o próximo."
+      },
+      "registration": {
+        "label": "Cadastro",
+        "title": "Cada paciente, um prontuário.",
+        "text": "Dados demográficos, identificadores, contatos e busca de pacientes, com cada consulta adicionada à mesma linha do tempo."
+      },
+      "prescriptions": {
+        "label": "Prescrições",
+        "title": "Claras e completas.",
+        "text": "Prescrições de medicamentos com instruções de dosagem, prontas para imprimir ou enviar à dispensação."
+      },
+      "followUp": {
+        "label": "Acompanhamento",
+        "title": "A próxima consulta, já planejada.",
+        "text": "Registre as orientações de acompanhamento e planeje a próxima consulta. Lembretes por SMS ou notificações push para pacientes exigem plugins compatíveis e serviços configurados; não estão incluídos por padrão."
+      }
+    }
+  },
+  "clinic": {
+    "title": "O CARE é a plataforma. O CARE Clinic é como uma clínica a executa.",
+    "body": "A mesma plataforma Care de código aberto usada por hospitais e programas de saúde pública, empacotada para um único computador de clínica, com um painel de controle que a mantém em funcionamento, com backup e atualizada.",
+    "imageAlt": "Visão geral com seis abas no painel de controle, status da clínica, endereço local e resumo dos backups criptografados; versão {version} com a marca anterior CARE Desktop",
+    "localCare": "Cuidado essencial na sua rede local",
+    "backups": "Backups criptografados · restauração incluída"
+  },
+  "plugins": {
+    "title": "Adicione o que a sua clínica precisa.",
+    "body": "Plugins estendem o CARE sem alterar o núcleo. O catálogo atualizado se concentra no CARE Onboarding, ativado por padrão em novas clínicas. Gerencie complementos compatíveis na aba Plugins do painel de controle.",
+    "items": {
+      "onboarding": {
+        "title": "Um início guiado para a sua clínica.",
+        "text": "Conduz uma nova clínica pela configuração da localização, da unidade, dos departamentos, da equipe, da numeração, dos questionários e dos modelos de relatório.",
+        "note": "Ativado por padrão em novas clínicas; requer internet"
+      }
+    },
+    "hostedNote": "O CARE Onboarding é hospedado online, por isso os navegadores da equipe precisam de internet para carregá-lo. Serviços conectados podem ter termos e custos próprios. Plugins salvos e personalizados existentes são preservados, e não desinstalados automaticamente quando o catálogo muda.",
+    "releaseNote": "Nota de versão, verificada em 4 de outubro de 2026: o <catalog>catálogo de código-fonte atualizado</catalog> contém apenas o CARE Onboarding. A versão publicada mais recente, <release>{version}</release>, ainda inclui o catálogo anterior.",
+    "beyond": {
+      "title": "Além do catálogo",
+      "body": "O <link>ecossistema de plugins</link> da plataforma Care abrange infraestruturas digitais nacionais, documentação com IA, laboratório, farmácia, imagem, pagamentos e mensagens. Um parceiro técnico pode adicionar plugins compatíveis do CARE como plugins personalizados, com a configuração, as dependências e os serviços externos que eles exigem.",
+      "applyNote": "O comando Save and apply exige uma clínica saudável e em funcionamento. Mudanças no backend podem recompilar e reiniciar o CARE, interrompendo brevemente a equipe; mudanças apenas no frontend sincronizam os registros no próximo carregamento de página. A aba Plugins não pede a senha de administrador do CARE Clinic, então restrinja o acesso a pessoas de confiança da equipe.",
+      "trustNote": "Instale apenas plugins confiáveis e mantenha backups. A recuperação pode restaurar configurações e imagens, mas não desfaz migrações arbitrárias de banco de dados nem mudanças em serviços externos."
+    },
+    "breadcrumb": {
+      "controlPanel": "Painel de controle",
+      "plugins": "Plugins"
+    },
+    "imageAlt": "Aba Plugins de nível superior mostrando o CARE Onboarding e o botão Save and apply, com a marca anterior CARE Desktop"
+  },
+  "updates": {
+    "eyebrow": "Atualizações",
+    "title": "Escolha quando fazer uma mudança.",
+    "careUpdates": "As atualizações do software CARE seguem os branches de origem configurados para o backend e o frontend, com builds preparados em segundo plano. A opção Install now pode interromper a equipe; Later deixa uma atualização preparada na fila para a próxima inicialização da clínica. Planeje mudanças fora do horário de atendimento.",
+    "appUpdates": "As atualizações do aplicativo CARE Clinic são separadas. A clínica pode continuar funcionando enquanto o aplicativo desktop é atualizado, e o aplicativo pode passar o processo para um instalador do sistema operacional. Siga as instruções e confirme o resultado; abrir um instalador não comprova que a instalação foi concluída.",
+    "pluginUpdates": "O catálogo de plugins vem com o aplicativo desktop. Após a atualização, as mudanças de origem do catálogo chegam às configurações de plugins existentes no próximo Save and apply na aba Plugins. Os pacotes de frontend hospedados são baixados separadamente pelos navegadores da equipe. Não existe uma ação única para atualizar tudo.",
+    "workflowLink": "Leia o fluxo de atualização",
+    "imageAlt": "Aba Updates separando o software CARE do aplicativo desktop; a captura de tela mantém a versão {version} e a marca CARE Desktop"
+  },
+  "data": {
+    "title": "Seus prontuários. No seu computador.",
+    "body": "O banco de dados, os arquivos e os backups da clínica ficam no computador que você escolher. Sua clínica decide quem tem acesso e para onde vão os backups. Não há nenhuma conta hospedada pelo Care entre a sua clínica e os seus prontuários.",
+    "points": {
+      "telemetry": {
+        "title": "Sem telemetria.",
+        "text": "O CARE Clinic em si não tem análise de uso nem relatórios de falhas. Os downloads de instalação e as verificações automáticas de atualização usam a internet. Dependências, plugins hospedados e provedores configurados têm sua própria atividade de rede e suas próprias políticas de privacidade."
+      },
+      "encryption": {
+        "title": "Criptografia em toda a clínica.",
+        "text": "Após a configuração do dispositivo, a equipe acessa o CARE via HTTPS com um certificado emitido pela clínica. Conecte-se apenas em uma rede confiável da clínica e conclua a aprovação do certificado. Um firewall de aplicação web acrescenta outra camada de proteção."
+      },
+      "backups": {
+        "title": "Backup a cada 24 horas.",
+        "text": "Os backups são feitos a cada 24 horas enquanto o serviço de backup estiver em execução, e não em um horário noturno fixo. Mantenha o destino escolhido acessível. Defina a retenção, faça um backup imediato ou restaure a partir de um arquivo; mantenha uma cópia fora do dispositivo e teste uma restauração."
+      },
+      "recovery": {
+        "title": "Dois materiais de recuperação. Funções diferentes.",
+        "text": "Salve e verifique o arquivo PEM privado de recuperação para descriptografar os backups. Seis códigos de uso único redefinem a senha de administrador do CARE Clinic, não os logins da equipe, e não descriptografam backups. Guarde ambos com segurança, separados do computador principal e dos backups. Configurações protegidas, restauração e desinstalação exigem a senha de administrador."
+      }
+    }
+  },
+  "team": {
+    "title": "Uma clínica. Todas as mesas.",
+    "body": "Hospede a clínica em um computador. A recepção, os consultórios e o caixa se conectam a partir de seus próprios computadores Mac ou Windows pelo Wi-Fi da clínica. Primeiro encontre a clínica, depois escolha Connect e aprove a instalação do certificado e eventuais solicitações do sistema operacional. Os clientes não precisam de Docker nem de Git, mas precisam dessa configuração do dispositivo e de uma rede confiável da clínica.",
+    "note": "Sem licença por usuário. A capacidade depende do computador principal e da rede.",
+    "imageAlt": "Tela de descoberta do cliente CARE Clinic: informe o endereço da clínica e encontre o servidor antes de conectar",
+    "phones": "<strong>Celulares e tablets.</strong> A opção “Connect phone or tablet” do painel de controle mostra um QR code que abre <mono>{url}</mono>. Siga as etapas de instalação e confiança do certificado no dispositivo antes de abrir o CARE via HTTPS. Apenas escanear o QR code não estabelece a confiança."
+  },
+  "offline": {
+    "title": "Funciona quando a internet não funciona.",
+    "body": "Após a configuração, o núcleo da clínica funciona na rede local sem conexão com a internet, enquanto o computador principal estiver ligado, executando o CARE e acessível na LAN da clínica. Os dispositivos da equipe não são cópias offline independentes. A internet é necessária para instalar, atualizar, carregar plugins hospedados e usar os serviços online que você ativar."
+  },
+  "setup": {
+    "title": "Um instalador configura tudo.",
+    "body": "Baixe, execute a configuração no computador da clínica e o assistente guia você pelo processo. É necessário ter internet: a configuração baixa pré-requisitos como Git e Docker via Rancher Desktop, WSL 2 no Windows, além dos códigos-fonte, imagens e dependências do CARE. O tempo de instalação varia.",
+    "steps": {
+      "download": {
+        "title": "Baixe.",
+        "text": "Obtenha o CARE Clinic para Mac ou Windows.",
+        "alt": "A escolha na primeira execução: iniciar a configuração ou conectar-se a uma clínica existente, com a marca anterior CARE Desktop"
+      },
+      "host": {
+        "title": "Configure o computador da clínica.",
+        "text": "Escolha um endereço para a clínica e uma pasta de backup, salve e verifique o arquivo PEM de recuperação de backup e, em seguida, defina uma senha de administrador e salve seis códigos de recuperação antes da instalação. A configuração baixa o software necessário e compila o CARE; mantenha o computador online e siga as solicitações de permissão.",
+        "alt": "Revisão da configuração com o arquivo de recuperação de backup verificado e os códigos de recuperação de administrador salvos antes da instalação; caminho pessoal de backup ocultado"
+      },
+      "team": {
+        "title": "Conecte a equipe.",
+        "text": "Em uma rede confiável da clínica, escolha “Connect to an existing server on the local network” e encontre a clínica pelo endereço. Revise, escolha Connect e aprove a configuração do certificado. Celulares e tablets usam a página de configuração por QR code e seguem as instruções de certificado.",
+        "alt": "Tela de descoberta do cliente CARE Clinic pedindo o endereço da clínica antes de conectar"
+      },
+      "onboarding": {
+        "title": "Configure sua clínica.",
+        "text": "Com acesso à internet, abra o CARE Onboarding no aplicativo web do CARE. Ele orienta a configuração da unidade, dos departamentos, da equipe, da numeração, dos formulários clínicos e dos modelos de relatório antes de você começar a atender pacientes.",
+        "alt": "Tela inicial do CARE Onboarding mostrando as dez etapas de configuração da clínica, antes do início da configuração da unidade"
+      }
+    },
+    "note": "As capturas de tela mostram as versões fornecidas, incluindo a marca anterior CARE Desktop. A imagem de revisão tem o caminho pessoal de backup ocultado. A imagem do onboarding mostra o início da configuração, não uma clínica concluída."
+  },
+  "openSource": {
+    "title": "Código aberto. Aberto a você.",
+    "body": "Todo o código-fonte está no GitHub sob a licença MIT. Leia, modifique, continue usando. É também por isso que o software é gratuito: não há licença para vender.",
+    "viewSource": "Ver o código-fonte",
+    "readLicence": "Ler a licença",
+    "underTheHood": {
+      "title": "Por dentro",
+      "body": "Um aplicativo desktop em Go e Wails, com interface em React, controla uma stack Docker Compose: o backend do Care e seus workers, o aplicativo web do Care, PostgreSQL, Redis, Silo para arquivos e Caddy com o firewall de aplicação web Coraza como porta de entrada HTTPS. As duas imagens do Care são compiladas no próprio computador da clínica a partir de fontes configuradas, com os commits resolvidos registrados a cada build. Os branches configurados podem acompanhar atualizações upstream; não são versões fixadas para todo o release. A assinatura dos instaladores varia conforme a plataforma."
+    }
+  },
+  "whichCare": {
+    "title": "Qual Care é o certo para a sua clínica?",
+    "comparison": "Comparação",
+    "partnerColumn": "CARE, implantado por parceiro",
+    "rows": {
+      "bestFor": {
+        "label": "Ideal para",
+        "clinic": "Uma pequena clínica em um computador",
+        "partner": "Redes de clínicas, hospitais e programas em vários locais"
+      },
+      "whereItRuns": {
+        "label": "Onde funciona",
+        "clinic": "No computador da sua própria clínica",
+        "partner": "Nuvem, servidores locais ou modelo híbrido, operado com um parceiro de implementação"
+      },
+      "price": {
+        "label": "Preço do software",
+        "clinic": "₹0, licença MIT",
+        "partner": "Código aberto; implantação, hospedagem e suporte combinados com um parceiro"
+      },
+      "internet": {
+        "label": "Internet",
+        "clinic": "Para configuração, atualizações, plugins hospedados e serviços online; o cuidado local precisa do computador principal em execução e da LAN",
+        "partner": "Depende da implantação: o acesso em nuvem precisa de internet; fluxos em servidores locais podem usar uma rede local"
+      },
+      "teamAccess": {
+        "label": "Acesso da equipe",
+        "clinic": "Computadores, celulares e tablets da equipe na rede da clínica",
+        "partner": "Dispositivos e acesso remoto dependem da implantação, da rede e dos controles de acesso"
+      },
+      "backups": {
+        "label": "Backups",
+        "clinic": "Backups criptografados a cada 24 horas enquanto o serviço estiver em execução, em um armazenamento acessível de sua escolha",
+        "partner": "Gerenciados pela implantação"
+      }
+    },
+    "getStarted": "Comece agora",
+    "chooseInstaller": "Escolha seu instalador",
+    "deploymentConversation": "Converse sobre uma implantação",
+    "specsTitle": "Especificações técnicas",
+    "specs": {
+      "platforms": {
+        "term": "Plataformas",
+        "detail": "macOS (Apple Silicon e Intel), Windows 64 bits"
+      },
+      "installers": {
+        "term": "Instaladores",
+        "detail": ".dmg para macOS, -setup.exe para Windows. Na versão {version}: macOS notarizado; Windows sem assinatura. Verifique o manifesto de cada versão."
+      },
+      "staffDevices": {
+        "term": "Dispositivos da equipe",
+        "detail": "Computadores Mac e Windows executando o CARE Clinic em modo cliente; iOS e Android pelo navegador na rede da clínica"
+      },
+      "network": {
+        "term": "Rede",
+        "detail": "Uma rede Wi-Fi ou cabeada da clínica; a clínica é acessada em <mono>{url}</mono>"
+      },
+      "internet": {
+        "term": "Internet",
+        "detail": "Instalação, atualizações, plugins hospedados e serviços online configurados"
+      },
+      "backups": {
+        "term": "Backups",
+        "detail": "Criptografados, a cada 24 horas enquanto o serviço estiver em execução e o armazenamento estiver acessível; retenção configurável, backup imediato e restauração"
+      },
+      "security": {
+        "term": "Segurança",
+        "detail": "HTTPS após a configuração do certificado da clínica, firewall de aplicação web, senha de administrador, seis códigos de redefinição e um arquivo PEM separado para recuperação de backups"
+      },
+      "systemRequirements": {
+        "term": "Requisitos de sistema",
+        "detail": "Recomendado: 8 GB de RAM, processador de 4 núcleos e 30 GB de armazenamento livre. <link>Orientações de navegador e dispositivo do CARE</link>."
+      },
+      "telemetry": {
+        "term": "Telemetria",
+        "detail": "Nenhuma no próprio CARE Clinic; dependências, plugins e provedores têm políticas próprias"
+      },
+      "licence": {
+        "term": "Licença"
+      },
+      "updates": {
+        "term": "Atualizações",
+        "detail": "Atualizações separadas do software CARE e do aplicativo CARE Clinic na aba Updates; mudanças de plugins na aba Plugins"
+      },
+      "source": {
+        "term": "Código-fonte"
+      }
+    }
+  },
+  "faq": {
+    "items": {
+      "free": {
+        "question": "O CARE Clinic é gratuito e de código aberto?",
+        "answer": "Sim. A Open Healthcare Network Foundation disponibiliza o CARE Clinic como software gratuito e de código aberto sob a licença MIT. Clínicas e seus parceiros técnicos podem baixá-lo, usá-lo e adaptá-lo sem comprar uma licença. Não há assinatura de software, taxa de licença nem período de teste que expira."
+      },
+      "requirements": {
+        "question": "Requisitos mínimos e complementos",
+        "answer": "Você precisa de um computador principal com Windows 64 bits ou macOS (Apple Silicon ou Intel). Recomendamos 8 GB de RAM, processador de 4 núcleos e 30 GB de armazenamento livre. Os computadores da equipe se conectam usando o CARE Clinic em modo cliente no Windows ou no macOS; celulares e tablets se conectam por um navegador na rede da clínica. A internet é necessária para instalação, atualizações, plugins hospedados e serviços online configurados. O computador, o armazenamento de backup, a ajuda na instalação, o suporte e serviços opcionais como SMS ou e-mail podem ter custos à parte do software gratuito. Verifique os requisitos, os termos e os preços dos complementos que você escolher."
+      },
+      "storage": {
+        "question": "Onde ficam armazenados os prontuários dos meus pacientes?",
+        "answer": "O banco de dados e os arquivos da clínica ficam armazenados no computador que hospeda o CARE Clinic, e os backups vão para o local que você escolher. Sua clínica gerencia o acesso e os backups. Os serviços que você ativar, como SMS ou e-mail, enviam informações ao provedor configurado, por isso avalie cada um antes de usá-lo."
+      },
+      "public": {
+        "question": "Código aberto significa que os prontuários dos pacientes são públicos?",
+        "answer": "Não. Código aberto se refere ao código do software, que qualquer pessoa pode ler no GitHub. Os prontuários dos pacientes da sua clínica ficam no computador da sua clínica, e ela ainda precisa configurar o acesso corretamente e proteger seus computadores, sua rede e seus backups."
+      },
+      "team": {
+        "question": "Toda a minha equipe pode usar?",
+        "answer": "Sim. Um computador hospeda a clínica, e os demais computadores da equipe se conectam pela rede local da clínica usando o CARE Clinic em modo cliente. Celulares e tablets se conectam por uma página de configuração na rede da clínica e concluem a confiança no certificado. Não há taxa de licença por usuário; a capacidade depende do computador principal, da rede e da configuração."
+      },
+      "offline": {
+        "question": "O CARE Clinic funciona sem internet?",
+        "answer": "Os fluxos essenciais funcionam sem internet após a configuração, enquanto o computador principal estiver ligado, executando o CARE e acessível pela rede da clínica. Os dispositivos da equipe não são réplicas offline independentes. Instalação, atualizações, plugins hospedados e serviços online configurados precisam de internet."
+      },
+      "download": {
+        "question": "Onde baixo o CARE Clinic?",
+        "answer": "Clique em “Baixar o CARE Clinic” e escolha Mac ou Windows. O menu de download usa JavaScript e a API pública do GitHub para solicitar o instalador mais recente correspondente. Se a API estiver indisponível, o JavaScript estiver desativado ou o navegador bloquear o download, use “Baixar pelo GitHub Releases”, ao lado dos botões, e selecione o instalador lá."
+      },
+      "backups": {
+        "question": "Quem é responsável pelos backups?",
+        "answer": "Sua clínica ou o parceiro técnico dela. Os backups criptografados são feitos a cada 24 horas enquanto o serviço de backup estiver em execução e o destino estiver acessível, e não em um horário fixo durante a noite. Mantenha os backups e o arquivo PEM privado de recuperação em segurança, fora do dispositivo e separados um do outro, e teste uma restauração. Os códigos de redefinição de administrador não descriptografam backups."
+      },
+      "migration": {
+        "question": "Posso migrar meus prontuários para outro sistema no futuro?",
+        "answer": "O acesso local ao banco de dados, o código aberto e os seus próprios backups dão à sua clínica controle sobre o sistema. Transferir prontuários para outro produto é uma tarefa de migração à parte, que depende dos formatos e dos fluxos envolvidos."
+      },
+      "sameAsCare": {
+        "question": "O CARE Clinic é o mesmo que o CARE?",
+        "answer": "O CARE Clinic empacota a plataforma CARE de código aberto para um único computador de clínica. Implantações do CARE gerenciadas por parceiros também atendem hospitais e programas de cuidado comunitário. O CARE Clinic leva a plataforma a uma pequena clínica sem conta hospedada nem taxa de licença de software; os fluxos disponíveis dependem da configuração."
+      },
+      "usageData": {
+        "question": "O CARE Clinic coleta dados de uso?",
+        "answer": "O CARE Clinic em si não tem telemetria, análises nem relatórios de falhas. Ele faz downloads de instalação e verificações automáticas de atualização. Dependências, plugins de frontend hospedados e provedores online configurados têm atividade de rede e políticas de privacidade próprias; isto não é uma promessa de ausência de telemetria em toda a stack."
+      },
+      "opd": {
+        "question": "O CARE Clinic é um software de gestão ambulatorial?",
+        "answer": "Sim, no sentido de que cobre o trabalho de uma clínica ambulatorial: cadastro, agendamentos, consultas, prescrições e faturamento. Ele foi feito para uma pequena clínica funcionando em um computador. Hospitais com enfermarias e vários departamentos devem considerar a plataforma Care hospedada."
+      },
+      "plugins": {
+        "question": "O que são plugins?",
+        "answer": "Plugins estendem o CARE. O catálogo de código-fonte atualizado contém apenas o CARE Onboarding, ativado por padrão em novas clínicas e carregado de um servidor na internet. A versão publicada mais recente verificada em 4 de outubro de 2026, {version}, ainda tem o catálogo anterior. Plugins salvos anteriormente e personalizados são preservados, e não desinstalados automaticamente. Um parceiro técnico pode configurar plugins compatíveis e as dependências ou serviços de que eles precisam."
+      },
+      "updates": {
+        "question": "Como funcionam as atualizações e as mudanças de plugins?",
+        "answer": "A aba Updates separa os builds de backend/frontend do CARE das versões do aplicativo CARE Clinic. Os builds do CARE seguem os branches de origem configurados: Install now pode interromper a equipe; Later deixa a atualização preparada na fila para a próxima inicialização da clínica. As atualizações do aplicativo podem manter o CARE em execução e abrir um instalador do sistema operacional. O catálogo de plugins vem com o aplicativo; após uma atualização, as mudanças de origem do catálogo chegam aos plugins salvos no próximo Save and apply. Os navegadores da equipe baixam separadamente os pacotes de plugins hospedados."
+      }
+    }
+  },
+  "download": {
+    "title": "Gratuito para usar. <shine>Seu para operar.</shine>",
+    "body": "Obtenha o CARE Clinic para a sua clínica.",
+    "fallback": "Se o JavaScript, a API do GitHub ou o encaminhamento de download do seu navegador não estiverem disponíveis, use o link da página de versões para escolher um instalador.",
+    "viewOnGithub": "Ver no GitHub",
+    "legal": "O CARE Clinic é disponibilizado sob a licença MIT pela Open Healthcare Network Foundation. O software é gratuito; hardware, suporte e serviços externos podem ter custos à parte. A internet é necessária para instalação, atualizações, plugins hospedados e serviços conectados."
+  }
+}

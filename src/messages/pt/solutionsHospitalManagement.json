@@ -1,0 +1,384 @@
+{
+  "meta": {
+    "title": "CARE HMIS - Sistema de informação hospitalar (HIS) de código aberto",
+    "description": "O CARE HMIS é um sistema de informação hospitalar de código aberto, alinhado ao FHIR R5, para ambulatório, internação, emergência, laboratório, farmácia, faturamento e relatórios.",
+    "ogTitle": "CARE HMIS - Sistema de informação hospitalar de código aberto",
+    "ogDescription": "Um sistema de informação hospitalar modular que conecta pacientes, informações clínicas, operações, receita e dados prontos para IA.",
+    "ogImageAlt": "Tela de visão geral do atendimento no CARE HMIS",
+    "twitterDescription": "HIS/HMIS de código aberto com fluxos conectados de ambulatório, internação, emergência, laboratório, farmácia, faturamento, relatórios e IA."
+  },
+  "hero": {
+    "title": "O sistema operacional hospitalar aberto para um cuidado conectado.",
+    "body": "O CARE HMIS é um sistema de informação hospitalar de código aberto que conecta o fluxo de pacientes, o fluxo de informações e o fluxo de receita em ambulatório, emergência, internação, laboratório, farmácia, faturamento e relatórios.",
+    "planDeployment": "Planeje uma implantação de HMIS",
+    "exploreCareCore": "Conheça o CARE Core",
+    "videoLabel": "Vídeo de fluxo do CARE HMIS mostrando um sistema de informação hospitalar conectado",
+    "liveWorkflow": "Fluxo de HIS em operação",
+    "liveWorkflowDetail": "Atendimentos, solicitações, formulários, relatórios e contexto operacional."
+  },
+  "proof": {
+    "hospitals": "hospitais",
+    "states": "estados com implantação",
+    "fhir": "núcleo orientado a padrões",
+    "mit": "licença de código aberto"
+  },
+  "overview": {
+    "eyebrow": "Sistema de informação hospitalar",
+    "title": "A profundidade de um HIS com a autonomia do código aberto.",
+    "body": "O CARE HMIS foi feito para hospitais que precisam de mais do que um arquivo digital. Ele reúne EMR, HMIS, operações hospitalares, fluxos do ciclo de receita, interoperabilidade e dados clínicos prontos para IA em uma única plataforma aberta e reutilizável.",
+    "layerLabel": "Camada do HIS",
+    "layers": {
+      "clinicalRecord": {
+        "title": "Prontuário clínico",
+        "text": "Pacientes, atendimentos, notas, diagnósticos, solicitações, observações, medicamentos, planos de cuidado e resumos de alta."
+      },
+      "operations": {
+        "title": "Operações hospitalares",
+        "text": "Agendamentos, filas, leitos, enfermarias, departamentos, perfis da equipe, movimentação de estoque, relatórios e painéis."
+      },
+      "revenue": {
+        "title": "Ciclo de receita",
+        "text": "Registro de cobranças, faturas, pagamentos, cobertura por programas governamentais, direcionamento para reembolsos, conciliação e integração contábil."
+      },
+      "interoperability": {
+        "title": "Camada de interoperabilidade",
+        "text": "APIs alinhadas ao FHIR, vinculações terminológicas, fluxos da ABDM, integrações com dispositivos e extensões baseadas em plugins."
+      }
+    }
+  },
+  "problem": {
+    "eyebrow": "O problema real",
+    "title": "O software existe. O fluxo conectado, não.",
+    "body": "O objetivo não é ter prontuários eletrônicos. É ter um hospital capaz de coordenar o cuidado, medir a qualidade, gerir recursos e usar IA assistiva com segurança.",
+    "items": {
+      "fragments": {
+        "title": "Fragmentos isolados",
+        "text": "Cadastro, laboratório, medicamentos, alta e faturamento existem como eventos separados, e não como uma única história de cuidado."
+      },
+      "disconnected": {
+        "title": "Fluxos desconectados",
+        "text": "Solicitações, resultados, prescrições, estoque e dispensação circulam em silos, sem um fluxo operacional único."
+      },
+      "digitalPaper": {
+        "title": "Papel digital",
+        "text": "Os formulários foram digitalizados sem redesenhar o trabalho em torno deles, e o software vira mais um fardo."
+      },
+      "lostRevenue": {
+        "title": "Receita perdida",
+        "text": "Serviços não faturados, cobranças esquecidas e faturamento manual geram perdas de receita todos os dias."
+      }
+    }
+  },
+  "flows": {
+    "eyebrow": "Três fluxos ao mesmo tempo",
+    "title": "Registros viram fluxos. Fluxos viram operação.",
+    "body": "O CARE HMIS trata o hospital como um sistema vivo. Cada evento do paciente, decisão clínica e transação financeira pode passar por uma única camada operacional conectada.",
+    "items": {
+      "patient": {
+        "label": "Fluxo de pacientes",
+        "detail": "Cadastro, agendamentos, ambulatório, emergência, internação, UTI, alta e acompanhamento."
+      },
+      "information": {
+        "label": "Fluxo de informações",
+        "detail": "Atendimentos, solicitações, resultados, registros, decisões e contexto clínico longitudinal."
+      },
+      "revenue": {
+        "label": "Fluxo de receita",
+        "detail": "Cobranças, faturas, cobertura por programas governamentais, pagamentos e conciliação à medida que o cuidado é prestado."
+      }
+    }
+  },
+  "encounters": {
+    "eyebrow": "Cada atendimento",
+    "title": "Uma plataforma para todos os contextos de cuidado.",
+    "body": "O CARE apoia toda a jornada do paciente e mantém a documentação clínica consistente entre hospitais, clínicas, domicílios e consultas virtuais.",
+    "videoLabel": "Fluxo de questionário e notas médicas no CARE HMIS",
+    "types": {
+      "outpatient": {
+        "title": "Ambulatório",
+        "text": "Consultas clínicas vinculadas ao prontuário do paciente."
+      },
+      "emergency": {
+        "title": "Emergência",
+        "text": "Atendimento prioritário e fluxos de emergência."
+      },
+      "inpatient": {
+        "title": "Internação",
+        "text": "Admissões, visitas, solicitações, notas e alta."
+      },
+      "observation": {
+        "title": "Observação",
+        "text": "Monitoramento de curta permanência com continuidade."
+      },
+      "homeHealth": {
+        "title": "Atenção domiciliar",
+        "text": "Documentação móvel e planos de cuidado."
+      },
+      "virtualCare": {
+        "title": "Cuidado virtual",
+        "text": "Consultas remotas com registros estruturados."
+      }
+    }
+  },
+  "coreModules": {
+    "eyebrow": "Módulos principais",
+    "title": "Os fluxos que um hospital espera, construídos sobre um único núcleo.",
+    "body": "Os módulos não são aplicativos isolados. Eles compartilham pacientes, atendimentos, solicitações, observações, perfis, relatórios e trilhas de auditoria.",
+    "items": {
+      "clinicalData": {
+        "title": "Registro de dados clínicos",
+        "text": "Formulários estruturados, sintomas, condições, solicitações, prescrições de medicamentos e observações."
+      },
+      "scheduling": {
+        "title": "Agendamento",
+        "text": "Agendas de consultas, páginas públicas das unidades, disponibilidade dos médicos e horários livres."
+      },
+      "queues": {
+        "title": "Filas",
+        "text": "Filas por médico, departamento, farmácia, faturamento e serviços personalizados para contextos de alto volume."
+      },
+      "formBuilder": {
+        "title": "Construtor de formulários de EMR",
+        "text": "Formulários configuráveis por departamento, mapeados para recursos clínicos interoperáveis."
+      },
+      "beds": {
+        "title": "Gestão de leitos",
+        "text": "Localizações, leitos, status de internação, hierarquia e disponibilidade em tempo real."
+      },
+      "hierarchy": {
+        "title": "Hierarquia administrativa",
+        "text": "Estruturas de unidade, distrito, estado, programa e nível nacional, com segregação de dados."
+      },
+      "rbac": {
+        "title": "RBAC e auditoria",
+        "text": "Controle de acesso granular baseado em perfis para médicos, enfermeiros, administradores e agentes de saúde."
+      },
+      "reports": {
+        "title": "Relatórios dinâmicos",
+        "text": "Resumos de tratamento, resumos de alta, painéis e relatórios operacionais personalizados."
+      }
+    }
+  },
+  "workflows": {
+    "eyebrow": "Fluxos em ação",
+    "title": "Veja o sistema operacional hospitalar em fluxos reais do produto.",
+    "body": "Não são apenas nomes de módulos. O CARE HMIS apoia fluxos reais de gestão de leitos, desenhos clínicos e relatórios dinâmicos sobre a mesma camada compartilhada de dados de pacientes e unidades.",
+    "videoLabel": "Vídeo do fluxo de {title} no CARE HMIS",
+    "items": {
+      "beds": {
+        "title": "Gestão de leitos",
+        "text": "Acompanhe leitos, localizações, internações, situações de alta e a disponibilidade em tempo real em toda a hierarquia hospitalar."
+      },
+      "drawings": {
+        "title": "Desenhos clínicos",
+        "text": "Registre desenhos, mapas corporais, anotações e contexto clínico visual diretamente no prontuário do paciente."
+      },
+      "reports": {
+        "title": "Relatórios dinâmicos",
+        "text": "Gere relatórios operacionais e clínicos a partir de atendimentos, formulários, solicitações e atividades de cuidado compartilhados."
+      }
+    }
+  },
+  "departments": {
+    "eyebrow": "Abrangência do HIS",
+    "title": "Uma camada operacional para todos os departamentos do hospital.",
+    "body": "O CARE HMIS oferece aos hospitais um sistema de informação compartilhado para o trabalho clínico, administrativo, operacional e financeiro. Cada departamento pode manter seu fluxo enquanto contribui para um único prontuário longitudinal.",
+    "items": {
+      "frontDesk": {
+        "title": "Recepção",
+        "text": "Cadastro, dados demográficos, busca de pacientes, agendamentos, filas e abertura de atendimentos."
+      },
+      "opd": {
+        "title": "Ambulatório e consultórios",
+        "text": "Consultas, notas, prescrições, exames, acompanhamento, encaminhamentos e resumos."
+      },
+      "emergency": {
+        "title": "Emergência",
+        "text": "Cadastro rápido, direcionamento para triagem, atendimentos de emergência, solicitações, observação e passagem de plantão."
+      },
+      "inpatient": {
+        "title": "Enfermarias",
+        "text": "Internações, alocação de leitos, visitas, atualizações de enfermagem, solicitações, alta e transferências."
+      },
+      "icu": {
+        "title": "UTI e terapia intensiva",
+        "text": "Extensão de TeleICU, direcionamento para sinais vitais e dispositivos, avaliação remota, vídeo e fluxos de escalonamento."
+      },
+      "laboratory": {
+        "title": "Laboratório",
+        "text": "Solicitações de exames, direcionamento para rastreamento de amostras, resultados, laudos e alinhamento a LOINC/UCUM."
+      },
+      "pharmacy": {
+        "title": "Farmácia",
+        "text": "Prescrições, dispensação, substituições, alertas de estoque, compras, estoque e trilhas de auditoria."
+      },
+      "billing": {
+        "title": "Faturamento e contas",
+        "text": "Cobrança de serviços, faturas, pagamentos, suporte a seguros e programas governamentais e fluxos de conciliação."
+      },
+      "administration": {
+        "title": "Administração",
+        "text": "Unidades, departamentos, usuários, perfis, controle de acesso, registros de auditoria, relatórios e análises operacionais."
+      }
+    }
+  },
+  "operations": {
+    "eyebrow": "Operações hospitalares",
+    "title": "O back-office é infraestrutura clínica.",
+    "body": "Laboratório, farmácia, estoque, faturamento e contabilidade não são tarefas administrativas secundárias. Fazem parte da mesma linha do tempo clínica.",
+    "videoLabel": "Vídeo do fluxo de {title} no CARE HMIS",
+    "items": {
+      "lab": {
+        "title": "Laboratório e diagnóstico / LMIS",
+        "text": "Os profissionais solicitam exames, o laboratório rastreia as amostras, os resultados são anexados ao prontuário e as observações usam códigos e unidades padronizados."
+      },
+      "pharmacy": {
+        "title": "Farmácia e estoque",
+        "text": "As prescrições seguem para dispensação, substituições, movimentação de estoque, alertas, compras e fluxos da cadeia de suprimentos."
+      },
+      "billing": {
+        "title": "Faturamento e contabilidade",
+        "text": "Pagamentos em dinheiro, seguros, programas governamentais, faturas, registro de pagamentos e conciliação se conectam à atividade de cuidado."
+      }
+    }
+  },
+  "standards": {
+    "eyebrow": "Padrões e arquitetura",
+    "title": "Feito para intercâmbio, análise de dados e IA assistiva.",
+    "body": "O CARE HMIS é orientado a padrões e a APIs, modular, independente de provedor de nuvem, pensado para o celular e projetado para ser estendido sem criar forks do núcleo.",
+    "items": {
+      "fhir": "recursos clínicos e APIs",
+      "snomed": "terminologia clínica",
+      "loinc": "exames laboratoriais e observações",
+      "ucum": "unidades de medida",
+      "icd10": "suporte à classificação",
+      "byot": "traga sua própria terminologia"
+    }
+  },
+  "apps": {
+    "eyebrow": "Aplicativos e IA",
+    "title": "Estenda o sistema operacional hospitalar sem comprometer o núcleo.",
+    "body": "Os CARE Apps acrescentam infraestruturas digitais nacionais, TeleICU, documentação com IA, dispositivos, reembolsos, painel de senhas, mensagens e análise de dados por meio de uma camada de plugins. A IA redige. As pessoas decidem. O CARE registra.",
+    "items": {
+      "abdm": {
+        "title": "ABDM",
+        "text": "Fluxos M1, M2, M3 e de identidade por meio de plugins."
+      },
+      "teleicu": {
+        "title": "TeleICU",
+        "text": "Câmera, sinais vitais, avaliação remota e extensão para terapia intensiva."
+      },
+      "scribe": {
+        "title": "Care Scribe",
+        "text": "Preenchimento por voz em vários idiomas e documentação assistiva."
+      },
+      "tokenDisplay": {
+        "title": "Painel de senhas",
+        "text": "Telas de fila e de senhas para TVs e balcões de atendimento ao público."
+      },
+      "labsDevices": {
+        "title": "Laboratório e dispositivos",
+        "text": "Solicitações, resultados, PACS e integrações à beira do leito."
+      },
+      "claimsMessaging": {
+        "title": "Reembolsos e mensagens",
+        "text": "HCX, lembretes, análise de dados e comunicação com pacientes."
+      }
+    },
+    "imageAlt": "Conceito de documentação com IA do Care Scribe",
+    "responsibleAi": "IA responsável",
+    "responsibleAiBody": "Preenchimento por voz, compreensão de documentos, resumos de prontuário, rascunhos de alta e apoio à decisão operam sobre dados clínicos estruturados, com revisão humana."
+  },
+  "implementation": {
+    "eyebrow": "Modelo de implementação",
+    "title": "Uma implantação séria de HIS envolve produto, processos e governança.",
+    "body": "As implantações do CARE HMIS podem começar com um fluxo hospitalar específico e se expandir para um sistema de informação hospitalar completo. O mesmo núcleo aberto apoia a adoção em fases, a configuração local, a implementação conduzida por parceiros e a atualização de versões no longo prazo.",
+    "items": {
+      "masterData": {
+        "title": "Dados mestres",
+        "text": "Unidades, departamentos, salas, leitos, serviços, equipe, perfis de usuários, tabelas de preços e catálogos de medicamentos."
+      },
+      "workflowMapping": {
+        "title": "Mapeamento de fluxos",
+        "text": "Fluxos de ambulatório, emergência, internação, farmácia, laboratório, faturamento e alta alinhados à prática local."
+      },
+      "formsTerminology": {
+        "title": "Formulários e terminologia",
+        "text": "Formulários de EMR configuráveis, recursos FHIR, ValueSets, SNOMED CT, LOINC, UCUM e ICD-10."
+      },
+      "integrations": {
+        "title": "Integrações",
+        "text": "ABDM, dispositivos, sistemas de laboratório, ferramentas contábeis, mensagens, análise de dados, pagamentos e plugins de parceiros."
+      },
+      "security": {
+        "title": "Modelo de segurança",
+        "text": "Acesso baseado em perfis, trilhas de auditoria, opções de hospedagem, propriedade dos dados, backup e controles operacionais."
+      },
+      "adoption": {
+        "title": "Plano de adoção",
+        "text": "Capacitação, implantação em fases, central de suporte, periodicidade de relatórios, ciclos de retorno e atualização de versões."
+      }
+    }
+  },
+  "deployment": {
+    "eyebrow": "Comprovação em implantações",
+    "title": "O CARE HMIS {version} está em operação em várias implantações.",
+    "body": "O CARE HMIS {version} já está em operação em implantações em Kerala, Karnataka, Jharkhand, Assam e Manipur, atendendo mais de 100 hospitais por meio de um modelo reutilizável de núcleo aberto.",
+    "startConversation": "Converse sobre uma implantação",
+    "viewImpact": "Ver impacto",
+    "states": {
+      "kerala": "Kerala",
+      "karnataka": "Karnataka",
+      "jharkhand": "Jharkhand",
+      "assam": "Assam",
+      "manipur": "Manipur"
+    },
+    "liveDeployment": "implantação ativa",
+    "hospitals": "hospitais"
+  },
+  "faq": {
+    "items": {
+      "what": {
+        "question": "O que é o CARE HMIS?",
+        "answer": "O CARE HMIS é um sistema de informação hospitalar (HIS) e de informação para gestão hospitalar (HMIS) de código aberto, construído em torno do CARE Core. Ele conecta prontuários clínicos, operações hospitalares, faturamento, relatórios, integrações e fluxos prontos para IA em uma única plataforma baseada em padrões."
+      },
+      "emrOrHis": {
+        "question": "O CARE HMIS é um EMR ou um HIS completo?",
+        "answer": "O CARE HMIS inclui recursos de EMR, mas vai além de um prontuário eletrônico. Ele apoia cadastro de pacientes, ambulatório, emergência, internação, laboratório, farmácia, estoque, faturamento, relatórios, controle de acesso, integrações e fluxos de implantação."
+      },
+      "selfHosted": {
+        "question": "O CARE HMIS pode ser hospedado na própria infraestrutura?",
+        "answer": "Sim. O CARE foi projetado para modelos de implantação com hospedagem própria, em nuvem, híbridos e locais (on-premises), para que hospitais e governos possam controlar sua infraestrutura e evitar a dependência de licenças de software."
+      },
+      "departments": {
+        "question": "Quais departamentos hospitalares o CARE HMIS pode apoiar?",
+        "answer": "O CARE HMIS pode apoiar recepção, ambulatório, emergência, enfermarias, fluxos de UTI e TeleICU, laboratório, farmácia, estoque, faturamento, administração, análise de dados e fluxos voltados aos pacientes."
+      },
+      "interoperability": {
+        "question": "Como o CARE HMIS apoia a interoperabilidade?",
+        "answer": "O CARE HMIS é orientado a padrões, com recursos alinhados ao FHIR R5, APIs abertas, suporte às terminologias SNOMED CT, LOINC, UCUM e ICD-10 e integrações via plugins para infraestruturas digitais nacionais, dispositivos, laboratórios, reembolsos, mensagens e análise de dados."
+      },
+      "ai": {
+        "question": "Como a IA é usada no CARE HMIS?",
+        "answer": "A IA é assistiva e conta com revisão humana no processo. O CARE HMIS pode apoiar preenchimento por voz, rascunhos de documentação, compreensão de documentos, resumos e fluxos de apoio à decisão sobre dados clínicos estruturados e processos auditáveis."
+      }
+    }
+  },
+  "final": {
+    "title": "Hospitais inteligentes precisam, antes de tudo, de fluxos conectados.",
+    "body": "O CARE HMIS oferece aos hospitais a camada operacional compartilhada para o trabalho clínico, as operações, a receita, a análise de dados e uma IA governada com cuidado.",
+    "planDeployment": "Planeje uma implantação de HMIS",
+    "exploreApps": "Conheça os aplicativos e integrações"
+  },
+  "structuredData": {
+    "description": "O CARE HMIS é um sistema de informação hospitalar de código aberto para fluxos hospitalares conectados: clínicos, operacionais, financeiros, de relatórios e prontos para IA.",
+    "featureList": [
+      "Cadastro de pacientes e prontuários longitudinais",
+      "Fluxos de ambulatório, emergência, internação, observação, atenção domiciliar e cuidado virtual",
+      "Notas clínicas, solicitações, prescrições, formulários, observações e relatórios",
+      "Fluxos de laboratório, farmácia, estoque, faturamento e contabilidade",
+      "APIs alinhadas ao FHIR R5 e suporte a terminologias",
+      "Extensões via plugins para ABDM, TeleICU, Care Scribe, dispositivos, mensagens e análise de dados"
+    ]
+  }
+}

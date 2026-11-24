@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "title": "Soluções do CARE - Modelos abertos de implantação em saúde",
+    "description": "Conheça os modelos de soluções do CARE para gestão hospitalar, TeleICU, cuidados paliativos, clínicas, saúde animal, programas de saúde pública e fluxos prontos para IA.",
+    "ogDescription": "Fluxos de saúde reutilizáveis sobre o CARE Core: hospitais, terapia intensiva, atenção domiciliar, clínicas, saúde animal e programas prontos para IA.",
+    "ogImageAlt": "Open Healthcare Network Foundation"
+  },
+  "items": {
+    "hmis": {
+      "title": "Gestão hospitalar",
+      "eyebrow": "CARE HMIS",
+      "description": "Um sistema de informação hospitalar aberto para ambulatório, emergência, internação, laboratório, farmácia, faturamento, relatórios e fluxos clínicos prontos para IA.",
+      "status": "Pronto para campo"
+    },
+    "teleicu": {
+      "title": "TeleICU",
+      "eyebrow": "CARE TeleICU",
+      "description": "Fluxos de terapia intensiva no modelo hub-and-spoke para avaliação remota de UTI, centrais de especialistas, documentação no EMR do CARE, contexto por vídeo e protocolos.",
+      "status": "Comprovado em campo"
+    },
+    "palliative": {
+      "title": "Cuidados paliativos",
+      "eyebrow": "Home Care Grid",
+      "description": "Uma rede de coordenação do cuidado para pacientes vulneráveis, com visitas domiciliares, equipes de cuidado, acompanhamento, encaminhamentos, painéis e continuidade em casa.",
+      "status": "Modelo de referência"
+    },
+    "clinic": {
+      "title": "CARE Clinic",
+      "eyebrow": "No computador da sua própria clínica",
+      "description": "Um aplicativo gratuito e de código aberto para Mac e Windows que instala o CARE em um computador da clínica, com prontuários, agendamentos, prescrições, faturamento e backups criptografados.",
+      "status": "Baixe para Mac e Windows"
+    },
+    "janwar": {
+      "title": "Saúde animal",
+      "eyebrow": "CARE Janwar",
+      "description": "Um modelo do CARE para clínicas veterinárias, programas públicos de saúde animal, visitas de campo, vacinação, diagnóstico, farmácia e painéis de programa.",
+      "status": "Modelo de implantação"
+    }
+  },
+  "hero": {
+    "eyebrow": "Soluções do CARE",
+    "title": "Fluxos de saúde prontos para implantar sobre um núcleo aberto.",
+    "body": "As soluções do CARE são modelos reutilizáveis para hospitais, terapia intensiva, cuidado domiciliar, clínicas, programas de saúde pública e saúde animal, todos construídos sobre a mesma camada operacional de saúde baseada em padrões.",
+    "exploreCareCore": "Conheça o CARE Core",
+    "discussDeployment": "Converse sobre uma implantação"
+  },
+  "constellation": {
+    "sharedFoundation": "Base compartilhada",
+    "coreLayers": [
+      "Pacientes",
+      "Unidades",
+      "Atendimentos",
+      "Formulários",
+      "Solicitações",
+      "Tarefas",
+      "Planos de cuidado",
+      "Encaminhamentos",
+      "Relatórios",
+      "APIs",
+      "RBAC",
+      "Auditoria"
+    ]
+  },
+  "blueprints": {
+    "eyebrow": "Modelos de soluções",
+    "title": "Profundidade de produto sem fragmentação de produto.",
+    "body": "Cada solução é um modelo de implantação sobre o CARE Core. Algumas já foram comprovadas em campo. Outras estão empacotadas como modelos prontos para implementação, para que parceiros e programas as adaptem ao contexto local.",
+    "explore": "Conheça a solução"
+  },
+  "pattern": {
+    "eyebrow": "Como a OHC pensa as soluções",
+    "title": "A solução muda. A infraestrutura continua compartilhada.",
+    "body": "Essa é a diferença entre um catálogo de produtos e uma pilha de infraestrutura pública. As soluções do CARE reutilizam os mesmos componentes fundamentais, aprimoram o mesmo núcleo e evitam dividir os sistemas de saúde em aplicativos isolados.",
+    "principles": {
+      "oneCore": {
+        "title": "Um núcleo, muitos fluxos",
+        "text": "As soluções são montadas a partir dos componentes fundamentais do CARE Core, aplicativos, plugins, formulários, terminologia, APIs, painéis e manuais de implementação."
+      },
+      "fieldUse": {
+        "title": "Uso em campo antes de vitrine",
+        "text": "Cada página explica o fluxo real: quem o usa, o que é registrado, o que acontece em seguida e como o sistema melhora."
+      },
+      "aiOnCleanData": {
+        "title": "IA sobre dados de qualidade",
+        "text": "A IA é tratada como assistiva: documentação, resumos, apoio ao preenchimento de formulários, apoio à decisão e inteligência de fluxos sobre registros confiáveis."
+      }
+    }
+  },
+  "ecosystem": {
+    "eyebrow": "Ecossistema de implementação",
+    "title": "Feito para governos, hospitais, parceiros e programas.",
+    "body": "A OHC Foundation zela pelo CARE Core, pelo alinhamento a padrões, pela disciplina de versões, pela documentação e pela arquitetura compartilhada. Parceiros de implementação podem configurar fluxos, adaptar formulários, integrar sistemas, capacitar usuários e devolver melhorias.",
+    "workWithPartners": "Trabalhe com parceiros",
+    "appsIntegrations": "Aplicativos e integrações"
+  },
+  "structuredData": {
+    "name": "Soluções do CARE",
+    "description": "Modelos de soluções do CARE para implantações em saúde sobre um núcleo aberto."
+  }
+}

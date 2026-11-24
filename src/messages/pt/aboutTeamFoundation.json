@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "title": "Equipe da fundação - Open Healthcare Network Foundation",
+    "description": "A equipe que opera a OHC Foundation: CARE Core, infraestrutura aberta de saúde, IA, produto, engenharia, parcerias e fortalecimento do ecossistema."
+  },
+  "hero": {
+    "eyebrow": "Equipe da fundação",
+    "title": "Quem opera e constrói a instituição.",
+    "body": "Esta página apresenta a equipe da fundação. Ela começa pelo CEO e pelo CTO e foi estruturada para receber funções de produto, engenharia, IA, parcerias, documentação, comunidade e operações à medida que a fundação cresce.",
+    "boardAdvisors": "Conselho e consultores",
+    "governance": "Modelo de governança"
+  },
+  "operatingAreas": {
+    "eyebrow": "Modelo operacional",
+    "title": "Uma equipe enxuta com grande alavancagem.",
+    "body": "A equipe da fundação existe para tornar o CARE reutilizável, governável e financiável para além de qualquer implantação isolada. A lista crescerá à medida que novas funções se tornarem públicas.",
+    "items": {
+      "productAi": {
+        "title": "Produto e IA",
+        "text": "Roteiro do produto, estratégia de fluxos de trabalho, direção da IA assistiva e qualidade do produto para usuários da saúde."
+      },
+      "engineering": {
+        "title": "Arquitetura e engenharia",
+        "text": "CARE Core, APIs, plugins, qualidade das implementações e manutenibilidade da plataforma."
+      },
+      "operations": {
+        "title": "Operações da fundação",
+        "text": "Apoio à governança, documentação, preparo para captação de recursos, prestação de contas e sistemas institucionais."
+      },
+      "ecosystem": {
+        "title": "Fortalecimento do ecossistema",
+        "text": "Parceiros de implementação, hospitais, governos, financiadores, profissionais de saúde e colaboradores de código aberto."
+      }
+    }
+  },
+  "team": {
+    "eyebrow": "Equipe atual",
+    "title": "Lideranças operacionais da fundação.",
+    "body": "Esta lista pública começa propositalmente pequena e foi feita para crescer. Lideranças de produto, engenharia, IA, comunidade, parcerias, documentação e operações poderão ser incluídas à medida que a fundação divulgar essas funções.",
+    "headshotAlt": "Foto de {name}"
+  },
+  "people": {
+    "bodhishThomas": {
+      "role": "Diretor executivo (CEO)"
+    },
+    "vigneshHari": {
+      "role": "Diretor de tecnologia (CTO)"
+    }
+  },
+  "roster": {
+    "eyebrow": "Lista pública",
+    "title": "A liderança deve ser visível, atualizada e definida com critério.",
+    "body": "A página da equipe da fundação crescerá à medida que as funções forem confirmadas para publicação, com responsabilidades claras por produto, engenharia, parcerias, operações, comunidade e gestão responsável.",
+    "signalTitle": "Sinal de gestão responsável",
+    "signalBody": "Uma lista pública ajuda governos, financiadores, hospitais e colaboradores a entender quem responde pela instituição por trás do CARE e da infraestrutura aberta de saúde relacionada."
+  }
+}

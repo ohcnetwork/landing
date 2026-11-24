@@ -1,0 +1,264 @@
+{
+  "meta": {
+    "title": "CARE Janwar - Open Source Animal Health and Veterinary EMR",
+    "description": "CARE Janwar is a CARE Core blueprint for veterinary clinics, public animal-health programs, field visits, vaccination, diagnostics, pharmacy, inventory, billing, dashboards, and AI-ready animal health records.",
+    "ogTitle": "CARE Janwar - Open Source Animal Health Infrastructure",
+    "ogDescription": "A CARE blueprint for veterinary clinics, public animal-health programs, field visits, vaccination, diagnostics, pharmacy, and dashboards.",
+    "ogImageAlt": "CARE Janwar logo",
+    "twitterDescription": "Veterinary and public animal-health workflows built on CARE Core."
+  },
+  "structuredData": {
+    "description": "CARE Janwar is an open-source animal health and veterinary EMR blueprint for clinics, field visits, vaccination, diagnostics, pharmacy, billing, inventory, and dashboards.",
+    "featureList": [
+      "Animal and owner records",
+      "Veterinary encounters and field visits",
+      "Vaccination schedules and campaign workflows",
+      "Diagnostics, pharmacy, inventory, and billing",
+      "Program dashboards and reporting",
+      "AI-ready structured animal-health records"
+    ]
+  },
+  "hero": {
+    "title": "Open infrastructure for animal health care.",
+    "body": "CARE Janwar adapts CARE Core for veterinary clinics, public animal-health programs, field visits, vaccination, diagnostics, pharmacy, billing, inventory, and program dashboards.",
+    "discuss": "Discuss animal-health workflows",
+    "exploreCore": "Explore CARE Core",
+    "pills": [
+      "Veterinary EMR",
+      "Field visits",
+      "Vaccination",
+      "Diagnostics",
+      "Pharmacy",
+      "Program dashboards"
+    ]
+  },
+  "visual": {
+    "recordLabel": "Veterinary record",
+    "programLabel": "Program layer",
+    "solutionLabel": "CARE solution",
+    "oneHealth": "One Health ready",
+    "subjectModel": [
+      "Animal record",
+      "Owner or keeper",
+      "Species",
+      "Breed",
+      "Age and sex",
+      "Facility",
+      "Encounter",
+      "Vaccination",
+      "Medication",
+      "Lab result",
+      "Field visit",
+      "Follow-up"
+    ],
+    "activities": ["Clinic visit", "Field camp", "Vaccination", "Lab report"],
+    "sharedLayer": {
+      "title": "Shared operational layer",
+      "text": "Records, encounters, vaccination, pharmacy, labs, billing, field visits, and dashboards stay connected."
+    }
+  },
+  "overview": {
+    "eyebrow": "Why CARE Janwar",
+    "title": "Animal health needs records, workflows, stock, and program visibility.",
+    "body": "Veterinary care is more than a visit note. It involves owners, keepers, locations, species, vaccination schedules, medicines, lab results, field teams, public programs, and operational reporting. CARE Janwar packages those workflows on the same open foundation.",
+    "useCases": {
+      "clinics": {
+        "title": "Veterinary clinics",
+        "text": "Registration, consultations, prescriptions, vaccination, billing, follow-up, and pharmacy workflows."
+      },
+      "hospitals": {
+        "title": "Public animal hospitals",
+        "text": "Facility operations, OPD load, pharmacy, diagnostics, reports, user roles, and program oversight."
+      },
+      "field": {
+        "title": "Mobile and field teams",
+        "text": "Field visits, location context, offline-friendly direction, vaccination camps, and follow-up lists."
+      },
+      "programs": {
+        "title": "Animal-health programs",
+        "text": "Vaccination campaigns, disease surveillance direction, welfare workflows, labs, and district dashboards."
+      }
+    }
+  },
+  "workflow": {
+    "eyebrow": "Animal-health workflow",
+    "title": "From registration to field follow-up.",
+    "body": "CARE Janwar can connect clinic visits, vaccination, diagnostics, pharmacy, field teams, and dashboards through one longitudinal record.",
+    "steps": {
+      "register": {
+        "title": "Register",
+        "text": "Create animal, owner or keeper, facility, and location context."
+      },
+      "triage": {
+        "title": "Triage",
+        "text": "Capture reason for visit, species-specific observations, and risk flags."
+      },
+      "examine": {
+        "title": "Examine",
+        "text": "Record clinical notes, vitals, findings, diagnosis, and care advice."
+      },
+      "order": {
+        "title": "Order",
+        "text": "Request lab tests, imaging direction, procedures, medications, or referrals."
+      },
+      "vaccinate": {
+        "title": "Vaccinate",
+        "text": "Track vaccination schedules, doses, batch details, and reminders."
+      },
+      "dispense": {
+        "title": "Dispense",
+        "text": "Connect prescriptions to pharmacy, inventory, and audit trails."
+      },
+      "followUp": {
+        "title": "Follow up",
+        "text": "Schedule review, field visit, referral, or program-level action."
+      },
+      "report": {
+        "title": "Report",
+        "text": "See clinical activity, stock, vaccination coverage, and program signals."
+      }
+    }
+  },
+  "capabilities": {
+    "eyebrow": "Product capabilities",
+    "title": "The building blocks for veterinary and public animal-health programs.",
+    "body": "CARE Janwar adapts the CARE operating model for clinical records, field workflows, vaccination, diagnostics, pharmacy, inventory, billing, and program dashboards.",
+    "items": {
+      "records": {
+        "title": "Animal and owner records",
+        "text": "Longitudinal animal records linked to owners, keepers, facilities, locations, identifiers, and visit history."
+      },
+      "encounters": {
+        "title": "Veterinary encounters",
+        "text": "Outpatient, inpatient, observation, field-visit, and follow-up workflows with configurable clinical forms."
+      },
+      "vaccination": {
+        "title": "Vaccination workflows",
+        "text": "Vaccination schedules, dose records, batch details, reminders, campaign reporting, and coverage dashboards."
+      },
+      "diagnostics": {
+        "title": "Diagnostics and lab",
+        "text": "Lab orders, sample tracking direction, diagnostic reports, results review, and structured observations."
+      },
+      "pharmacy": {
+        "title": "Pharmacy and inventory",
+        "text": "Medication requests, dispensing, substitutions, stock alerts, procurement, expiry review, and movement logs."
+      },
+      "billing": {
+        "title": "Billing and accounts",
+        "text": "Service charges, invoices, receipts, payment capture, scheme direction, and daily financial reports."
+      },
+      "field": {
+        "title": "Field and mobile care",
+        "text": "Mobile-first workflows for farm visits, field clinics, outbreak follow-up, community camps, and remote areas."
+      },
+      "dashboards": {
+        "title": "Program dashboards",
+        "text": "Track visits, disease categories, vaccination, stock, lab activity, geographic coverage, and operational load."
+      }
+    }
+  },
+  "core": {
+    "eyebrow": "Built on CARE Core",
+    "title": "A specialized workflow should not require a separate foundation.",
+    "body": "CARE Janwar is a solution blueprint on top of the same open core: records, encounters, forms, users, roles, orders, tasks, reports, APIs, audit trails, and plugin-based extensions.",
+    "benefits": [
+      "Adapted from CARE Core primitives",
+      "Open-source and MIT-licensed",
+      "Configurable forms and terminology",
+      "Self-hostable for public-sector ownership",
+      "Role-based access and audit trails",
+      "Extensible with pharmacy, lab, billing, dashboards, and AI plugins"
+    ]
+  },
+  "implementation": {
+    "eyebrow": "Implementation model",
+    "title": "Start with the care record. Expand into the public-health layer.",
+    "body": "Animal-health deployments can begin with clinic workflows and extend into field teams, vaccination campaigns, labs, inventory, and program dashboards.",
+    "steps": {
+      "model": {
+        "title": "Model the care setting",
+        "text": "Define clinic, hospital, field, program, vaccination, lab, pharmacy, and reporting workflows."
+      },
+      "configure": {
+        "title": "Configure records and forms",
+        "text": "Set animal attributes, species and breed fields, encounter templates, vaccination forms, and follow-up logic."
+      },
+      "launch": {
+        "title": "Launch the core loop",
+        "text": "Start with registration, encounter, prescription, vaccination, billing, reports, and stock movement."
+      },
+      "scale": {
+        "title": "Scale by program",
+        "text": "Extend into field visits, campaign dashboards, diagnostics, procurement, surveillance direction, and AI support."
+      }
+    }
+  },
+  "ai": {
+    "eyebrow": "AI-ready animal health",
+    "title": "AI should assist field and clinical teams, with review.",
+    "body": "CARE Janwar can make structured animal-health data available for assistive workflows such as field-note drafting, summaries, missing-field prompts, stock review, and program monitoring.",
+    "items": {
+      "fieldNotes": {
+        "title": "Field-note drafts",
+        "text": "Convert field observations and spoken notes into structured draft records for review."
+      },
+      "summaries": {
+        "title": "Record summaries",
+        "text": "Summarize animal history, vaccinations, treatments, pending follow-ups, and recent diagnostics."
+      },
+      "signals": {
+        "title": "Program signals",
+        "text": "Help program teams scan patterns, missing fields, overdue follow-ups, stock gaps, and unusual activity."
+      }
+    }
+  },
+  "outcomes": {
+    "eyebrow": "Outcomes to measure",
+    "title": "Measure care continuity and public-health visibility.",
+    "items": {
+      "continuity": {
+        "title": "Care continuity",
+        "text": "repeat visits, follow-up completion, vaccination reminders"
+      },
+      "coverage": {
+        "title": "Program coverage",
+        "text": "field visits, campaign coverage, geography, facility activity"
+      },
+      "operations": {
+        "title": "Operations",
+        "text": "stock levels, expiry, billing, lab turnaround, staff workload"
+      },
+      "dataQuality": {
+        "title": "Data quality",
+        "text": "complete records, coded fields, duplicate reduction, dashboard usage"
+      }
+    }
+  },
+  "faq": {
+    "items": {
+      "what": {
+        "question": "What is CARE Janwar?",
+        "answer": "CARE Janwar is a CARE Core blueprint for veterinary and public animal-health workflows. It adapts CARE concepts such as records, encounters, forms, orders, pharmacy, inventory, billing, reports, access control, and dashboards for animal health settings."
+      },
+      "separate": {
+        "question": "Is CARE Janwar a separate platform?",
+        "answer": "It is best treated as a solution built on CARE Core, not a disconnected product. The deployment can use veterinary-specific records, forms, terminology, reports, and workflows while continuing to strengthen the shared CARE architecture."
+      },
+      "programs": {
+        "question": "Can it support public animal-health programs?",
+        "answer": "Yes. The blueprint can support vaccination campaigns, field visits, public animal hospitals, lab workflows, pharmacy and inventory, district dashboards, and program reporting when localized for a specific program."
+      },
+      "judgment": {
+        "question": "Does this replace veterinary judgment?",
+        "answer": "No. CARE Janwar records and coordinates workflows. AI, where used, should remain assistive, reviewed, role-governed, and audit-aware."
+      }
+    }
+  },
+  "final": {
+    "eyebrow": "Deploy CARE Janwar",
+    "title": "Build animal-health workflows on the same open foundation.",
+    "body": "CARE Janwar gives implementation partners and public programs a starting point for veterinary records, field workflows, vaccination, diagnostics, pharmacy, inventory, billing, and program visibility.",
+    "start": "Start a workflow conversation"
+  }
+}

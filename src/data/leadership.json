@@ -1,32 +1,32 @@
 {
   "foundationBoard": [
     {
+      "id": "srikanthNadhamuni",
       "name": "Srikanth Nadhamuni",
-      "role": "Founding CTO, Aadhaar / Chairman, 10BedICU Project",
       "image": "/people/srikanth.jpeg",
       "initials": "SN"
     },
     {
+      "id": "sandeepSingal",
       "name": "Sandeep Singal",
-      "role": "Board Member, ACT Grants",
       "image": "/testimonials/sandeep.jpg",
       "initials": "SS"
     },
     {
+      "id": "sanjayVijayakumar",
       "name": "Sanjay Vijayakumar",
-      "role": "Director / Strategic Operations",
       "image": "/people/sanjay-vijayakumar.jpg",
       "initials": "S"
     },
     {
+      "id": "athulJosephManuel",
       "name": "Dr. Athul Joseph Manuel",
-      "role": "President, IMA Kochi / Chief Medical Officer",
       "image": "/people/dr-athul-joseph-manuel.jpg",
       "initials": "AM"
     },
     {
+      "id": "bodhishThomas",
       "name": "Bodhish Thomas",
-      "role": "Chief Executive Officer",
       "image": "https://github.com/bodhish.png",
       "initials": "BT",
       "github": "https://github.com/bodhish",
@@ -34,24 +34,24 @@
       "website": "https://bodhish.in"
     },
     {
+      "id": "vigneshHari",
       "name": "Vignesh Hari",
-      "role": "Chief Technology Officer",
       "image": "https://github.com/vigneshhari.png",
       "initials": "VH",
       "github": "https://github.com/vigneshhari",
       "linkedin": "https://www.linkedin.com/in/vigneshhari"
     },
     {
+      "id": "giginChandyGeorge",
       "name": "Gigin Chandy George",
-      "role": "CTO, eGov Healthcare",
       "image": "https://github.com/gigincg.png",
       "initials": "GC",
       "github": "https://github.com/gigincg",
       "linkedin": "https://www.linkedin.com/in/giginchandygeorge"
     },
     {
+      "id": "pinakiKrishna",
       "name": "Pinaki Krishna",
-      "role": "Director - Resources & Partnerships",
       "image": "/people/pinaki-krishna.jpg",
       "linkedin": "https://www.linkedin.com/in/pinakipillai",
       "initials": "PK"
@@ -59,16 +59,16 @@
   ],
   "advisoryBoard": [
     {
+      "id": "srikanthNadhamuni",
       "name": "Srikanth Nadhamuni",
-      "role": "Founding CTO, Aadhaar / Chairman, 10BedICU Project",
       "image": "/people/srikanth.jpeg",
       "initials": "SN"
     }
   ],
   "foundationTeam": [
     {
+      "id": "bodhishThomas",
       "name": "Bodhish Thomas",
-      "role": "Chief Executive Officer",
       "image": "https://github.com/bodhish.png",
       "initials": "BT",
       "github": "https://github.com/bodhish",
@@ -76,20 +76,12 @@
       "website": "https://bodhish.in"
     },
     {
+      "id": "vigneshHari",
       "name": "Vignesh Hari",
-      "role": "Chief Technology Officer",
       "image": "https://github.com/vigneshhari.png",
       "initials": "VH",
       "github": "https://github.com/vigneshhari",
       "linkedin": "https://www.linkedin.com/in/vigneshhari"
     }
-  ],
-  "maintainerRoles": [
-    "Technical Steering Committee",
-    "Project maintainers",
-    "Clinical reviewers",
-    "Security and release owners",
-    "Implementation partners",
-    "Open-source contributors"
   ]
 }

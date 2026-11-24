@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "title": "Impact - CARE in the Field",
+    "description": "CARE impact across Kerala Palliative Care, TeleICU, CARE HMIS deployments, open-source contributors, and Digital Public Good validation."
+  },
+  "hero": {
+    "eyebrow": "Impact",
+    "title": "Open healthcare infrastructure, proven in care delivery.",
+    "body": "CARE is no longer only a promising open-source project. It is running palliative care, critical care, hospital workflows, and public-good infrastructure across real health systems.",
+    "deploymentsMap": "Care deployments map",
+    "updates": "Updates of 2026"
+  },
+  "snapshot": {
+    "consultations": "home-care consultations",
+    "teleicuHospitals": "TeleICU hospitals",
+    "hmisHospitals": "HMIS hospitals",
+    "contributors": "GitHub contributors"
+  },
+  "programs": {
+    "eyebrow": "Where CARE runs",
+    "title": "One core. Many care delivery systems.",
+    "body": "These are not separate products. They are deployment patterns built on the same open healthcare operating layer.",
+    "items": {
+      "palliative": {
+        "eyebrow": "Kerala Palliative Care",
+        "title": "A statewide grid for home-based care.",
+        "text": "CARE powers daily operations across primary care centers, NGOs, clinicians, and field teams serving patients who need continuity beyond the hospital."
+      },
+      "teleicu": {
+        "eyebrow": "TeleICU",
+        "title": "Specialist critical care, extended through open infrastructure.",
+        "text": "CARE supports hub-and-spoke ICU workflows across hospitals, states, patients, and daily clinical users."
+      },
+      "hmis": {
+        "eyebrow": "CARE HMIS 3.0",
+        "title": "A modern HMIS layer already live across multiple deployments.",
+        "text": "CARE HMIS 3.0 supports hospital workflows across registration, encounters, notes, orders, labs, pharmacy, billing, reporting, and analytics."
+      }
+    },
+    "metrics": {
+      "primaryCareCenters": "primary care centers",
+      "ngos": "NGOs",
+      "registeredPatients": "registered patients",
+      "homeCareConsultations": "home-care consultations",
+      "dailyUsers": "daily users",
+      "hospitals": "hospitals",
+      "states": "states",
+      "patients": "patients",
+      "dailyActiveUsers": "daily active users",
+      "deploymentStates": "deployment states",
+      "liveDeployment": "live deployment",
+      "liveDeployments": "live deployments"
+    },
+    "places": {
+      "kerala": "Kerala",
+      "karnataka": "Karnataka",
+      "jharkhandAssamManipur": "Jharkhand, Assam, Manipur"
+    }
+  },
+  "map": {
+    "eyebrow": "Care deployments map",
+    "title": "Deployment proof should be visible, navigable, and current.",
+    "body": "The map shows where CARE-powered programs have run across public health, hospitals, critical care, and community care. The 2026 updates page carries the current narrative as deployments mature.",
+    "download": "Download map",
+    "updates": "Updates of 2026"
+  },
+  "validation": {
+    "eyebrow": "Beyond deployments",
+    "title": "Public-good signals that outlast any one program.",
+    "body": "OHC's impact is not only the software running in the field. It is the open-source community, licence, standards discipline, and external validation that make CARE reusable.",
+    "items": {
+      "dpg": {
+        "label": "Verified Digital Public Good",
+        "detail": "CARE is listed in the DPGA registry and was last evaluated on {date}."
+      },
+      "mit": {
+        "label": "MIT licensed",
+        "detail": "The core remains reusable for governments, hospitals, NGOs, and implementation partners."
+      },
+      "community": {
+        "label": "Open-source community",
+        "detail": "{count} code contributors have helped build the CARE ecosystem on GitHub."
+      }
+    }
+  },
+  "final": {
+    "title": "The point is not one deployment. It is reusable capacity.",
+    "body": "CARE gives health systems a shared operating layer they can adapt, own, and extend. OHC Foundation exists to keep that layer open, governed, and ready for the next program.",
+    "exploreCore": "Explore CARE Core",
+    "conversation": "Start a deployment conversation"
+  }
+}

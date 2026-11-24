@@ -1,0 +1,176 @@
+{
+  "meta": {
+    "title": "Desenvolvedores — Contribua com o CARE, EMR de código aberto",
+    "description": "Participe da comunidade de desenvolvedores do CARE. Contribua com infraestrutura de saúde de código aberto construída com Django DRF e React TypeScript."
+  },
+  "hero": {
+    "title": "Construa infraestrutura de saúde de código aberto.",
+    "body": "Contribua com o CARE, um sistema de EMR de código aberto construído com Django DRF e React TypeScript, que sustenta fluxos práticos de saúde em contextos clínicos e de saúde pública reais.",
+    "starGithub": "Dê uma estrela no GitHub",
+    "joinSlack": "Entre no Slack",
+    "docs": "Documentação",
+    "community": "Comunidade pública de colaboradores",
+    "license": "Licença MIT",
+    "buildOnCare": {
+      "title": "Vai criar seu próprio aplicativo ou integração?",
+      "body": "Conheça os pontos de extensão, exemplos funcionais e um caminho até o seu primeiro plugin do CARE.",
+      "link": "Desenvolva com o CARE"
+    }
+  },
+  "techStack": {
+    "eyebrow": "Tecnologias",
+    "title": "Construído com tecnologias modernas para soluções de saúde escaláveis",
+    "backend": {
+      "title": "Backend",
+      "body": "O Django Rest Framework sustenta nossa API robusta e o gerenciamento de dados"
+    },
+    "frontend": {
+      "title": "Frontend",
+      "body": "React com TypeScript oferece uma interface de usuário moderna e com tipagem segura"
+    }
+  },
+  "prerequisites": {
+    "eyebrow": "Pré-requisitos",
+    "title": "O que você precisa saber antes de contribuir",
+    "basic": {
+      "title": "Requisitos básicos",
+      "items": {
+        "git": "Familiaridade com Git e GitHub",
+        "web": "Conhecimentos básicos de desenvolvimento web",
+        "languages": "Noções de HTML, CSS e JavaScript",
+        "cli": "Noções básicas de linha de comando"
+      }
+    },
+    "learningPath": {
+      "title": "Trilha de aprendizagem",
+      "intro": "Está começando no desenvolvimento web? Comece aqui:",
+      "items": {
+        "wd101": "Curso WD101 em {site}",
+        "djangoForAll": "DjangoForAll para Django e DRF",
+        "reactForAll": "ReactForAll para React com TypeScript"
+      }
+    },
+    "tools": {
+      "title": "Ferramentas de desenvolvimento",
+      "items": {
+        "ide": "VS Code ou a IDE de sua preferência",
+        "runtimes": "Ambientes Node.js e Python",
+        "docker": "Docker para conteinerização",
+        "git": "Git para controle de versão"
+      }
+    }
+  },
+  "build": {
+    "eyebrow": "O que você pode construir",
+    "title": "Plugins, módulos e integrações que estendem o CARE sem alterar o núcleo",
+    "items": {
+      "plugins": {
+        "title": "Plugins",
+        "description": "TeleICU (ONVIF), ABDM M1–M3, Care Scribe e outros"
+      },
+      "modules": {
+        "title": "Módulos",
+        "description": "LMIS, farmácia, faturamento, painéis e módulos personalizados"
+      },
+      "forms": {
+        "title": "Formulários e terminologias",
+        "description": "Formulários mapeados para FHIR; pontes de terminologia (SNOMED/LOINC/UCUM)"
+      },
+      "integrations": {
+        "title": "Integrações",
+        "description": "Conecte o CARE a sistemas, dispositivos e serviços de terceiros já existentes"
+      }
+    }
+  },
+  "getStarted": {
+    "eyebrow": "Primeiros passos",
+    "title": "Tudo o que você precisa para começar a contribuir com o CARE",
+    "cards": {
+      "setup": {
+        "eyebrow": "Configuração",
+        "title": "Configuração do ambiente",
+        "description": "Clone os repositórios e configure seu ambiente de desenvolvimento com instruções passo a passo.",
+        "graphicTitle": "Configuração rápida",
+        "graphicText": "Comece em minutos"
+      },
+      "issues": {
+        "title": "Encontre issues",
+        "description": "Navegue pelas issues marcadas como 'good first issue' e assuma uma delas para começar a contribuir imediatamente.",
+        "graphicTitle": "Good first issues",
+        "graphicText": "Ideais para iniciantes"
+      },
+      "slack": {
+        "eyebrow": "Comunidade",
+        "title": "Entre no Slack",
+        "description": "Conecte-se com a comunidade em {url} para discussões, ajuda e colaboração.",
+        "graphicTitle": "Comunidade no Slack",
+        "graphicText": "Tire dúvidas e conecte-se"
+      }
+    },
+    "steps": {
+      "title": "Passos rápidos de configuração",
+      "backend": {
+        "title": "Configuração do backend",
+        "body": "Siga o guia de instalação do backend em Django.",
+        "link": "README do backend"
+      },
+      "frontend": {
+        "title": "Configuração do frontend",
+        "body": "Siga o guia de instalação do frontend em React.",
+        "link": "README do frontend"
+      }
+    }
+  },
+  "contribute": {
+    "eyebrow": "Como contribuir",
+    "title": "Passo a passo para começar a contribuir com o CARE",
+    "find": {
+      "title": "1. Encontre uma issue",
+      "body": "Navegue pelas issues no GitHub e procure as marcadas como 'good first issue' para começar.",
+      "visit": "Acesse <link>{repo}</link>",
+      "label": "Procure issues com o rótulo 'good first issue'"
+    },
+    "claim": {
+      "title": "2. Assuma a issue",
+      "body": "Comente na issue explicando sua abordagem e peça que ela seja atribuída a você.",
+      "comment": "Comente com o seu entendimento e explique sua abordagem",
+      "assign": "Peça que a issue seja atribuída a você"
+    },
+    "work": {
+      "title": "3. Trabalhe na issue",
+      "body": "Faça um fork do repositório, crie um branch e comece a programar com os testes adequados."
+    },
+    "submit": {
+      "title": "4. Envie um pull request",
+      "body": "Abra um PR em rascunho logo no início e solicite revisão quando estiver pronto para o envio final."
+    }
+  },
+  "learning": {
+    "eyebrow": "Recursos de aprendizagem",
+    "title": "Recursos completos para dominar nossas tecnologias",
+    "groups": {
+      "backend": "Desenvolvimento backend",
+      "frontend": "Desenvolvimento frontend",
+      "basics": "Fundamentos de desenvolvimento web",
+      "healthcare": "Domínio da saúde"
+    },
+    "items": {
+      "django": "<strong>Documentação do Django:</strong> <link>documentação oficial do Django</link> para o framework web",
+      "drf": "<strong>Documentação do DRF:</strong> <link>Django Rest Framework</link> para desenvolvimento de APIs",
+      "djangoForAll": "<strong>DjangoForAll:</strong> <link>curso completo</link> de Django e DRF",
+      "fhir": "<strong>FHIR R5:</strong> padrões de interoperabilidade em saúde",
+      "react": "<strong>Documentação do React:</strong> <link>documentação oficial do React</link> e guias",
+      "typescript": "<strong>Documentação do TypeScript:</strong> desenvolvimento em <link>JavaScript com tipagem segura</link>",
+      "reactForAll": "<strong>ReactForAll:</strong> <link>curso completo de React com TypeScript</link>",
+      "css": "<strong>CSS moderno:</strong> estilização e design responsivo",
+      "wd101": "<strong>Curso WD101:</strong> <link>fundamentos completos de desenvolvimento web</link>",
+      "git": "<strong>Git e GitHub:</strong> controle de versão e colaboração",
+      "web": "<strong>HTML/CSS/JavaScript:</strong> tecnologias essenciais da web",
+      "cli": "<strong>Linha de comando:</strong> terminal e ferramentas de desenvolvimento",
+      "emr": "<strong>Sistemas de EMR:</strong> fundamentos de prontuários médicos eletrônicos",
+      "standards": "<strong>Padrões de saúde:</strong> FHIR, HL7, SNOMED, LOINC",
+      "workflows": "<strong>Fluxos médicos:</strong> processos de cuidado ao paciente",
+      "privacy": "<strong>Privacidade de dados:</strong> HIPAA e conformidade em saúde"
+    }
+  }
+}

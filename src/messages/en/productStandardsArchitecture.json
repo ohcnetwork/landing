@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "title": "Standards & Architecture - CARE Platform",
+    "description": "CARE is designed around FHIR R5, SNOMED CT, LOINC, UCUM, ICD-10, ABDM alignment, open APIs, terminology services, and self-hostable deployment models."
+  },
+  "hero": {
+    "eyebrow": "CARE standards and architecture",
+    "title": "Standards-first by design, not integration as an afterthought.",
+    "body": "CARE is designed as a standards-first core: configurable forms, FHIR-aligned resources, terminology bindings, plugins, open APIs, sovereign hosting, and AI-ready structured data.",
+    "exploreCore": "Explore CARE Core",
+    "securityCompliance": "Security & compliance"
+  },
+  "standards": {
+    "eyebrow": "Standards layer",
+    "title": "CARE speaks the language of modern health systems.",
+    "items": {
+      "fhir": "FHIR-aligned resources and APIs for modern health data exchange and workflow modeling.",
+      "snomed": "Clinical terminology direction for structured observations, findings, procedures, and concepts.",
+      "loinc": "Laboratory and observation coding for diagnostic and measurement workflows.",
+      "ucum": "Standard units for measurements, vitals, labs, and quantitative observations.",
+      "icd10": "Classification support for diagnosis grouping, reporting, and program analytics.",
+      "abdm": "India digital health alignment through CARE Apps and integration patterns."
+    }
+  },
+  "architecture": {
+    "eyebrow": "Architecture principles",
+    "title": "Modular workflows on a shared clinical data foundation.",
+    "body": "CARE avoids treating interoperability as a later integration project. The platform uses structured resources, configurable forms, terminology, and APIs so deployments can adapt locally while preserving data reuse.",
+    "items": {
+      "forms": {
+        "title": "Configurable forms",
+        "description": "Questionnaires and EMR forms map operational workflows to structured clinical data."
+      },
+      "terminology": {
+        "title": "Terminology bindings",
+        "description": "Bring-your-own terminology and shared terminology services can align local workflows with standards."
+      },
+      "apis": {
+        "title": "Open APIs",
+        "description": "API-first architecture lets hospitals, governments, and partners integrate without closed vendor gates."
+      },
+      "plugins": {
+        "title": "Plugin extensibility",
+        "description": "Apps and integrations extend CARE for national rails, TeleICU, AI documentation, labs, pharmacy, billing, and analytics."
+      }
+    }
+  },
+  "deployment": {
+    "eyebrow": "Sovereign deployment",
+    "title": "Health systems should be able to own their infrastructure and data.",
+    "body": "CARE is self-hostable and cloud-agnostic. Governments and institutions can run it in their own infrastructure, integrate with national systems, and maintain local control over data and operations.",
+    "options": [
+      "Self-hosted",
+      "Government cloud",
+      "Hospital VPC",
+      "Hybrid deployments",
+      "Cloud-agnostic infrastructure",
+      "Mobile-first workflows"
+    ]
+  },
+  "ai": {
+    "eyebrow": "AI-readiness",
+    "title": "AI works best when the underlying health record is structured, traceable, and interoperable.",
+    "body": "OHC frames AI as assistive and human-in-the-loop. CARE can support voice-native forms, documentation drafts, summarization, and document understanding because workflows are connected to structured data and audit trails.",
+    "items": {
+      "draftFlags": "AI draft flags",
+      "auditability": "Auditability",
+      "roleBasedAccess": "Role-based access",
+      "structuredData": "Structured clinical data"
+    }
+  }
+}

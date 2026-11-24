@@ -1,0 +1,218 @@
+{
+  "meta": {
+    "title": "Desenvolva com o Care | Open Healthcare Network",
+    "description": "Crie plugins, integrações e fluxos assistidos por IA no Care. Assista ao passo a passo, conheça exemplos reais e comece com o scaffold de plugins do Care.",
+    "ogImageAlt": "Open Healthcare Network — Bens Públicos Digitais para a saúde"
+  },
+  "skipLink": "Pular para o conteúdo",
+  "architecture": {
+    "label": "OS BLOCOS DE CONSTRUÇÃO",
+    "core": {
+      "number": "01 / A BASE",
+      "capabilities": [
+        "Pacientes e atendimentos",
+        "Formulários e questionários",
+        "Agendamento",
+        "Unidades e organizações"
+      ]
+    },
+    "extension": {
+      "number": "02 / SUA EXTENSÃO",
+      "heading": "Do seu jeito.",
+      "options": {
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "integration": "Integração"
+      },
+      "body": "Escolha o que o seu fluxo precisa."
+    },
+    "workflow": {
+      "number": "03 / A EXPERIÊNCIA",
+      "heading": "Um fluxo útil.",
+      "body": "Para uma equipe de cuidado, um administrador ou as pessoas para quem você desenvolve."
+    },
+    "caption": "O Care Core oferece recursos de saúde compartilhados. Adicione o frontend, o backend ou a integração de que sua funcionalidade precisa para criar um fluxo focado."
+  },
+  "hero": {
+    "eyebrow": "DESENVOLVA COM O CARE",
+    "title": "Crie seu próximo aplicativo de saúde <accent>sobre o Care.</accent>",
+    "body": "Crie plugins, integrações e fluxos assistidos por IA sobre uma plataforma de saúde de código aberto. Comece pelo passo a passo, use as ferramentas para desenvolvedores e tire sua ideia do papel.",
+    "startBuilding": "Comece a desenvolver",
+    "watch": "Assista ao passo a passo",
+    "docs": "Leia a documentação de plugins",
+    "footnote": "Sua ideia. Uma base compartilhada. Código aberto."
+  },
+  "sectionNav": {
+    "label": "Nesta página",
+    "title": "POR ONDE COMEÇAR",
+    "watch": "Assistir",
+    "understand": "Entender",
+    "build": "Construir",
+    "explore": "Explorar"
+  },
+  "walkthrough": {
+    "eyebrow": "01 / O PASSO A PASSO",
+    "title": "Veja como desenvolver com o Care.",
+    "body": "Um passo a passo para ajudar você a começar com as ferramentas para desenvolvedores e o ecossistema de plugins do Care.",
+    "note": "Oriente-se e depois dê o próximo passo com o scaffold e a documentação abaixo.",
+    "link": "Ir para os primeiros passos",
+    "player": {
+      "videoTitle": "Como criar aplicativos de saúde sobre o CARE",
+      "load": "Carregar o vídeo do passo a passo do Care",
+      "label": "CARE / PASSO A PASSO PARA DESENVOLVEDORES",
+      "title": "Veja onde sua ideia começa.",
+      "hint": "Carregar o passo a passo",
+      "captionIdle": "O Loom só é carregado quando você escolhe assistir.",
+      "captionLoaded": "O player não carrega? Abra o vídeo no Loom.",
+      "watchOnLoom": "Assistir no Loom"
+    }
+  },
+  "platform": {
+    "eyebrow": "02 / A PLATAFORMA",
+    "title": "Estenda a plataforma.<br></br>Construa seu fluxo.",
+    "body": "Reutilize os dados de pacientes e atendimentos, os formulários, o agendamento e a estrutura organizacional do Care. Mantenha sua extensão focada na nova experiência que você quer criar.",
+    "extensions": {
+      "frontend": {
+        "title": "Plugins de frontend",
+        "description": "Adicione a interface de que seus usuários precisam: uma tela, um item de navegação ou um componente em um fluxo existente.",
+        "detail": "Aplicativos React declaram os pontos de extensão compatíveis em um <code>{file}</code> e podem ser entregues via module federation do Vite."
+      },
+      "backend": {
+        "title": "Plugins de backend",
+        "description": "Adicione lógica no servidor, APIs ou uma conexão com um serviço externo. Mantenha as credenciais dos serviços no servidor.",
+        "detail": "Aplicativos Django se registram no PlugManager do Care e expõem suas próprias rotas de API com namespace."
+      },
+      "integrations": {
+        "title": "Integrações",
+        "description": "Conecte um dispositivo ou outro sistema a um fluxo focado do Care usando as APIs e os pontos de extensão disponíveis.",
+        "detail": "Use um frontend, um backend ou ambos, conforme necessário. Verifique as interfaces compatíveis com a versão do Care que você vai usar."
+      }
+    },
+    "footer": "Nem toda funcionalidade precisa de um plugin de frontend e de um plugin de backend. Algumas ideias podem exigir mudanças no núcleo.",
+    "link": "Conheça a arquitetura"
+  },
+  "start": {
+    "eyebrow": "03 / SEU PRIMEIRO PROJETO",
+    "title": "Da ideia ao seu primeiro plugin.",
+    "body": "Comece pequeno. Faça um fluxo funcionar de ponta a ponta.",
+    "steps": {
+      "workflow": {
+        "title": "Escolha um fluxo focado",
+        "body": "Defina o usuário, o problema dele e um resultado útil. Escolha uma funcionalidade pequena que você possa demonstrar com dados sintéticos."
+      },
+      "workspace": {
+        "title": "Prepare seu ambiente",
+        "body": "O scaffold do Care reúne orientações para criar plugins e modelos de frontend e backend em um ambiente de desenvolvimento isolado.",
+        "prerequisites": "Tenha Git, Node.js/npm, Python 3 e Docker com Compose disponíveis. Consulte as instruções de configuração atuais para ver as versões exigidas e as verificações de ambiente.",
+        "scaffold": "Abrir o scaffold",
+        "setup": "Instruções de configuração"
+      },
+      "tools": {
+        "title": "Desenvolva com as ferramentas certas",
+        "agent": "<strong>Com um agente de programação com IA:</strong> use o prompt inicial e deixe as orientações de criação de plugins do scaffold ajudarem a moldar sua implementação.",
+        "docs": "<strong>Com a documentação:</strong> siga o guia de plugins e use os modelos como ponto de partida.",
+        "link": "Leia o guia de plugins"
+      },
+      "test": {
+        "title": "Teste o fluxo",
+        "body": "Execute a demonstração de ponta a ponta. Verifique as permissões, escreva instruções de configuração claras e documente as limitações. Um protótipo funcional é o ponto de partida para validações posteriores."
+      }
+    },
+    "note": {
+      "title": "Desenvolva com dados sintéticos.",
+      "body": "Use dados sintéticos ao desenvolver e demonstrar seu projeto. Antes de usar uma solução no cuidado clínico, valide o fluxo e revise os requisitos de segurança, controle de acesso, privacidade e operação."
+    }
+  },
+  "starterPrompt": {
+    "label": "SUA IDEIA → UM PLANO",
+    "title": "Comece uma conversa útil.",
+    "body": "Dê ao seu agente de programação o contexto de que ele precisa. Substitua a descrição da funcionalidade pela sua ideia.",
+    "promptLabel": "PROMPT INICIAL",
+    "copy": "Copiar prompt inicial",
+    "copied": "Prompt copiado",
+    "helpIdle": "Copia apenas texto. Nada é instalado ou executado.",
+    "helpCopied": "Copiado. Cole no seu agente de programação e adicione sua funcionalidade.",
+    "helpManual": "Área de transferência indisponível. O prompt está selecionado acima; copie-o manualmente."
+  },
+  "toolkit": {
+    "eyebrow": "04 / O KIT DE FERRAMENTAS",
+    "title": "Mantenha estes<br></br>ao alcance.",
+    "body": "Um caminho curto até o código-fonte.<br></br>Comece pelo scaffold e pela documentação; aprofunde-se quando sua ideia exigir.",
+    "items": {
+      "scaffold": {
+        "kind": "Comece aqui",
+        "title": "Scaffold de plugins do Care",
+        "description": "Comece com um ambiente de desenvolvimento, orientações para criar plugins e modelos de frontend e backend.",
+        "action": "Abrir o scaffold"
+      },
+      "docs": {
+        "kind": "Guia",
+        "title": "Documentação de plugins",
+        "description": "Entenda a arquitetura de extensões e siga o fluxo de desenvolvimento.",
+        "action": "Ler a documentação"
+      },
+      "skills": {
+        "kind": "Ferramentas para agentes",
+        "title": "Skills de programação com IA",
+        "description": "Orientações reutilizáveis para agentes em revisões do Care, consultas analíticas, modelos de relatório e verificação no navegador.",
+        "action": "Conhecer as skills"
+      },
+      "backendTemplate": {
+        "kind": "Modelo",
+        "title": "Modelo inicial de plugin de backend",
+        "description": "Um modelo enxuto de plugin Django para quando você precisa de um ponto de partida de backend, e não do ambiente completo do scaffold.",
+        "action": "Ver o modelo"
+      }
+    }
+  },
+  "examples": {
+    "eyebrow": "05 / EM CÓDIGO ABERTO",
+    "title": "Código real.<br></br>Pontos de partida úteis.",
+    "body": "Veja por dentro duas extensões para entender como as peças se encaixam. São implementações de referência; verifique a configuração, as dependências e a compatibilidade com a sua versão do Care.",
+    "items": {
+      "backendExample": {
+        "kind": "Exemplo de backend",
+        "description": "Veja um plugin Django autenticar usuários do Care, verificar permissões por unidade e emitir tokens de sessão de curta duração do Medispeak.",
+        "detail": "As credenciais dos serviços ficam no servidor.",
+        "action": "Explorar o backend"
+      },
+      "frontendExample": {
+        "kind": "Exemplo de frontend",
+        "description": "Conheça um aplicativo React que extrai dados de pacientes de formulários fotografados e preenche os campos de cadastro para revisão do usuário.",
+        "detail": "Uma referência para estender a interface do Care.",
+        "action": "Explorar o frontend"
+      }
+    }
+  },
+  "ideas": {
+    "eyebrow": "IDEIAS PARA EXPLORAR",
+    "title": "O que você vai construir?",
+    "body": "Encontre um problema pequeno que valha a pena resolver.<br></br>Use estas ideias como ponto de partida.",
+    "items": [
+      "Uma visão da equipe de cuidado para acompanhamento e coordenação",
+      "Uma integração com um dispositivo ou serviço externo",
+      "Documentação assistida por IA com revisão humana",
+      "Um painel operacional focado"
+    ],
+    "hackathon": {
+      "title": "Vai desenvolver em um hackathon?",
+      "body": "Comece com um fluxo, use dados sintéticos e facilite para que outras pessoas executem a demonstração.",
+      "checklistTitle": "CHECKLIST DA SUA DEMONSTRAÇÃO",
+      "checklist": [
+        "Problema e usuário-alvo",
+        "Fluxo funcionando",
+        "Instruções de configuração",
+        "Dados sintéticos de exemplo",
+        "Limitações conhecidas"
+      ]
+    }
+  },
+  "closing": {
+    "eyebrow": "DESENVOLVIDO EM CÓDIGO ABERTO. FEITO PARA SER ESTENDIDO.",
+    "title": "Traga sua ideia para o Care.",
+    "body": "Comece pelo scaffold, explore um exemplo e construa um fluxo focado.",
+    "startBuilding": "Comece a desenvolver",
+    "docs": "Leia a documentação de plugins",
+    "contribute": "Quer melhorar a plataforma compartilhada? <link>Contribua com o Care</link>"
+  }
+}

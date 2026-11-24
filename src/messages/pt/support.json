@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "title": "Apoio - Financie o bem comum aberto da saúde",
+    "description": "Financie a OHC Foundation para sustentar o CARE Core, a segurança, a documentação, a disciplina de versões, o ecossistema de implementação e a adoção de DPGs de saúde."
+  },
+  "hero": {
+    "eyebrow": "Apoie a OHC Foundation",
+    "title": "Financie o bem comum aberto da saúde.",
+    "body": "Ajude a manter a infraestrutura compartilhada, a governança, a segurança, a documentação e o ecossistema que tornam possíveis sistemas de saúde abertos em escala.",
+    "contactFinance": "Fale com o financeiro",
+    "howToFund": "Como nos financiar",
+    "viewFile": "Ver {file}"
+  },
+  "whyFund": {
+    "eyebrow": "Por que financiar",
+    "title": "Financiar a OHC não é financiar uma única implantação.",
+    "body": "É financiar a plataforma compartilhada, a governança, as práticas de versões, a documentação, a segurança e o ecossistema de implementação que tornam muitas implantações mais seguras e mais baratas de replicar.",
+    "model": "O modelo de fundação permite que financiadores apoiem uma infraestrutura de bem público que governos, hospitais, ONGs e parceiros de implementação podem reutilizar sem dependência de licenças."
+  },
+  "areas": {
+    "eyebrow": "O que o apoio financia",
+    "title": "O trabalho institucional por trás de implantações reutilizáveis.",
+    "items": {
+      "careCore": {
+        "title": "CARE Core",
+        "description": "Componentes fundamentais de saúde compartilhados, APIs, fluxos, modelos de dados alinhados ao FHIR e confiabilidade da plataforma."
+      },
+      "security": {
+        "title": "Segurança e LTS",
+        "description": "Disciplina de versões, garantia de qualidade, resposta a vulnerabilidades, auditabilidade e direção para o suporte de longo prazo."
+      },
+      "documentation": {
+        "title": "Documentação e guias",
+        "description": "Guias de implementação, pacotes de implantação, referências técnicas, material de capacitação e manuais de execução reutilizáveis."
+      },
+      "ecosystem": {
+        "title": "Ecossistema de implementação",
+        "description": "Capacitação de integradores de sistemas, compatibilidade de plugins, caminhos de contribuição e apoio à adaptação local."
+      },
+      "ai": {
+        "title": "IA assistiva para a saúde",
+        "description": "Documentação com revisão humana, formulários com entrada por voz, resumos e apoio seguro aos fluxos de trabalho."
+      },
+      "southToSouth": {
+        "title": "Reutilização Sul-Sul",
+        "description": "Modelos de implantação e infraestrutura pronta para outros países, que podem ser adaptados além de um único estado ou programa."
+      }
+    }
+  },
+  "sponsors": {
+    "eyebrow": "Formas de patrocínio",
+    "title": "Apoio institucional a uma camada de infraestrutura de bem público.",
+    "body": "As conversas sobre financiamento podem partir dos planos públicos em {file}, ajustando escopo, governança, prestação de contas e requisitos de conformidade diretamente com a fundação.",
+    "items": {
+      "visionary": {
+        "title": "Patrocinador visionário",
+        "description": "Grande apoio filantrópico ou institucional para a gestão de uma infraestrutura pública digital aberta para a saúde."
+      },
+      "member": {
+        "title": "Membro da fundação",
+        "description": "Apoio de empresas, prestadores de serviços de saúde, parceiros de implementação ou organizações do ecossistema à gestão de longo prazo."
+      },
+      "program": {
+        "title": "Patrocinador de programa",
+        "description": "Apoio direcionado ao CARE Core, à segurança, à documentação com IA, aos cuidados paliativos, ao TeleICU ou a pacotes de implantação."
+      },
+      "individual": {
+        "title": "Patrocinador individual",
+        "description": "Apoio de pessoas que desejam sustentar a infraestrutura aberta de saúde e a missão da OHC."
+      }
+    }
+  },
+  "contact": {
+    "eyebrow": "Inicie a conversa",
+    "title": "Apoie o bem comum que os sistemas de saúde podem controlar, adaptar e ampliar.",
+    "grants": "Doações e patrocínios",
+    "partnerships": "Parcerias",
+    "partnershipsText": "Conversas com governos, hospitais, integradores de sistemas e o ecossistema."
+  }
+}

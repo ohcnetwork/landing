@@ -1,0 +1,551 @@
+{
+  "meta": {
+    "title": "CARE AI - Responsible AI on Trusted Healthcare Infrastructure",
+    "description": "CARE AI is the responsible AI layer for CARE Core: AI medical scribe, realtime voice scribe, voice EMR, form intelligence, clinical summaries, Care Ask doctor copilot, document AI, drug safety alerts, score calculators, and human-in-the-loop healthcare workflows.",
+    "ogDescription": "Assistive healthcare AI built on CARE Core: voice workflows, clinical summaries, document intelligence, care planning, safety alerts, and human-reviewed AI.",
+    "ogImageAlt": "CARE AI and Care Scribe workflow concept",
+    "twitterDescription": "AI medical scribe, voice EMR, clinical summaries, document AI, safety alerts, and workflow intelligence on CARE Core."
+  },
+  "structuredData": {
+    "pageDescription": "CARE AI is responsible, assistive healthcare AI built on CARE Core for medical scribing, voice workflows, form intelligence, clinical summaries, document AI, care planning, drug safety, and workflow support.",
+    "about": [
+      "Responsible healthcare AI",
+      "AI medical scribe",
+      "Voice EMR",
+      "Clinical summarization",
+      "Healthcare document AI",
+      "Human-in-the-loop AI"
+    ],
+    "breadcrumbHome": "Home",
+    "appDescription": "CARE AI is the responsible AI layer for CARE Core, supporting AI medical scribe workflows, voice EMR documentation, clinical summaries, document understanding, care planning, drug safety alerts, score calculators, and human-in-the-loop healthcare workflows.",
+    "capabilitiesListName": "CARE AI capabilities"
+  },
+  "heroVisual": {
+    "videoLabel": "CARE AI medical scribe workflow showing voice documentation and clinical context",
+    "steps": {
+      "context": {
+        "title": "Context",
+        "text": "CARE Core supplies patient, role, facility, workflow, and record context."
+      },
+      "draft": {
+        "title": "Draft",
+        "text": "AI listens, extracts, summarizes, suggests, calculates, or prepares a draft."
+      },
+      "review": {
+        "title": "Review",
+        "text": "The care team edits, approves, rejects, or asks for more evidence."
+      },
+      "record": {
+        "title": "Record",
+        "text": "Accepted output becomes auditable data inside CARE."
+      }
+    }
+  },
+  "hero": {
+    "title": "Responsible AI on trusted healthcare infrastructure",
+    "body": "CARE AI brings AI-powered documentation, summarization, voice workflows, form intelligence, clinical context, care planning, safety alerts, and workflow support into the same open healthcare platform where care is delivered.",
+    "discuss": "Discuss CARE AI",
+    "exploreCore": "Explore CARE Core"
+  },
+  "healthSystem": {
+    "eyebrow": "Health system first",
+    "title": "AI in healthcare should not sit outside the health system.",
+    "body": "Most healthcare AI tools start with a model. CARE AI starts with the health system: patients, encounters, facilities, users, roles, forms, orders, labs, medications, referrals, care plans, tasks, audit trails, APIs, and standards-based data models.",
+    "thesis": [
+      "It should understand the patient record.",
+      "It should respect clinical workflows.",
+      "It should follow permissions and audit trails.",
+      "It should help health workers, not replace them."
+    ]
+  },
+  "principle": {
+    "eyebrow": "Our principle",
+    "title": "AI drafts. Humans decide. CARE records. Systems learn.",
+    "body": "CARE AI is not a standalone chatbot, an AI doctor, or a black-box tool outside the clinical workflow. It is a set of AI skills powered by CARE Core and designed for accountable care teams.",
+    "items": {
+      "grounded": {
+        "title": "Grounded in context",
+        "text": "AI should use patient, encounter, facility, role, form, task, and workflow context from CARE Core."
+      },
+      "reviewed": {
+        "title": "Reviewed before saving",
+        "text": "AI can listen, extract, summarize, suggest, calculate, and draft. The care team remains in control."
+      },
+      "traceable": {
+        "title": "Traceable to sources",
+        "text": "Summaries, handovers, care plans, and discharge drafts should point back to source information wherever possible."
+      },
+      "roles": {
+        "title": "Governed by roles",
+        "text": "Doctors, nurses, field workers, administrators, volunteers, and researchers should not have the same AI permissions."
+      },
+      "safety": {
+        "title": "Designed for safety",
+        "text": "AI should reduce burden without reducing accountability, and every capability should be evaluated in real care settings."
+      },
+      "recorded": {
+        "title": "Recorded by CARE",
+        "text": "Accepted AI output becomes part of the same auditable, standards-aligned health record where care is delivered."
+      }
+    }
+  },
+  "core": {
+    "eyebrow": "Powered by CARE Core",
+    "title": "Workflow-aware, patient-aware, and accountable.",
+    "body": "A doctor opening an encounter needs different AI support from a nurse preparing a handover, a field worker completing a home visit, a registration staff member scanning documents, or a program manager improving a clinical form. CARE AI is designed for that reality.",
+    "context": [
+      "Longitudinal patient records",
+      "Clinical forms and submissions",
+      "Encounter history",
+      "Medications, allergies, vitals, labs, and observations",
+      "Care plans, tasks, referrals, and follow-ups",
+      "Facility and user context",
+      "Role-based permissions",
+      "Audit trails",
+      "APIs and plugin architecture",
+      "Standards-aligned data models"
+    ]
+  },
+  "capabilities": {
+    "eyebrow": "CARE AI capabilities",
+    "title": "From AI medical scribe to learning clinical workflows.",
+    "body": "CARE AI is a capability layer, not one feature. Each skill is meant to reduce burden, improve structured data capture, surface relevant patient context, and make healthcare workflows easier to complete.",
+    "items": {
+      "careScribe": {
+        "title": "Care Scribe",
+        "category": "AI medical scribe",
+        "text": "Voice-based documentation assistance grounded in the patient record and the active CARE workflow.",
+        "points": [
+          "Clinical notes and visit summaries",
+          "Structured form filling",
+          "Nursing and field visit documentation",
+          "Review before saving",
+          "Audit of generated and accepted content"
+        ]
+      },
+      "realtimeScribe": {
+        "title": "Realtime Voice Scribe",
+        "category": "Voice EMR",
+        "text": "Realtime speech support that structures documentation while the consultation is happening.",
+        "points": [
+          "Realtime transcription",
+          "History, symptoms, examination, assessment, and plan detection",
+          "Structured field suggestions",
+          "Missing information prompts",
+          "Clinician edit, approval, and save"
+        ]
+      },
+      "visionRegistration": {
+        "title": "Vision for Patient Registration",
+        "category": "Front-desk AI",
+        "text": "Registration intelligence for cleaner patient records and lower manual data entry at the front door of care.",
+        "points": [
+          "Extract details from forms, IDs, or documents",
+          "Auto-fill registration fields",
+          "Suggest possible duplicate records",
+          "Flag missing or inconsistent information",
+          "Attach source documents to the patient record"
+        ]
+      },
+      "visionDocumentation": {
+        "title": "Vision for Documentation",
+        "category": "Healthcare document AI",
+        "text": "Document understanding for scanned reports, prescriptions, referral letters, lab reports, and historical notes.",
+        "points": [
+          "Read uploaded documents and images",
+          "Extract key fields from reports",
+          "Convert paper records into structured data",
+          "Summarize referral letters",
+          "Review extracted data before saving"
+        ]
+      },
+      "recordSummary": {
+        "title": "AI Summary on Records",
+        "category": "Clinical summarization",
+        "text": "Patient summaries that help care teams reach the right part of a long record faster.",
+        "points": [
+          "One-line patient overview",
+          "Recent visit summary",
+          "Problem-oriented summary",
+          "Medication and lab trend summaries",
+          "Pending task and follow-up summaries"
+        ]
+      },
+      "doctorSummary": {
+        "title": "Doctor Summary",
+        "category": "Pre-encounter context",
+        "text": "A concise view of the patient before the consultation begins, designed to reduce cognitive load.",
+        "points": [
+          "Chief concern and relevant history",
+          "Active problems and medications",
+          "Allergies and recent labs",
+          "Pending investigations",
+          "Risk flags and follow-up needs"
+        ]
+      },
+      "careAsk": {
+        "title": "Care Ask",
+        "category": "Doctor copilot",
+        "text": "A doctor-facing copilot for patient-context questions and workflow support across the CARE record.",
+        "points": [
+          "What changed since the last visit?",
+          "Show recent abnormal labs",
+          "Summarize the current admission",
+          "List current medications",
+          "Generate patient instructions from today’s plan"
+        ]
+      },
+      "differentialDiagnosis": {
+        "title": "Differential Diagnosis Support",
+        "category": "Clinical reasoning support",
+        "text": "Careful, clinician-led reasoning support for structured checklists, red flags, and missing history prompts.",
+        "points": [
+          "Differential checklist generation",
+          "Red-flag reminders",
+          "Suggested examination questions",
+          "Investigation prompts",
+          "Consider, ask, check, and rule out suggestions"
+        ]
+      },
+      "carePlan": {
+        "title": "Care Plan Generation",
+        "category": "Actionable care plans",
+        "text": "Draft care plans that can become tasks, reminders, referrals, follow-ups, and measurable continuity.",
+        "points": [
+          "Problems and goals",
+          "Medications and investigations",
+          "Counseling and follow-up",
+          "Referrals and home-care tasks",
+          "Monitoring plans and caregiver instructions"
+        ]
+      },
+      "scoreCalculators": {
+        "title": "AI-Powered Score Calculators",
+        "category": "Clinical scoring",
+        "text": "Score calculators connected to structured data and the escalation workflows that follow.",
+        "points": [
+          "BMI, MEWS, NEWS2, and GCS",
+          "Program-specific scores",
+          "Palliative-care risk scores",
+          "NCD risk scores",
+          "Follow-up and escalation routing"
+        ]
+      },
+      "drugSafety": {
+        "title": "Drug Safety Alerts",
+        "category": "Medication safety",
+        "text": "Relevant, explainable, severity-ranked prescribing alerts where medication decisions happen.",
+        "points": [
+          "Allergy and interaction risks",
+          "Duplicate therapy",
+          "Contraindications and dose concerns",
+          "Renal, hepatic, pregnancy, and age cautions",
+          "Override with reason where appropriate"
+        ]
+      },
+      "dischargeSummary": {
+        "title": "Discharge Summary Builder",
+        "category": "Continuity after discharge",
+        "text": "Draft discharge summaries generated from the actual hospital timeline, then reviewed and signed.",
+        "points": [
+          "Admission reason and diagnoses",
+          "Procedures and clinical course",
+          "Medication changes and lab trends",
+          "Pending results",
+          "Follow-up and referral notes"
+        ]
+      },
+      "handoverChart": {
+        "title": "Handover Chart",
+        "category": "Care transitions",
+        "text": "Structured handover notes for shifts, wards, teams, and high-risk transitions of care.",
+        "points": [
+          "Patient status and current risks",
+          "Pending labs and tasks",
+          "Medication changes",
+          "Escalation needs",
+          "Nursing priorities and discharge readiness"
+        ]
+      },
+      "formBuilder": {
+        "title": "Care Form Builder Skill",
+        "category": "Guideline to workflow",
+        "text": "AI support for converting guidelines, PDFs, SOPs, and paper forms into draft CARE forms and workflows.",
+        "points": [
+          "Form sections and field definitions",
+          "Validations and conditional logic",
+          "Terminology mappings",
+          "Indicators and role-specific views",
+          "Draft workflow structure"
+        ]
+      },
+      "formEnhancer": {
+        "title": "Care Form Enhancer",
+        "category": "Learning workflows",
+        "text": "Submission analysis that suggests how program forms can become clearer, faster, and more structured.",
+        "points": [
+          "Frequently empty fields",
+          "Confusing labels and duplicate fields",
+          "Validation failures",
+          "Long completion time and drop-off points",
+          "Free-text patterns that should become structured fields"
+        ]
+      }
+    }
+  },
+  "teams": {
+    "eyebrow": "Built for care teams",
+    "title": "Different teams need different intelligence.",
+    "body": "CARE AI is designed for doctors, nurses, field workers, hospitals, public-health programs, and implementation partners who need AI that is practical, responsible, and grounded in real health-system data.",
+    "items": {
+      "doctors": {
+        "title": "For doctors",
+        "text": "Spend less time searching and typing, and more time making decisions.",
+        "items": [
+          "Care Scribe",
+          "Realtime voice documentation",
+          "Doctor Summary",
+          "Care Ask",
+          "Differential diagnosis support",
+          "Drug safety alerts",
+          "Discharge summary builder"
+        ]
+      },
+      "nurses": {
+        "title": "For nurses",
+        "text": "Document faster, coordinate better, and reduce handover risk.",
+        "items": [
+          "Realtime nursing notes",
+          "Handover charts",
+          "Score calculators",
+          "Pending task summaries",
+          "Patient status summaries",
+          "Ward-level documentation support"
+        ]
+      },
+      "fieldWorkers": {
+        "title": "For field workers",
+        "text": "Complete structured documentation with less typing and better local-language support.",
+        "items": [
+          "Voice-native forms",
+          "Home-visit summaries",
+          "Follow-up prompts",
+          "Risk flag suggestions",
+          "Caregiver instruction drafts",
+          "Local-language support"
+        ]
+      },
+      "hospitals": {
+        "title": "For hospitals",
+        "text": "Improve documentation quality, discharge workflows, patient handovers, and medication safety.",
+        "items": [
+          "Discharge summary builder",
+          "Handover chart",
+          "Drug safety alerts",
+          "Doctor summaries",
+          "Score calculators",
+          "Documentation analytics"
+        ]
+      },
+      "publicHealth": {
+        "title": "For public-health programs",
+        "text": "Move from guidelines to better digital workflows and stronger program learning loops.",
+        "items": [
+          "Care Form Builder Skill",
+          "Care Form Enhancer",
+          "Program workflow summaries",
+          "Indicator extraction",
+          "Submission quality review",
+          "Field-level improvement suggestions"
+        ]
+      }
+    }
+  },
+  "extensible": {
+    "eyebrow": "Extensible by design",
+    "title": "CARE can be the trusted substrate for partner AI.",
+    "body": "Not every AI capability needs to be built by OHC Foundation. CARE should make it possible for trusted AI partners, research institutions, public-sector AI initiatives, and local model providers to integrate safely into healthcare workflows.",
+    "items": {
+      "externalScribes": {
+        "title": "External scribe providers",
+        "text": "CARE can support voice-to-discrete-data integrations where a partner scribe transforms doctor-patient conversations into structured notes while CARE remains the patient-context layer and system of record."
+      },
+      "ekaScribe": {
+        "title": "Eka Scribe via V2DD-style integrations",
+        "text": "A scribe partner can provide structured voice outputs, while CARE provides workflow context, review surfaces, final save, and auditability."
+      },
+      "indiaAi": {
+        "title": "India AI models and AI Centers of Excellence",
+        "text": "As Indian foundational models, local-language models, and healthcare AI research mature, CARE can provide the real-world health-system layer for responsible evaluation and use."
+      },
+      "researchModels": {
+        "title": "Research and government-approved AI models",
+        "text": "Trusted partners can bring speech, vision, drug-safety, score-calculation, summarization, and program-specific models through plugin patterns."
+      }
+    }
+  },
+  "safety": {
+    "eyebrow": "Safety and governance",
+    "title": "Healthcare AI must be designed for trust.",
+    "body": "CARE AI follows a safety-first posture: source grounding, human review, role-based access, audit trails, clinical accountability, and real-world evaluation.",
+    "items": {
+      "humanReview": {
+        "title": "Human review",
+        "text": "AI-generated clinical content should be reviewed before becoming part of the medical record."
+      },
+      "sourceGrounding": {
+        "title": "Source grounding",
+        "text": "Summaries, discharge notes, handovers, and care plans should link back to source records wherever possible."
+      },
+      "roleBasedAccess": {
+        "title": "Role-based access",
+        "text": "A doctor, nurse, volunteer, administrator, and researcher should not have the same AI capabilities or data access."
+      },
+      "auditTrails": {
+        "title": "Audit trails",
+        "text": "Every AI interaction should log who used it, what context was used, what was generated, what was edited, and what was saved."
+      },
+      "accountability": {
+        "title": "Clinical accountability",
+        "text": "AI supports the care team. It does not replace clinical responsibility."
+      },
+      "evaluation": {
+        "title": "Evaluation",
+        "text": "Every AI feature should be measured by workflow impact, safety, adoption, quality, and outcomes."
+      }
+    },
+    "metricsTitle": "Useful evaluation metrics",
+    "metrics": [
+      "Documentation time saved",
+      "Form completion rate",
+      "Correction rate",
+      "Data completeness",
+      "Summary accuracy",
+      "Discharge turnaround time",
+      "Handover completeness",
+      "Alert acceptance rate",
+      "Override rate",
+      "Clinician satisfaction",
+      "Follow-up completion",
+      "Safety incidents"
+    ]
+  },
+  "roadmap": {
+    "eyebrow": "Roadmap",
+    "title": "From documentation relief to learning health systems.",
+    "items": {
+      "horizon1": {
+        "horizon": "Horizon 1",
+        "title": "Documentation relief",
+        "text": "Reduce typing and improve structured capture.",
+        "focus": [
+          "Care Scribe",
+          "Realtime voice documentation",
+          "Vision for documentation",
+          "AI summaries",
+          "Doctor Summary",
+          "Discharge summary builder",
+          "Handover chart"
+        ]
+      },
+      "horizon2": {
+        "horizon": "Horizon 2",
+        "title": "Workflow intelligence",
+        "text": "Make CARE workflows AI-assisted.",
+        "focus": [
+          "Care Ask Doctor Copilot",
+          "Care plan generation",
+          "AI-powered score calculators",
+          "Drug safety alerts",
+          "Care Form Builder Skill",
+          "Care Form Enhancer",
+          "Vision for registration"
+        ]
+      },
+      "horizon3": {
+        "horizon": "Horizon 3",
+        "title": "Learning health systems",
+        "text": "Move from assistance to continuous improvement.",
+        "focus": [
+          "Differential diagnosis support",
+          "Program copilots",
+          "Quality improvement analytics",
+          "Risk stratification",
+          "Operational intelligence",
+          "AI evaluation infrastructure",
+          "South-to-South reusable AI workflows"
+        ]
+      }
+    }
+  },
+  "difference": {
+    "eyebrow": "The CARE AI difference",
+    "title": "A safer, faster interface to trusted healthcare infrastructure.",
+    "body": "The goal is not to make healthcare workers depend on another black-box product. The goal is to give them a smarter interface to open, accountable infrastructure.",
+    "items": {
+      "workflowNative": {
+        "title": "Workflow-native",
+        "text": "Embedded where care happens."
+      },
+      "patientAware": {
+        "title": "Patient-aware",
+        "text": "Grounded in CARE records."
+      },
+      "humanReviewed": {
+        "title": "Human-reviewed",
+        "text": "Designed for clinical accountability."
+      },
+      "standardsAligned": {
+        "title": "Standards-aligned",
+        "text": "Built on open healthcare data models."
+      },
+      "auditReady": {
+        "title": "Audit-ready",
+        "text": "Traceable and governable."
+      },
+      "extensible": {
+        "title": "Extensible",
+        "text": "Ready for partner models and AI integrations."
+      },
+      "publicGood": {
+        "title": "Public-good oriented",
+        "text": "Designed to strengthen open healthcare infrastructure."
+      }
+    }
+  },
+  "faq": {
+    "items": {
+      "whatIs": {
+        "question": "What is CARE AI?",
+        "answer": "CARE AI is the assistive intelligence layer built on top of CARE Core. It brings AI-powered documentation, summarization, voice workflows, form intelligence, clinical context, care planning, safety alerts, and workflow support into the same open healthcare platform where care is delivered."
+      },
+      "aiDoctor": {
+        "question": "Is CARE AI an AI doctor?",
+        "answer": "No. CARE AI is not an AI doctor, autonomous diagnosis tool, or black-box product outside the clinical workflow. It drafts, extracts, summarizes, suggests, and calculates while humans review and decide."
+      },
+      "principle": {
+        "question": "What is the CARE AI principle?",
+        "answer": "AI drafts. Humans decide. CARE records. Systems learn. CARE AI is built around human review, clinical accountability, source grounding, role-based permissions, and audit trails."
+      },
+      "careScribe": {
+        "question": "What is Care Scribe?",
+        "answer": "Care Scribe helps doctors, nurses, and care teams convert speech and clinical conversations into structured documentation inside CARE. It is documentation assistance grounded in the patient record and active workflow."
+      },
+      "chatbot": {
+        "question": "How is CARE AI different from a standalone chatbot?",
+        "answer": "CARE AI starts with the health system. It uses CARE Core context such as patients, encounters, forms, roles, orders, medications, labs, care plans, tasks, audit trails, APIs, and standards-based data models."
+      },
+      "partners": {
+        "question": "Can external AI partners integrate with CARE AI?",
+        "answer": "Yes. CARE AI is designed as an open and extensible AI layer where trusted scribe providers, speech models, vision models, local-language models, drug-safety engines, score calculators, and research models can integrate safely into CARE workflows."
+      }
+    }
+  },
+  "final": {
+    "title": "AI for the healthcare commons.",
+    "body": "CARE Core gives AI the context. CARE AI gives health workers the interface. Human review keeps care accountable. Open infrastructure makes the model reusable.",
+    "tagline": "CARE AI is responsible AI on trusted healthcare infrastructure.",
+    "discuss": "Discuss CARE AI",
+    "exploreCore": "Explore CARE Core"
+  }
+}

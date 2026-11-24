@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "title": "CARE Solutions - Open Healthcare Deployment Patterns",
+    "description": "Explore CARE solution blueprints for hospital management, TeleICU, palliative care, clinics, animal health, public health programs, AI-ready workflows, and open healthcare infrastructure.",
+    "ogDescription": "Reusable healthcare workflows built on CARE Core: hospital systems, critical care, home care, clinics, animal health, and AI-ready programs.",
+    "ogImageAlt": "Open Healthcare Network Foundation"
+  },
+  "items": {
+    "hmis": {
+      "title": "Hospital Management",
+      "eyebrow": "CARE HMIS",
+      "description": "An open Hospital Information System for OPD, emergency, inpatient, labs, pharmacy, billing, reporting, and AI-ready clinical workflows.",
+      "status": "Field-ready"
+    },
+    "teleicu": {
+      "title": "TeleICU",
+      "eyebrow": "CARE TeleICU",
+      "description": "Hub-and-spoke critical-care workflows for remote ICU review, specialist hubs, CARE EMR documentation, video context, and protocols.",
+      "status": "Field-proven"
+    },
+    "palliative": {
+      "title": "Palliative Care",
+      "eyebrow": "Home Care Grid",
+      "description": "A care-coordination grid for vulnerable patients, home visits, care teams, follow-ups, referrals, dashboards, and continuity at home.",
+      "status": "Reference model"
+    },
+    "clinic": {
+      "title": "CARE Clinic",
+      "eyebrow": "Your clinic’s own computer",
+      "description": "A free, open-source Mac and Windows application that sets up CARE on a clinic computer, with patient records, appointments, prescriptions, billing and encrypted backups.",
+      "status": "Download for Mac and Windows"
+    },
+    "janwar": {
+      "title": "Animal Health",
+      "eyebrow": "CARE Janwar",
+      "description": "A CARE blueprint for veterinary clinics, public animal-health programs, field visits, vaccination, diagnostics, pharmacy, and program dashboards.",
+      "status": "Deployment blueprint"
+    }
+  },
+  "hero": {
+    "eyebrow": "CARE Solutions",
+    "title": "Deployable healthcare workflows on one open core.",
+    "body": "CARE solutions are reusable blueprints for hospitals, critical care, home-based care, clinics, public health programs, and animal health, all built on the same standards-based healthcare operating layer.",
+    "exploreCareCore": "Explore CARE Core",
+    "discussDeployment": "Discuss a deployment"
+  },
+  "constellation": {
+    "sharedFoundation": "Shared foundation",
+    "coreLayers": [
+      "Patients",
+      "Facilities",
+      "Encounters",
+      "Forms",
+      "Orders",
+      "Tasks",
+      "Care plans",
+      "Referrals",
+      "Reports",
+      "APIs",
+      "RBAC",
+      "Audit"
+    ]
+  },
+  "blueprints": {
+    "eyebrow": "Solution blueprints",
+    "title": "Product depth without product fragmentation.",
+    "body": "Each solution is a deployment pattern on CARE Core. Some are already field-proven. Others are packaged as implementation-ready blueprints for partners and programs to localize.",
+    "explore": "Explore solution"
+  },
+  "pattern": {
+    "eyebrow": "How OHC thinks about solutions",
+    "title": "The solution changes. The infrastructure stays shared.",
+    "body": "This is the difference between a product catalogue and a public infrastructure stack. CARE solutions reuse the same primitives, improve the same core, and avoid splitting health systems into isolated applications.",
+    "principles": {
+      "oneCore": {
+        "title": "One core, many workflows",
+        "text": "Solutions are assembled from CARE Core primitives, apps, plugins, forms, terminology, APIs, dashboards, and implementation playbooks."
+      },
+      "fieldUse": {
+        "title": "Field use before polish theatre",
+        "text": "Each page explains the actual workflow surface: who uses it, what gets recorded, what moves next, and how the system improves."
+      },
+      "aiOnCleanData": {
+        "title": "AI on top of clean data",
+        "text": "AI is framed as assistive: documentation, summaries, form support, decision support, and workflow intelligence on trusted records."
+      }
+    }
+  },
+  "ecosystem": {
+    "eyebrow": "Implementation ecosystem",
+    "title": "Built for governments, hospitals, partners, and programs.",
+    "body": "OHC Foundation stewards CARE Core, standards alignment, release discipline, documentation, and shared architecture. Implementation partners can configure workflows, localize forms, integrate systems, train users, and contribute improvements back.",
+    "workWithPartners": "Work with partners",
+    "appsIntegrations": "Apps and integrations"
+  },
+  "structuredData": {
+    "name": "CARE Solutions",
+    "description": "CARE solution blueprints for healthcare deployment patterns on one open core."
+  }
+}

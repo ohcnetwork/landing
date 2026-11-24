@@ -1,0 +1,11 @@
+{
+  "meta": {
+    "title": "Blog",
+    "description": "Writing from Open Healthcare Network Foundation on CARE, open healthcare infrastructure, standards, deployments, and ecosystem work."
+  },
+  "hero": {
+    "eyebrow": "Blog",
+    "title": "Writing for the open healthcare commons.",
+    "lead": "Foundation essays, release notes, field stories, and implementation guidance from Open Healthcare Network."
+  }
+}

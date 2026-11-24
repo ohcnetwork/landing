@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "title": "Clinicians - Shape CARE Workflows",
+    "description": "Clinicians help OHC shape CARE workflows, forms, terminology, notes, rounds, prescriptions, safety, and assistive AI documentation."
+  },
+  "hero": {
+    "eyebrow": "Clinical community",
+    "title": "CARE should feel like clinical infrastructure, not only IT.",
+    "body": "OHC needs clinicians and frontline workers to shape workflows, forms, terminology, safety practices, and assistive AI tools so CARE reflects how care is actually delivered.",
+    "joinReview": "Join clinical review",
+    "reviewModules": "Review CARE modules"
+  },
+  "workflow": {
+    "eyebrow": "Where clinicians shape the platform",
+    "title": "Clinical governance belongs close to product decisions.",
+    "items": {
+      "notes": {
+        "title": "Clinical notes and rounds",
+        "description": "Make documentation fit real bedside, outpatient, emergency, home care, and critical care workflows."
+      },
+      "forms": {
+        "title": "Forms and terminology",
+        "description": "Review questionnaires, SNOMED CT, LOINC, UCUM, ICD-10 mappings, and local terminology needs."
+      },
+      "coordination": {
+        "title": "Care coordination",
+        "description": "Shape tasks, referrals, care plans, home visits, follow-up, and continuity of care patterns."
+      },
+      "ai": {
+        "title": "AI documentation review",
+        "description": "Guide voice-native forms, AI draft flags, summarization, and human-in-the-loop safety expectations."
+      }
+    }
+  },
+  "safety": {
+    "eyebrow": "Safety and adoption",
+    "title": "Better records only matter if frontline teams can actually use them.",
+    "body": "CARE's clinical design should reduce documentation burden, preserve accountability, and support continuity of care across facilities, home visits, referrals, and program workflows.",
+    "principles": [
+      "Clinical safety before automation",
+      "Human-in-the-loop review for AI-assisted documentation",
+      "Structured data without burdening frontline staff",
+      "Auditability for clinical and administrative actions",
+      "Local language and local workflow sensitivity",
+      "Open feedback loops with maintainers and implementers"
+    ]
+  },
+  "ai": {
+    "eyebrow": "Assistive AI",
+    "title": "Voice and AI should draft, not decide.",
+    "body": "Care Scribe and related AI workflows should help clinicians capture structured notes, forms, summaries, and care plans with clear draft states, review paths, and traceability.",
+    "quote": "The foundation's role is to make AI safer by grounding it in open standards, structured clinical data, human review, and deployment choices that health systems can govern locally."
+  },
+  "community": {
+    "eyebrow": "Get involved",
+    "title": "Help turn clinical reality into reusable open workflows.",
+    "items": {
+      "share": "Share workflow needs",
+      "review": "Review forms and modules",
+      "test": "Test AI documentation flows",
+      "mentor": "Mentor implementation teams"
+    }
+  }
+}

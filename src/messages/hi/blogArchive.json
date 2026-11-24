@@ -1,0 +1,36 @@
+{
+  "featured": {
+    "title": "चुनिंदा",
+    "body": "ऐसे लेख और ज़मीनी नोट्स जो CARE प्लेटफ़ॉर्म को स्वास्थ्य सेवा के खुले बुनियादी ढाँचे के रूप में सामने रखते हैं।"
+  },
+  "filters": {
+    "browseThemes": "विषय देखें",
+    "allThemes": "सभी विषय",
+    "filterByMonth": "महीने के अनुसार छाँटें",
+    "monthNavLabel": "प्रकाशन का महीना",
+    "allMonths": "सभी महीने",
+    "rssFeed": "RSS फ़ीड",
+    "clearTheme": "विषय हटाएँ: <category>{theme}</category>",
+    "clearMonth": "महीना हटाएँ: {month}",
+    "clearAll": "सभी फ़िल्टर हटाएँ"
+  },
+  "status": {
+    "count": "{count, plural, one {# पोस्ट} other {# पोस्ट}}",
+    "countFiltered": "{count, plural, one {आपके फ़िल्टर से मेल खाती # पोस्ट} other {आपके फ़िल्टर से मेल खाती # पोस्ट}}"
+  },
+  "empty": {
+    "noMatchesTitle": "इन फ़िल्टर से कोई पोस्ट मेल नहीं खाती।",
+    "noMatchesBody": "कोई दूसरा विषय या महीना चुनें, या सभी पोस्ट देखने के लिए फ़िल्टर हटाएँ।",
+    "viewAll": "सभी पोस्ट देखें",
+    "noPostsTitle": "ब्लॉग तैयार किया जा रहा है।",
+    "noPostsBody": "फ़ाउंडेशन के लेख, रिलीज़ नोट्स, ज़मीनी अनुभव और कार्यान्वयन गाइड प्रकाशन के लिए तैयार होते ही यहाँ दिखेंगे।"
+  },
+  "post": {
+    "readingTime": "{minutes} मिनट में पढ़ें",
+    "readArticle": "लेख पढ़ें"
+  },
+  "pagination": {
+    "previous": "पिछला",
+    "next": "अगला"
+  }
+}

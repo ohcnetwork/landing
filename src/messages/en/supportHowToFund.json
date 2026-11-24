@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "title": "How to Fund OHC Foundation",
+    "description": "Send a direct grant, bank transfer, or donation to Open Healthcare Network Foundation. Account details, wire transfer instructions, and tax benefit information for Indian and international funders."
+  },
+  "hero": {
+    "title": "How to fund us.",
+    "body": "Send a direct bank transfer or international wire to OHC Foundation. Donations support open healthcare infrastructure used by hospitals, public health programs, and governments.",
+    "contactFinance": "Contact finance team",
+    "legalDocuments": "View legal documents"
+  },
+  "bankTransfer": {
+    "eyebrow": "Bank transfer",
+    "body": "Transfer directly to the foundation's current account. Use your organisation name or donor name as the reference.",
+    "labels": {
+      "accountName": "Account name",
+      "accountNumber": "Account number",
+      "ifsc": "IFSC code",
+      "bank": "Bank",
+      "branch": "Branch",
+      "accountType": "Account type",
+      "swift": "SWIFT / BIC"
+    },
+    "receiptNote": "* Contact <link>{email}</link> after transfer to receive a donation receipt."
+  },
+  "international": {
+    "eyebrow": "International wire",
+    "title": "From outside India",
+    "body": "For international donors and institutional funders, please contact the finance team before initiating a transfer. We will confirm current FCRA status and provide the correct wire details."
+  },
+  "orgDetails": {
+    "eyebrow": "Foundation details",
+    "title": "Payee and compliance identifiers.",
+    "body": "Use these for grant applications, wire transfers, donation forms, or when your compliance team needs to verify the receiving entity.",
+    "labels": {
+      "entityName": "Entity name",
+      "pan": "PAN",
+      "certificate80g": "80G certificate",
+      "certificate12a": "12A certificate",
+      "gst": "GST",
+      "cin": "CIN",
+      "address": "Registered address"
+    },
+    "viewDocuments": "View all foundation documents"
+  },
+  "taxBenefits": {
+    "eyebrow": "Tax benefits",
+    "title": "80G deduction for Indian donors.",
+    "body": "OHC Foundation holds a provisional 80G registration. Indian resident individuals and companies can claim deduction on donations under Section 80G of the Income Tax Act, 1961.",
+    "requestReceipt": "Request a donation receipt",
+    "items": {
+      "deduction": {
+        "title": "80G deduction",
+        "description": "Indian resident donors can claim deduction on the donated amount under Section 80G of the Income Tax Act, 1961."
+      },
+      "receipts": {
+        "title": "Donation receipts",
+        "description": "Official receipts for all donations are issued by the foundation. Contact {email} after transferring funds."
+      },
+      "fcra": {
+        "title": "FCRA status",
+        "description": "For international wire transfers, contact us to confirm current FCRA status and applicable compliance requirements."
+      }
+    }
+  },
+  "whatYouFund": {
+    "eyebrow": "What your funding supports",
+    "title": "The institutional work behind every deployment.",
+    "body": "Funding OHC Foundation is not funding one hospital or one deployment. It funds the shared platform, governance, release practices, documentation, security, and implementation ecosystem that make many deployments safer and less expensive to repeat.",
+    "items": {
+      "careCore": {
+        "title": "CARE Core",
+        "description": "Shared healthcare primitives, APIs, workflows, FHIR-aligned data models, and platform reliability that every deployment depends on."
+      },
+      "security": {
+        "title": "Security and LTS",
+        "description": "Release discipline, quality assurance, vulnerability response, auditability, and long-term support across active deployments."
+      },
+      "documentation": {
+        "title": "Documentation and guides",
+        "description": "Implementation guides, deployment packs, technical references, training material, and reusable playbooks for new deployments."
+      },
+      "ecosystem": {
+        "title": "Implementation ecosystem",
+        "description": "System integrator enablement, plugin compatibility, contribution pathways, and localization support across languages and regions."
+      },
+      "ai": {
+        "title": "Assistive AI for health",
+        "description": "Human-in-the-loop documentation, voice-native forms, summarization, and safe workflow support for clinicians and staff."
+      },
+      "southToSouth": {
+        "title": "South-to-South reuse",
+        "description": "Deployment patterns and country-ready infrastructure that can be adapted beyond one state or program."
+      }
+    }
+  },
+  "tiers": {
+    "eyebrow": "Funding structures",
+    "title": "Flexible arrangements for any funder type.",
+    "body": "Funding can be structured as a one-time grant, annual sponsorship, institutional membership, or program-targeted support. Contact the finance team to discuss the arrangement that fits your organisation.",
+    "items": {
+      "visionary": {
+        "title": "Visionary Sponsor",
+        "description": "Major philanthropic or institutional support for stewarding open healthcare digital public infrastructure at scale.",
+        "note": "Contact us to discuss scope and structure."
+      },
+      "member": {
+        "title": "Foundation Member",
+        "description": "Annual membership for companies, healthcare providers, implementation partners, and ecosystem organizations.",
+        "note": "Includes governance participation rights."
+      },
+      "program": {
+        "title": "Program Sponsor",
+        "description": "Targeted support for CARE Core, security, AI documentation, palliative care, TeleICU, or deployment packs.",
+        "note": "Defined scope with regular reporting."
+      },
+      "individual": {
+        "title": "Individual Supporter",
+        "description": "One-time or recurring support from individuals who want to back open healthcare infrastructure and the OHC mission.",
+        "note": "80G tax deduction eligible for Indian donors."
+      }
+    }
+  },
+  "contact": {
+    "eyebrow": "Get in touch",
+    "title": "We'll guide you through the process.",
+    "body": "Whether you're sending a small individual contribution or structuring a large institutional grant, the finance team is available to help with receipts, documentation, compliance, and reporting.",
+    "finance": "Finance team",
+    "financeText": "Receipts, wire instructions, grant documentation.",
+    "documents": "Foundation documents",
+    "documentsText": "COI, MOA, PAN, 80G, 12A, GST, and other legal certificates.",
+    "viewDocuments": "View all documents"
+  }
+}
